@@ -8,6 +8,11 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+/*
+ * Code by Justin SpielefreakJ
+ * (c) 2017
+ */
+
 namespace OverwatchLootBoxTracker
 {
     public partial class Form1 : Form
