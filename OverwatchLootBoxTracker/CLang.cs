@@ -8,32 +8,132 @@ namespace OverwatchLootBoxTracker
 {
     class CLang
     {
-        public CLang()
+        string myLang;
+
+        //Langs
+        Lang.L_DE DE;
+        Lang.L_EN EN;
+
+        public CLang(string Lang)
         {
-            throw new System.NotImplementedException();
+            myLang = Lang;
+
+            //Langs
+            DE = new Lang.L_DE();
+            EN = new Lang.L_EN();
         }
 
-        public string DE_Welcome
+        public string ChangeLang
         {
             get
             {
-                throw new System.NotImplementedException();
+                return myLang;
             }
-
             set
             {
+                myLang = value;
             }
         }
 
-        public string EN_Welcome
+
+        //All Settings
+
+        public string Settingsbutton
         {
             get
             {
-                throw new System.NotImplementedException();
+                if (myLang == "DE")
+                {
+                    return DE.Settingsbutton;
+                }
+                else
+                {
+                    return EN.Settingsbutton;
+                }
             }
+        }
 
-            set
+        public string LangChangeBox
+        {
+            get
             {
+                if (myLang == "DE")
+                {
+                    return DE.LangSettingsBox;
+                }
+                else
+                {
+                    return EN.LangSettingsBox;
+                }
+            }
+        }
+
+
+
+        //On Close
+        
+
+        public string AppClose
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.AppClose;
+                }
+                else
+                {
+                    return EN.AppClose;
+                }
+            }
+        }
+
+
+
+        //Remaining Text
+
+        public string remaining1
+        {
+            get
+            {
+                if (myLang=="DE")
+                {
+                    return DE.remaining1;
+                }
+                else
+                {
+                    return EN.remaining1;
+                }
+            }
+        }
+
+        public string remaining2
+        {
+            get
+            {
+                if (myLang=="DE")
+                {
+                    return DE.remaining2;
+                }
+                else
+                {
+                    return EN.remaining2;
+                }
+            }
+        }
+
+        public string remaining3
+        {
+            get
+            {
+                if (myLang=="DE")
+                {
+                    return DE.remaining3;
+                }
+                else
+                {
+                    return EN.remaining3;
+                }
             }
         }
     }

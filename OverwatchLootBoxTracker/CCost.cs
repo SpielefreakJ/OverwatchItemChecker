@@ -6,19 +6,24 @@ using System.Threading.Tasks;
 
 namespace OverwatchLootBoxTracker
 {
-    class CSkin
+    class CCost
     {
         private int myClassic = 0;
-        private int myRare=75;
-        private int myEpic=250;
-        private int myLegendary=1000;
-        private int myEpicEvent=750;
-        private int myLegendaryEvent=3000;
-        private int myBlizzCon=0;
-        private int myUnknown=0;
-        private int myOriginGotY=0;
+        private int myRare = 75;
+        private int myEpic = 250;
+        private int myLegendary = 1000;
+        private int myEpicEvent = 750;
+        private int myLegendaryEvent = 3000;
+        private int myBlizzCon = 0;
+        private int myUnknown = 0;
+        private int myOriginGotY = 0;
+        private int myPrepushcase = 0;
 
-        public CSkin()
+        private int myKostenNormal;
+        private int myKostenFest;
+
+
+        public CCost()
         {
             //throw new System.NotImplementedException();
         }
@@ -99,8 +104,10 @@ namespace OverwatchLootBoxTracker
         {
             get
             {
-                int Kosten = (25 * myClassic) + (100 * myRare) + (50 * myEpic) + (104 * myLegendary);
-                return Kosten;
+                //Skins Non-Event
+                myKostenNormal = (25 * myClassic) + (100 * myRare) + (50 * myEpic) + (104 * myLegendary);
+                
+                return myKostenNormal;
             }
         }
 
@@ -108,8 +115,15 @@ namespace OverwatchLootBoxTracker
         {
             get
             {
-                int Kosten = 0;
-                return Kosten;
+                //Skins Event Old
+                myKostenFest = (16 * myEpic) + (6 * myLegendary);
+                //Skin Event New
+                myKostenFest += (15 * myEpicEvent) + (56 * myLegendaryEvent);
+
+                //Origin/GotY, Prepushcase and BlizzCon
+                myKostenFest += (5 * OriginGotY) + (1 * myPrepushcase) + (2 * myBlizzCon);
+
+                return myKostenFest;
             }
         }
     }

@@ -46,21 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CEmote.cs" />
     <Compile Include="CGoldweapon.cs" />
-    <Compile Include="CHighlightIntro.cs" />
     <Compile Include="CLang.cs" />
-    <Compile Include="CPlayerIcon.cs" />
-    <Compile Include="CSkin.cs" />
-    <Compile Include="CSpray.cs" />
-    <Compile Include="CVictoryPose.cs" />
-    <Compile Include="CVoiceLine.cs" />
+    <Compile Include="CCost.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="IniStream.cs" />
+    <Compile Include="Languages\L_DE.cs" />
+    <Compile Include="Languages\L_EN.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
