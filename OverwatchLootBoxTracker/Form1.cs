@@ -36,11 +36,6 @@ namespace OverwatchLootBoxTracker
             IniRead();
         }
 
-        public Form1(int nothing)
-        {
-
-        }
-
         private void OnApplicationExit(object sender, EventArgs e)
         {
             MessageBox.Show(Lang.AppClose);

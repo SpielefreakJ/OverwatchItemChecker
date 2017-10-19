@@ -11,7 +11,6 @@ namespace OverwatchLootBoxTracker
         string myLang;
         CCost Cost;
         CGoldweapon GoldWeapon;
-        Form1 Form;
 
         //Langs
         Lang.L_DE DE;
@@ -22,7 +21,6 @@ namespace OverwatchLootBoxTracker
             myLang = Lang;
             Cost = new CCost();
             GoldWeapon = new CGoldweapon();
-            Form = new Form1(0);
 
             //Langs
             DE = new Lang.L_DE();
