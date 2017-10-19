@@ -43,6 +43,74 @@ namespace OverwatchLootBoxTracker.Lang
         }
 
 
+        //Overlay Text
+
+        public string Skin
+        {
+            get
+            {
+                return "Skins";
+            }
+        }
+
+        public string Emotes
+        {
+            get
+            {
+                return "Emotes";
+            }
+        }
+
+        public string VictoryPoses
+        {
+            get
+            {
+                return "Siegerposen";
+            }
+        }
+
+        public string VoiceLines
+        {
+            get
+            {
+                return "Sprüche";
+            }
+        }
+
+        public string Sprays
+        {
+            get
+            {
+                return "Sprays";
+            }
+        }
+
+        public string HighlightIntros
+        {
+            get
+            {
+                return "Highlight-Intros";
+            }
+        }
+
+        public string Weapons
+        {
+            get
+            {
+                return "Waffen";
+            }
+        }
+
+        public string PlayerIcons
+        {
+            get
+            {
+                return "Spieler-Icons";
+            }
+        }
+
+
+
         //Remainint Text
 
         public string remaining1

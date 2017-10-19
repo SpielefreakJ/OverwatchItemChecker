@@ -18,9 +18,6 @@ namespace OverwatchLootBoxTracker
     public partial class Form1 : Form
     {
         IniStream inisSettings = null;
-
-        CCost Cost;
-        CGoldweapon GoldWeapon;
         CLang Lang;
         string Language;
 
@@ -28,6 +25,7 @@ namespace OverwatchLootBoxTracker
         {
             InitializeComponent();
             KlassenInst();
+            ChangePos();
 
             //Auslesen der "Settings.ini" Datei und speichern in IniStream inisSettings
             inisSettings = new IniStream("Settings.ini");
@@ -38,6 +36,11 @@ namespace OverwatchLootBoxTracker
             IniRead();
         }
 
+        public Form1(int nothing)
+        {
+
+        }
+
         private void OnApplicationExit(object sender, EventArgs e)
         {
             MessageBox.Show(Lang.AppClose);
@@ -46,17 +49,8 @@ namespace OverwatchLootBoxTracker
 
         private void IniSave()
         {
-            try
-            {
-                //Speichern der änderrung unter "Color" in der Settings.ini
-                inisSettings.Write("Lang", Language);
-            }
-            catch
-            {
-                Language = "DE";
-                //Speichern der änderrung unter "Color" in der Settings.ini
-                inisSettings.Write("Lang", Language);
-            }
+            //Speichern der änderrung unter "Color" in der Settings.ini
+            inisSettings.Write("Lang", Language);
         }
 
         private void IniRead()
@@ -70,23 +64,38 @@ namespace OverwatchLootBoxTracker
 
         private void KlassenInst()
         {
-            Cost = new CCost();
-            GoldWeapon = new CGoldweapon();
             Lang = new CLang(Language);
         }
 
         private void Texte()
         {
             //Erste mal ausrechnen, wieviel alles zusammen Kostet
-            lblKosten.Text = Lang.remaining1 + Cost.KostenNormal + Lang.remaining2 + Cost.KostenNormal + Cost.KostenFest + Lang.remaining3 + GoldWeapon.KostenGes + " SR";
+            lblKosten.Text = Lang.Remaining;
+            gbAll.Visible = false;
+            gBLang.Visible = false;
 
             btnSettings.Text = Lang.Settingsbutton;
             gBLang.Text = Lang.LangChangeBox;
+
+            btnSkins.Text = Lang.Skins;
+            btnEmotes.Text = Lang.Emotes;
+            btnVictoryPoses.Text = Lang.VictoryPoses;
+            btnVoiceLines.Text = Lang.VoiceLines;
+            btnSprays.Text = Lang.Sprays;
+            btnHighlightIntros.Text = Lang.HighlightIntros;
+            btnWeapons.Text = Lang.Weapons;
+            btnPlayerIcons.Text = Lang.PlayerIcons;
         }
 
+        private void ChangePos()
+        {
+            gBLang.Location = new Point(684, 600);
+            gbAll.Location = new Point(122, 29);
+        }
 
+        /*
         //Ab hier beginnt der richtige Code
-
+        */
 
         private void btnLangGerman_Click(object sender, EventArgs e)
         {
@@ -105,6 +114,119 @@ namespace OverwatchLootBoxTracker
         private void btnSettings_Click(object sender, EventArgs e)
         {
             gBLang.Visible = !gBLang.Visible;
+            gBLang.BringToFront();
+        }
+
+        private void btnSkins_Click(object sender, EventArgs e)
+        {
+            if (gbAll.Text == Lang.Skins)
+            {
+                gbAll.Visible = !gbAll.Visible;
+            }
+            else
+            {
+                gbAll.Visible = true;
+            }
+
+            gbAll.Text = Lang.Skins;
+        }
+
+        private void btnEmotes_Click(object sender, EventArgs e)
+        {
+            if (gbAll.Text == Lang.Emotes)
+            {
+                gbAll.Visible = !gbAll.Visible;
+            }
+            else
+            {
+                gbAll.Visible = true;
+            }
+
+            gbAll.Text = Lang.Emotes;
+        }
+
+        private void btnVictoryPoses_Click(object sender, EventArgs e)
+        {
+            if (gbAll.Text == Lang.VictoryPoses)
+            {
+                gbAll.Visible = !gbAll.Visible;
+            }
+            else
+            {
+                gbAll.Visible = true;
+            }
+
+            gbAll.Text = Lang.VictoryPoses;
+        }
+        
+        private void btnVoiceLines_Click(object sender, EventArgs e)
+        {
+            if (gbAll.Text == Lang.VoiceLines)
+            {
+                gbAll.Visible = !gbAll.Visible;
+            }
+            else
+            {
+                gbAll.Visible = true;
+            }
+
+            gbAll.Text = Lang.VoiceLines;
+        }
+
+        private void btnSprays_Click(object sender, EventArgs e)
+        {
+            if (gbAll.Text == Lang.Sprays)
+            {
+                gbAll.Visible = !gbAll.Visible;
+            }
+            else
+            {
+                gbAll.Visible = true;
+            }
+
+            gbAll.Text = Lang.Sprays;
+        }
+
+        private void btnHighlightIntros_Click(object sender, EventArgs e)
+        {
+            if (gbAll.Text == Lang.HighlightIntros)
+            {
+                gbAll.Visible = !gbAll.Visible;
+            }
+            else
+            {
+                gbAll.Visible = true;
+            }
+
+            gbAll.Text = Lang.HighlightIntros;
+        }
+
+        private void btnWeapons_Click(object sender, EventArgs e)
+        {
+            if (gbAll.Text == Lang.Weapons)
+            {
+                gbAll.Visible = !gbAll.Visible;
+            }
+            else
+            {
+                gbAll.Visible = true;
+            }
+
+            gbAll.Text = Lang.Weapons;
+        }
+
+        private void btnPlayerIcons_Click(object sender, EventArgs e)
+        {
+            if (gbAll.Text == Lang.PlayerIcons)
+            {
+                gbAll.Visible = !gbAll.Visible;
+            }
+            else
+            {
+                gbAll.Visible = true;
+            }
+
+            gbAll.Text = Lang.PlayerIcons;
         }
     }
 }

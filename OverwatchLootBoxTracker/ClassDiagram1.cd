@@ -1,65 +1,23 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <ClassDiagram MajorVersion="1" MinorVersion="1">
-  <Class Name="OverwatchLootBoxTracker.CSkin" Collapsed="true">
-    <Position X="0.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>QAAAFAgBAAEAAADIFIAAAAAQAEIAAAAAQIAAAAACABA=</HashCode>
-      <FileName>CSkin.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="OverwatchLootBoxTracker.CEmote" Collapsed="true">
+  <Class Name="OverwatchLootBoxTracker.CCost" Collapsed="true">
     <Position X="2" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>QAAAAAAAAIAAAAAAQgAAAAAQAgIAAAAAAAAAAAiAAAA=</HashCode>
-      <FileName>CEmote.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="OverwatchLootBoxTracker.CVictoryPose" Collapsed="true">
-    <Position X="3.5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>IAgASIQGCYAAAAIFAAQAGQEAgIApRBQIxUAwBAbgiAA=</HashCode>
-      <FileName>CVictoryPose.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="OverwatchLootBoxTracker.CVoiceLine" Collapsed="true">
-    <Position X="5" Y="0.5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>IAgASIQGCYAAAAIFAAQAGQEAgIApRBQIxUAwBAbgiAA=</HashCode>
-      <FileName>CVoiceLine.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="OverwatchLootBoxTracker.CSpray" Collapsed="true">
-    <Position X="0.5" Y="2.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAACAAAAAAAAQAAAAAAAAAgAAAAAAAAAAAICAAAA=</HashCode>
-      <FileName>CSpray.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="OverwatchLootBoxTracker.CHighlightIntro" Collapsed="true">
-    <Position X="2" Y="2.75" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>IAgASIQGCYAAAAIFAAQAGQEAgIApRBQIxUAwBAbgiAA=</HashCode>
-      <FileName>CHighlightIntro.cs</FileName>
+      <HashCode>QAAAFAgBAAEAAADIFIAAAAAQAEIAAAAAQ4AAAAACABA=</HashCode>
+      <FileName>CCost.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Class Name="OverwatchLootBoxTracker.CGoldweapon" Collapsed="true">
-    <Position X="3.5" Y="2.75" Width="1.5" />
+    <Position X="3.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>IAgASIQGCYAAAAIFAAQAGQEAgIApRBQIxUAwBAbgiAA=</HashCode>
+      <HashCode>AAAAAAAAQAAAAAAAAAAAAAAAAEAAAAAAAAAAAACAAAA=</HashCode>
       <FileName>CGoldweapon.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="OverwatchLootBoxTracker.CPlayerIcon" Collapsed="true">
-    <Position X="5" Y="2.75" Width="1.5" />
+  <Class Name="OverwatchLootBoxTracker.CLang">
+    <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>IAgASIQGCYAAAAIFAAQAGQEAkIApRBQIxcAwBAZgiAA=</HashCode>
-      <FileName>CPlayerIcon.cs</FileName>
-    </TypeIdentifier>
-  </Class>
-  <Class Name="OverwatchLootBoxTracker.CLang" Collapsed="true">
-    <Position X="0.5" Y="5" Width="1.5" />
-    <TypeIdentifier>
-      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAAAAQAA=</HashCode>
+      <HashCode>AAAAAACCQAACCIQEAIAAABAAgCBIAACBgYAAAAEAAAA=</HashCode>
       <FileName>CLang.cs</FileName>
     </TypeIdentifier>
   </Class>
