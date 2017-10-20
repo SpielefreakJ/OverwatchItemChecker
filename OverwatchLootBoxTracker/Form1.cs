@@ -80,6 +80,7 @@ namespace OverwatchLootBoxTracker
             btnHighlightIntros.Text = Lang.HighlightIntros;
             btnWeapons.Text = Lang.Weapons;
             btnPlayerIcons.Text = Lang.PlayerIcons;
+            btnMoreCost.Text = Lang.MoreCost;
 
             lblMoreInfoCost.Text = Lang.RemMoreInfo1;
             lblMoreInfoCost2.Text = Lang.RemMoreInfo2;
