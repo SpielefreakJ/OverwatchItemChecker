@@ -16,6 +16,33 @@ namespace OverwatchLootBoxTracker
         Lang.L_DE DE;
         Lang.L_EN EN;
 
+        //Skins
+        Languages.English.Heroes.EN_Ana EN_Ana;
+        Languages.English.Heroes.EN_Bastion EN_Bastion;
+        Languages.English.Heroes.EN_DVa EN_DVa;
+        Languages.English.Heroes.EN_Doomfist EN_Doomfist;
+        Languages.English.Heroes.EN_Genji EN_Genji;
+        Languages.English.Heroes.EN_Hanzo EN_Hanzo;
+        Languages.English.Heroes.EN_Junkrat EN_Junkrat;
+        Languages.English.Heroes.EN_Lúcio EN_Lúcio;
+        Languages.English.Heroes.EN_McCree EN_McCree;
+        Languages.English.Heroes.EN_Mei EN_Mei;
+        Languages.English.Heroes.EN_Mercy EN_Mercy;
+        Languages.English.Heroes.EN_Orisa EN_Orisa;
+        Languages.English.Heroes.EN_Pharah EN_Pharah;
+        Languages.English.Heroes.EN_Reaper EN_Reaper;
+        Languages.English.Heroes.EN_Reinhardt EN_Reinhardt;
+        Languages.English.Heroes.EN_Roadhog EN_Roadhog;
+        Languages.English.Heroes.EN_Soldier_76 EN_Soldier_76;
+        Languages.English.Heroes.EN_Sombra EN_Sombra;
+        Languages.English.Heroes.EN_Symmetra EN_Symmetra;
+        Languages.English.Heroes.EN_Torbjörn EN_Torbjörn;
+        Languages.English.Heroes.EN_Tracer EN_Tracer;
+        Languages.English.Heroes.EN_Widowmaker EN_Widowmaker;
+        Languages.English.Heroes.EN_Winston EN_Winston;
+        Languages.English.Heroes.EN_Zarya EN_Zarya;
+        Languages.English.Heroes.EN_Zenyatta EN_Zenjatta;
+
         public CLang(string Lang)
         {
             myLang = Lang;
@@ -299,17 +326,148 @@ namespace OverwatchLootBoxTracker
 
         //Skins
 
-        public string S1
+            // Ana
+        public string Citrine
         {
             get
             {
-                if (myLang == "DE")
+                //else
                 {
-                    return "";
+                    return EN_Ana.Citrine;
                 }
-                else
+            }
+        }
+
+        public string Garnet
+        {
+            get
+            {
+                //else
                 {
-                    return "";
+                    return EN_Ana.Garnet;
+                }
+            }
+        }
+
+        public string Peridot
+        {
+            get
+            {
+                //else
+                {
+                    return EN_Ana.Peridot;
+                }
+            }
+        }
+
+        public string Turquoise
+        {
+            get
+            {
+                //else
+                {
+                    return EN_Ana.Turquoise;
+                }
+            }
+        }
+
+        //Epic
+        public string Merciful
+        {
+            get
+            {
+                //else
+                {
+                    return EN_Ana.Merciful;
+                }
+            }
+        }
+
+        public string Shrike
+        {
+            get
+            {
+                //else
+                {
+                    return EN_Ana.Shrike;
+                }
+            }
+        }
+
+        public string Ghoul
+        {//Halloween 2016
+            get
+            {
+                //else
+                {
+                    return EN_Ana.Ghoul;
+                }
+            }
+        }
+
+        public string Tal
+        {//Rooster 2017
+            get
+            {
+                //else
+                {
+                    return EN_Ana.Tal;
+                }
+            }
+        }
+
+        //Legendary
+        public string Wadjet
+        {
+            get
+            {
+                //else
+                {
+                    return EN_Ana.Wadjet;
+                }
+            }
+        }
+
+        public string Wasteland
+        {
+            get
+            {
+                //else
+                {
+                    return EN_Ana.Wasteland;
+                }
+            }
+        }
+
+        public string Captain_Amari
+        {
+            get
+            {
+                //else
+                {
+                    return EN_Ana.Captain_Amari;
+                }
+            }
+        }
+
+        public string Horus
+        {
+            get
+            {
+                //else
+                {
+                    return EN_Ana.Horus;
+                }
+            }
+        }
+
+        public string Corsair
+        {//Halloween 2017
+            get
+            {
+                //else
+                {
+                    return EN_Ana.Corsair;
                 }
             }
         }

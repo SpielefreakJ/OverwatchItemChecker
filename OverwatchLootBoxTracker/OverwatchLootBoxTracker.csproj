@@ -56,8 +56,33 @@
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="IniStream.cs" />
-    <Compile Include="Languages\L_DE.cs" />
-    <Compile Include="Languages\L_EN.cs" />
+    <Compile Include="Languages\English\EN_Heroes\EN_Ana.cs" />
+    <Compile Include="Languages\English\EN_Heroes\EN_Bastion.cs" />
+    <Compile Include="Languages\English\EN_Heroes\EN_Doomfist.cs" />
+    <Compile Include="Languages\English\EN_Heroes\EN_DVa.cs" />
+    <Compile Include="Languages\English\EN_Heroes\EN_Genji.cs" />
+    <Compile Include="Languages\English\EN_Heroes\EN_Hanzo.cs" />
+    <Compile Include="Languages\English\EN_Heroes\EN_Junkrat.cs" />
+    <Compile Include="Languages\English\EN_Heroes\EN_Lúcio.cs" />
+    <Compile Include="Languages\English\EN_Heroes\EN_McCree.cs" />
+    <Compile Include="Languages\English\EN_Heroes\EN_Mei.cs" />
+    <Compile Include="Languages\English\EN_Heroes\EN_Mercy.cs" />
+    <Compile Include="Languages\English\EN_Heroes\EN_Orisa.cs" />
+    <Compile Include="Languages\English\EN_Heroes\EN_Pharah.cs" />
+    <Compile Include="Languages\English\EN_Heroes\EN_Reaper.cs" />
+    <Compile Include="Languages\English\EN_Heroes\EN_Reinhardt.cs" />
+    <Compile Include="Languages\English\EN_Heroes\EN_Roadhog.cs" />
+    <Compile Include="Languages\English\EN_Heroes\EN_Soldier_76.cs" />
+    <Compile Include="Languages\English\EN_Heroes\EN_Sombra.cs" />
+    <Compile Include="Languages\English\EN_Heroes\EN_Symmetra.cs" />
+    <Compile Include="Languages\English\EN_Heroes\EN_Torbjörn.cs" />
+    <Compile Include="Languages\English\EN_Heroes\EN_Tracer.cs" />
+    <Compile Include="Languages\English\EN_Heroes\EN_Widowmaker.cs" />
+    <Compile Include="Languages\English\EN_Heroes\EN_Winston.cs" />
+    <Compile Include="Languages\English\EN_Heroes\EN_Zarya.cs" />
+    <Compile Include="Languages\English\EN_Heroes\EN_Zenyatta.cs" />
+    <Compile Include="Languages\German\L_DE.cs" />
+    <Compile Include="Languages\English\L_EN.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
