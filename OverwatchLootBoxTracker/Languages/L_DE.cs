@@ -31,8 +31,24 @@ namespace OverwatchLootBoxTracker.Lang
             }
         }
 
+        public string MoreCost
+        {
+            get
+            {
+                return "Genauere Kostenangaben";
+            }
+        }
+
 
         //Beim Beenden
+
+        public string Close
+        {
+            get
+            {
+                return "Schließen";
+            }
+        }
 
         public string AppClose
         {
@@ -117,7 +133,7 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Kosten für restliche Items: ";
+                return "Kosten für restliche Items:";
             }
         }
 
@@ -125,15 +141,46 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return " Credits, mit Event-Items zusammen ";
+                return "Credits und";
             }
         }
 
-        public string remaining3
+        public string Credits
         {
             get
             {
-                return " Credits und ";
+                return "Credits";
+            }
+        }
+        //For "More Infos about remaining Costs"
+        public string remAll
+        {
+            get
+            {
+                return "Kosten für restliche Items (Eventunabhängig):";
+            }
+        }
+        public string remNonEvent
+        {
+            get
+            {
+                return "Kosten für restliche nicht-Event-Items:";
+            }
+        }
+
+        public string remEvent
+        {
+            get
+            {
+                return "Kosten für restliche Event Items:";
+            }
+        }
+
+        public string remWeapons
+        {
+            get
+            {
+                return "Kosten für restliche Waffen:";
             }
         }
     }

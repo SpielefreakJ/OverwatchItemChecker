@@ -80,12 +80,16 @@ namespace OverwatchLootBoxTracker
             btnHighlightIntros.Text = Lang.HighlightIntros;
             btnWeapons.Text = Lang.Weapons;
             btnPlayerIcons.Text = Lang.PlayerIcons;
+
+            lblMoreInfoCost.Text = Lang.RemMoreInfo1;
+            lblMoreInfoCost2.Text = Lang.RemMoreInfo2;
         }
 
         private void ChangePos()
         {
             gBLang.Location = new Point(684, 600);
             gbAll.Location = new Point(122, 29);
+            gBMoreCost.Location = new Point(16, 29);
         }
 
         /*
@@ -153,7 +157,7 @@ namespace OverwatchLootBoxTracker
 
             gbAll.Text = Lang.VictoryPoses;
         }
-        
+
         private void btnVoiceLines_Click(object sender, EventArgs e)
         {
             if (gbAll.Text == Lang.VoiceLines)
@@ -222,6 +226,21 @@ namespace OverwatchLootBoxTracker
             }
 
             gbAll.Text = Lang.PlayerIcons;
+        }
+
+        private void btnMoreCost_Click(object sender, EventArgs e)
+        {
+            if (btnMoreCost.Text == Lang.Close)
+            {
+                gBMoreCost.Visible = false;
+                btnMoreCost.Text = Lang.MoreCost;
+            }
+            else
+            {
+                gBMoreCost.Visible = true;
+                btnMoreCost.Text = Lang.Close;
+                gBLang.Visible = false;
+            }
         }
     }
 }

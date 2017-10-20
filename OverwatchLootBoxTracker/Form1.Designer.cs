@@ -42,7 +42,12 @@
             this.btnWeapons = new System.Windows.Forms.Button();
             this.btnPlayerIcons = new System.Windows.Forms.Button();
             this.gbAll = new System.Windows.Forms.GroupBox();
+            this.btnMoreCost = new System.Windows.Forms.Button();
+            this.gBMoreCost = new System.Windows.Forms.GroupBox();
+            this.lblMoreInfoCost = new System.Windows.Forms.Label();
+            this.lblMoreInfoCost2 = new System.Windows.Forms.Label();
             this.gBLang.SuspendLayout();
+            this.gBMoreCost.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblKosten
@@ -88,7 +93,7 @@
             // 
             // btnSettings
             // 
-            this.btnSettings.Location = new System.Drawing.Point(12, 677);
+            this.btnSettings.Location = new System.Drawing.Point(32, 677);
             this.btnSettings.Name = "btnSettings";
             this.btnSettings.Size = new System.Drawing.Size(84, 23);
             this.btnSettings.TabIndex = 2;
@@ -186,12 +191,56 @@
             this.gbAll.Text = "Skins";
             this.gbAll.Visible = false;
             // 
+            // btnMoreCost
+            // 
+            this.btnMoreCost.Location = new System.Drawing.Point(711, 8);
+            this.btnMoreCost.Name = "btnMoreCost";
+            this.btnMoreCost.Size = new System.Drawing.Size(167, 23);
+            this.btnMoreCost.TabIndex = 13;
+            this.btnMoreCost.Text = "Genauere Kostenangaben";
+            this.btnMoreCost.UseVisualStyleBackColor = true;
+            this.btnMoreCost.Click += new System.EventHandler(this.btnMoreCost_Click);
+            // 
+            // gBMoreCost
+            // 
+            this.gBMoreCost.Controls.Add(this.lblMoreInfoCost2);
+            this.gBMoreCost.Controls.Add(this.lblMoreInfoCost);
+            this.gBMoreCost.Location = new System.Drawing.Point(16, 29);
+            this.gBMoreCost.Name = "gBMoreCost";
+            this.gBMoreCost.Size = new System.Drawing.Size(868, 671);
+            this.gBMoreCost.TabIndex = 0;
+            this.gBMoreCost.TabStop = false;
+            this.gBMoreCost.Text = "Genauere Kostenangaben";
+            this.gBMoreCost.Visible = false;
+            // 
+            // lblMoreInfoCost
+            // 
+            this.lblMoreInfoCost.AutoSize = true;
+            this.lblMoreInfoCost.Location = new System.Drawing.Point(112, 62);
+            this.lblMoreInfoCost.Name = "lblMoreInfoCost";
+            this.lblMoreInfoCost.Size = new System.Drawing.Size(35, 13);
+            this.lblMoreInfoCost.TabIndex = 0;
+            this.lblMoreInfoCost.Text = "label1";
+            // 
+            // lblMoreInfoCost2
+            // 
+            this.lblMoreInfoCost2.AutoSize = true;
+            this.lblMoreInfoCost2.Location = new System.Drawing.Point(658, 62);
+            this.lblMoreInfoCost2.Name = "lblMoreInfoCost2";
+            this.lblMoreInfoCost2.Size = new System.Drawing.Size(35, 13);
+            this.lblMoreInfoCost2.TabIndex = 1;
+            this.lblMoreInfoCost2.Text = "label1";
+            this.lblMoreInfoCost2.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
             this.ClientSize = new System.Drawing.Size(896, 712);
+            this.Controls.Add(this.gBMoreCost);
+            this.Controls.Add(this.btnSettings);
+            this.Controls.Add(this.btnMoreCost);
             this.Controls.Add(this.gBLang);
             this.Controls.Add(this.gbAll);
             this.Controls.Add(this.btnPlayerIcons);
@@ -202,7 +251,6 @@
             this.Controls.Add(this.btnVictoryPoses);
             this.Controls.Add(this.btnEmotes);
             this.Controls.Add(this.btnSkins);
-            this.Controls.Add(this.btnSettings);
             this.Controls.Add(this.lblKosten);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
@@ -211,6 +259,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.gBLang.ResumeLayout(false);
+            this.gBMoreCost.ResumeLayout(false);
+            this.gBMoreCost.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -232,6 +282,10 @@
         private System.Windows.Forms.Button btnPlayerIcons;
         private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.GroupBox gbAll;
+        private System.Windows.Forms.Button btnMoreCost;
+        private System.Windows.Forms.GroupBox gBMoreCost;
+        private System.Windows.Forms.Label lblMoreInfoCost;
+        private System.Windows.Forms.Label lblMoreInfoCost2;
     }
 }
 
