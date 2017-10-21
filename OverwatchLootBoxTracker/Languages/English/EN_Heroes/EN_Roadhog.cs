@@ -14,7 +14,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         //Skin
 
         //Rare
-        public string Kiwi
+        public string Kiwi_SK
         {
             get
             {
@@ -22,7 +22,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Mud
+        public string Mud_SK
         {
             get
             {
@@ -30,7 +30,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Sand
+        public string Sand_SK
         {
             get
             {
@@ -38,7 +38,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Thistle
+        public string Thistle_SK
         {
             get
             {
@@ -46,7 +46,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
         //Epic
-        public string Pigpen
+        public string Pigpen_SK
         {
             get
             {
@@ -54,7 +54,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Stitched
+        public string Stitched_SK
         {
             get
             {
@@ -62,7 +62,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Rudolph
+        public string Rudolph_SK
         {//Winter 2016
             get
             {
@@ -70,7 +70,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
         //Legendary
-        public string Islander
+        public string Islander_SK
         {
             get
             {
@@ -78,7 +78,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Toa
+        public string Toa_SK
         {
             get
             {
@@ -86,7 +86,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Mako
+        public string Mako_SK
         {
             get
             {
@@ -94,7 +94,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Sharkbait
+        public string Sharkbait_SK
         {
             get
             {
@@ -102,7 +102,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Junkensteins_Monster
+        public string Junkensteins_Monster_SK
         {//Halloween 2016
             get
             {
@@ -110,7 +110,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Bajie
+        public string Bajie_SK
         {//Rooster 2017
             get
             {

@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OverwatchLootBoxTracker
+namespace OverwatchLootBoxTracker.Translate
 {
-    class CLang
+    class L_Translate
     {
         string myLang;
         string Changes;
@@ -17,7 +17,7 @@ namespace OverwatchLootBoxTracker
         Lang.L_DE DE;
         Lang.L_EN EN;
 
-        public CLang(string Lang)
+        public L_Translate(string Lang)
         {
             myLang = Lang;
             Cost = new CCost();

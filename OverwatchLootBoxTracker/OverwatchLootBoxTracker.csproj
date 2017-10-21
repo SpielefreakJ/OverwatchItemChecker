@@ -47,7 +47,21 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CGoldweapon.cs" />
-    <Compile Include="CLang.cs" />
+    <Compile Include="Translate\Heroes\L_Lúcio.cs" />
+    <Compile Include="Translate\Heroes\L_McCree.cs" />
+    <Compile Include="Translate\Heroes\L_Mei.cs" />
+    <Compile Include="Translate\Heroes\L_Mercy.cs" />
+    <Compile Include="Translate\Heroes\L_Orisa.cs" />
+    <Compile Include="Translate\Heroes\L_Pharah.cs" />
+    <Compile Include="Translate\Heroes\L_Reaper.cs" />
+    <Compile Include="Translate\Heroes\L_Reinhardt.cs" />
+    <Compile Include="Translate\Heroes\L_Roadhog.cs" />
+    <Compile Include="Translate\Heroes\L_Soldier_76.cs" />
+    <Compile Include="Translate\Heroes\L_Sombra.cs" />
+    <Compile Include="Translate\Heroes\L_Symmetra.cs" />
+    <Compile Include="Translate\Heroes\L_Torbjörn.cs" />
+    <Compile Include="Translate\Heroes\L_Tracer.cs" />
+    <Compile Include="Translate\L_Translate.cs" />
     <Compile Include="CCost.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -55,8 +69,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Heroetranslate\L_DVa.cs" />
-    <Compile Include="Heroetranslate\L_Bastion.cs" />
+    <Compile Include="Translate\Heroes\L_DVa.cs" />
+    <Compile Include="Translate\Heroes\L_Bastion.cs" />
     <Compile Include="IniStream.cs" />
     <Compile Include="Languages\English\EN_Heroes\EN_Ana.cs" />
     <Compile Include="Languages\English\EN_Heroes\EN_Bastion.cs" />
@@ -85,13 +99,17 @@
     <Compile Include="Languages\English\EN_Heroes\EN_Zenyatta.cs" />
     <Compile Include="Languages\German\L_DE.cs" />
     <Compile Include="Languages\English\L_EN.cs" />
-    <Compile Include="Heroetranslate\L_Ana.cs" />
-    <Compile Include="Heroetranslate\L_Doomfist.cs" />
-    <Compile Include="Heroetranslate\L_Genji.cs" />
-    <Compile Include="Heroetranslate\L_Hanzo.cs" />
-    <Compile Include="Heroetranslate\L_Junkrat.cs" />
+    <Compile Include="Translate\Heroes\L_Ana.cs" />
+    <Compile Include="Translate\Heroes\L_Doomfist.cs" />
+    <Compile Include="Translate\Heroes\L_Genji.cs" />
+    <Compile Include="Translate\Heroes\L_Hanzo.cs" />
+    <Compile Include="Translate\Heroes\L_Junkrat.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Translate\Heroes\L_Widowmaker.cs" />
+    <Compile Include="Translate\Heroes\L_Winston.cs" />
+    <Compile Include="Translate\Heroes\L_Zarya.cs" />
+    <Compile Include="Translate\Heroes\L_Zenyatta.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

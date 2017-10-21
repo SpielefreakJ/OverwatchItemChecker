@@ -12,9 +12,8 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 
 
         //Skin
-
         //Rare
-        public string Cidro
+        public string Cidro_SK
         {
             get
             {
@@ -22,7 +21,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Incendio
+        public string Incendio_SK
         {
             get
             {
@@ -30,7 +29,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Mar
+        public string Mar_SK
         {
             get
             {
@@ -38,7 +37,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Noche
+        public string Noche_SK
         {
             get
             {
@@ -46,7 +45,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
         //Epic
-        public string Glitch
+        public string Glitch_SK
         {
             get
             {
@@ -54,7 +53,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Virus
+        public string Virus_SK
         {
             get
             {
@@ -62,7 +61,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Peppermint
+        public string Peppermint_SK
         {//Winter 2016
             get
             {
@@ -70,8 +69,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
         //Legendary
-
-        public string Azúcar
+        public string Azúcar_SK
         {
             get
             {
@@ -79,7 +77,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Los_Muertos
+        public string Los_Muertos_SK
         {
             get
             {
@@ -87,7 +85,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Augmented
+        public string Augmented_SK
         {
             get
             {
@@ -95,7 +93,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Cyberspace
+        public string Cyberspace_SK
         {
             get
             {
@@ -103,7 +101,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Tulum
+        public string Tulum_SK
         {//Summer 2017
             get
             {

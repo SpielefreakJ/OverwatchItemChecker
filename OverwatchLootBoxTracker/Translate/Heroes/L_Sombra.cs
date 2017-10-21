@@ -4,152 +4,163 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OverwatchLootBoxTracker
+namespace OverwatchLootBoxTracker.Translate
 {
-    class L_Hanzo
+    class L_Sombra
     {
-        Languages.English.Heroes.EN_Hanzo EN;
+        Languages.English.Heroes.EN_Sombra EN;
         string myLang;
 
-        L_Hanzo(string Lang)
+        public L_Sombra(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Hanzo();
+            EN = new Languages.English.Heroes.EN_Sombra();
+        }
+
+        public string ChangeLang
+        {
+            get
+            {
+                return myLang;
+            }
+            set
+            {
+                myLang = value;
+            }
         }
 
 
         //Skin
-
         //Rare
-        public string H1_Azuki_SK
+        public string S2_Cidro_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Azuki_SK;
+                    return EN.Cidro_SK;
                 }
             }
         }
 
-        public string H1_Kinoko_SK
+        public string S2_Incendio_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Kinoko_SK;
+                    return EN.Incendio_SK;
                 }
             }
         }
 
-        public string H1_Midori_SK
+        public string S2_Mar_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Midori_SK;
+                    return EN.Mar_SK;
                 }
             }
         }
 
-        public string H1_Sora_SK
+        public string S2_Noche_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Sora_SK;
+                    return EN.Noche_SK;
                 }
             }
         }
         //Epic
-        public string H1_Cloud_SK
+        public string S2_Glitch_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Cloud_SK;
+                    return EN.Glitch_SK;
                 }
             }
         }
 
-        public string H1_Dragon_SK
+        public string S2_Virus_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Dragon_SK;
+                    return EN.Virus_SK;
                 }
             }
         }
 
-        public string H1_Demon_SK
-        {//Halloween 2016
+        public string S2_Peppermint_SK
+        {//Winter 2016
             get
             {
                 //else
                 {
-                    return EN.Demon_SK;
+                    return EN.Peppermint_SK;
                 }
             }
         }
         //Legendary
-        public string H1_Young_Hanzo_SK
+        public string S2_Azúcar_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Young_Hanzo_SK;
+                    return EN.Azúcar_SK;
                 }
             }
         }
 
-        public string H1_Young_Master_SK
+        public string S2_Los_Muertos_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Young_Master_SK;
+                    return EN.Los_Muertos_SK;
                 }
             }
         }
 
-        public string H1_Lone_Wolf_SK
+        public string S2_Augmented_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Lone_Wolf_SK;
+                    return EN.Augmented_SK;
                 }
             }
         }
 
-        public string H1_Okami_SK
+        public string S2_Cyberspace_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Okami_SK;
+                    return EN.Cyberspace_SK;
                 }
             }
         }
 
-        public string H1_Cyberninja_SK
-        {//Annyver 2017
+        public string S2_Tulum_SK
+        {//Summer 2017
             get
             {
                 //else
                 {
-                    return EN.Cyberninja_SK;
+                    return EN.Tulum_SK;
                 }
             }
         }

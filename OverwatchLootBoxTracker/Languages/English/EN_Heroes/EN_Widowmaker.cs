@@ -14,7 +14,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         //Skin
 
         //Rare
-        public string Ciel
+        public string Ciel_SK
         {
             get
             {
@@ -22,7 +22,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Nuit
+        public string Nuit_SK
         {
             get
             {
@@ -30,7 +30,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Rose
+        public string Rose_SK
         {
             get
             {
@@ -38,7 +38,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Vert
+        public string Vert_SK
         {
             get
             {
@@ -46,7 +46,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
         //Epic
-        public string Patina
+        public string Patina_SK
         {
             get
             {
@@ -54,7 +54,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Winter
+        public string Winter_SK
         {
             get
             {
@@ -62,7 +62,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Tricolore
+        public string Tricolore_SK
         {//Summer 2016
             get
             {
@@ -70,7 +70,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
         //Legendary
-        public string Odette
+        public string Odette_SK
         {
             get
             {
@@ -78,7 +78,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Odile
+        public string Odile_SK
         {
             get
             {
@@ -86,7 +86,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Comtesse
+        public string Comtesse_SK
         {
             get
             {
@@ -94,7 +94,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Huntress
+        public string Huntress_SK
         {
             get
             {
@@ -102,7 +102,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Noire
+        public string Noire_SK
         {//Prepurchase Special
             get
             {
@@ -110,7 +110,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Côte_DAzur
+        public string Côte_DAzur_SK
         {//Summer 2017
             get
             {
@@ -118,7 +118,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Talon
+        public string Talon_SK
         {//Uprising 2017
             get
             {

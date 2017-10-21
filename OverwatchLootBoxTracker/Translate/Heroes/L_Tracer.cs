@@ -4,18 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OverwatchLootBoxTracker
+namespace OverwatchLootBoxTracker.Translate
 {
-    class L_DVa
+    class L_Tracer
     {
-        Languages.English.Heroes.EN_DVa EN;
+        Languages.English.Heroes.EN_Tracer EN;
         string myLang;
 
-        L_DVa(string Lang)
+        public L_Tracer(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_DVa();
+            EN = new Languages.English.Heroes.EN_Tracer();
         }
 
         public string ChangeLang
@@ -34,156 +34,189 @@ namespace OverwatchLootBoxTracker
         //Skin
 
         //Rare
-        public string D1_Blueberry_SK
+        public string Electric_Purple_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Blueberry_SK;
+                    return EN.Electric_Purple_SK;
                 }
             }
         }
 
-        public string D1_Lemon_Lime_SK
+        public string Hot_Pink_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Lemon_Lime_SK;
+                    return EN.Hot_Pink_SK;
                 }
             }
         }
 
-        public string D1_Tangerine_SK
+        public string Neon_Green_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Tangerine_SK;
+                    return EN.Neon_Green_SK;
                 }
             }
         }
 
-        public string D1_Watermelon_SK
+        public string Royal_Blue_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Watermelon_SK;
+                    return EN.Royal_Blue_SK;
                 }
             }
         }
         //Epic
-        public string D1_Carbon_Fiber_SK
+        public string Posh_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Carbon_Fiber_SK;
+                    return EN.Posh_SK;
                 }
             }
         }
 
-        public string D1_White_Rabbit_SK
+        public string Sporty_SK
         {
             get
             {
                 //else
                 {
-                    return EN.White_Rabbit_SK;
+                    return EN.Sporty_SK;
                 }
             }
         }
 
-        public string D1_Taegeukgi_SK
-        {//Summer 2016
-            get
-            {
-                //else
-                {
-                    return EN.Taegeukgi_SK;
-                }
-            }
-        }
-        //Legendary
-        public string D1_Junker_SK
-        {
-            get
-            {
-                //else
-                {
-                    return EN.Junker_SK;
-                }
-            }
-        }
-
-        public string D1_Scavenger_SK
-        {
-            get
-            {
-                //else
-                {
-                    return EN.Scavenger_SK;
-                }
-            }
-        }
-
-        public string D1_BVa_SK
-        {
-            get
-            {
-                //else
-                {
-                    return EN.BVa_SK;
-                }
-            }
-        }
-
-        public string D1_Junebug_SK
-        {
-            get
-            {
-                //else
-                {
-                    return EN.Junebug_SK;
-                }
-            }
-        }
-
-        public string D1_Officer_SK
-        {
-            get
-            {
-                //else
-                {
-                    return EN.Officer_SK;
-                }
-            }
-        }
-
-        public string D1_Palanquin_SK
+        public string Rose_SK
         {//Rooster 2017
             get
             {
                 //else
                 {
-                    return EN.Palanquin_SK;
+                    return EN.Rose_SK;
+                }
+            }
+        }
+        //Legendary
+        public string Punk_SK
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Punk_SK;
                 }
             }
         }
 
-        public string D1_Cruiser_SK
+        public string Ultraviolet_SK
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Ultraviolet_SK;
+                }
+            }
+        }
+
+        public string Mach_T_SK
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Mach_T_SK;
+                }
+            }
+        }
+
+        public string T_Racer_SK
+        {
+            get
+            {
+                //else
+                {
+                    return EN.T_Racer_SK;
+                }
+            }
+        }
+
+        public string Slipstream_SK
+        {//Origin Special
+            get
+            {
+                //else
+                {
+                    return EN.Slipstream_SK;
+                }
+            }
+        }
+
+        public string Sprinter_SK
+        {//Summer 2016
+            get
+            {
+                //else
+                {
+                    return EN.Sprinter_SK;
+                }
+            }
+        }
+
+        public string Track_and_Field_SK
+        {//summer 2016
+            get
+            {
+                //else
+                {
+                    return EN.Track_and_Field_SK;
+                }
+            }
+        }
+
+        public string Jingle_SK
+        {//Winter 2016
+            get
+            {
+                //else
+                {
+                    return EN.Jingle_SK;
+                }
+            }
+        }
+
+        public string Cadet_Oxton_SK
+        {//Uprising 2017
+            get
+            {
+                //else
+                {
+                    return EN.Cadet_Oxton_SK;
+                }
+            }
+        }
+
+        public string Graffiti_SK
         {//Annyver 2017
             get
             {
                 //else
                 {
-                    return EN.Cruiser_SK;
+                    return EN.Graffiti_SK;
                 }
             }
         }

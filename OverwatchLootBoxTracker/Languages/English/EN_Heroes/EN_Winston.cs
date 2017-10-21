@@ -14,7 +14,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         //Skin
 
         //Rare
-        public string Atmosphere
+        public string Atmosphere_SK
         {
             get
             {
@@ -22,7 +22,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Banana
+        public string Banana_SK
         {
             get
             {
@@ -30,7 +30,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Forest
+        public string Forest_SK
         {
             get
             {
@@ -38,7 +38,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Red_Planet
+        public string Red_Planet_SK
         {
             get
             {
@@ -46,7 +46,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
         //Epic
-        public string Desert
+        public string Desert_SK
         {
             get
             {
@@ -54,7 +54,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Horizon
+        public string Horizon_SK
         {
             get
             {
@@ -62,7 +62,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Blizzcon_2017
+        public string Blizzcon_2017_SK
         {//BlizzCon 2017 Special
             get
             {
@@ -70,7 +70,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
         //Legendary
-        public string Frogston
+        public string Frogston_SK
         {
             get
             {
@@ -78,7 +78,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Undersea
+        public string Undersea_SK
         {
             get
             {
@@ -86,7 +86,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Explorer
+        public string Explorer_SK
         {
             get
             {
@@ -94,7 +94,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Safari
+        public string Safari_SK
         {
             get
             {
@@ -102,7 +102,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Yeti
+        public string Yeti_SK
         {//Winter 2016
             get
             {
@@ -110,7 +110,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Wukong
+        public string Wukong_SK
         {//Rooster 2017
             get
             {

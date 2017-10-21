@@ -14,7 +14,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         //Skin
 
         //Rare
-        public string Amethyst
+        public string Amethyst_SK
         {
             get
             {
@@ -22,7 +22,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Copper
+        public string Copper_SK
         {
             get
             {
@@ -30,7 +30,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Emerald
+        public string Emerald_SK
         {
             get
             {
@@ -38,7 +38,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Titanium
+        public string Titanium_SK
         {
             get
             {
@@ -46,7 +46,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
         //Epic
-        public string Anubis
+        public string Anubis_SK
         {
             get
             {
@@ -54,7 +54,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Jackal
+        public string Jackal_SK
         {
             get
             {
@@ -62,7 +62,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Possessed
+        public string Possessed_SK
         {//Halloween 2016
             get
             {
@@ -70,7 +70,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Frostbite
+        public string Frostbite_SK
         {//Winter 2016
             get
             {
@@ -78,7 +78,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
         //Legendary
-        public string Mechaqueen
+        public string Mechaqueen_SK
         {
             get
             {
@@ -86,7 +86,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Raptorion
+        public string Raptorion_SK
         {
             get
             {
@@ -94,7 +94,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Raindancer
+        public string Raindancer_SK
         {
             get
             {
@@ -102,7 +102,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Thunderbird
+        public string Thunderbird_SK
         {
             get
             {
@@ -110,7 +110,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Security_Chief
+        public string Security_Chief_SK
         {//Origin Special
             get
             {
@@ -118,7 +118,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Bedouin
+        public string Bedouin_SK
         {//Annyver 2017
             get
             {

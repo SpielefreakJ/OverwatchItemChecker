@@ -14,7 +14,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         //Skin
 
         //Rare
-        public string Celestial
+        public string Celestial_SK
         {
             get
             {
@@ -22,7 +22,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Mist
+        public string Mist_SK
         {
             get
             {
@@ -30,7 +30,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Orchid
+        public string Orchid_SK
         {
             get
             {
@@ -38,7 +38,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Verdant
+        public string Verdant_SK
         {
             get
             {
@@ -46,7 +46,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
         //Epic
-        public string Amber
+        public string Amber_SK
         {
             get
             {
@@ -54,7 +54,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Cobalt
+        public string Cobalt_SK
         {
             get
             {
@@ -62,7 +62,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Eidgenossin
+        public string Eidgenossin_SK
         {//Summer 2016
             get
             {
@@ -70,7 +70,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Fortune
+        public string Fortune_SK
         {//Rooster 2017
             get
             {
@@ -78,7 +78,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
         //Legendary
-        public string Sigrun
+        public string Sigrun_SK
         {
             get
             {
@@ -86,7 +86,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Valkyrie
+        public string Valkyrie_SK
         {
             get
             {
@@ -94,7 +94,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Devil
+        public string Devil_SK
         {
             get
             {
@@ -102,7 +102,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string IMP
+        public string IMP_SK
         {
             get
             {
@@ -110,7 +110,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Winged_Victory
+        public string Winged_Victory_SK
         {//Halloween 2017
             get
             {
@@ -118,7 +118,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Witch
+        public string Witch_SK
         {//Halloween 2016
             get
             {
@@ -126,7 +126,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Combat_Medic_Ziegler
+        public string Combat_Medic_Ziegler_SK
         {//Uprising 2017
             get
             {

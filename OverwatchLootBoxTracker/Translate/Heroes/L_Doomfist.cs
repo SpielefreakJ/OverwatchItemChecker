@@ -4,25 +4,37 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OverwatchLootBoxTracker
+namespace OverwatchLootBoxTracker.Translate
 {
     class L_Doomfist
     {
         Languages.English.Heroes.EN_Doomfist EN;
         string myLang;
 
-        L_Doomfist(string Lang)
+        public L_Doomfist(string Lang)
         {
             myLang = Lang;
 
             EN = new Languages.English.Heroes.EN_Doomfist();
         }
 
+        public string ChangeLang
+        {
+            get
+            {
+                return myLang;
+            }
+            set
+            {
+                myLang = value;
+            }
+        }
+
 
         //Skin
 
         //Rare
-        public string D2_Daisy_SK
+        public string Daisy_SK
         {
             get
             {
@@ -33,7 +45,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string D2_Lake_SK
+        public string Lake_SK
         {
             get
             {
@@ -44,7 +56,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string D2_Plains_SK
+        public string Plains_SK
         {
             get
             {
@@ -55,7 +67,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string D2_Sunset_SK
+        public string Sunset_SK
         {
             get
             {
@@ -66,7 +78,7 @@ namespace OverwatchLootBoxTracker
             }
         }
         //Epic
-        public string D2_Leopard_SK
+        public string Leopard_SK
         {
             get
             {
@@ -77,7 +89,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string D2_Painted_SK
+        public string Painted_SK
         {
             get
             {
@@ -88,7 +100,7 @@ namespace OverwatchLootBoxTracker
             }
         }
         //Legendary
-        public string D2_Caution_SK
+        public string Caution_SK
         {
             get
             {
@@ -99,7 +111,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string D2_Irin_SK
+        public string Irin_SK
         {
             get
             {
@@ -110,7 +122,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string D2_Avatar_SK
+        public string Avatar_SK
         {
             get
             {
@@ -121,7 +133,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string D2_Spirit_SK
+        public string Spirit_SK
         {
             get
             {

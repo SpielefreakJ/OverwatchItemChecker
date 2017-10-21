@@ -4,14 +4,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OverwatchLootBoxTracker
+namespace OverwatchLootBoxTracker.Translate
 {
     class L_Ana
     {
         Languages.English.Heroes.EN_Ana EN;
         string myLang;
 
-        L_Ana(string Lang)
+        public L_Ana(string Lang)
         {
             myLang = Lang;
 
@@ -33,7 +33,7 @@ namespace OverwatchLootBoxTracker
 
         //Skins
         //Rare
-        public string A1_Citrine
+        public string Citrine_SK
         {
             get
             {
@@ -44,7 +44,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Garnet
+        public string Garnet_SK
         {
             get
             {
@@ -55,7 +55,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Peridot
+        public string Peridot_SK
         {
             get
             {
@@ -66,7 +66,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Turquoise
+        public string Turquoise_SK
         {
             get
             {
@@ -78,7 +78,7 @@ namespace OverwatchLootBoxTracker
         }
 
         //Epic
-        public string A1_Merciful
+        public string Merciful_SK
         {
             get
             {
@@ -89,7 +89,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Shrike
+        public string Shrike_SK
         {
             get
             {
@@ -100,7 +100,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Ghoul
+        public string Ghoul_SK
         {//Halloween 2016
             get
             {
@@ -111,7 +111,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Tal
+        public string Tal_SK
         {//Rooster 2017
             get
             {
@@ -123,7 +123,7 @@ namespace OverwatchLootBoxTracker
         }
 
         //Legendary
-        public string A1_Wadjet
+        public string Wadjet_SK
         {
             get
             {
@@ -134,7 +134,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Wasteland
+        public string Wasteland_SK
         {
             get
             {
@@ -145,7 +145,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Captain_Amari
+        public string Captain_Amari_SK
         {
             get
             {
@@ -156,7 +156,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Horus
+        public string Horus_SK
         {
             get
             {
@@ -167,7 +167,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Corsair
+        public string Corsair_SK
         {//Halloween 2017
             get
             {
@@ -181,7 +181,7 @@ namespace OverwatchLootBoxTracker
 
         //Victory Poses
         //Rare
-        public string A1_Mission_Complete_VP
+        public string Mission_Complete_VP
         {
             get
             {
@@ -192,7 +192,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Protector_VP
+        public string Protector_VP
         {
             get
             {
@@ -203,7 +203,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Seated_VP
+        public string Seated_VP
         {
             get
             {
@@ -214,7 +214,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_RIP_VP
+        public string RIP_VP
         {//Halloween 2016
             get
             {
@@ -225,7 +225,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Toast_VP
+        public string Toast_VP
         {//Winter 2016
             get
             {
@@ -236,7 +236,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Folded_Hands_VP
+        public string Folded_Hands_VP
         {//Rooster 2017
             get
             {
@@ -250,7 +250,7 @@ namespace OverwatchLootBoxTracker
 
         //Voice Lines
         //Common
-        public string A1_Justice_Delivered_VL
+        public string Justice_Delivered_VL
         {
             get
             {
@@ -262,7 +262,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Children_behave_VL
+        public string Children_behave_VL
         {
             get
             {
@@ -273,7 +273,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Everyone_dies_VL
+        public string Everyone_dies_VL
         {
             get
             {
@@ -284,7 +284,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_It_takes_a_woman_to_know_VL
+        public string It_takes_a_woman_to_know_VL
         {
             get
             {
@@ -295,7 +295,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Justice_rains_from_above_VL
+        public string Justice_rains_from_above_VL
         {
             get
             {
@@ -306,7 +306,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Mother_knows_best_VL
+        public string Mother_knows_best_VL
         {
             get
             {
@@ -317,7 +317,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_No_scope_needed_VL
+        public string No_scope_needed_VL
         {
             get
             {
@@ -328,7 +328,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_What_are_you_thinking_VL
+        public string What_are_you_thinking_VL
         {
             get
             {
@@ -339,7 +339,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Witness_me_VL
+        public string Witness_me_VL
         {
             get
             {
@@ -350,7 +350,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_You_know_nothing_VL
+        public string You_know_nothing_VL
         {
             get
             {
@@ -361,7 +361,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Someone_to_tuck_you_in_VL
+        public string Someone_to_tuck_you_in_VL
         {
             get
             {
@@ -372,7 +372,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Learn_from_the_pain_VL
+        public string Learn_from_the_pain_VL
         {//Summer 2016
             get
             {
@@ -383,7 +383,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Are_you_scared_VL
+        public string Are_you_scared_VL
         {//Halloween 2016
             get
             {
@@ -394,7 +394,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Dont_be_scared_VL
+        public string Dont_be_scared_VL
         {//Halloween 2017
             get
             {
@@ -405,7 +405,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Im_watching_out_for_you_VL
+        public string Im_watching_out_for_you_VL
         {//Winter 2016
             get
             {
@@ -416,7 +416,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_The_Moon_in_Winter_VL
+        public string The_Moon_in_Winter_VL
         {//Rooster 2017
             get
             {
@@ -427,7 +427,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Damn_VL
+        public string Damn_VL
         {//Uprising 2017
             get
             {
@@ -438,7 +438,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_The_Ghost_watches_VL
+        public string The_Ghost_watches_VL
         {//Uprising 2017
             get
             {
@@ -449,7 +449,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Follow_me
+        public string Follow_me
         {//Annyver 2017
             get
             {
@@ -460,7 +460,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_The_adults_are_talking_VL
+        public string The_adults_are_talking_VL
         {//Annyver 2017
             get
             {
@@ -474,7 +474,7 @@ namespace OverwatchLootBoxTracker
 
         //Sprays
         //Common
-        public string A1_Action_SP
+        public string Action_SP
         {
             get
             {
@@ -485,7 +485,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Ana_SP
+        public string Ana_SP
         {
             get
             {
@@ -496,7 +496,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Bearer_SP
+        public string Bearer_SP
         {
             get
             {
@@ -507,7 +507,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Cheer_SP
+        public string Cheer_SP
         {
             get
             {
@@ -518,7 +518,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Cracked_SP
+        public string Cracked_SP
         {
             get
             {
@@ -529,7 +529,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Cute_SP
+        public string Cute_SP
         {
             get
             {
@@ -540,7 +540,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Eyepatch_SP
+        public string Eyepatch_SP
         {
             get
             {
@@ -551,7 +551,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Fareeha_SP
+        public string Fareeha_SP
         {
             get
             {
@@ -562,7 +562,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Gaze_SP
+        public string Gaze_SP
         {
             get
             {
@@ -573,7 +573,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Grenade_SP
+        public string Grenade_SP
         {
             get
             {
@@ -584,7 +584,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Guardian_SP
+        public string Guardian_SP
         {
             get
             {
@@ -595,7 +595,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Hesitation_SP
+        public string Hesitation_SP
         {
             get
             {
@@ -606,7 +606,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Icon_SP
+        public string Icon_SP
         {
             get
             {
@@ -617,7 +617,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Letter_SP
+        public string Letter_SP
         {
             get
             {
@@ -628,7 +628,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Old_Soldier_SP
+        public string Old_Soldier_SP
         {
             get
             {
@@ -639,7 +639,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Overhead_SP
+        public string Overhead_SP
         {
             get
             {
@@ -650,7 +650,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Photograph_SP
+        public string Photograph_SP
         {
             get
             {
@@ -661,7 +661,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Pixel_SP
+        public string Pixel_SP
         {
             get
             {
@@ -672,7 +672,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Rifle_SP
+        public string Rifle_SP
         {
             get
             {
@@ -683,7 +683,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Shadow_SP
+        public string Shadow_SP
         {
             get
             {
@@ -694,7 +694,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Shhh_SP
+        public string Shhh_SP
         {
             get
             {
@@ -705,7 +705,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Sidearm_SP
+        public string Sidearm_SP
         {
             get
             {
@@ -716,7 +716,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Wedjat_SP
+        public string Wedjat_SP
         {
             get
             {
@@ -727,7 +727,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Wrist_Launcher_SP
+        public string Wrist_Launcher_SP
         {
             get
             {
@@ -738,7 +738,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Zzz_SP
+        public string Zzz_SP
         {
             get
             {
@@ -749,7 +749,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Shooting_SP
+        public string Shooting_SP
         {//Summer 2016
             get
             {
@@ -760,7 +760,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Trick_or_Treat_SP
+        public string Trick_or_Treat_SP
         {//Halloween 2016
             get
             {
@@ -771,7 +771,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Ornament_SP
+        public string Ornament_SP
         {//Winter 2016
             get
             {
@@ -782,7 +782,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Warm_SP
+        public string Warm_SP
         {//Winter 2016
             get
             {
@@ -793,7 +793,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Dance_SP
+        public string Dance_SP
         {//Rooster 2017
             get
             {
@@ -804,7 +804,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Dragon_Dance_SP
+        public string Dragon_Dance_SP
         {//Rooster 2017
             get
             {
@@ -815,7 +815,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Newborn_SP
+        public string Newborn_SP
         {//Uprising 2017
             get
             {
@@ -826,7 +826,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Ace_of_Hearts_SP
+        public string Ace_of_Hearts_SP
         {//Annyver 2017
             get
             {
@@ -840,7 +840,7 @@ namespace OverwatchLootBoxTracker
 
         //Highlight Intros
         //Epic
-        public string A1_Guardian_HI
+        public string Guardian_HI
         {
             get
             {
@@ -851,7 +851,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Locked_on_HI
+        public string Locked_on_HI
         {
             get
             {
@@ -862,7 +862,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Shh_HI
+        public string Shh_HI
         {
             get
             {
@@ -876,7 +876,7 @@ namespace OverwatchLootBoxTracker
 
         //Player Icons
         //Rare
-        public string A1_Ana_PI
+        public string Ana_PI
         {
             get
             {
@@ -887,7 +887,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Watcher_PI
+        public string Watcher_PI
         {
             get
             {
@@ -898,7 +898,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Wedjat_PI
+        public string Wedjat_PI
         {
             get
             {
@@ -909,7 +909,7 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public string A1_Shooting_PI
+        public string Shooting_PI
         {//Summer 2016
             get
             {

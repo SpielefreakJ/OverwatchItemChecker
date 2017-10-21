@@ -4,21 +4,21 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OverwatchLootBoxTracker
+namespace OverwatchLootBoxTracker.Translate
 {
-    class L_Junkrat
+    class L_Reaper
     {
-        Languages.English.Heroes.EN_Junkrat EN;
+        Languages.English.Heroes.EN_Reaper EN;
         string myLang;
 
-        L_Junkrat(string Lang)
+        public L_Reaper(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Junkrat();
+            EN = new Languages.English.Heroes.EN_Reaper();
         }
 
-        public string J1_ChangeLang
+        public string ChangeLang
         {
             get
             {
@@ -34,145 +34,167 @@ namespace OverwatchLootBoxTracker
         //Skin
 
         //Rare
-        public string J1_Bleached_SK
+        public string R1_Blood_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Bleached_SK;
+                    return EN.Blood_SK;
                 }
             }
         }
 
-        public string J1_Drowned_SK
+        public string R1_Midnight_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Drowned_SK;
+                    return EN.Midnight_SK;
                 }
             }
         }
 
-        public string J1_Irradiated_SK
+        public string R1_Moss_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Irradiated_SK;
+                    return EN.Moss_SK;
                 }
             }
         }
 
-        public string J1_Rusted_SK
+        public string R1_Royal_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Rusted_SK;
+                    return EN.Royal_SK;
                 }
             }
         }
         //Epic
-        public string J1_Jailbird_SK
+        public string R1_Desert_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Jailbird_SK;
+                    return EN.Desert_SK;
                 }
             }
         }
 
-        public string J1_Toasted_SK
+        public string R1_Wight_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Toasted_SK;
+                    return EN.Wight_SK;
                 }
             }
         }
 
-        public string J1_Firework_SK
-        {//Rooster 2017
+        public string R1_Shiver_SK
+        {//Winter 2016
             get
             {
                 //else
                 {
-                    return EN.Firework_SK;
+                    return EN.Shiver_SK;
                 }
             }
         }
         //Legendary
-        public string J1_Fool_SK
+        public string R1_Nevermore_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Fool_SK;
+                    return EN.Nevermore_SK;
                 }
             }
         }
 
-        public string J1_Jester_SK
+        public string R1_Plague_Doctor_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Jester_SK;
+                    return EN.Plague_Doctor_SK;
                 }
             }
         }
 
-        public string J1_Hayseed_SK
+        public string R1_El_Blanco_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Hayseed_SK;
+                    return EN.El_Blanco_SK;
                 }
             }
         }
 
-        public string J1_Scarecrow_SK
+        public string R1_Mariachi_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Scarecrow_SK;
+                    return EN.Mariachi_SK;
                 }
             }
         }
 
-        public string J1_Dr_Junkenstein_SK
-        {//Halloween 2016
+        public string R1_Blackwatch_Reyes_SK
+        {//Origin Special
             get
             {
                 //else
                 {
-                    return EN.Dr_Junkenstein_SK;
+                    return EN.Blackwatch_Reyes_SK;
                 }
             }
         }
 
-        public string J1_Cricket_SK
+        public string R1_Biker_SK
         {//Summer 2017
             get
             {
                 //else
                 {
-                    return EN.Cricket_SK;
+                    return EN.Biker_SK;
+                }
+            }
+        }
+
+        public string R1_Dracula_SK
+        {//Halloween 2017
+            get
+            {
+                //else
+                {
+                    return EN.Dracula_SK;
+                }
+            }
+        }
+
+        public string R1_Pumpkin_SK
+        {//Halloween 2016
+            get
+            {
+                //else
+                {
+                    return EN.Pumpkin_SK;
                 }
             }
         }

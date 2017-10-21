@@ -4,163 +4,164 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OverwatchLootBoxTracker
+namespace OverwatchLootBoxTracker.Translate
 {
-    class L_Genji
+    class L_Hanzo
     {
-        Languages.English.Heroes.EN_Genji EN;
+        Languages.English.Heroes.EN_Hanzo EN;
         string myLang;
 
-        L_Genji(string Lang)
+        public L_Hanzo(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Genji();
+            EN = new Languages.English.Heroes.EN_Hanzo();
+        }
+
+        public string ChangeLang
+        {
+            get
+            {
+                return myLang;
+            }
+            set
+            {
+                myLang = value;
+            }
         }
 
 
         //Skin
 
         //Rare
-        public string G1_Azurite_SK
+        public string Azuki_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Azurite_SK;
+                    return EN.Azuki_SK;
                 }
             }
         }
 
-        public string G1_Cinnabar_SK
+        public string Kinoko_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Cinnabar_SK;
+                    return EN.Kinoko_SK;
                 }
             }
         }
 
-        public string G1_Malachite_SK
+        public string Midori_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Malachite_SK;
+                    return EN.Midori_SK;
+                }
+            }
+        }
+
+        public string Sora_SK
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Sora_SK;
                 }
             }
         }
         //Epic
-        public string G1_Carbon_Fiber_SK
+        public string Cloud_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Carbon_Fiber_SK;
+                    return EN.Cloud_SK;
                 }
             }
         }
 
-        public string G1_Chrome_SK
+        public string Dragon_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Chrome_SK;
+                    return EN.Dragon_SK;
                 }
             }
         }
 
-        public string G1_Nihon_SK
-        {//Summer 2016
+        public string Demon_SK
+        {//Halloween 2016
             get
             {
                 //else
                 {
-                    return EN.Nihon_SK;
+                    return EN.Demon_SK;
                 }
             }
         }
         //Legendary
-        public string G1_Sparrow_SK
+        public string Young_Hanzo_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Sparrow_SK;
+                    return EN.Young_Hanzo_SK;
                 }
             }
         }
 
-        public string G1_Young_Genji_SK
+        public string Young_Master_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Young_Genji_SK;
+                    return EN.Young_Master_SK;
                 }
             }
         }
 
-        public string G1_Bedouin_SK
+        public string Lone_Wolf_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Bedouin_SK;
+                    return EN.Lone_Wolf_SK;
                 }
             }
         }
 
-        public string G1_Nomad_SK
+        public string Okami_SK
         {
             get
             {
                 //else
                 {
-                    return EN.Nomad_SK;
+                    return EN.Okami_SK;
                 }
             }
         }
 
-        public string G1_Oni_SK
-        {
-            get
-            {
-                //else
-                {
-                    return EN.Oni_SK;
-                }
-            }
-        }
-
-        public string G1_Blackwatch_SK
-        {//Uprising 2017
-            get
-            {
-                //else
-                {
-                    return EN.Blackwatch_SK;
-                }
-            }
-        }
-
-        public string G1_Sentai_SK
+        public string Cyberninja_SK
         {//Annyver 2017
             get
             {
                 //else
                 {
-                    return EN.Sentai_SK;
+                    return EN.Cyberninja_SK;
                 }
             }
         }

@@ -8,13 +8,13 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 {
     class EN_Torbjörn
     {
-        private EN_Torbjörn() { }
+        public EN_Torbjörn() { }
 
 
         //Skin
 
         //Rare
-        public string Blå
+        public string Blå_SK
         {
             get
             {
@@ -22,7 +22,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Citron
+        public string Citron_SK
         {
             get
             {
@@ -30,7 +30,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Grön
+        public string Grön_SK
         {
             get
             {
@@ -38,7 +38,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Plommon
+        public string Plommon_SK
         {
             get
             {
@@ -46,7 +46,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
         //Epic
-        public string Cathode
+        public string Cathode_SK
         {
             get
             {
@@ -54,7 +54,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Woodclad
+        public string Woodclad_SK
         {
             get
             {
@@ -62,7 +62,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Tre_Kronor
+        public string Tre_Kronor_SK
         {//Summer 2016
             get
             {
@@ -70,7 +70,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
         //Legendary
-        public string Chopper
+        public string Chopper_SK
         {
             get
             {
@@ -78,7 +78,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Deadlock
+        public string Deadlock_SK
         {
             get
             {
@@ -86,7 +86,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Barbarossa
+        public string Barbarossa_SK
         {
             get
             {
@@ -94,7 +94,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Blackbeard
+        public string Blackbeard_SK
         {
             get
             {
@@ -102,7 +102,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Viking
+        public string Viking_SK
         {//Halloween 2017
             get
             {
@@ -110,7 +110,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Santaclad
+        public string Santaclad_SK
         {//Winter 2016
             get
             {
@@ -118,7 +118,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Chief_Engineer_Lindholm
+        public string Chief_Engineer_Lindholm_SK
         {//Uprising 2017
             get
             {
@@ -126,7 +126,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Ironclad
+        public string Ironclad_SK
         {//Uprising 2017
             get
             {

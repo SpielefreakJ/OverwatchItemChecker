@@ -18,7 +18,33 @@ namespace OverwatchLootBoxTracker
     public partial class Form1 : Form
     {
         IniStream inisSettings = null;
-        CLang Lang;
+        CCost Cost;
+        Translate.L_Translate Transl;
+        Translate.L_Ana iAna;
+        Translate.L_Bastion iBastion;
+        Translate.L_DVa iDVa;
+        Translate.L_Doomfist iDoomfist;
+        Translate.L_Genji iGenji;
+        Translate.L_Hanzo iHanzo;
+        Translate.L_Junkrat iJunkrat;
+        Translate.L_Lúcio iLúcio;
+        Translate.L_McCree iMcCree;
+        Translate.L_Mei iMei;
+        Translate.L_Mercy iMercy;
+        Translate.L_Orisa iOrisa;
+        Translate.L_Pharah iPharah;
+        Translate.L_Reaper iReaper;
+        Translate.L_Reinhardt iReinhardt;
+        Translate.L_Roadhog iRoadhog;
+        Translate.L_Soldier_76 iSoldier_76;
+        Translate.L_Sombra iSombra;
+        Translate.L_Symmetra iSymmetra;
+        Translate.L_Torbjörn iTorbjörn;
+        Translate.L_Tracer iTracer;
+        Translate.L_Widowmaker iWidowmaker;
+        Translate.L_Winston iWinston;
+        Translate.L_Zarya iZarya;
+        Translate.L_Zenyatta iZenyatta;
         string Language;
 
         public Form1()
@@ -39,7 +65,7 @@ namespace OverwatchLootBoxTracker
 
         private void OnApplicationExit(object sender, EventArgs e)
         {
-            MessageBox.Show(Lang.AppClose);
+            MessageBox.Show(Transl.AppClose);
             IniSave();
         }
 
@@ -53,49 +79,75 @@ namespace OverwatchLootBoxTracker
         {
             //Farbe auslesen und auf dem Hintergrund anwenden
             Language = inisSettings.Read("Lang");
-            Lang.ChangeLang = Language;
+            Transl.ChangeLang = Language;
 
             Texte();
         }
 
         private void KlassenInst()
         {
-            Lang = new CLang(Language);
+            Cost = new CCost();
+            Transl = new Translate.L_Translate(Language);
+            iAna = new Translate.L_Ana(Language);
+            iBastion = new Translate.L_Bastion(Language);
+            iDVa = new Translate.L_DVa(Language);
+            iDoomfist = new Translate.L_Doomfist(Language);
+            iGenji = new Translate.L_Genji(Language);
+            iHanzo = new Translate.L_Hanzo(Language);
+            iJunkrat = new Translate.L_Junkrat(Language);
+            iLúcio = new Translate.L_Lúcio(Language);
+            iMcCree = new Translate.L_McCree(Language);
+            iMei = new Translate.L_Mei(Language);
+            iMercy = new Translate.L_Mercy(Language);
+            iOrisa = new Translate.L_Orisa(Language);
+            iPharah = new Translate.L_Pharah(Language);
+            iReaper = new Translate.L_Reaper(Language);
+            iReinhardt = new Translate.L_Reinhardt(Language);
+            iRoadhog = new Translate.L_Roadhog(Language);
+            iSoldier_76 = new Translate.L_Soldier_76(Language);
+            iSombra = new Translate.L_Sombra(Language);
+            iSymmetra = new Translate.L_Symmetra(Language);
+            iTorbjörn = new Translate.L_Torbjörn(Language);
+            iTracer = new Translate.L_Tracer(Language);
+            iWidowmaker = new Translate.L_Widowmaker(Language);
+            iWinston = new Translate.L_Winston(Language);
+            iZarya = new Translate.L_Zarya(Language);
+            iZenyatta = new Translate.L_Zenyatta(Language);
         }
 
         private void Texte()
         {
             //Erste mal ausrechnen, wieviel alles zusammen Kostet
-            lblChanges.Text = Lang.ChangesText;
-            lblKosten.Text = Lang.Remaining;
+            lblChanges.Text = Transl.ChangesText;
+            lblKosten.Text = Transl.Remaining;
 
             gbAll.Visible = false;
             gBLang.Visible = false;
-            gBWelcome.Text = Lang.A;
-            btnWelcomeClose.Text = Lang.Close;
+            gBWelcome.Text = Transl.A;
+            btnWelcomeClose.Text = Transl.Close;
             //Settings
-            btnSettings.Text = Lang.Settings;
-            gBLang.Text = Lang.LangChange;
+            btnSettings.Text = Transl.Settings;
+            gBLang.Text = Transl.LangChange;
             //Itembuttons
-            btnSkins.Text = Lang.Skins;
-            btnEmotes.Text = Lang.Emotes;
-            btnVictoryPoses.Text = Lang.VictoryPoses;
-            btnVoiceLines.Text = Lang.VoiceLines;
-            btnSprays.Text = Lang.Sprays;
-            btnHighlightIntros.Text = Lang.HighlightIntros;
-            btnWeapons.Text = Lang.Weapons;
-            btnPlayerIcons.Text = Lang.PlayerIcons;
+            btnSkins.Text = Transl.Skins;
+            btnEmotes.Text = Transl.Emotes;
+            btnVictoryPoses.Text = Transl.VictoryPoses;
+            btnVoiceLines.Text = Transl.VoiceLines;
+            btnSprays.Text = Transl.Sprays;
+            btnHighlightIntros.Text = Transl.HighlightIntros;
+            btnWeapons.Text = Transl.Weapons;
+            btnPlayerIcons.Text = Transl.PlayerIcons;
             //Eventbuttons
-            btnSummer.Text = Lang.Summer;
-            btnHalloween.Text = Lang.Halloween;
-            btnWinter.Text = Lang.Winter;
-            btnRooster.Text = Lang.Rooster;
-            btnUprising.Text = Lang.Uprising;
-            btnAnnyver.Text = Lang.Annyver;
+            btnSummer.Text = Transl.Summer;
+            btnHalloween.Text = Transl.Halloween;
+            btnWinter.Text = Transl.Winter;
+            btnRooster.Text = Transl.Rooster;
+            btnUprising.Text = Transl.Uprising;
+            btnAnnyver.Text = Transl.Annyver;
             //More info about remaining costs
-            btnMoreCost.Text = Lang.MoreCost;
-            lblMoreInfoCost.Text = Lang.RemMoreInfo1;
-            lblMoreInfoCost2.Text = Lang.RemMoreInfo2;
+            btnMoreCost.Text = Transl.MoreCost;
+            lblMoreInfoCost.Text = Transl.RemMoreInfo1;
+            lblMoreInfoCost2.Text = Transl.RemMoreInfo2;
         }
 
         private void ChangePos()
@@ -113,6 +165,38 @@ namespace OverwatchLootBoxTracker
             gBMoreCost.Width = 868; gBMoreCost.Height = 671;
         }
 
+        private void ChangeLang()
+        {
+            Transl.ChangeLang = Language;
+            iAna.ChangeLang = Language;
+            iBastion.ChangeLang = Language;
+            iDVa.ChangeLang = Language;
+            iDoomfist.ChangeLang = Language;
+            iGenji.ChangeLang = Language;
+            iHanzo.ChangeLang = Language;
+            iJunkrat.ChangeLang = Language;
+            iLúcio.ChangeLang = Language;
+            iMcCree.ChangeLang = Language;
+            iMei.ChangeLang = Language;
+            iMercy.ChangeLang = Language;
+            iOrisa.ChangeLang = Language;
+            iPharah.ChangeLang = Language;
+            iReaper.ChangeLang = Language;
+            iReinhardt.ChangeLang = Language;
+            iRoadhog.ChangeLang = Language;
+            iSoldier_76.ChangeLang = Language;
+            iSombra.ChangeLang = Language;
+            iSymmetra.ChangeLang = Language;
+            iTorbjörn.ChangeLang = Language;
+            iTracer.ChangeLang = Language;
+            iWidowmaker.ChangeLang = Language;
+            iWinston.ChangeLang = Language;
+            iZarya.ChangeLang = Language;
+            iZenyatta.ChangeLang = Language;
+
+            Texte();
+        }
+
         /*
         // Ab hier beginnt der richtige Code
         */
@@ -120,15 +204,13 @@ namespace OverwatchLootBoxTracker
         private void btnLangGerman_Click(object sender, EventArgs e)
         {
             Language = "DE";
-            Lang.ChangeLang = Language;
-            Texte();
+            ChangeLang();
         }
 
         private void btnLangEnglish_Click(object sender, EventArgs e)
         {
             Language = "EN";
-            Lang.ChangeLang = Language;
-            Texte();
+            ChangeLang();
         }
 
         private void btnSettings_Click(object sender, EventArgs e)
@@ -139,7 +221,7 @@ namespace OverwatchLootBoxTracker
 
         private void btnSkins_Click(object sender, EventArgs e)
         {
-            if (gbAll.Text == Lang.Skins)
+            if (gbAll.Text == Transl.Skins)
             {
                 gbAll.Visible = !gbAll.Visible;
             }
@@ -150,12 +232,12 @@ namespace OverwatchLootBoxTracker
             }
             gBLang.Visible = false;
 
-            gbAll.Text = Lang.Skins;
+            gbAll.Text = Transl.Skins;
         }
 
         private void btnEmotes_Click(object sender, EventArgs e)
         {
-            if (gbAll.Text == Lang.Emotes)
+            if (gbAll.Text == Transl.Emotes)
             {
                 gbAll.Visible = !gbAll.Visible;
             }
@@ -166,12 +248,12 @@ namespace OverwatchLootBoxTracker
             }
             gBLang.Visible = false;
 
-            gbAll.Text = Lang.Emotes;
+            gbAll.Text = Transl.Emotes;
         }
 
         private void btnVictoryPoses_Click(object sender, EventArgs e)
         {
-            if (gbAll.Text == Lang.VictoryPoses)
+            if (gbAll.Text == Transl.VictoryPoses)
             {
                 gbAll.Visible = !gbAll.Visible;
             }
@@ -182,12 +264,12 @@ namespace OverwatchLootBoxTracker
             }
             gBLang.Visible = false;
 
-            gbAll.Text = Lang.VictoryPoses;
+            gbAll.Text = Transl.VictoryPoses;
         }
 
         private void btnVoiceLines_Click(object sender, EventArgs e)
         {
-            if (gbAll.Text == Lang.VoiceLines)
+            if (gbAll.Text == Transl.VoiceLines)
             {
                 gbAll.Visible = !gbAll.Visible;
             }
@@ -198,12 +280,12 @@ namespace OverwatchLootBoxTracker
             }
             gBLang.Visible = false;
 
-            gbAll.Text = Lang.VoiceLines;
+            gbAll.Text = Transl.VoiceLines;
         }
 
         private void btnSprays_Click(object sender, EventArgs e)
         {
-            if (gbAll.Text == Lang.Sprays)
+            if (gbAll.Text == Transl.Sprays)
             {
                 gbAll.Visible = !gbAll.Visible;
             }
@@ -214,12 +296,12 @@ namespace OverwatchLootBoxTracker
             }
             gBLang.Visible = false;
 
-            gbAll.Text = Lang.Sprays;
+            gbAll.Text = Transl.Sprays;
         }
 
         private void btnHighlightIntros_Click(object sender, EventArgs e)
         {
-            if (gbAll.Text == Lang.HighlightIntros)
+            if (gbAll.Text == Transl.HighlightIntros)
             {
                 gbAll.Visible = !gbAll.Visible;
             }
@@ -230,12 +312,12 @@ namespace OverwatchLootBoxTracker
             }
             gBLang.Visible = false;
 
-            gbAll.Text = Lang.HighlightIntros;
+            gbAll.Text = Transl.HighlightIntros;
         }
 
         private void btnWeapons_Click(object sender, EventArgs e)
         {
-            if (gbAll.Text == Lang.Weapons)
+            if (gbAll.Text == Transl.Weapons)
             {
                 gbAll.Visible = !gbAll.Visible;
             }
@@ -246,12 +328,12 @@ namespace OverwatchLootBoxTracker
             }
             gBLang.Visible = false;
 
-            gbAll.Text = Lang.Weapons;
+            gbAll.Text = Transl.Weapons;
         }
 
         private void btnPlayerIcons_Click(object sender, EventArgs e)
         {
-            if (gbAll.Text == Lang.PlayerIcons)
+            if (gbAll.Text == Transl.PlayerIcons)
             {
                 gbAll.Visible = !gbAll.Visible;
             }
@@ -262,22 +344,22 @@ namespace OverwatchLootBoxTracker
             }
             gBLang.Visible = false;
 
-            gbAll.Text = Lang.PlayerIcons;
+            gbAll.Text = Transl.PlayerIcons;
         }
 
         private void btnMoreCost_Click(object sender, EventArgs e)
         {
-            if (btnMoreCost.Text == Lang.Close)
+            if (btnMoreCost.Text == Transl.Close)
             {
                 gBMoreCost.Visible = false;
-                btnMoreCost.Text = Lang.MoreCost;
+                btnMoreCost.Text = Transl.MoreCost;
             }
             else
             {
                 gbAll.Visible = false;
                 gBMoreCost.Visible = true;
                 gBMoreCost.BringToFront();
-                btnMoreCost.Text = Lang.Close;
+                btnMoreCost.Text = Transl.Close;
                 gBLang.Visible = false;
             }
         }

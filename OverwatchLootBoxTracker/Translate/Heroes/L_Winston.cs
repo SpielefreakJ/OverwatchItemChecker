@@ -1,0 +1,183 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace OverwatchLootBoxTracker.Translate
+{
+    class L_Winston
+    {
+        Languages.English.Heroes.EN_Winston EN;
+        string myLang;
+
+        public L_Winston(string Lang)
+        {
+            myLang = Lang;
+
+            EN = new Languages.English.Heroes.EN_Winston();
+        }
+
+        public string ChangeLang
+        {
+            get
+            {
+                return myLang;
+            }
+            set
+            {
+                myLang = value;
+            }
+        }
+
+
+        //Skin
+
+        //Rare
+        public string Atmosphere_SK
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Atmosphere_SK;
+                }
+            }
+        }
+
+        public string Banana_SK
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Banana_SK;
+                }
+            }
+        }
+
+        public string Forest_SK
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Forest_SK;
+                }
+            }
+        }
+
+        public string Red_Planet_SK
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Red_Planet_SK;
+                }
+            }
+        }
+        //Epic
+        public string Desert_SK
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Desert_SK;
+                }
+            }
+        }
+
+        public string Horizon_SK
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Horizon_SK;
+                }
+            }
+        }
+
+        public string Blizzcon_2017_SK
+        {//BlizzCon 2017 Special
+            get
+            {
+                //else
+                {
+                    return EN.Blizzcon_2017_SK;
+                }
+            }
+        }
+        //Legendary
+        public string Frogston_SK
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Frogston_SK;
+                }
+            }
+        }
+
+        public string Undersea_SK
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Undersea_SK;
+                }
+            }
+        }
+
+        public string Explorer_SK
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Explorer_SK;
+                }
+            }
+        }
+
+        public string Safari_SK
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Safari_SK;
+                }
+            }
+        }
+
+        public string Yeti_SK
+        {//Winter 2016
+            get
+            {
+                //else
+                {
+                    return EN.Yeti_SK;
+                }
+            }
+        }
+
+        public string Wukong_SK
+        {//Rooster 2017
+            get
+            {
+                //else
+                {
+                    return EN.Wukong_SK;
+                }
+            }
+        }
+
+
+        //Emotes
+    }
+}
