@@ -9,39 +9,13 @@ namespace OverwatchLootBoxTracker
     class CLang
     {
         string myLang;
+        string Changes;
         CCost Cost;
         CGoldweapon GoldWeapon;
 
         //Langs
         Lang.L_DE DE;
         Lang.L_EN EN;
-
-        //Skins
-        Languages.English.Heroes.EN_Ana EN_Ana;
-        Languages.English.Heroes.EN_Bastion EN_Bastion;
-        Languages.English.Heroes.EN_DVa EN_DVa;
-        Languages.English.Heroes.EN_Doomfist EN_Doomfist;
-        Languages.English.Heroes.EN_Genji EN_Genji;
-        Languages.English.Heroes.EN_Hanzo EN_Hanzo;
-        Languages.English.Heroes.EN_Junkrat EN_Junkrat;
-        Languages.English.Heroes.EN_Lúcio EN_Lúcio;
-        Languages.English.Heroes.EN_McCree EN_McCree;
-        Languages.English.Heroes.EN_Mei EN_Mei;
-        Languages.English.Heroes.EN_Mercy EN_Mercy;
-        Languages.English.Heroes.EN_Orisa EN_Orisa;
-        Languages.English.Heroes.EN_Pharah EN_Pharah;
-        Languages.English.Heroes.EN_Reaper EN_Reaper;
-        Languages.English.Heroes.EN_Reinhardt EN_Reinhardt;
-        Languages.English.Heroes.EN_Roadhog EN_Roadhog;
-        Languages.English.Heroes.EN_Soldier_76 EN_Soldier_76;
-        Languages.English.Heroes.EN_Sombra EN_Sombra;
-        Languages.English.Heroes.EN_Symmetra EN_Symmetra;
-        Languages.English.Heroes.EN_Torbjörn EN_Torbjörn;
-        Languages.English.Heroes.EN_Tracer EN_Tracer;
-        Languages.English.Heroes.EN_Widowmaker EN_Widowmaker;
-        Languages.English.Heroes.EN_Winston EN_Winston;
-        Languages.English.Heroes.EN_Zarya EN_Zarya;
-        Languages.English.Heroes.EN_Zenyatta EN_Zenjatta;
 
         public CLang(string Lang)
         {
@@ -52,6 +26,13 @@ namespace OverwatchLootBoxTracker
             //Langs
             DE = new Lang.L_DE();
             EN = new Lang.L_EN();
+
+            ChangesT();
+        }
+
+        private void ChangesT()
+        {
+            Changes = "\n\nNew Changes!";
         }
 
         public string ChangeLang
@@ -67,34 +48,69 @@ namespace OverwatchLootBoxTracker
         }
 
 
-        //All Settings
+        //Welcome Screen
 
-        public string Settingsbutton
+        public string A
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Settingsbutton;
+                    return DE.A;
                 }
                 else
                 {
-                    return EN.Settingsbutton;
+                    return EN.A;
                 }
             }
         }
 
-        public string LangChangeBox
+        public string ChangesText
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.LangSettingsBox;
+                    return DE.A + Changes;
                 }
                 else
                 {
-                    return EN.LangSettingsBox;
+                    return EN.A + Changes;
+                }
+            }
+        }
+
+
+
+        //All Settings
+
+
+        public string Settings
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Settings;
+                }
+                else
+                {
+                    return EN.Settings;
+                }
+            }
+        }
+
+        public string LangChange
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.LangSettings;
+                }
+                else
+                {
+                    return EN.LangSettings;
                 }
             }
         }
@@ -273,6 +289,96 @@ namespace OverwatchLootBoxTracker
                 }
             }
         }
+        //Events
+        public string Summer
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Summer;
+                }
+                else
+                {
+                    return EN.Summer;
+                }
+            }
+        }
+
+        public string Halloween
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Halloween;
+                }
+                else
+                {
+                    return EN.Halloween;
+                }
+            }
+        }
+
+        public string Winter
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Winter;
+                }
+                else
+                {
+                    return EN.Winter;
+                }
+            }
+        }
+
+        public string Rooster
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Rooster;
+                }
+                else
+                {
+                    return EN.Rooster;
+                }
+            }
+        }
+
+        public string Uprising
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Uprising;
+                }
+                else
+                {
+                    return EN.Uprising;
+                }
+            }
+        }
+
+        public string Annyver
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Annyver;
+                }
+                else
+                {
+                    return EN.Annyver;
+                }
+            }
+        }
 
 
 
@@ -319,155 +425,6 @@ namespace OverwatchLootBoxTracker
                 else
                 {
                     return (Cost.KostenNormal + Cost.KostenFest) + " " + EN.Credits + "\n\n" + Cost.KostenNormal + " " + EN.Credits + "\n\n" + Cost.KostenFest + " " + EN.Credits + "\n\n" + GoldWeapon.KostenGes + " SR";
-                }
-            }
-        }
-
-
-        //Skins
-
-            // Ana
-        public string Citrine
-        {
-            get
-            {
-                //else
-                {
-                    return EN_Ana.Citrine;
-                }
-            }
-        }
-
-        public string Garnet
-        {
-            get
-            {
-                //else
-                {
-                    return EN_Ana.Garnet;
-                }
-            }
-        }
-
-        public string Peridot
-        {
-            get
-            {
-                //else
-                {
-                    return EN_Ana.Peridot;
-                }
-            }
-        }
-
-        public string Turquoise
-        {
-            get
-            {
-                //else
-                {
-                    return EN_Ana.Turquoise;
-                }
-            }
-        }
-
-        //Epic
-        public string Merciful
-        {
-            get
-            {
-                //else
-                {
-                    return EN_Ana.Merciful;
-                }
-            }
-        }
-
-        public string Shrike
-        {
-            get
-            {
-                //else
-                {
-                    return EN_Ana.Shrike;
-                }
-            }
-        }
-
-        public string Ghoul
-        {//Halloween 2016
-            get
-            {
-                //else
-                {
-                    return EN_Ana.Ghoul;
-                }
-            }
-        }
-
-        public string Tal
-        {//Rooster 2017
-            get
-            {
-                //else
-                {
-                    return EN_Ana.Tal;
-                }
-            }
-        }
-
-        //Legendary
-        public string Wadjet
-        {
-            get
-            {
-                //else
-                {
-                    return EN_Ana.Wadjet;
-                }
-            }
-        }
-
-        public string Wasteland
-        {
-            get
-            {
-                //else
-                {
-                    return EN_Ana.Wasteland;
-                }
-            }
-        }
-
-        public string Captain_Amari
-        {
-            get
-            {
-                //else
-                {
-                    return EN_Ana.Captain_Amari;
-                }
-            }
-        }
-
-        public string Horus
-        {
-            get
-            {
-                //else
-                {
-                    return EN_Ana.Horus;
-                }
-            }
-        }
-
-        public string Corsair
-        {//Halloween 2017
-            get
-            {
-                //else
-                {
-                    return EN_Ana.Corsair;
                 }
             }
         }

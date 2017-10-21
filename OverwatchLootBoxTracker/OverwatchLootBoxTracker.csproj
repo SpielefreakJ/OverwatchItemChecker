@@ -55,6 +55,8 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
+    <Compile Include="Heroetranslate\L_DVa.cs" />
+    <Compile Include="Heroetranslate\L_Bastion.cs" />
     <Compile Include="IniStream.cs" />
     <Compile Include="Languages\English\EN_Heroes\EN_Ana.cs" />
     <Compile Include="Languages\English\EN_Heroes\EN_Bastion.cs" />
@@ -83,6 +85,11 @@
     <Compile Include="Languages\English\EN_Heroes\EN_Zenyatta.cs" />
     <Compile Include="Languages\German\L_DE.cs" />
     <Compile Include="Languages\English\L_EN.cs" />
+    <Compile Include="Heroetranslate\L_Ana.cs" />
+    <Compile Include="Heroetranslate\L_Doomfist.cs" />
+    <Compile Include="Heroetranslate\L_Genji.cs" />
+    <Compile Include="Heroetranslate\L_Hanzo.cs" />
+    <Compile Include="Heroetranslate\L_Junkrat.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">

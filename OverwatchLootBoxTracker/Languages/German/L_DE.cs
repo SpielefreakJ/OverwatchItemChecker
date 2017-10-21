@@ -13,9 +13,21 @@ namespace OverwatchLootBoxTracker.Lang
 
         }
 
+
+        //Welcome Screen
+
+        public string A
+        {
+            get
+            {
+                return "Willkommen";
+            }
+        }
+
+
         //Alle Einstellungen
 
-        public string Settingsbutton
+        public string Settings
         {
             get
             {
@@ -23,7 +35,7 @@ namespace OverwatchLootBoxTracker.Lang
             }
         }
 
-        public string LangSettingsBox
+        public string LangSettings
         {
             get
             {
@@ -122,6 +134,54 @@ namespace OverwatchLootBoxTracker.Lang
             get
             {
                 return "Spieler-Icons";
+            }
+        }
+        //Events
+        public string Summer
+        {
+            get
+            {
+                return "Sommerspiele";
+            }
+        }
+
+        public string Halloween
+        {
+            get
+            {
+                return "Halloween-Horror";
+            }
+        }
+
+        public string Winter
+        {
+            get
+            {
+                return "Winterwunderland";
+            }
+        }
+
+        public string Rooster
+        {
+            get
+            {
+                return "Das Jahr des Hahns";
+            }
+        }
+
+        public string Uprising
+        {
+            get
+            {
+                return "Overwatch Aufstand";
+            }
+        }
+
+        public string Annyver
+        {
+            get
+            {
+                return "Jubiläum";
             }
         }
 
