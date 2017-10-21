@@ -10,6 +10,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
     {
         public EN_Reinhardt() { }
 
+        public string Name
+        {
+            get
+            {
+                return "Reinhardt";
+            }
+        }
+
 
         //Skin
 

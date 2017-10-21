@@ -132,6 +132,22 @@ namespace OverwatchLootBoxTracker.Translate
         }
 
 
+        public string Back
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Back;
+                }
+                else
+                {
+                    return EN.Back;
+                }
+            }
+        }
+
+
 
         //On Close
 

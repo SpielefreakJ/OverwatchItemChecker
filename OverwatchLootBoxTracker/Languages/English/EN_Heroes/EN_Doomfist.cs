@@ -10,6 +10,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
     {
         public EN_Doomfist() { }
 
+        public string Name
+        {
+            get
+            {
+                return "Doomfist";
+            }
+        }
+
 
         //Skin
 

@@ -10,6 +10,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
     {
         public EN_Bastion() { }
 
+        public string Name
+        {
+            get
+            {
+                return "Bastion";
+            }
+        }
+
 
         //Skins
         //Rare

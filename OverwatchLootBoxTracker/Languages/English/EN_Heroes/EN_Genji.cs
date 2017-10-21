@@ -10,6 +10,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
     {
         public EN_Genji() { }
 
+        public string Name
+        {
+            get
+            {
+                return "Genji";
+            }
+        }
+
 
         //Skin
 

@@ -10,6 +10,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
     {
         public EN_Reaper() { }
 
+        public string Name
+        {
+            get
+            {
+                return "Reaper";
+            }
+        }
+
 
         //Skin
 

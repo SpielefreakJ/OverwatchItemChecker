@@ -10,6 +10,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
     {
         public EN_Symmetra() { }
 
+        public string Name
+        {
+            get
+            {
+                return "Symmetra";
+            }
+        }
+
 
         //Skin
 

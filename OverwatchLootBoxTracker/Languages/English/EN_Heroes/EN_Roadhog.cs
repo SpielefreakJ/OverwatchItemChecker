@@ -10,6 +10,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
     {
         public EN_Roadhog() { }
 
+        public string Name
+        {
+            get
+            {
+                return "Roadhog";
+            }
+        }
+
 
         //Skin
 

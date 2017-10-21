@@ -10,6 +10,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
     {
         public EN_Pharah() { }
 
+        public string Name
+        {
+            get
+            {
+                return "Pharah";
+            }
+        }
+
 
         //Skin
 

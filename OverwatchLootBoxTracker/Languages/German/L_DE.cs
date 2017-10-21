@@ -51,6 +51,14 @@ namespace OverwatchLootBoxTracker.Lang
             }
         }
 
+        public string Back
+        {
+            get
+            {
+                return "Zurück";
+            }
+        }
+
 
         //Beim Beenden
 

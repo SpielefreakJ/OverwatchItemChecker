@@ -30,6 +30,17 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
+        public string Name
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Name;
+                }
+            }
+        }
+
 
         //Skins
         //Rare

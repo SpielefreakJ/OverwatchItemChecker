@@ -10,9 +10,17 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
     {
         public EN_Junkrat() { }
 
+        public string Name
+        {
+            get
+            {
+                return "Junkrat";
+            }
+        }
+
 
         //Skin
-        
+
         //Rare
         public string Bleached_SK
         {

@@ -10,6 +10,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
     {
         public EN_Lúcio() { }
 
+        public string Name
+        {
+            get
+            {
+                return "Lúcio";
+            }
+        }
+
 
         //Skin
 

@@ -10,9 +10,17 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
     {
         public EN_DVa() { }
 
+        public string Name
+        {
+            get
+            {
+                return "D.Va";
+            }
+        }
+
 
         //Skin
-        
+
         //Rare
         public string Blueberry_SK
         {

@@ -9,6 +9,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
     class EN_Ana
     {
         public EN_Ana() { }
+        
+        public string Name
+        {
+            get
+            {
+                return "Ana";
+            }
+        }
 
 
             //Skins

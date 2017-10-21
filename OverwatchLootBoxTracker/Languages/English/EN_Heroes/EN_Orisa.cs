@@ -10,6 +10,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
     {
         public EN_Orisa() { }
 
+        public string Name
+        {
+            get
+            {
+                return "Orisa";
+            }
+        }
+
 
         //Skin
 

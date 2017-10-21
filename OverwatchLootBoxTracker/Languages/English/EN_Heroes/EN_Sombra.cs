@@ -10,6 +10,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
     {
         public EN_Sombra() { }
 
+        public string Name
+        {
+            get
+            {
+                return "Sombra";
+            }
+        }
+
 
         //Skin
         //Rare
