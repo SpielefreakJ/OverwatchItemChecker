@@ -45,7 +45,7 @@ namespace OverwatchLootBoxTracker.Translate
         //Skin
 
         //Rare
-        public string Ebony_SK
+        public string Ebony_SK//1
         {
             get
             {
@@ -56,7 +56,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Lake_SK
+        public string Lake_SK//2
         {
             get
             {
@@ -67,7 +67,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Sage_SK
+        public string Sage_SK//3
         {
             get
             {
@@ -78,7 +78,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Wheat_SK
+        public string Wheat_SK//4
         {
             get
             {
@@ -89,7 +89,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Epic
-        public string On_The_Range_SK
+        public string On_The_Range_SK//5
         {
             get
             {
@@ -100,7 +100,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string White_Hat_SK
+        public string White_Hat_SK//6
         {
             get
             {
@@ -111,7 +111,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string American_SK
+        public string American_SK//7
         {//Summer 2016
             get
             {
@@ -122,7 +122,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Scrooge_SK
+        public string Scrooge_SK//8
         {//Winter 2016
             get
             {
@@ -133,7 +133,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Legendary
-        public string Gambler_SK
+        public string Gambler_SK//9
         {
             get
             {
@@ -144,7 +144,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Riverboat_SK
+        public string Riverboat_SK//10
         {
             get
             {
@@ -155,7 +155,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Mystery_Man_SK
+        public string Mystery_Man_SK//11
         {
             get
             {
@@ -166,7 +166,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Vigilante_SK
+        public string Vigilante_SK//12
         {
             get
             {
@@ -177,7 +177,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Lifeguard_SK
+        public string Lifeguard_SK//13
         {//Summer 2017
             get
             {
@@ -188,7 +188,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Blackwatch_SK
+        public string Blackwatch_SK//14
         {//Uprising 2017
             get
             {
@@ -199,7 +199,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Van_Helsing_SK
+        public string Van_Helsing_SK//15
         {//Halloween 2017
             get
             {

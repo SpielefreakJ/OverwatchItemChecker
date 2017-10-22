@@ -45,7 +45,7 @@ namespace OverwatchLootBoxTracker.Translate
         //Skin
 
         //Rare
-        public string Bleached_SK
+        public string Bleached_SK//1
         {
             get
             {
@@ -56,7 +56,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Drowned_SK
+        public string Drowned_SK//2
         {
             get
             {
@@ -67,7 +67,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Irradiated_SK
+        public string Irradiated_SK//3
         {
             get
             {
@@ -78,7 +78,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Rusted_SK
+        public string Rusted_SK//4
         {
             get
             {
@@ -89,7 +89,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Epic
-        public string Jailbird_SK
+        public string Jailbird_SK//5
         {
             get
             {
@@ -100,7 +100,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Toasted_SK
+        public string Toasted_SK//6
         {
             get
             {
@@ -111,7 +111,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Firework_SK
+        public string Firework_SK//7
         {//Rooster 2017
             get
             {
@@ -122,7 +122,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Legendary
-        public string Fool_SK
+        public string Fool_SK//8
         {
             get
             {
@@ -133,7 +133,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Jester_SK
+        public string Jester_SK//9
         {
             get
             {
@@ -144,7 +144,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Hayseed_SK
+        public string Hayseed_SK//10
         {
             get
             {
@@ -155,7 +155,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Scarecrow_SK
+        public string Scarecrow_SK//11
         {
             get
             {
@@ -166,7 +166,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Dr_Junkenstein_SK
+        public string Dr_Junkenstein_SK//12
         {//Halloween 2016
             get
             {
@@ -177,7 +177,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Cricket_SK
+        public string Cricket_SK//13
         {//Summer 2017
             get
             {

@@ -45,7 +45,7 @@ namespace OverwatchLootBoxTracker.Translate
         //Skin
 
         //Rare
-        public string Azul_SK
+        public string Azul_SK//1
         {
             get
             {
@@ -56,7 +56,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Laranja_SK
+        public string Laranja_SK//2
         {
             get
             {
@@ -67,7 +67,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Roxo_SK
+        public string Roxo_SK//3
         {
             get
             {
@@ -78,7 +78,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Vermelho_SK
+        public string Vermelho_SK//4
         {
             get
             {
@@ -89,7 +89,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Epic
-        public string Auditiva_SK
+        public string Auditiva_SK//5
         {
             get
             {
@@ -100,7 +100,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Synaesthesia_SK
+        public string Synaesthesia_SK//6
         {
             get
             {
@@ -111,7 +111,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Andes_SK
+        public string Andes_SK//7
         {//Winter 2016
             get
             {
@@ -122,7 +122,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Legendary
-        public string Hippityhop_SK
+        public string Hippityhop_SK//8
         {
             get
             {
@@ -133,7 +133,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Ribbit_SK
+        public string Ribbit_SK//9
         {
             get
             {
@@ -144,7 +144,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Breakaway_SK
+        public string Breakaway_SK//10
         {
             get
             {
@@ -155,7 +155,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Slapshot_SK
+        public string Slapshot_SK//11
         {
             get
             {
@@ -166,7 +166,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Seleção_SK
+        public string Seleção_SK//12
         {//Summer 2016
             get
             {
@@ -177,7 +177,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Striker_SK
+        public string Striker_SK//13
         {//Summer 2016
             get
             {
@@ -188,7 +188,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Jazzy_SK
+        public string Jazzy_SK//14
         {//Annyver 2017
             get
             {

@@ -45,7 +45,7 @@ namespace OverwatchLootBoxTracker.Translate
         //Skin
 
         //Rare
-        public string R1_Blood_SK
+        public string Blood_SK//1
         {
             get
             {
@@ -56,7 +56,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string R1_Midnight_SK
+        public string Midnight_SK//2
         {
             get
             {
@@ -67,7 +67,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string R1_Moss_SK
+        public string Moss_SK//3
         {
             get
             {
@@ -78,7 +78,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string R1_Royal_SK
+        public string Royal_SK//4
         {
             get
             {
@@ -89,7 +89,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Epic
-        public string R1_Desert_SK
+        public string Desert_SK//5
         {
             get
             {
@@ -100,7 +100,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string R1_Wight_SK
+        public string Wight_SK//6
         {
             get
             {
@@ -111,7 +111,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string R1_Shiver_SK
+        public string Shiver_SK//7
         {//Winter 2016
             get
             {
@@ -122,7 +122,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Legendary
-        public string R1_Nevermore_SK
+        public string Nevermore_SK//8
         {
             get
             {
@@ -133,7 +133,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string R1_Plague_Doctor_SK
+        public string Plague_Doctor_SK//9
         {
             get
             {
@@ -144,7 +144,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string R1_El_Blanco_SK
+        public string El_Blanco_SK//10
         {
             get
             {
@@ -155,7 +155,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string R1_Mariachi_SK
+        public string Mariachi_SK//11
         {
             get
             {
@@ -166,7 +166,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string R1_Blackwatch_Reyes_SK
+        public string Blackwatch_Reyes_SK//12
         {//Origin Special
             get
             {
@@ -177,7 +177,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string R1_Biker_SK
+        public string Biker_SK//13
         {//Summer 2017
             get
             {
@@ -188,7 +188,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string R1_Dracula_SK
+        public string Dracula_SK//14
         {//Halloween 2017
             get
             {
@@ -199,7 +199,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string R1_Pumpkin_SK
+        public string Pumpkin_SK//15
         {//Halloween 2016
             get
             {

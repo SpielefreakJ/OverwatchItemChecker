@@ -45,7 +45,7 @@ namespace OverwatchLootBoxTracker.Translate
         //Skin
 
         //Rare
-        public string P1_Amethyst_SK
+        public string Amethyst_SK//1
         {
             get
             {
@@ -56,7 +56,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string P1_Copper_SK
+        public string Copper_SK//2
         {
             get
             {
@@ -67,7 +67,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string P1_Emerald_SK
+        public string Emerald_SK//3
         {
             get
             {
@@ -78,7 +78,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string P1_Titanium_SK
+        public string Titanium_SK//4
         {
             get
             {
@@ -89,7 +89,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Epic
-        public string P1_Anubis_SK
+        public string Anubis_SK//5
         {
             get
             {
@@ -100,7 +100,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string P1_Jackal_SK
+        public string Jackal_SK//6
         {
             get
             {
@@ -111,7 +111,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string P1_Possessed_SK
+        public string Possessed_SK//7
         {//Halloween 2016
             get
             {
@@ -122,7 +122,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string P1_Frostbite_SK
+        public string Frostbite_SK//8
         {//Winter 2016
             get
             {
@@ -133,7 +133,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Legendary
-        public string P1_Mechaqueen_SK
+        public string Mechaqueen_SK//9
         {
             get
             {
@@ -144,7 +144,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string P1_Raptorion_SK
+        public string Raptorion_SK//10
         {
             get
             {
@@ -155,7 +155,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string P1_Raindancer_SK
+        public string Raindancer_SK//11
         {
             get
             {
@@ -166,7 +166,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string P1_Thunderbird_SK
+        public string Thunderbird_SK//12
         {
             get
             {
@@ -177,7 +177,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string P1_Security_Chief_SK
+        public string Security_Chief_SK//13
         {//Origin Special
             get
             {
@@ -188,7 +188,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string P1_Bedouin_SK
+        public string Bedouin_SK//14
         {//Annyver 2017
             get
             {

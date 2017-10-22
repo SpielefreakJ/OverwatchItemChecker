@@ -45,7 +45,7 @@ namespace OverwatchLootBoxTracker.Translate
         //Skin
 
         //Rare
-        public string Electric_Purple_SK
+        public string Electric_Purple_SK//1
         {
             get
             {
@@ -56,7 +56,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Hot_Pink_SK
+        public string Hot_Pink_SK//2
         {
             get
             {
@@ -67,7 +67,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Neon_Green_SK
+        public string Neon_Green_SK//3
         {
             get
             {
@@ -78,7 +78,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Royal_Blue_SK
+        public string Royal_Blue_SK//4
         {
             get
             {
@@ -89,7 +89,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Epic
-        public string Posh_SK
+        public string Posh_SK//
         {
             get
             {
@@ -100,7 +100,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Sporty_SK
+        public string Sporty_SK//6
         {
             get
             {
@@ -111,7 +111,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Rose_SK
+        public string Rose_SK//7
         {//Rooster 2017
             get
             {
@@ -122,7 +122,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Legendary
-        public string Punk_SK
+        public string Punk_SK//8
         {
             get
             {
@@ -133,7 +133,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Ultraviolet_SK
+        public string Ultraviolet_SK//9
         {
             get
             {
@@ -144,7 +144,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Mach_T_SK
+        public string Mach_T_SK//10
         {
             get
             {
@@ -155,7 +155,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string T_Racer_SK
+        public string T_Racer_SK//11
         {
             get
             {
@@ -166,7 +166,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Slipstream_SK
+        public string Slipstream_SK//12
         {//Origin Special
             get
             {
@@ -177,7 +177,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Sprinter_SK
+        public string Sprinter_SK//13
         {//Summer 2016
             get
             {
@@ -188,7 +188,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Track_and_Field_SK
+        public string Track_and_Field_SK//14
         {//summer 2016
             get
             {
@@ -199,7 +199,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Jingle_SK
+        public string Jingle_SK//15
         {//Winter 2016
             get
             {
@@ -210,7 +210,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Cadet_Oxton_SK
+        public string Cadet_Oxton_SK//16
         {//Uprising 2017
             get
             {
@@ -221,7 +221,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Graffiti_SK
+        public string Graffiti_SK//17
         {//Annyver 2017
             get
             {

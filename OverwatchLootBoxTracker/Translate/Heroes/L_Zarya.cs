@@ -45,7 +45,7 @@ namespace OverwatchLootBoxTracker.Translate
         //Skin
 
         //Rare
-        public string Brick_SK
+        public string Brick_SK//1
         {
             get
             {
@@ -56,7 +56,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Goldenrod_SK
+        public string Goldenrod_SK//2
         {
             get
             {
@@ -67,7 +67,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Taiga_SK
+        public string Taiga_SK//3
         {
             get
             {
@@ -78,7 +78,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Violet_SK
+        public string Violet_SK//4
         {
             get
             {
@@ -89,7 +89,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Epic
-        public string Dawn_SK
+        public string Dawn_SK//5
         {
             get
             {
@@ -100,7 +100,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Midnight_SK
+        public string Midnight_SK//6
         {
             get
             {
@@ -111,7 +111,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Frosted_SK
+        public string Frosted_SK//7
         {//Winter 2016
             get
             {
@@ -122,7 +122,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Legendary
-        public string Arctic_SK
+        public string Arctic_SK//8
         {
             get
             {
@@ -133,7 +133,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Siberian_Front_SK
+        public string Siberian_Front_SK//9
         {
             get
             {
@@ -144,7 +144,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Cybergoth_SK
+        public string Cybergoth_SK//10
         {
             get
             {
@@ -155,7 +155,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Industrial_SK
+        public string Industrial_SK//11
         {
             get
             {
@@ -166,7 +166,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Champion_SK
+        public string Champion_SK//12
         {//Summer 2016
             get
             {
@@ -177,7 +177,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Weightlifter_SK
+        public string Weightlifter_SK//13
         {//Summer 2016
             get
             {
@@ -188,7 +188,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Totally_80s_SK
+        public string Totally_80s_SK//14
         {//Halloween 2017
             get
             {
@@ -199,7 +199,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Cyberian_SK
+        public string Cyberian_SK//15
         {//Annyver 2017
             get
             {

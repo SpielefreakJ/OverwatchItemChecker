@@ -43,6 +43,30 @@
             this.btnWeapons = new System.Windows.Forms.Button();
             this.btnPlayerIcons = new System.Windows.Forms.Button();
             this.gbAll = new System.Windows.Forms.GroupBox();
+            this.chB40 = new System.Windows.Forms.CheckBox();
+            this.chB39 = new System.Windows.Forms.CheckBox();
+            this.chB38 = new System.Windows.Forms.CheckBox();
+            this.chB37 = new System.Windows.Forms.CheckBox();
+            this.chB36 = new System.Windows.Forms.CheckBox();
+            this.chB35 = new System.Windows.Forms.CheckBox();
+            this.chB34 = new System.Windows.Forms.CheckBox();
+            this.chB33 = new System.Windows.Forms.CheckBox();
+            this.chB32 = new System.Windows.Forms.CheckBox();
+            this.chB31 = new System.Windows.Forms.CheckBox();
+            this.chB30 = new System.Windows.Forms.CheckBox();
+            this.chB29 = new System.Windows.Forms.CheckBox();
+            this.chB28 = new System.Windows.Forms.CheckBox();
+            this.chB27 = new System.Windows.Forms.CheckBox();
+            this.chB26 = new System.Windows.Forms.CheckBox();
+            this.chB25 = new System.Windows.Forms.CheckBox();
+            this.chB24 = new System.Windows.Forms.CheckBox();
+            this.chB23 = new System.Windows.Forms.CheckBox();
+            this.chB22 = new System.Windows.Forms.CheckBox();
+            this.chB21 = new System.Windows.Forms.CheckBox();
+            this.chB20 = new System.Windows.Forms.CheckBox();
+            this.chB19 = new System.Windows.Forms.CheckBox();
+            this.chB18 = new System.Windows.Forms.CheckBox();
+            this.chB17 = new System.Windows.Forms.CheckBox();
             this.chB16 = new System.Windows.Forms.CheckBox();
             this.chB15 = new System.Windows.Forms.CheckBox();
             this.chB14 = new System.Windows.Forms.CheckBox();
@@ -99,30 +123,6 @@
             this.btnWelcomeClose = new System.Windows.Forms.Button();
             this.tmrWelcome = new System.Windows.Forms.Timer(this.components);
             this.btnBackHeroe = new System.Windows.Forms.Button();
-            this.chB17 = new System.Windows.Forms.CheckBox();
-            this.chB18 = new System.Windows.Forms.CheckBox();
-            this.chB19 = new System.Windows.Forms.CheckBox();
-            this.chB20 = new System.Windows.Forms.CheckBox();
-            this.chB40 = new System.Windows.Forms.CheckBox();
-            this.chB39 = new System.Windows.Forms.CheckBox();
-            this.chB38 = new System.Windows.Forms.CheckBox();
-            this.chB37 = new System.Windows.Forms.CheckBox();
-            this.chB36 = new System.Windows.Forms.CheckBox();
-            this.chB35 = new System.Windows.Forms.CheckBox();
-            this.chB34 = new System.Windows.Forms.CheckBox();
-            this.chB33 = new System.Windows.Forms.CheckBox();
-            this.chB32 = new System.Windows.Forms.CheckBox();
-            this.chB31 = new System.Windows.Forms.CheckBox();
-            this.chB30 = new System.Windows.Forms.CheckBox();
-            this.chB29 = new System.Windows.Forms.CheckBox();
-            this.chB28 = new System.Windows.Forms.CheckBox();
-            this.chB27 = new System.Windows.Forms.CheckBox();
-            this.chB26 = new System.Windows.Forms.CheckBox();
-            this.chB25 = new System.Windows.Forms.CheckBox();
-            this.chB24 = new System.Windows.Forms.CheckBox();
-            this.chB23 = new System.Windows.Forms.CheckBox();
-            this.chB22 = new System.Windows.Forms.CheckBox();
-            this.chB21 = new System.Windows.Forms.CheckBox();
             this.gBLang.SuspendLayout();
             this.gbAll.SuspendLayout();
             this.gBMoreCost.SuspendLayout();
@@ -341,6 +341,294 @@
             this.gbAll.TabStop = false;
             this.gbAll.Text = "gbAll";
             this.gbAll.Visible = false;
+            // 
+            // chB40
+            // 
+            this.chB40.AutoSize = true;
+            this.chB40.Location = new System.Drawing.Point(496, 408);
+            this.chB40.Name = "chB40";
+            this.chB40.Size = new System.Drawing.Size(57, 17);
+            this.chB40.TabIndex = 64;
+            this.chB40.Text = "chB40";
+            this.chB40.UseVisualStyleBackColor = true;
+            this.chB40.Visible = false;
+            this.chB40.CheckedChanged += new System.EventHandler(this.chB40_CheckedChanged);
+            // 
+            // chB39
+            // 
+            this.chB39.AutoSize = true;
+            this.chB39.Location = new System.Drawing.Point(496, 385);
+            this.chB39.Name = "chB39";
+            this.chB39.Size = new System.Drawing.Size(57, 17);
+            this.chB39.TabIndex = 63;
+            this.chB39.Text = "chB39";
+            this.chB39.UseVisualStyleBackColor = true;
+            this.chB39.Visible = false;
+            this.chB39.CheckedChanged += new System.EventHandler(this.chB39_CheckedChanged);
+            // 
+            // chB38
+            // 
+            this.chB38.AutoSize = true;
+            this.chB38.Location = new System.Drawing.Point(496, 362);
+            this.chB38.Name = "chB38";
+            this.chB38.Size = new System.Drawing.Size(57, 17);
+            this.chB38.TabIndex = 62;
+            this.chB38.Text = "chB38";
+            this.chB38.UseVisualStyleBackColor = true;
+            this.chB38.Visible = false;
+            this.chB38.CheckedChanged += new System.EventHandler(this.chB38_CheckedChanged);
+            // 
+            // chB37
+            // 
+            this.chB37.AutoSize = true;
+            this.chB37.Location = new System.Drawing.Point(496, 339);
+            this.chB37.Name = "chB37";
+            this.chB37.Size = new System.Drawing.Size(57, 17);
+            this.chB37.TabIndex = 61;
+            this.chB37.Text = "chB37";
+            this.chB37.UseVisualStyleBackColor = true;
+            this.chB37.Visible = false;
+            this.chB37.CheckedChanged += new System.EventHandler(this.chB37_CheckedChanged);
+            // 
+            // chB36
+            // 
+            this.chB36.AutoSize = true;
+            this.chB36.Location = new System.Drawing.Point(496, 316);
+            this.chB36.Name = "chB36";
+            this.chB36.Size = new System.Drawing.Size(57, 17);
+            this.chB36.TabIndex = 60;
+            this.chB36.Text = "chB36";
+            this.chB36.UseVisualStyleBackColor = true;
+            this.chB36.Visible = false;
+            this.chB36.CheckedChanged += new System.EventHandler(this.chB36_CheckedChanged);
+            // 
+            // chB35
+            // 
+            this.chB35.AutoSize = true;
+            this.chB35.Location = new System.Drawing.Point(433, 408);
+            this.chB35.Name = "chB35";
+            this.chB35.Size = new System.Drawing.Size(57, 17);
+            this.chB35.TabIndex = 59;
+            this.chB35.Text = "chB35";
+            this.chB35.UseVisualStyleBackColor = true;
+            this.chB35.Visible = false;
+            this.chB35.CheckedChanged += new System.EventHandler(this.chB35_CheckedChanged);
+            // 
+            // chB34
+            // 
+            this.chB34.AutoSize = true;
+            this.chB34.Location = new System.Drawing.Point(433, 385);
+            this.chB34.Name = "chB34";
+            this.chB34.Size = new System.Drawing.Size(57, 17);
+            this.chB34.TabIndex = 58;
+            this.chB34.Text = "chB34";
+            this.chB34.UseVisualStyleBackColor = true;
+            this.chB34.Visible = false;
+            this.chB34.CheckedChanged += new System.EventHandler(this.chB34_CheckedChanged);
+            // 
+            // chB33
+            // 
+            this.chB33.AutoSize = true;
+            this.chB33.Location = new System.Drawing.Point(433, 362);
+            this.chB33.Name = "chB33";
+            this.chB33.Size = new System.Drawing.Size(57, 17);
+            this.chB33.TabIndex = 57;
+            this.chB33.Text = "chB33";
+            this.chB33.UseVisualStyleBackColor = true;
+            this.chB33.Visible = false;
+            this.chB33.CheckedChanged += new System.EventHandler(this.chB33_CheckedChanged);
+            // 
+            // chB32
+            // 
+            this.chB32.AutoSize = true;
+            this.chB32.Location = new System.Drawing.Point(433, 339);
+            this.chB32.Name = "chB32";
+            this.chB32.Size = new System.Drawing.Size(57, 17);
+            this.chB32.TabIndex = 56;
+            this.chB32.Text = "chB32";
+            this.chB32.UseVisualStyleBackColor = true;
+            this.chB32.Visible = false;
+            this.chB32.CheckedChanged += new System.EventHandler(this.chB32_CheckedChanged);
+            // 
+            // chB31
+            // 
+            this.chB31.AutoSize = true;
+            this.chB31.Location = new System.Drawing.Point(433, 316);
+            this.chB31.Name = "chB31";
+            this.chB31.Size = new System.Drawing.Size(57, 17);
+            this.chB31.TabIndex = 55;
+            this.chB31.Text = "chB31";
+            this.chB31.UseVisualStyleBackColor = true;
+            this.chB31.Visible = false;
+            this.chB31.CheckedChanged += new System.EventHandler(this.chB31_CheckedChanged);
+            // 
+            // chB30
+            // 
+            this.chB30.AutoSize = true;
+            this.chB30.Location = new System.Drawing.Point(370, 408);
+            this.chB30.Name = "chB30";
+            this.chB30.Size = new System.Drawing.Size(57, 17);
+            this.chB30.TabIndex = 54;
+            this.chB30.Text = "chB30";
+            this.chB30.UseVisualStyleBackColor = true;
+            this.chB30.Visible = false;
+            this.chB30.CheckedChanged += new System.EventHandler(this.chB30_CheckedChanged);
+            // 
+            // chB29
+            // 
+            this.chB29.AutoSize = true;
+            this.chB29.Location = new System.Drawing.Point(370, 385);
+            this.chB29.Name = "chB29";
+            this.chB29.Size = new System.Drawing.Size(57, 17);
+            this.chB29.TabIndex = 53;
+            this.chB29.Text = "chB29";
+            this.chB29.UseVisualStyleBackColor = true;
+            this.chB29.Visible = false;
+            this.chB29.CheckedChanged += new System.EventHandler(this.chB29_CheckedChanged);
+            // 
+            // chB28
+            // 
+            this.chB28.AutoSize = true;
+            this.chB28.Location = new System.Drawing.Point(370, 362);
+            this.chB28.Name = "chB28";
+            this.chB28.Size = new System.Drawing.Size(57, 17);
+            this.chB28.TabIndex = 52;
+            this.chB28.Text = "chB28";
+            this.chB28.UseVisualStyleBackColor = true;
+            this.chB28.Visible = false;
+            this.chB28.CheckedChanged += new System.EventHandler(this.chB28_CheckedChanged);
+            // 
+            // chB27
+            // 
+            this.chB27.AutoSize = true;
+            this.chB27.Location = new System.Drawing.Point(370, 339);
+            this.chB27.Name = "chB27";
+            this.chB27.Size = new System.Drawing.Size(57, 17);
+            this.chB27.TabIndex = 51;
+            this.chB27.Text = "chB27";
+            this.chB27.UseVisualStyleBackColor = true;
+            this.chB27.Visible = false;
+            this.chB27.CheckedChanged += new System.EventHandler(this.chB27_CheckedChanged);
+            // 
+            // chB26
+            // 
+            this.chB26.AutoSize = true;
+            this.chB26.Location = new System.Drawing.Point(370, 316);
+            this.chB26.Name = "chB26";
+            this.chB26.Size = new System.Drawing.Size(57, 17);
+            this.chB26.TabIndex = 50;
+            this.chB26.Text = "chB26";
+            this.chB26.UseVisualStyleBackColor = true;
+            this.chB26.Visible = false;
+            this.chB26.CheckedChanged += new System.EventHandler(this.chB26_CheckedChanged);
+            // 
+            // chB25
+            // 
+            this.chB25.AutoSize = true;
+            this.chB25.Location = new System.Drawing.Point(307, 408);
+            this.chB25.Name = "chB25";
+            this.chB25.Size = new System.Drawing.Size(57, 17);
+            this.chB25.TabIndex = 49;
+            this.chB25.Text = "chB25";
+            this.chB25.UseVisualStyleBackColor = true;
+            this.chB25.Visible = false;
+            this.chB25.CheckedChanged += new System.EventHandler(this.chB25_CheckedChanged);
+            // 
+            // chB24
+            // 
+            this.chB24.AutoSize = true;
+            this.chB24.Location = new System.Drawing.Point(307, 385);
+            this.chB24.Name = "chB24";
+            this.chB24.Size = new System.Drawing.Size(57, 17);
+            this.chB24.TabIndex = 48;
+            this.chB24.Text = "chB24";
+            this.chB24.UseVisualStyleBackColor = true;
+            this.chB24.Visible = false;
+            this.chB24.CheckedChanged += new System.EventHandler(this.chB24_CheckedChanged);
+            // 
+            // chB23
+            // 
+            this.chB23.AutoSize = true;
+            this.chB23.Location = new System.Drawing.Point(307, 362);
+            this.chB23.Name = "chB23";
+            this.chB23.Size = new System.Drawing.Size(57, 17);
+            this.chB23.TabIndex = 47;
+            this.chB23.Text = "chB23";
+            this.chB23.UseVisualStyleBackColor = true;
+            this.chB23.Visible = false;
+            this.chB23.CheckedChanged += new System.EventHandler(this.chB23_CheckedChanged);
+            // 
+            // chB22
+            // 
+            this.chB22.AutoSize = true;
+            this.chB22.Location = new System.Drawing.Point(307, 339);
+            this.chB22.Name = "chB22";
+            this.chB22.Size = new System.Drawing.Size(57, 17);
+            this.chB22.TabIndex = 46;
+            this.chB22.Text = "chB22";
+            this.chB22.UseVisualStyleBackColor = true;
+            this.chB22.Visible = false;
+            this.chB22.CheckedChanged += new System.EventHandler(this.chB22_CheckedChanged);
+            // 
+            // chB21
+            // 
+            this.chB21.AutoSize = true;
+            this.chB21.Location = new System.Drawing.Point(307, 316);
+            this.chB21.Name = "chB21";
+            this.chB21.Size = new System.Drawing.Size(57, 17);
+            this.chB21.TabIndex = 45;
+            this.chB21.Text = "chB21";
+            this.chB21.UseVisualStyleBackColor = true;
+            this.chB21.Visible = false;
+            this.chB21.CheckedChanged += new System.EventHandler(this.chB21_CheckedChanged);
+            // 
+            // chB20
+            // 
+            this.chB20.AutoSize = true;
+            this.chB20.Location = new System.Drawing.Point(496, 284);
+            this.chB20.Name = "chB20";
+            this.chB20.Size = new System.Drawing.Size(57, 17);
+            this.chB20.TabIndex = 44;
+            this.chB20.Text = "chB20";
+            this.chB20.UseVisualStyleBackColor = true;
+            this.chB20.Visible = false;
+            this.chB20.CheckedChanged += new System.EventHandler(this.chB20_CheckedChanged);
+            // 
+            // chB19
+            // 
+            this.chB19.AutoSize = true;
+            this.chB19.Location = new System.Drawing.Point(496, 261);
+            this.chB19.Name = "chB19";
+            this.chB19.Size = new System.Drawing.Size(57, 17);
+            this.chB19.TabIndex = 43;
+            this.chB19.Text = "chB19";
+            this.chB19.UseVisualStyleBackColor = true;
+            this.chB19.Visible = false;
+            this.chB19.CheckedChanged += new System.EventHandler(this.chB19_CheckedChanged);
+            // 
+            // chB18
+            // 
+            this.chB18.AutoSize = true;
+            this.chB18.Location = new System.Drawing.Point(496, 238);
+            this.chB18.Name = "chB18";
+            this.chB18.Size = new System.Drawing.Size(57, 17);
+            this.chB18.TabIndex = 42;
+            this.chB18.Text = "chB18";
+            this.chB18.UseVisualStyleBackColor = true;
+            this.chB18.Visible = false;
+            this.chB18.CheckedChanged += new System.EventHandler(this.chB18_CheckedChanged);
+            // 
+            // chB17
+            // 
+            this.chB17.AutoSize = true;
+            this.chB17.Location = new System.Drawing.Point(496, 215);
+            this.chB17.Name = "chB17";
+            this.chB17.Size = new System.Drawing.Size(57, 17);
+            this.chB17.TabIndex = 41;
+            this.chB17.Text = "chB17";
+            this.chB17.UseVisualStyleBackColor = true;
+            this.chB17.Visible = false;
+            this.chB17.CheckedChanged += new System.EventHandler(this.chB17_CheckedChanged);
             // 
             // chB16
             // 
@@ -932,274 +1220,6 @@
             this.btnBackHeroe.UseVisualStyleBackColor = true;
             this.btnBackHeroe.Visible = false;
             this.btnBackHeroe.Click += new System.EventHandler(this.btnBackHeroe_Click);
-            // 
-            // chB17
-            // 
-            this.chB17.AutoSize = true;
-            this.chB17.Location = new System.Drawing.Point(496, 215);
-            this.chB17.Name = "chB17";
-            this.chB17.Size = new System.Drawing.Size(57, 17);
-            this.chB17.TabIndex = 41;
-            this.chB17.Text = "chB17";
-            this.chB17.UseVisualStyleBackColor = true;
-            this.chB17.Visible = false;
-            this.chB17.CheckedChanged += new System.EventHandler(this.chB17_CheckedChanged);
-            // 
-            // chB18
-            // 
-            this.chB18.AutoSize = true;
-            this.chB18.Location = new System.Drawing.Point(496, 238);
-            this.chB18.Name = "chB18";
-            this.chB18.Size = new System.Drawing.Size(57, 17);
-            this.chB18.TabIndex = 42;
-            this.chB18.Text = "chB18";
-            this.chB18.UseVisualStyleBackColor = true;
-            this.chB18.Visible = false;
-            this.chB18.CheckedChanged += new System.EventHandler(this.chB18_CheckedChanged);
-            // 
-            // chB19
-            // 
-            this.chB19.AutoSize = true;
-            this.chB19.Location = new System.Drawing.Point(496, 261);
-            this.chB19.Name = "chB19";
-            this.chB19.Size = new System.Drawing.Size(57, 17);
-            this.chB19.TabIndex = 43;
-            this.chB19.Text = "chB19";
-            this.chB19.UseVisualStyleBackColor = true;
-            this.chB19.Visible = false;
-            this.chB19.CheckedChanged += new System.EventHandler(this.chB19_CheckedChanged);
-            // 
-            // chB20
-            // 
-            this.chB20.AutoSize = true;
-            this.chB20.Location = new System.Drawing.Point(496, 284);
-            this.chB20.Name = "chB20";
-            this.chB20.Size = new System.Drawing.Size(57, 17);
-            this.chB20.TabIndex = 44;
-            this.chB20.Text = "chB20";
-            this.chB20.UseVisualStyleBackColor = true;
-            this.chB20.Visible = false;
-            this.chB20.CheckedChanged += new System.EventHandler(this.chB20_CheckedChanged);
-            // 
-            // chB40
-            // 
-            this.chB40.AutoSize = true;
-            this.chB40.Location = new System.Drawing.Point(496, 408);
-            this.chB40.Name = "chB40";
-            this.chB40.Size = new System.Drawing.Size(57, 17);
-            this.chB40.TabIndex = 64;
-            this.chB40.Text = "chB40";
-            this.chB40.UseVisualStyleBackColor = true;
-            this.chB40.Visible = false;
-            // 
-            // chB39
-            // 
-            this.chB39.AutoSize = true;
-            this.chB39.Location = new System.Drawing.Point(496, 385);
-            this.chB39.Name = "chB39";
-            this.chB39.Size = new System.Drawing.Size(57, 17);
-            this.chB39.TabIndex = 63;
-            this.chB39.Text = "chB39";
-            this.chB39.UseVisualStyleBackColor = true;
-            this.chB39.Visible = false;
-            // 
-            // chB38
-            // 
-            this.chB38.AutoSize = true;
-            this.chB38.Location = new System.Drawing.Point(496, 362);
-            this.chB38.Name = "chB38";
-            this.chB38.Size = new System.Drawing.Size(57, 17);
-            this.chB38.TabIndex = 62;
-            this.chB38.Text = "chB38";
-            this.chB38.UseVisualStyleBackColor = true;
-            this.chB38.Visible = false;
-            // 
-            // chB37
-            // 
-            this.chB37.AutoSize = true;
-            this.chB37.Location = new System.Drawing.Point(496, 339);
-            this.chB37.Name = "chB37";
-            this.chB37.Size = new System.Drawing.Size(57, 17);
-            this.chB37.TabIndex = 61;
-            this.chB37.Text = "chB37";
-            this.chB37.UseVisualStyleBackColor = true;
-            this.chB37.Visible = false;
-            // 
-            // chB36
-            // 
-            this.chB36.AutoSize = true;
-            this.chB36.Location = new System.Drawing.Point(496, 316);
-            this.chB36.Name = "chB36";
-            this.chB36.Size = new System.Drawing.Size(57, 17);
-            this.chB36.TabIndex = 60;
-            this.chB36.Text = "chB36";
-            this.chB36.UseVisualStyleBackColor = true;
-            this.chB36.Visible = false;
-            // 
-            // chB35
-            // 
-            this.chB35.AutoSize = true;
-            this.chB35.Location = new System.Drawing.Point(433, 408);
-            this.chB35.Name = "chB35";
-            this.chB35.Size = new System.Drawing.Size(57, 17);
-            this.chB35.TabIndex = 59;
-            this.chB35.Text = "chB35";
-            this.chB35.UseVisualStyleBackColor = true;
-            this.chB35.Visible = false;
-            // 
-            // chB34
-            // 
-            this.chB34.AutoSize = true;
-            this.chB34.Location = new System.Drawing.Point(433, 385);
-            this.chB34.Name = "chB34";
-            this.chB34.Size = new System.Drawing.Size(57, 17);
-            this.chB34.TabIndex = 58;
-            this.chB34.Text = "chB34";
-            this.chB34.UseVisualStyleBackColor = true;
-            this.chB34.Visible = false;
-            // 
-            // chB33
-            // 
-            this.chB33.AutoSize = true;
-            this.chB33.Location = new System.Drawing.Point(433, 362);
-            this.chB33.Name = "chB33";
-            this.chB33.Size = new System.Drawing.Size(57, 17);
-            this.chB33.TabIndex = 57;
-            this.chB33.Text = "chB33";
-            this.chB33.UseVisualStyleBackColor = true;
-            this.chB33.Visible = false;
-            // 
-            // chB32
-            // 
-            this.chB32.AutoSize = true;
-            this.chB32.Location = new System.Drawing.Point(433, 339);
-            this.chB32.Name = "chB32";
-            this.chB32.Size = new System.Drawing.Size(57, 17);
-            this.chB32.TabIndex = 56;
-            this.chB32.Text = "chB32";
-            this.chB32.UseVisualStyleBackColor = true;
-            this.chB32.Visible = false;
-            // 
-            // chB31
-            // 
-            this.chB31.AutoSize = true;
-            this.chB31.Location = new System.Drawing.Point(433, 316);
-            this.chB31.Name = "chB31";
-            this.chB31.Size = new System.Drawing.Size(57, 17);
-            this.chB31.TabIndex = 55;
-            this.chB31.Text = "chB31";
-            this.chB31.UseVisualStyleBackColor = true;
-            this.chB31.Visible = false;
-            // 
-            // chB30
-            // 
-            this.chB30.AutoSize = true;
-            this.chB30.Location = new System.Drawing.Point(370, 408);
-            this.chB30.Name = "chB30";
-            this.chB30.Size = new System.Drawing.Size(57, 17);
-            this.chB30.TabIndex = 54;
-            this.chB30.Text = "chB30";
-            this.chB30.UseVisualStyleBackColor = true;
-            this.chB30.Visible = false;
-            // 
-            // chB29
-            // 
-            this.chB29.AutoSize = true;
-            this.chB29.Location = new System.Drawing.Point(370, 385);
-            this.chB29.Name = "chB29";
-            this.chB29.Size = new System.Drawing.Size(57, 17);
-            this.chB29.TabIndex = 53;
-            this.chB29.Text = "chB29";
-            this.chB29.UseVisualStyleBackColor = true;
-            this.chB29.Visible = false;
-            // 
-            // chB28
-            // 
-            this.chB28.AutoSize = true;
-            this.chB28.Location = new System.Drawing.Point(370, 362);
-            this.chB28.Name = "chB28";
-            this.chB28.Size = new System.Drawing.Size(57, 17);
-            this.chB28.TabIndex = 52;
-            this.chB28.Text = "chB28";
-            this.chB28.UseVisualStyleBackColor = true;
-            this.chB28.Visible = false;
-            // 
-            // chB27
-            // 
-            this.chB27.AutoSize = true;
-            this.chB27.Location = new System.Drawing.Point(370, 339);
-            this.chB27.Name = "chB27";
-            this.chB27.Size = new System.Drawing.Size(57, 17);
-            this.chB27.TabIndex = 51;
-            this.chB27.Text = "chB27";
-            this.chB27.UseVisualStyleBackColor = true;
-            this.chB27.Visible = false;
-            // 
-            // chB26
-            // 
-            this.chB26.AutoSize = true;
-            this.chB26.Location = new System.Drawing.Point(370, 316);
-            this.chB26.Name = "chB26";
-            this.chB26.Size = new System.Drawing.Size(57, 17);
-            this.chB26.TabIndex = 50;
-            this.chB26.Text = "chB26";
-            this.chB26.UseVisualStyleBackColor = true;
-            this.chB26.Visible = false;
-            // 
-            // chB25
-            // 
-            this.chB25.AutoSize = true;
-            this.chB25.Location = new System.Drawing.Point(307, 408);
-            this.chB25.Name = "chB25";
-            this.chB25.Size = new System.Drawing.Size(57, 17);
-            this.chB25.TabIndex = 49;
-            this.chB25.Text = "chB25";
-            this.chB25.UseVisualStyleBackColor = true;
-            this.chB25.Visible = false;
-            // 
-            // chB24
-            // 
-            this.chB24.AutoSize = true;
-            this.chB24.Location = new System.Drawing.Point(307, 385);
-            this.chB24.Name = "chB24";
-            this.chB24.Size = new System.Drawing.Size(57, 17);
-            this.chB24.TabIndex = 48;
-            this.chB24.Text = "chB24";
-            this.chB24.UseVisualStyleBackColor = true;
-            this.chB24.Visible = false;
-            // 
-            // chB23
-            // 
-            this.chB23.AutoSize = true;
-            this.chB23.Location = new System.Drawing.Point(307, 362);
-            this.chB23.Name = "chB23";
-            this.chB23.Size = new System.Drawing.Size(57, 17);
-            this.chB23.TabIndex = 47;
-            this.chB23.Text = "chB23";
-            this.chB23.UseVisualStyleBackColor = true;
-            this.chB23.Visible = false;
-            // 
-            // chB22
-            // 
-            this.chB22.AutoSize = true;
-            this.chB22.Location = new System.Drawing.Point(307, 339);
-            this.chB22.Name = "chB22";
-            this.chB22.Size = new System.Drawing.Size(57, 17);
-            this.chB22.TabIndex = 46;
-            this.chB22.Text = "chB22";
-            this.chB22.UseVisualStyleBackColor = true;
-            this.chB22.Visible = false;
-            // 
-            // chB21
-            // 
-            this.chB21.AutoSize = true;
-            this.chB21.Location = new System.Drawing.Point(307, 316);
-            this.chB21.Name = "chB21";
-            this.chB21.Size = new System.Drawing.Size(57, 17);
-            this.chB21.TabIndex = 45;
-            this.chB21.Text = "chB21";
-            this.chB21.UseVisualStyleBackColor = true;
-            this.chB21.Visible = false;
             // 
             // Form1
             // 

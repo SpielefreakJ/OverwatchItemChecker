@@ -44,7 +44,7 @@ namespace OverwatchLootBoxTracker.Translate
 
         //Skin
         //Rare
-        public string S2_Cidro_SK
+        public string Cidro_SK//1
         {
             get
             {
@@ -55,7 +55,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string S2_Incendio_SK
+        public string Incendio_SK//2
         {
             get
             {
@@ -66,7 +66,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string S2_Mar_SK
+        public string Mar_SK//3
         {
             get
             {
@@ -77,7 +77,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string S2_Noche_SK
+        public string Noche_SK//4
         {
             get
             {
@@ -88,7 +88,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Epic
-        public string S2_Glitch_SK
+        public string Glitch_SK//5
         {
             get
             {
@@ -99,7 +99,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string S2_Virus_SK
+        public string Virus_SK//6
         {
             get
             {
@@ -110,7 +110,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string S2_Peppermint_SK
+        public string Peppermint_SK//7
         {//Winter 2016
             get
             {
@@ -121,7 +121,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Legendary
-        public string S2_Azúcar_SK
+        public string Azúcar_SK//8
         {
             get
             {
@@ -132,7 +132,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string S2_Los_Muertos_SK
+        public string Los_Muertos_SK//9
         {
             get
             {
@@ -143,7 +143,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string S2_Augmented_SK
+        public string Augmented_SK//10
         {
             get
             {
@@ -154,7 +154,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string S2_Cyberspace_SK
+        public string Cyberspace_SK//11
         {
             get
             {
@@ -165,7 +165,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string S2_Tulum_SK
+        public string Tulum_SK//12
         {//Summer 2017
             get
             {

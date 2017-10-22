@@ -45,7 +45,7 @@ namespace OverwatchLootBoxTracker.Translate
         //Skin
 
         //Rare
-        public string Blå_SK
+        public string Blå_SK//1
         {
             get
             {
@@ -56,7 +56,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Citron_SK
+        public string Citron_SK//2
         {
             get
             {
@@ -67,7 +67,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Grön_SK
+        public string Grön_SK//3
         {
             get
             {
@@ -78,7 +78,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Plommon_SK
+        public string Plommon_SK//4
         {
             get
             {
@@ -89,7 +89,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Epic
-        public string Cathode_SK
+        public string Cathode_SK//5
         {
             get
             {
@@ -100,7 +100,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Woodclad_SK
+        public string Woodclad_SK//6
         {
             get
             {
@@ -111,7 +111,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Tre_Kronor_SK
+        public string Tre_Kronor_SK//7
         {//Summer 2016
             get
             {
@@ -122,7 +122,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Legendary
-        public string Chopper_SK
+        public string Chopper_SK//8
         {
             get
             {
@@ -133,7 +133,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Deadlock_SK
+        public string Deadlock_SK//9
         {
             get
             {
@@ -144,7 +144,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Barbarossa_SK
+        public string Barbarossa_SK//10
         {
             get
             {
@@ -155,7 +155,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Blackbeard_SK
+        public string Blackbeard_SK//11
         {
             get
             {
@@ -166,7 +166,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Viking_SK
+        public string Viking_SK//12
         {//Halloween 2017
             get
             {
@@ -177,7 +177,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Santaclad_SK
+        public string Santaclad_SK//13
         {//Winter 2016
             get
             {
@@ -188,7 +188,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Chief_Engineer_Lindholm_SK
+        public string Chief_Engineer_Lindholm_SK//14
         {//Uprising 2017
             get
             {
@@ -199,7 +199,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Ironclad_SK
+        public string Ironclad_SK//15
         {//Uprising 2017
             get
             {

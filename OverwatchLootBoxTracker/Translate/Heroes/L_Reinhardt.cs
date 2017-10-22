@@ -45,7 +45,7 @@ namespace OverwatchLootBoxTracker.Translate
         //Skin
 
         //Rare
-        public string R2_Brass_SK
+        public string Brass_SK//1
         {
             get
             {
@@ -56,7 +56,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string R2_Cobalt_SK
+        public string Cobalt_SK//2
         {
             get
             {
@@ -67,7 +67,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string R2_Copper_SK
+        public string Copper_SK//3
         {
             get
             {
@@ -78,7 +78,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string R2_Viridian_SK
+        public string Viridian_SK//4
         {
             get
             {
@@ -89,7 +89,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Epic
-        public string R2_Bundeswehr_SK
+        public string Bundeswehr_SK//5
         {
             get
             {
@@ -100,7 +100,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string R2_Paragon_SK
+        public string Paragon_SK//6
         {
             get
             {
@@ -111,7 +111,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string R2_Coldhardt_SK
+        public string Coldhardt_SK//7
         {//Halloween 2016
             get
             {
@@ -122,7 +122,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string R2_Lieutenant_Wilhelm_SK
+        public string Lieutenant_Wilhelm_SK//8
         {//Uprising 2017
             get
             {
@@ -133,7 +133,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Legendary
-        public string R2_Blackhardt_SK
+        public string Blackhardt_SK//9
         {
             get
             {
@@ -144,7 +144,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string R2_Bloodhardt_SK
+        public string Bloodhardt_SK//10
         {
             get
             {
@@ -155,7 +155,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string R2_Lionhardt_SK
+        public string Lionhardt_SK//11
         {
             get
             {
@@ -166,7 +166,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string R2_Stonehardt_SK
+        public string Stonehardt_SK//12
         {
             get
             {
@@ -177,7 +177,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string R2_Balderich_SK
+        public string Balderich_SK//13
         {
             get
             {
@@ -188,7 +188,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string R2_Greifhardt_SK
+        public string Greifhardt_SK//14
         {
             get
             {
@@ -199,7 +199,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string R2_Wujing_SK
+        public string Wujing_SK//15
         {//Rooster 2017
             get
             {

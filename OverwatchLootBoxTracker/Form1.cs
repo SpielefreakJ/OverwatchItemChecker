@@ -574,29 +574,25 @@ namespace OverwatchLootBoxTracker
             btnHeroeinvisible();
             gbAll.Text += " / " + Ana.Name;
 
-            //Auslesen der "Settings.ini" Datei und speichern in IniStream inisSettings
-            String appdata = System.Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-            appdata += "\\OWItemTracker";
-            Directory.CreateDirectory(appdata);
             inisHeroes = new IniStream(appdata + "\\Ana.ini");
             Heroe = "H";
 
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true;
-                chB02.Visible = true;
-                chB03.Visible = true;
-                chB04.Visible = true;
-                chB05.Visible = true;
-                chB06.Visible = true;
-                chB07.Visible = true;
-                chB08.Visible = true;
-                chB09.Visible = true;
-                chB10.Visible = true;
-                chB11.Visible = true;
-                chB12.Visible = true;
-                chB13.Visible = true;
+                chB01.Visible = true; chB01.Text = Ana.Citrine_SK;
+                chB02.Visible = true; chB02.Text = Ana.Garnet_SK;
+                chB03.Visible = true; chB03.Text = Ana.Peridot_SK;
+                chB04.Visible = true; chB04.Text = Ana.Turquoise_SK;
+                chB05.Visible = true; chB05.Text = Ana.Merciful_SK;
+                chB06.Visible = true; chB06.Text = Ana.Shrike_SK;
+                chB07.Visible = true; chB07.Text = Ana.Ghoul_SK;
+                chB08.Visible = true; chB08.Text = Ana.Tal_SK;
+                chB09.Visible = true; chB09.Text = Ana.Wadjet_SK;
+                chB10.Visible = true; chB10.Text = Ana.Wasteland_SK;
+                chB11.Visible = true; chB11.Text = Ana.Captain_Amari_SK;
+                chB12.Visible = true; chB12.Text = Ana.Horus_SK;
+                chB13.Visible = true; chB13.Text = Ana.Corsair_SK;
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;
@@ -652,14 +648,14 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave == Lang.Emotes)
             {
-                chB01.Visible = true;
-                chB02.Visible = true;
-                chB03.Visible = true;
-                chB04.Visible = true;
-                chB05.Visible = true;
-                chB06.Visible = true;
-                chB07.Visible = true;
-                chB08.Visible = true;
+                chB01.Visible = true; chB01.Text = Ana.Not_Impressed_EM;
+                chB02.Visible = true; chB02.Text = Ana.Disapproving_EM;
+                chB03.Visible = true; chB03.Text = Ana.Protector_EM;
+                chB04.Visible = true; chB04.Text = Ana.Take_A_Knee_EM;
+                chB05.Visible = true; chB05.Text = Ana.Tea_Time_EM;
+                chB06.Visible = true; chB06.Text = Ana.Beach_Ball_EM;
+                chB07.Visible = true; chB07.Text = Ana.Candy_EM;
+                chB08.Visible = true; chB08.Text = Ana.Dance_EM;
                 if (inisHeroes.Read("EM01") == "1")
                 {
                     chB01.Checked = true;
@@ -695,12 +691,12 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave == Lang.VictoryPoses)
             {
-                chB01.Visible = true;
-                chB02.Visible = true;
-                chB03.Visible = true;
-                chB04.Visible = true;
-                chB05.Visible = true;
-                chB06.Visible = true;
+                chB01.Visible = true; chB01.Text = Ana.Mission_Complete_VP;
+                chB02.Visible = true; chB02.Text = Ana.Protector_VP;
+                chB03.Visible = true; chB03.Text = Ana.Seated_VP;
+                chB04.Visible = true; chB04.Text = Ana.RIP_VP;
+                chB05.Visible = true; chB05.Text = Ana.Toast_VP;
+                chB06.Visible = true; chB06.Text = Ana.Folded_Hands_VP;
                 if (inisHeroes.Read("VP01") == "1")
                 {
                     chB01.Checked = true;
@@ -728,26 +724,26 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave == Lang.VoiceLines)
             {
-                chB01.Visible = true;
-                chB02.Visible = true;
-                chB03.Visible = true;
-                chB04.Visible = true;
-                chB05.Visible = true;
-                chB06.Visible = true;
-                chB07.Visible = true;
-                chB08.Visible = true;
-                chB09.Visible = true;
-                chB10.Visible = true;
-                chB11.Visible = true;
-                chB12.Visible = true;
-                chB13.Visible = true;
-                chB14.Visible = true;
-                chB15.Visible = true;
-                chB16.Visible = true;
-                chB17.Visible = true;
-                chB18.Visible = true;
-                chB19.Visible = true;
-                chB20.Visible = true;
+                chB01.Visible = true; chB01.Text = Ana.Justice_Delivered_VL;
+                chB02.Visible = true; chB02.Text = Ana.Children_behave_VL;
+                chB03.Visible = true; chB03.Text = Ana.Everyone_dies_VL;
+                chB04.Visible = true; chB04.Text = Ana.It_takes_a_woman_to_know_VL;
+                chB05.Visible = true; chB05.Text = Ana.Justice_rains_from_above_VL;
+                chB06.Visible = true; chB06.Text = Ana.Mother_knows_best_VL;
+                chB07.Visible = true; chB07.Text = Ana.No_scope_needed_VL;
+                chB08.Visible = true; chB08.Text = Ana.What_are_you_thinking_VL;
+                chB09.Visible = true; chB09.Text = Ana.Witness_me_VL;
+                chB10.Visible = true; chB10.Text = Ana.You_know_nothing_VL;
+                chB11.Visible = true; chB11.Text = Ana.Someone_to_tuck_you_in_VL;
+                chB12.Visible = true; chB12.Text = Ana.Learn_from_the_pain_VL;
+                chB13.Visible = true; chB13.Text = Ana.Are_you_scared_VL;
+                chB14.Visible = true; chB14.Text = Ana.Dont_be_scared_VL;
+                chB15.Visible = true; chB15.Text = Ana.Im_watching_out_for_you_VL;
+                chB16.Visible = true; chB16.Text = Ana.The_Moon_in_Winter_VL;
+                chB17.Visible = true; chB17.Text = Ana.Damn_VL;
+                chB18.Visible = true; chB18.Text = Ana.The_Ghost_watches_VL;
+                chB19.Visible = true; chB19.Text = Ana.Follow_me_VL;
+                chB20.Visible = true; chB20.Text = Ana.The_adults_are_talking_VL;
                 if (inisHeroes.Read("VL01") == "1")
                 {
                     chB01.Checked = true;
@@ -831,39 +827,39 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave == Lang.Sprays)
             {
-                chB01.Visible = true;
-                chB02.Visible = true;
-                chB03.Visible = true;
-                chB04.Visible = true;
-                chB05.Visible = true;
-                chB06.Visible = true;
-                chB07.Visible = true;
-                chB08.Visible = true;
-                chB09.Visible = true;
-                chB10.Visible = true;
-                chB11.Visible = true;
-                chB12.Visible = true;
-                chB13.Visible = true;
-                chB14.Visible = true;
-                chB15.Visible = true;
-                chB16.Visible = true;
-                chB17.Visible = true;
-                chB18.Visible = true;
-                chB19.Visible = true;
-                chB20.Visible = true;
-                chB21.Visible = true;
-                chB22.Visible = true;
-                chB23.Visible = true;
-                chB24.Visible = true;
-                chB25.Visible = true;
-                chB26.Visible = true;
-                chB27.Visible = true;
-                chB28.Visible = true;
-                chB29.Visible = true;
-                chB30.Visible = true;
-                chB31.Visible = true;
-                chB32.Visible = true;
-                chB33.Visible = true;
+                chB01.Visible = true; chB01.Text = Ana.Action_SP;
+                chB02.Visible = true; chB02.Text = Ana.Ana_SP;
+                chB03.Visible = true; chB03.Text = Ana.Bearer_SP;
+                chB04.Visible = true; chB04.Text = Ana.Cheer_SP;
+                chB05.Visible = true; chB05.Text = Ana.Cracked_SP;
+                chB06.Visible = true; chB06.Text = Ana.Cute_SP;
+                chB07.Visible = true; chB07.Text = Ana.Eyepatch_SP;
+                chB08.Visible = true; chB08.Text = Ana.Fareeha_SP;
+                chB09.Visible = true; chB09.Text = Ana.Gaze_SP;
+                chB10.Visible = true; chB10.Text = Ana.Grenade_SP;
+                chB11.Visible = true; chB11.Text = Ana.Guardian_SP;
+                chB12.Visible = true; chB12.Text = Ana.Hesitation_SP;
+                chB13.Visible = true; chB13.Text = Ana.Icon_SP;
+                chB14.Visible = true; chB14.Text = Ana.Letter_SP;
+                chB15.Visible = true; chB15.Text = Ana.Old_Soldier_SP;
+                chB16.Visible = true; chB16.Text = Ana.Overhead_SP;
+                chB17.Visible = true; chB17.Text = Ana.Photograph_SP;
+                chB18.Visible = true; chB18.Text = Ana.Pixel_SP;
+                chB19.Visible = true; chB19.Text = Ana.Rifle_SP;
+                chB20.Visible = true; chB20.Text = Ana.Shadow_SP;
+                chB21.Visible = true; chB21.Text = Ana.Shhh_SP;
+                chB22.Visible = true; chB22.Text = Ana.Sidearm_SP;
+                chB23.Visible = true; chB23.Text = Ana.Wedjat_SP;
+                chB24.Visible = true; chB24.Text = Ana.Wrist_Launcher_SP;
+                chB25.Visible = true; chB25.Text = Ana.Zzz_SP;
+                chB26.Visible = true; chB26.Text = Ana.Shooting_SP;
+                chB27.Visible = true; chB27.Text = Ana.Trick_or_Treat_SP;
+                chB28.Visible = true; chB28.Text = Ana.Ornament_SP;
+                chB29.Visible = true; chB29.Text = Ana.Warm_SP;
+                chB30.Visible = true; chB30.Text = Ana.Dance_SP;
+                chB31.Visible = true; chB31.Text = Ana.Dragon_Dance_SP;
+                chB32.Visible = true; chB32.Text = Ana.Newborn_SP;
+                chB33.Visible = true; chB33.Text = Ana.Ace_of_Hearts_SP;
                 if (inisHeroes.Read("SP01") == "1")
                 {
                     chB01.Checked = true;
@@ -999,9 +995,9 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave == Lang.HighlightIntros)
             {
-                chB01.Visible = true;
-                chB02.Visible = true;
-                chB03.Visible = true;
+                chB01.Visible = true; chB01.Text = Ana.Guardian_HI;
+                chB02.Visible = true; chB02.Text = Ana.Locked_on_HI;
+                chB03.Visible = true; chB03.Text = Ana.Shh_HI;
                 if (inisHeroes.Read("HI01") == "1")
                 {
                     chB01.Checked = true;
@@ -1017,10 +1013,10 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave == Lang.HighlightIntros)
             {
-                chB01.Visible = true;
-                chB02.Visible = true;
-                chB03.Visible = true;
-                chB04.Visible = true;
+                chB01.Visible = true; chB03.Text = Ana.Ana_PI;
+                chB02.Visible = true; chB03.Text = Ana.Watcher_PI;
+                chB03.Visible = true; chB03.Text = Ana.Wedjat_PI;
+                chB04.Visible = true; chB03.Text = Ana.Shooting_PI;
                 if (inisHeroes.Read("PI01") == "1")
                 {
                     chB01.Checked = true;
@@ -1045,32 +1041,28 @@ namespace OverwatchLootBoxTracker
             btnHeroeinvisible();
             gbAll.Text += " / " + Bastion.Name;
 
-            //Auslesen der "Settings.ini" Datei und speichern in IniStream inisSettings
-            String appdata = System.Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
-            appdata += "\\OWItemTracker";
-            Directory.CreateDirectory(appdata);
             inisHeroes = new IniStream(appdata + "\\Bastion.ini");
             Heroe = "H";
 
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true;
-                chB02.Visible = true;
-                chB03.Visible = true;
-                chB04.Visible = true;
-                chB05.Visible = true;
-                chB06.Visible = true;
-                chB07.Visible = true;
-                chB08.Visible = true;
-                chB09.Visible = true;
-                chB10.Visible = true;
-                chB11.Visible = true;
-                chB12.Visible = true;
-                chB13.Visible = true;
-                chB14.Visible = true;
-                chB15.Visible = true;
-                chB16.Visible = true;
+                chB01.Visible = true; chB01.Text = Bastion.Dawn_SK;
+                chB02.Visible = true; chB02.Text = Bastion.Meadow_SK;
+                chB03.Visible = true; chB03.Text = Bastion.Sky_SK;
+                chB04.Visible = true; chB04.Text = Bastion.Soot_SK;
+                chB05.Visible = true; chB05.Text = Bastion.Defense_Matrix_SK;
+                chB06.Visible = true; chB06.Text = Bastion.Omnic_Crisis_SK;
+                chB07.Visible = true; chB07.Text = Bastion.BlizzCon_2016_SK;
+                chB08.Visible = true; chB08.Text = Bastion.Tombstone_SK;
+                chB09.Visible = true; chB09.Text = Bastion.Rooster_SK;
+                chB10.Visible = true; chB10.Text = Bastion.Null_Sector_SK;
+                chB11.Visible = true; chB11.Text = Bastion.Antique_SK;
+                chB12.Visible = true; chB12.Text = Bastion.Woodbot_SK;
+                chB13.Visible = true; chB13.Text = Bastion.Gearbot_SK;
+                chB14.Visible = true; chB14.Text = Bastion.Steambot_SK;
+                chB15.Visible = true; chB15.Text = Bastion.Overgrown_SK;
+                chB16.Visible = true; chB16.Text = Bastion.Dune_Buggy_SK;
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;
@@ -1321,138 +1313,1911 @@ namespace OverwatchLootBoxTracker
         {
             btnHeroeinvisible();
             gbAll.Text += " / " + DVa.Name;
+
+            inisHeroes = new IniStream(appdata + "\\DVa.ini");
+            Heroe = "H";
+
+            //Anzeigen, Auslesen und anwenden der chB
+            if (BackSave == Lang.Skins)
+            {
+                chB01.Visible = true;
+                chB02.Visible = true;
+                chB03.Visible = true;
+                chB04.Visible = true;
+                chB05.Visible = true;
+                chB06.Visible = true;
+                chB07.Visible = true;
+                chB08.Visible = true;
+                chB09.Visible = true;
+                chB10.Visible = true;
+                chB11.Visible = true;
+                chB12.Visible = true;
+                chB13.Visible = true;
+                chB14.Visible = true;
+                if (inisHeroes.Read("SK01") == "1")
+                {
+                    chB01.Checked = true;
+                }
+                if (inisHeroes.Read("SK02") == "1")
+                {
+                    chB02.Checked = true;
+                }
+                if (inisHeroes.Read("SK03") == "1")
+                {
+                    chB03.Checked = true;
+                }
+                if (inisHeroes.Read("SK04") == "1")
+                {
+                    chB04.Checked = true;
+                }
+                if (inisHeroes.Read("SK05") == "1")
+                {
+                    chB05.Checked = true;
+                }
+                if (inisHeroes.Read("SK06") == "1")
+                {
+                    chB06.Checked = true;
+                }
+                if (inisHeroes.Read("SK07") == "1")
+                {
+                    chB07.Checked = true;
+                }
+                if (inisHeroes.Read("SK08") == "1")
+                {
+                    chB08.Checked = true;
+                }
+                if (inisHeroes.Read("SK09") == "1")
+                {
+                    chB09.Checked = true;
+                }
+                if (inisHeroes.Read("SK10") == "1")
+                {
+                    chB10.Checked = true;
+                }
+                if (inisHeroes.Read("SK11") == "1")
+                {
+                    chB11.Checked = true;
+                }
+                if (inisHeroes.Read("SK12") == "1")
+                {
+                    chB12.Checked = true;
+                }
+                if (inisHeroes.Read("SK13") == "1")
+                {
+                    chB13.Checked = true;
+                }
+                if (inisHeroes.Read("SK14") == "1")
+                {
+                    chB14.Checked = true;
+                }
+            }
         }
 
         private void btnDoomfist_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible();
             gbAll.Text += " / " + Doomfist.Name;
+
+            inisHeroes = new IniStream(appdata + "\\Doomfist.ini");
+            Heroe = "H";
+
+            //Anzeigen, Auslesen und anwenden der chB
+            if (BackSave == Lang.Skins)
+            {
+                chB01.Visible = true;
+                chB02.Visible = true;
+                chB03.Visible = true;
+                chB04.Visible = true;
+                chB05.Visible = true;
+                chB06.Visible = true;
+                chB07.Visible = true;
+                chB08.Visible = true;
+                chB09.Visible = true;
+                chB10.Visible = true;
+                if (inisHeroes.Read("SK01") == "1")
+                {
+                    chB01.Checked = true;
+                }
+                if (inisHeroes.Read("SK02") == "1")
+                {
+                    chB02.Checked = true;
+                }
+                if (inisHeroes.Read("SK03") == "1")
+                {
+                    chB03.Checked = true;
+                }
+                if (inisHeroes.Read("SK04") == "1")
+                {
+                    chB04.Checked = true;
+                }
+                if (inisHeroes.Read("SK05") == "1")
+                {
+                    chB05.Checked = true;
+                }
+                if (inisHeroes.Read("SK06") == "1")
+                {
+                    chB06.Checked = true;
+                }
+                if (inisHeroes.Read("SK07") == "1")
+                {
+                    chB07.Checked = true;
+                }
+                if (inisHeroes.Read("SK08") == "1")
+                {
+                    chB08.Checked = true;
+                }
+                if (inisHeroes.Read("SK09") == "1")
+                {
+                    chB09.Checked = true;
+                }
+                if (inisHeroes.Read("SK10") == "1")
+                {
+                    chB10.Checked = true;
+                }
+            }
         }
 
         private void btnGeji_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible();
             gbAll.Text += " / " + Genji.Name;
+
+            inisHeroes = new IniStream(appdata + "\\Genji.ini");
+            Heroe = "H";
+
+            //Anzeigen, Auslesen und anwenden der chB
+            if (BackSave == Lang.Skins)
+            {
+                chB01.Visible = true;
+                chB02.Visible = true;
+                chB03.Visible = true;
+                chB04.Visible = true;
+                chB05.Visible = true;
+                chB06.Visible = true;
+                chB07.Visible = true;
+                chB08.Visible = true;
+                chB09.Visible = true;
+                chB10.Visible = true;
+                chB11.Visible = true;
+                chB12.Visible = true;
+                chB13.Visible = true;
+                if (inisHeroes.Read("SK01") == "1")
+                {
+                    chB01.Checked = true;
+                }
+                if (inisHeroes.Read("SK02") == "1")
+                {
+                    chB02.Checked = true;
+                }
+                if (inisHeroes.Read("SK03") == "1")
+                {
+                    chB03.Checked = true;
+                }
+                if (inisHeroes.Read("SK04") == "1")
+                {
+                    chB04.Checked = true;
+                }
+                if (inisHeroes.Read("SK05") == "1")
+                {
+                    chB05.Checked = true;
+                }
+                if (inisHeroes.Read("SK06") == "1")
+                {
+                    chB06.Checked = true;
+                }
+                if (inisHeroes.Read("SK07") == "1")
+                {
+                    chB07.Checked = true;
+                }
+                if (inisHeroes.Read("SK08") == "1")
+                {
+                    chB08.Checked = true;
+                }
+                if (inisHeroes.Read("SK09") == "1")
+                {
+                    chB09.Checked = true;
+                }
+                if (inisHeroes.Read("SK10") == "1")
+                {
+                    chB10.Checked = true;
+                }
+                if (inisHeroes.Read("SK11") == "1")
+                {
+                    chB11.Checked = true;
+                }
+                if (inisHeroes.Read("SK12") == "1")
+                {
+                    chB12.Checked = true;
+                }
+                if (inisHeroes.Read("SK13") == "1")
+                {
+                    chB13.Checked = true;
+                }
+            }
         }
 
         private void btnHanzo_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible();
             gbAll.Text += " / " + Hanzo.Name;
+
+            inisHeroes = new IniStream(appdata + "\\Hanzo.ini");
+            Heroe = "H";
+
+            //Anzeigen, Auslesen und anwenden der chB
+            if (BackSave == Lang.Skins)
+            {
+                chB01.Visible = true;
+                chB02.Visible = true;
+                chB03.Visible = true;
+                chB04.Visible = true;
+                chB05.Visible = true;
+                chB06.Visible = true;
+                chB07.Visible = true;
+                chB08.Visible = true;
+                chB09.Visible = true;
+                chB10.Visible = true;
+                chB11.Visible = true;
+                chB12.Visible = true;
+                if (inisHeroes.Read("SK01") == "1")
+                {
+                    chB01.Checked = true;
+                }
+                if (inisHeroes.Read("SK02") == "1")
+                {
+                    chB02.Checked = true;
+                }
+                if (inisHeroes.Read("SK03") == "1")
+                {
+                    chB03.Checked = true;
+                }
+                if (inisHeroes.Read("SK04") == "1")
+                {
+                    chB04.Checked = true;
+                }
+                if (inisHeroes.Read("SK05") == "1")
+                {
+                    chB05.Checked = true;
+                }
+                if (inisHeroes.Read("SK06") == "1")
+                {
+                    chB06.Checked = true;
+                }
+                if (inisHeroes.Read("SK07") == "1")
+                {
+                    chB07.Checked = true;
+                }
+                if (inisHeroes.Read("SK08") == "1")
+                {
+                    chB08.Checked = true;
+                }
+                if (inisHeroes.Read("SK09") == "1")
+                {
+                    chB09.Checked = true;
+                }
+                if (inisHeroes.Read("SK10") == "1")
+                {
+                    chB10.Checked = true;
+                }
+                if (inisHeroes.Read("SK11") == "1")
+                {
+                    chB11.Checked = true;
+                }
+                if (inisHeroes.Read("SK12") == "1")
+                {
+                    chB12.Checked = true;
+                }
+            }
         }
 
         private void btnJunkrat_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible();
             gbAll.Text += " / " + Junkrat.Name;
+
+            inisHeroes = new IniStream(appdata + "\\Junkrat.ini");
+            Heroe = "H";
+
+            //Anzeigen, Auslesen und anwenden der chB
+            if (BackSave == Lang.Skins)
+            {
+                chB01.Visible = true;
+                chB02.Visible = true;
+                chB03.Visible = true;
+                chB04.Visible = true;
+                chB05.Visible = true;
+                chB06.Visible = true;
+                chB07.Visible = true;
+                chB08.Visible = true;
+                chB09.Visible = true;
+                chB10.Visible = true;
+                chB11.Visible = true;
+                chB12.Visible = true;
+                chB13.Visible = true;
+                if (inisHeroes.Read("SK01") == "1")
+                {
+                    chB01.Checked = true;
+                }
+                if (inisHeroes.Read("SK02") == "1")
+                {
+                    chB02.Checked = true;
+                }
+                if (inisHeroes.Read("SK03") == "1")
+                {
+                    chB03.Checked = true;
+                }
+                if (inisHeroes.Read("SK04") == "1")
+                {
+                    chB04.Checked = true;
+                }
+                if (inisHeroes.Read("SK05") == "1")
+                {
+                    chB05.Checked = true;
+                }
+                if (inisHeroes.Read("SK06") == "1")
+                {
+                    chB06.Checked = true;
+                }
+                if (inisHeroes.Read("SK07") == "1")
+                {
+                    chB07.Checked = true;
+                }
+                if (inisHeroes.Read("SK08") == "1")
+                {
+                    chB08.Checked = true;
+                }
+                if (inisHeroes.Read("SK09") == "1")
+                {
+                    chB09.Checked = true;
+                }
+                if (inisHeroes.Read("SK10") == "1")
+                {
+                    chB10.Checked = true;
+                }
+                if (inisHeroes.Read("SK11") == "1")
+                {
+                    chB11.Checked = true;
+                }
+                if (inisHeroes.Read("SK12") == "1")
+                {
+                    chB12.Checked = true;
+                }
+                if (inisHeroes.Read("SK13") == "1")
+                {
+                    chB13.Checked = true;
+                }
+            }
         }
 
         private void btnLúcio_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible();
             gbAll.Text += " / " + Lúcio.Name;
+
+            inisHeroes = new IniStream(appdata + "\\Lucio.ini");
+            Heroe = "H";
+
+            //Anzeigen, Auslesen und anwenden der chB
+            if (BackSave == Lang.Skins)
+            {
+                chB01.Visible = true;
+                chB02.Visible = true;
+                chB03.Visible = true;
+                chB04.Visible = true;
+                chB05.Visible = true;
+                chB06.Visible = true;
+                chB07.Visible = true;
+                chB08.Visible = true;
+                chB09.Visible = true;
+                chB10.Visible = true;
+                chB11.Visible = true;
+                chB12.Visible = true;
+                chB13.Visible = true;
+                chB14.Visible = true;
+                if (inisHeroes.Read("SK01") == "1")
+                {
+                    chB01.Checked = true;
+                }
+                if (inisHeroes.Read("SK02") == "1")
+                {
+                    chB02.Checked = true;
+                }
+                if (inisHeroes.Read("SK03") == "1")
+                {
+                    chB03.Checked = true;
+                }
+                if (inisHeroes.Read("SK04") == "1")
+                {
+                    chB04.Checked = true;
+                }
+                if (inisHeroes.Read("SK05") == "1")
+                {
+                    chB05.Checked = true;
+                }
+                if (inisHeroes.Read("SK06") == "1")
+                {
+                    chB06.Checked = true;
+                }
+                if (inisHeroes.Read("SK07") == "1")
+                {
+                    chB07.Checked = true;
+                }
+                if (inisHeroes.Read("SK08") == "1")
+                {
+                    chB08.Checked = true;
+                }
+                if (inisHeroes.Read("SK09") == "1")
+                {
+                    chB09.Checked = true;
+                }
+                if (inisHeroes.Read("SK10") == "1")
+                {
+                    chB10.Checked = true;
+                }
+                if (inisHeroes.Read("SK11") == "1")
+                {
+                    chB11.Checked = true;
+                }
+                if (inisHeroes.Read("SK12") == "1")
+                {
+                    chB12.Checked = true;
+                }
+                if (inisHeroes.Read("SK13") == "1")
+                {
+                    chB13.Checked = true;
+                }
+                if (inisHeroes.Read("SK14") == "1")
+                {
+                    chB14.Checked = true;
+                }
+            }
         }
 
         private void btnMcCree_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible();
             gbAll.Text += " / " + McCree.Name;
+
+            inisHeroes = new IniStream(appdata + "\\McCree.ini");
+            Heroe = "H";
+
+            //Anzeigen, Auslesen und anwenden der chB
+            if (BackSave == Lang.Skins)
+            {
+                chB01.Visible = true;
+                chB02.Visible = true;
+                chB03.Visible = true;
+                chB04.Visible = true;
+                chB05.Visible = true;
+                chB06.Visible = true;
+                chB07.Visible = true;
+                chB08.Visible = true;
+                chB09.Visible = true;
+                chB10.Visible = true;
+                chB11.Visible = true;
+                chB12.Visible = true;
+                chB13.Visible = true;
+                chB14.Visible = true;
+                chB15.Visible = true;
+                if (inisHeroes.Read("SK01") == "1")
+                {
+                    chB01.Checked = true;
+                }
+                if (inisHeroes.Read("SK02") == "1")
+                {
+                    chB02.Checked = true;
+                }
+                if (inisHeroes.Read("SK03") == "1")
+                {
+                    chB03.Checked = true;
+                }
+                if (inisHeroes.Read("SK04") == "1")
+                {
+                    chB04.Checked = true;
+                }
+                if (inisHeroes.Read("SK05") == "1")
+                {
+                    chB05.Checked = true;
+                }
+                if (inisHeroes.Read("SK06") == "1")
+                {
+                    chB06.Checked = true;
+                }
+                if (inisHeroes.Read("SK07") == "1")
+                {
+                    chB07.Checked = true;
+                }
+                if (inisHeroes.Read("SK08") == "1")
+                {
+                    chB08.Checked = true;
+                }
+                if (inisHeroes.Read("SK09") == "1")
+                {
+                    chB09.Checked = true;
+                }
+                if (inisHeroes.Read("SK10") == "1")
+                {
+                    chB10.Checked = true;
+                }
+                if (inisHeroes.Read("SK11") == "1")
+                {
+                    chB11.Checked = true;
+                }
+                if (inisHeroes.Read("SK12") == "1")
+                {
+                    chB12.Checked = true;
+                }
+                if (inisHeroes.Read("SK13") == "1")
+                {
+                    chB13.Checked = true;
+                }
+                if (inisHeroes.Read("SK14") == "1")
+                {
+                    chB14.Checked = true;
+                }
+                if (inisHeroes.Read("SK15") == "1")
+                {
+                    chB15.Checked = true;
+                }
+            }
         }
 
         private void btnMei_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible();
             gbAll.Text += " / " + Mei.Name;
+
+            inisHeroes = new IniStream(appdata + "\\Mei.ini");
+            Heroe = "H";
+
+            //Anzeigen, Auslesen und anwenden der chB
+            if (BackSave == Lang.Skins)
+            {
+                chB01.Visible = true;
+                chB02.Visible = true;
+                chB03.Visible = true;
+                chB04.Visible = true;
+                chB05.Visible = true;
+                chB06.Visible = true;
+                chB07.Visible = true;
+                chB08.Visible = true;
+                chB09.Visible = true;
+                chB10.Visible = true;
+                chB11.Visible = true;
+                chB12.Visible = true;
+                chB13.Visible = true;
+                chB14.Visible = true;
+                chB15.Visible = true;
+                if (inisHeroes.Read("SK01") == "1")
+                {
+                    chB01.Checked = true;
+                }
+                if (inisHeroes.Read("SK02") == "1")
+                {
+                    chB02.Checked = true;
+                }
+                if (inisHeroes.Read("SK03") == "1")
+                {
+                    chB03.Checked = true;
+                }
+                if (inisHeroes.Read("SK04") == "1")
+                {
+                    chB04.Checked = true;
+                }
+                if (inisHeroes.Read("SK05") == "1")
+                {
+                    chB05.Checked = true;
+                }
+                if (inisHeroes.Read("SK06") == "1")
+                {
+                    chB06.Checked = true;
+                }
+                if (inisHeroes.Read("SK07") == "1")
+                {
+                    chB07.Checked = true;
+                }
+                if (inisHeroes.Read("SK08") == "1")
+                {
+                    chB08.Checked = true;
+                }
+                if (inisHeroes.Read("SK09") == "1")
+                {
+                    chB09.Checked = true;
+                }
+                if (inisHeroes.Read("SK10") == "1")
+                {
+                    chB10.Checked = true;
+                }
+                if (inisHeroes.Read("SK11") == "1")
+                {
+                    chB11.Checked = true;
+                }
+                if (inisHeroes.Read("SK12") == "1")
+                {
+                    chB12.Checked = true;
+                }
+                if (inisHeroes.Read("SK13") == "1")
+                {
+                    chB13.Checked = true;
+                }
+                if (inisHeroes.Read("SK14") == "1")
+                {
+                    chB14.Checked = true;
+                }
+                if (inisHeroes.Read("SK15") == "1")
+                {
+                    chB15.Checked = true;
+                }
+            }
         }
 
         private void btnMercy_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible();
             gbAll.Text += " / " + Mercy.Name;
+
+            inisHeroes = new IniStream(appdata + "\\Mercy.ini");
+            Heroe = "H";
+
+            //Anzeigen, Auslesen und anwenden der chB
+            if (BackSave == Lang.Skins)
+            {
+                chB01.Visible = true;
+                chB02.Visible = true;
+                chB03.Visible = true;
+                chB04.Visible = true;
+                chB05.Visible = true;
+                chB06.Visible = true;
+                chB07.Visible = true;
+                chB08.Visible = true;
+                chB09.Visible = true;
+                chB10.Visible = true;
+                chB11.Visible = true;
+                chB12.Visible = true;
+                chB13.Visible = true;
+                chB14.Visible = true;
+                chB15.Visible = true;
+                if (inisHeroes.Read("SK01") == "1")
+                {
+                    chB01.Checked = true;
+                }
+                if (inisHeroes.Read("SK02") == "1")
+                {
+                    chB02.Checked = true;
+                }
+                if (inisHeroes.Read("SK03") == "1")
+                {
+                    chB03.Checked = true;
+                }
+                if (inisHeroes.Read("SK04") == "1")
+                {
+                    chB04.Checked = true;
+                }
+                if (inisHeroes.Read("SK05") == "1")
+                {
+                    chB05.Checked = true;
+                }
+                if (inisHeroes.Read("SK06") == "1")
+                {
+                    chB06.Checked = true;
+                }
+                if (inisHeroes.Read("SK07") == "1")
+                {
+                    chB07.Checked = true;
+                }
+                if (inisHeroes.Read("SK08") == "1")
+                {
+                    chB08.Checked = true;
+                }
+                if (inisHeroes.Read("SK09") == "1")
+                {
+                    chB09.Checked = true;
+                }
+                if (inisHeroes.Read("SK10") == "1")
+                {
+                    chB10.Checked = true;
+                }
+                if (inisHeroes.Read("SK11") == "1")
+                {
+                    chB11.Checked = true;
+                }
+                if (inisHeroes.Read("SK12") == "1")
+                {
+                    chB12.Checked = true;
+                }
+                if (inisHeroes.Read("SK13") == "1")
+                {
+                    chB13.Checked = true;
+                }
+                if (inisHeroes.Read("SK14") == "1")
+                {
+                    chB14.Checked = true;
+                }
+                if (inisHeroes.Read("SK15") == "1")
+                {
+                    chB15.Checked = true;
+                }
+            }
         }
 
         private void btnOrisa_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible();
             gbAll.Text += " / " + Orisa.Name;
+
+            inisHeroes = new IniStream(appdata + "\\Orisa.ini");
+            Heroe = "H";
+
+            //Anzeigen, Auslesen und anwenden der chB
+            if (BackSave == Lang.Skins)
+            {
+                chB01.Visible = true;
+                chB02.Visible = true;
+                chB03.Visible = true;
+                chB04.Visible = true;
+                chB05.Visible = true;
+                chB06.Visible = true;
+                chB07.Visible = true;
+                chB08.Visible = true;
+                chB09.Visible = true;
+                chB10.Visible = true;
+                chB11.Visible = true;
+                if (inisHeroes.Read("SK01") == "1")
+                {
+                    chB01.Checked = true;
+                }
+                if (inisHeroes.Read("SK02") == "1")
+                {
+                    chB02.Checked = true;
+                }
+                if (inisHeroes.Read("SK03") == "1")
+                {
+                    chB03.Checked = true;
+                }
+                if (inisHeroes.Read("SK04") == "1")
+                {
+                    chB04.Checked = true;
+                }
+                if (inisHeroes.Read("SK05") == "1")
+                {
+                    chB05.Checked = true;
+                }
+                if (inisHeroes.Read("SK06") == "1")
+                {
+                    chB06.Checked = true;
+                }
+                if (inisHeroes.Read("SK07") == "1")
+                {
+                    chB07.Checked = true;
+                }
+                if (inisHeroes.Read("SK08") == "1")
+                {
+                    chB08.Checked = true;
+                }
+                if (inisHeroes.Read("SK09") == "1")
+                {
+                    chB09.Checked = true;
+                }
+                if (inisHeroes.Read("SK10") == "1")
+                {
+                    chB10.Checked = true;
+                }
+                if (inisHeroes.Read("SK11") == "1")
+                {
+                    chB11.Checked = true;
+                }
+            }
         }
 
         private void btnPharah_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible();
             gbAll.Text += " / " + Pharah.Name;
+
+            inisHeroes = new IniStream(appdata + "\\Pharah.ini");
+            Heroe = "H";
+
+            //Anzeigen, Auslesen und anwenden der chB
+            if (BackSave == Lang.Skins)
+            {
+                chB01.Visible = true;
+                chB02.Visible = true;
+                chB03.Visible = true;
+                chB04.Visible = true;
+                chB05.Visible = true;
+                chB06.Visible = true;
+                chB07.Visible = true;
+                chB08.Visible = true;
+                chB09.Visible = true;
+                chB10.Visible = true;
+                chB11.Visible = true;
+                chB12.Visible = true;
+                chB13.Visible = true;
+                chB14.Visible = true;
+                if (inisHeroes.Read("SK01") == "1")
+                {
+                    chB01.Checked = true;
+                }
+                if (inisHeroes.Read("SK02") == "1")
+                {
+                    chB02.Checked = true;
+                }
+                if (inisHeroes.Read("SK03") == "1")
+                {
+                    chB03.Checked = true;
+                }
+                if (inisHeroes.Read("SK04") == "1")
+                {
+                    chB04.Checked = true;
+                }
+                if (inisHeroes.Read("SK05") == "1")
+                {
+                    chB05.Checked = true;
+                }
+                if (inisHeroes.Read("SK06") == "1")
+                {
+                    chB06.Checked = true;
+                }
+                if (inisHeroes.Read("SK07") == "1")
+                {
+                    chB07.Checked = true;
+                }
+                if (inisHeroes.Read("SK08") == "1")
+                {
+                    chB08.Checked = true;
+                }
+                if (inisHeroes.Read("SK09") == "1")
+                {
+                    chB09.Checked = true;
+                }
+                if (inisHeroes.Read("SK10") == "1")
+                {
+                    chB10.Checked = true;
+                }
+                if (inisHeroes.Read("SK11") == "1")
+                {
+                    chB11.Checked = true;
+                }
+                if (inisHeroes.Read("SK12") == "1")
+                {
+                    chB12.Checked = true;
+                }
+                if (inisHeroes.Read("SK13") == "1")
+                {
+                    chB13.Checked = true;
+                }
+                if (inisHeroes.Read("SK14") == "1")
+                {
+                    chB14.Checked = true;
+                }
+            }
         }
 
         private void btnReaper_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible();
             gbAll.Text += " / " + Reaper.Name;
+
+            inisHeroes = new IniStream(appdata + "\\Reaper.ini");
+            Heroe = "H";
+
+            //Anzeigen, Auslesen und anwenden der chB
+            if (BackSave == Lang.Skins)
+            {
+                chB01.Visible = true;
+                chB02.Visible = true;
+                chB03.Visible = true;
+                chB04.Visible = true;
+                chB05.Visible = true;
+                chB06.Visible = true;
+                chB07.Visible = true;
+                chB08.Visible = true;
+                chB09.Visible = true;
+                chB10.Visible = true;
+                chB11.Visible = true;
+                chB12.Visible = true;
+                chB13.Visible = true;
+                chB14.Visible = true;
+                chB15.Visible = true;
+                if (inisHeroes.Read("SK01") == "1")
+                {
+                    chB01.Checked = true;
+                }
+                if (inisHeroes.Read("SK02") == "1")
+                {
+                    chB02.Checked = true;
+                }
+                if (inisHeroes.Read("SK03") == "1")
+                {
+                    chB03.Checked = true;
+                }
+                if (inisHeroes.Read("SK04") == "1")
+                {
+                    chB04.Checked = true;
+                }
+                if (inisHeroes.Read("SK05") == "1")
+                {
+                    chB05.Checked = true;
+                }
+                if (inisHeroes.Read("SK06") == "1")
+                {
+                    chB06.Checked = true;
+                }
+                if (inisHeroes.Read("SK07") == "1")
+                {
+                    chB07.Checked = true;
+                }
+                if (inisHeroes.Read("SK08") == "1")
+                {
+                    chB08.Checked = true;
+                }
+                if (inisHeroes.Read("SK09") == "1")
+                {
+                    chB09.Checked = true;
+                }
+                if (inisHeroes.Read("SK10") == "1")
+                {
+                    chB10.Checked = true;
+                }
+                if (inisHeroes.Read("SK11") == "1")
+                {
+                    chB11.Checked = true;
+                }
+                if (inisHeroes.Read("SK12") == "1")
+                {
+                    chB12.Checked = true;
+                }
+                if (inisHeroes.Read("SK13") == "1")
+                {
+                    chB13.Checked = true;
+                }
+                if (inisHeroes.Read("SK14") == "1")
+                {
+                    chB14.Checked = true;
+                }
+                if (inisHeroes.Read("SK15") == "1")
+                {
+                    chB15.Checked = true;
+                }
+            }
         }
 
         private void btnReinhardt_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible();
             gbAll.Text += " / " + Reinhardt.Name;
+
+            inisHeroes = new IniStream(appdata + "\\Reinhardt.ini");
+            Heroe = "H";
+
+            //Anzeigen, Auslesen und anwenden der chB
+            if (BackSave == Lang.Skins)
+            {
+                chB01.Visible = true;
+                chB02.Visible = true;
+                chB03.Visible = true;
+                chB04.Visible = true;
+                chB05.Visible = true;
+                chB06.Visible = true;
+                chB07.Visible = true;
+                chB08.Visible = true;
+                chB09.Visible = true;
+                chB10.Visible = true;
+                chB11.Visible = true;
+                chB12.Visible = true;
+                chB13.Visible = true;
+                chB14.Visible = true;
+                chB15.Visible = true;
+                if (inisHeroes.Read("SK01") == "1")
+                {
+                    chB01.Checked = true;
+                }
+                if (inisHeroes.Read("SK02") == "1")
+                {
+                    chB02.Checked = true;
+                }
+                if (inisHeroes.Read("SK03") == "1")
+                {
+                    chB03.Checked = true;
+                }
+                if (inisHeroes.Read("SK04") == "1")
+                {
+                    chB04.Checked = true;
+                }
+                if (inisHeroes.Read("SK05") == "1")
+                {
+                    chB05.Checked = true;
+                }
+                if (inisHeroes.Read("SK06") == "1")
+                {
+                    chB06.Checked = true;
+                }
+                if (inisHeroes.Read("SK07") == "1")
+                {
+                    chB07.Checked = true;
+                }
+                if (inisHeroes.Read("SK08") == "1")
+                {
+                    chB08.Checked = true;
+                }
+                if (inisHeroes.Read("SK09") == "1")
+                {
+                    chB09.Checked = true;
+                }
+                if (inisHeroes.Read("SK10") == "1")
+                {
+                    chB10.Checked = true;
+                }
+                if (inisHeroes.Read("SK11") == "1")
+                {
+                    chB11.Checked = true;
+                }
+                if (inisHeroes.Read("SK12") == "1")
+                {
+                    chB12.Checked = true;
+                }
+                if (inisHeroes.Read("SK13") == "1")
+                {
+                    chB13.Checked = true;
+                }
+                if (inisHeroes.Read("SK14") == "1")
+                {
+                    chB14.Checked = true;
+                }
+                if (inisHeroes.Read("SK15") == "1")
+                {
+                    chB15.Checked = true;
+                }
+            }
         }
 
         private void btnRoadhog_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible();
             gbAll.Text += " / " + Roadhog.Name;
+
+            inisHeroes = new IniStream(appdata + "\\Roadhog.ini");
+            Heroe = "H";
+
+            //Anzeigen, Auslesen und anwenden der chB
+            if (BackSave == Lang.Skins)
+            {
+                chB01.Visible = true;
+                chB02.Visible = true;
+                chB03.Visible = true;
+                chB04.Visible = true;
+                chB05.Visible = true;
+                chB06.Visible = true;
+                chB07.Visible = true;
+                chB08.Visible = true;
+                chB09.Visible = true;
+                chB10.Visible = true;
+                chB11.Visible = true;
+                chB12.Visible = true;
+                chB13.Visible = true;
+                if (inisHeroes.Read("SK01") == "1")
+                {
+                    chB01.Checked = true;
+                }
+                if (inisHeroes.Read("SK02") == "1")
+                {
+                    chB02.Checked = true;
+                }
+                if (inisHeroes.Read("SK03") == "1")
+                {
+                    chB03.Checked = true;
+                }
+                if (inisHeroes.Read("SK04") == "1")
+                {
+                    chB04.Checked = true;
+                }
+                if (inisHeroes.Read("SK05") == "1")
+                {
+                    chB05.Checked = true;
+                }
+                if (inisHeroes.Read("SK06") == "1")
+                {
+                    chB06.Checked = true;
+                }
+                if (inisHeroes.Read("SK07") == "1")
+                {
+                    chB07.Checked = true;
+                }
+                if (inisHeroes.Read("SK08") == "1")
+                {
+                    chB08.Checked = true;
+                }
+                if (inisHeroes.Read("SK09") == "1")
+                {
+                    chB09.Checked = true;
+                }
+                if (inisHeroes.Read("SK10") == "1")
+                {
+                    chB10.Checked = true;
+                }
+                if (inisHeroes.Read("SK11") == "1")
+                {
+                    chB11.Checked = true;
+                }
+                if (inisHeroes.Read("SK12") == "1")
+                {
+                    chB12.Checked = true;
+                }
+                if (inisHeroes.Read("SK13") == "1")
+                {
+                    chB13.Checked = true;
+                }
+            }
         }
 
         private void btnSoldier_76_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible();
             gbAll.Text += " / " + Soldier_76.Name;
+
+            inisHeroes = new IniStream(appdata + "\\Soldier_76.ini");
+            Heroe = "H";
+
+            //Anzeigen, Auslesen und anwenden der chB
+            if (BackSave == Lang.Skins)
+            {
+                chB01.Visible = true;
+                chB02.Visible = true;
+                chB03.Visible = true;
+                chB04.Visible = true;
+                chB05.Visible = true;
+                chB06.Visible = true;
+                chB07.Visible = true;
+                chB08.Visible = true;
+                chB09.Visible = true;
+                chB10.Visible = true;
+                chB11.Visible = true;
+                chB12.Visible = true;
+                chB13.Visible = true;
+                chB14.Visible = true;
+                if (inisHeroes.Read("SK01") == "1")
+                {
+                    chB01.Checked = true;
+                }
+                if (inisHeroes.Read("SK02") == "1")
+                {
+                    chB02.Checked = true;
+                }
+                if (inisHeroes.Read("SK03") == "1")
+                {
+                    chB03.Checked = true;
+                }
+                if (inisHeroes.Read("SK04") == "1")
+                {
+                    chB04.Checked = true;
+                }
+                if (inisHeroes.Read("SK05") == "1")
+                {
+                    chB05.Checked = true;
+                }
+                if (inisHeroes.Read("SK06") == "1")
+                {
+                    chB06.Checked = true;
+                }
+                if (inisHeroes.Read("SK07") == "1")
+                {
+                    chB07.Checked = true;
+                }
+                if (inisHeroes.Read("SK08") == "1")
+                {
+                    chB08.Checked = true;
+                }
+                if (inisHeroes.Read("SK09") == "1")
+                {
+                    chB09.Checked = true;
+                }
+                if (inisHeroes.Read("SK10") == "1")
+                {
+                    chB10.Checked = true;
+                }
+                if (inisHeroes.Read("SK11") == "1")
+                {
+                    chB11.Checked = true;
+                }
+                if (inisHeroes.Read("SK12") == "1")
+                {
+                    chB12.Checked = true;
+                }
+                if (inisHeroes.Read("SK13") == "1")
+                {
+                    chB13.Checked = true;
+                }
+                if (inisHeroes.Read("SK14") == "1")
+                {
+                    chB14.Checked = true;
+                }
+                if (inisHeroes.Read("SK15") == "1")
+                {
+                    chB15.Checked = true;
+                }
+            }
         }
 
         private void btnSombra_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible();
             gbAll.Text += " / " + Sombra.Name;
+
+            inisHeroes = new IniStream(appdata + "\\Sombra.ini");
+            Heroe = "H";
+
+            //Anzeigen, Auslesen und anwenden der chB
+            if (BackSave == Lang.Skins)
+            {
+                chB01.Visible = true;
+                chB02.Visible = true;
+                chB03.Visible = true;
+                chB04.Visible = true;
+                chB05.Visible = true;
+                chB06.Visible = true;
+                chB07.Visible = true;
+                chB08.Visible = true;
+                chB09.Visible = true;
+                chB10.Visible = true;
+                chB11.Visible = true;
+                chB12.Visible = true;
+                if (inisHeroes.Read("SK01") == "1")
+                {
+                    chB01.Checked = true;
+                }
+                if (inisHeroes.Read("SK02") == "1")
+                {
+                    chB02.Checked = true;
+                }
+                if (inisHeroes.Read("SK03") == "1")
+                {
+                    chB03.Checked = true;
+                }
+                if (inisHeroes.Read("SK04") == "1")
+                {
+                    chB04.Checked = true;
+                }
+                if (inisHeroes.Read("SK05") == "1")
+                {
+                    chB05.Checked = true;
+                }
+                if (inisHeroes.Read("SK06") == "1")
+                {
+                    chB06.Checked = true;
+                }
+                if (inisHeroes.Read("SK07") == "1")
+                {
+                    chB07.Checked = true;
+                }
+                if (inisHeroes.Read("SK08") == "1")
+                {
+                    chB08.Checked = true;
+                }
+                if (inisHeroes.Read("SK09") == "1")
+                {
+                    chB09.Checked = true;
+                }
+                if (inisHeroes.Read("SK10") == "1")
+                {
+                    chB10.Checked = true;
+                }
+                if (inisHeroes.Read("SK11") == "1")
+                {
+                    chB11.Checked = true;
+                }
+                if (inisHeroes.Read("SK12") == "1")
+                {
+                    chB12.Checked = true;
+                }
+            }
         }
 
         private void btnSymmetra_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible();
             gbAll.Text += " / " + Symmetra.Name;
+
+            inisHeroes = new IniStream(appdata + "\\Symmetra.ini");
+            Heroe = "H";
+
+            //Anzeigen, Auslesen und anwenden der chB
+            if (BackSave == Lang.Skins)
+            {
+                chB01.Visible = true;
+                chB02.Visible = true;
+                chB03.Visible = true;
+                chB04.Visible = true;
+                chB05.Visible = true;
+                chB06.Visible = true;
+                chB07.Visible = true;
+                chB08.Visible = true;
+                chB09.Visible = true;
+                chB10.Visible = true;
+                chB11.Visible = true;
+                chB12.Visible = true;
+                chB13.Visible = true;
+                chB14.Visible = true;
+                if (inisHeroes.Read("SK01") == "1")
+                {
+                    chB01.Checked = true;
+                }
+                if (inisHeroes.Read("SK02") == "1")
+                {
+                    chB02.Checked = true;
+                }
+                if (inisHeroes.Read("SK03") == "1")
+                {
+                    chB03.Checked = true;
+                }
+                if (inisHeroes.Read("SK04") == "1")
+                {
+                    chB04.Checked = true;
+                }
+                if (inisHeroes.Read("SK05") == "1")
+                {
+                    chB05.Checked = true;
+                }
+                if (inisHeroes.Read("SK06") == "1")
+                {
+                    chB06.Checked = true;
+                }
+                if (inisHeroes.Read("SK07") == "1")
+                {
+                    chB07.Checked = true;
+                }
+                if (inisHeroes.Read("SK08") == "1")
+                {
+                    chB08.Checked = true;
+                }
+                if (inisHeroes.Read("SK09") == "1")
+                {
+                    chB09.Checked = true;
+                }
+                if (inisHeroes.Read("SK10") == "1")
+                {
+                    chB10.Checked = true;
+                }
+                if (inisHeroes.Read("SK11") == "1")
+                {
+                    chB11.Checked = true;
+                }
+                if (inisHeroes.Read("SK12") == "1")
+                {
+                    chB12.Checked = true;
+                }
+                if (inisHeroes.Read("SK13") == "1")
+                {
+                    chB13.Checked = true;
+                }
+                if (inisHeroes.Read("SK14") == "1")
+                {
+                    chB14.Checked = true;
+                }
+            }
         }
 
         private void btnTorbjörn_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible();
             gbAll.Text += " / " + Torbjörn.Name;
+
+            inisHeroes = new IniStream(appdata + "\\Torbjorn.ini");
+            Heroe = "H";
+
+            //Anzeigen, Auslesen und anwenden der chB
+            if (BackSave == Lang.Skins)
+            {
+                chB01.Visible = true;
+                chB02.Visible = true;
+                chB03.Visible = true;
+                chB04.Visible = true;
+                chB05.Visible = true;
+                chB06.Visible = true;
+                chB07.Visible = true;
+                chB08.Visible = true;
+                chB09.Visible = true;
+                chB10.Visible = true;
+                chB11.Visible = true;
+                chB12.Visible = true;
+                chB13.Visible = true;
+                chB14.Visible = true;
+                chB15.Visible = true;
+                if (inisHeroes.Read("SK01") == "1")
+                {
+                    chB01.Checked = true;
+                }
+                if (inisHeroes.Read("SK02") == "1")
+                {
+                    chB02.Checked = true;
+                }
+                if (inisHeroes.Read("SK03") == "1")
+                {
+                    chB03.Checked = true;
+                }
+                if (inisHeroes.Read("SK04") == "1")
+                {
+                    chB04.Checked = true;
+                }
+                if (inisHeroes.Read("SK05") == "1")
+                {
+                    chB05.Checked = true;
+                }
+                if (inisHeroes.Read("SK06") == "1")
+                {
+                    chB06.Checked = true;
+                }
+                if (inisHeroes.Read("SK07") == "1")
+                {
+                    chB07.Checked = true;
+                }
+                if (inisHeroes.Read("SK08") == "1")
+                {
+                    chB08.Checked = true;
+                }
+                if (inisHeroes.Read("SK09") == "1")
+                {
+                    chB09.Checked = true;
+                }
+                if (inisHeroes.Read("SK10") == "1")
+                {
+                    chB10.Checked = true;
+                }
+                if (inisHeroes.Read("SK11") == "1")
+                {
+                    chB11.Checked = true;
+                }
+                if (inisHeroes.Read("SK12") == "1")
+                {
+                    chB12.Checked = true;
+                }
+                if (inisHeroes.Read("SK13") == "1")
+                {
+                    chB13.Checked = true;
+                }
+                if (inisHeroes.Read("SK14") == "1")
+                {
+                    chB14.Checked = true;
+                }
+                if (inisHeroes.Read("SK15") == "1")
+                {
+                    chB15.Checked = true;
+                }
+            }
         }
 
         private void btnTracer_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible();
             gbAll.Text += " / " + Tracer.Name;
+
+            inisHeroes = new IniStream(appdata + "\\Tracer.ini");
+            Heroe = "H";
+
+            //Anzeigen, Auslesen und anwenden der chB
+            if (BackSave == Lang.Skins)
+            {
+                chB01.Visible = true;
+                chB02.Visible = true;
+                chB03.Visible = true;
+                chB04.Visible = true;
+                chB05.Visible = true;
+                chB06.Visible = true;
+                chB07.Visible = true;
+                chB08.Visible = true;
+                chB09.Visible = true;
+                chB10.Visible = true;
+                chB11.Visible = true;
+                chB12.Visible = true;
+                chB13.Visible = true;
+                chB14.Visible = true;
+                chB15.Visible = true;
+                chB16.Visible = true;
+                chB17.Visible = true;
+                if (inisHeroes.Read("SK01") == "1")
+                {
+                    chB01.Checked = true;
+                }
+                if (inisHeroes.Read("SK02") == "1")
+                {
+                    chB02.Checked = true;
+                }
+                if (inisHeroes.Read("SK03") == "1")
+                {
+                    chB03.Checked = true;
+                }
+                if (inisHeroes.Read("SK04") == "1")
+                {
+                    chB04.Checked = true;
+                }
+                if (inisHeroes.Read("SK05") == "1")
+                {
+                    chB05.Checked = true;
+                }
+                if (inisHeroes.Read("SK06") == "1")
+                {
+                    chB06.Checked = true;
+                }
+                if (inisHeroes.Read("SK07") == "1")
+                {
+                    chB07.Checked = true;
+                }
+                if (inisHeroes.Read("SK08") == "1")
+                {
+                    chB08.Checked = true;
+                }
+                if (inisHeroes.Read("SK09") == "1")
+                {
+                    chB09.Checked = true;
+                }
+                if (inisHeroes.Read("SK10") == "1")
+                {
+                    chB10.Checked = true;
+                }
+                if (inisHeroes.Read("SK11") == "1")
+                {
+                    chB11.Checked = true;
+                }
+                if (inisHeroes.Read("SK12") == "1")
+                {
+                    chB12.Checked = true;
+                }
+                if (inisHeroes.Read("SK13") == "1")
+                {
+                    chB13.Checked = true;
+                }
+                if (inisHeroes.Read("SK14") == "1")
+                {
+                    chB14.Checked = true;
+                }
+                if (inisHeroes.Read("SK15") == "1")
+                {
+                    chB15.Checked = true;
+                }
+                if (inisHeroes.Read("SK16") == "1")
+                {
+                    chB16.Checked = true;
+                }
+                if (inisHeroes.Read("SK17") == "1")
+                {
+                    chB17.Checked = true;
+                }
+            }
         }
 
         private void btnWidowmaker_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible();
             gbAll.Text += " / " + Widowmaker.Name;
+
+            inisHeroes = new IniStream(appdata + "\\Widowmaker.ini");
+            Heroe = "H";
+
+            //Anzeigen, Auslesen und anwenden der chB
+            if (BackSave == Lang.Skins)
+            {
+                chB01.Visible = true;
+                chB02.Visible = true;
+                chB03.Visible = true;
+                chB04.Visible = true;
+                chB05.Visible = true;
+                chB06.Visible = true;
+                chB07.Visible = true;
+                chB08.Visible = true;
+                chB09.Visible = true;
+                chB10.Visible = true;
+                chB11.Visible = true;
+                chB12.Visible = true;
+                chB13.Visible = true;
+                chB14.Visible = true;
+                if (inisHeroes.Read("SK01") == "1")
+                {
+                    chB01.Checked = true;
+                }
+                if (inisHeroes.Read("SK02") == "1")
+                {
+                    chB02.Checked = true;
+                }
+                if (inisHeroes.Read("SK03") == "1")
+                {
+                    chB03.Checked = true;
+                }
+                if (inisHeroes.Read("SK04") == "1")
+                {
+                    chB04.Checked = true;
+                }
+                if (inisHeroes.Read("SK05") == "1")
+                {
+                    chB05.Checked = true;
+                }
+                if (inisHeroes.Read("SK06") == "1")
+                {
+                    chB06.Checked = true;
+                }
+                if (inisHeroes.Read("SK07") == "1")
+                {
+                    chB07.Checked = true;
+                }
+                if (inisHeroes.Read("SK08") == "1")
+                {
+                    chB08.Checked = true;
+                }
+                if (inisHeroes.Read("SK09") == "1")
+                {
+                    chB09.Checked = true;
+                }
+                if (inisHeroes.Read("SK10") == "1")
+                {
+                    chB10.Checked = true;
+                }
+                if (inisHeroes.Read("SK11") == "1")
+                {
+                    chB11.Checked = true;
+                }
+                if (inisHeroes.Read("SK12") == "1")
+                {
+                    chB12.Checked = true;
+                }
+                if (inisHeroes.Read("SK13") == "1")
+                {
+                    chB13.Checked = true;
+                }
+                if (inisHeroes.Read("SK14") == "1")
+                {
+                    chB14.Checked = true;
+                }
+            }
         }
 
         private void btnWinston_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible();
             gbAll.Text += " / " + Winston.Name;
+
+            inisHeroes = new IniStream(appdata + "\\Winston.ini");
+            Heroe = "H";
+
+            //Anzeigen, Auslesen und anwenden der chB
+            if (BackSave == Lang.Skins)
+            {
+                chB01.Visible = true;
+                chB02.Visible = true;
+                chB03.Visible = true;
+                chB04.Visible = true;
+                chB05.Visible = true;
+                chB06.Visible = true;
+                chB07.Visible = true;
+                chB08.Visible = true;
+                chB09.Visible = true;
+                chB10.Visible = true;
+                chB11.Visible = true;
+                chB12.Visible = true;
+                chB13.Visible = true;
+                if (inisHeroes.Read("SK01") == "1")
+                {
+                    chB01.Checked = true;
+                }
+                if (inisHeroes.Read("SK02") == "1")
+                {
+                    chB02.Checked = true;
+                }
+                if (inisHeroes.Read("SK03") == "1")
+                {
+                    chB03.Checked = true;
+                }
+                if (inisHeroes.Read("SK04") == "1")
+                {
+                    chB04.Checked = true;
+                }
+                if (inisHeroes.Read("SK05") == "1")
+                {
+                    chB05.Checked = true;
+                }
+                if (inisHeroes.Read("SK06") == "1")
+                {
+                    chB06.Checked = true;
+                }
+                if (inisHeroes.Read("SK07") == "1")
+                {
+                    chB07.Checked = true;
+                }
+                if (inisHeroes.Read("SK08") == "1")
+                {
+                    chB08.Checked = true;
+                }
+                if (inisHeroes.Read("SK09") == "1")
+                {
+                    chB09.Checked = true;
+                }
+                if (inisHeroes.Read("SK10") == "1")
+                {
+                    chB10.Checked = true;
+                }
+                if (inisHeroes.Read("SK11") == "1")
+                {
+                    chB11.Checked = true;
+                }
+                if (inisHeroes.Read("SK12") == "1")
+                {
+                    chB12.Checked = true;
+                }
+                if (inisHeroes.Read("SK13") == "1")
+                {
+                    chB13.Checked = true;
+                }
+            }
         }
 
         private void btnZarya_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible();
             gbAll.Text += " / " + Zarya.Name;
+
+            inisHeroes = new IniStream(appdata + "\\Zarya.ini");
+            Heroe = "H";
+
+            //Anzeigen, Auslesen und anwenden der chB
+            if (BackSave == Lang.Skins)
+            {
+                chB01.Visible = true;
+                chB02.Visible = true;
+                chB03.Visible = true;
+                chB04.Visible = true;
+                chB05.Visible = true;
+                chB06.Visible = true;
+                chB07.Visible = true;
+                chB08.Visible = true;
+                chB09.Visible = true;
+                chB10.Visible = true;
+                chB11.Visible = true;
+                chB12.Visible = true;
+                chB13.Visible = true;
+                chB14.Visible = true;
+                chB15.Visible = true;
+                if (inisHeroes.Read("SK01") == "1")
+                {
+                    chB01.Checked = true;
+                }
+                if (inisHeroes.Read("SK02") == "1")
+                {
+                    chB02.Checked = true;
+                }
+                if (inisHeroes.Read("SK03") == "1")
+                {
+                    chB03.Checked = true;
+                }
+                if (inisHeroes.Read("SK04") == "1")
+                {
+                    chB04.Checked = true;
+                }
+                if (inisHeroes.Read("SK05") == "1")
+                {
+                    chB05.Checked = true;
+                }
+                if (inisHeroes.Read("SK06") == "1")
+                {
+                    chB06.Checked = true;
+                }
+                if (inisHeroes.Read("SK07") == "1")
+                {
+                    chB07.Checked = true;
+                }
+                if (inisHeroes.Read("SK08") == "1")
+                {
+                    chB08.Checked = true;
+                }
+                if (inisHeroes.Read("SK09") == "1")
+                {
+                    chB09.Checked = true;
+                }
+                if (inisHeroes.Read("SK10") == "1")
+                {
+                    chB10.Checked = true;
+                }
+                if (inisHeroes.Read("SK11") == "1")
+                {
+                    chB11.Checked = true;
+                }
+                if (inisHeroes.Read("SK12") == "1")
+                {
+                    chB12.Checked = true;
+                }
+                if (inisHeroes.Read("SK13") == "1")
+                {
+                    chB13.Checked = true;
+                }
+                if (inisHeroes.Read("SK14") == "1")
+                {
+                    chB14.Checked = true;
+                }
+                if (inisHeroes.Read("SK15") == "1")
+                {
+                    chB15.Checked = true;
+                }
+            }
         }
 
         private void btnZenyatta_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible();
             gbAll.Text += " / " + Zenyatta.Name;
+
+            inisHeroes = new IniStream(appdata + "\\Zenyatta.ini");
+            Heroe = "H";
+
+            //Anzeigen, Auslesen und anwenden der chB
+            if (BackSave == Lang.Skins)
+            {
+                chB01.Visible = true;
+                chB02.Visible = true;
+                chB03.Visible = true;
+                chB04.Visible = true;
+                chB05.Visible = true;
+                chB06.Visible = true;
+                chB07.Visible = true;
+                chB08.Visible = true;
+                chB09.Visible = true;
+                chB10.Visible = true;
+                chB11.Visible = true;
+                chB12.Visible = true;
+                chB13.Visible = true;
+                chB14.Visible = true;
+                if (inisHeroes.Read("SK01") == "1")
+                {
+                    chB01.Checked = true;
+                }
+                if (inisHeroes.Read("SK02") == "1")
+                {
+                    chB02.Checked = true;
+                }
+                if (inisHeroes.Read("SK03") == "1")
+                {
+                    chB03.Checked = true;
+                }
+                if (inisHeroes.Read("SK04") == "1")
+                {
+                    chB04.Checked = true;
+                }
+                if (inisHeroes.Read("SK05") == "1")
+                {
+                    chB05.Checked = true;
+                }
+                if (inisHeroes.Read("SK06") == "1")
+                {
+                    chB06.Checked = true;
+                }
+                if (inisHeroes.Read("SK07") == "1")
+                {
+                    chB07.Checked = true;
+                }
+                if (inisHeroes.Read("SK08") == "1")
+                {
+                    chB08.Checked = true;
+                }
+                if (inisHeroes.Read("SK09") == "1")
+                {
+                    chB09.Checked = true;
+                }
+                if (inisHeroes.Read("SK10") == "1")
+                {
+                    chB10.Checked = true;
+                }
+                if (inisHeroes.Read("SK11") == "1")
+                {
+                    chB11.Checked = true;
+                }
+                if (inisHeroes.Read("SK12") == "1")
+                {
+                    chB12.Checked = true;
+                }
+                if (inisHeroes.Read("SK13") == "1")
+                {
+                    chB13.Checked = true;
+                }
+                if (inisHeroes.Read("SK14") == "1")
+                {
+                    chB14.Checked = true;
+                }
+            }
         }
 
         private void chB01_CheckedChanged(object sender, EventArgs e)
@@ -1538,7 +3303,7 @@ namespace OverwatchLootBoxTracker
             //Speichern
             if (chBSave == 1)
             {
-                if (chB01.Checked == true)
+                if (chB02.Checked == true)
                 {
                     if (BackSave == Lang.Skins)
                     {
@@ -3010,6 +4775,1566 @@ namespace OverwatchLootBoxTracker
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
                         inisPI.Write("20", "0");
+                    }
+                }
+            }
+        }
+
+        private void chB21_CheckedChanged(object sender, EventArgs e)
+        {
+            //Speichern
+            if (chBSave == 1)
+            {
+                if (chB21.Checked == true)
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK21", "1");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM21", "1");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP21", "1");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL21", "1");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP21", "1");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI21", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI21", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("21", "1");
+                    }
+                }
+                else
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK21", "0");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM21", "0");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP21", "0");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL21", "0");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP21", "0");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI21", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI21", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("21", "0");
+                    }
+                }
+            }
+        }
+
+        private void chB22_CheckedChanged(object sender, EventArgs e)
+        {
+            //Speichern
+            if (chBSave == 1)
+            {
+                if (chB22.Checked == true)
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK22", "1");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM22", "1");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP22", "1");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL22", "1");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP22", "1");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI22", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI22", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("22", "1");
+                    }
+                }
+                else
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK22", "0");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM22", "0");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP22", "0");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL22", "0");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP22", "0");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI22", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI22", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("22", "0");
+                    }
+                }
+            }
+        }
+
+        private void chB23_CheckedChanged(object sender, EventArgs e)
+        {
+            //Speichern
+            if (chBSave == 1)
+            {
+                if (chB23.Checked == true)
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK23", "1");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM23", "1");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP23", "1");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL23", "1");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP23", "1");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI23", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI23", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("23", "1");
+                    }
+                }
+                else
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK23", "0");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM23", "0");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP23", "0");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL23", "0");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP23", "0");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI23", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI23", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("23", "0");
+                    }
+                }
+            }
+        }
+
+        private void chB24_CheckedChanged(object sender, EventArgs e)
+        {
+            //Speichern
+            if (chBSave == 1)
+            {
+                if (chB24.Checked == true)
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK24", "1");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM24", "1");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP24", "1");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL24", "1");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP24", "1");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI24", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI24", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("24", "1");
+                    }
+                }
+                else
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK24", "0");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM24", "0");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP24", "0");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL24", "0");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP24", "0");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI24", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI24", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("24", "0");
+                    }
+                }
+            }
+        }
+
+        private void chB25_CheckedChanged(object sender, EventArgs e)
+        {
+            //Speichern
+            if (chBSave == 1)
+            {
+                if (chB25.Checked == true)
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK25", "1");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM25", "1");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP25", "1");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL25", "1");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP25", "1");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI25", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI25", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("25", "1");
+                    }
+                }
+                else
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK25", "0");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM25", "0");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP25", "0");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL25", "0");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP25", "0");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI25", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI25", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("25", "0");
+                    }
+                }
+            }
+        }
+
+        private void chB26_CheckedChanged(object sender, EventArgs e)
+        {
+            //Speichern
+            if (chBSave == 1)
+            {
+                if (chB26.Checked == true)
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK26", "1");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM26", "1");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP26", "1");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL26", "1");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP26", "1");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI26", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI26", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("26", "1");
+                    }
+                }
+                else
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK26", "0");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM26", "0");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP26", "0");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL26", "0");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP26", "0");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI26", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI26", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("26", "0");
+                    }
+                }
+            }
+        }
+
+        private void chB27_CheckedChanged(object sender, EventArgs e)
+        {
+            //Speichern
+            if (chBSave == 1)
+            {
+                if (chB27.Checked == true)
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK27", "1");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM27", "1");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP27", "1");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL27", "1");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP27", "1");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI27", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI27", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("27", "1");
+                    }
+                }
+                else
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK27", "0");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM27", "0");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP27", "0");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL27", "0");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP27", "0");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI27", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI27", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("27", "0");
+                    }
+                }
+            }
+        }
+
+        private void chB28_CheckedChanged(object sender, EventArgs e)
+        {
+            //Speichern
+            if (chBSave == 1)
+            {
+                if (chB28.Checked == true)
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK28", "1");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM28", "1");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP28", "1");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL28", "1");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP28", "1");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI28", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI28", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("28", "1");
+                    }
+                }
+                else
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK28", "0");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM28", "0");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP28", "0");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL28", "0");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP28", "0");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI28", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI28", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("28", "0");
+                    }
+                }
+            }
+        }
+
+        private void chB29_CheckedChanged(object sender, EventArgs e)
+        {
+            //Speichern
+            if (chBSave == 1)
+            {
+                if (chB29.Checked == true)
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK29", "1");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM29", "1");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP29", "1");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL29", "1");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP29", "1");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI29", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI29", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("29", "1");
+                    }
+                }
+                else
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK29", "0");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM29", "0");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP29", "0");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL29", "0");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP29", "0");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI29", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI29", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("29", "0");
+                    }
+                }
+            }
+        }
+
+        private void chB30_CheckedChanged(object sender, EventArgs e)
+        {
+            //Speichern
+            if (chBSave == 1)
+            {
+                if (chB30.Checked == true)
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK30", "1");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM30", "1");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP30", "1");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL30", "1");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP30", "1");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI30", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI30", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("30", "1");
+                    }
+                }
+                else
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK30", "0");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM30", "0");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP30", "0");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL30", "0");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP30", "0");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI30", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI30", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("30", "0");
+                    }
+                }
+            }
+        }
+
+        private void chB31_CheckedChanged(object sender, EventArgs e)
+        {
+            //Speichern
+            if (chBSave == 1)
+            {
+                if (chB31.Checked == true)
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK31", "1");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM31", "1");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP31", "1");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL31", "1");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP31", "1");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI31", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI31", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("31", "1");
+                    }
+                }
+                else
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK31", "0");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM31", "0");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP31", "0");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL31", "0");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP31", "0");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI31", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI31", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("31", "0");
+                    }
+                }
+            }
+        }
+
+        private void chB32_CheckedChanged(object sender, EventArgs e)
+        {
+            //Speichern
+            if (chBSave == 1)
+            {
+                if (chB32.Checked == true)
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK32", "1");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM32", "1");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP32", "1");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL32", "1");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP32", "1");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI32", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI32", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("32", "1");
+                    }
+                }
+                else
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK32", "0");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM32", "0");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP32", "0");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL32", "0");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP32", "0");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI32", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI32", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("32", "0");
+                    }
+                }
+            }
+        }
+
+        private void chB33_CheckedChanged(object sender, EventArgs e)
+        {
+            //Speichern
+            if (chBSave == 1)
+            {
+                if (chB33.Checked == true)
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK33", "1");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM33", "1");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP33", "1");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL33", "1");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP33", "1");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI33", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI33", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("33", "1");
+                    }
+                }
+                else
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK33", "0");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM33", "0");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP33", "0");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL33", "0");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP33", "0");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI33", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI33", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("33", "0");
+                    }
+                }
+            }
+        }
+
+        private void chB34_CheckedChanged(object sender, EventArgs e)
+        {
+            //Speichern
+            if (chBSave == 1)
+            {
+                if (chB34.Checked == true)
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK34", "1");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM34", "1");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP34", "1");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL34", "1");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP34", "1");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI34", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI34", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("34", "1");
+                    }
+                }
+                else
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK34", "0");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM34", "0");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP34", "0");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL34", "0");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP34", "0");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI34", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI34", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("34", "0");
+                    }
+                }
+            }
+        }
+
+        private void chB35_CheckedChanged(object sender, EventArgs e)
+        {
+            //Speichern
+            if (chBSave == 1)
+            {
+                if (chB35.Checked == true)
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK35", "1");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM35", "1");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP35", "1");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL35", "1");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP35", "1");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI35", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI35", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("35", "1");
+                    }
+                }
+                else
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK35", "0");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM35", "0");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP35", "0");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL35", "0");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP35", "0");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI35", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI35", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("35", "0");
+                    }
+                }
+            }
+        }
+
+        private void chB36_CheckedChanged(object sender, EventArgs e)
+        {
+            //Speichern
+            if (chBSave == 1)
+            {
+                if (chB36.Checked == true)
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK36", "1");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM36", "1");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP36", "1");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL36", "1");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP36", "1");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI36", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI36", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("36", "1");
+                    }
+                }
+                else
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK36", "0");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM36", "0");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP36", "0");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL36", "0");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP36", "0");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI36", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI36", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("36", "0");
+                    }
+                }
+            }
+        }
+
+        private void chB37_CheckedChanged(object sender, EventArgs e)
+        {
+            //Speichern
+            if (chBSave == 1)
+            {
+                if (chB37.Checked == true)
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK37", "1");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM37", "1");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP37", "1");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL37", "1");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP37", "1");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI37", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI37", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("37", "1");
+                    }
+                }
+                else
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK37", "0");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM37", "0");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP37", "0");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL37", "0");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP37", "0");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI37", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI37", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("37", "0");
+                    }
+                }
+            }
+        }
+
+        private void chB38_CheckedChanged(object sender, EventArgs e)
+        {
+            //Speichern
+            if (chBSave == 1)
+            {
+                if (chB38.Checked == true)
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK38", "1");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM38", "1");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP38", "1");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL38", "1");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP38", "1");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI38", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI38", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("38", "1");
+                    }
+                }
+                else
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK38", "0");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM38", "0");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP38", "0");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL38", "0");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP38", "0");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI38", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI38", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("38", "0");
+                    }
+                }
+            }
+        }
+
+        private void chB39_CheckedChanged(object sender, EventArgs e)
+        {
+            //Speichern
+            if (chBSave == 1)
+            {
+                if (chB39.Checked == true)
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK39", "1");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM39", "1");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP39", "1");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL39", "1");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP39", "1");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI39", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI39", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("39", "1");
+                    }
+                }
+                else
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK39", "0");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM39", "0");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP39", "0");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL39", "0");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP39", "0");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI39", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI39", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("39", "0");
+                    }
+                }
+            }
+        }
+
+        private void chB40_CheckedChanged(object sender, EventArgs e)
+        {
+            //Speichern
+            if (chBSave == 1)
+            {
+                if (chB40.Checked == true)
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK40", "1");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM40", "1");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP40", "1");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL40", "1");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP40", "1");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI40", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI40", "1");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("40", "1");
+                    }
+                }
+                else
+                {
+                    if (BackSave == Lang.Skins)
+                    {
+                        inisHeroes.Write("SK40", "0");
+                    }
+                    if (BackSave == Lang.Emotes)
+                    {
+                        inisHeroes.Write("EM40", "0");
+                    }
+                    if (BackSave == Lang.VictoryPoses)
+                    {
+                        inisHeroes.Write("VP40", "0");
+                    }
+                    if (BackSave == Lang.VoiceLines)
+                    {
+                        inisHeroes.Write("VL40", "0");
+                    }
+                    if (BackSave == Lang.Sprays)
+                    {
+                        inisHeroes.Write("SP40", "0");
+                    }
+                    if (BackSave == Lang.HighlightIntros)
+                    {
+                        inisHeroes.Write("HI40", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                    {
+                        inisHeroes.Write("PI40", "0");
+                    }
+                    if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                    {
+                        inisPI.Write("40", "0");
                     }
                 }
             }
