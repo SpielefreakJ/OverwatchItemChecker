@@ -392,7 +392,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Follow_me
+        public string Follow_me_VL
         {//Annyver 2017
             get
             {
