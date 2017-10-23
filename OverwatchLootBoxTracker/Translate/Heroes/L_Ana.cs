@@ -628,8 +628,8 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Better_than_retirement_VL
-        {//Halloween 2016
+        public string Better_than_retirement_VL//12
+        {//Summer 2017
             get
             {
                 if (myLang == "DE")
@@ -643,7 +643,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Learn_from_the_pain_VL//12
+        public string Learn_from_the_pain_VL//13
         {//Summer 2016
             get
             {
@@ -658,7 +658,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Are_you_scared_VL//13
+        public string Are_you_scared_VL//14
         {//Halloween 2016
             get
             {
@@ -673,7 +673,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Dont_be_scared_VL//14
+        public string Dont_be_scared_VL//15
         {//Halloween 2017
             get
             {
@@ -688,7 +688,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Im_watching_out_for_you_VL//15
+        public string Im_watching_out_for_you_VL//16
         {//Winter 2016
             get
             {
@@ -703,7 +703,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string The_Moon_in_Winter_VL//16
+        public string The_Moon_in_Winter_VL//17
         {//Rooster 2017
             get
             {
@@ -718,7 +718,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Damn_VL//17
+        public string Damn_VL//18
         {//Uprising 2017
             get
             {
@@ -733,7 +733,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string The_Ghost_watches_VL//18
+        public string The_Ghost_watches_VL//19
         {//Uprising 2017
             get
             {
@@ -748,7 +748,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Follow_me_VL//19
+        public string Follow_me_VL//20
         {//Annyver 2017
             get
             {
@@ -763,7 +763,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string The_adults_are_talking_VL//20
+        public string The_adults_are_talking_VL//21
         {//Annyver 2017
             get
             {
@@ -1021,7 +1021,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Pillow_SP
+        public string Pillow_SP//17
         {
             get
             {
@@ -1036,7 +1036,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Photograph_SP//17
+        public string Photograph_SP//18
         {
             get
             {
@@ -1051,7 +1051,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Pixel_SP//18
+        public string Pixel_SP//19
         {
             get
             {
@@ -1066,7 +1066,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Rifle_SP//19
+        public string Rifle_SP//20
         {
             get
             {
@@ -1081,7 +1081,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Shadow_SP//20
+        public string Shadow_SP//21
         {
             get
             {
@@ -1096,7 +1096,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Shhh_SP//21
+        public string Shhh_SP//22
         {
             get
             {
@@ -1111,7 +1111,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Sidearm_SP//22
+        public string Sidearm_SP//23
         {
             get
             {
@@ -1126,7 +1126,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Wedjat_SP//23
+        public string Wedjat_SP//24
         {
             get
             {
@@ -1141,7 +1141,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Wrist_Launcher_SP//24
+        public string Wrist_Launcher_SP//25
         {
             get
             {
@@ -1156,7 +1156,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Zzz_SP//25
+        public string Zzz_SP//26
         {
             get
             {
@@ -1171,7 +1171,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Shooting_SP//26
+        public string Shooting_SP//27
         {//Summer 2016
             get
             {
@@ -1186,7 +1186,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Trick_or_Treat_SP//27
+        public string Trick_or_Treat_SP//28
         {//Halloween 2016
             get
             {
@@ -1201,7 +1201,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Ornament_SP//28
+        public string Ornament_SP//29
         {//Winter 2016
             get
             {
@@ -1216,7 +1216,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Warm_SP//29
+        public string Warm_SP//30
         {//Winter 2016
             get
             {
@@ -1231,7 +1231,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Dance_SP//30
+        public string Dance_SP//31
         {//Rooster 2017
             get
             {
@@ -1246,7 +1246,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Dragon_Dance_SP//31
+        public string Dragon_Dance_SP//32
         {//Rooster 2017
             get
             {
@@ -1261,7 +1261,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Newborn_SP//32
+        public string Newborn_SP//33
         {//Uprising 2017
             get
             {
@@ -1276,7 +1276,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Ace_of_Hearts_SP//33
+        public string Ace_of_Hearts_SP//34
         {//Annyver 2017
             get
             {
@@ -1402,7 +1402,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Corsair_PI//4
+        public string Corsair_PI//5
         {//Halloween 2017
             get
             {
@@ -1417,7 +1417,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Anaversary_PI//4
+        public string Anaversary_PI//6
         {//Annyver 2017
             get
             {

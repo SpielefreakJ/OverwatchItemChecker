@@ -755,15 +755,16 @@ namespace OverwatchLootBoxTracker
                 chB09.Visible = true; chB09.Text = Ana.Witness_me_VL + " (" + Cost.Common + ")";
                 chB10.Visible = true; chB10.Text = Ana.You_know_nothing_VL + " (" + Cost.Common + ")";
                 chB11.Visible = true; chB11.Text = Ana.Someone_to_tuck_you_in_VL + " (" + Cost.Common + ")";
-                chB12.Visible = true; chB12.Text = Ana.Learn_from_the_pain_VL + " (" + Cost.Common + ")";//Summer 16
-                chB13.Visible = true; chB13.Text = Ana.Are_you_scared_VL + " (" + Cost.Common + ")";//Halloween 16
-                chB14.Visible = true; chB14.Text = Ana.Dont_be_scared_VL + " (" + Cost.RareEvent + ")";//Halloween 17
-                chB15.Visible = true; chB15.Text = Ana.Im_watching_out_for_you_VL + " (" + Cost.RareEvent + ")";//Winter 16
-                chB16.Visible = true; chB16.Text = Ana.The_Moon_in_Winter_VL + " (" + Cost.RareEvent + ")";//Rooster 17
-                chB17.Visible = true; chB17.Text = Ana.Damn_VL + " (" + Cost.RareEvent + ")";//Uprising 17
-                chB18.Visible = true; chB18.Text = Ana.The_Ghost_watches_VL + " (" + Cost.RareEvent + ")";//Uprising 17
-                chB19.Visible = true; chB19.Text = Ana.Follow_me_VL + " (" + Cost.RareEvent + ")";//Annyver 17
-                chB20.Visible = true; chB20.Text = Ana.The_adults_are_talking_VL + " (" + Cost.RareEvent + ")";//Annyver 17
+                chB12.Visible = true; chB12.Text = Ana.Better_than_retirement_VL + " (" + Cost.CommonEvent + ")";//Summer 17
+                chB13.Visible = true; chB13.Text = Ana.Learn_from_the_pain_VL + " (" + Cost.Common + ")";//Summer 16
+                chB14.Visible = true; chB14.Text = Ana.Are_you_scared_VL + " (" + Cost.Common + ")";//Halloween 16
+                chB15.Visible = true; chB15.Text = Ana.Dont_be_scared_VL + " (" + Cost.CommonEvent + ")";//Halloween 17
+                chB16.Visible = true; chB16.Text = Ana.Im_watching_out_for_you_VL + " (" + Cost.CommonEvent + ")";//Winter 16
+                chB17.Visible = true; chB17.Text = Ana.The_Moon_in_Winter_VL + " (" + Cost.CommonEvent + ")";//Rooster 17
+                chB18.Visible = true; chB18.Text = Ana.Damn_VL + " (" + Cost.CommonEvent + ")";//Uprising 17
+                chB19.Visible = true; chB19.Text = Ana.The_Ghost_watches_VL + " (" + Cost.CommonEvent + ")";//Uprising 17
+                chB20.Visible = true; chB20.Text = Ana.Follow_me_VL + " (" + Cost.CommonEvent + ")";//Annyver 17
+                chB21.Visible = true; chB21.Text = Ana.The_adults_are_talking_VL + " (" + Cost.CommonEvent + ")";//Annyver 17
                 if (inisHeroes.Read("VL01") == "1")
                 {
                     chB01.Checked = true;
@@ -844,6 +845,10 @@ namespace OverwatchLootBoxTracker
                 {
                     chB20.Checked = true;
                 }
+                if (inisHeroes.Read("VL21") == "1")
+                {
+                    chB21.Checked = true;
+                }
             }
             if (BackSave == Lang.Sprays)
             {
@@ -863,23 +868,24 @@ namespace OverwatchLootBoxTracker
                 chB14.Visible = true; chB14.Text = Ana.Letter_SP + " (" + Cost.Common + ")";
                 chB15.Visible = true; chB15.Text = Ana.Old_Soldier_SP + " (" + Cost.Common + ")";
                 chB16.Visible = true; chB16.Text = Ana.Overhead_SP + " (" + Cost.Common + ")";
-                chB17.Visible = true; chB17.Text = Ana.Photograph_SP + " (" + Cost.Common + ")";
-                chB18.Visible = true; chB18.Text = Ana.Pixel_SP + " (" + Cost.Common + ")";
-                chB19.Visible = true; chB19.Text = Ana.Rifle_SP + " (" + Cost.Common + ")";
-                chB20.Visible = true; chB20.Text = Ana.Shadow_SP + " (" + Cost.Common + ")";
-                chB21.Visible = true; chB21.Text = Ana.Shhh_SP + " (" + Cost.Common + ")";
-                chB22.Visible = true; chB22.Text = Ana.Sidearm_SP + " (" + Cost.Common + ")";
-                chB23.Visible = true; chB23.Text = Ana.Wedjat_SP + " (" + Cost.Common + ")";
-                chB24.Visible = true; chB24.Text = Ana.Wrist_Launcher_SP + " (" + Cost.Common + ")";
-                chB25.Visible = true; chB25.Text = Ana.Zzz_SP + " (" + Cost.Common + ")";
-                chB26.Visible = true; chB26.Text = Ana.Shooting_SP + " (" + Cost.Common + ")";//Summer 16
-                chB27.Visible = true; chB27.Text = Ana.Trick_or_Treat_SP + " (" + Cost.Common + ")";//Halloween 16
-                chB28.Visible = true; chB28.Text = Ana.Ornament_SP + " (" + Cost.RareEvent + ")";//Winter 16
-                chB29.Visible = true; chB29.Text = Ana.Warm_SP + " (" + Cost.RareEvent + ")";//Winter 16
-                chB30.Visible = true; chB30.Text = Ana.Dance_SP + " (" + Cost.RareEvent + ")";//Rooster 17
-                chB31.Visible = true; chB31.Text = Ana.Dragon_Dance_SP + " (" + Cost.RareEvent + ")";//Rooster 17
-                chB32.Visible = true; chB32.Text = Ana.Newborn_SP + " (" + Cost.RareEvent + ")";//Uprising 17
-                chB33.Visible = true; chB33.Text = Ana.Ace_of_Hearts_SP + " (" + Cost.RareEvent + ")";//Annyver 17
+                chB17.Visible = true; chB17.Text = Ana.Pillow_SP + " (" + Cost.Common + ")";
+                chB18.Visible = true; chB18.Text = Ana.Photograph_SP + " (" + Cost.Common + ")";
+                chB19.Visible = true; chB19.Text = Ana.Pixel_SP + " (" + Cost.Common + ")";
+                chB20.Visible = true; chB20.Text = Ana.Rifle_SP + " (" + Cost.Common + ")";
+                chB21.Visible = true; chB21.Text = Ana.Shadow_SP + " (" + Cost.Common + ")";
+                chB22.Visible = true; chB22.Text = Ana.Shhh_SP + " (" + Cost.Common + ")";
+                chB23.Visible = true; chB23.Text = Ana.Sidearm_SP + " (" + Cost.Common + ")";
+                chB24.Visible = true; chB24.Text = Ana.Wedjat_SP + " (" + Cost.Common + ")";
+                chB25.Visible = true; chB25.Text = Ana.Wrist_Launcher_SP + " (" + Cost.Common + ")";
+                chB26.Visible = true; chB26.Text = Ana.Zzz_SP + " (" + Cost.Common + ")";
+                chB27.Visible = true; chB27.Text = Ana.Shooting_SP + " (" + Cost.Common + ")";//Summer 16
+                chB28.Visible = true; chB28.Text = Ana.Trick_or_Treat_SP + " (" + Cost.Common + ")";//Halloween 16
+                chB29.Visible = true; chB29.Text = Ana.Ornament_SP + " (" + Cost.RareEvent + ")";//Winter 16
+                chB30.Visible = true; chB30.Text = Ana.Warm_SP + " (" + Cost.RareEvent + ")";//Winter 16
+                chB31.Visible = true; chB31.Text = Ana.Dance_SP + " (" + Cost.RareEvent + ")";//Rooster 17
+                chB32.Visible = true; chB32.Text = Ana.Dragon_Dance_SP + " (" + Cost.RareEvent + ")";//Rooster 17
+                chB33.Visible = true; chB33.Text = Ana.Newborn_SP + " (" + Cost.RareEvent + ")";//Uprising 17
+                chB34.Visible = true; chB34.Text = Ana.Ace_of_Hearts_SP + " (" + Cost.RareEvent + ")";//Annyver 17
                 if (inisHeroes.Read("SP01") == "1")
                 {
                     chB01.Checked = true;
@@ -1012,6 +1018,10 @@ namespace OverwatchLootBoxTracker
                 {
                     chB33.Checked = true;
                 }
+                if (inisHeroes.Read("SP34") == "1")
+                {
+                    chB34.Checked = true;
+                }
             }
             if (BackSave == Lang.HighlightIntros)
             {
@@ -1033,10 +1043,12 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave == Lang.PlayerIcons)
             {
-                chB01.Visible = true; chB03.Text = Ana.Ana_PI + " (" + Cost.Rare + ")";//Rare
-                chB02.Visible = true; chB03.Text = Ana.Watcher_PI + " (" + Cost.Rare + ")";
-                chB03.Visible = true; chB03.Text = Ana.Wedjat_PI + " (" + Cost.Rare + ")";
-                chB04.Visible = true; chB03.Text = Ana.Shooting_PI + " (" + Cost.Rare + ")";//Summer 16
+                chB01.Visible = true; chB01.Text = Ana.Ana_PI;//Rare
+                chB02.Visible = true; chB02.Text = Ana.Watcher_PI;
+                chB03.Visible = true; chB03.Text = Ana.Wedjat_PI;
+                chB04.Visible = true; chB04.Text = Ana.Shooting_PI;//Summer 16
+                chB04.Visible = true; chB04.Text = Ana.Corsair_PI;//Halloween 17
+                chB04.Visible = true; chB04.Text = Ana.Anaversary_PI;//Annyver 17
                 if (inisHeroes.Read("PI01") == "1")
                 {
                     chB01.Checked = true;
@@ -1052,6 +1064,14 @@ namespace OverwatchLootBoxTracker
                 if (inisHeroes.Read("PI04") == "1")
                 {
                     chB04.Checked = true;
+                }
+                if (inisHeroes.Read("PI05") == "1")
+                {
+                    chB05.Checked = true;
+                }
+                if (inisHeroes.Read("PI06") == "1")
+                {
+                    chB06.Checked = true;
                 }
             }
         }
