@@ -10,7 +10,7 @@ Alpha out!
 Features:
 - Save Skins of every Heroe
 
-Version 0.0.1.1
+Version 0.0.1
 
 Setup [-here-](https://poketrainer-warren.de/OWItemTracker/setup.exe)
 
