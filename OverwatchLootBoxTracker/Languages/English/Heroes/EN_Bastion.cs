@@ -113,7 +113,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         {
             get
             {
-                return "´Woodbot";
+                return "Woodbot";
             }
         }
 
@@ -302,7 +302,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Dah_Dah_Weeeee
+        public string Dah_Dah_Weeeee_VL
         {
             get
             {

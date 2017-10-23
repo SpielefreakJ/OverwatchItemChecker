@@ -336,6 +336,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
+        public string Better_than_retirement_VL
+        {//Halloween 2016
+            get
+            {
+                return "Better than retirement";
+            }
+        }
+
         public string Learn_from_the_pain_VL
         {//Summer 2016
             get
@@ -539,6 +547,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
+        public string Pillow_SP
+        {
+            get
+            {
+                return "Pillow";
+            }
+        }
+
         public string Photograph_SP
         {
             get
@@ -734,6 +750,22 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             get
             {
                 return "Shooting";
+            }
+        }
+
+        public string Corsair_PI
+        {//Halloween 2017
+            get
+            {
+                return "Corsair";
+            }
+        }
+
+        public string Anaversary_PI
+        {//Annyver 2017
+            get
+            {
+                return "Anaversary";
             }
         }
     }

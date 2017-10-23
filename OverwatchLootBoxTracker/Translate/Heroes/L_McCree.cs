@@ -188,24 +188,24 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Blackwatch_SK//14
-        {//Uprising 2017
-            get
-            {
-                //else
-                {
-                    return EN.Blackwatch_SK;
-                }
-            }
-        }
-
-        public string Van_Helsing_SK//15
+        public string Van_Helsing_SK//14
         {//Halloween 2017
             get
             {
                 //else
                 {
                     return EN.Van_Helsing_SK;
+                }
+            }
+        }
+
+        public string Blackwatch_SK//15
+        {//Uprising 2017
+            get
+            {
+                //else
+                {
+                    return EN.Blackwatch_SK;
                 }
             }
         }

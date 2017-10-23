@@ -8,19 +8,42 @@ namespace OverwatchLootBoxTracker.Lang
 {
     class L_EN
     {
+        string Changes;
+
         public L_EN()
         {
+            ChangesT();
+        }
 
+        private void ChangesT()
+        {
+            Changes = "\n\n\nAlpha Version!\n\nFeatures:\n - Save Skins";
         }
 
 
         //Welcome Screen
 
-        public string A
+        public string Welcome
         {
             get
             {
                 return "Welcome";
+            }
+        }
+
+        public string ChangesTitle
+        {
+            get
+            {
+                return "Changes";
+            }
+        }
+
+        public string ChangesText
+        {
+            get
+            {
+                return Changes;
             }
         }
 
@@ -202,7 +225,8 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Cost of remaining items:";
+                return "Cost of all items:";
+                //return "Cost of remaining items:";
             }
         }
 
@@ -226,14 +250,16 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Costs of all remaining Items:";
+                return "Costs of all Items:";
+                //return "Costs of all remaining Items:";
             }
         }
         public string remNonEvent
         {
             get
             {
-                return "Costs of remaining non-event Items:";
+                return "Costs of all non-event Items:";
+                //return "Costs of remaining non-event Items:";
             }
         }
 
@@ -241,7 +267,8 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Costs of remaining event Items:";
+                return "Costs of all event Items:";
+                //return "Costs of remaining event Items:";
             }
         }
 
@@ -249,7 +276,8 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Costs of remaining Weapon Items:";
+                return "Costs of all Weapon Items:";
+                //return "Costs of remaining Weapon Items:";
             }
         }
     }

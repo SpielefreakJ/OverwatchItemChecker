@@ -9,6 +9,7 @@ namespace OverwatchLootBoxTracker.Translate
     class L_Hanzo
     {
         Languages.English.Heroes.EN_Hanzo EN;
+        Languages.German.Heroes.DE_Hanzo DE;
         string myLang;
 
         public L_Hanzo(string Lang)
@@ -16,6 +17,7 @@ namespace OverwatchLootBoxTracker.Translate
             myLang = Lang;
 
             EN = new Languages.English.Heroes.EN_Hanzo();
+            DE = new Languages.German.Heroes.DE_Hanzo();
         }
 
         public string ChangeLang
@@ -34,7 +36,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Name;
+                }
+                else
                 {
                     return EN.Name;
                 }
@@ -49,7 +55,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Azuki_SK;
+                }
+                else
                 {
                     return EN.Azuki_SK;
                 }
@@ -60,7 +70,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Kinoko_SK;
+                }
+                else
                 {
                     return EN.Kinoko_SK;
                 }
@@ -71,7 +85,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Midori_SK;
+                }
+                else
                 {
                     return EN.Midori_SK;
                 }
@@ -82,7 +100,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Sora_SK;
+                }
+                else
                 {
                     return EN.Sora_SK;
                 }
@@ -93,7 +115,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Cloud_SK;
+                }
+                else
                 {
                     return EN.Cloud_SK;
                 }
@@ -104,7 +130,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Dragon_SK;
+                }
+                else
                 {
                     return EN.Dragon_SK;
                 }
@@ -115,7 +145,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Halloween 2016
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Demon_SK;
+                }
+                else
                 {
                     return EN.Demon_SK;
                 }
@@ -126,7 +160,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Young_Hanzo_SK;
+                }
+                else
                 {
                     return EN.Young_Hanzo_SK;
                 }
@@ -137,7 +175,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Young_Master_SK;
+                }
+                else
                 {
                     return EN.Young_Master_SK;
                 }
@@ -148,7 +190,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Lone_Wolf_SK;
+                }
+                else
                 {
                     return EN.Lone_Wolf_SK;
                 }
@@ -159,7 +205,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Okami_SK;
+                }
+                else
                 {
                     return EN.Okami_SK;
                 }
@@ -170,7 +220,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Annyver 2017
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Cyberninja_SK;
+                }
+                else
                 {
                     return EN.Cyberninja_SK;
                 }

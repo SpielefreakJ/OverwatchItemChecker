@@ -12,6 +12,28 @@
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <IsWebBootstrapper>true</IsWebBootstrapper>
+    <PublishUrl>ftp://ftp.cluster020.hosting.ovh.net/www/OWItemTracker/</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Web</InstallFrom>
+    <UpdateEnabled>true</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <InstallUrl>https://poketrainer-warren.de/OWItemTracker/</InstallUrl>
+    <SupportUrl>https://github.com/SpielefreakJ/OverwatchLootTracker</SupportUrl>
+    <ErrorReportUrl>https://github.com/SpielefreakJ/OverwatchLootTracker/issues</ErrorReportUrl>
+    <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
+    <WebPage>publish.htm</WebPage>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>0.0.1.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <CreateDesktopShortcut>true</CreateDesktopShortcut>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -32,6 +54,33 @@
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>overwatch_small.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>OverwatchLootBoxTracker_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>Properties\app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>EF43FB8FAF2CEA583ECEBD5508AC4689DD6A8870</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>OverwatchLootBoxTracker_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -47,6 +96,31 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CGoldweapon.cs" />
+    <Compile Include="Languages\German\Heroes\DE_Ana.cs" />
+    <Compile Include="Languages\German\Heroes\DE_Bastion.cs" />
+    <Compile Include="Languages\German\Heroes\DE_Doomfist.cs" />
+    <Compile Include="Languages\German\Heroes\DE_DVa.cs" />
+    <Compile Include="Languages\German\Heroes\DE_Genji.cs" />
+    <Compile Include="Languages\German\Heroes\DE_Hanzo.cs" />
+    <Compile Include="Languages\German\Heroes\DE_Junkrat.cs" />
+    <Compile Include="Languages\German\Heroes\DE_Lúcio.cs" />
+    <Compile Include="Languages\German\Heroes\DE_McCree.cs" />
+    <Compile Include="Languages\German\Heroes\DE_Mei.cs" />
+    <Compile Include="Languages\German\Heroes\DE_Mercy_.cs" />
+    <Compile Include="Languages\German\Heroes\DE_Orisa.cs" />
+    <Compile Include="Languages\German\Heroes\DE_Pharah.cs" />
+    <Compile Include="Languages\German\Heroes\DE_Reaper.cs" />
+    <Compile Include="Languages\German\Heroes\DE_Reinhardt.cs" />
+    <Compile Include="Languages\German\Heroes\DE_Roadhog.cs" />
+    <Compile Include="Languages\German\Heroes\DE_Soldier_76.cs" />
+    <Compile Include="Languages\German\Heroes\DE_Sombra.cs" />
+    <Compile Include="Languages\German\Heroes\DE_Symmetra.cs" />
+    <Compile Include="Languages\German\Heroes\DE_Torbjörn.cs" />
+    <Compile Include="Languages\German\Heroes\DE_Tracer.cs" />
+    <Compile Include="Languages\German\Heroes\DE_Widowmaker.cs" />
+    <Compile Include="Languages\German\Heroes\DE_Winston.cs" />
+    <Compile Include="Languages\German\Heroes\DE_Zarya.cs" />
+    <Compile Include="Languages\German\Heroes\DE_Zenyatta.cs" />
     <Compile Include="Translate\Heroes\L_Lúcio.cs" />
     <Compile Include="Translate\Heroes\L_McCree.cs" />
     <Compile Include="Translate\Heroes\L_Mei.cs" />
@@ -72,31 +146,31 @@
     <Compile Include="Translate\Heroes\L_DVa.cs" />
     <Compile Include="Translate\Heroes\L_Bastion.cs" />
     <Compile Include="IniStream.cs" />
-    <Compile Include="Languages\English\EN_Heroes\EN_Ana.cs" />
-    <Compile Include="Languages\English\EN_Heroes\EN_Bastion.cs" />
-    <Compile Include="Languages\English\EN_Heroes\EN_Doomfist.cs" />
-    <Compile Include="Languages\English\EN_Heroes\EN_DVa.cs" />
-    <Compile Include="Languages\English\EN_Heroes\EN_Genji.cs" />
-    <Compile Include="Languages\English\EN_Heroes\EN_Hanzo.cs" />
-    <Compile Include="Languages\English\EN_Heroes\EN_Junkrat.cs" />
-    <Compile Include="Languages\English\EN_Heroes\EN_Lúcio.cs" />
-    <Compile Include="Languages\English\EN_Heroes\EN_McCree.cs" />
-    <Compile Include="Languages\English\EN_Heroes\EN_Mei.cs" />
-    <Compile Include="Languages\English\EN_Heroes\EN_Mercy.cs" />
-    <Compile Include="Languages\English\EN_Heroes\EN_Orisa.cs" />
-    <Compile Include="Languages\English\EN_Heroes\EN_Pharah.cs" />
-    <Compile Include="Languages\English\EN_Heroes\EN_Reaper.cs" />
-    <Compile Include="Languages\English\EN_Heroes\EN_Reinhardt.cs" />
-    <Compile Include="Languages\English\EN_Heroes\EN_Roadhog.cs" />
-    <Compile Include="Languages\English\EN_Heroes\EN_Soldier_76.cs" />
-    <Compile Include="Languages\English\EN_Heroes\EN_Sombra.cs" />
-    <Compile Include="Languages\English\EN_Heroes\EN_Symmetra.cs" />
-    <Compile Include="Languages\English\EN_Heroes\EN_Torbjörn.cs" />
-    <Compile Include="Languages\English\EN_Heroes\EN_Tracer.cs" />
-    <Compile Include="Languages\English\EN_Heroes\EN_Widowmaker.cs" />
-    <Compile Include="Languages\English\EN_Heroes\EN_Winston.cs" />
-    <Compile Include="Languages\English\EN_Heroes\EN_Zarya.cs" />
-    <Compile Include="Languages\English\EN_Heroes\EN_Zenyatta.cs" />
+    <Compile Include="Languages\English\Heroes\EN_Ana.cs" />
+    <Compile Include="Languages\English\Heroes\EN_Bastion.cs" />
+    <Compile Include="Languages\English\Heroes\EN_Doomfist.cs" />
+    <Compile Include="Languages\English\Heroes\EN_DVa.cs" />
+    <Compile Include="Languages\English\Heroes\EN_Genji.cs" />
+    <Compile Include="Languages\English\Heroes\EN_Hanzo.cs" />
+    <Compile Include="Languages\English\Heroes\EN_Junkrat.cs" />
+    <Compile Include="Languages\English\Heroes\EN_Lúcio.cs" />
+    <Compile Include="Languages\English\Heroes\EN_McCree.cs" />
+    <Compile Include="Languages\English\Heroes\EN_Mei.cs" />
+    <Compile Include="Languages\English\Heroes\EN_Mercy.cs" />
+    <Compile Include="Languages\English\Heroes\EN_Orisa.cs" />
+    <Compile Include="Languages\English\Heroes\EN_Pharah.cs" />
+    <Compile Include="Languages\English\Heroes\EN_Reaper.cs" />
+    <Compile Include="Languages\English\Heroes\EN_Reinhardt.cs" />
+    <Compile Include="Languages\English\Heroes\EN_Roadhog.cs" />
+    <Compile Include="Languages\English\Heroes\EN_Soldier_76.cs" />
+    <Compile Include="Languages\English\Heroes\EN_Sombra.cs" />
+    <Compile Include="Languages\English\Heroes\EN_Symmetra.cs" />
+    <Compile Include="Languages\English\Heroes\EN_Torbjörn.cs" />
+    <Compile Include="Languages\English\Heroes\EN_Tracer.cs" />
+    <Compile Include="Languages\English\Heroes\EN_Widowmaker.cs" />
+    <Compile Include="Languages\English\Heroes\EN_Winston.cs" />
+    <Compile Include="Languages\English\Heroes\EN_Zarya.cs" />
+    <Compile Include="Languages\English\Heroes\EN_Zenyatta.cs" />
     <Compile Include="Languages\German\L_DE.cs" />
     <Compile Include="Languages\English\L_EN.cs" />
     <Compile Include="Translate\Heroes\L_Ana.cs" />
@@ -123,6 +197,8 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <None Include="ClassDiagram1.cd" />
+    <None Include="OverwatchLootBoxTracker_TemporaryKey.pfx" />
+    <None Include="Properties\app.manifest" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -132,9 +208,25 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <None Include="test.pfx" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="overwatch_small.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5.2 %28x86 und x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

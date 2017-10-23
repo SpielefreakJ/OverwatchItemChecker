@@ -9,7 +9,10 @@ namespace OverwatchLootBoxTracker
     class CCost
     {
         private int myClassic = 0;
+        private int myCommon = 25;
+        private int myCommonEvent = 75;
         private int myRare = 75;
+        private int myRareEvent = 225;
         private int myEpic = 250;
         private int myLegendary = 1000;
         private int myEpicEvent = 750;
@@ -36,11 +39,35 @@ namespace OverwatchLootBoxTracker
             }
         }
 
+        public int Common
+        {//Silver (Normal and 2016 Summer/Halloween)
+            get
+            {
+                return myCommon;
+            }
+        }
+
+        public int CommonEvent
+        {//Silver Event (Winter and later)
+            get
+            {
+                return myCommonEvent;
+            }
+        }
+
         public int Rare
-        {//Blue
+        {//Blue (Normal and 2016 Summer/Halloween)
             get
             {
                 return myRare;
+            }
+        }
+
+        public int RareEvent
+        {//Blue Event (Winter and later)
+            get
+            {
+                return myRareEvent;
             }
         }
 

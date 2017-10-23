@@ -9,7 +9,6 @@ namespace OverwatchLootBoxTracker.Translate
     class L_Translate
     {
         string myLang;
-        string Changes;
         CCost Cost;
         CGoldweapon GoldWeapon;
 
@@ -26,13 +25,6 @@ namespace OverwatchLootBoxTracker.Translate
             //Langs
             DE = new Lang.L_DE();
             EN = new Lang.L_EN();
-
-            ChangesT();
-        }
-
-        private void ChangesT()
-        {
-            Changes = "\n\nNew Changes!";
         }
 
         public string ChangeLang
@@ -50,17 +42,17 @@ namespace OverwatchLootBoxTracker.Translate
 
         //Welcome Screen
 
-        public string A
+        public string Welcome
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.A;
+                    return DE.Welcome;
                 }
                 else
                 {
-                    return EN.A;
+                    return EN.Welcome;
                 }
             }
         }
@@ -71,11 +63,26 @@ namespace OverwatchLootBoxTracker.Translate
             {
                 if (myLang == "DE")
                 {
-                    return DE.A + Changes;
+                    return DE.ChangesTitle + EN.ChangesText;
                 }
                 else
                 {
-                    return EN.A + Changes;
+                    return EN.ChangesTitle + EN.ChangesText;
+                }
+            }
+        }
+
+        public string CopyrightVersion
+        {
+            get
+            {
+                //if (myLang == "DE")
+                //{
+                //    return DE.ChangesTitle + EN.ChangesText;
+                //}
+                //else
+                {
+                    return "© 2017 SpielefreakJ | OWLootboxTracker Version: 0.0.1.1 Alpha | Overwatch Version: 1.16.0.2B";
                 }
             }
         }

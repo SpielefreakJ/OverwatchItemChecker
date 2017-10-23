@@ -16,11 +16,19 @@ namespace OverwatchLootBoxTracker.Lang
 
         //Welcome Screen
 
-        public string A
+        public string Welcome
         {
             get
             {
                 return "Willkommen";
+            }
+        }
+
+        public string ChangesTitle
+        {
+            get
+            {
+                return "Änderrungen";
             }
         }
 
@@ -201,7 +209,8 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Kosten für restliche Items:";
+                return "Kosten für alle Items:";
+                //return "Kosten für restliche Items:";
             }
         }
 
@@ -225,14 +234,16 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Kosten für restliche Items (Eventunabhängig):";
+                return "Kosten für alle Items:";
+                //return "Kosten für alle restliche Items:";
             }
         }
         public string remNonEvent
         {
             get
             {
-                return "Kosten für restliche nicht-Event-Items:";
+                return "Kosten für alle nicht-Event-Items:";
+                //return "Kosten für alle restliche nicht-Event-Items:";
             }
         }
 
@@ -240,7 +251,8 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Kosten für restliche Event Items:";
+                return "Kosten für alle Event Items:";
+                //return "Kosten für alle restliche Event Items:";
             }
         }
 
@@ -248,7 +260,8 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Kosten für restliche Waffen:";
+                return "Kosten für alle Waffen:";
+                //return "Kosten für alle restliche Waffen:";
             }
         }
     }

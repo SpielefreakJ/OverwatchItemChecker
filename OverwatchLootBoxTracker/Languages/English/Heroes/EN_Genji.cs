@@ -42,6 +42,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         {
             get
             {
+                return "M;alachite";
+            }
+        }
+
+        public string Ochre_SK
+        {
+            get
+            {
                 return "Ochre";
             }
         }

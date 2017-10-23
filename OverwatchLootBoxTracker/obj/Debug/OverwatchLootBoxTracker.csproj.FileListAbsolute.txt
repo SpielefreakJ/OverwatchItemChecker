@@ -16,11 +16,6 @@ F:\050 - Schule\PRG\000 - Pivat\OverwatchLootBoxTracker\OverwatchLootBoxTracker\
 F:\050 - Schule\PRG\000 - Pivat\OverwatchLootBoxTracker\OverwatchLootBoxTracker\obj\Debug\OverwatchLootBoxTracker.Form1.resources
 F:\050 - Schule\PRG\000 - Pivat\OverwatchLootBoxTracker\OverwatchLootBoxTracker\obj\Debug\OverwatchLootBoxTracker.Properties.Resources.resources
 F:\050 - Schule\PRG\000 - Pivat\OverwatchLootBoxTracker\OverwatchLootBoxTracker\obj\Debug\OverwatchLootBoxTracker.csproj.GenerateResource.Cache
-F:\justi\Documents\GitHub\OverwatchLootTracker\OverwatchLootBoxTracker\bin\Debug\OverwatchLootBoxTracker.exe.config
-F:\justi\Documents\GitHub\OverwatchLootTracker\OverwatchLootBoxTracker\obj\Debug\OverwatchLootBoxTracker.exe
-F:\justi\Documents\GitHub\OverwatchLootTracker\OverwatchLootBoxTracker\obj\Debug\OverwatchLootBoxTracker.pdb
-F:\justi\Documents\GitHub\OverwatchLootTracker\OverwatchLootBoxTracker\bin\Debug\OverwatchLootBoxTracker.exe
-F:\justi\Documents\GitHub\OverwatchLootTracker\OverwatchLootBoxTracker\bin\Debug\OverwatchLootBoxTracker.pdb
 F:\justi\Documents\GitHub\OverwatchLootTracker\OverwatchLootBoxTracker\obj\Debug\OverwatchLootBoxTracker.csprojResolveAssemblyReference.cache
 F:\justi\Documents\GitHub\OverwatchLootTracker\OverwatchLootBoxTracker\obj\Debug\OverwatchLootBoxTracker.Form1.resources
 F:\justi\Documents\GitHub\OverwatchLootTracker\OverwatchLootBoxTracker\obj\Debug\OverwatchLootBoxTracker.Properties.Resources.resources
@@ -28,3 +23,13 @@ F:\justi\Documents\GitHub\OverwatchLootTracker\OverwatchLootBoxTracker\obj\Debug
 C:\Users\justi\Documents\GitHub\OverwatchLootTracker\OverwatchLootBoxTracker\bin\Debug\OverwatchLootBoxTracker.exe.config
 C:\Users\justi\Documents\GitHub\OverwatchLootTracker\OverwatchLootBoxTracker\obj\Debug\OverwatchLootBoxTracker.exe
 C:\Users\justi\Documents\GitHub\OverwatchLootTracker\OverwatchLootBoxTracker\obj\Debug\OverwatchLootBoxTracker.pdb
+F:\justi\Documents\GitHub\OverwatchLootTracker\OverwatchLootBoxTracker\bin\Debug\OverwatchLootBoxTracker.exe.config
+F:\justi\Documents\GitHub\OverwatchLootTracker\OverwatchLootBoxTracker\bin\Debug\OverwatchLootBoxTracker.exe.manifest
+F:\justi\Documents\GitHub\OverwatchLootTracker\OverwatchLootBoxTracker\bin\Debug\OverwatchLootBoxTracker.application
+F:\justi\Documents\GitHub\OverwatchLootTracker\OverwatchLootBoxTracker\bin\Debug\OverwatchLootBoxTracker.exe
+F:\justi\Documents\GitHub\OverwatchLootTracker\OverwatchLootBoxTracker\bin\Debug\OverwatchLootBoxTracker.pdb
+F:\justi\Documents\GitHub\OverwatchLootTracker\OverwatchLootBoxTracker\obj\Debug\OverwatchLootBoxTracker.TrustInfo.xml
+F:\justi\Documents\GitHub\OverwatchLootTracker\OverwatchLootBoxTracker\obj\Debug\OverwatchLootBoxTracker.exe.manifest
+F:\justi\Documents\GitHub\OverwatchLootTracker\OverwatchLootBoxTracker\obj\Debug\OverwatchLootBoxTracker.application
+F:\justi\Documents\GitHub\OverwatchLootTracker\OverwatchLootBoxTracker\obj\Debug\OverwatchLootBoxTracker.exe
+F:\justi\Documents\GitHub\OverwatchLootTracker\OverwatchLootBoxTracker\obj\Debug\OverwatchLootBoxTracker.pdb

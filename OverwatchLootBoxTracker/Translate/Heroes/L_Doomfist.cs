@@ -9,6 +9,7 @@ namespace OverwatchLootBoxTracker.Translate
     class L_Doomfist
     {
         Languages.English.Heroes.EN_Doomfist EN;
+        Languages.German.Heroes.DE_Doomfist DE;
         string myLang;
 
         public L_Doomfist(string Lang)
@@ -16,6 +17,7 @@ namespace OverwatchLootBoxTracker.Translate
             myLang = Lang;
 
             EN = new Languages.English.Heroes.EN_Doomfist();
+            DE = new Languages.German.Heroes.DE_Doomfist();
         }
 
         public string ChangeLang
@@ -34,7 +36,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Name;
+                }
+                else
                 {
                     return EN.Name;
                 }
@@ -49,7 +55,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Daisy_SK;
+                }
+                else
                 {
                     return EN.Daisy_SK;
                 }
@@ -60,7 +70,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Lake_SK;
+                }
+                else
                 {
                     return EN.Lake_SK;
                 }
@@ -71,7 +85,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Plains_SK;
+                }
+                else
                 {
                     return EN.Plains_SK;
                 }
@@ -82,7 +100,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Sunset_SK;
+                }
+                else
                 {
                     return EN.Sunset_SK;
                 }
@@ -93,7 +115,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Leopard_SK;
+                }
+                else
                 {
                     return EN.Leopard_SK;
                 }
@@ -104,7 +130,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Painted_SK;
+                }
+                else
                 {
                     return EN.Painted_SK;
                 }
@@ -115,7 +145,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Caution_SK;
+                }
+                else
                 {
                     return EN.Caution_SK;
                 }
@@ -126,7 +160,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Irin_SK;
+                }
+                else
                 {
                     return EN.Irin_SK;
                 }
@@ -137,7 +175,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Avatar_SK;
+                }
+                else
                 {
                     return EN.Avatar_SK;
                 }
@@ -148,7 +190,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Spirit_SK;
+                }
+                else
                 {
                     return EN.Spirit_SK;
                 }
