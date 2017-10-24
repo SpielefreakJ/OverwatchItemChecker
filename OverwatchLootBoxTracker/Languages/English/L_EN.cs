@@ -17,7 +17,7 @@ namespace OverwatchLootBoxTracker.Lang
 
         private void ChangesT()
         {
-            Changes = "\n\n\nAlpha Version!\n\nFeatures:\n - Save Skins";
+            Changes = "\n\n\nAlpha Version!\n\nFeatures:\n - Save Skins\n\nLanguages:\n- German\n- English";
         }
 
 

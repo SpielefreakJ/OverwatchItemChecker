@@ -138,7 +138,7 @@ namespace OverwatchLootBoxTracker
             gBWelcome.Text = Lang.Welcome;
             btnWelcomeClose.Text = Lang.Close+" (3)";
             lblCopyrightVersion.Text = Lang.CopyrightVersion;
-            lblContributor.Text = "Contributor:\nProgramm: SpielefreakJ\n\nLanguages:\nEnglish: SpielefreakJ"/*\nGerman: SpielefreakJ"*/;
+            lblContributor.Text = "Contributor:\nProgramm: SpielefreakJ\n\nLanguages:\nEnglish: SpielefreakJ\nGerman: SpielefreakJ";
             //Settings
             btnSettings.Text = Lang.Settings;
             gBLang.Text = Lang.LangChange;
