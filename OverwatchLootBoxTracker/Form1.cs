@@ -49,6 +49,9 @@ namespace OverwatchLootBoxTracker
         Translate.L_Zarya Zarya;
         Translate.L_Zenyatta Zenyatta;
         string Language;
+        int gBAllWeited3, gBAllWeited3p1, gBAllWeited3p2;
+        int gBAllWeited4, gBAllWeited4p1, gBAllWeited4p2, gBAllWeited4p3;
+        int gBAllWeited5, gBAllWeited5p1, gBAllWeited5p2, gBAllWeited5p3, gBAllWeited5p4;
 
         string BackSave;
 
@@ -136,7 +139,7 @@ namespace OverwatchLootBoxTracker
             gbAll.Visible = false;
             gBLang.Visible = false;
             gBWelcome.Text = Lang.Welcome;
-            btnWelcomeClose.Text = Lang.Close+" (3)";
+            btnWelcomeClose.Text = Lang.Close + " (3)";
             lblCopyrightVersion.Text = Lang.CopyrightVersion;
             lblContributor.Text = "Contributor:\nProgramm: SpielefreakJ\n\nLanguages:\nEnglish: SpielefreakJ\nGerman: SpielefreakJ";
             //Settings
@@ -207,6 +210,46 @@ namespace OverwatchLootBoxTracker
             gBMoreCost.Width = 868; gBMoreCost.Height = 671;
 
             btnBackHeroe.Location = new Point(16, 677);
+
+            //Buttons der Helden
+            btnAna.Location = new Point(7, 20);
+            btnBastion.Location = new Point(7, 49);
+            btnDVa.Location = new Point(7, 78);
+            btnDoomfist.Location = new Point(7, 107);
+            btnGeji.Location = new Point(7, 136);
+            btnHanzo.Location = new Point(7, 165);
+            btnJunkrat.Location = new Point(7, 194);
+            btnLúcio.Location = new Point(7, 223);
+            btnMcCree.Location = new Point(7, 252);
+            btnMei.Location = new Point(7, 281);
+            btnMercy.Location = new Point(7, 310);
+            btnOrisa.Location = new Point(7, 339);
+            btnPharah.Location = new Point(7, 368);
+
+            btnReaper.Location = new Point(114, 20);
+            btnReinhardt.Location = new Point(114, 49);
+            btnRoadhog.Location = new Point(114, 78);
+            btnSoldier_76.Location = new Point(114, 107);
+            btnSombra.Location = new Point(114, 136);
+            btnSymmetra.Location = new Point(114, 165);
+            btnTorbjörn.Location = new Point(114, 194);
+            btnTracer.Location = new Point(114, 223);
+            btnWidowmaker.Location = new Point(114, 252);
+            btnWinston.Location = new Point(114, 281);
+            btnZarya.Location = new Point(114, 310);
+            btnZenyatta.Location = new Point(114, 339);
+
+
+            gBAllWeited3 = gbAll.Width;
+            gBAllWeited3 /= 3;
+            gBAllWeited3p1 = gBAllWeited3 - 57;
+            gBAllWeited3p2 = gBAllWeited3 * 2 - 57;
+
+            gBAllWeited4 = gbAll.Width;
+            gBAllWeited4 /= 4;
+            gBAllWeited4p1 = gBAllWeited4 - 57;
+            gBAllWeited4p2 = gBAllWeited4 * 2 - 57;
+            gBAllWeited4p3 = gBAllWeited4 * 3 - 57;
         }
 
         private void ChangeLang()
@@ -591,6 +634,7 @@ namespace OverwatchLootBoxTracker
             chBSave = 1;
         }
 
+        int p1 = 194; int p2 = 217; int p3 = 240; int p4 = 263; int p5 = 286; int p6 = 309; int p7 = 332; int p8 = 355; int p9 = 378; int p10 = 401;
         private void btnAna_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible();
@@ -602,19 +646,19 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Text = Ana.Citrine_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.Visible = true; chB02.Text = Ana.Garnet_SK + " (" + Cost.Rare + ")";
-                chB03.Visible = true; chB03.Text = Ana.Peridot_SK + " (" + Cost.Rare + ")";
-                chB04.Visible = true; chB04.Text = Ana.Turquoise_SK + " (" + Cost.Rare + ")";
-                chB05.Visible = true; chB05.Text = Ana.Merciful_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.Visible = true; chB06.Text = Ana.Shrike_SK + " (" + Cost.Epic + ")";
-                chB07.Visible = true; chB07.Text = Ana.Ghoul_SK + " (" + Cost.Epic + ")";//Halloween 16
-                chB08.Visible = true; chB08.Text = Ana.Tal_SK + " (" + Cost.EpicEvent + ")";//Rooster 17
-                chB09.Visible = true; chB09.Text = Ana.Wadjet_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB10.Visible = true; chB10.Text = Ana.Wasteland_SK + " (" + Cost.Legendary + ")";
-                chB11.Visible = true; chB11.Text = Ana.Captain_Amari_SK + " (" + Cost.Legendary + ")";
-                chB12.Visible = true; chB12.Text = Ana.Horus_SK + " (" + Cost.Legendary + ")";
-                chB13.Visible = true; chB13.Text = Ana.Corsair_SK + " (" + Cost.LegendaryEvent + ")";//Halloween 17
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1); chB01.Text = Ana.Citrine_SK + " (" + Cost.Rare + ")";//Rare
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2); chB02.Text = Ana.Garnet_SK + " (" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3); chB03.Text = Ana.Peridot_SK + " (" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4); chB04.Text = Ana.Turquoise_SK + " (" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = Ana.Merciful_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = Ana.Shrike_SK + " (" + Cost.Epic + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = Ana.Ghoul_SK + " (" + Cost.Epic + ")";//Halloween 16
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p2, p4); chB08.Text = Ana.Tal_SK + " (" + Cost.EpicEvent + ")";//Rooster 17
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p1); chB09.Text = Ana.Wadjet_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p2); chB10.Text = Ana.Wasteland_SK + " (" + Cost.Legendary + ")";
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p3); chB11.Text = Ana.Captain_Amari_SK + " (" + Cost.Legendary + ")";
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p4); chB12.Text = Ana.Horus_SK + " (" + Cost.Legendary + ")";
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p5); chB13.Text = Ana.Corsair_SK + " (" + Cost.LegendaryEvent + ")";//Halloween 17
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;
@@ -670,14 +714,14 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave == Lang.Emotes)
             {
-                chB01.Visible = true; chB01.Text = Ana.Not_Impressed_EM + " (" + Cost.Epic + ")";//Epic
-                chB02.Visible = true; chB02.Text = Ana.Disapproving_EM + " (" + Cost.Epic + ")";
-                chB03.Visible = true; chB03.Text = Ana.Protector_EM + " (" + Cost.Epic + ")";
-                chB04.Visible = true; chB04.Text = Ana.Take_A_Knee_EM + " (" + Cost.Epic + ")";
-                chB05.Visible = true; chB05.Text = Ana.Tea_Time_EM + " (" + Cost.Epic + ")";
-                chB06.Visible = true; chB06.Text = Ana.Beach_Ball_EM + " (" + Cost.EpicEvent + ")";//Summer 17
-                chB07.Visible = true; chB07.Text = Ana.Candy_EM + " (" + Cost.Epic + ")";//Halloween 16
-                chB08.Visible = true; chB08.Text = Ana.Dance_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1); chB01.Text = Ana.Not_Impressed_EM + " (" + Cost.Epic + ")";//Epic
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2); chB02.Text = Ana.Disapproving_EM + " (" + Cost.Epic + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3); chB03.Text = Ana.Protector_EM + " (" + Cost.Epic + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p4); chB04.Text = Ana.Take_A_Knee_EM + " (" + Cost.Epic + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1); chB05.Text = Ana.Tea_Time_EM + " (" + Cost.Epic + ")";
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2); chB06.Text = Ana.Beach_Ball_EM + " (" + Cost.EpicEvent + ")";//Summer 17
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3); chB07.Text = Ana.Candy_EM + " (" + Cost.Epic + ")";//Halloween 16
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited3p2, p4); chB08.Text = Ana.Dance_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
                 if (inisHeroes.Read("EM01") == "1")
                 {
                     chB01.Checked = true;
@@ -1089,22 +1133,22 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Text = Bastion.Dawn_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.Visible = true; chB02.Text = Bastion.Meadow_SK + " (" + Cost.Rare + ")";
-                chB03.Visible = true; chB03.Text = Bastion.Sky_SK + " (" + Cost.Rare + ")";
-                chB04.Visible = true; chB04.Text = Bastion.Soot_SK + " (" + Cost.Rare + ")";
-                chB05.Visible = true; chB05.Text = Bastion.Defense_Matrix_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.Visible = true; chB06.Text = Bastion.Omnic_Crisis_SK + " (" + Cost.Epic + ")";
-                chB07.Visible = true; chB07.Text = Bastion.BlizzCon_2016_SK + " (" + Cost.BlizzCon + ")";//BlizzCon 16
-                chB08.Visible = true; chB08.Text = Bastion.Tombstone_SK + " (" + Cost.Epic + ")";//Halloween 16
-                chB09.Visible = true; chB09.Text = Bastion.Rooster_SK + " (" + Cost.EpicEvent + ")";//Rooster 17
-                chB10.Visible = true; chB10.Text = Bastion.Null_Sector_SK + " (" + Cost.EpicEvent + ")";//Uprising 17
-                chB11.Visible = true; chB11.Text = Bastion.Antique_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB12.Visible = true; chB12.Text = Bastion.Woodbot_SK + " (" + Cost.Legendary + ")";
-                chB13.Visible = true; chB13.Text = Bastion.Gearbot_SK + " (" + Cost.Legendary + ")";
-                chB14.Visible = true; chB14.Text = Bastion.Steambot_SK + " (" + Cost.Legendary + ")";
-                chB15.Visible = true; chB15.Text = Bastion.Overgrown_SK + " (" + Cost.OriginGotY + ")";//Origin
-                chB16.Visible = true; chB16.Text = Bastion.Dune_Buggy_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1); chB01.Text = Bastion.Dawn_SK + " (" + Cost.Rare + ")";//Rare
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2); chB02.Text = Bastion.Meadow_SK + " (" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3); chB03.Text = Bastion.Sky_SK + " (" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4); chB04.Text = Bastion.Soot_SK + " (" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = Bastion.Defense_Matrix_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = Bastion.Omnic_Crisis_SK + " (" + Cost.Epic + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = Bastion.BlizzCon_2016_SK + " (" + Cost.BlizzCon + ")";//BlizzCon 16
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p2, p4); chB08.Text = Bastion.Tombstone_SK + " (" + Cost.Epic + ")";//Halloween 16
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p2, p5); chB09.Text = Bastion.Rooster_SK + " (" + Cost.EpicEvent + ")";//Rooster 17
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p2, p6); chB10.Text = Bastion.Null_Sector_SK + " (" + Cost.EpicEvent + ")";//Uprising 17
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p1); chB11.Text = Bastion.Antique_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p2); chB12.Text = Bastion.Woodbot_SK + " (" + Cost.Legendary + ")";
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p3); chB13.Text = Bastion.Gearbot_SK + " (" + Cost.Legendary + ")";
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p4); chB14.Text = Bastion.Steambot_SK + " (" + Cost.Legendary + ")";
+                chB15.Visible = true; chB15.Location = new Point(gBAllWeited4p3, p5); chB15.Text = Bastion.Overgrown_SK + " (" + Cost.OriginGotY + ")";//Origin
+                chB16.Visible = true; chB16.Location = new Point(gBAllWeited4p3, p6); chB16.Text = Bastion.Dune_Buggy_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;
@@ -1172,13 +1216,13 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave == Lang.Emotes)
             {
-                chB01.Visible = true; chB01.Text = Bastion.Alert_Alert_EM + " (" + Cost.Epic + ")";//Epic
-                chB02.Visible = true; chB02.Text = Bastion.Chortle_EM + " (" + Cost.Epic + ")";
-                chB03.Visible = true; chB03.Text = Bastion.Dizzy_EM + " (" + Cost.Epic + ")";
-                chB04.Visible = true; chB04.Text = Bastion.Rest_Mode_EM + " (" + Cost.Epic + ")";
-                chB05.Visible = true; chB05.Text = Bastion.Robot_EM + " (" + Cost.Epic + ")";
-                chB06.Visible = true; chB06.Text = Bastion.Boxing_EM + " (" + Cost.Epic + ")";//Summer 16
-                chB07.Visible = true; chB07.Text = Bastion.Robo_Boogie_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1); chB01.Text = Bastion.Alert_Alert_EM + " (" + Cost.Epic + ")";//Epic
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2); chB02.Text = Bastion.Chortle_EM + " (" + Cost.Epic + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3); chB03.Text = Bastion.Dizzy_EM + " (" + Cost.Epic + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p4); chB04.Text = Bastion.Rest_Mode_EM + " (" + Cost.Epic + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1); chB05.Text = Bastion.Robot_EM + " (" + Cost.Epic + ")";
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2); chB06.Text = Bastion.Boxing_EM + " (" + Cost.Epic + ")";//Summer 16
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3); chB07.Text = Bastion.Robo_Boogie_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
                 if (inisHeroes.Read("EM01") == "1")
                 {
                     chB01.Checked = true;
@@ -1362,20 +1406,20 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Text = DVa.Blueberry_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.Visible = true; chB02.Text = DVa.Lemon_Lime_SK + " (" + Cost.Rare + ")";
-                chB03.Visible = true; chB03.Text = DVa.Tangerine_SK + " (" + Cost.Rare + ")";
-                chB04.Visible = true; chB04.Text = DVa.Watermelon_SK + " (" + Cost.Rare + ")";
-                chB05.Visible = true; chB05.Text = DVa.Carbon_Fiber_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.Visible = true; chB06.Text = DVa.White_Rabbit_SK + " (" + Cost.Epic + ")";
-                chB07.Visible = true; chB07.Text = DVa.Taegeukgi_SK + " (" + Cost.Epic + ")";//Summer 16
-                chB08.Visible = true; chB08.Text = DVa.Junker_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB09.Visible = true; chB09.Text = DVa.Scavenger_SK + " (" + Cost.Legendary + ")";
-                chB10.Visible = true; chB10.Text = DVa.BVa_SK + " (" + Cost.Legendary + ")";
-                chB11.Visible = true; chB11.Text = DVa.Junebug_SK + " (" + Cost.Legendary + ")";
-                chB12.Visible = true; chB12.Text = DVa.Officer_SK + " (" + Cost.Legendary + ")";
-                chB13.Visible = true; chB13.Text = DVa.Palanquin_SK + " (" + Cost.LegendaryEvent + ")";//Rooster 17
-                chB14.Visible = true; chB14.Text = DVa.Cruiser_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1); chB01.Text = DVa.Blueberry_SK + " (" + Cost.Rare + ")";//Rare
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2); chB02.Text = DVa.Lemon_Lime_SK + " (" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3); chB03.Text = DVa.Tangerine_SK + " (" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4); chB04.Text = DVa.Watermelon_SK + " (" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = DVa.Carbon_Fiber_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = DVa.White_Rabbit_SK + " (" + Cost.Epic + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = DVa.Taegeukgi_SK + " (" + Cost.Epic + ")";//Summer 16
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p1); chB08.Text = DVa.Junker_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p2); chB09.Text = DVa.Scavenger_SK + " (" + Cost.Legendary + ")";
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p3); chB10.Text = DVa.BVa_SK + " (" + Cost.Legendary + ")";
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p4); chB11.Text = DVa.Junebug_SK + " (" + Cost.Legendary + ")";
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p5); chB12.Text = DVa.Officer_SK + " (" + Cost.Legendary + ")";
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p6); chB13.Text = DVa.Palanquin_SK + " (" + Cost.LegendaryEvent + ")";//Rooster 17
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p7); chB14.Text = DVa.Cruiser_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;
@@ -1446,16 +1490,16 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Text = Doomfist.Daisy_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.Visible = true; chB02.Text = Doomfist.Lake_SK + " (" + Cost.Rare + ")";
-                chB03.Visible = true; chB03.Text = Doomfist.Plains_SK + " (" + Cost.Rare + ")";
-                chB04.Visible = true; chB04.Text = Doomfist.Sunset_SK + " (" + Cost.Rare + ")";
-                chB05.Visible = true; chB05.Text = Doomfist.Leopard_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.Visible = true; chB06.Text = Doomfist.Painted_SK + " (" + Cost.Epic + ")";
-                chB07.Visible = true; chB07.Text = Doomfist.Caution_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB08.Visible = true; chB08.Text = Doomfist.Irin_SK + " (" + Cost.Legendary + ")";
-                chB09.Visible = true; chB09.Text = Doomfist.Avatar_SK + " (" + Cost.Legendary + ")";
-                chB10.Visible = true; chB10.Text = Doomfist.Spirit_SK + " (" + Cost.Legendary + ")";
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1); chB01.Text = Doomfist.Daisy_SK + " (" + Cost.Rare + ")";//Rare
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2); chB02.Text = Doomfist.Lake_SK + " (" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3); chB03.Text = Doomfist.Plains_SK + " (" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4); chB04.Text = Doomfist.Sunset_SK + " (" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = Doomfist.Leopard_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = Doomfist.Painted_SK + " (" + Cost.Epic + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p3, p1); chB07.Text = Doomfist.Caution_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p2); chB08.Text = Doomfist.Irin_SK + " (" + Cost.Legendary + ")";
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p3); chB09.Text = Doomfist.Avatar_SK + " (" + Cost.Legendary + ")";
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p4); chB10.Text = Doomfist.Spirit_SK + " (" + Cost.Legendary + ")";
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;
@@ -1510,20 +1554,20 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Text = Genji.Azurite_SK + " (" + Cost.Rare + ")";//Common
-                chB02.Visible = true; chB02.Text = Genji.Cinnabar_SK + " (" + Cost.Rare + ")";
-                chB03.Visible = true; chB03.Text = Genji.Malachite_SK + " (" + Cost.Rare + ")";
-                chB04.Visible = true; chB04.Text = Genji.Ochre_SK + " (" + Cost.Rare + ")";
-                chB05.Visible = true; chB05.Text = Genji.Carbon_Fiber_SK + " (" + Cost.Epic + ")";//Rare
-                chB06.Visible = true; chB06.Text = Genji.Chrome_SK + " (" + Cost.Epic + ")";
-                chB07.Visible = true; chB07.Text = Genji.Nihon_SK + " (" + Cost.Epic + ")";//Summer 16
-                chB08.Visible = true; chB08.Text = Genji.Sparrow_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB09.Visible = true; chB09.Text = Genji.Young_Genji_SK + " (" + Cost.Legendary + ")";
-                chB10.Visible = true; chB10.Text = Genji.Bedouin_SK + " (" + Cost.Legendary + ")";
-                chB11.Visible = true; chB11.Text = Genji.Nomad_SK + " (" + Cost.Legendary + ")";
-                chB12.Visible = true; chB12.Text = Genji.Oni_SK + " (" + Cost.Legendary + ")";
-                chB13.Visible = true; chB13.Text = Genji.Blackwatch_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
-                chB14.Visible = true; chB14.Text = Genji.Sentai_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1); chB01.Text = Genji.Azurite_SK + " (" + Cost.Rare + ")";//Common
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2); chB02.Text = Genji.Cinnabar_SK + " (" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3); chB03.Text = Genji.Malachite_SK + " (" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4); chB04.Text = Genji.Ochre_SK + " (" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = Genji.Carbon_Fiber_SK + " (" + Cost.Epic + ")";//Rare
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = Genji.Chrome_SK + " (" + Cost.Epic + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = Genji.Nihon_SK + " (" + Cost.Epic + ")";//Summer 16
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p1); chB08.Text = Genji.Sparrow_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p2); chB09.Text = Genji.Young_Genji_SK + " (" + Cost.Legendary + ")";
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p3); chB10.Text = Genji.Bedouin_SK + " (" + Cost.Legendary + ")";
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p4); chB11.Text = Genji.Nomad_SK + " (" + Cost.Legendary + ")";
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p5); chB12.Text = Genji.Oni_SK + " (" + Cost.Legendary + ")";
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p6); chB13.Text = Genji.Blackwatch_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p7); chB14.Text = Genji.Sentai_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;
@@ -1594,18 +1638,18 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Text = Hanzo.Azuki_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.Visible = true; chB02.Text = Hanzo.Kinoko_SK + " (" + Cost.Rare + ")";
-                chB03.Visible = true; chB03.Text = Hanzo.Midori_SK + " (" + Cost.Rare + ")";
-                chB04.Visible = true; chB04.Text = Hanzo.Sora_SK + " (" + Cost.Rare + ")";
-                chB05.Visible = true; chB05.Text = Hanzo.Cloud_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.Visible = true; chB06.Text = Hanzo.Dragon_SK + " (" + Cost.Epic + ")";
-                chB07.Visible = true; chB07.Text = Hanzo.Demon_SK + " (" + Cost.Epic + ")";//Halloween 16
-                chB08.Visible = true; chB08.Text = Hanzo.Young_Hanzo_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB09.Visible = true; chB09.Text = Hanzo.Young_Master_SK + " (" + Cost.Legendary + ")";
-                chB10.Visible = true; chB10.Text = Hanzo.Lone_Wolf_SK + " (" + Cost.Legendary + ")";
-                chB11.Visible = true; chB11.Text = Hanzo.Okami_SK + " (" + Cost.Legendary + ")";
-                chB12.Visible = true; chB12.Text = Hanzo.Cyberninja_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1); chB01.Text = Hanzo.Azuki_SK + " (" + Cost.Rare + ")";//Rare
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2); chB02.Text = Hanzo.Kinoko_SK + " (" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3); chB03.Text = Hanzo.Midori_SK + " (" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4); chB04.Text = Hanzo.Sora_SK + " (" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = Hanzo.Cloud_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = Hanzo.Dragon_SK + " (" + Cost.Epic + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = Hanzo.Demon_SK + " (" + Cost.Epic + ")";//Halloween 16
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p1); chB08.Text = Hanzo.Young_Hanzo_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p2); chB09.Text = Hanzo.Young_Master_SK + " (" + Cost.Legendary + ")";
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p3); chB10.Text = Hanzo.Lone_Wolf_SK + " (" + Cost.Legendary + ")";
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p4); chB11.Text = Hanzo.Okami_SK + " (" + Cost.Legendary + ")";
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p5); chB12.Text = Hanzo.Cyberninja_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;
@@ -1668,19 +1712,19 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Text = Junkrat.Bleached_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.Visible = true; chB02.Text = Junkrat.Drowned_SK + " (" + Cost.Rare + ")";
-                chB03.Visible = true; chB03.Text = Junkrat.Irradiated_SK + " (" + Cost.Rare + ")";
-                chB04.Visible = true; chB04.Text = Junkrat.Rusted_SK + " (" + Cost.Rare + ")";
-                chB05.Visible = true; chB05.Text = Junkrat.Jailbird_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.Visible = true; chB06.Text = Junkrat.Toasted_SK + " (" + Cost.Epic + ")";
-                chB07.Visible = true; chB07.Text = Junkrat.Firework_SK + " (" + Cost.EpicEvent + ")";//Rooster 17
-                chB08.Visible = true; chB08.Text = Junkrat.Fool_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB09.Visible = true; chB09.Text = Junkrat.Jester_SK + " (" + Cost.Legendary + ")";
-                chB10.Visible = true; chB10.Text = Junkrat.Hayseed_SK + " (" + Cost.Legendary + ")";
-                chB11.Visible = true; chB11.Text = Junkrat.Scarecrow_SK + " (" + Cost.Legendary + ")";
-                chB12.Visible = true; chB12.Text = Junkrat.Dr_Junkenstein_SK + " (" + Cost.Legendary + ")";//Halloween 16
-                chB13.Visible = true; chB13.Text = Junkrat.Cricket_SK + " (" + Cost.LegendaryEvent + ")";//Summer 17
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1); chB01.Text = Junkrat.Bleached_SK + " (" + Cost.Rare + ")";//Rare
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2); chB02.Text = Junkrat.Drowned_SK + " (" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3); chB03.Text = Junkrat.Irradiated_SK + " (" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4); chB04.Text = Junkrat.Rusted_SK + " (" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = Junkrat.Jailbird_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = Junkrat.Toasted_SK + " (" + Cost.Epic + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = Junkrat.Firework_SK + " (" + Cost.EpicEvent + ")";//Rooster 17
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p1); chB08.Text = Junkrat.Fool_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p2); chB09.Text = Junkrat.Jester_SK + " (" + Cost.Legendary + ")";
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p3); chB10.Text = Junkrat.Hayseed_SK + " (" + Cost.Legendary + ")";
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p4); chB11.Text = Junkrat.Scarecrow_SK + " (" + Cost.Legendary + ")";
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p5); chB12.Text = Junkrat.Dr_Junkenstein_SK + " (" + Cost.Legendary + ")";//Halloween 16
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p6); chB13.Text = Junkrat.Cricket_SK + " (" + Cost.LegendaryEvent + ")";//Summer 17
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;
@@ -1747,20 +1791,20 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Text = Lúcio.Azul_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.Visible = true; chB02.Text = Lúcio.Laranja_SK + " (" + Cost.Rare + ")";
-                chB03.Visible = true; chB03.Text = Lúcio.Roxo_SK + " (" + Cost.Rare + ")";
-                chB04.Visible = true; chB04.Text = Lúcio.Vermelho_SK + " (" + Cost.Rare + ")";
-                chB05.Visible = true; chB05.Text = Lúcio.Auditiva_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.Visible = true; chB06.Text = Lúcio.Synaesthesia_SK + " (" + Cost.Epic + ")";
-                chB07.Visible = true; chB07.Text = Lúcio.Andes_SK + " (" + Cost.EpicEvent + ")";//Winter 16
-                chB08.Visible = true; chB08.Text = Lúcio.Hippityhop_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB09.Visible = true; chB09.Text = Lúcio.Ribbit_SK + " (" + Cost.Legendary + ")";
-                chB10.Visible = true; chB10.Text = Lúcio.Breakaway_SK + " (" + Cost.Legendary + ")";
-                chB11.Visible = true; chB11.Text = Lúcio.Slapshot_SK + " (" + Cost.Legendary + ")";
-                chB12.Visible = true; chB12.Text = Lúcio.Seleção_SK + " (" + Cost.Legendary + ")";//Summer 16
-                chB13.Visible = true; chB13.Text = Lúcio.Striker_SK + " (" + Cost.Legendary + ")";//Summer 16
-                chB14.Visible = true; chB14.Text = Lúcio.Jazzy_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1); chB01.Text = Lúcio.Azul_SK + " (" + Cost.Rare + ")";//Rare
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2); chB02.Text = Lúcio.Laranja_SK + " (" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3); chB03.Text = Lúcio.Roxo_SK + " (" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4); chB04.Text = Lúcio.Vermelho_SK + " (" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = Lúcio.Auditiva_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = Lúcio.Synaesthesia_SK + " (" + Cost.Epic + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = Lúcio.Andes_SK + " (" + Cost.EpicEvent + ")";//Winter 16
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p1); chB08.Text = Lúcio.Hippityhop_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p2); chB09.Text = Lúcio.Ribbit_SK + " (" + Cost.Legendary + ")";
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p3); chB10.Text = Lúcio.Breakaway_SK + " (" + Cost.Legendary + ")";
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p4); chB11.Text = Lúcio.Slapshot_SK + " (" + Cost.Legendary + ")";
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p5); chB12.Text = Lúcio.Seleção_SK + " (" + Cost.Legendary + ")";//Summer 16
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p6); chB13.Text = Lúcio.Striker_SK + " (" + Cost.Legendary + ")";//Summer 16
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p7); chB14.Text = Lúcio.Jazzy_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;
@@ -1831,21 +1875,21 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Text = McCree.Ebony_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.Visible = true; chB02.Text = McCree.Lake_SK + " (" + Cost.Rare + ")";
-                chB03.Visible = true; chB03.Text = McCree.Sage_SK + " (" + Cost.Rare + ")";
-                chB04.Visible = true; chB04.Text = McCree.Wheat_SK + " (" + Cost.Rare + ")";
-                chB05.Visible = true; chB05.Text = McCree.On_The_Range_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.Visible = true; chB06.Text = McCree.White_Hat_SK + " (" + Cost.Epic + ")";
-                chB07.Visible = true; chB07.Text = McCree.American_SK + " (" + Cost.Epic + ")";//Summer 16
-                chB08.Visible = true; chB08.Text = McCree.Scrooge_SK + " (" + Cost.EpicEvent + ")";//Winter 16
-                chB09.Visible = true; chB09.Text = McCree.Gambler_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB10.Visible = true; chB10.Text = McCree.Riverboat_SK + " (" + Cost.Legendary + ")";
-                chB11.Visible = true; chB11.Text = McCree.Mystery_Man_SK + " (" + Cost.Legendary + ")";
-                chB12.Visible = true; chB12.Text = McCree.Vigilante_SK + " (" + Cost.Legendary + ")";
-                chB13.Visible = true; chB13.Text = McCree.Lifeguard_SK + " (" + Cost.LegendaryEvent + ")";//Summer 17
-                chB14.Visible = true; chB14.Text = McCree.Van_Helsing_SK + " (" + Cost.LegendaryEvent + ")";//Halloween 17
-                chB15.Visible = true; chB15.Text = McCree.Blackwatch_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1); chB01.Text = McCree.Ebony_SK + " (" + Cost.Rare + ")";//Rare
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2); chB02.Text = McCree.Lake_SK + " (" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3); chB03.Text = McCree.Sage_SK + " (" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4); chB04.Text = McCree.Wheat_SK + " (" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = McCree.On_The_Range_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = McCree.White_Hat_SK + " (" + Cost.Epic + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = McCree.American_SK + " (" + Cost.Epic + ")";//Summer 16
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p2, p4); chB08.Text = McCree.Scrooge_SK + " (" + Cost.EpicEvent + ")";//Winter 16
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p1); chB09.Text = McCree.Gambler_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p2); chB10.Text = McCree.Riverboat_SK + " (" + Cost.Legendary + ")";
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p3); chB11.Text = McCree.Mystery_Man_SK + " (" + Cost.Legendary + ")";
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p4); chB12.Text = McCree.Vigilante_SK + " (" + Cost.Legendary + ")";
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p5); chB13.Text = McCree.Lifeguard_SK + " (" + Cost.LegendaryEvent + ")";//Summer 17
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p6); chB14.Text = McCree.Van_Helsing_SK + " (" + Cost.LegendaryEvent + ")";//Halloween 17
+                chB15.Visible = true; chB15.Location = new Point(gBAllWeited4p3, p7); chB15.Text = McCree.Blackwatch_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;
@@ -1920,21 +1964,21 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Text = Mei.Chrysanthemum_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.Visible = true; chB02.Text = Mei.Heliotrope_SK + " (" + Cost.Rare + ")";
-                chB03.Visible = true; chB03.Text = Mei.Jade_SK + " (" + Cost.Rare + ")";
-                chB04.Visible = true; chB04.Text = Mei.Persimmon_SK + " (" + Cost.Rare + ")";
-                chB05.Visible = true; chB05.Text = Mei.Earthen_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.Visible = true; chB06.Text = Mei.Snow_Plum_SK + " (" + Cost.Epic + ")";
-                chB07.Visible = true; chB07.Text = Mei.Firefighter_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB08.Visible = true; chB08.Text = Mei.Rescue_Mei_SK + " (" + Cost.Legendary + ")";
-                chB09.Visible = true; chB09.Text = Mei.Abominable_SK + " (" + Cost.Legendary + ")";
-                chB10.Visible = true; chB10.Text = Mei.Yeti_Hunter_SK + " (" + Cost.Legendary + ")";
-                chB11.Visible = true; chB11.Text = Mei.Jiangshi_SK + " (" + Cost.LegendaryEvent + ")";//Halloween 17
-                chB12.Visible = true; chB12.Text = Mei.Mei_rry_SK + " (" + Cost.LegendaryEvent + ")";//Winter 16
-                chB13.Visible = true; chB13.Text = Mei.Chang_e_SK + " (" + Cost.LegendaryEvent + ")";//Rooster 17
-                chB14.Visible = true; chB14.Text = Mei.Luna_SK + " (" + Cost.LegendaryEvent + ")";//Rooster 17
-                chB15.Visible = true; chB15.Text = Mei.Beekeeper_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1); chB01.Text = Mei.Chrysanthemum_SK + " (" + Cost.Rare + ")";//Rare
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2); chB02.Text = Mei.Heliotrope_SK + " (" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3); chB03.Text = Mei.Jade_SK + " (" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4); chB04.Text = Mei.Persimmon_SK + " (" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = Mei.Earthen_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = Mei.Snow_Plum_SK + " (" + Cost.Epic + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p3, p1); chB07.Text = Mei.Firefighter_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p2); chB08.Text = Mei.Rescue_Mei_SK + " (" + Cost.Legendary + ")";
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p3); chB09.Text = Mei.Abominable_SK + " (" + Cost.Legendary + ")";
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p4); chB10.Text = Mei.Yeti_Hunter_SK + " (" + Cost.Legendary + ")";
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p5); chB11.Text = Mei.Jiangshi_SK + " (" + Cost.LegendaryEvent + ")";//Halloween 17
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p6); chB12.Text = Mei.Mei_rry_SK + " (" + Cost.LegendaryEvent + ")";//Winter 16
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p7); chB13.Text = Mei.Chang_e_SK + " (" + Cost.LegendaryEvent + ")";//Rooster 17
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p8); chB14.Text = Mei.Luna_SK + " (" + Cost.LegendaryEvent + ")";//Rooster 17
+                chB15.Visible = true; chB15.Location = new Point(gBAllWeited4p3, p9); chB15.Text = Mei.Beekeeper_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;
@@ -2009,21 +2053,21 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Text = Mercy.Celestial_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.Visible = true; chB02.Text = Mercy.Mist_SK + " (" + Cost.Rare + ")";
-                chB03.Visible = true; chB03.Text = Mercy.Orchid_SK + " (" + Cost.Rare + ")";
-                chB04.Visible = true; chB04.Text = Mercy.Verdant_SK + " (" + Cost.Rare + ")";
-                chB05.Visible = true; chB05.Text = Mercy.Amber_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.Visible = true; chB06.Text = Mercy.Cobalt_SK + " (" + Cost.Epic + ")";
-                chB07.Visible = true; chB07.Text = Mercy.Eidgenossin_SK + " (" + Cost.Epic + ")";//Summer 16
-                chB08.Visible = true; chB08.Text = Mercy.Fortune_SK + " (" + Cost.EpicEvent + ")";//Rooster 17
-                chB09.Visible = true; chB09.Text = Mercy.Sigrun_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB10.Visible = true; chB10.Text = Mercy.Valkyrie_SK + " (" + Cost.Legendary + ")";
-                chB11.Visible = true; chB11.Text = Mercy.Devil_SK + " (" + Cost.Legendary + ")";
-                chB12.Visible = true; chB12.Text = Mercy.IMP_SK + " (" + Cost.Legendary + ")";
-                chB13.Visible = true; chB13.Text = Mercy.Winged_Victory_SK + " (" + Cost.LegendaryEvent + ")";//Summer 17
-                chB14.Visible = true; chB14.Text = Mercy.Witch_SK + " (" + Cost.Legendary + ")";//Halloween 16
-                chB15.Visible = true; chB15.Text = Mercy.Combat_Medic_Ziegler_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1); chB01.Text = Mercy.Celestial_SK + " (" + Cost.Rare + ")";//Rare
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2); chB02.Text = Mercy.Mist_SK + " (" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3); chB03.Text = Mercy.Orchid_SK + " (" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4); chB04.Text = Mercy.Verdant_SK + " (" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = Mercy.Amber_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = Mercy.Cobalt_SK + " (" + Cost.Epic + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p3, p3); chB07.Text = Mercy.Eidgenossin_SK + " (" + Cost.Epic + ")";//Summer 16
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p4); chB08.Text = Mercy.Fortune_SK + " (" + Cost.EpicEvent + ")";//Rooster 17
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p1); chB09.Text = Mercy.Sigrun_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p2); chB10.Text = Mercy.Valkyrie_SK + " (" + Cost.Legendary + ")";
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p3); chB11.Text = Mercy.Devil_SK + " (" + Cost.Legendary + ")";
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p4); chB12.Text = Mercy.IMP_SK + " (" + Cost.Legendary + ")";
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p5); chB13.Text = Mercy.Winged_Victory_SK + " (" + Cost.LegendaryEvent + ")";//Summer 17
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p6); chB14.Text = Mercy.Witch_SK + " (" + Cost.Legendary + ")";//Halloween 16
+                chB15.Visible = true; chB15.Location = new Point(gBAllWeited4p3, p7); chB15.Text = Mercy.Combat_Medic_Ziegler_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;
@@ -2098,17 +2142,17 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Text = Orisa.Dawn_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.Visible = true; chB02.Text = Orisa.Plains_SK + " (" + Cost.Rare + ")";
-                chB03.Visible = true; chB03.Text = Orisa.Sunrise_SK + " (" + Cost.Rare + ")";
-                chB04.Visible = true; chB04.Text = Orisa.Twilight_SK + " (" + Cost.Rare + ")";
-                chB05.Visible = true; chB05.Text = Orisa.Camouflage_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.Visible = true; chB06.Text = Orisa.OR15_SK + " (" + Cost.Epic + ")";
-                chB07.Visible = true; chB07.Text = Orisa.Dynastinae_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB08.Visible = true; chB08.Text = Orisa.Megasoma_SK + " (" + Cost.Legendary + ")";
-                chB09.Visible = true; chB09.Text = Orisa.Carbon_Fiber_SK + " (" + Cost.Legendary + ")";
-                chB10.Visible = true; chB10.Text = Orisa.Protector_SK + " (" + Cost.Legendary + ")";
-                chB11.Visible = true; chB11.Text = Orisa.Null_Sector_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1); chB01.Text = Orisa.Dawn_SK + " (" + Cost.Rare + ")";//Rare
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2); chB02.Text = Orisa.Plains_SK + " (" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3); chB03.Text = Orisa.Sunrise_SK + " (" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4); chB04.Text = Orisa.Twilight_SK + " (" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = Orisa.Camouflage_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = Orisa.OR15_SK + " (" + Cost.Epic + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p3, p1); chB07.Text = Orisa.Dynastinae_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p2); chB08.Text = Orisa.Megasoma_SK + " (" + Cost.Legendary + ")";
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p3); chB09.Text = Orisa.Carbon_Fiber_SK + " (" + Cost.Legendary + ")";
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p4); chB10.Text = Orisa.Protector_SK + " (" + Cost.Legendary + ")";
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p5); chB11.Text = Orisa.Null_Sector_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;
@@ -2167,20 +2211,20 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Text = Pharah.Amethyst_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.Visible = true; chB02.Text = Pharah.Copper_SK + " (" + Cost.Rare + ")";
-                chB03.Visible = true; chB03.Text = Pharah.Emerald_SK + " (" + Cost.Rare + ")";
-                chB04.Visible = true; chB04.Text = Pharah.Titanium_SK + " (" + Cost.Rare + ")";
-                chB05.Visible = true; chB05.Text = Pharah.Anubis_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.Visible = true; chB06.Text = Pharah.Jackal_SK + " (" + Cost.Epic + ")";
-                chB07.Visible = true; chB07.Text = Pharah.Possessed_SK + " (" + Cost.Epic + ")";//Halloween 16
-                chB08.Visible = true; chB08.Text = Pharah.Frostbite_SK + " (" + Cost.EpicEvent + ")";//Winter 16
-                chB09.Visible = true; chB09.Text = Pharah.Mechaqueen_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB10.Visible = true; chB10.Text = Pharah.Raptorion_SK + " (" + Cost.Legendary + ")";
-                chB11.Visible = true; chB11.Text = Pharah.Raindancer_SK + " (" + Cost.Legendary + ")";
-                chB12.Visible = true; chB12.Text = Pharah.Thunderbird_SK + " (" + Cost.Legendary + ")";
-                chB13.Visible = true; chB13.Text = Pharah.Security_Chief_SK + " (" + Cost.OriginGotY + ")";//Origin
-                chB14.Visible = true; chB14.Text = Pharah.Bedouin_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1); chB01.Text = Pharah.Amethyst_SK + " (" + Cost.Rare + ")";//Rare
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2); chB02.Text = Pharah.Copper_SK + " (" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3); chB03.Text = Pharah.Emerald_SK + " (" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4); chB04.Text = Pharah.Titanium_SK + " (" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = Pharah.Anubis_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = Pharah.Jackal_SK + " (" + Cost.Epic + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = Pharah.Possessed_SK + " (" + Cost.Epic + ")";//Halloween 16
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p2, p4); chB08.Text = Pharah.Frostbite_SK + " (" + Cost.EpicEvent + ")";//Winter 16
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p1); chB09.Text = Pharah.Mechaqueen_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p2); chB10.Text = Pharah.Raptorion_SK + " (" + Cost.Legendary + ")";
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p3); chB11.Text = Pharah.Raindancer_SK + " (" + Cost.Legendary + ")";
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p4); chB12.Text = Pharah.Thunderbird_SK + " (" + Cost.Legendary + ")";
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p5); chB13.Text = Pharah.Security_Chief_SK + " (" + Cost.OriginGotY + ")";//Origin
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p6); chB14.Text = Pharah.Bedouin_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;
@@ -2251,21 +2295,21 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Text = Reaper.Blood_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.Visible = true; chB02.Text = Reaper.Midnight_SK + " (" + Cost.Rare + ")";
-                chB03.Visible = true; chB03.Text = Reaper.Moss_SK + " (" + Cost.Rare + ")";
-                chB04.Visible = true; chB04.Text = Reaper.Royal_SK + " (" + Cost.Rare + ")";
-                chB05.Visible = true; chB05.Text = Reaper.Desert_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.Visible = true; chB06.Text = Reaper.Wight_SK + " (" + Cost.Epic + ")";
-                chB07.Visible = true; chB07.Text = Reaper.Shiver_SK + " (" + Cost.EpicEvent + ")";//Winter 16
-                chB08.Visible = true; chB08.Text = Reaper.Nevermore_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB09.Visible = true; chB09.Text = Reaper.Plague_Doctor_SK + " (" + Cost.Legendary + ")";
-                chB10.Visible = true; chB10.Text = Reaper.El_Blanco_SK + " (" + Cost.Legendary + ")";
-                chB11.Visible = true; chB11.Text = Reaper.Mariachi_SK + " (" + Cost.Legendary + ")";
-                chB12.Visible = true; chB12.Text = Reaper.Blackwatch_Reyes_SK + " (" + Cost.OriginGotY + ")";//Origin
-                chB13.Visible = true; chB13.Text = Reaper.Biker_SK + " (" + Cost.LegendaryEvent + ")";//Summer 17
-                chB14.Visible = true; chB14.Text = Reaper.Dracula_SK + " (" + Cost.LegendaryEvent + ")";//Halloween 17
-                chB15.Visible = true; chB15.Text = Reaper.Pumpkin_SK + " (" + Cost.Legendary + ")";//Halloween 16
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1); chB01.Text = Reaper.Blood_SK + " (" + Cost.Rare + ")";//Rare
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2); chB02.Text = Reaper.Midnight_SK + " (" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3); chB03.Text = Reaper.Moss_SK + " (" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4); chB04.Text = Reaper.Royal_SK + " (" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = Reaper.Desert_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = Reaper.Wight_SK + " (" + Cost.Epic + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = Reaper.Shiver_SK + " (" + Cost.EpicEvent + ")";//Winter 16
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p1); chB08.Text = Reaper.Nevermore_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p2); chB09.Text = Reaper.Plague_Doctor_SK + " (" + Cost.Legendary + ")";
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p3); chB10.Text = Reaper.El_Blanco_SK + " (" + Cost.Legendary + ")";
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p4); chB11.Text = Reaper.Mariachi_SK + " (" + Cost.Legendary + ")";
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p5); chB12.Text = Reaper.Blackwatch_Reyes_SK + " (" + Cost.OriginGotY + ")";//Origin
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p6); chB13.Text = Reaper.Biker_SK + " (" + Cost.LegendaryEvent + ")";//Summer 17
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p7); chB14.Text = Reaper.Dracula_SK + " (" + Cost.LegendaryEvent + ")";//Halloween 17
+                chB15.Visible = true; chB15.Location = new Point(gBAllWeited4p3, p8); chB15.Text = Reaper.Pumpkin_SK + " (" + Cost.Legendary + ")";//Halloween 16
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;
@@ -2340,21 +2384,21 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Text = Reinhardt.Brass_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.Visible = true; chB02.Text = Reinhardt.Cobalt_SK + " (" + Cost.Rare + ")";
-                chB03.Visible = true; chB03.Text = Reinhardt.Copper_SK + " (" + Cost.Rare + ")";
-                chB04.Visible = true; chB04.Text = Reinhardt.Viridian_SK + " (" + Cost.Rare + ")";
-                chB05.Visible = true; chB05.Text = Reinhardt.Bundeswehr_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.Visible = true; chB06.Text = Reinhardt.Paragon_SK + " (" + Cost.Epic + ")";
-                chB07.Visible = true; chB07.Text = Reinhardt.Coldhardt_SK + " (" + Cost.Epic + ")";//Halloween 16
-                chB08.Visible = true; chB08.Text = Reinhardt.Lieutenant_Wilhelm_SK + " (" + Cost.EpicEvent + ")";//Uprising 17
-                chB09.Visible = true; chB09.Text = Reinhardt.Blackhardt_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB10.Visible = true; chB10.Text = Reinhardt.Bloodhardt_SK + " (" + Cost.Legendary + ")";
-                chB11.Visible = true; chB11.Text = Reinhardt.Lionhardt_SK + " (" + Cost.Legendary + ")";
-                chB12.Visible = true; chB12.Text = Reinhardt.Stonehardt_SK + " (" + Cost.Legendary + ")";
-                chB13.Visible = true; chB13.Text = Reinhardt.Balderich_SK + " (" + Cost.Legendary + ")";
-                chB14.Visible = true; chB14.Text = Reinhardt.Greifhardt_SK + " (" + Cost.Legendary + ")";
-                chB15.Visible = true; chB15.Text = Reinhardt.Wujing_SK + " (" + Cost.LegendaryEvent + ")";//Rooster 17
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1); chB01.Text = Reinhardt.Brass_SK + " (" + Cost.Rare + ")";//Rare
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2); chB02.Text = Reinhardt.Cobalt_SK + " (" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3); chB03.Text = Reinhardt.Copper_SK + " (" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4); chB04.Text = Reinhardt.Viridian_SK + " (" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = Reinhardt.Bundeswehr_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = Reinhardt.Paragon_SK + " (" + Cost.Epic + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = Reinhardt.Coldhardt_SK + " (" + Cost.Epic + ")";//Halloween 16
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p2, p4); chB08.Text = Reinhardt.Lieutenant_Wilhelm_SK + " (" + Cost.EpicEvent + ")";//Uprising 17
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p1); chB09.Text = Reinhardt.Blackhardt_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p2); chB10.Text = Reinhardt.Bloodhardt_SK + " (" + Cost.Legendary + ")";
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p3); chB11.Text = Reinhardt.Lionhardt_SK + " (" + Cost.Legendary + ")";
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p4); chB12.Text = Reinhardt.Stonehardt_SK + " (" + Cost.Legendary + ")";
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p5); chB13.Text = Reinhardt.Balderich_SK + " (" + Cost.Legendary + ")";
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p6); chB14.Text = Reinhardt.Greifhardt_SK + " (" + Cost.Legendary + ")";
+                chB15.Visible = true; chB15.Location = new Point(gBAllWeited4p3, p7); chB15.Text = Reinhardt.Wujing_SK + " (" + Cost.LegendaryEvent + ")";//Rooster 17
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;
@@ -2429,19 +2473,19 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Text = Roadhog.Kiwi_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.Visible = true; chB02.Text = Roadhog.Mud_SK + " (" + Cost.Rare + ")";
-                chB03.Visible = true; chB03.Text = Roadhog.Sand_SK + " (" + Cost.Rare + ")";
-                chB04.Visible = true; chB04.Text = Roadhog.Thistle_SK + " (" + Cost.Rare + ")";
-                chB05.Visible = true; chB05.Text = Roadhog.Pigpen_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.Visible = true; chB06.Text = Roadhog.Stitched_SK + " (" + Cost.Epic + ")";
-                chB07.Visible = true; chB07.Text = Roadhog.Rudolph_SK + " (" + Cost.EpicEvent + ")";//Winter 16
-                chB08.Visible = true; chB08.Text = Roadhog.Islander_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB09.Visible = true; chB09.Text = Roadhog.Toa_SK + " (" + Cost.Legendary + ")";
-                chB10.Visible = true; chB10.Text = Roadhog.Mako_SK + " (" + Cost.Legendary + ")";
-                chB11.Visible = true; chB11.Text = Roadhog.Sharkbait_SK + " (" + Cost.Legendary + ")";
-                chB12.Visible = true; chB12.Text = Roadhog.Junkensteins_Monster_SK + " (" + Cost.Legendary + ")";//Halloween 16
-                chB13.Visible = true; chB13.Text = Roadhog.Bajie_SK + " (" + Cost.LegendaryEvent + ")";//Rooster 17
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1); chB01.Text = Roadhog.Kiwi_SK + " (" + Cost.Rare + ")";//Rare
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2); chB02.Text = Roadhog.Mud_SK + " (" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3); chB03.Text = Roadhog.Sand_SK + " (" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4); chB04.Text = Roadhog.Thistle_SK + " (" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = Roadhog.Pigpen_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = Roadhog.Stitched_SK + " (" + Cost.Epic + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = Roadhog.Rudolph_SK + " (" + Cost.EpicEvent + ")";//Winter 16
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p1); chB08.Text = Roadhog.Islander_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p2); chB09.Text = Roadhog.Toa_SK + " (" + Cost.Legendary + ")";
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p3); chB10.Text = Roadhog.Mako_SK + " (" + Cost.Legendary + ")";
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p4); chB11.Text = Roadhog.Sharkbait_SK + " (" + Cost.Legendary + ")";
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p5); chB12.Text = Roadhog.Junkensteins_Monster_SK + " (" + Cost.Legendary + ")";//Halloween 16
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p6); chB13.Text = Roadhog.Bajie_SK + " (" + Cost.LegendaryEvent + ")";//Rooster 17
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;
@@ -2508,20 +2552,20 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Text = Soldier_76.Jet_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.Visible = true; chB02.Text = Soldier_76.Olive_SK + " (" + Cost.Rare + ")";
-                chB03.Visible = true; chB03.Text = Soldier_76.Russet_SK + " (" + Cost.Rare + ")";
-                chB04.Visible = true; chB04.Text = Soldier_76.Smoke_SK + " (" + Cost.Rare + ")";
-                chB05.Visible = true; chB05.Text = Soldier_76.Bone_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.Visible = true; chB06.Text = Soldier_76.Golden_SK + " (" + Cost.Epic + ")";
-                chB07.Visible = true; chB07.Text = Soldier_76.Immortal_SK + " (" + Cost.Epic + ")";//Halloween 16
-                chB08.Visible = true; chB08.Text = Soldier_76.Commando_76_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB09.Visible = true; chB09.Text = Soldier_76.Night_Ops_76_SK + " (" + Cost.Legendary + ")";
-                chB10.Visible = true; chB10.Text = Soldier_76.Daredevil_76_SK + " (" + Cost.Legendary + ")";
-                chB11.Visible = true; chB11.Text = Soldier_76.Stunt_Rider_76_SK + " (" + Cost.Legendary + ")";
-                chB12.Visible = true; chB12.Text = Soldier_76.Strike_Commander_Morrison_SK + " (" + Cost.OriginGotY + ")";//Origin
-                chB13.Visible = true; chB13.Text = Soldier_76.Grillmaster_76_SK + " (" + Cost.LegendaryEvent + ")";//Summer 17
-                chB14.Visible = true; chB14.Text = Soldier_76.Cyborg_76_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1); chB01.Text = Soldier_76.Jet_SK + " (" + Cost.Rare + ")";//Rare
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2); chB02.Text = Soldier_76.Olive_SK + " (" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3); chB03.Text = Soldier_76.Russet_SK + " (" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4); chB04.Text = Soldier_76.Smoke_SK + " (" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = Soldier_76.Bone_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = Soldier_76.Golden_SK + " (" + Cost.Epic + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = Soldier_76.Immortal_SK + " (" + Cost.Epic + ")";//Halloween 16
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p1); chB08.Text = Soldier_76.Commando_76_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p2); chB09.Text = Soldier_76.Night_Ops_76_SK + " (" + Cost.Legendary + ")";
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p3); chB10.Text = Soldier_76.Daredevil_76_SK + " (" + Cost.Legendary + ")";
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p4); chB11.Text = Soldier_76.Stunt_Rider_76_SK + " (" + Cost.Legendary + ")";
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p5); chB12.Text = Soldier_76.Strike_Commander_Morrison_SK + " (" + Cost.OriginGotY + ")";//Origin
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p6); chB13.Text = Soldier_76.Grillmaster_76_SK + " (" + Cost.LegendaryEvent + ")";//Summer 17
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p7); chB14.Text = Soldier_76.Cyborg_76_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;
@@ -2596,18 +2640,18 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Text = Sombra.Cidro_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.Visible = true; chB02.Text = Sombra.Incendio_SK + " (" + Cost.Rare + ")";
-                chB03.Visible = true; chB03.Text = Sombra.Mar_SK + " (" + Cost.Rare + ")";
-                chB04.Visible = true; chB04.Text = Sombra.Noche_SK + " (" + Cost.Rare + ")";
-                chB05.Visible = true; chB05.Text = Sombra.Glitch_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.Visible = true; chB06.Text = Sombra.Virus_SK + " (" + Cost.Epic + ")";
-                chB07.Visible = true; chB07.Text = Sombra.Peppermint_SK + " (" + Cost.EpicEvent + ")";//Winter 16
-                chB08.Visible = true; chB08.Text = Sombra.Azúcar_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB09.Visible = true; chB09.Text = Sombra.Los_Muertos_SK + " (" + Cost.Legendary + ")";
-                chB10.Visible = true; chB10.Text = Sombra.Augmented_SK + " (" + Cost.Legendary + ")";
-                chB11.Visible = true; chB11.Text = Sombra.Cyberspace_SK + " (" + Cost.Legendary + ")";
-                chB12.Visible = true; chB12.Text = Sombra.Tulum_SK + " (" + Cost.LegendaryEvent + ")";//Summer 17
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1); chB01.Text = Sombra.Cidro_SK + " (" + Cost.Rare + ")";//Rare
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2); chB02.Text = Sombra.Incendio_SK + " (" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3); chB03.Text = Sombra.Mar_SK + " (" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4); chB04.Text = Sombra.Noche_SK + " (" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = Sombra.Glitch_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = Sombra.Virus_SK + " (" + Cost.Epic + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = Sombra.Peppermint_SK + " (" + Cost.EpicEvent + ")";//Winter 16
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p1); chB08.Text = Sombra.Azúcar_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p2); chB09.Text = Sombra.Los_Muertos_SK + " (" + Cost.Legendary + ")";
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p3); chB10.Text = Sombra.Augmented_SK + " (" + Cost.Legendary + ")";
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p4); chB11.Text = Sombra.Cyberspace_SK + " (" + Cost.Legendary + ")";
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p5); chB12.Text = Sombra.Tulum_SK + " (" + Cost.LegendaryEvent + ")";//Summer 17
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;
@@ -2670,20 +2714,20 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Text = Symmetra.Cardamom_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.Visible = true; chB02.Text = Symmetra.Hyacinth_SK + " (" + Cost.Rare + ")";
-                chB03.Visible = true; chB03.Text = Symmetra.Saffron_SK + " (" + Cost.Rare + ")";
-                chB04.Visible = true; chB04.Text = Symmetra.Technomancer_SK + " (" + Cost.Rare + ")";
-                chB05.Visible = true; chB05.Text = Symmetra.Regal_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.Visible = true; chB06.Text = Symmetra.Utopaea_SK + " (" + Cost.Epic + ")";
-                chB07.Visible = true; chB07.Text = Symmetra.Vampire_SK + " (" + Cost.Epic + ")";//Halloween 16
-                chB08.Visible = true; chB08.Text = Symmetra.Qipao_SK + " (" + Cost.EpicEvent + ")";//Rooster 17
-                chB09.Visible = true; chB09.Text = Symmetra.Architech_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB10.Visible = true; chB10.Text = Symmetra.Vishkar_SK + " (" + Cost.Legendary + ")";
-                chB11.Visible = true; chB11.Text = Symmetra.Devi_SK + " (" + Cost.Legendary + ")";
-                chB12.Visible = true; chB12.Text = Symmetra.Goddess_SK + " (" + Cost.Legendary + ")";
-                chB13.Visible = true; chB13.Text = Symmetra.Dragon_SK + " (" + Cost.LegendaryEvent + ")";//Halloween 17
-                chB14.Visible = true; chB14.Text = Symmetra.Oasis_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1); chB01.Text = Symmetra.Cardamom_SK + " (" + Cost.Rare + ")";//Rare
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2); chB02.Text = Symmetra.Hyacinth_SK + " (" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3); chB03.Text = Symmetra.Saffron_SK + " (" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4); chB04.Text = Symmetra.Technomancer_SK + " (" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = Symmetra.Regal_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = Symmetra.Utopaea_SK + " (" + Cost.Epic + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = Symmetra.Vampire_SK + " (" + Cost.Epic + ")";//Halloween 16
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p2, p4); chB08.Text = Symmetra.Qipao_SK + " (" + Cost.EpicEvent + ")";//Rooster 17
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p1); chB09.Text = Symmetra.Architech_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p2); chB10.Text = Symmetra.Vishkar_SK + " (" + Cost.Legendary + ")";
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p3); chB11.Text = Symmetra.Devi_SK + " (" + Cost.Legendary + ")";
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p4); chB12.Text = Symmetra.Goddess_SK + " (" + Cost.Legendary + ")";
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p5); chB13.Text = Symmetra.Dragon_SK + " (" + Cost.LegendaryEvent + ")";//Halloween 17
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p6); chB14.Text = Symmetra.Oasis_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;
@@ -2754,21 +2798,21 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Text = Torbjörn.Blå_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.Visible = true; chB02.Text = Torbjörn.Citron_SK + " (" + Cost.Rare + ")";
-                chB03.Visible = true; chB03.Text = Torbjörn.Grön_SK + " (" + Cost.Rare + ")";
-                chB04.Visible = true; chB04.Text = Torbjörn.Plommon_SK + " (" + Cost.Rare + ")";
-                chB05.Visible = true; chB05.Text = Torbjörn.Cathode_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.Visible = true; chB06.Text = Torbjörn.Woodclad_SK + " (" + Cost.Epic + ")";
-                chB07.Visible = true; chB07.Text = Torbjörn.Tre_Kronor_SK + " (" + Cost.Epic + ")";//Summer 16
-                chB08.Visible = true; chB08.Text = Torbjörn.Chopper_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB09.Visible = true; chB09.Text = Torbjörn.Deadlock_SK + " (" + Cost.Legendary + ")";
-                chB10.Visible = true; chB10.Text = Torbjörn.Barbarossa_SK + " (" + Cost.Legendary + ")";
-                chB11.Visible = true; chB11.Text = Torbjörn.Blackbeard_SK + " (" + Cost.Legendary + ")";
-                chB12.Visible = true; chB12.Text = Torbjörn.Viking_SK + " (" + Cost.LegendaryEvent + ")";//Halloween 17
-                chB13.Visible = true; chB13.Text = Torbjörn.Santaclad_SK + " (" + Cost.LegendaryEvent + ")";//Winter 16
-                chB14.Visible = true; chB14.Text = Torbjörn.Chief_Engineer_Lindholm_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
-                chB15.Visible = true; chB15.Text = Torbjörn.Ironclad_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1); chB01.Text = Torbjörn.Blå_SK + " (" + Cost.Rare + ")";//Rare
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2); chB02.Text = Torbjörn.Citron_SK + " (" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3); chB03.Text = Torbjörn.Grön_SK + " (" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4); chB04.Text = Torbjörn.Plommon_SK + " (" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = Torbjörn.Cathode_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = Torbjörn.Woodclad_SK + " (" + Cost.Epic + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = Torbjörn.Tre_Kronor_SK + " (" + Cost.Epic + ")";//Summer 16
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p1); chB08.Text = Torbjörn.Chopper_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p2); chB09.Text = Torbjörn.Deadlock_SK + " (" + Cost.Legendary + ")";
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p3); chB10.Text = Torbjörn.Barbarossa_SK + " (" + Cost.Legendary + ")";
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p4); chB11.Text = Torbjörn.Blackbeard_SK + " (" + Cost.Legendary + ")";
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p5); chB12.Text = Torbjörn.Viking_SK + " (" + Cost.LegendaryEvent + ")";//Halloween 17
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p6); chB13.Text = Torbjörn.Santaclad_SK + " (" + Cost.LegendaryEvent + ")";//Winter 16
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p7); chB14.Text = Torbjörn.Chief_Engineer_Lindholm_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
+                chB15.Visible = true; chB15.Location = new Point(gBAllWeited4p3, p8); chB15.Text = Torbjörn.Ironclad_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;
@@ -2843,23 +2887,23 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Text = Tracer.Electric_Purple_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.Visible = true; chB02.Text = Tracer.Hot_Pink_SK + " (" + Cost.Rare + ")";
-                chB03.Visible = true; chB03.Text = Tracer.Neon_Green_SK + " (" + Cost.Rare + ")";
-                chB04.Visible = true; chB04.Text = Tracer.Royal_Blue_SK + " (" + Cost.Rare + ")";
-                chB05.Visible = true; chB05.Text = Tracer.Posh_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.Visible = true; chB06.Text = Tracer.Sporty_SK + " (" + Cost.Epic + ")";
-                chB07.Visible = true; chB07.Text = Tracer.Rose_SK + " (" + Cost.EpicEvent + ")";//Rooster 17
-                chB08.Visible = true; chB08.Text = Tracer.Punk_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB09.Visible = true; chB09.Text = Tracer.Ultraviolet_SK + " (" + Cost.Legendary + ")";
-                chB10.Visible = true; chB10.Text = Tracer.Mach_T_SK + " (" + Cost.Legendary + ")";
-                chB11.Visible = true; chB11.Text = Tracer.T_Racer_SK + " (" + Cost.Legendary + ")";
-                chB12.Visible = true; chB12.Text = Tracer.Slipstream_SK + " (" + Cost.OriginGotY + ")";//Origin
-                chB13.Visible = true; chB13.Text = Tracer.Sprinter_SK + " (" + Cost.Legendary + ")";//Summer 16
-                chB14.Visible = true; chB14.Text = Tracer.Track_and_Field_SK + " (" + Cost.Legendary + ")";//Summer 16
-                chB15.Visible = true; chB15.Text = Tracer.Jingle_SK + " (" + Cost.LegendaryEvent + ")";//Winter 16
-                chB16.Visible = true; chB16.Text = Tracer.Cadet_Oxton_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
-                chB17.Visible = true; chB17.Text = Tracer.Graffiti_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1); chB01.Text = Tracer.Electric_Purple_SK + " (" + Cost.Rare + ")";//Rare
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2); chB02.Text = Tracer.Hot_Pink_SK + " (" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3); chB03.Text = Tracer.Neon_Green_SK + " (" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4); chB04.Text = Tracer.Royal_Blue_SK + " (" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = Tracer.Posh_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = Tracer.Sporty_SK + " (" + Cost.Epic + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = Tracer.Rose_SK + " (" + Cost.EpicEvent + ")";//Rooster 17
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p1); chB08.Text = Tracer.Punk_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p2); chB09.Text = Tracer.Ultraviolet_SK + " (" + Cost.Legendary + ")";
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p3); chB10.Text = Tracer.Mach_T_SK + " (" + Cost.Legendary + ")";
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p4); chB11.Text = Tracer.T_Racer_SK + " (" + Cost.Legendary + ")";
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p5); chB12.Text = Tracer.Slipstream_SK + " (" + Cost.OriginGotY + ")";//Origin
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p6); chB13.Text = Tracer.Sprinter_SK + " (" + Cost.Legendary + ")";//Summer 16
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p7); chB14.Text = Tracer.Track_and_Field_SK + " (" + Cost.Legendary + ")";//Summer 16
+                chB15.Visible = true; chB15.Location = new Point(gBAllWeited4p3, p8); chB15.Text = Tracer.Jingle_SK + " (" + Cost.LegendaryEvent + ")";//Winter 16
+                chB16.Visible = true; chB16.Location = new Point(gBAllWeited4p3, p9); chB16.Text = Tracer.Cadet_Oxton_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
+                chB17.Visible = true; chB17.Location = new Point(gBAllWeited4p3, p10); chB17.Text = Tracer.Graffiti_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;
@@ -2942,20 +2986,20 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Text = Widowmaker.Ciel_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.Visible = true; chB02.Text = Widowmaker.Nuit_SK + " (" + Cost.Rare + ")";
-                chB03.Visible = true; chB03.Text = Widowmaker.Rose_SK + " (" + Cost.Rare + ")";
-                chB04.Visible = true; chB04.Text = Widowmaker.Vert_SK + " (" + Cost.Rare + ")";
-                chB05.Visible = true; chB05.Text = Widowmaker.Patina_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.Visible = true; chB06.Text = Widowmaker.Winter_SK + " (" + Cost.Epic + ")";
-                chB07.Visible = true; chB07.Text = Widowmaker.Tricolore_SK + " (" + Cost.Epic + ")";//Summer 16
-                chB08.Visible = true; chB08.Text = Widowmaker.Odette_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB09.Visible = true; chB09.Text = Widowmaker.Odile_SK + " (" + Cost.Legendary + ")";
-                chB10.Visible = true; chB10.Text = Widowmaker.Comtesse_SK + " (" + Cost.Legendary + ")";
-                chB11.Visible = true; chB11.Text = Widowmaker.Huntress_SK + " (" + Cost.Legendary + ")";
-                chB12.Visible = true; chB12.Text = Widowmaker.Noire_SK + " (Not Optainable)";//Prepurchase
-                chB13.Visible = true; chB13.Text = Widowmaker.Côte_DAzur_SK + " (" + Cost.LegendaryEvent + ")";//Summer 17
-                chB14.Visible = true; chB14.Text = Widowmaker.Talon_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1); chB01.Text = Widowmaker.Ciel_SK + " (" + Cost.Rare + ")";//Rare
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2); chB02.Text = Widowmaker.Nuit_SK + " (" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3); chB03.Text = Widowmaker.Rose_SK + " (" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4); chB04.Text = Widowmaker.Vert_SK + " (" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = Widowmaker.Patina_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = Widowmaker.Winter_SK + " (" + Cost.Epic + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = Widowmaker.Tricolore_SK + " (" + Cost.Epic + ")";//Summer 16
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p1); chB08.Text = Widowmaker.Odette_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p2); chB09.Text = Widowmaker.Odile_SK + " (" + Cost.Legendary + ")";
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p3); chB10.Text = Widowmaker.Comtesse_SK + " (" + Cost.Legendary + ")";
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p4); chB11.Text = Widowmaker.Huntress_SK + " (" + Cost.Legendary + ")";
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p5); chB12.Text = Widowmaker.Noire_SK + " (Not Optainable)";//Prepurchase
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p6); chB13.Text = Widowmaker.Côte_DAzur_SK + " (" + Cost.LegendaryEvent + ")";//Summer 17
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p7); chB14.Text = Widowmaker.Talon_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;
@@ -3026,19 +3070,19 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Text = Winston.Atmosphere_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.Visible = true; chB02.Text = Winston.Banana_SK + " (" + Cost.Rare + ")";
-                chB03.Visible = true; chB03.Text = Winston.Forest_SK + " (" + Cost.Rare + ")";
-                chB04.Visible = true; chB04.Text = Winston.Red_Planet_SK + " (" + Cost.Rare + ")";
-                chB05.Visible = true; chB05.Text = Winston.Desert_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.Visible = true; chB06.Text = Winston.Horizon_SK + " (" + Cost.Epic + ")";
-                chB07.Visible = true; chB07.Text = Winston.Blizzcon_2017_SK + " (" + Cost.BlizzCon + ")";//BlizzCon 17
-                chB08.Visible = true; chB08.Text = Winston.Frogston_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB09.Visible = true; chB09.Text = Winston.Undersea_SK + " (" + Cost.Legendary + ")";
-                chB10.Visible = true; chB10.Text = Winston.Explorer_SK + " (" + Cost.Legendary + ")";
-                chB11.Visible = true; chB11.Text = Winston.Safari_SK + " (" + Cost.Legendary + ")";
-                chB12.Visible = true; chB12.Text = Winston.Yeti_SK + " (" + Cost.LegendaryEvent + ")";//Winter 16
-                chB13.Visible = true; chB13.Text = Winston.Wukong_SK + " (" + Cost.LegendaryEvent + ")";//Rooster 17
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1); chB01.Text = Winston.Atmosphere_SK + " (" + Cost.Rare + ")";//Rare
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2); chB02.Text = Winston.Banana_SK + " (" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3); chB03.Text = Winston.Forest_SK + " (" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4); chB04.Text = Winston.Red_Planet_SK + " (" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = Winston.Desert_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = Winston.Horizon_SK + " (" + Cost.Epic + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = Winston.Blizzcon_2017_SK + " (" + Cost.BlizzCon + ")";//BlizzCon 17
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p1); chB08.Text = Winston.Frogston_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p2); chB09.Text = Winston.Undersea_SK + " (" + Cost.Legendary + ")";
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p3); chB10.Text = Winston.Explorer_SK + " (" + Cost.Legendary + ")";
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p4); chB11.Text = Winston.Safari_SK + " (" + Cost.Legendary + ")";
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p5); chB12.Text = Winston.Yeti_SK + " (" + Cost.LegendaryEvent + ")";//Winter 16
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p6); chB13.Text = Winston.Wukong_SK + " (" + Cost.LegendaryEvent + ")";//Rooster 17
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;
@@ -3105,21 +3149,21 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Text = Zarya.Brick_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.Visible = true; chB02.Text = Zarya.Goldenrod_SK + " (" + Cost.Rare + ")";
-                chB03.Visible = true; chB03.Text = Zarya.Taiga_SK + " (" + Cost.Rare + ")";
-                chB04.Visible = true; chB04.Text = Zarya.Violet_SK + " (" + Cost.Rare + ")";
-                chB05.Visible = true; chB05.Text = Zarya.Dawn_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.Visible = true; chB06.Text = Zarya.Midnight_SK + " (" + Cost.Epic + ")";
-                chB07.Visible = true; chB07.Text = Zarya.Frosted_SK + " (" + Cost.EpicEvent + ")";//Winter 16
-                chB08.Visible = true; chB08.Text = Zarya.Arctic_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB09.Visible = true; chB09.Text = Zarya.Siberian_Front_SK + " (" + Cost.Legendary + ")";
-                chB10.Visible = true; chB10.Text = Zarya.Cybergoth_SK + " (" + Cost.Legendary + ")";
-                chB11.Visible = true; chB11.Text = Zarya.Industrial_SK + " (" + Cost.Legendary + ")";
-                chB12.Visible = true; chB12.Text = Zarya.Champion_SK + " (" + Cost.Legendary + ")";//Summer 16
-                chB13.Visible = true; chB13.Text = Zarya.Weightlifter_SK + " (" + Cost.Legendary + ")";//Summer 16
-                chB14.Visible = true; chB14.Text = Zarya.Totally_80s_SK + " (" + Cost.LegendaryEvent + ")";//Halloween 17
-                chB15.Visible = true; chB15.Text = Zarya.Cyberian_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1); chB01.Text = Zarya.Brick_SK + " (" + Cost.Rare + ")";//Rare
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2); chB02.Text = Zarya.Goldenrod_SK + " (" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3); chB03.Text = Zarya.Taiga_SK + " (" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4); chB04.Text = Zarya.Violet_SK + " (" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = Zarya.Dawn_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = Zarya.Midnight_SK + " (" + Cost.Epic + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = Zarya.Frosted_SK + " (" + Cost.EpicEvent + ")";//Winter 16
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p1); chB08.Text = Zarya.Arctic_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p2); chB09.Text = Zarya.Siberian_Front_SK + " (" + Cost.Legendary + ")";
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p3); chB10.Text = Zarya.Cybergoth_SK + " (" + Cost.Legendary + ")";
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p4); chB11.Text = Zarya.Industrial_SK + " (" + Cost.Legendary + ")";
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p5); chB12.Text = Zarya.Champion_SK + " (" + Cost.Legendary + ")";//Summer 16
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p6); chB13.Text = Zarya.Weightlifter_SK + " (" + Cost.Legendary + ")";//Summer 16
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p7); chB14.Text = Zarya.Totally_80s_SK + " (" + Cost.LegendaryEvent + ")";//Halloween 17
+                chB15.Visible = true; chB15.Location = new Point(gBAllWeited4p3, p8); chB15.Text = Zarya.Cyberian_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;
@@ -3194,20 +3238,20 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Text = Zenyatta.Air_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.Visible = true; chB02.Text = Zenyatta.Earth_SK + " (" + Cost.Rare + ")";
-                chB03.Visible = true; chB03.Text = Zenyatta.Leaf_SK + " (" + Cost.Rare + ")";
-                chB04.Visible = true; chB04.Text = Zenyatta.Water_SK + " (" + Cost.Rare + ")";
-                chB05.Visible = true; chB05.Text = Zenyatta.Ascendant_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.Visible = true; chB06.Text = Zenyatta.Harmonious_SK + " (" + Cost.Epic + ")";
-                chB07.Visible = true; chB07.Text = Zenyatta.Skullyatta_SK + " (" + Cost.Epic + ")";//Halloween 16
-                chB08.Visible = true; chB08.Text = Zenyatta.Djinnyatta_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB09.Visible = true; chB09.Text = Zenyatta.Ifrit_SK + " (" + Cost.Legendary + ")";
-                chB10.Visible = true; chB10.Text = Zenyatta.Ra_SK + " (" + Cost.Legendary + ")";
-                chB11.Visible = true; chB11.Text = Zenyatta.Sunyatta_SK + " (" + Cost.Legendary + ")";
-                chB12.Visible = true; chB12.Text = Zenyatta.Cultist_SK + " (" + Cost.LegendaryEvent + ")";//Halloween 17
-                chB13.Visible = true; chB13.Text = Zenyatta.Nutcracker_SK + " (" + Cost.LegendaryEvent + ")";//Winter 16
-                chB14.Visible = true; chB14.Text = Zenyatta.Sanzang_SK + " (" + Cost.LegendaryEvent + ")";//Rooser 17
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1); chB01.Text = Zenyatta.Air_SK + " (" + Cost.Rare + ")";//Rare
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2); chB02.Text = Zenyatta.Earth_SK + " (" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3); chB03.Text = Zenyatta.Leaf_SK + " (" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4); chB04.Text = Zenyatta.Water_SK + " (" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = Zenyatta.Ascendant_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = Zenyatta.Harmonious_SK + " (" + Cost.Epic + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = Zenyatta.Skullyatta_SK + " (" + Cost.Epic + ")";//Halloween 16
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p1); chB08.Text = Zenyatta.Djinnyatta_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p2); chB09.Text = Zenyatta.Ifrit_SK + " (" + Cost.Legendary + ")";
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p3); chB10.Text = Zenyatta.Ra_SK + " (" + Cost.Legendary + ")";
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p4); chB11.Text = Zenyatta.Sunyatta_SK + " (" + Cost.Legendary + ")";
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p5); chB12.Text = Zenyatta.Cultist_SK + " (" + Cost.LegendaryEvent + ")";//Halloween 17
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p6); chB13.Text = Zenyatta.Nutcracker_SK + " (" + Cost.LegendaryEvent + ")";//Winter 16
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p7); chB14.Text = Zenyatta.Sanzang_SK + " (" + Cost.LegendaryEvent + ")";//Rooser 17
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;

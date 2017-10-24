@@ -343,7 +343,7 @@
             this.gbAll.Controls.Add(this.btnDVa);
             this.gbAll.Controls.Add(this.btnBastion);
             this.gbAll.Controls.Add(this.btnAna);
-            this.gbAll.Location = new System.Drawing.Point(261, 605);
+            this.gbAll.Location = new System.Drawing.Point(206, 130);
             this.gbAll.Name = "gbAll";
             this.gbAll.Size = new System.Drawing.Size(868, 642);
             this.gbAll.TabIndex = 12;
@@ -354,7 +354,7 @@
             // chB40
             // 
             this.chB40.AutoSize = true;
-            this.chB40.Location = new System.Drawing.Point(602, 410);
+            this.chB40.Location = new System.Drawing.Point(671, 410);
             this.chB40.Name = "chB40";
             this.chB40.Size = new System.Drawing.Size(57, 17);
             this.chB40.TabIndex = 64;
@@ -366,7 +366,7 @@
             // chB39
             // 
             this.chB39.AutoSize = true;
-            this.chB39.Location = new System.Drawing.Point(602, 387);
+            this.chB39.Location = new System.Drawing.Point(671, 387);
             this.chB39.Name = "chB39";
             this.chB39.Size = new System.Drawing.Size(57, 17);
             this.chB39.TabIndex = 63;
@@ -378,7 +378,7 @@
             // chB38
             // 
             this.chB38.AutoSize = true;
-            this.chB38.Location = new System.Drawing.Point(602, 364);
+            this.chB38.Location = new System.Drawing.Point(671, 364);
             this.chB38.Name = "chB38";
             this.chB38.Size = new System.Drawing.Size(57, 17);
             this.chB38.TabIndex = 62;
@@ -390,7 +390,7 @@
             // chB37
             // 
             this.chB37.AutoSize = true;
-            this.chB37.Location = new System.Drawing.Point(602, 341);
+            this.chB37.Location = new System.Drawing.Point(671, 341);
             this.chB37.Name = "chB37";
             this.chB37.Size = new System.Drawing.Size(57, 17);
             this.chB37.TabIndex = 61;
@@ -402,7 +402,7 @@
             // chB36
             // 
             this.chB36.AutoSize = true;
-            this.chB36.Location = new System.Drawing.Point(602, 318);
+            this.chB36.Location = new System.Drawing.Point(671, 318);
             this.chB36.Name = "chB36";
             this.chB36.Size = new System.Drawing.Size(57, 17);
             this.chB36.TabIndex = 60;
@@ -414,7 +414,7 @@
             // chB35
             // 
             this.chB35.AutoSize = true;
-            this.chB35.Location = new System.Drawing.Point(476, 408);
+            this.chB35.Location = new System.Drawing.Point(492, 410);
             this.chB35.Name = "chB35";
             this.chB35.Size = new System.Drawing.Size(57, 17);
             this.chB35.TabIndex = 59;
@@ -426,7 +426,7 @@
             // chB34
             // 
             this.chB34.AutoSize = true;
-            this.chB34.Location = new System.Drawing.Point(476, 385);
+            this.chB34.Location = new System.Drawing.Point(492, 387);
             this.chB34.Name = "chB34";
             this.chB34.Size = new System.Drawing.Size(57, 17);
             this.chB34.TabIndex = 58;
@@ -438,7 +438,7 @@
             // chB33
             // 
             this.chB33.AutoSize = true;
-            this.chB33.Location = new System.Drawing.Point(476, 362);
+            this.chB33.Location = new System.Drawing.Point(492, 364);
             this.chB33.Name = "chB33";
             this.chB33.Size = new System.Drawing.Size(57, 17);
             this.chB33.TabIndex = 57;
@@ -450,7 +450,7 @@
             // chB32
             // 
             this.chB32.AutoSize = true;
-            this.chB32.Location = new System.Drawing.Point(476, 339);
+            this.chB32.Location = new System.Drawing.Point(492, 341);
             this.chB32.Name = "chB32";
             this.chB32.Size = new System.Drawing.Size(57, 17);
             this.chB32.TabIndex = 56;
@@ -462,7 +462,7 @@
             // chB31
             // 
             this.chB31.AutoSize = true;
-            this.chB31.Location = new System.Drawing.Point(476, 316);
+            this.chB31.Location = new System.Drawing.Point(492, 318);
             this.chB31.Name = "chB31";
             this.chB31.Size = new System.Drawing.Size(57, 17);
             this.chB31.TabIndex = 55;
@@ -474,7 +474,7 @@
             // chB30
             // 
             this.chB30.AutoSize = true;
-            this.chB30.Location = new System.Drawing.Point(339, 408);
+            this.chB30.Location = new System.Drawing.Point(306, 408);
             this.chB30.Name = "chB30";
             this.chB30.Size = new System.Drawing.Size(57, 17);
             this.chB30.TabIndex = 54;
@@ -486,7 +486,7 @@
             // chB29
             // 
             this.chB29.AutoSize = true;
-            this.chB29.Location = new System.Drawing.Point(339, 385);
+            this.chB29.Location = new System.Drawing.Point(306, 385);
             this.chB29.Name = "chB29";
             this.chB29.Size = new System.Drawing.Size(57, 17);
             this.chB29.TabIndex = 53;
@@ -498,7 +498,7 @@
             // chB28
             // 
             this.chB28.AutoSize = true;
-            this.chB28.Location = new System.Drawing.Point(339, 362);
+            this.chB28.Location = new System.Drawing.Point(306, 362);
             this.chB28.Name = "chB28";
             this.chB28.Size = new System.Drawing.Size(57, 17);
             this.chB28.TabIndex = 52;
@@ -510,7 +510,7 @@
             // chB27
             // 
             this.chB27.AutoSize = true;
-            this.chB27.Location = new System.Drawing.Point(339, 339);
+            this.chB27.Location = new System.Drawing.Point(306, 339);
             this.chB27.Name = "chB27";
             this.chB27.Size = new System.Drawing.Size(57, 17);
             this.chB27.TabIndex = 51;
@@ -522,7 +522,7 @@
             // chB26
             // 
             this.chB26.AutoSize = true;
-            this.chB26.Location = new System.Drawing.Point(339, 316);
+            this.chB26.Location = new System.Drawing.Point(306, 316);
             this.chB26.Name = "chB26";
             this.chB26.Size = new System.Drawing.Size(57, 17);
             this.chB26.TabIndex = 50;
@@ -534,7 +534,7 @@
             // chB25
             // 
             this.chB25.AutoSize = true;
-            this.chB25.Location = new System.Drawing.Point(221, 408);
+            this.chB25.Location = new System.Drawing.Point(140, 410);
             this.chB25.Name = "chB25";
             this.chB25.Size = new System.Drawing.Size(57, 17);
             this.chB25.TabIndex = 49;
@@ -546,7 +546,7 @@
             // chB24
             // 
             this.chB24.AutoSize = true;
-            this.chB24.Location = new System.Drawing.Point(221, 385);
+            this.chB24.Location = new System.Drawing.Point(140, 387);
             this.chB24.Name = "chB24";
             this.chB24.Size = new System.Drawing.Size(57, 17);
             this.chB24.TabIndex = 48;
@@ -558,7 +558,7 @@
             // chB23
             // 
             this.chB23.AutoSize = true;
-            this.chB23.Location = new System.Drawing.Point(221, 362);
+            this.chB23.Location = new System.Drawing.Point(140, 364);
             this.chB23.Name = "chB23";
             this.chB23.Size = new System.Drawing.Size(57, 17);
             this.chB23.TabIndex = 47;
@@ -570,7 +570,7 @@
             // chB22
             // 
             this.chB22.AutoSize = true;
-            this.chB22.Location = new System.Drawing.Point(221, 339);
+            this.chB22.Location = new System.Drawing.Point(140, 341);
             this.chB22.Name = "chB22";
             this.chB22.Size = new System.Drawing.Size(57, 17);
             this.chB22.TabIndex = 46;
@@ -582,7 +582,7 @@
             // chB21
             // 
             this.chB21.AutoSize = true;
-            this.chB21.Location = new System.Drawing.Point(221, 316);
+            this.chB21.Location = new System.Drawing.Point(140, 318);
             this.chB21.Name = "chB21";
             this.chB21.Size = new System.Drawing.Size(57, 17);
             this.chB21.TabIndex = 45;
@@ -594,7 +594,7 @@
             // chB20
             // 
             this.chB20.AutoSize = true;
-            this.chB20.Location = new System.Drawing.Point(602, 286);
+            this.chB20.Location = new System.Drawing.Point(671, 286);
             this.chB20.Name = "chB20";
             this.chB20.Size = new System.Drawing.Size(57, 17);
             this.chB20.TabIndex = 44;
@@ -606,7 +606,7 @@
             // chB19
             // 
             this.chB19.AutoSize = true;
-            this.chB19.Location = new System.Drawing.Point(602, 263);
+            this.chB19.Location = new System.Drawing.Point(671, 263);
             this.chB19.Name = "chB19";
             this.chB19.Size = new System.Drawing.Size(57, 17);
             this.chB19.TabIndex = 43;
@@ -618,7 +618,7 @@
             // chB18
             // 
             this.chB18.AutoSize = true;
-            this.chB18.Location = new System.Drawing.Point(602, 240);
+            this.chB18.Location = new System.Drawing.Point(671, 240);
             this.chB18.Name = "chB18";
             this.chB18.Size = new System.Drawing.Size(57, 17);
             this.chB18.TabIndex = 42;
@@ -630,7 +630,7 @@
             // chB17
             // 
             this.chB17.AutoSize = true;
-            this.chB17.Location = new System.Drawing.Point(602, 217);
+            this.chB17.Location = new System.Drawing.Point(671, 217);
             this.chB17.Name = "chB17";
             this.chB17.Size = new System.Drawing.Size(57, 17);
             this.chB17.TabIndex = 41;
@@ -642,7 +642,7 @@
             // chB16
             // 
             this.chB16.AutoSize = true;
-            this.chB16.Location = new System.Drawing.Point(602, 194);
+            this.chB16.Location = new System.Drawing.Point(671, 194);
             this.chB16.Name = "chB16";
             this.chB16.Size = new System.Drawing.Size(57, 17);
             this.chB16.TabIndex = 40;
@@ -654,7 +654,7 @@
             // chB15
             // 
             this.chB15.AutoSize = true;
-            this.chB15.Location = new System.Drawing.Point(476, 284);
+            this.chB15.Location = new System.Drawing.Point(492, 286);
             this.chB15.Name = "chB15";
             this.chB15.Size = new System.Drawing.Size(57, 17);
             this.chB15.TabIndex = 39;
@@ -666,7 +666,7 @@
             // chB14
             // 
             this.chB14.AutoSize = true;
-            this.chB14.Location = new System.Drawing.Point(476, 261);
+            this.chB14.Location = new System.Drawing.Point(492, 263);
             this.chB14.Name = "chB14";
             this.chB14.Size = new System.Drawing.Size(57, 17);
             this.chB14.TabIndex = 38;
@@ -678,7 +678,7 @@
             // chB13
             // 
             this.chB13.AutoSize = true;
-            this.chB13.Location = new System.Drawing.Point(476, 238);
+            this.chB13.Location = new System.Drawing.Point(492, 240);
             this.chB13.Name = "chB13";
             this.chB13.Size = new System.Drawing.Size(57, 17);
             this.chB13.TabIndex = 37;
@@ -690,7 +690,7 @@
             // chB12
             // 
             this.chB12.AutoSize = true;
-            this.chB12.Location = new System.Drawing.Point(476, 215);
+            this.chB12.Location = new System.Drawing.Point(492, 217);
             this.chB12.Name = "chB12";
             this.chB12.Size = new System.Drawing.Size(57, 17);
             this.chB12.TabIndex = 36;
@@ -702,7 +702,7 @@
             // chB11
             // 
             this.chB11.AutoSize = true;
-            this.chB11.Location = new System.Drawing.Point(476, 192);
+            this.chB11.Location = new System.Drawing.Point(492, 194);
             this.chB11.Name = "chB11";
             this.chB11.Size = new System.Drawing.Size(57, 17);
             this.chB11.TabIndex = 35;
@@ -714,7 +714,7 @@
             // chB10
             // 
             this.chB10.AutoSize = true;
-            this.chB10.Location = new System.Drawing.Point(339, 284);
+            this.chB10.Location = new System.Drawing.Point(306, 284);
             this.chB10.Name = "chB10";
             this.chB10.Size = new System.Drawing.Size(57, 17);
             this.chB10.TabIndex = 34;
@@ -726,7 +726,7 @@
             // chB09
             // 
             this.chB09.AutoSize = true;
-            this.chB09.Location = new System.Drawing.Point(339, 261);
+            this.chB09.Location = new System.Drawing.Point(306, 261);
             this.chB09.Name = "chB09";
             this.chB09.Size = new System.Drawing.Size(57, 17);
             this.chB09.TabIndex = 33;
@@ -738,7 +738,7 @@
             // chB08
             // 
             this.chB08.AutoSize = true;
-            this.chB08.Location = new System.Drawing.Point(339, 238);
+            this.chB08.Location = new System.Drawing.Point(306, 238);
             this.chB08.Name = "chB08";
             this.chB08.Size = new System.Drawing.Size(57, 17);
             this.chB08.TabIndex = 32;
@@ -750,7 +750,7 @@
             // chB07
             // 
             this.chB07.AutoSize = true;
-            this.chB07.Location = new System.Drawing.Point(339, 215);
+            this.chB07.Location = new System.Drawing.Point(306, 215);
             this.chB07.Name = "chB07";
             this.chB07.Size = new System.Drawing.Size(57, 17);
             this.chB07.TabIndex = 31;
@@ -762,7 +762,7 @@
             // chB06
             // 
             this.chB06.AutoSize = true;
-            this.chB06.Location = new System.Drawing.Point(339, 192);
+            this.chB06.Location = new System.Drawing.Point(306, 192);
             this.chB06.Name = "chB06";
             this.chB06.Size = new System.Drawing.Size(57, 17);
             this.chB06.TabIndex = 30;
@@ -774,7 +774,7 @@
             // chB05
             // 
             this.chB05.AutoSize = true;
-            this.chB05.Location = new System.Drawing.Point(221, 284);
+            this.chB05.Location = new System.Drawing.Point(140, 286);
             this.chB05.Name = "chB05";
             this.chB05.Size = new System.Drawing.Size(57, 17);
             this.chB05.TabIndex = 29;
@@ -786,7 +786,7 @@
             // chB04
             // 
             this.chB04.AutoSize = true;
-            this.chB04.Location = new System.Drawing.Point(221, 261);
+            this.chB04.Location = new System.Drawing.Point(140, 263);
             this.chB04.Name = "chB04";
             this.chB04.Size = new System.Drawing.Size(57, 17);
             this.chB04.TabIndex = 28;
@@ -798,7 +798,7 @@
             // chB03
             // 
             this.chB03.AutoSize = true;
-            this.chB03.Location = new System.Drawing.Point(221, 238);
+            this.chB03.Location = new System.Drawing.Point(140, 240);
             this.chB03.Name = "chB03";
             this.chB03.Size = new System.Drawing.Size(57, 17);
             this.chB03.TabIndex = 27;
@@ -810,7 +810,7 @@
             // chB02
             // 
             this.chB02.AutoSize = true;
-            this.chB02.Location = new System.Drawing.Point(221, 215);
+            this.chB02.Location = new System.Drawing.Point(140, 217);
             this.chB02.Name = "chB02";
             this.chB02.Size = new System.Drawing.Size(57, 17);
             this.chB02.TabIndex = 26;
@@ -822,7 +822,7 @@
             // chB01
             // 
             this.chB01.AutoSize = true;
-            this.chB01.Location = new System.Drawing.Point(221, 192);
+            this.chB01.Location = new System.Drawing.Point(140, 194);
             this.chB01.Name = "chB01";
             this.chB01.Size = new System.Drawing.Size(57, 17);
             this.chB01.TabIndex = 25;
@@ -833,7 +833,7 @@
             // 
             // btnZenyatta
             // 
-            this.btnZenyatta.Location = new System.Drawing.Point(114, 339);
+            this.btnZenyatta.Location = new System.Drawing.Point(699, 605);
             this.btnZenyatta.Name = "btnZenyatta";
             this.btnZenyatta.Size = new System.Drawing.Size(101, 23);
             this.btnZenyatta.TabIndex = 24;
@@ -843,7 +843,7 @@
             // 
             // btnZarya
             // 
-            this.btnZarya.Location = new System.Drawing.Point(114, 310);
+            this.btnZarya.Location = new System.Drawing.Point(671, 605);
             this.btnZarya.Name = "btnZarya";
             this.btnZarya.Size = new System.Drawing.Size(101, 23);
             this.btnZarya.TabIndex = 23;
@@ -853,7 +853,7 @@
             // 
             // btnWinston
             // 
-            this.btnWinston.Location = new System.Drawing.Point(114, 281);
+            this.btnWinston.Location = new System.Drawing.Point(639, 605);
             this.btnWinston.Name = "btnWinston";
             this.btnWinston.Size = new System.Drawing.Size(101, 23);
             this.btnWinston.TabIndex = 22;
@@ -863,7 +863,7 @@
             // 
             // btnWidowmaker
             // 
-            this.btnWidowmaker.Location = new System.Drawing.Point(114, 252);
+            this.btnWidowmaker.Location = new System.Drawing.Point(611, 605);
             this.btnWidowmaker.Name = "btnWidowmaker";
             this.btnWidowmaker.Size = new System.Drawing.Size(101, 23);
             this.btnWidowmaker.TabIndex = 21;
@@ -873,7 +873,7 @@
             // 
             // btnTracer
             // 
-            this.btnTracer.Location = new System.Drawing.Point(114, 223);
+            this.btnTracer.Location = new System.Drawing.Point(558, 605);
             this.btnTracer.Name = "btnTracer";
             this.btnTracer.Size = new System.Drawing.Size(101, 23);
             this.btnTracer.TabIndex = 20;
@@ -883,7 +883,7 @@
             // 
             // btnTorbjörn
             // 
-            this.btnTorbjörn.Location = new System.Drawing.Point(114, 194);
+            this.btnTorbjörn.Location = new System.Drawing.Point(521, 605);
             this.btnTorbjörn.Name = "btnTorbjörn";
             this.btnTorbjörn.Size = new System.Drawing.Size(101, 23);
             this.btnTorbjörn.TabIndex = 19;
@@ -893,7 +893,7 @@
             // 
             // btnSymmetra
             // 
-            this.btnSymmetra.Location = new System.Drawing.Point(114, 165);
+            this.btnSymmetra.Location = new System.Drawing.Point(492, 605);
             this.btnSymmetra.Name = "btnSymmetra";
             this.btnSymmetra.Size = new System.Drawing.Size(101, 23);
             this.btnSymmetra.TabIndex = 18;
@@ -903,7 +903,7 @@
             // 
             // btnSombra
             // 
-            this.btnSombra.Location = new System.Drawing.Point(114, 136);
+            this.btnSombra.Location = new System.Drawing.Point(463, 605);
             this.btnSombra.Name = "btnSombra";
             this.btnSombra.Size = new System.Drawing.Size(101, 23);
             this.btnSombra.TabIndex = 17;
@@ -913,7 +913,7 @@
             // 
             // btnSoldier_76
             // 
-            this.btnSoldier_76.Location = new System.Drawing.Point(114, 107);
+            this.btnSoldier_76.Location = new System.Drawing.Point(432, 605);
             this.btnSoldier_76.Name = "btnSoldier_76";
             this.btnSoldier_76.Size = new System.Drawing.Size(101, 23);
             this.btnSoldier_76.TabIndex = 16;
@@ -923,7 +923,7 @@
             // 
             // btnRoadhog
             // 
-            this.btnRoadhog.Location = new System.Drawing.Point(114, 78);
+            this.btnRoadhog.Location = new System.Drawing.Point(405, 605);
             this.btnRoadhog.Name = "btnRoadhog";
             this.btnRoadhog.Size = new System.Drawing.Size(101, 23);
             this.btnRoadhog.TabIndex = 15;
@@ -933,7 +933,7 @@
             // 
             // btnReinhardt
             // 
-            this.btnReinhardt.Location = new System.Drawing.Point(114, 49);
+            this.btnReinhardt.Location = new System.Drawing.Point(385, 605);
             this.btnReinhardt.Name = "btnReinhardt";
             this.btnReinhardt.Size = new System.Drawing.Size(101, 23);
             this.btnReinhardt.TabIndex = 14;
@@ -943,7 +943,7 @@
             // 
             // btnReaper
             // 
-            this.btnReaper.Location = new System.Drawing.Point(114, 20);
+            this.btnReaper.Location = new System.Drawing.Point(356, 605);
             this.btnReaper.Name = "btnReaper";
             this.btnReaper.Size = new System.Drawing.Size(101, 23);
             this.btnReaper.TabIndex = 13;
@@ -953,7 +953,7 @@
             // 
             // btnPharah
             // 
-            this.btnPharah.Location = new System.Drawing.Point(7, 368);
+            this.btnPharah.Location = new System.Drawing.Point(339, 605);
             this.btnPharah.Name = "btnPharah";
             this.btnPharah.Size = new System.Drawing.Size(101, 23);
             this.btnPharah.TabIndex = 12;
@@ -963,7 +963,7 @@
             // 
             // btnOrisa
             // 
-            this.btnOrisa.Location = new System.Drawing.Point(6, 339);
+            this.btnOrisa.Location = new System.Drawing.Point(325, 605);
             this.btnOrisa.Name = "btnOrisa";
             this.btnOrisa.Size = new System.Drawing.Size(101, 23);
             this.btnOrisa.TabIndex = 11;
@@ -973,7 +973,7 @@
             // 
             // btnMercy
             // 
-            this.btnMercy.Location = new System.Drawing.Point(7, 310);
+            this.btnMercy.Location = new System.Drawing.Point(310, 605);
             this.btnMercy.Name = "btnMercy";
             this.btnMercy.Size = new System.Drawing.Size(101, 23);
             this.btnMercy.TabIndex = 10;
@@ -983,7 +983,7 @@
             // 
             // btnMei
             // 
-            this.btnMei.Location = new System.Drawing.Point(7, 281);
+            this.btnMei.Location = new System.Drawing.Point(298, 605);
             this.btnMei.Name = "btnMei";
             this.btnMei.Size = new System.Drawing.Size(101, 23);
             this.btnMei.TabIndex = 9;
@@ -993,7 +993,7 @@
             // 
             // btnMcCree
             // 
-            this.btnMcCree.Location = new System.Drawing.Point(7, 252);
+            this.btnMcCree.Location = new System.Drawing.Point(290, 605);
             this.btnMcCree.Name = "btnMcCree";
             this.btnMcCree.Size = new System.Drawing.Size(101, 23);
             this.btnMcCree.TabIndex = 8;
@@ -1003,7 +1003,7 @@
             // 
             // btnLúcio
             // 
-            this.btnLúcio.Location = new System.Drawing.Point(7, 223);
+            this.btnLúcio.Location = new System.Drawing.Point(266, 605);
             this.btnLúcio.Name = "btnLúcio";
             this.btnLúcio.Size = new System.Drawing.Size(101, 23);
             this.btnLúcio.TabIndex = 7;
@@ -1013,7 +1013,7 @@
             // 
             // btnJunkrat
             // 
-            this.btnJunkrat.Location = new System.Drawing.Point(7, 194);
+            this.btnJunkrat.Location = new System.Drawing.Point(249, 605);
             this.btnJunkrat.Name = "btnJunkrat";
             this.btnJunkrat.Size = new System.Drawing.Size(101, 23);
             this.btnJunkrat.TabIndex = 6;
@@ -1023,7 +1023,7 @@
             // 
             // btnHanzo
             // 
-            this.btnHanzo.Location = new System.Drawing.Point(7, 165);
+            this.btnHanzo.Location = new System.Drawing.Point(232, 605);
             this.btnHanzo.Name = "btnHanzo";
             this.btnHanzo.Size = new System.Drawing.Size(101, 23);
             this.btnHanzo.TabIndex = 5;
@@ -1033,7 +1033,7 @@
             // 
             // btnGeji
             // 
-            this.btnGeji.Location = new System.Drawing.Point(7, 136);
+            this.btnGeji.Location = new System.Drawing.Point(203, 605);
             this.btnGeji.Name = "btnGeji";
             this.btnGeji.Size = new System.Drawing.Size(101, 23);
             this.btnGeji.TabIndex = 4;
@@ -1043,7 +1043,7 @@
             // 
             // btnDoomfist
             // 
-            this.btnDoomfist.Location = new System.Drawing.Point(7, 107);
+            this.btnDoomfist.Location = new System.Drawing.Point(175, 605);
             this.btnDoomfist.Name = "btnDoomfist";
             this.btnDoomfist.Size = new System.Drawing.Size(101, 23);
             this.btnDoomfist.TabIndex = 3;
@@ -1053,7 +1053,7 @@
             // 
             // btnDVa
             // 
-            this.btnDVa.Location = new System.Drawing.Point(7, 78);
+            this.btnDVa.Location = new System.Drawing.Point(142, 605);
             this.btnDVa.Name = "btnDVa";
             this.btnDVa.Size = new System.Drawing.Size(101, 23);
             this.btnDVa.TabIndex = 2;
@@ -1063,7 +1063,7 @@
             // 
             // btnBastion
             // 
-            this.btnBastion.Location = new System.Drawing.Point(7, 49);
+            this.btnBastion.Location = new System.Drawing.Point(125, 605);
             this.btnBastion.Name = "btnBastion";
             this.btnBastion.Size = new System.Drawing.Size(101, 23);
             this.btnBastion.TabIndex = 1;
@@ -1073,7 +1073,7 @@
             // 
             // btnAna
             // 
-            this.btnAna.Location = new System.Drawing.Point(7, 20);
+            this.btnAna.Location = new System.Drawing.Point(96, 605);
             this.btnAna.Name = "btnAna";
             this.btnAna.Size = new System.Drawing.Size(101, 23);
             this.btnAna.TabIndex = 0;
@@ -1189,7 +1189,7 @@
             this.gBWelcome.Controls.Add(this.lblCopyrightVersion);
             this.gBWelcome.Controls.Add(this.lblChanges);
             this.gBWelcome.Controls.Add(this.btnWelcomeClose);
-            this.gBWelcome.Location = new System.Drawing.Point(749, 596);
+            this.gBWelcome.Location = new System.Drawing.Point(791, 677);
             this.gBWelcome.Name = "gBWelcome";
             this.gBWelcome.Size = new System.Drawing.Size(283, 184);
             this.gBWelcome.TabIndex = 20;
