@@ -26,7 +26,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Air";
+                return "Luft";
             }
         }
 
@@ -34,7 +34,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Earth";
+                return "Erde";
             }
         }
 
@@ -42,7 +42,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Leaf";
+                return "Blattgrün";
             }
         }
 
@@ -50,7 +50,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Water";
+                return "Wasser";
             }
         }
         //Epic
@@ -58,7 +58,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Ascendant";
+                return "Aufgestiegen";
             }
         }
 
@@ -66,7 +66,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Harmonious";
+                return "Harmonisch";
             }
         }
 
@@ -74,7 +74,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Halloween 2016
             get
             {
-                return "Skullyatta";
+                return "Skeleyatta";
             }
         }
         //Legendary
@@ -82,7 +82,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Djinnyatta";
+                return "Dschinnyatta";
             }
         }
 
@@ -106,7 +106,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Sunyatta";
+                return "Sonnyatta";
             }
         }
 
@@ -114,7 +114,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Halloween 2017
             get
             {
-                return "Cultist";
+                return "Kultist";
             }
         }
 
@@ -122,7 +122,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Winter 2016
             get
             {
-                return "Nutcracker";
+                return "Nussknacker";
             }
         }
 

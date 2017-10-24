@@ -26,7 +26,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Azurite";
+                return "Azurit";
             }
         }
 
@@ -34,7 +34,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Cinnabar";
+                return "Zinnober";
             }
         }
 
@@ -42,7 +42,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "M;alachite";
+                return "Malachit";
             }
         }
 
@@ -50,7 +50,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Ochre";
+                return "Ocker";
             }
         }
         //Epic
@@ -58,7 +58,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Carbon Fiber";
+                return "Lohlefaser";
             }
         }
 
@@ -66,7 +66,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Chrome";
+                return "Chrom";
             }
         }
 
@@ -90,7 +90,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Young Genji";
+                return "Junger Genji";
             }
         }
 
@@ -98,7 +98,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Bedouin";
+                return "Beduine";
             }
         }
 
@@ -106,7 +106,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Nomad";
+                return "Nomade";
             }
         }
 

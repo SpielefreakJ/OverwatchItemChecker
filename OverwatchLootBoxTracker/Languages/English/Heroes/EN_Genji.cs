@@ -42,7 +42,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         {
             get
             {
-                return "M;alachite";
+                return "Malachite";
             }
         }
 

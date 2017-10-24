@@ -26,7 +26,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Daisy";
+                return "Gerbera";
             }
         }
 
@@ -34,7 +34,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Lake";
+                return "See";
             }
         }
 
@@ -42,7 +42,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Plains";
+                return "Steppe";
             }
         }
 
@@ -50,7 +50,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Sunset";
+                return "Sonnenuntergang";
             }
         }
         //Epic
@@ -66,7 +66,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Painted";
+                return "Kriegsbemalung";
             }
         }
         //Legendary
@@ -74,7 +74,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Caution";
+                return "Achtung";
             }
         }
 
@@ -90,7 +90,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Avatar";
+                return "Reinkarnation";
             }
         }
 
@@ -98,7 +98,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Spirit";
+                return "Seelenwanderung";
             }
         }
 

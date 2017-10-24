@@ -216,21 +216,6 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Dr_Junkenstein_SK//12
-        {//Halloween 2016
-            get
-            {
-                if (myLang == "DE")
-                {
-                    return DE.Dr_Junkenstein_SK;
-                }
-                else
-                {
-                    return EN.Dr_Junkenstein_SK;
-                }
-            }
-        }
-
         public string Cricket_SK//13
         {//Summer 2017
             get
@@ -242,6 +227,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Cricket_SK;
+                }
+            }
+        }
+
+        public string Dr_Junkenstein_SK//12
+        {//Halloween 2016
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Dr_Junkenstein_SK;
+                }
+                else
+                {
+                    return EN.Dr_Junkenstein_SK;
                 }
             }
         }

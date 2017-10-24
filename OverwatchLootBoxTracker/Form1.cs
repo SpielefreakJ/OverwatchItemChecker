@@ -2513,7 +2513,7 @@ namespace OverwatchLootBoxTracker
                 chB05.Visible = true; chB05.Text = Soldier_76.Bone_SK + " (" + Cost.Epic + ")";//Epic
                 chB06.Visible = true; chB06.Text = Soldier_76.Golden_SK + " (" + Cost.Epic + ")";
                 chB07.Visible = true; chB07.Text = Soldier_76.Immortal_SK + " (" + Cost.Epic + ")";//Halloween 16
-                chB08.Visible = true; chB08.Text = Soldier_76.Commander_76_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB08.Visible = true; chB08.Text = Soldier_76.Commando_76_SK + " (" + Cost.Legendary + ")";//Legendary
                 chB09.Visible = true; chB09.Text = Soldier_76.Night_Ops_76_SK + " (" + Cost.Legendary + ")";
                 chB10.Visible = true; chB10.Text = Soldier_76.Daredevil_76_SK + " (" + Cost.Legendary + ")";
                 chB11.Visible = true; chB11.Text = Soldier_76.Stunt_Rider_76_SK + " (" + Cost.Legendary + ")";

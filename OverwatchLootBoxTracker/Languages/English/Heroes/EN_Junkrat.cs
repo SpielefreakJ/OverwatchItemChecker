@@ -110,19 +110,19 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Dr_Junkenstein_SK
-        {//Halloween 2016
-            get
-            {
-                return "Dr. Junkenstein";
-            }
-        }
-
         public string Cricket_SK
         {//Summer 2017
             get
             {
                 return "Cricket";
+            }
+        }
+
+        public string Dr_Junkenstein_SK
+        {//Halloween 2016
+            get
+            {
+                return "Dr. Junkenstein";
             }
         }
 

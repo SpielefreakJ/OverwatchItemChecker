@@ -26,7 +26,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Ebony";
+                return "Ebenholz";
             }
         }
 
@@ -34,7 +34,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Lake";
+                return "Fluss";
             }
         }
 
@@ -42,7 +42,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Sage";
+                return "Salbei";
             }
         }
 
@@ -50,7 +50,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Wheat";
+                return "Weizen";
             }
         }
         //Epic
@@ -58,7 +58,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "On the Range";
+                return "Weites Land";
             }
         }
 
@@ -66,7 +66,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "White_Hat";
+                return "Der Gute";
             }
         }
 
@@ -90,7 +90,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Gambler";
+                return "Poker-Ass";
             }
         }
 
@@ -98,7 +98,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Riverboat";
+                return "Mississippi";
             }
         }
 
@@ -106,7 +106,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Mystery Man";
+                return "Grosser Unbekannter";
             }
         }
 
@@ -114,7 +114,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Vigilante";
+                return "Maskierter Rächer";
             }
         }
 
@@ -122,15 +122,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Summer 2017
             get
             {
-                return "Lifeguard";
-            }
-        }
-
-        public string Blackwatch_SK
-        {//Uprising 2017
-            get
-            {
-                return "Blackwatch";
+                return "Rettungsschwimmer";
             }
         }
 
@@ -139,6 +131,14 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             get
             {
                 return "Van Helsing";
+            }
+        }
+
+        public string Blackwatch_SK
+        {//Uprising 2017
+            get
+            {
+                return "Blackwatch";
             }
         }
 

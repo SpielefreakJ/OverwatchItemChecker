@@ -26,7 +26,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Brick";
+                return "Ziegelstein";
             }
         }
 
@@ -34,7 +34,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Goldenrod";
+                return "Goldrute";
             }
         }
 
@@ -50,7 +50,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Violet";
+                return "Violett";
             }
         }
         //Epic
@@ -58,7 +58,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Dawn";
+                return "Morgengrauen";
             }
         }
 
@@ -66,7 +66,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Midnight";
+                return "Mitternacht";
             }
         }
 
@@ -74,7 +74,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Winter 2016
             get
             {
-                return "Frosted";
+                return "Bereift";
             }
         }
         //Legendary
@@ -82,7 +82,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Arctic";
+                return "Arktis";
             }
         }
 
@@ -90,7 +90,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Siberian Front";
+                return "Sibirische Front";
             }
         }
 
@@ -122,7 +122,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Summer 2016
             get
             {
-                return "Weightlifter";
+                return "Gewichtheberin";
             }
         }
 
@@ -130,7 +130,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Halloween 2017
             get
             {
-                return "Totally 80's";
+                return "Achtziger";
             }
         }
 
@@ -138,7 +138,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Annyver 2017
             get
             {
-                return "Cyberian";
+                return "Cybirisch";
             }
         }
 

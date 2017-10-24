@@ -73,7 +73,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Winter 2016
             get
             {
-                return "Peppermint";
+                return "Pfefferminz";
             }
         }
         //Legendary
@@ -97,7 +97,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Augmented";
+                return "Augmentiert";
             }
         }
 

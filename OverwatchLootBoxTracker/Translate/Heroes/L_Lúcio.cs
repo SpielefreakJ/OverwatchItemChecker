@@ -57,7 +57,7 @@ namespace OverwatchLootBoxTracker.Translate
             {
                 if (myLang == "DE")
                 {
-                    return DE.Name;
+                    return DE.Azul_SK;
                 }
                 else
                 {
@@ -72,7 +72,7 @@ namespace OverwatchLootBoxTracker.Translate
             {
                 if (myLang == "DE")
                 {
-                    return DE.Name;
+                    return DE.Laranja_SK;
                 }
                 else
                 {
@@ -87,7 +87,7 @@ namespace OverwatchLootBoxTracker.Translate
             {
                 if (myLang == "DE")
                 {
-                    return DE.Name;
+                    return DE.Roxo_SK;
                 }
                 else
                 {
@@ -102,7 +102,7 @@ namespace OverwatchLootBoxTracker.Translate
             {
                 if (myLang == "DE")
                 {
-                    return DE.Name;
+                    return DE.Vermelho_SK;
                 }
                 else
                 {
@@ -117,7 +117,7 @@ namespace OverwatchLootBoxTracker.Translate
             {
                 if (myLang == "DE")
                 {
-                    return DE.Name;
+                    return DE.Auditiva_SK;
                 }
                 else
                 {
@@ -132,7 +132,7 @@ namespace OverwatchLootBoxTracker.Translate
             {
                 if (myLang == "DE")
                 {
-                    return DE.Name;
+                    return DE.Synaesthesia_SK;
                 }
                 else
                 {
@@ -147,7 +147,7 @@ namespace OverwatchLootBoxTracker.Translate
             {
                 if (myLang == "DE")
                 {
-                    return DE.Name;
+                    return DE.Andes_SK;
                 }
                 else
                 {
@@ -162,7 +162,7 @@ namespace OverwatchLootBoxTracker.Translate
             {
                 if (myLang == "DE")
                 {
-                    return DE.Name;
+                    return DE.Hippityhop_SK;
                 }
                 else
                 {
@@ -177,7 +177,7 @@ namespace OverwatchLootBoxTracker.Translate
             {
                 if (myLang == "DE")
                 {
-                    return DE.Name;
+                    return DE.Ribbit_SK;
                 }
                 else
                 {
@@ -192,7 +192,7 @@ namespace OverwatchLootBoxTracker.Translate
             {
                 if (myLang == "DE")
                 {
-                    return DE.Name;
+                    return DE.Breakaway_SK;
                 }
                 else
                 {
@@ -207,7 +207,7 @@ namespace OverwatchLootBoxTracker.Translate
             {
                 if (myLang == "DE")
                 {
-                    return DE.Name;
+                    return DE.Slapshot_SK;
                 }
                 else
                 {
@@ -222,7 +222,7 @@ namespace OverwatchLootBoxTracker.Translate
             {
                 if (myLang == "DE")
                 {
-                    return DE.Name;
+                    return DE.Seleção_SK;
                 }
                 else
                 {
@@ -237,7 +237,7 @@ namespace OverwatchLootBoxTracker.Translate
             {
                 if (myLang == "DE")
                 {
-                    return DE.Name;
+                    return DE.Striker_SK;
                 }
                 else
                 {
@@ -252,7 +252,7 @@ namespace OverwatchLootBoxTracker.Translate
             {
                 if (myLang == "DE")
                 {
-                    return DE.Name;
+                    return DE.Jazzy_SK;
                 }
                 else
                 {

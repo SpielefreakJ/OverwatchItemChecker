@@ -78,11 +78,11 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
         //Legendary
-        public string Commander_76_SK
+        public string Commando_76_SK
         {
             get
             {
-                return "Commander: 76";
+                return "Commando: 76";
             }
         }
 

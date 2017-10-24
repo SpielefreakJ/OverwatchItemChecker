@@ -58,7 +58,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Cloud";
+                return "Wolke";
             }
         }
 
@@ -66,7 +66,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Dragon";
+                return "Drache";
             }
         }
 
@@ -74,7 +74,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Halloween 2016
             get
             {
-                return "Demon";
+                return "Dämon";
             }
         }
         //Legendary
@@ -82,7 +82,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Young Hanzo";
+                return "Junger Hanzo";
             }
         }
 
@@ -90,7 +90,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Young Master";
+                return "Junger Meister";
             }
         }
 
@@ -98,7 +98,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Lone Wolf";
+                return "Einsamer Wolf";
             }
         }
 

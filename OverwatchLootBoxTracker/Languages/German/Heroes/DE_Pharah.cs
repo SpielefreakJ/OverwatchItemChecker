@@ -34,7 +34,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Copper";
+                return "Kupfer";
             }
         }
 
@@ -42,7 +42,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Emerald";
+                return "Smaragd";
             }
         }
 
@@ -50,7 +50,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Titanium";
+                return "Titan";
             }
         }
         //Epic
@@ -66,7 +66,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Jackal";
+                return "Schakal";
             }
         }
 
@@ -74,7 +74,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Halloween 2016
             get
             {
-                return "Possessed";
+                return "Besessene";
             }
         }
 
@@ -82,7 +82,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Winter 2016
             get
             {
-                return "Frostbite";
+                return "Unterkühlt";
             }
         }
         //Legendary
@@ -106,7 +106,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Raindancer";
+                return "Regentänzerin";
             }
         }
 
@@ -114,7 +114,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Thunderbird";
+                return "Donnerfogel";
             }
         }
 
@@ -122,7 +122,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Origin Special
             get
             {
-                return "Security Chief";
+                return "Sicherheitschefin";
             }
         }
 
@@ -130,7 +130,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Annyver 2017
             get
             {
-                return "Bedouin";
+                return "Beduinin";
             }
         }
 

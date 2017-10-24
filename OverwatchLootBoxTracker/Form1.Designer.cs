@@ -119,12 +119,12 @@
             this.btnUprising = new System.Windows.Forms.Button();
             this.btnAnnyver = new System.Windows.Forms.Button();
             this.gBWelcome = new System.Windows.Forms.GroupBox();
+            this.lblContributor = new System.Windows.Forms.Label();
+            this.lblCopyrightVersion = new System.Windows.Forms.Label();
             this.lblChanges = new System.Windows.Forms.Label();
             this.btnWelcomeClose = new System.Windows.Forms.Button();
             this.tmrWelcome = new System.Windows.Forms.Timer(this.components);
             this.btnBackHeroe = new System.Windows.Forms.Button();
-            this.lblCopyrightVersion = new System.Windows.Forms.Label();
-            this.lblContributor = new System.Windows.Forms.Label();
             this.gBLang.SuspendLayout();
             this.gbAll.SuspendLayout();
             this.gBMoreCost.SuspendLayout();
@@ -164,7 +164,6 @@
             // 
             // btnLangGerman
             // 
-            this.btnLangGerman.Enabled = false;
             this.btnLangGerman.Location = new System.Drawing.Point(7, 20);
             this.btnLangGerman.Name = "btnLangGerman";
             this.btnLangGerman.Size = new System.Drawing.Size(187, 23);
@@ -177,7 +176,7 @@
             // 
             this.btnSettings.Location = new System.Drawing.Point(16, 677);
             this.btnSettings.Name = "btnSettings";
-            this.btnSettings.Size = new System.Drawing.Size(84, 23);
+            this.btnSettings.Size = new System.Drawing.Size(100, 23);
             this.btnSettings.TabIndex = 2;
             this.btnSettings.Text = "btnSettings";
             this.btnSettings.UseVisualStyleBackColor = true;
@@ -1190,12 +1189,30 @@
             this.gBWelcome.Controls.Add(this.lblCopyrightVersion);
             this.gBWelcome.Controls.Add(this.lblChanges);
             this.gBWelcome.Controls.Add(this.btnWelcomeClose);
-            this.gBWelcome.Location = new System.Drawing.Point(16, 13);
+            this.gBWelcome.Location = new System.Drawing.Point(749, 596);
             this.gBWelcome.Name = "gBWelcome";
-            this.gBWelcome.Size = new System.Drawing.Size(868, 687);
+            this.gBWelcome.Size = new System.Drawing.Size(283, 184);
             this.gBWelcome.TabIndex = 20;
             this.gBWelcome.TabStop = false;
             this.gBWelcome.Text = "gBWelcome";
+            // 
+            // lblContributor
+            // 
+            this.lblContributor.AutoSize = true;
+            this.lblContributor.Location = new System.Drawing.Point(6, 290);
+            this.lblContributor.Name = "lblContributor";
+            this.lblContributor.Size = new System.Drawing.Size(68, 13);
+            this.lblContributor.TabIndex = 3;
+            this.lblContributor.Text = "lblContributor";
+            // 
+            // lblCopyrightVersion
+            // 
+            this.lblCopyrightVersion.AutoSize = true;
+            this.lblCopyrightVersion.Location = new System.Drawing.Point(6, 661);
+            this.lblCopyrightVersion.Name = "lblCopyrightVersion";
+            this.lblCopyrightVersion.Size = new System.Drawing.Size(96, 13);
+            this.lblCopyrightVersion.TabIndex = 2;
+            this.lblCopyrightVersion.Text = "lblCopyrightVersion";
             // 
             // lblChanges
             // 
@@ -1232,24 +1249,6 @@
             this.btnBackHeroe.UseVisualStyleBackColor = true;
             this.btnBackHeroe.Visible = false;
             this.btnBackHeroe.Click += new System.EventHandler(this.btnBackHeroe_Click);
-            // 
-            // lblCopyrightVersion
-            // 
-            this.lblCopyrightVersion.AutoSize = true;
-            this.lblCopyrightVersion.Location = new System.Drawing.Point(6, 661);
-            this.lblCopyrightVersion.Name = "lblCopyrightVersion";
-            this.lblCopyrightVersion.Size = new System.Drawing.Size(96, 13);
-            this.lblCopyrightVersion.TabIndex = 2;
-            this.lblCopyrightVersion.Text = "lblCopyrightVersion";
-            // 
-            // lblContributor
-            // 
-            this.lblContributor.AutoSize = true;
-            this.lblContributor.Location = new System.Drawing.Point(6, 290);
-            this.lblContributor.Name = "lblContributor";
-            this.lblContributor.Size = new System.Drawing.Size(68, 13);
-            this.lblContributor.TabIndex = 3;
-            this.lblContributor.Text = "lblContributor";
             // 
             // Form1
             // 

@@ -26,7 +26,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Blood";
+                return "Blut";
             }
         }
 
@@ -34,7 +34,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Midnight";
+                return "Mitternacht";
             }
         }
 
@@ -42,7 +42,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Moss";
+                return "Moos";
             }
         }
 
@@ -50,7 +50,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Royal";
+                return "Löniglich";
             }
         }
         //Epic
@@ -58,7 +58,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Desert";
+                return "Wüste";
             }
         }
 
@@ -66,7 +66,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Wight";
+                return "Schnee";
             }
         }
 
@@ -74,7 +74,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Winter 2016
             get
             {
-                return "Shiver";
+                return "Kalter Schauer";
             }
         }
         //Legendary
@@ -82,7 +82,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Nevermore";
+                return "Nimmermehr";
             }
         }
 
@@ -90,7 +90,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Plague Doctor";
+                return "Seuchenarzt";
             }
         }
 
@@ -114,7 +114,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Origin Special
             get
             {
-                return "Blackwatch Reyes";
+                return "Blackwatch-Reyes";
             }
         }
 
@@ -138,7 +138,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Halloween 2016
             get
             {
-                return "Pumpkin";
+                return "Kürbiskopf";
             }
         }
 

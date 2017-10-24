@@ -34,7 +34,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Mud";
+                return "Schlamm";
             }
         }
 
@@ -50,7 +50,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Thistle";
+                return "Veilchen";
             }
         }
         //Epic
@@ -58,7 +58,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Pigpen";
+                return "Schweinestall";
             }
         }
 
@@ -66,7 +66,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Stitched";
+                return "Schwarte";
             }
         }
 
@@ -82,7 +82,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Islander";
+                return "Inselbewohner";
             }
         }
 
@@ -106,7 +106,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Sharkbait";
+                return "Haihappen";
             }
         }
 
@@ -114,7 +114,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Halloween 2016
             get
             {
-                return "Junkenstein's Monster";
+                return "Junkensteins Monster";
             }
         }
 

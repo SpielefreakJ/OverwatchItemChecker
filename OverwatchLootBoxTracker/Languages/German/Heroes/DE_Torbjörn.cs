@@ -58,7 +58,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Cathode";
+                return "Kathode";
             }
         }
 
@@ -66,7 +66,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Woodclad";
+                return "Holzverkleidung";
             }
         }
 
@@ -106,7 +106,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Blackbeard";
+                return "Schwarzbard";
             }
         }
 
@@ -114,7 +114,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Halloween 2017
             get
             {
-                return "Viking";
+                return "Wikinger";
             }
         }
 
@@ -122,7 +122,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Winter 2016
             get
             {
-                return "Santaclad";
+                return "Geschenkeschmied";
             }
         }
 
@@ -130,7 +130,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Uprising 2017
             get
             {
-                return "Chief Engineer Lindholm";
+                return "Chefingenieur Lindholm";
             }
         }
 

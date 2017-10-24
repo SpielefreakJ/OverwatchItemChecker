@@ -26,7 +26,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Celestial";
+                return "Himmlisch";
             }
         }
 
@@ -34,7 +34,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Mist";
+                return "Nebel";
             }
         }
 
@@ -42,7 +42,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Orchid";
+                return "Orchidee";
             }
         }
 
@@ -50,7 +50,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Verdant";
+                return "Grün";
             }
         }
         //Epic
@@ -58,7 +58,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Amber";
+                return "Bernstein";
             }
         }
 
@@ -66,7 +66,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Cobalt";
+                return "Kobalt";
             }
         }
 
@@ -82,7 +82,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Rooster 2017
             get
             {
-                return "Fortune";
+                return "Glück";
             }
         }
         //Legendary
@@ -98,7 +98,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Valkyrie";
+                return "Valkür";
             }
         }
 
@@ -106,7 +106,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Devil";
+                return "Teufelin";
             }
         }
 
@@ -114,7 +114,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "IMP";
+                return "Dämon";
             }
         }
 
@@ -122,7 +122,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Halloween 2017
             get
             {
-                return "Winged Victory";
+                return "Siegesgöttin";
             }
         }
 
@@ -130,7 +130,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Halloween 2016
             get
             {
-                return "Witch";
+                return "Hexe";
             }
         }
 
@@ -138,7 +138,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Uprising 2017
             get
             {
-                return "Combat Medic Ziegler";
+                return "Feldsanitäterin Ziegler";
             }
         }
 

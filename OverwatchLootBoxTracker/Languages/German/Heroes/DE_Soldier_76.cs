@@ -26,7 +26,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Jet";
+                return "Pechschwarz";
             }
         }
 
@@ -34,7 +34,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Olive";
+                return "Olivgrün";
             }
         }
 
@@ -42,7 +42,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Russet";
+                return "Rostbraun";
             }
         }
 
@@ -50,7 +50,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Smoke";
+                return "Rauch";
             }
         }
         //Epic
@@ -58,7 +58,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Bone";
+                return "Knochen";
             }
         }
 
@@ -74,15 +74,15 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Halloween 2016
             get
             {
-                return "Immortal";
+                return "Unsterblicher";
             }
         }
         //Legendary
-        public string Commander_76_SK
+        public string Commando_76_SK
         {
             get
             {
-                return "Commander: 76";
+                return "Kommando: 76";
             }
         }
 
@@ -90,7 +90,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Night Ops: 76";
+                return "Nachtwache: 76";
             }
         }
 
@@ -106,7 +106,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Stund Rider: 76";
+                return "Stundman: 76";
             }
         }
 
@@ -114,7 +114,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Origin Special
             get
             {
-                return "Strike-Commander Morrison";
+                return "Strike Commander Morrison";
             }
         }
 
@@ -122,7 +122,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Summer 2017
             get
             {
-                return "Grillmaster: 76";
+                return "Grillmeister: 76";
             }
         }
 

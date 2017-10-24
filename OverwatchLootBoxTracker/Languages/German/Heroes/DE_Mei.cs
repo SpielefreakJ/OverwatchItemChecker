@@ -26,7 +26,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Chrysanthemum";
+                return "Chrysantheme";
             }
         }
 
@@ -34,7 +34,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Heliotrope";
+                return "Heliotrop";
             }
         }
 
@@ -50,7 +50,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Persimmon";
+                return "Kaki";
             }
         }
         //Epic
@@ -58,7 +58,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Earthen";
+                return "Irden";
             }
         }
 
@@ -66,7 +66,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Snow Plum";
+                return "Schneepflaume";
             }
         }
         //Legendary
@@ -74,7 +74,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Firefighter";
+                return "Feuerwehrfrau";
             }
         }
 
@@ -82,7 +82,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Rescue Mei";
+                return "Retterin Mei";
             }
         }
 
@@ -90,7 +90,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Abominable";
+                return "Schneemensch";
             }
         }
 
@@ -98,7 +98,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Yeti Hunter";
+                return "Yetiforscherin";
             }
         }
 
@@ -114,7 +114,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Winter 2016
             get
             {
-                return "Mei-rry";
+                return "Festtagskostüm";
             }
         }
 
@@ -138,7 +138,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Annyver 2017
             get
             {
-                return "Beekeeper";
+                return "Imkerin";
             }
         }
 

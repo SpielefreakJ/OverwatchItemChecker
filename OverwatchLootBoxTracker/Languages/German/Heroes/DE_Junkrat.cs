@@ -26,7 +26,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Bleached";
+                return "Ausgeblichen";
             }
         }
 
@@ -34,7 +34,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Drowned";
+                return "Ertrunken";
             }
         }
 
@@ -42,7 +42,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Irradiated";
+                return "Verstrahlt";
             }
         }
 
@@ -50,7 +50,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Rusted";
+                return "Verrostet";
             }
         }
         //Epic
@@ -58,7 +58,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Jailbird";
+                return "Galgenvogel";
             }
         }
 
@@ -66,7 +66,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Toasted";
+                return "Verrusst";
             }
         }
 
@@ -74,7 +74,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Rooster 2017
             get
             {
-                return "Firework";
+                return "Feuerwerk";
             }
         }
         //Legendary
@@ -82,7 +82,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Fool";
+                return "Schelm";
             }
         }
 
@@ -90,7 +90,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Jester";
+                return "Hofnarr";
             }
         }
 
@@ -98,7 +98,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Hayseed";
+                return "Landei";
             }
         }
 
@@ -106,15 +106,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Scarecrow";
-            }
-        }
-
-        public string Dr_Junkenstein_SK
-        {//Halloween 2016
-            get
-            {
-                return "Dr. Junkenstein";
+                return "Vogelscheuche";
             }
         }
 
@@ -123,6 +115,14 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             get
             {
                 return "Cricket";
+            }
+        }
+
+        public string Dr_Junkenstein_SK
+        {//Halloween 2016
+            get
+            {
+                return "Dr. Junkenstein";
             }
         }
 

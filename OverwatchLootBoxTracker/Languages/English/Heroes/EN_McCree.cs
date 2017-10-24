@@ -66,7 +66,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         {
             get
             {
-                return "White_Hat";
+                return "White Hat";
             }
         }
 
@@ -126,19 +126,19 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        public string Blackwatch_SK
-        {//Uprising 2017
-            get
-            {
-                return "Blackwatch";
-            }
-        }
-
         public string Van_Helsing_SK
         {//Halloween 2017
             get
             {
                 return "Van Helsing";
+            }
+        }
+
+        public string Blackwatch_SK
+        {//Uprising 2017
+            get
+            {
+                return "Blackwatch";
             }
         }
 

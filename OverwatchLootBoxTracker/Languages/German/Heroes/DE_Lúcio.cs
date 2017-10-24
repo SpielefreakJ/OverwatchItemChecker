@@ -74,7 +74,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Winter 2016
             get
             {
-                return "Andes";
+                return "Anden";
             }
         }
         //Legendary
@@ -90,7 +90,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Ribbit";
+                return "Ribbeat";
             }
         }
 
@@ -122,7 +122,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Summer 2016
             get
             {
-                return "Striker";
+                return "Stürmer";
             }
         }
 

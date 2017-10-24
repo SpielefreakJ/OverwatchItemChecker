@@ -9,6 +9,7 @@ namespace OverwatchLootBoxTracker.Translate
     class L_Reinhardt
     {
         Languages.English.Heroes.EN_Reinhardt EN;
+        Languages.German.Heroes.DE_Reinhardt DE;
         string myLang;
 
         public L_Reinhardt(string Lang)
@@ -16,6 +17,7 @@ namespace OverwatchLootBoxTracker.Translate
             myLang = Lang;
 
             EN = new Languages.English.Heroes.EN_Reinhardt();
+            DE = new Languages.German.Heroes.DE_Reinhardt();
         }
 
         public string ChangeLang
@@ -34,7 +36,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Name;
+                }
+                else
                 {
                     return EN.Name;
                 }
@@ -49,7 +55,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Brass_SK;
+                }
+                else
                 {
                     return EN.Brass_SK;
                 }
@@ -60,7 +70,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Cobalt_SK;
+                }
+                else
                 {
                     return EN.Cobalt_SK;
                 }
@@ -71,7 +85,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Copper_SK;
+                }
+                else
                 {
                     return EN.Copper_SK;
                 }
@@ -82,7 +100,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Viridian_SK;
+                }
+                else
                 {
                     return EN.Viridian_SK;
                 }
@@ -93,7 +115,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Bundeswehr_SK;
+                }
+                else
                 {
                     return EN.Bundeswehr_SK;
                 }
@@ -104,7 +130,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Paragon_SK;
+                }
+                else
                 {
                     return EN.Paragon_SK;
                 }
@@ -115,7 +145,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Halloween 2016
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Coldhardt_SK;
+                }
+                else
                 {
                     return EN.Coldhardt_SK;
                 }
@@ -126,7 +160,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Uprising 2017
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Lieutenant_Wilhelm_SK;
+                }
+                else
                 {
                     return EN.Lieutenant_Wilhelm_SK;
                 }
@@ -137,7 +175,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Blackhardt_SK;
+                }
+                else
                 {
                     return EN.Blackhardt_SK;
                 }
@@ -148,7 +190,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Bloodhardt_SK;
+                }
+                else
                 {
                     return EN.Bloodhardt_SK;
                 }
@@ -159,7 +205,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Lionhardt_SK;
+                }
+                else
                 {
                     return EN.Lionhardt_SK;
                 }
@@ -170,7 +220,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Stonehardt_SK;
+                }
+                else
                 {
                     return EN.Stonehardt_SK;
                 }
@@ -181,7 +235,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Balderich_SK;
+                }
+                else
                 {
                     return EN.Balderich_SK;
                 }
@@ -192,7 +250,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Greifhardt_SK;
+                }
+                else
                 {
                     return EN.Greifhardt_SK;
                 }
@@ -203,7 +265,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Rooster 2017
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Wujing_SK;
+                }
+                else
                 {
                     return EN.Wujing_SK;
                 }

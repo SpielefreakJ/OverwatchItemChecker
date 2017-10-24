@@ -26,7 +26,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Electric Purple";
+                return "Elektrisches Violett";
             }
         }
 
@@ -34,7 +34,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Hot Pink";
+                return "Heisses Pink";
             }
         }
 
@@ -42,7 +42,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Neon Green";
+                return "Neongrün";
             }
         }
 
@@ -50,7 +50,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Royal Blue";
+                return "Königsblau";
             }
         }
         //Epic
@@ -90,7 +90,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {
             get
             {
-                return "Ultraviolet";
+                return "Ultraviolett";
             }
         }
 
@@ -122,7 +122,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Summer 2016
             get
             {
-                return "Sprinter";
+                return "Sprinterin";
             }
         }
 
@@ -130,7 +130,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//summer 2016
             get
             {
-                return "Track and Field";
+                return "Leichtathletik";
             }
         }
 
@@ -138,7 +138,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Winter 2016
             get
             {
-                return "Jingle";
+                return "Wichtel";
             }
         }
 
@@ -146,7 +146,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         {//Uprising 2017
             get
             {
-                return "Cadet Oxton";
+                return "Kadettin Oxton";
             }
         }
 
