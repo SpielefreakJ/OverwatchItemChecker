@@ -606,7 +606,7 @@ namespace OverwatchLootBoxTracker
                 chB04.Visible = true; chB04.Text = Ana.Turquoise_SK + " (" + Cost.Rare + ")";
                 chB05.Visible = true; chB05.Text = Ana.Merciful_SK + " (" + Cost.Epic + ")";//Epic
                 chB06.Visible = true; chB06.Text = Ana.Shrike_SK + " (" + Cost.Epic + ")";
-                chB07.Visible = true; chB07.Text = Ana.Ghoul_SK + " (" + Cost.EpicEvent + ")";//Halloween 17
+                chB07.Visible = true; chB07.Text = Ana.Ghoul_SK + " (" + Cost.Epic + ")";//Halloween 16
                 chB08.Visible = true; chB08.Text = Ana.Tal_SK + " (" + Cost.EpicEvent + ")";//Rooster 17
                 chB09.Visible = true; chB09.Text = Ana.Wadjet_SK + " (" + Cost.Legendary + ")";//Legendary
                 chB10.Visible = true; chB10.Text = Ana.Wasteland_SK + " (" + Cost.Legendary + ")";
@@ -1919,20 +1919,20 @@ namespace OverwatchLootBoxTracker
             if (BackSave == Lang.Skins)
             {
                 chB01.Visible = true; chB01.Text = Mei.Chrysanthemum_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.Visible = true; chB01.Text = Mei.Heliotrope_SK + " (" + Cost.Rare + ")";
-                chB03.Visible = true; chB01.Text = Mei.Jade_SK + " (" + Cost.Rare + ")";
-                chB04.Visible = true; chB01.Text = Mei.Persimmon_SK + " (" + Cost.Rare + ")";
-                chB05.Visible = true; chB01.Text = Mei.Earthen_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.Visible = true; chB01.Text = Mei.Snow_Plum_SK + " (" + Cost.Epic + ")";
-                chB07.Visible = true; chB01.Text = Mei.Firefighter_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB08.Visible = true; chB01.Text = Mei.Rescue_Mei_SK + " (" + Cost.Legendary + ")";
-                chB09.Visible = true; chB01.Text = Mei.Abominable_SK + " (" + Cost.Legendary + ")";
-                chB10.Visible = true; chB01.Text = Mei.Yeti_Hunter_SK + " (" + Cost.Legendary + ")";
-                chB11.Visible = true; chB01.Text = Mei.Jiangshi_SK + " (" + Cost.LegendaryEvent + ")";//Halloween 17
-                chB12.Visible = true; chB01.Text = Mei.Mei_rry_SK + " (" + Cost.LegendaryEvent + ")";//Winter 16
-                chB13.Visible = true; chB01.Text = Mei.Chang_e_SK + " (" + Cost.LegendaryEvent + ")";//Rooster 17
-                chB14.Visible = true; chB01.Text = Mei.Luna_SK + " (" + Cost.LegendaryEvent + ")";//Rooster 17
-                chB15.Visible = true; chB01.Text = Mei.Beekeeper_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
+                chB02.Visible = true; chB02.Text = Mei.Heliotrope_SK + " (" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Text = Mei.Jade_SK + " (" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Text = Mei.Persimmon_SK + " (" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Text = Mei.Earthen_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.Visible = true; chB06.Text = Mei.Snow_Plum_SK + " (" + Cost.Epic + ")";
+                chB07.Visible = true; chB07.Text = Mei.Firefighter_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB08.Visible = true; chB08.Text = Mei.Rescue_Mei_SK + " (" + Cost.Legendary + ")";
+                chB09.Visible = true; chB09.Text = Mei.Abominable_SK + " (" + Cost.Legendary + ")";
+                chB10.Visible = true; chB10.Text = Mei.Yeti_Hunter_SK + " (" + Cost.Legendary + ")";
+                chB11.Visible = true; chB11.Text = Mei.Jiangshi_SK + " (" + Cost.LegendaryEvent + ")";//Halloween 17
+                chB12.Visible = true; chB12.Text = Mei.Mei_rry_SK + " (" + Cost.LegendaryEvent + ")";//Winter 16
+                chB13.Visible = true; chB13.Text = Mei.Chang_e_SK + " (" + Cost.LegendaryEvent + ")";//Rooster 17
+                chB14.Visible = true; chB14.Text = Mei.Luna_SK + " (" + Cost.LegendaryEvent + ")";//Rooster 17
+                chB15.Visible = true; chB15.Text = Mei.Beekeeper_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
                 if (inisHeroes.Read("SK01") == "1")
                 {
                     chB01.Checked = true;
@@ -2104,7 +2104,7 @@ namespace OverwatchLootBoxTracker
                 chB06.Visible = true; chB06.Text = Orisa.OR15_SK + " (" + Cost.Epic + ")";
                 chB07.Visible = true; chB07.Text = Orisa.Dynastinae_SK + " (" + Cost.Legendary + ")";//Legendary
                 chB08.Visible = true; chB08.Text = Orisa.Megasoma_SK + " (" + Cost.Legendary + ")";
-                chB09.Visible = true; chB09.Text = Orisa.Camouflage_SK + " (" + Cost.Legendary + ")";
+                chB09.Visible = true; chB09.Text = Orisa.Carbon_Fiber_SK + " (" + Cost.Legendary + ")";
                 chB10.Visible = true; chB10.Text = Orisa.Protector_SK + " (" + Cost.Legendary + ")";
                 chB11.Visible = true; chB11.Text = Orisa.Null_Sector_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
                 if (inisHeroes.Read("SK01") == "1")
