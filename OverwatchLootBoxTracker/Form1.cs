@@ -255,12 +255,14 @@ namespace OverwatchLootBoxTracker
         {
             Language = "DE";
             ChangeLang();
+            IniSave();
         }
 
         private void btnLangEnglish_Click(object sender, EventArgs e)
         {
             Language = "EN";
             ChangeLang();
+            IniSave();
         }
 
         private void btnSettings_Click(object sender, EventArgs e)
