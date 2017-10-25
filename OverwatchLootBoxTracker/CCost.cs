@@ -17,10 +17,11 @@ namespace OverwatchLootBoxTracker
         private int myLegendary = 1000;
         private int myEpicEvent = 750;
         private int myLegendaryEvent = 3000;
-        private int myBlizzCon = 0;
-        private int myUnknown = 0;
         private int myOriginGotY = 0;
         private int myPrepushcase = 0;
+        private int myBlizzCon = 0;
+        private int myUnknown = 0;
+        private string myPrepurchase = "";
 
         private int myKostenNormal;
         private int myKostenFest;
@@ -124,6 +125,14 @@ namespace OverwatchLootBoxTracker
             get
             {
                 return myUnknown;
+            }
+        }
+
+        public string Prepurchase
+        {//Prepurchase only
+            get
+            {
+                return myPrepurchase;
             }
         }
 

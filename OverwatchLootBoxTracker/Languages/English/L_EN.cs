@@ -218,10 +218,45 @@ namespace OverwatchLootBoxTracker.Lang
         }
 
 
+        //Not Obtainable Skins
 
-    //Remainint Text
+        public string Unknown
+        {
+            get
+            {
+                return "?";
+            }
+        }
 
-    public string remaining1
+        public string OriginGotY
+        {
+            get
+            {
+                return "Only in Origin or GotY";
+            }
+        }
+
+        public string BlizzCon
+        {
+            get
+            {
+                return "Only w/ BlizzCon Ticket";
+            }
+        }
+
+        public string Prepurchase
+        {
+            get
+            {
+                return "Prepurchase of Overwatch";
+            }
+        }
+
+
+
+        //Remainint Text
+
+        public string remaining1
         {
             get
             {

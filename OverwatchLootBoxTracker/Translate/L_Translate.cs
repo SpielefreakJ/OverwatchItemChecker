@@ -404,6 +404,69 @@ namespace OverwatchLootBoxTracker.Translate
         }
 
 
+        //Not Obtainable Skins
+
+        public string Unknown
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Unknown;
+                }
+                else
+                {
+                    return EN.Unknown;
+                }
+            }
+        }
+
+        public string OriginGotY
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.OriginGotY;
+                }
+                else
+                {
+                    return EN.OriginGotY;
+                }
+            }
+        }
+
+        public string BlizzCon
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.BlizzCon;
+                }
+                else
+                {
+                    return EN.BlizzCon;
+                }
+            }
+        }
+
+        public string Prepurchase
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Prepurchase;
+                }
+                else
+                {
+                    return EN.Prepurchase;
+                }
+            }
+        }
+
+
 
         //Remaining Text
 
