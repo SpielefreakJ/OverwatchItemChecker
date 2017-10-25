@@ -106,7 +106,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         {
             get
             {
-                return "Stund Rider: 76";
+                return "Stunt Rider: 76";
             }
         }
 

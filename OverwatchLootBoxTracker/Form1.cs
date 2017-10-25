@@ -2216,8 +2216,8 @@ namespace OverwatchLootBoxTracker
                 chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4);
                 chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1);
                 chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2);
-                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p3, p3);
-                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p4);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3);
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p2, p4);
                 chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p1);
                 chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p2);
                 chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p3);
@@ -2414,19 +2414,19 @@ namespace OverwatchLootBoxTracker
                 chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p6);
 
                 chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Pharah.Amethyst_SK + " (" + Cost.Rare + ")";//Rare
-                chB01.BackColor = Color.DeepSkyBlue; chB02.Text = Pharah.Copper_SK + " (" + Cost.Rare + ")";
-                chB01.BackColor = Color.DeepSkyBlue; chB03.Text = Pharah.Emerald_SK + " (" + Cost.Rare + ")";
-                chB01.BackColor = Color.DeepSkyBlue; chB04.Text = Pharah.Titanium_SK + " (" + Cost.Rare + ")";
-                chB01.BackColor = Color.DarkViolet; chB05.Text = Pharah.Anubis_SK + " (" + Cost.Epic + ")";//Epic
-                chB01.BackColor = Color.DarkViolet; chB06.Text = Pharah.Jackal_SK + " (" + Cost.Epic + ")";
-                chB01.BackColor = Color.DarkViolet; chB07.Text = Pharah.Possessed_SK + " (" + Cost.Epic + ")";//Halloween 16
-                chB01.BackColor = Color.DarkViolet; chB08.Text = Pharah.Frostbite_SK + " (" + Cost.EpicEvent + ")";//Winter 16
-                chB01.BackColor = Color.Gold; chB09.Text = Pharah.Mechaqueen_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB01.BackColor = Color.Gold; chB10.Text = Pharah.Raptorion_SK + " (" + Cost.Legendary + ")";
-                chB01.BackColor = Color.Gold; chB11.Text = Pharah.Raindancer_SK + " (" + Cost.Legendary + ")";
-                chB01.BackColor = Color.Gold; chB12.Text = Pharah.Thunderbird_SK + " (" + Cost.Legendary + ")";
-                chB01.BackColor = Color.Gold; chB13.Text = Pharah.Security_Chief_SK + " (" + Lang.OriginGotY + ")";//Origin
-                chB01.BackColor = Color.Gold; chB14.Text = Pharah.Bedouin_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
+                chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Pharah.Copper_SK + " (" + Cost.Rare + ")";
+                chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Pharah.Emerald_SK + " (" + Cost.Rare + ")";
+                chB04.BackColor = Color.DeepSkyBlue; chB04.Text = Pharah.Titanium_SK + " (" + Cost.Rare + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Pharah.Anubis_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.BackColor = Color.DarkViolet; chB06.Text = Pharah.Jackal_SK + " (" + Cost.Epic + ")";
+                chB07.BackColor = Color.DarkViolet; chB07.Text = Pharah.Possessed_SK + " (" + Cost.Epic + ")";//Halloween 16
+                chB08.BackColor = Color.DarkViolet; chB08.Text = Pharah.Frostbite_SK + " (" + Cost.EpicEvent + ")";//Winter 16
+                chB09.BackColor = Color.Gold; chB09.Text = Pharah.Mechaqueen_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB10.BackColor = Color.Gold; chB10.Text = Pharah.Raptorion_SK + " (" + Cost.Legendary + ")";
+                chB11.BackColor = Color.Gold; chB11.Text = Pharah.Raindancer_SK + " (" + Cost.Legendary + ")";
+                chB12.BackColor = Color.Gold; chB12.Text = Pharah.Thunderbird_SK + " (" + Cost.Legendary + ")";
+                chB13.BackColor = Color.Gold; chB13.Text = Pharah.Security_Chief_SK + " (" + Lang.OriginGotY + ")";//Origin
+                chB14.BackColor = Color.Gold; chB14.Text = Pharah.Bedouin_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
 
                 if (inisHeroes.Read("SK01") == "1")
                 {
@@ -2627,7 +2627,7 @@ namespace OverwatchLootBoxTracker
                 chB05.BackColor = Color.DarkViolet; chB05.Text = Reinhardt.Bundeswehr_SK + " (" + Cost.Epic + ")";//Epic
                 chB06.BackColor = Color.DarkViolet; chB06.Text = Reinhardt.Paragon_SK + " (" + Cost.Epic + ")";
                 chB07.BackColor = Color.DarkViolet; chB07.Text = Reinhardt.Coldhardt_SK + " (" + Cost.Epic + ")";//Halloween 16
-                chB08.BackColor = Color.Gold; chB08.Text = Reinhardt.Lieutenant_Wilhelm_SK + " (" + Cost.EpicEvent + ")";//Uprising 17
+                chB08.BackColor = Color.DarkViolet; chB08.Text = Reinhardt.Lieutenant_Wilhelm_SK + " (" + Cost.EpicEvent + ")";//Uprising 17
                 chB09.BackColor = Color.Gold; chB09.Text = Reinhardt.Blackhardt_SK + " (" + Cost.Legendary + ")";//Legendary
                 chB10.BackColor = Color.Gold; chB10.Text = Reinhardt.Bloodhardt_SK + " (" + Cost.Legendary + ")";
                 chB11.BackColor = Color.Gold; chB11.Text = Reinhardt.Lionhardt_SK + " (" + Cost.Legendary + ")";
