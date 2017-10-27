@@ -278,5 +278,104 @@ namespace OverwatchLootBoxTracker.Translate
 
 
         //Emotes
+        //Epic
+        public string Companion_EM//1
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Companion_EM;
+                }
+            }
+        }
+
+        public string Gigle_EM//2
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Gigle_EM;
+                }
+            }
+        }
+
+        public string Kneel_EM//3
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Kneel_EM;
+                }
+            }
+        }
+
+        public string Spray_EM//4
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Spray_EM;
+                }
+            }
+        }
+
+        public string Yaaaaaaaaay_EM//5
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Yaaaaaaaaay_EM;
+                }
+            }
+        }
+
+        public string Hopping_EM//6
+        {//Halloween 17
+            get
+            {
+                //else
+                {
+                    return EN.Hopping_EM;
+                }
+            }
+        }
+
+        public string Snowman_EM//7
+        {//Winter 16
+            get
+            {
+                //else
+                {
+                    return EN.Snowman_EM;
+                }
+            }
+        }
+
+        public string So_excited_EM//8
+        {//Rooster 17
+            get
+            {
+                //else
+                {
+                    return EN.So_excited_EM;
+                }
+            }
+        }
+
+        public string Sunny_Dance_EM//9
+        {//Annyver 17
+            get
+            {
+                //else
+                {
+                    return EN.Sunny_Dance_EM;
+                }
+            }
+        }
     }
 }

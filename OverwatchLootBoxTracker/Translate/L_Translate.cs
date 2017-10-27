@@ -82,7 +82,7 @@ namespace OverwatchLootBoxTracker.Translate
                 //}
                 //else
                 {
-                    return "© 2017 SpielefreakJ | OWLootboxTracker Version: 0.1.0.8 Alpha | Overwatch Version: 1.16.0.2B";
+                    return "© 2017 SpielefreakJ | OWLootboxTracker Version: 0.1.1.0 Alpha | Overwatch Version: 1.16.0.2B";
                 }
             }
         }
@@ -150,6 +150,36 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Back;
+                }
+            }
+        }
+
+        public string DeleteSaves
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.DeleteSaves;
+                }
+                else
+                {
+                    return EN.DeleteSaves;
+                }
+            }
+        }
+
+        public string DeleteSavesS
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.DeleteSavesS;
+                }
+                else
+                {
+                    return EN.DeleteSavesS;
                 }
             }
         }

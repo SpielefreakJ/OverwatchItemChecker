@@ -194,14 +194,12 @@
             // 
             // btnEmotes
             // 
-            this.btnEmotes.Enabled = false;
             this.btnEmotes.Location = new System.Drawing.Point(16, 110);
             this.btnEmotes.Name = "btnEmotes";
             this.btnEmotes.Size = new System.Drawing.Size(100, 75);
             this.btnEmotes.TabIndex = 4;
             this.btnEmotes.Text = "btnEmotes";
             this.btnEmotes.UseVisualStyleBackColor = true;
-            this.btnEmotes.Visible = false;
             this.btnEmotes.Click += new System.EventHandler(this.btnEmotes_Click);
             // 
             // btnVictoryPoses

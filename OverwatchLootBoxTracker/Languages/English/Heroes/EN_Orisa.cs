@@ -112,5 +112,53 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 
 
         //Emotes
+        //Epic
+        public string Cheer_EM
+        {
+            get
+            {
+                return "Cheer";
+            }
+        }
+
+        public string Halt_EM
+        {
+            get
+            {
+                return "Halt!";
+            }
+        }
+
+        public string Kicking_Dirt_EM
+        {
+            get
+            {
+                return "Kicking Dirt";
+            }
+        }
+
+        public string Laugh_EM
+        {
+            get
+            {
+                return "Laugh";
+            }
+        }
+
+        public string Sit_EM
+        {
+            get
+            {
+                return "Sit";
+            }
+        }
+
+        public string Dance_EM
+        {//Annyver 17
+            get
+            {
+                return "Dance";
+            }
+        }
     }
 }

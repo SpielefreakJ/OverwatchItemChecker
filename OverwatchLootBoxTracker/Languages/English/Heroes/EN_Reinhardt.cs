@@ -144,5 +144,61 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 
 
         //Emotes
+        //Epic
+        public string Flex_EM
+        {
+            get
+            {
+                return "Flex";
+            }
+        }
+
+        public string Knee_EM
+        {
+            get
+            {
+                return "Knee";
+            }
+        }
+
+        public string Taunt_EM
+        {
+            get
+            {
+                return "Taunt";
+            }
+        }
+
+        public string Uproarious_EM
+        {
+            get
+            {
+                return "Uproarious";
+            }
+        }
+
+        public string Warriors_Salute_EM
+        {
+            get
+            {
+                return "Warrior's Salute";
+            }
+        }
+
+        public string Punpkin_Smash_EM
+        {//Halloween 16
+            get
+            {
+                return "Pumpkin smash";
+            }
+        }
+
+        public string Sweethardt_EM
+        {//Annyver 17
+            get
+            {
+                return "Sweedhardt";
+            }
+        }
     }
 }

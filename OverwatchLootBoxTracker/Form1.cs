@@ -21,6 +21,7 @@ namespace OverwatchLootBoxTracker
         IniStream inisSettings = null;
         IniStream inisHeroes = null;
         IniStream inisPI = null;
+        CIniCreator inic;
         CCost Cost;
         Translate.L_Translate Lang;
         Translate.L_Ana Ana;
@@ -48,7 +49,8 @@ namespace OverwatchLootBoxTracker
         Translate.L_Winston Winston;
         Translate.L_Zarya Zarya;
         Translate.L_Zenyatta Zenyatta;
-        string Language;
+        string Language = "EN";
+        int newSave = 0;
         int gBAllWeited3, gBAllWeited3p1, gBAllWeited3p2;
         int gBAllWeited4, gBAllWeited4p1, gBAllWeited4p2, gBAllWeited4p3;
         int gBAllWeited5, gBAllWeited5p1, gBAllWeited5p2, gBAllWeited5p3, gBAllWeited5p4;
@@ -67,9 +69,39 @@ namespace OverwatchLootBoxTracker
             //Erstellen des Verzeichnisses "OWItemTracker" in C:\\User\[Username]\AppData\Local
             appdata += "\\OWItemTracker";
             Directory.CreateDirectory(appdata);
+            inic = new CIniCreator(appdata);
 
             //Auslesen der "Settings.ini" Datei und speichern in IniStream inisSettings
             inisSettings = new IniStream(appdata + "\\Settings.ini");
+
+            //Absicherung, damit alle die die alten saves benutzt haben auch neue anlegen und alle, die das programm zum ersten mal starten diese nachricht nicht bekommen.
+            try
+            {
+                if (""==inisSettings.Read("NewStart")&&""==inisSettings.Read("Lang"))
+                {
+                    inisSettings.Write("NewStart", "1");
+                    inisSettings.Write("NewSave", "true");
+                }
+                if (true == Convert.ToBoolean(inisSettings.Read("NewSave"))&&"1"==inisSettings.Read("NewStart"))
+                { }
+
+            }
+            catch
+            {
+                DialogResult result = MessageBox.Show(Lang.DeleteSaves, "Warning!", MessageBoxButtons.OKCancel, MessageBoxIcon.Warning);
+
+                if (result == DialogResult.Cancel)
+                {
+                    this.Close();
+                }
+                if (result == DialogResult.OK)
+                {
+                    Directory.Delete(appdata, true);
+                    Directory.CreateDirectory(appdata);
+                    newSave = 1;
+                    MessageBox.Show(Lang.DeleteSavesS, "Deleting...", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                }
+            }
 
             // Handle the ApplicationExit event to know when the application is exiting.
             Application.ApplicationExit += new EventHandler(this.OnApplicationExit);
@@ -86,8 +118,17 @@ namespace OverwatchLootBoxTracker
 
         private void IniSave()
         {
-            //Speichern der änderrung unter "Color" in der Settings.ini
+            Directory.CreateDirectory(appdata);
+            //Speichern der änderrung unter "Lang" in der Settings.ini
+            if (Language == "")
+            {
+                Language = "EN";
+            }
             inisSettings.Write("Lang", Language);
+            if (newSave == 1)
+            {
+                inisSettings.Write("NewSave", "true");
+            }
         }
 
         private void IniRead()
@@ -509,7 +550,7 @@ namespace OverwatchLootBoxTracker
         private void btnWelcomeClose_Click(object sender, EventArgs e)
         {
             gBWelcome.Visible = false;
-            btnMoreCost.Visible = true;//Da der Button sonst sichtbar und klickbar ist :/
+            //btnMoreCost.Visible = true;//Da der Button sonst sichtbar und klickbar ist :/
         }
 
         //Für hier benötigte Variablen
@@ -602,8 +643,14 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        private void btnHeroeinvisible()
+        private void btnHeroeinvisible(string H, int SK, int EM)
         {
+            if (inisSettings.Read(H) != "Y")
+            {
+                inic.Heroe(H, SK, EM);
+                inisSettings.Write(H, "Y");
+            }
+
             btnAna.Visible = false;
             btnBastion.Visible = false;
             btnDVa.Visible = false;
@@ -638,7 +685,7 @@ namespace OverwatchLootBoxTracker
 
         private void btnAna_Click(object sender, EventArgs e)
         {
-            btnHeroeinvisible();
+            btnHeroeinvisible("Ana", 13, 8);
             gbAll.Text += " / " + Ana.Name;
 
             inisHeroes = new IniStream(appdata + "\\Ana.ini");
@@ -675,101 +722,48 @@ namespace OverwatchLootBoxTracker
                 chB12.BackColor = Color.Gold; chB12.Text = Ana.Horus_SK + " (" + Cost.Legendary + ")";
                 chB13.BackColor = Color.Gold; chB13.Text = Ana.Corsair_SK + " (" + Cost.LegendaryEvent + ")";//Halloween 17
 
-                if (inisHeroes.Read("SK01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("SK02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("SK03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("SK04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("SK05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("SK06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("SK07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("SK08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("SK09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("SK10") == "1")
-                {
-                    chB10.Checked = true;
-                }
-                if (inisHeroes.Read("SK11") == "1")
-                {
-                    chB11.Checked = true;
-                }
-                if (inisHeroes.Read("SK12") == "1")
-                {
-                    chB12.Checked = true;
-                }
-                if (inisHeroes.Read("SK13") == "1")
-                {
-                    chB13.Checked = true;
-                }
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("SK11"));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("SK12"));
+                chB13.Checked = Convert.ToBoolean(inisHeroes.Read("SK13"));
             }
             if (BackSave == Lang.Emotes)
             {
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1); chB01.Text = Ana.Not_Impressed_EM + " (" + Cost.Epic + ")";//Epic
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2); chB02.Text = Ana.Disapproving_EM + " (" + Cost.Epic + ")";
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3); chB03.Text = Ana.Protector_EM + " (" + Cost.Epic + ")";
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p4); chB04.Text = Ana.Take_A_Knee_EM + " (" + Cost.Epic + ")";
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1); chB05.Text = Ana.Tea_Time_EM + " (" + Cost.Epic + ")";
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2); chB06.Text = Ana.Beach_Ball_EM + " (" + Cost.EpicEvent + ")";//Summer 17
-                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3); chB07.Text = Ana.Candy_EM + " (" + Cost.Epic + ")";//Halloween 16
-                chB08.Visible = true; chB08.Location = new Point(gBAllWeited3p2, p4); chB08.Text = Ana.Dance_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
-                if (inisHeroes.Read("EM01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("EM02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("EM03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("EM04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("EM05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("EM06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("EM07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("EM08") == "1")
-                {
-                    chB08.Checked = true;
-                }
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p4);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3);
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited3p2, p4);
+
+                chB01.BackColor = Color.DarkViolet; chB01.Text = Ana.Not_Impressed_EM + " (" + Cost.Epic + ")";//Epic
+                chB02.BackColor = Color.DarkViolet; chB02.Text = Ana.Disapproving_EM + " (" + Cost.Epic + ")";
+                chB03.BackColor = Color.DarkViolet; chB03.Text = Ana.Protector_EM + " (" + Cost.Epic + ")";
+                chB04.BackColor = Color.DarkViolet; chB04.Text = Ana.Take_A_Knee_EM + " (" + Cost.Epic + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Ana.Tea_Time_EM + " (" + Cost.Epic + ")";
+                chB06.BackColor = Color.DarkViolet; chB06.Text = Ana.Beach_Ball_EM + " (" + Cost.EpicEvent + ")";//Summer 17
+                chB07.BackColor = Color.DarkViolet; chB07.Text = Ana.Candy_EM + " (" + Cost.Epic + ")";//Halloween 16
+                chB08.BackColor = Color.DarkViolet; chB08.Text = Ana.Dance_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("EM05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("EM06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("EM07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("EM08"));
             }
             if (BackSave == Lang.VictoryPoses)
             {
@@ -1140,7 +1134,7 @@ namespace OverwatchLootBoxTracker
 
         private void btnBastion_Click(object sender, EventArgs e)
         {
-            btnHeroeinvisible();
+            btnHeroeinvisible("Bastion", 16, 7);
             gbAll.Text += " / " + Bastion.Name;
 
             inisHeroes = new IniStream(appdata + "\\Bastion.ini");
@@ -1183,70 +1177,23 @@ namespace OverwatchLootBoxTracker
                 chB15.BackColor = Color.Gold; chB15.Text = Bastion.Overgrown_SK + " (" + Lang.OriginGotY + ")";//Origin
                 chB16.BackColor = Color.Gold; chB16.Text = Bastion.Dune_Buggy_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
 
-                if (inisHeroes.Read("SK01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("SK02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("SK03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("SK04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("SK05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("SK06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("SK07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("SK08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("SK09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("SK10") == "1")
-                {
-                    chB10.Checked = true;
-                }
-                if (inisHeroes.Read("SK11") == "1")
-                {
-                    chB11.Checked = true;
-                }
-                if (inisHeroes.Read("SK12") == "1")
-                {
-                    chB12.Checked = true;
-                }
-                if (inisHeroes.Read("SK13") == "1")
-                {
-                    chB13.Checked = true;
-                }
-                if (inisHeroes.Read("SK14") == "1")
-                {
-                    chB14.Checked = true;
-                }
-                if (inisHeroes.Read("SK15") == "1")
-                {
-                    chB15.Checked = true;
-                }
-                if (inisHeroes.Read("SK16") == "1")
-                {
-                    chB16.Checked = true;
-                }
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("SK11"));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("SK12"));
+                chB13.Checked = Convert.ToBoolean(inisHeroes.Read("SK13"));
+                chB14.Checked = Convert.ToBoolean(inisHeroes.Read("SK14"));
+                chB15.Checked = Convert.ToBoolean(inisHeroes.Read("SK15"));
+                chB16.Checked = Convert.ToBoolean(inisHeroes.Read("SK16"));
+
             }
             if (BackSave == Lang.Emotes)
             {
@@ -1257,34 +1204,14 @@ namespace OverwatchLootBoxTracker
                 chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1); chB05.Text = Bastion.Robot_EM + " (" + Cost.Epic + ")";
                 chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2); chB06.Text = Bastion.Boxing_EM + " (" + Cost.Epic + ")";//Summer 16
                 chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3); chB07.Text = Bastion.Robo_Boogie_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
-                if (inisHeroes.Read("EM01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("EM02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("EM03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("EM04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("EM05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("EM06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("EM07") == "1")
-                {
-                    chB07.Checked = true;
-                }
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("EM05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("EM06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("EM07"));
             }
             if (BackSave == Lang.VictoryPoses)
             {
@@ -1431,10 +1358,10 @@ namespace OverwatchLootBoxTracker
 
         private void btnDVa_Click(object sender, EventArgs e)
         {
-            btnHeroeinvisible();
+            btnHeroeinvisible("D.Va", 14, 7);
             gbAll.Text += " / " + DVa.Name;
 
-            inisHeroes = new IniStream(appdata + "\\DVa.ini");
+            inisHeroes = new IniStream(appdata + "\\D.Va.ini");
             Heroe = "H";
 
             //Anzeigen, Auslesen und anwenden der chB
@@ -1470,68 +1397,53 @@ namespace OverwatchLootBoxTracker
                 chB13.BackColor = Color.Gold; chB13.Text = DVa.Palanquin_SK + " (" + Cost.LegendaryEvent + ")";//Rooster 17
                 chB14.BackColor = Color.Gold; chB14.Text = DVa.Cruiser_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
 
-                if (inisHeroes.Read("SK01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("SK02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("SK03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("SK04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("SK05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("SK06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("SK07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("SK08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("SK09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("SK10") == "1")
-                {
-                    chB10.Checked = true;
-                }
-                if (inisHeroes.Read("SK11") == "1")
-                {
-                    chB11.Checked = true;
-                }
-                if (inisHeroes.Read("SK12") == "1")
-                {
-                    chB12.Checked = true;
-                }
-                if (inisHeroes.Read("SK13") == "1")
-                {
-                    chB13.Checked = true;
-                }
-                if (inisHeroes.Read("SK14") == "1")
-                {
-                    chB14.Checked = true;
-                }
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("SK11"));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("SK12"));
+                chB13.Checked = Convert.ToBoolean(inisHeroes.Read("SK13"));
+                chB14.Checked = Convert.ToBoolean(inisHeroes.Read("SK14"));
+
+            }
+            if (BackSave == Lang.Emotes)
+            {
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p4);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3);
+
+                chB01.BackColor = Color.DarkViolet; chB01.Text = DVa._O__EM + " (" + Cost.Epic + ")";//Epic
+                chB02.BackColor = Color.DarkViolet; chB02.Text = DVa.Bunny_Hop_EM + " (" + Cost.Epic + ")";
+                chB03.BackColor = Color.DarkViolet; chB03.Text = DVa.Heartbreaker_EM + " (" + Cost.Epic + ")";
+                chB04.BackColor = Color.DarkViolet; chB04.Text = DVa.Party_Time_EM + " (" + Cost.Epic + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = DVa.Bow_EM + " (" + Cost.EpicEvent + ")";//Rooster 17
+                chB06.BackColor = Color.DarkViolet; chB06.Text = DVa.Dance_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+                chB07.BackColor = Color.Gold; chB07.Text = DVa.Game_On_EM + " (" + Cost.Legendary + ")";//Legendary
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("EM05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("EM06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("EM07"));
             }
         }
 
         private void btnDoomfist_Click(object sender, EventArgs e)
         {
-            btnHeroeinvisible();
+            btnHeroeinvisible("Doomfist", 10, 5);
             gbAll.Text += " / " + Doomfist.Name;
 
             inisHeroes = new IniStream(appdata + "\\Doomfist.ini");
@@ -1562,52 +1474,42 @@ namespace OverwatchLootBoxTracker
                 chB09.BackColor = Color.Gold; chB09.Text = Doomfist.Avatar_SK + " (" + Cost.Legendary + ")";
                 chB10.BackColor = Color.Gold; chB10.Text = Doomfist.Spirit_SK + " (" + Cost.Legendary + ")";
 
-                if (inisHeroes.Read("SK01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("SK02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("SK03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("SK04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("SK05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("SK06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("SK07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("SK08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("SK09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("SK10") == "1")
-                {
-                    chB10.Checked = true;
-                }
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
+            }
+            if (BackSave == Lang.Emotes)
+            {
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
+
+                chB01.BackColor = Color.DarkViolet; chB01.Text = Doomfist.Fake_Out_EM + " (" + Cost.Epic + ")";//Epic
+                chB02.BackColor = Color.DarkViolet; chB02.Text = Doomfist.Intimidate_EM + " (" + Cost.Epic + ")";
+                chB03.BackColor = Color.DarkViolet; chB03.Text = Doomfist.Ready_for_Battle_EM + " (" + Cost.Epic + ")";
+                chB04.BackColor = Color.DarkViolet; chB04.Text = Doomfist.Take_a_knee_EM + " (" + Cost.Epic + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Doomfist.Thumbs_Down_EM + " (" + Cost.Epic + ")";
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("EM05"));
             }
         }
 
         private void btnGeji_Click(object sender, EventArgs e)
         {
-            btnHeroeinvisible();
+            btnHeroeinvisible("Genji", 14, 6);
             gbAll.Text += " / " + Genji.Name;
 
             inisHeroes = new IniStream(appdata + "\\Genji.ini");
@@ -1631,11 +1533,11 @@ namespace OverwatchLootBoxTracker
                 chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p6);
                 chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p7);
 
-                chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Genji.Azurite_SK + " (" + Cost.Rare + ")";//Common
+                chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Genji.Azurite_SK + " (" + Cost.Rare + ")";//Rare
                 chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Genji.Cinnabar_SK + " (" + Cost.Rare + ")";
                 chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Genji.Malachite_SK + " (" + Cost.Rare + ")";
                 chB04.BackColor = Color.DeepSkyBlue; chB04.Text = Genji.Ochre_SK + " (" + Cost.Rare + ")";
-                chB05.BackColor = Color.DarkViolet; chB05.Text = Genji.Carbon_Fiber_SK + " (" + Cost.Epic + ")";//Rare
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Genji.Carbon_Fiber_SK + " (" + Cost.Epic + ")";//Epic
                 chB06.BackColor = Color.DarkViolet; chB06.Text = Genji.Chrome_SK + " (" + Cost.Epic + ")";
                 chB07.BackColor = Color.DarkViolet; chB07.Text = Genji.Nihon_SK + " (" + Cost.Epic + ")";//Summer 16
                 chB08.BackColor = Color.Gold; chB08.Text = Genji.Sparrow_SK + " (" + Cost.Legendary + ")";//Legendary
@@ -1646,68 +1548,49 @@ namespace OverwatchLootBoxTracker
                 chB13.BackColor = Color.Gold; chB13.Text = Genji.Blackwatch_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
                 chB14.BackColor = Color.Gold; chB14.Text = Genji.Sentai_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
 
-                if (inisHeroes.Read("SK01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("SK02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("SK03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("SK04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("SK05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("SK06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("SK07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("SK08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("SK09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("SK10") == "1")
-                {
-                    chB10.Checked = true;
-                }
-                if (inisHeroes.Read("SK11") == "1")
-                {
-                    chB11.Checked = true;
-                }
-                if (inisHeroes.Read("SK12") == "1")
-                {
-                    chB12.Checked = true;
-                }
-                if (inisHeroes.Read("SK13") == "1")
-                {
-                    chB13.Checked = true;
-                }
-                if (inisHeroes.Read("SK14") == "1")
-                {
-                    chB14.Checked = true;
-                }
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("SK11"));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("SK12"));
+                chB13.Checked = Convert.ToBoolean(inisHeroes.Read("SK13"));
+                chB14.Checked = Convert.ToBoolean(inisHeroes.Read("SK14"));
+            }
+            if (BackSave == Lang.Emotes)
+            {
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3);
+
+                chB01.BackColor = Color.DarkViolet; chB01.Text = Genji.Amusing_EM + " (" + Cost.Epic + ")";//Rare
+                chB02.BackColor = Color.DarkViolet; chB02.Text = Genji.Challenge_EM + " (" + Cost.Epic + ")";
+                chB03.BackColor = Color.DarkViolet; chB03.Text = Genji.Cutting_Edge_EM + " (" + Cost.Epic + ")";
+                chB04.BackColor = Color.DarkViolet; chB04.Text = Genji.Meditate_EM + " (" + Cost.Epic + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Genji.Salute_EM + " (" + Cost.Epic + ")";
+                chB06.BackColor = Color.DarkViolet; chB06.Text = Genji.Dance_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("EM05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("EM06"));
             }
         }
 
         private void btnHanzo_Click(object sender, EventArgs e)
         {
-            btnHeroeinvisible();
+            btnHeroeinvisible("Hanzo", 12, 7);
             gbAll.Text += " / " + Hanzo.Name;
 
             inisHeroes = new IniStream(appdata + "\\Hanzo.ini");
@@ -1742,60 +1625,50 @@ namespace OverwatchLootBoxTracker
                 chB11.BackColor = Color.Gold; chB11.Text = Hanzo.Okami_SK + " (" + Cost.Legendary + ")";
                 chB12.BackColor = Color.Gold; chB12.Text = Hanzo.Cyberninja_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
 
-                if (inisHeroes.Read("SK01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("SK02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("SK03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("SK04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("SK05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("SK06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("SK07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("SK08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("SK09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("SK10") == "1")
-                {
-                    chB10.Checked = true;
-                }
-                if (inisHeroes.Read("SK11") == "1")
-                {
-                    chB11.Checked = true;
-                }
-                if (inisHeroes.Read("SK12") == "1")
-                {
-                    chB12.Checked = true;
-                }
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("SK11"));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("SK12"));
+            }
+            if (BackSave == Lang.Emotes)
+            {
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p4);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3);
+
+                chB01.BackColor = Color.DarkViolet; chB01.Text = Hanzo.Beckon_EM + " (" + Cost.Epic + ")";//Epic
+                chB02.BackColor = Color.DarkViolet; chB02.Text = Hanzo.Brush_Shoulder_EM + " (" + Cost.Epic + ")";
+                chB03.BackColor = Color.DarkViolet; chB03.Text = Hanzo.Chuckle_EM + " (" + Cost.Epic + ")";
+                chB04.BackColor = Color.DarkViolet; chB04.Text = Hanzo.Meditate_EM + " (" + Cost.Epic + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Hanzo.Victory_EM + " (" + Cost.Epic + ")";
+                chB06.BackColor = Color.DarkViolet; chB06.Text = Hanzo.Training_EM + " (" + Cost.EpicEvent + ")";//Uprising 17
+                chB07.BackColor = Color.DarkViolet; chB07.Text = Hanzo.Fisherman_Dance_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("EM05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("EM06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("EM07"));
             }
         }
 
         private void btnJunkrat_Click(object sender, EventArgs e)
         {
-            btnHeroeinvisible();
+            btnHeroeinvisible("Junkrat", 13, 7);
             gbAll.Text += " / " + Junkrat.Name;
 
             inisHeroes = new IniStream(appdata + "\\Junkrat.ini");
@@ -1832,67 +1705,54 @@ namespace OverwatchLootBoxTracker
                 chB12.BackColor = Color.Gold; chB12.Text = Junkrat.Dr_Junkenstein_SK + " (" + Cost.Legendary + ")";//Halloween 16
                 chB13.BackColor = Color.Gold; chB13.Text = Junkrat.Cricket_SK + " (" + Cost.LegendaryEvent + ")";//Summer 17
 
-                if (inisHeroes.Read("SK01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("SK02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("SK03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("SK04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("SK05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("SK06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("SK07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("SK08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("SK09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("SK10") == "1")
-                {
-                    chB10.Checked = true;
-                }
-                if (inisHeroes.Read("SK11") == "1")
-                {
-                    chB11.Checked = true;
-                }
-                if (inisHeroes.Read("SK12") == "1")
-                {
-                    chB12.Checked = true;
-                }
-                if (inisHeroes.Read("SK13") == "1")
-                {
-                    chB13.Checked = true;
-                }
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("SK11"));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("SK12"));
+                chB13.Checked = Convert.ToBoolean(inisHeroes.Read("SK13"));
+            }
+            if (BackSave == Lang.Emotes)
+            {
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p4);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3);
+
+                chB01.BackColor = Color.DarkViolet; chB01.Text = Junkrat.Cant_Deal_EM + " (" + Cost.Epic + ")";//Epic
+                chB02.BackColor = Color.DarkViolet; chB02.Text = Junkrat.Juggling_EM + " (" + Cost.Epic + ")";
+                chB03.BackColor = Color.DarkViolet; chB03.Text = Junkrat.Lounging_EM + " (" + Cost.Epic + ")";
+                chB04.BackColor = Color.DarkViolet; chB04.Text = Junkrat.Puppet_EM + " (" + Cost.Epic + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Junkrat.Vaudeville_EM + " (" + Cost.Epic + ")";
+                chB06.BackColor = Color.DarkViolet; chB06.Text = Junkrat.Dud_EM + " (" + Cost.EpicEvent + ")";//Uprising 17
+                chB07.BackColor = Color.DarkViolet; chB07.Text = Junkrat.Running_Rat_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("EM05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("EM06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("EM07"));
             }
         }
 
         private void btnLúcio_Click(object sender, EventArgs e)
         {
-            btnHeroeinvisible();
+            btnHeroeinvisible("Lúcio", 17, 7);
             gbAll.Text += " / " + Lúcio.Name;
 
-            inisHeroes = new IniStream(appdata + "\\Lucio.ini");
+            inisHeroes = new IniStream(appdata + "\\Lúcio.ini");
             Heroe = "H";
 
             //Anzeigen, Auslesen und anwenden der chB
@@ -1928,68 +1788,55 @@ namespace OverwatchLootBoxTracker
                 chB13.BackColor = Color.Gold; chB13.Text = Lúcio.Striker_SK + " (" + Cost.Legendary + ")";//Summer 16
                 chB14.BackColor = Color.Gold; chB14.Text = Lúcio.Jazzy_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
 
-                if (inisHeroes.Read("SK01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("SK02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("SK03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("SK04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("SK05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("SK06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("SK07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("SK08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("SK09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("SK10") == "1")
-                {
-                    chB10.Checked = true;
-                }
-                if (inisHeroes.Read("SK11") == "1")
-                {
-                    chB11.Checked = true;
-                }
-                if (inisHeroes.Read("SK12") == "1")
-                {
-                    chB12.Checked = true;
-                }
-                if (inisHeroes.Read("SK13") == "1")
-                {
-                    chB13.Checked = true;
-                }
-                if (inisHeroes.Read("SK14") == "1")
-                {
-                    chB14.Checked = true;
-                }
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("SK11"));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("SK12"));
+                chB13.Checked = Convert.ToBoolean(inisHeroes.Read("SK13"));
+                chB14.Checked = Convert.ToBoolean(inisHeroes.Read("SK14"));
+                chB15.Checked = Convert.ToBoolean(inisHeroes.Read("SK15"));
+                chB16.Checked = Convert.ToBoolean(inisHeroes.Read("SK16"));
+                chB17.Checked = Convert.ToBoolean(inisHeroes.Read("SK17"));
+            }
+            if (BackSave == Lang.Emotes)
+            {
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p4);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3);
+
+                chB01.BackColor = Color.DarkViolet; chB01.Text = Lúcio.Capoeira_EM + " (" + Cost.Epic + ")";//Epic
+                chB02.BackColor = Color.DarkViolet; chB02.Text = Lúcio.Chilling_EM + " (" + Cost.Epic + ")";
+                chB03.BackColor = Color.DarkViolet; chB03.Text = Lúcio.In_the_Groove_EM + " (" + Cost.Epic + ")";
+                chB04.BackColor = Color.DarkViolet; chB04.Text = Lúcio.Knee_Slapper_EM + " (" + Cost.Epic + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Lúcio.Nah_EM + " (" + Cost.Epic + ")";
+                chB06.BackColor = Color.DarkViolet; chB06.Text = Lúcio.Juggle_EM + " (" + Cost.Epic + ")";//Summer 16
+                chB07.BackColor = Color.DarkViolet; chB07.Text = Lúcio.Smooth_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("EM05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("EM06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("EM07"));
             }
         }
 
         private void btnMcCree_Click(object sender, EventArgs e)
         {
-            btnHeroeinvisible();
+            btnHeroeinvisible("McCree", 15, 7);
             gbAll.Text += " / " + McCree.Name;
 
             inisHeroes = new IniStream(appdata + "\\McCree.ini");
@@ -2030,72 +1877,53 @@ namespace OverwatchLootBoxTracker
                 chB14.BackColor = Color.Gold; chB14.Text = McCree.Van_Helsing_SK + " (" + Cost.LegendaryEvent + ")";//Halloween 17
                 chB15.BackColor = Color.Gold; chB15.Text = McCree.Blackwatch_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
 
-                if (inisHeroes.Read("SK01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("SK02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("SK03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("SK04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("SK05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("SK06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("SK07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("SK08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("SK09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("SK10") == "1")
-                {
-                    chB10.Checked = true;
-                }
-                if (inisHeroes.Read("SK11") == "1")
-                {
-                    chB11.Checked = true;
-                }
-                if (inisHeroes.Read("SK12") == "1")
-                {
-                    chB12.Checked = true;
-                }
-                if (inisHeroes.Read("SK13") == "1")
-                {
-                    chB13.Checked = true;
-                }
-                if (inisHeroes.Read("SK14") == "1")
-                {
-                    chB14.Checked = true;
-                }
-                if (inisHeroes.Read("SK15") == "1")
-                {
-                    chB15.Checked = true;
-                }
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("SK11"));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("SK12"));
+                chB13.Checked = Convert.ToBoolean(inisHeroes.Read("SK13"));
+                chB14.Checked = Convert.ToBoolean(inisHeroes.Read("SK14"));
+                chB15.Checked = Convert.ToBoolean(inisHeroes.Read("SK15"));
+            }
+            if (BackSave == Lang.Emotes)
+            {
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p4);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3);
+
+                chB01.BackColor = Color.DarkViolet; chB01.Text = McCree.Gunspinning_EM + " (" + Cost.Epic + ")";//Epic
+                chB02.BackColor = Color.DarkViolet; chB02.Text = McCree.Hat_Tip_EM + " (" + Cost.Epic + ")";
+                chB03.BackColor = Color.DarkViolet; chB03.Text = McCree.Joker_EM + " (" + Cost.Epic + ")";
+                chB04.BackColor = Color.DarkViolet; chB04.Text = McCree.Spit_EM + " (" + Cost.Epic + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = McCree.Take_a_load_off_EM + " (" + Cost.Epic + ")";
+                chB06.BackColor = Color.DarkViolet; chB06.Text = McCree.Hat_Trick_EM + " (" + Cost.Epic + ")";//Winter 16
+                chB07.BackColor = Color.DarkViolet; chB07.Text = McCree.Line_Dance_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("EM05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("EM06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("EM07"));
             }
         }
 
         private void btnMei_Click(object sender, EventArgs e)
         {
-            btnHeroeinvisible();
+            btnHeroeinvisible("Mei", 15, 9);
             gbAll.Text += " / " + Mei.Name;
 
             inisHeroes = new IniStream(appdata + "\\Mei.ini");
@@ -2136,72 +1964,59 @@ namespace OverwatchLootBoxTracker
                 chB14.BackColor = Color.Gold; chB14.Text = Mei.Luna_SK + " (" + Cost.LegendaryEvent + ")";//Rooster 17
                 chB15.BackColor = Color.Gold; chB15.Text = Mei.Beekeeper_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
 
-                if (inisHeroes.Read("SK01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("SK02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("SK03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("SK04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("SK05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("SK06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("SK07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("SK08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("SK09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("SK10") == "1")
-                {
-                    chB10.Checked = true;
-                }
-                if (inisHeroes.Read("SK11") == "1")
-                {
-                    chB11.Checked = true;
-                }
-                if (inisHeroes.Read("SK12") == "1")
-                {
-                    chB12.Checked = true;
-                }
-                if (inisHeroes.Read("SK13") == "1")
-                {
-                    chB13.Checked = true;
-                }
-                if (inisHeroes.Read("SK14") == "1")
-                {
-                    chB14.Checked = true;
-                }
-                if (inisHeroes.Read("SK15") == "1")
-                {
-                    chB15.Checked = true;
-                }
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("SK11"));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("SK12"));
+                chB13.Checked = Convert.ToBoolean(inisHeroes.Read("SK13"));
+                chB14.Checked = Convert.ToBoolean(inisHeroes.Read("SK14"));
+                chB15.Checked = Convert.ToBoolean(inisHeroes.Read("SK15"));
+            }
+            if (BackSave == Lang.Emotes)
+            {
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p4);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p1, p5);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p1);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p2);
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited3p2, p3);
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited3p2, p4);
+
+                chB01.BackColor = Color.DarkViolet; chB01.Text = Mei.Companion_EM + " (" + Cost.Epic + ")";//Epic
+                chB02.BackColor = Color.DarkViolet; chB02.Text = Mei.Gigle_EM + " (" + Cost.Epic + ")";
+                chB03.BackColor = Color.DarkViolet; chB03.Text = Mei.Kneel_EM + " (" + Cost.Epic + ")";
+                chB04.BackColor = Color.DarkViolet; chB04.Text = Mei.Spray_EM + " (" + Cost.Epic + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Mei.Yaaaaaaaaay_EM + " (" + Cost.Epic + ")";
+                chB06.BackColor = Color.DarkViolet; chB06.Text = Mei.Hopping_EM + " (" + Cost.EpicEvent + ")";//Halloween 17
+                chB07.BackColor = Color.DarkViolet; chB07.Text = Mei.Snowman_EM + " (" + Cost.EpicEvent + ")";//Winter 16
+                chB08.BackColor = Color.DarkViolet; chB08.Text = Mei.So_excited_EM + " (" + Cost.EpicEvent + ")";//Rooster 17
+                chB09.BackColor = Color.DarkViolet; chB09.Text = Mei.Sunny_Dance_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("EM05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("EM06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("EM07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("EM08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("EM09"));
             }
         }
 
         private void btnMercy_Click(object sender, EventArgs e)
         {
-            btnHeroeinvisible();
+            btnHeroeinvisible("Mercy", 15, 6);
             gbAll.Text += " / " + Mercy.Name;
 
             inisHeroes = new IniStream(appdata + "\\Mercy.ini");
@@ -2242,72 +2057,50 @@ namespace OverwatchLootBoxTracker
                 chB14.BackColor = Color.Gold; chB14.Text = Mercy.Witch_SK + " (" + Cost.Legendary + ")";//Halloween 16
                 chB15.BackColor = Color.Gold; chB15.Text = Mercy.Combat_Medic_Ziegler_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
 
-                if (inisHeroes.Read("SK01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("SK02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("SK03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("SK04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("SK05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("SK06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("SK07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("SK08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("SK09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("SK10") == "1")
-                {
-                    chB10.Checked = true;
-                }
-                if (inisHeroes.Read("SK11") == "1")
-                {
-                    chB11.Checked = true;
-                }
-                if (inisHeroes.Read("SK12") == "1")
-                {
-                    chB12.Checked = true;
-                }
-                if (inisHeroes.Read("SK13") == "1")
-                {
-                    chB13.Checked = true;
-                }
-                if (inisHeroes.Read("SK14") == "1")
-                {
-                    chB14.Checked = true;
-                }
-                if (inisHeroes.Read("SK15") == "1")
-                {
-                    chB15.Checked = true;
-                }
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("SK11"));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("SK12"));
+                chB13.Checked = Convert.ToBoolean(inisHeroes.Read("SK13"));
+                chB14.Checked = Convert.ToBoolean(inisHeroes.Read("SK14"));
+                chB15.Checked = Convert.ToBoolean(inisHeroes.Read("SK15"));
+            }
+            if (BackSave == Lang.Emotes)
+            {
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3);
+
+                chB01.BackColor = Color.DarkViolet; chB01.Text = Mercy.Applause_EM + " (" + Cost.Epic + ")";//Epic
+                chB02.BackColor = Color.DarkViolet; chB02.Text = Mercy.Caduceus_EM + " (" + Cost.Epic + ")";
+                chB03.BackColor = Color.DarkViolet; chB03.Text = Mercy.No_Pulse_EM + " (" + Cost.Epic + ")";
+                chB04.BackColor = Color.DarkViolet; chB04.Text = Mercy.Relax_EM + " (" + Cost.Epic + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Mercy.The_best_Medicine_EM + " (" + Cost.Epic + ")";
+                chB06.BackColor = Color.DarkViolet; chB06.Text = Mercy.Hustle_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("EM05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("EM06"));
             }
         }
 
         private void btnOrisa_Click(object sender, EventArgs e)
         {
-            btnHeroeinvisible();
+            btnHeroeinvisible("Orisa", 11, 6);
             gbAll.Text += " / " + Orisa.Name;
 
             inisHeroes = new IniStream(appdata + "\\Orisa.ini");
@@ -2340,56 +2133,46 @@ namespace OverwatchLootBoxTracker
                 chB10.BackColor = Color.Gold; chB10.Text = Orisa.Protector_SK + " (" + Cost.Legendary + ")";
                 chB11.BackColor = Color.Gold; chB11.Text = Orisa.Null_Sector_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
 
-                if (inisHeroes.Read("SK01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("SK02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("SK03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("SK04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("SK05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("SK06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("SK07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("SK08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("SK09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("SK10") == "1")
-                {
-                    chB10.Checked = true;
-                }
-                if (inisHeroes.Read("SK11") == "1")
-                {
-                    chB11.Checked = true;
-                }
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("SK11"));
+            }
+            if (BackSave == Lang.Emotes)
+            {
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3);
+
+                chB01.BackColor = Color.DarkViolet; chB01.Text = Orisa.Cheer_EM + " (" + Cost.Epic + ")";//Epic
+                chB02.BackColor = Color.DarkViolet; chB02.Text = Orisa.Halt_EM + " (" + Cost.Epic + ")";
+                chB03.BackColor = Color.DarkViolet; chB03.Text = Orisa.Kicking_Dirt_EM + " (" + Cost.Epic + ")";
+                chB04.BackColor = Color.DarkViolet; chB04.Text = Orisa.Laugh_EM + " (" + Cost.Epic + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Orisa.Sit_EM + " (" + Cost.Epic + ")";
+                chB06.BackColor = Color.DarkViolet; chB06.Text = Orisa.Dance_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("EM05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("EM06"));
             }
         }
 
         private void btnPharah_Click(object sender, EventArgs e)
         {
-            btnHeroeinvisible();
+            btnHeroeinvisible("Pharah", 14, 7);
             gbAll.Text += " / " + Pharah.Name;
 
             inisHeroes = new IniStream(appdata + "\\Pharah.ini");
@@ -2428,68 +2211,52 @@ namespace OverwatchLootBoxTracker
                 chB13.BackColor = Color.Gold; chB13.Text = Pharah.Security_Chief_SK + " (" + Lang.OriginGotY + ")";//Origin
                 chB14.BackColor = Color.Gold; chB14.Text = Pharah.Bedouin_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
 
-                if (inisHeroes.Read("SK01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("SK02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("SK03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("SK04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("SK05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("SK06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("SK07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("SK08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("SK09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("SK10") == "1")
-                {
-                    chB10.Checked = true;
-                }
-                if (inisHeroes.Read("SK11") == "1")
-                {
-                    chB11.Checked = true;
-                }
-                if (inisHeroes.Read("SK12") == "1")
-                {
-                    chB12.Checked = true;
-                }
-                if (inisHeroes.Read("SK13") == "1")
-                {
-                    chB13.Checked = true;
-                }
-                if (inisHeroes.Read("SK14") == "1")
-                {
-                    chB14.Checked = true;
-                }
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("SK11"));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("SK12"));
+                chB13.Checked = Convert.ToBoolean(inisHeroes.Read("SK13"));
+                chB14.Checked = Convert.ToBoolean(inisHeroes.Read("SK14"));
+            }
+            if (BackSave == Lang.Emotes)
+            {
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p4);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3);
+
+                chB01.BackColor = Color.DarkViolet; chB01.Text = Pharah.Cheer_EM + " (" + Cost.Epic + ")";//Epic
+                chB02.BackColor = Color.DarkViolet; chB02.Text = Pharah.Chuckle_EM + " (" + Cost.Epic + ")";
+                chB03.BackColor = Color.DarkViolet; chB03.Text = Pharah.Flourish_EM + " (" + Cost.Epic + ")";
+                chB04.BackColor = Color.DarkViolet; chB04.Text = Pharah.Knuckles_EM + " (" + Cost.Epic + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Pharah.Take_a_knee_EM + " (" + Cost.Epic + ")";
+                chB06.BackColor = Color.DarkViolet; chB06.Text = Pharah.Flair_EM + " (" + Cost.EpicEvent + ")";//Uprising 17
+                chB07.BackColor = Color.DarkViolet; chB07.Text = Pharah.Rocket_Guitar_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("EM05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("EM06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("EM07"));
             }
         }
 
         private void btnReaper_Click(object sender, EventArgs e)
         {
-            btnHeroeinvisible();
+            btnHeroeinvisible("Reaper", 15, 7);
             gbAll.Text += " / " + Reaper.Name;
 
             inisHeroes = new IniStream(appdata + "\\Reaper.ini");
@@ -2530,72 +2297,53 @@ namespace OverwatchLootBoxTracker
                 chB14.BackColor = Color.Gold; chB14.Text = Reaper.Dracula_SK + " (" + Cost.LegendaryEvent + ")";//Halloween 17
                 chB15.BackColor = Color.Gold; chB15.Text = Reaper.Pumpkin_SK + " (" + Cost.Legendary + ")";//Halloween 16
 
-                if (inisHeroes.Read("SK01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("SK02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("SK03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("SK04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("SK05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("SK06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("SK07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("SK08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("SK09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("SK10") == "1")
-                {
-                    chB10.Checked = true;
-                }
-                if (inisHeroes.Read("SK11") == "1")
-                {
-                    chB11.Checked = true;
-                }
-                if (inisHeroes.Read("SK12") == "1")
-                {
-                    chB12.Checked = true;
-                }
-                if (inisHeroes.Read("SK13") == "1")
-                {
-                    chB13.Checked = true;
-                }
-                if (inisHeroes.Read("SK14") == "1")
-                {
-                    chB14.Checked = true;
-                }
-                if (inisHeroes.Read("SK15") == "1")
-                {
-                    chB15.Checked = true;
-                }
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("SK11"));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("SK12"));
+                chB13.Checked = Convert.ToBoolean(inisHeroes.Read("SK13"));
+                chB14.Checked = Convert.ToBoolean(inisHeroes.Read("SK14"));
+                chB15.Checked = Convert.ToBoolean(inisHeroes.Read("SK15"));
+            }
+            if (BackSave == Lang.Emotes)
+            {
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p4);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3);
+
+                chB01.BackColor = Color.DarkViolet; chB01.Text = Reaper.Cackle_EM + " (" + Cost.Epic + ")";//Epic
+                chB02.BackColor = Color.DarkViolet; chB02.Text = Reaper.Not_Impressed_EM + " (" + Cost.Epic + ")";
+                chB03.BackColor = Color.DarkViolet; chB03.Text = Reaper.Shrug_EM + " (" + Cost.Epic + ")";
+                chB04.BackColor = Color.DarkViolet; chB04.Text = Reaper.Slice_EM + " (" + Cost.Epic + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Reaper.Slow_Clap_EM + " (" + Cost.Epic + ")";
+                chB06.BackColor = Color.DarkViolet; chB06.Text = Reaper.Take_a_knee_EM + " (" + Cost.Epic + ")";
+                chB07.BackColor = Color.DarkViolet; chB07.Text = Reaper.Dance_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("EM05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("EM06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("EM07"));
             }
         }
 
         private void btnReinhardt_Click(object sender, EventArgs e)
         {
-            btnHeroeinvisible();
+            btnHeroeinvisible("Reinhardt", 15, 7);
             gbAll.Text += " / " + Reinhardt.Name;
 
             inisHeroes = new IniStream(appdata + "\\Reinhardt.ini");
@@ -2636,72 +2384,53 @@ namespace OverwatchLootBoxTracker
                 chB14.BackColor = Color.Gold; chB14.Text = Reinhardt.Greifhardt_SK + " (" + Cost.Legendary + ")";
                 chB15.BackColor = Color.Gold; chB15.Text = Reinhardt.Wujing_SK + " (" + Cost.LegendaryEvent + ")";//Rooster 17
 
-                if (inisHeroes.Read("SK01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("SK02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("SK03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("SK04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("SK05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("SK06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("SK07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("SK08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("SK09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("SK10") == "1")
-                {
-                    chB10.Checked = true;
-                }
-                if (inisHeroes.Read("SK11") == "1")
-                {
-                    chB11.Checked = true;
-                }
-                if (inisHeroes.Read("SK12") == "1")
-                {
-                    chB12.Checked = true;
-                }
-                if (inisHeroes.Read("SK13") == "1")
-                {
-                    chB13.Checked = true;
-                }
-                if (inisHeroes.Read("SK14") == "1")
-                {
-                    chB14.Checked = true;
-                }
-                if (inisHeroes.Read("SK15") == "1")
-                {
-                    chB15.Checked = true;
-                }
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("SK11"));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("SK12"));
+                chB13.Checked = Convert.ToBoolean(inisHeroes.Read("SK13"));
+                chB14.Checked = Convert.ToBoolean(inisHeroes.Read("SK14"));
+                chB15.Checked = Convert.ToBoolean(inisHeroes.Read("SK15"));
+            }
+            if (BackSave == Lang.Emotes)
+            {
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p4);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3);
+
+                chB01.BackColor = Color.DarkViolet; chB01.Text = Reinhardt.Flex_EM + " (" + Cost.Epic + ")";//Epic
+                chB02.BackColor = Color.DarkViolet; chB02.Text = Reinhardt.Knee_EM + " (" + Cost.Epic + ")";
+                chB03.BackColor = Color.DarkViolet; chB03.Text = Reinhardt.Taunt_EM + " (" + Cost.Epic + ")";
+                chB04.BackColor = Color.DarkViolet; chB04.Text = Reinhardt.Uproarious_EM + " (" + Cost.Epic + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Reinhardt.Warriors_Salute_EM + " (" + Cost.Epic + ")";
+                chB06.BackColor = Color.DarkViolet; chB06.Text = Reinhardt.Punpkin_Smash_EM + " (" + Cost.Epic + ")";//Halloween 16
+                chB07.BackColor = Color.DarkViolet; chB07.Text = Reinhardt.Sweethardt_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("EM05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("EM06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("EM07"));
             }
         }
 
         private void btnRoadhog_Click(object sender, EventArgs e)
         {
-            btnHeroeinvisible();
+            btnHeroeinvisible("Roadhog", 13, 6);
             gbAll.Text += " / " + Roadhog.Name;
 
             inisHeroes = new IniStream(appdata + "\\Roadhog.ini");
@@ -2738,64 +2467,48 @@ namespace OverwatchLootBoxTracker
                 chB12.BackColor = Color.Gold; chB12.Text = Roadhog.Junkensteins_Monster_SK + " (" + Cost.Legendary + ")";//Halloween 16
                 chB13.BackColor = Color.Gold; chB13.Text = Roadhog.Bajie_SK + " (" + Cost.LegendaryEvent + ")";//Rooster 17
 
-                if (inisHeroes.Read("SK01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("SK02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("SK03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("SK04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("SK05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("SK06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("SK07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("SK08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("SK09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("SK10") == "1")
-                {
-                    chB10.Checked = true;
-                }
-                if (inisHeroes.Read("SK11") == "1")
-                {
-                    chB11.Checked = true;
-                }
-                if (inisHeroes.Read("SK12") == "1")
-                {
-                    chB12.Checked = true;
-                }
-                if (inisHeroes.Read("SK13") == "1")
-                {
-                    chB13.Checked = true;
-                }
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("SK11"));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("SK12"));
+                chB13.Checked = Convert.ToBoolean(inisHeroes.Read("SK13"));
+            }
+            if (BackSave == Lang.Emotes)
+            {
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3);
+
+                chB01.BackColor = Color.DarkViolet; chB01.Text = Roadhog.Belly_Laugh_EM + " (" + Cost.Epic + ")";//Epic
+                chB02.BackColor = Color.DarkViolet; chB02.Text = Roadhog.Boo_EM + " (" + Cost.Epic + ")";
+                chB03.BackColor = Color.DarkViolet; chB03.Text = Roadhog.Can_Crusher_EM + " (" + Cost.Epic + ")";
+                chB04.BackColor = Color.DarkViolet; chB04.Text = Roadhog.Headbanging_EM + " (" + Cost.Epic + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Roadhog.Tuckered_Out_EM + " (" + Cost.Epic + ")";
+                chB06.BackColor = Color.DarkViolet; chB06.Text = Roadhog.Dance_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("EM05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("EM06"));
             }
         }
 
         private void btnSoldier_76_Click(object sender, EventArgs e)
         {
-            btnHeroeinvisible();
+            btnHeroeinvisible("Soldier_76", 15, 7);
             gbAll.Text += " / " + Soldier_76.Name;
 
             inisHeroes = new IniStream(appdata + "\\Soldier_76.ini");
@@ -2834,72 +2547,53 @@ namespace OverwatchLootBoxTracker
                 chB13.BackColor = Color.Gold; chB13.Text = Soldier_76.Grillmaster_76_SK + " (" + Cost.LegendaryEvent + ")";//Summer 17
                 chB14.BackColor = Color.Gold; chB14.Text = Soldier_76.Cyborg_76_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
 
-                if (inisHeroes.Read("SK01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("SK02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("SK03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("SK04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("SK05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("SK06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("SK07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("SK08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("SK09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("SK10") == "1")
-                {
-                    chB10.Checked = true;
-                }
-                if (inisHeroes.Read("SK11") == "1")
-                {
-                    chB11.Checked = true;
-                }
-                if (inisHeroes.Read("SK12") == "1")
-                {
-                    chB12.Checked = true;
-                }
-                if (inisHeroes.Read("SK13") == "1")
-                {
-                    chB13.Checked = true;
-                }
-                if (inisHeroes.Read("SK14") == "1")
-                {
-                    chB14.Checked = true;
-                }
-                if (inisHeroes.Read("SK15") == "1")
-                {
-                    chB15.Checked = true;
-                }
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("SK11"));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("SK12"));
+                chB13.Checked = Convert.ToBoolean(inisHeroes.Read("SK13"));
+                chB14.Checked = Convert.ToBoolean(inisHeroes.Read("SK14"));
+                chB15.Checked = Convert.ToBoolean(inisHeroes.Read("SK15"));
+            }
+            if (BackSave == Lang.Emotes)
+            {
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p4);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3);
+
+                chB01.BackColor = Color.DarkViolet; chB01.Text = Soldier_76.Amused_EM + " (" + Cost.Epic + ")";//Epic
+                chB02.BackColor = Color.DarkViolet; chB02.Text = Soldier_76.Fist_EM + " (" + Cost.Epic + ")";
+                chB03.BackColor = Color.DarkViolet; chB03.Text = Soldier_76.I_see_you_EM + " (" + Cost.Epic + ")";
+                chB04.BackColor = Color.DarkViolet; chB04.Text = Soldier_76.Locked_and_loaded_EM + " (" + Cost.Epic + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Soldier_76.Take_a_knee_EM + " (" + Cost.Epic + ")";
+                chB06.BackColor = Color.DarkViolet; chB06.Text = Soldier_76.Push_Ups_EM + " (" + Cost.EpicEvent + ")";//Uprising 17
+                chB07.BackColor = Color.DarkViolet; chB07.Text = Soldier_76.Dance_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("EM05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("EM06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("EM07"));
             }
         }
 
         private void btnSombra_Click(object sender, EventArgs e)
         {
-            btnHeroeinvisible();
+            btnHeroeinvisible("Sombra", 12, 6);
             gbAll.Text += " / " + Sombra.Name;
 
             inisHeroes = new IniStream(appdata + "\\Sombra.ini");
@@ -2934,60 +2628,47 @@ namespace OverwatchLootBoxTracker
                 chB11.BackColor = Color.Gold; chB11.Text = Sombra.Cyberspace_SK + " (" + Cost.Legendary + ")";
                 chB12.BackColor = Color.Gold; chB12.Text = Sombra.Tulum_SK + " (" + Cost.LegendaryEvent + ")";//Summer 17
 
-                if (inisHeroes.Read("SK01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("SK02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("SK03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("SK04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("SK05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("SK06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("SK07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("SK08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("SK09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("SK10") == "1")
-                {
-                    chB10.Checked = true;
-                }
-                if (inisHeroes.Read("SK11") == "1")
-                {
-                    chB11.Checked = true;
-                }
-                if (inisHeroes.Read("SK12") == "1")
-                {
-                    chB12.Checked = true;
-                }
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("SK11"));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("SK12"));
+            }
+            if (BackSave == Lang.Emotes)
+            {
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3);
+
+                chB01.BackColor = Color.DarkViolet; chB01.Text = Sombra.Amused_EM + " (" + Cost.Epic + ")";//Epic
+                chB02.BackColor = Color.DarkViolet; chB02.Text = Sombra.Boop_EM + " (" + Cost.Epic + ")";
+                chB03.BackColor = Color.DarkViolet; chB03.Text = Sombra.Hold_on_EM + " (" + Cost.Epic + ")";
+                chB04.BackColor = Color.DarkViolet; chB04.Text = Sombra.Masterpiece_EM + " (" + Cost.Epic + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Sombra.Sit_EM + " (" + Cost.Epic + ")";
+                chB06.BackColor = Color.DarkViolet; chB06.Text = Sombra.Dance_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("EM05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("EM06"));
             }
         }
 
         private void btnSymmetra_Click(object sender, EventArgs e)
         {
-            btnHeroeinvisible();
+            btnHeroeinvisible("Symmetra", 14, 7);
             gbAll.Text += " / " + Symmetra.Name;
 
             inisHeroes = new IniStream(appdata + "\\Symmetra.ini");
@@ -3026,71 +2707,55 @@ namespace OverwatchLootBoxTracker
                 chB13.BackColor = Color.Gold; chB13.Text = Symmetra.Dragon_SK + " (" + Cost.LegendaryEvent + ")";//Halloween 17
                 chB14.BackColor = Color.Gold; chB14.Text = Symmetra.Oasis_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
 
-                if (inisHeroes.Read("SK01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("SK02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("SK03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("SK04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("SK05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("SK06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("SK07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("SK08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("SK09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("SK10") == "1")
-                {
-                    chB10.Checked = true;
-                }
-                if (inisHeroes.Read("SK11") == "1")
-                {
-                    chB11.Checked = true;
-                }
-                if (inisHeroes.Read("SK12") == "1")
-                {
-                    chB12.Checked = true;
-                }
-                if (inisHeroes.Read("SK13") == "1")
-                {
-                    chB13.Checked = true;
-                }
-                if (inisHeroes.Read("SK14") == "1")
-                {
-                    chB14.Checked = true;
-                }
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("SK11"));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("SK12"));
+                chB13.Checked = Convert.ToBoolean(inisHeroes.Read("SK13"));
+                chB14.Checked = Convert.ToBoolean(inisHeroes.Read("SK14"));
+            }
+            if (BackSave == Lang.Emotes)
+            {
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p4);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3);
+
+                chB01.BackColor = Color.DarkViolet; chB01.Text = Symmetra.Clap_EM + " (" + Cost.Epic + ")";//Epic
+                chB02.BackColor = Color.DarkViolet; chB02.Text = Symmetra.Flow_EM + " (" + Cost.Epic + ")";
+                chB03.BackColor = Color.DarkViolet; chB03.Text = Symmetra.Have_a_seat_EM + " (" + Cost.Epic + ")";
+                chB04.BackColor = Color.DarkViolet; chB04.Text = Symmetra.Insignificant_EM + " (" + Cost.Epic + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Symmetra.Snicker_EM + " (" + Cost.Epic + ")";
+                chB06.BackColor = Color.DarkViolet; chB06.Text = Symmetra.Ribbon_EM + " (" + Cost.Epic + ")";//Summer 16
+                chB07.BackColor = Color.DarkViolet; chB07.Text = Symmetra.Dance_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("EM05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("EM06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("EM07"));
             }
         }
 
         private void btnTorbjörn_Click(object sender, EventArgs e)
         {
-            btnHeroeinvisible();
+            btnHeroeinvisible("Torbjörn", 15, 7);
             gbAll.Text += " / " + Torbjörn.Name;
 
-            inisHeroes = new IniStream(appdata + "\\Torbjorn.ini");
+            inisHeroes = new IniStream(appdata + "\\Torbjörn.ini");
             Heroe = "H";
 
             //Anzeigen, Auslesen und anwenden der chB
@@ -3128,72 +2793,53 @@ namespace OverwatchLootBoxTracker
                 chB14.BackColor = Color.Gold; chB14.Text = Torbjörn.Chief_Engineer_Lindholm_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
                 chB15.BackColor = Color.Gold; chB15.Text = Torbjörn.Ironclad_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
 
-                if (inisHeroes.Read("SK01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("SK02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("SK03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("SK04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("SK05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("SK06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("SK07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("SK08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("SK09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("SK10") == "1")
-                {
-                    chB10.Checked = true;
-                }
-                if (inisHeroes.Read("SK11") == "1")
-                {
-                    chB11.Checked = true;
-                }
-                if (inisHeroes.Read("SK12") == "1")
-                {
-                    chB12.Checked = true;
-                }
-                if (inisHeroes.Read("SK13") == "1")
-                {
-                    chB13.Checked = true;
-                }
-                if (inisHeroes.Read("SK14") == "1")
-                {
-                    chB14.Checked = true;
-                }
-                if (inisHeroes.Read("SK15") == "1")
-                {
-                    chB15.Checked = true;
-                }
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("SK11"));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("SK12"));
+                chB13.Checked = Convert.ToBoolean(inisHeroes.Read("SK13"));
+                chB14.Checked = Convert.ToBoolean(inisHeroes.Read("SK14"));
+                chB15.Checked = Convert.ToBoolean(inisHeroes.Read("SK15"));
+            }
+            if (BackSave == Lang.Emotes)
+            {
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p4);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3);
+
+                chB01.BackColor = Color.DarkViolet; chB01.Text = Torbjörn.Clicking_heels_EM + " (" + Cost.Epic + ")";//Epic
+                chB02.BackColor = Color.DarkViolet; chB02.Text = Torbjörn.Fisticuffs_EM + " (" + Cost.Epic + ")";
+                chB03.BackColor = Color.DarkViolet; chB03.Text = Torbjörn.Guffaw_EM + " (" + Cost.Epic + ")";
+                chB04.BackColor = Color.DarkViolet; chB04.Text = Torbjörn.Overload_EM + " (" + Cost.Epic + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Torbjörn.Taking_a_break_EM + " (" + Cost.Epic + ")";
+                chB06.BackColor = Color.DarkViolet; chB06.Text = Torbjörn.Batter_Up_EM + " (" + Cost.EpicEvent + ")";//Halloween 17
+                chB07.BackColor = Color.DarkViolet; chB07.Text = Torbjörn.Dance_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("EM05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("EM06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("EM07"));
             }
         }
 
         private void btnTracer_Click(object sender, EventArgs e)
         {
-            btnHeroeinvisible();
+            btnHeroeinvisible("Tracer", 17, 6);
             gbAll.Text += " / " + Tracer.Name;
 
             inisHeroes = new IniStream(appdata + "\\Tracer.ini");
@@ -3238,80 +2884,52 @@ namespace OverwatchLootBoxTracker
                 chB16.BackColor = Color.Gold; chB16.Text = Tracer.Cadet_Oxton_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
                 chB17.BackColor = Color.Gold; chB17.Text = Tracer.Graffiti_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
 
-                if (inisHeroes.Read("SK01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("SK02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("SK03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("SK04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("SK05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("SK06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("SK07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("SK08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("SK09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("SK10") == "1")
-                {
-                    chB10.Checked = true;
-                }
-                if (inisHeroes.Read("SK11") == "1")
-                {
-                    chB11.Checked = true;
-                }
-                if (inisHeroes.Read("SK12") == "1")
-                {
-                    chB12.Checked = true;
-                }
-                if (inisHeroes.Read("SK13") == "1")
-                {
-                    chB13.Checked = true;
-                }
-                if (inisHeroes.Read("SK14") == "1")
-                {
-                    chB14.Checked = true;
-                }
-                if (inisHeroes.Read("SK15") == "1")
-                {
-                    chB15.Checked = true;
-                }
-                if (inisHeroes.Read("SK16") == "1")
-                {
-                    chB16.Checked = true;
-                }
-                if (inisHeroes.Read("SK17") == "1")
-                {
-                    chB17.Checked = true;
-                }
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("SK11"));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("SK12"));
+                chB13.Checked = Convert.ToBoolean(inisHeroes.Read("SK13"));
+                chB14.Checked = Convert.ToBoolean(inisHeroes.Read("SK14"));
+                chB15.Checked = Convert.ToBoolean(inisHeroes.Read("SK15"));
+                chB16.Checked = Convert.ToBoolean(inisHeroes.Read("SK16"));
+                chB17.Checked = Convert.ToBoolean(inisHeroes.Read("SK17"));
+            }
+            if (BackSave == Lang.Emotes)
+            {
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3);
+
+                chB01.BackColor = Color.DarkViolet; chB01.Text = Tracer.Cheer_EM + " (" + Cost.Epic + ")";//Epic
+                chB02.BackColor = Color.DarkViolet; chB02.Text = Tracer.Finger_guns_EM + " (" + Cost.Epic + ")";
+                chB03.BackColor = Color.DarkViolet; chB03.Text = Tracer.Having_a_laugh_EM + " (" + Cost.Epic + ")";
+                chB04.BackColor = Color.DarkViolet; chB04.Text = Tracer.Sitting_arround_EM + " (" + Cost.Epic + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Tracer.Spin_EM + " (" + Cost.Epic + ")";
+                chB06.BackColor = Color.DarkViolet; chB06.Text = Tracer.Charleston_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("EM05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("EM06"));
             }
         }
 
         private void btnWidowmaker_Click(object sender, EventArgs e)
         {
-            btnHeroeinvisible();
+            btnHeroeinvisible("Widowmaker", 14, 6);
             gbAll.Text += " / " + Widowmaker.Name;
 
             inisHeroes = new IniStream(appdata + "\\Widowmaker.ini");
@@ -3350,68 +2968,49 @@ namespace OverwatchLootBoxTracker
                 chB13.BackColor = Color.Gold; chB13.Text = Widowmaker.Côte_DAzur_SK + " (" + Cost.LegendaryEvent + ")";//Summer 17
                 chB14.BackColor = Color.Gold; chB14.Text = Widowmaker.Talon_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
 
-                if (inisHeroes.Read("SK01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("SK02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("SK03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("SK04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("SK05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("SK06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("SK07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("SK08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("SK09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("SK10") == "1")
-                {
-                    chB10.Checked = true;
-                }
-                if (inisHeroes.Read("SK11") == "1")
-                {
-                    chB11.Checked = true;
-                }
-                if (inisHeroes.Read("SK12") == "1")
-                {
-                    chB12.Checked = true;
-                }
-                if (inisHeroes.Read("SK13") == "1")
-                {
-                    chB13.Checked = true;
-                }
-                if (inisHeroes.Read("SK14") == "1")
-                {
-                    chB14.Checked = true;
-                }
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("SK11"));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("SK12"));
+                chB13.Checked = Convert.ToBoolean(inisHeroes.Read("SK13"));
+                chB14.Checked = Convert.ToBoolean(inisHeroes.Read("SK14"));
+            }
+            if (BackSave == Lang.Emotes)
+            {
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3);
+
+                chB01.BackColor = Color.DarkViolet; chB01.Text = Widowmaker.A_rest_EM + " (" + Cost.Epic + ")";//Epic
+                chB02.BackColor = Color.DarkViolet; chB02.Text = Widowmaker.Curtain_Call_EM + " (" + Cost.Epic + ")";
+                chB03.BackColor = Color.DarkViolet; chB03.Text = Widowmaker.Delighted_EM + " (" + Cost.Epic + ")";
+                chB04.BackColor = Color.DarkViolet; chB04.Text = Widowmaker.Shot_Dead_EM + " (" + Cost.Epic + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Widowmaker.Widows_Kiss_EM + " (" + Cost.Epic + ")";
+                chB06.BackColor = Color.DarkViolet; chB06.Text = Widowmaker.Ballet_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("EM05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("EM06"));
             }
         }
 
         private void btnWinston_Click(object sender, EventArgs e)
         {
-            btnHeroeinvisible();
+            btnHeroeinvisible("Winston", 13, 7);
             gbAll.Text += " / " + Winston.Name;
 
             inisHeroes = new IniStream(appdata + "\\Winston.ini");
@@ -3448,64 +3047,51 @@ namespace OverwatchLootBoxTracker
                 chB12.BackColor = Color.Gold; chB12.Text = Winston.Yeti_SK + " (" + Cost.LegendaryEvent + ")";//Winter 16
                 chB13.BackColor = Color.Gold; chB13.Text = Winston.Wukong_SK + " (" + Cost.LegendaryEvent + ")";//Rooster 17
 
-                if (inisHeroes.Read("SK01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("SK02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("SK03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("SK04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("SK05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("SK06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("SK07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("SK08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("SK09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("SK10") == "1")
-                {
-                    chB10.Checked = true;
-                }
-                if (inisHeroes.Read("SK11") == "1")
-                {
-                    chB11.Checked = true;
-                }
-                if (inisHeroes.Read("SK12") == "1")
-                {
-                    chB12.Checked = true;
-                }
-                if (inisHeroes.Read("SK13") == "1")
-                {
-                    chB13.Checked = true;
-                }
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("SK11"));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("SK12"));
+                chB13.Checked = Convert.ToBoolean(inisHeroes.Read("SK13"));
+            }
+            if (BackSave == Lang.Emotes)
+            {
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p4);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3);
+
+                chB01.BackColor = Color.DarkViolet; chB01.Text = Winston.Laugh_matter_EM + " (" + Cost.Epic + ")";//Epic
+                chB02.BackColor = Color.DarkViolet; chB02.Text = Winston.Monkey_Buisness_EM + " (" + Cost.Epic + ")";
+                chB03.BackColor = Color.DarkViolet; chB03.Text = Winston.Peanut_Butter_EM + " (" + Cost.Epic + ")";
+                chB04.BackColor = Color.DarkViolet; chB04.Text = Winston.Roar_EM + " (" + Cost.Epic + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Winston.Sitting_around_EM + " (" + Cost.Epic + ")";
+                chB06.BackColor = Color.DarkViolet; chB06.Text = Winston.Shadow_Puppets_EM + " (" + Cost.Epic + ")";//Halloween 16
+                chB07.BackColor = Color.DarkViolet; chB07.Text = Winston.Twist_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("EM05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("EM06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("EM07"));
             }
         }
 
         private void btnZarya_Click(object sender, EventArgs e)
         {
-            btnHeroeinvisible();
+            btnHeroeinvisible("Zarya", 15, 7);
             gbAll.Text += " / " + Zarya.Name;
 
             inisHeroes = new IniStream(appdata + "\\Zarya.ini");
@@ -3546,72 +3132,53 @@ namespace OverwatchLootBoxTracker
                 chB14.BackColor = Color.Gold; chB14.Text = Zarya.Totally_80s_SK + " (" + Cost.LegendaryEvent + ")";//Halloween 17
                 chB15.BackColor = Color.Gold; chB15.Text = Zarya.Cyberian_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
 
-                if (inisHeroes.Read("SK01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("SK02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("SK03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("SK04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("SK05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("SK06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("SK07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("SK08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("SK09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("SK10") == "1")
-                {
-                    chB10.Checked = true;
-                }
-                if (inisHeroes.Read("SK11") == "1")
-                {
-                    chB11.Checked = true;
-                }
-                if (inisHeroes.Read("SK12") == "1")
-                {
-                    chB12.Checked = true;
-                }
-                if (inisHeroes.Read("SK13") == "1")
-                {
-                    chB13.Checked = true;
-                }
-                if (inisHeroes.Read("SK14") == "1")
-                {
-                    chB14.Checked = true;
-                }
-                if (inisHeroes.Read("SK15") == "1")
-                {
-                    chB15.Checked = true;
-                }
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("SK11"));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("SK12"));
+                chB13.Checked = Convert.ToBoolean(inisHeroes.Read("SK13"));
+                chB14.Checked = Convert.ToBoolean(inisHeroes.Read("SK14"));
+                chB15.Checked = Convert.ToBoolean(inisHeroes.Read("SK15"));
+            }
+            if (BackSave == Lang.Emotes)
+            {
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p4);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3);
+
+                chB01.BackColor = Color.DarkViolet; chB01.Text = Zarya.Bring_it_on_EM + " (" + Cost.Epic + ")";//Epic
+                chB02.BackColor = Color.DarkViolet; chB02.Text = Zarya.Comedy_Gold_EM + " (" + Cost.Epic + ")";
+                chB03.BackColor = Color.DarkViolet; chB03.Text = Zarya.Chush_you_EM + " (" + Cost.Epic + ")";
+                chB04.BackColor = Color.DarkViolet; chB04.Text = Zarya.Pumping_Iron_EM + " (" + Cost.Epic + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Zarya.Take_a_knee_EM + " (" + Cost.Epic + ")";
+                chB06.BackColor = Color.DarkViolet; chB06.Text = Zarya.Dance_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+                chB07.BackColor = Color.DarkViolet; chB07.Text = Zarya.Mystery_Gift_EM + " (" + Cost.LegendaryEvent + ")";//Legendary //Winter 16
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("EM05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("EM06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("EM07"));
             }
         }
 
         private void btnZenyatta_Click(object sender, EventArgs e)
         {
-            btnHeroeinvisible();
+            btnHeroeinvisible("Zenyatta", 14, 6);
             gbAll.Text += " / " + Zenyatta.Name;
 
             inisHeroes = new IniStream(appdata + "\\Zenyatta.ini");
@@ -3650,62 +3217,43 @@ namespace OverwatchLootBoxTracker
                 chB13.BackColor = Color.Gold; chB13.Text = Zenyatta.Nutcracker_SK + " (" + Cost.LegendaryEvent + ")";//Winter 16
                 chB14.BackColor = Color.Gold; chB14.Text = Zenyatta.Sanzang_SK + " (" + Cost.LegendaryEvent + ")";//Rooser 17
 
-                if (inisHeroes.Read("SK01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("SK02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("SK03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("SK04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("SK05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("SK06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("SK07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("SK08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("SK09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("SK10") == "1")
-                {
-                    chB10.Checked = true;
-                }
-                if (inisHeroes.Read("SK11") == "1")
-                {
-                    chB11.Checked = true;
-                }
-                if (inisHeroes.Read("SK12") == "1")
-                {
-                    chB12.Checked = true;
-                }
-                if (inisHeroes.Read("SK13") == "1")
-                {
-                    chB13.Checked = true;
-                }
-                if (inisHeroes.Read("SK14") == "1")
-                {
-                    chB14.Checked = true;
-                }
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("SK11"));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("SK12"));
+                chB13.Checked = Convert.ToBoolean(inisHeroes.Read("SK13"));
+                chB14.Checked = Convert.ToBoolean(inisHeroes.Read("SK14"));
+            }
+            if (BackSave == Lang.Emotes)
+            {
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3);
+
+                chB01.BackColor = Color.DarkViolet; chB01.Text = Zenyatta.Focusing_EM + " (" + Cost.Epic + ")";//Epic
+                chB02.BackColor = Color.DarkViolet; chB02.Text = Zenyatta.Meditate_EM + " (" + Cost.Epic + ")";
+                chB03.BackColor = Color.DarkViolet; chB03.Text = Zenyatta.Round_of_Applause_EM + " (" + Cost.Epic + ")";
+                chB04.BackColor = Color.DarkViolet; chB04.Text = Zenyatta.Taunt_EM + " (" + Cost.Epic + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Zenyatta.Tickled_EM + " (" + Cost.Epic + ")";
+                chB06.BackColor = Color.DarkViolet; chB06.Text = Zenyatta.Dance_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("EM05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("EM06"));
             }
         }
 
@@ -3723,70 +3271,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK01", "1");
+                        inisHeroes.Write("SK01", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM01", "1");
+                        inisHeroes.Write("EM01", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP01", "1");
+                        inisHeroes.Write("VP01", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL01", "1");
+                        inisHeroes.Write("VL01", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP01", "1");
+                        inisHeroes.Write("SP01", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI01", "1");
+                        inisHeroes.Write("HI01", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI01", "1");
+                        inisHeroes.Write("PI01", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("01", "1");
+                        inisPI.Write("01", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK01", "0");
+                        inisHeroes.Write("SK01", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM01", "0");
+                        inisHeroes.Write("EM01", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP01", "0");
+                        inisHeroes.Write("VP01", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL01", "0");
+                        inisHeroes.Write("VL01", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP01", "0");
+                        inisHeroes.Write("SP01", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI01", "0");
+                        inisHeroes.Write("HI01", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI01", "0");
+                        inisHeroes.Write("PI01", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("01", "0");
+                        inisPI.Write("01", "false");
                     }
                 }
             }
@@ -3801,70 +3349,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK02", "1");
+                        inisHeroes.Write("SK02", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM02", "1");
+                        inisHeroes.Write("EM02", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP02", "1");
+                        inisHeroes.Write("VP02", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL02", "1");
+                        inisHeroes.Write("VL02", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP02", "1");
+                        inisHeroes.Write("SP02", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI02", "1");
+                        inisHeroes.Write("HI02", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI02", "1");
+                        inisHeroes.Write("PI02", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("02", "1");
+                        inisPI.Write("02", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK02", "0");
+                        inisHeroes.Write("SK02", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM02", "0");
+                        inisHeroes.Write("EM02", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP02", "0");
+                        inisHeroes.Write("VP02", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL02", "0");
+                        inisHeroes.Write("VL02", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP02", "0");
+                        inisHeroes.Write("SP02", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI02", "0");
+                        inisHeroes.Write("HI02", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI02", "0");
+                        inisHeroes.Write("PI02", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("02", "0");
+                        inisPI.Write("02", "false");
                     }
                 }
             }
@@ -3879,70 +3427,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK03", "1");
+                        inisHeroes.Write("SK03", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM03", "1");
+                        inisHeroes.Write("EM03", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP03", "1");
+                        inisHeroes.Write("VP03", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL03", "1");
+                        inisHeroes.Write("VL03", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP03", "1");
+                        inisHeroes.Write("SP03", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI03", "1");
+                        inisHeroes.Write("HI03", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI03", "1");
+                        inisHeroes.Write("PI03", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("03", "1");
+                        inisPI.Write("03", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK03", "0");
+                        inisHeroes.Write("SK03", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM03", "0");
+                        inisHeroes.Write("EM03", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP03", "0");
+                        inisHeroes.Write("VP03", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL03", "0");
+                        inisHeroes.Write("VL03", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP03", "0");
+                        inisHeroes.Write("SP03", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI03", "0");
+                        inisHeroes.Write("HI03", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI03", "0");
+                        inisHeroes.Write("PI03", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("03", "0");
+                        inisPI.Write("03", "false");
                     }
                 }
             }
@@ -3957,70 +3505,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK04", "1");
+                        inisHeroes.Write("SK04", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM04", "1");
+                        inisHeroes.Write("EM04", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP04", "1");
+                        inisHeroes.Write("VP04", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL04", "1");
+                        inisHeroes.Write("VL04", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP04", "1");
+                        inisHeroes.Write("SP04", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI04", "1");
+                        inisHeroes.Write("HI04", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI04", "1");
+                        inisHeroes.Write("PI04", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("04", "1");
+                        inisPI.Write("04", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK04", "0");
+                        inisHeroes.Write("SK04", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM04", "0");
+                        inisHeroes.Write("EM04", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP04", "0");
+                        inisHeroes.Write("VP04", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL04", "0");
+                        inisHeroes.Write("VL04", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP04", "0");
+                        inisHeroes.Write("SP04", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI04", "0");
+                        inisHeroes.Write("HI04", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI04", "0");
+                        inisHeroes.Write("PI04", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("04", "0");
+                        inisPI.Write("04", "false");
                     }
                 }
             }
@@ -4035,70 +3583,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK05", "1");
+                        inisHeroes.Write("SK05", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM05", "1");
+                        inisHeroes.Write("EM05", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP05", "1");
+                        inisHeroes.Write("VP05", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL05", "1");
+                        inisHeroes.Write("VL05", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP05", "1");
+                        inisHeroes.Write("SP05", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI05", "1");
+                        inisHeroes.Write("HI05", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI05", "1");
+                        inisHeroes.Write("PI05", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("05", "1");
+                        inisPI.Write("05", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK05", "0");
+                        inisHeroes.Write("SK05", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM05", "0");
+                        inisHeroes.Write("EM05", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP05", "0");
+                        inisHeroes.Write("VP05", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL05", "0");
+                        inisHeroes.Write("VL05", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP05", "0");
+                        inisHeroes.Write("SP05", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI05", "0");
+                        inisHeroes.Write("HI05", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI05", "0");
+                        inisHeroes.Write("PI05", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("05", "0");
+                        inisPI.Write("05", "false");
                     }
                 }
             }
@@ -4113,70 +3661,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK06", "1");
+                        inisHeroes.Write("SK06", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM06", "1");
+                        inisHeroes.Write("EM06", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP06", "1");
+                        inisHeroes.Write("VP06", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL06", "1");
+                        inisHeroes.Write("VL06", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP06", "1");
+                        inisHeroes.Write("SP06", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI06", "1");
+                        inisHeroes.Write("HI06", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI06", "1");
+                        inisHeroes.Write("PI06", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("06", "1");
+                        inisPI.Write("06", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK06", "0");
+                        inisHeroes.Write("SK06", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM06", "0");
+                        inisHeroes.Write("EM06", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP06", "0");
+                        inisHeroes.Write("VP06", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL06", "0");
+                        inisHeroes.Write("VL06", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP06", "0");
+                        inisHeroes.Write("SP06", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI06", "0");
+                        inisHeroes.Write("HI06", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI06", "0");
+                        inisHeroes.Write("PI06", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("06", "0");
+                        inisPI.Write("06", "false");
                     }
                 }
             }
@@ -4191,70 +3739,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK07", "1");
+                        inisHeroes.Write("SK07", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM07", "1");
+                        inisHeroes.Write("EM07", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP07", "1");
+                        inisHeroes.Write("VP07", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL07", "1");
+                        inisHeroes.Write("VL07", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP07", "1");
+                        inisHeroes.Write("SP07", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI07", "1");
+                        inisHeroes.Write("HI07", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI07", "1");
+                        inisHeroes.Write("PI07", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("07", "1");
+                        inisPI.Write("07", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK07", "0");
+                        inisHeroes.Write("SK07", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM07", "0");
+                        inisHeroes.Write("EM07", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP07", "0");
+                        inisHeroes.Write("VP07", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL07", "0");
+                        inisHeroes.Write("VL07", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP07", "0");
+                        inisHeroes.Write("SP07", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI07", "0");
+                        inisHeroes.Write("HI07", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI07", "0");
+                        inisHeroes.Write("PI07", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("07", "0");
+                        inisPI.Write("07", "false");
                     }
                 }
             }
@@ -4269,70 +3817,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK08", "1");
+                        inisHeroes.Write("SK08", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM08", "1");
+                        inisHeroes.Write("EM08", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP08", "1");
+                        inisHeroes.Write("VP08", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL08", "1");
+                        inisHeroes.Write("VL08", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP08", "1");
+                        inisHeroes.Write("SP08", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI08", "1");
+                        inisHeroes.Write("HI08", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI08", "1");
+                        inisHeroes.Write("PI08", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("08", "1");
+                        inisPI.Write("08", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK08", "0");
+                        inisHeroes.Write("SK08", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM08", "0");
+                        inisHeroes.Write("EM08", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP08", "0");
+                        inisHeroes.Write("VP08", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL08", "0");
+                        inisHeroes.Write("VL08", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP08", "0");
+                        inisHeroes.Write("SP08", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI08", "0");
+                        inisHeroes.Write("HI08", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI08", "0");
+                        inisHeroes.Write("PI08", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("08", "0");
+                        inisPI.Write("08", "false");
                     }
                 }
             }
@@ -4347,70 +3895,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK09", "1");
+                        inisHeroes.Write("SK09", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM09", "1");
+                        inisHeroes.Write("EM09", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP09", "1");
+                        inisHeroes.Write("VP09", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL09", "1");
+                        inisHeroes.Write("VL09", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP09", "1");
+                        inisHeroes.Write("SP09", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI09", "1");
+                        inisHeroes.Write("HI09", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI09", "1");
+                        inisHeroes.Write("PI09", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("09", "1");
+                        inisPI.Write("09", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK09", "0");
+                        inisHeroes.Write("SK09", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM09", "0");
+                        inisHeroes.Write("EM09", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP09", "0");
+                        inisHeroes.Write("VP09", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL09", "0");
+                        inisHeroes.Write("VL09", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP09", "0");
+                        inisHeroes.Write("SP09", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI09", "0");
+                        inisHeroes.Write("HI09", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI09", "0");
+                        inisHeroes.Write("PI09", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("09", "0");
+                        inisPI.Write("09", "false");
                     }
                 }
             }
@@ -4425,70 +3973,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK10", "1");
+                        inisHeroes.Write("SK10", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM10", "1");
+                        inisHeroes.Write("EM10", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP10", "1");
+                        inisHeroes.Write("VP10", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL10", "1");
+                        inisHeroes.Write("VL10", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP10", "1");
+                        inisHeroes.Write("SP10", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI10", "1");
+                        inisHeroes.Write("HI10", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI10", "1");
+                        inisHeroes.Write("PI10", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("10", "1");
+                        inisPI.Write("10", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK10", "0");
+                        inisHeroes.Write("SK10", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM10", "0");
+                        inisHeroes.Write("EM10", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP10", "0");
+                        inisHeroes.Write("VP10", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL10", "0");
+                        inisHeroes.Write("VL10", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP10", "0");
+                        inisHeroes.Write("SP10", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI10", "0");
+                        inisHeroes.Write("HI10", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI10", "0");
+                        inisHeroes.Write("PI10", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("10", "0");
+                        inisPI.Write("10", "false");
                     }
                 }
             }
@@ -4503,70 +4051,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK11", "1");
+                        inisHeroes.Write("SK11", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM11", "1");
+                        inisHeroes.Write("EM11", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP11", "1");
+                        inisHeroes.Write("VP11", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL11", "1");
+                        inisHeroes.Write("VL11", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP11", "1");
+                        inisHeroes.Write("SP11", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI11", "1");
+                        inisHeroes.Write("HI11", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI11", "1");
+                        inisHeroes.Write("PI11", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("11", "1");
+                        inisPI.Write("11", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK11", "0");
+                        inisHeroes.Write("SK11", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM11", "0");
+                        inisHeroes.Write("EM11", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP11", "0");
+                        inisHeroes.Write("VP11", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL11", "0");
+                        inisHeroes.Write("VL11", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP11", "0");
+                        inisHeroes.Write("SP11", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI11", "0");
+                        inisHeroes.Write("HI11", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI11", "0");
+                        inisHeroes.Write("PI11", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("11", "0");
+                        inisPI.Write("11", "false");
                     }
                 }
             }
@@ -4581,70 +4129,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK12", "1");
+                        inisHeroes.Write("SK12", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM12", "1");
+                        inisHeroes.Write("EM12", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP12", "1");
+                        inisHeroes.Write("VP12", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL12", "1");
+                        inisHeroes.Write("VL12", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP12", "1");
+                        inisHeroes.Write("SP12", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI12", "1");
+                        inisHeroes.Write("HI12", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI12", "1");
+                        inisHeroes.Write("PI12", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("12", "1");
+                        inisPI.Write("12", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK12", "0");
+                        inisHeroes.Write("SK12", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM12", "0");
+                        inisHeroes.Write("EM12", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP12", "0");
+                        inisHeroes.Write("VP12", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL12", "0");
+                        inisHeroes.Write("VL12", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP12", "0");
+                        inisHeroes.Write("SP12", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI12", "0");
+                        inisHeroes.Write("HI12", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI12", "0");
+                        inisHeroes.Write("PI12", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("12", "0");
+                        inisPI.Write("12", "false");
                     }
                 }
             }
@@ -4659,70 +4207,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK13", "1");
+                        inisHeroes.Write("SK13", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM13", "1");
+                        inisHeroes.Write("EM13", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP13", "1");
+                        inisHeroes.Write("VP13", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL13", "1");
+                        inisHeroes.Write("VL13", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP13", "1");
+                        inisHeroes.Write("SP13", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI13", "1");
+                        inisHeroes.Write("HI13", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI13", "1");
+                        inisHeroes.Write("PI13", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("13", "1");
+                        inisPI.Write("13", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK13", "0");
+                        inisHeroes.Write("SK13", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM13", "0");
+                        inisHeroes.Write("EM13", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP13", "0");
+                        inisHeroes.Write("VP13", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL13", "0");
+                        inisHeroes.Write("VL13", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP13", "0");
+                        inisHeroes.Write("SP13", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI13", "0");
+                        inisHeroes.Write("HI13", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI13", "0");
+                        inisHeroes.Write("PI13", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("13", "0");
+                        inisPI.Write("13", "false");
                     }
                 }
             }
@@ -4737,70 +4285,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK14", "1");
+                        inisHeroes.Write("SK14", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM14", "1");
+                        inisHeroes.Write("EM14", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP14", "1");
+                        inisHeroes.Write("VP14", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL14", "1");
+                        inisHeroes.Write("VL14", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP14", "1");
+                        inisHeroes.Write("SP14", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI14", "1");
+                        inisHeroes.Write("HI14", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI14", "1");
+                        inisHeroes.Write("PI14", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("14", "1");
+                        inisPI.Write("14", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK14", "0");
+                        inisHeroes.Write("SK14", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM14", "0");
+                        inisHeroes.Write("EM14", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP14", "0");
+                        inisHeroes.Write("VP14", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL14", "0");
+                        inisHeroes.Write("VL14", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP14", "0");
+                        inisHeroes.Write("SP14", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI14", "0");
+                        inisHeroes.Write("HI14", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI14", "0");
+                        inisHeroes.Write("PI14", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("14", "0");
+                        inisPI.Write("14", "false");
                     }
                 }
             }
@@ -4815,70 +4363,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK15", "1");
+                        inisHeroes.Write("SK15", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM15", "1");
+                        inisHeroes.Write("EM15", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP15", "1");
+                        inisHeroes.Write("VP15", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL15", "1");
+                        inisHeroes.Write("VL15", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP15", "1");
+                        inisHeroes.Write("SP15", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI15", "1");
+                        inisHeroes.Write("HI15", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI15", "1");
+                        inisHeroes.Write("PI15", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("15", "1");
+                        inisPI.Write("15", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK15", "0");
+                        inisHeroes.Write("SK15", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM15", "0");
+                        inisHeroes.Write("EM15", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP15", "0");
+                        inisHeroes.Write("VP15", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL15", "0");
+                        inisHeroes.Write("VL15", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP15", "0");
+                        inisHeroes.Write("SP15", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI15", "0");
+                        inisHeroes.Write("HI15", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI15", "0");
+                        inisHeroes.Write("PI15", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("15", "0");
+                        inisPI.Write("15", "false");
                     }
                 }
             }
@@ -4893,70 +4441,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK16", "1");
+                        inisHeroes.Write("SK16", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM16", "1");
+                        inisHeroes.Write("EM16", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP16", "1");
+                        inisHeroes.Write("VP16", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL16", "1");
+                        inisHeroes.Write("VL16", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP16", "1");
+                        inisHeroes.Write("SP16", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI16", "1");
+                        inisHeroes.Write("HI16", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI16", "1");
+                        inisHeroes.Write("PI16", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("16", "1");
+                        inisPI.Write("16", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK16", "0");
+                        inisHeroes.Write("SK16", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM16", "0");
+                        inisHeroes.Write("EM16", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP16", "0");
+                        inisHeroes.Write("VP16", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL16", "0");
+                        inisHeroes.Write("VL16", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP16", "0");
+                        inisHeroes.Write("SP16", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI16", "0");
+                        inisHeroes.Write("HI16", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI16", "0");
+                        inisHeroes.Write("PI16", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("16", "0");
+                        inisPI.Write("16", "false");
                     }
                 }
             }
@@ -4971,70 +4519,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK17", "1");
+                        inisHeroes.Write("SK17", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM17", "1");
+                        inisHeroes.Write("EM17", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP17", "1");
+                        inisHeroes.Write("VP17", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL17", "1");
+                        inisHeroes.Write("VL17", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP17", "1");
+                        inisHeroes.Write("SP17", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI17", "1");
+                        inisHeroes.Write("HI17", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI17", "1");
+                        inisHeroes.Write("PI17", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("17", "1");
+                        inisPI.Write("17", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK17", "0");
+                        inisHeroes.Write("SK17", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM17", "0");
+                        inisHeroes.Write("EM17", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP17", "0");
+                        inisHeroes.Write("VP17", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL17", "0");
+                        inisHeroes.Write("VL17", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP17", "0");
+                        inisHeroes.Write("SP17", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI17", "0");
+                        inisHeroes.Write("HI17", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI17", "0");
+                        inisHeroes.Write("PI17", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("17", "0");
+                        inisPI.Write("17", "false");
                     }
                 }
             }
@@ -5049,70 +4597,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK18", "1");
+                        inisHeroes.Write("SK18", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM18", "1");
+                        inisHeroes.Write("EM18", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP18", "1");
+                        inisHeroes.Write("VP18", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL18", "1");
+                        inisHeroes.Write("VL18", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP18", "1");
+                        inisHeroes.Write("SP18", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI18", "1");
+                        inisHeroes.Write("HI18", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI18", "1");
+                        inisHeroes.Write("PI18", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("18", "1");
+                        inisPI.Write("18", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK18", "0");
+                        inisHeroes.Write("SK18", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM18", "0");
+                        inisHeroes.Write("EM18", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP18", "0");
+                        inisHeroes.Write("VP18", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL18", "0");
+                        inisHeroes.Write("VL18", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP18", "0");
+                        inisHeroes.Write("SP18", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI18", "0");
+                        inisHeroes.Write("HI18", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI18", "0");
+                        inisHeroes.Write("PI18", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("18", "0");
+                        inisPI.Write("18", "false");
                     }
                 }
             }
@@ -5127,70 +4675,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK19", "1");
+                        inisHeroes.Write("SK19", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM19", "1");
+                        inisHeroes.Write("EM19", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP19", "1");
+                        inisHeroes.Write("VP19", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL19", "1");
+                        inisHeroes.Write("VL19", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP19", "1");
+                        inisHeroes.Write("SP19", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI19", "1");
+                        inisHeroes.Write("HI19", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI19", "1");
+                        inisHeroes.Write("PI19", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("19", "1");
+                        inisPI.Write("19", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK19", "0");
+                        inisHeroes.Write("SK19", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM19", "0");
+                        inisHeroes.Write("EM19", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP19", "0");
+                        inisHeroes.Write("VP19", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL19", "0");
+                        inisHeroes.Write("VL19", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP19", "0");
+                        inisHeroes.Write("SP19", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI19", "0");
+                        inisHeroes.Write("HI19", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI19", "0");
+                        inisHeroes.Write("PI19", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("19", "0");
+                        inisPI.Write("19", "false");
                     }
                 }
             }
@@ -5205,70 +4753,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK20", "1");
+                        inisHeroes.Write("SK20", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM20", "1");
+                        inisHeroes.Write("EM20", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP20", "1");
+                        inisHeroes.Write("VP20", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL20", "1");
+                        inisHeroes.Write("VL20", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP20", "1");
+                        inisHeroes.Write("SP20", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI20", "1");
+                        inisHeroes.Write("HI20", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI20", "1");
+                        inisHeroes.Write("PI20", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("20", "1");
+                        inisPI.Write("20", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK20", "0");
+                        inisHeroes.Write("SK20", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM20", "0");
+                        inisHeroes.Write("EM20", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP20", "0");
+                        inisHeroes.Write("VP20", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL20", "0");
+                        inisHeroes.Write("VL20", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP20", "0");
+                        inisHeroes.Write("SP20", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI20", "0");
+                        inisHeroes.Write("HI20", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI20", "0");
+                        inisHeroes.Write("PI20", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("20", "0");
+                        inisPI.Write("20", "false");
                     }
                 }
             }
@@ -5283,70 +4831,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK21", "1");
+                        inisHeroes.Write("SK21", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM21", "1");
+                        inisHeroes.Write("EM21", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP21", "1");
+                        inisHeroes.Write("VP21", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL21", "1");
+                        inisHeroes.Write("VL21", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP21", "1");
+                        inisHeroes.Write("SP21", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI21", "1");
+                        inisHeroes.Write("HI21", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI21", "1");
+                        inisHeroes.Write("PI21", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("21", "1");
+                        inisPI.Write("21", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK21", "0");
+                        inisHeroes.Write("SK21", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM21", "0");
+                        inisHeroes.Write("EM21", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP21", "0");
+                        inisHeroes.Write("VP21", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL21", "0");
+                        inisHeroes.Write("VL21", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP21", "0");
+                        inisHeroes.Write("SP21", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI21", "0");
+                        inisHeroes.Write("HI21", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI21", "0");
+                        inisHeroes.Write("PI21", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("21", "0");
+                        inisPI.Write("21", "false");
                     }
                 }
             }
@@ -5361,70 +4909,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK22", "1");
+                        inisHeroes.Write("SK22", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM22", "1");
+                        inisHeroes.Write("EM22", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP22", "1");
+                        inisHeroes.Write("VP22", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL22", "1");
+                        inisHeroes.Write("VL22", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP22", "1");
+                        inisHeroes.Write("SP22", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI22", "1");
+                        inisHeroes.Write("HI22", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI22", "1");
+                        inisHeroes.Write("PI22", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("22", "1");
+                        inisPI.Write("22", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK22", "0");
+                        inisHeroes.Write("SK22", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM22", "0");
+                        inisHeroes.Write("EM22", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP22", "0");
+                        inisHeroes.Write("VP22", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL22", "0");
+                        inisHeroes.Write("VL22", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP22", "0");
+                        inisHeroes.Write("SP22", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI22", "0");
+                        inisHeroes.Write("HI22", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI22", "0");
+                        inisHeroes.Write("PI22", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("22", "0");
+                        inisPI.Write("22", "false");
                     }
                 }
             }
@@ -5439,70 +4987,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK23", "1");
+                        inisHeroes.Write("SK23", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM23", "1");
+                        inisHeroes.Write("EM23", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP23", "1");
+                        inisHeroes.Write("VP23", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL23", "1");
+                        inisHeroes.Write("VL23", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP23", "1");
+                        inisHeroes.Write("SP23", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI23", "1");
+                        inisHeroes.Write("HI23", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI23", "1");
+                        inisHeroes.Write("PI23", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("23", "1");
+                        inisPI.Write("23", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK23", "0");
+                        inisHeroes.Write("SK23", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM23", "0");
+                        inisHeroes.Write("EM23", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP23", "0");
+                        inisHeroes.Write("VP23", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL23", "0");
+                        inisHeroes.Write("VL23", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP23", "0");
+                        inisHeroes.Write("SP23", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI23", "0");
+                        inisHeroes.Write("HI23", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI23", "0");
+                        inisHeroes.Write("PI23", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("23", "0");
+                        inisPI.Write("23", "false");
                     }
                 }
             }
@@ -5517,70 +5065,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK24", "1");
+                        inisHeroes.Write("SK24", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM24", "1");
+                        inisHeroes.Write("EM24", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP24", "1");
+                        inisHeroes.Write("VP24", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL24", "1");
+                        inisHeroes.Write("VL24", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP24", "1");
+                        inisHeroes.Write("SP24", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI24", "1");
+                        inisHeroes.Write("HI24", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI24", "1");
+                        inisHeroes.Write("PI24", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("24", "1");
+                        inisPI.Write("24", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK24", "0");
+                        inisHeroes.Write("SK24", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM24", "0");
+                        inisHeroes.Write("EM24", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP24", "0");
+                        inisHeroes.Write("VP24", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL24", "0");
+                        inisHeroes.Write("VL24", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP24", "0");
+                        inisHeroes.Write("SP24", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI24", "0");
+                        inisHeroes.Write("HI24", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI24", "0");
+                        inisHeroes.Write("PI24", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("24", "0");
+                        inisPI.Write("24", "false");
                     }
                 }
             }
@@ -5595,70 +5143,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK25", "1");
+                        inisHeroes.Write("SK25", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM25", "1");
+                        inisHeroes.Write("EM25", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP25", "1");
+                        inisHeroes.Write("VP25", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL25", "1");
+                        inisHeroes.Write("VL25", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP25", "1");
+                        inisHeroes.Write("SP25", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI25", "1");
+                        inisHeroes.Write("HI25", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI25", "1");
+                        inisHeroes.Write("PI25", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("25", "1");
+                        inisPI.Write("25", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK25", "0");
+                        inisHeroes.Write("SK25", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM25", "0");
+                        inisHeroes.Write("EM25", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP25", "0");
+                        inisHeroes.Write("VP25", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL25", "0");
+                        inisHeroes.Write("VL25", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP25", "0");
+                        inisHeroes.Write("SP25", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI25", "0");
+                        inisHeroes.Write("HI25", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI25", "0");
+                        inisHeroes.Write("PI25", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("25", "0");
+                        inisPI.Write("25", "false");
                     }
                 }
             }
@@ -5673,70 +5221,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK26", "1");
+                        inisHeroes.Write("SK26", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM26", "1");
+                        inisHeroes.Write("EM26", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP26", "1");
+                        inisHeroes.Write("VP26", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL26", "1");
+                        inisHeroes.Write("VL26", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP26", "1");
+                        inisHeroes.Write("SP26", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI26", "1");
+                        inisHeroes.Write("HI26", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI26", "1");
+                        inisHeroes.Write("PI26", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("26", "1");
+                        inisPI.Write("26", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK26", "0");
+                        inisHeroes.Write("SK26", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM26", "0");
+                        inisHeroes.Write("EM26", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP26", "0");
+                        inisHeroes.Write("VP26", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL26", "0");
+                        inisHeroes.Write("VL26", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP26", "0");
+                        inisHeroes.Write("SP26", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI26", "0");
+                        inisHeroes.Write("HI26", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI26", "0");
+                        inisHeroes.Write("PI26", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("26", "0");
+                        inisPI.Write("26", "false");
                     }
                 }
             }
@@ -5751,70 +5299,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK27", "1");
+                        inisHeroes.Write("SK27", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM27", "1");
+                        inisHeroes.Write("EM27", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP27", "1");
+                        inisHeroes.Write("VP27", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL27", "1");
+                        inisHeroes.Write("VL27", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP27", "1");
+                        inisHeroes.Write("SP27", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI27", "1");
+                        inisHeroes.Write("HI27", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI27", "1");
+                        inisHeroes.Write("PI27", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("27", "1");
+                        inisPI.Write("27", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK27", "0");
+                        inisHeroes.Write("SK27", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM27", "0");
+                        inisHeroes.Write("EM27", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP27", "0");
+                        inisHeroes.Write("VP27", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL27", "0");
+                        inisHeroes.Write("VL27", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP27", "0");
+                        inisHeroes.Write("SP27", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI27", "0");
+                        inisHeroes.Write("HI27", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI27", "0");
+                        inisHeroes.Write("PI27", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("27", "0");
+                        inisPI.Write("27", "false");
                     }
                 }
             }
@@ -5829,70 +5377,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK28", "1");
+                        inisHeroes.Write("SK28", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM28", "1");
+                        inisHeroes.Write("EM28", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP28", "1");
+                        inisHeroes.Write("VP28", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL28", "1");
+                        inisHeroes.Write("VL28", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP28", "1");
+                        inisHeroes.Write("SP28", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI28", "1");
+                        inisHeroes.Write("HI28", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI28", "1");
+                        inisHeroes.Write("PI28", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("28", "1");
+                        inisPI.Write("28", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK28", "0");
+                        inisHeroes.Write("SK28", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM28", "0");
+                        inisHeroes.Write("EM28", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP28", "0");
+                        inisHeroes.Write("VP28", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL28", "0");
+                        inisHeroes.Write("VL28", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP28", "0");
+                        inisHeroes.Write("SP28", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI28", "0");
+                        inisHeroes.Write("HI28", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI28", "0");
+                        inisHeroes.Write("PI28", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("28", "0");
+                        inisPI.Write("28", "false");
                     }
                 }
             }
@@ -5907,70 +5455,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK29", "1");
+                        inisHeroes.Write("SK29", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM29", "1");
+                        inisHeroes.Write("EM29", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP29", "1");
+                        inisHeroes.Write("VP29", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL29", "1");
+                        inisHeroes.Write("VL29", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP29", "1");
+                        inisHeroes.Write("SP29", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI29", "1");
+                        inisHeroes.Write("HI29", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI29", "1");
+                        inisHeroes.Write("PI29", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("29", "1");
+                        inisPI.Write("29", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK29", "0");
+                        inisHeroes.Write("SK29", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM29", "0");
+                        inisHeroes.Write("EM29", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP29", "0");
+                        inisHeroes.Write("VP29", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL29", "0");
+                        inisHeroes.Write("VL29", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP29", "0");
+                        inisHeroes.Write("SP29", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI29", "0");
+                        inisHeroes.Write("HI29", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI29", "0");
+                        inisHeroes.Write("PI29", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("29", "0");
+                        inisPI.Write("29", "false");
                     }
                 }
             }
@@ -5985,70 +5533,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK30", "1");
+                        inisHeroes.Write("SK30", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM30", "1");
+                        inisHeroes.Write("EM30", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP30", "1");
+                        inisHeroes.Write("VP30", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL30", "1");
+                        inisHeroes.Write("VL30", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP30", "1");
+                        inisHeroes.Write("SP30", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI30", "1");
+                        inisHeroes.Write("HI30", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI30", "1");
+                        inisHeroes.Write("PI30", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("30", "1");
+                        inisPI.Write("30", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK30", "0");
+                        inisHeroes.Write("SK30", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM30", "0");
+                        inisHeroes.Write("EM30", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP30", "0");
+                        inisHeroes.Write("VP30", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL30", "0");
+                        inisHeroes.Write("VL30", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP30", "0");
+                        inisHeroes.Write("SP30", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI30", "0");
+                        inisHeroes.Write("HI30", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI30", "0");
+                        inisHeroes.Write("PI30", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("30", "0");
+                        inisPI.Write("30", "false");
                     }
                 }
             }
@@ -6063,70 +5611,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK31", "1");
+                        inisHeroes.Write("SK31", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM31", "1");
+                        inisHeroes.Write("EM31", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP31", "1");
+                        inisHeroes.Write("VP31", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL31", "1");
+                        inisHeroes.Write("VL31", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP31", "1");
+                        inisHeroes.Write("SP31", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI31", "1");
+                        inisHeroes.Write("HI31", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI31", "1");
+                        inisHeroes.Write("PI31", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("31", "1");
+                        inisPI.Write("31", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK31", "0");
+                        inisHeroes.Write("SK31", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM31", "0");
+                        inisHeroes.Write("EM31", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP31", "0");
+                        inisHeroes.Write("VP31", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL31", "0");
+                        inisHeroes.Write("VL31", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP31", "0");
+                        inisHeroes.Write("SP31", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI31", "0");
+                        inisHeroes.Write("HI31", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI31", "0");
+                        inisHeroes.Write("PI31", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("31", "0");
+                        inisPI.Write("31", "false");
                     }
                 }
             }
@@ -6141,70 +5689,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK32", "1");
+                        inisHeroes.Write("SK32", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM32", "1");
+                        inisHeroes.Write("EM32", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP32", "1");
+                        inisHeroes.Write("VP32", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL32", "1");
+                        inisHeroes.Write("VL32", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP32", "1");
+                        inisHeroes.Write("SP32", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI32", "1");
+                        inisHeroes.Write("HI32", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI32", "1");
+                        inisHeroes.Write("PI32", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("32", "1");
+                        inisPI.Write("32", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK32", "0");
+                        inisHeroes.Write("SK32", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM32", "0");
+                        inisHeroes.Write("EM32", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP32", "0");
+                        inisHeroes.Write("VP32", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL32", "0");
+                        inisHeroes.Write("VL32", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP32", "0");
+                        inisHeroes.Write("SP32", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI32", "0");
+                        inisHeroes.Write("HI32", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI32", "0");
+                        inisHeroes.Write("PI32", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("32", "0");
+                        inisPI.Write("32", "false");
                     }
                 }
             }
@@ -6219,70 +5767,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK33", "1");
+                        inisHeroes.Write("SK33", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM33", "1");
+                        inisHeroes.Write("EM33", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP33", "1");
+                        inisHeroes.Write("VP33", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL33", "1");
+                        inisHeroes.Write("VL33", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP33", "1");
+                        inisHeroes.Write("SP33", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI33", "1");
+                        inisHeroes.Write("HI33", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI33", "1");
+                        inisHeroes.Write("PI33", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("33", "1");
+                        inisPI.Write("33", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK33", "0");
+                        inisHeroes.Write("SK33", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM33", "0");
+                        inisHeroes.Write("EM33", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP33", "0");
+                        inisHeroes.Write("VP33", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL33", "0");
+                        inisHeroes.Write("VL33", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP33", "0");
+                        inisHeroes.Write("SP33", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI33", "0");
+                        inisHeroes.Write("HI33", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI33", "0");
+                        inisHeroes.Write("PI33", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("33", "0");
+                        inisPI.Write("33", "false");
                     }
                 }
             }
@@ -6297,70 +5845,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK34", "1");
+                        inisHeroes.Write("SK34", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM34", "1");
+                        inisHeroes.Write("EM34", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP34", "1");
+                        inisHeroes.Write("VP34", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL34", "1");
+                        inisHeroes.Write("VL34", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP34", "1");
+                        inisHeroes.Write("SP34", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI34", "1");
+                        inisHeroes.Write("HI34", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI34", "1");
+                        inisHeroes.Write("PI34", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("34", "1");
+                        inisPI.Write("34", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK34", "0");
+                        inisHeroes.Write("SK34", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM34", "0");
+                        inisHeroes.Write("EM34", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP34", "0");
+                        inisHeroes.Write("VP34", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL34", "0");
+                        inisHeroes.Write("VL34", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP34", "0");
+                        inisHeroes.Write("SP34", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI34", "0");
+                        inisHeroes.Write("HI34", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI34", "0");
+                        inisHeroes.Write("PI34", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("34", "0");
+                        inisPI.Write("34", "false");
                     }
                 }
             }
@@ -6375,70 +5923,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK35", "1");
+                        inisHeroes.Write("SK35", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM35", "1");
+                        inisHeroes.Write("EM35", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP35", "1");
+                        inisHeroes.Write("VP35", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL35", "1");
+                        inisHeroes.Write("VL35", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP35", "1");
+                        inisHeroes.Write("SP35", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI35", "1");
+                        inisHeroes.Write("HI35", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI35", "1");
+                        inisHeroes.Write("PI35", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("35", "1");
+                        inisPI.Write("35", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK35", "0");
+                        inisHeroes.Write("SK35", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM35", "0");
+                        inisHeroes.Write("EM35", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP35", "0");
+                        inisHeroes.Write("VP35", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL35", "0");
+                        inisHeroes.Write("VL35", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP35", "0");
+                        inisHeroes.Write("SP35", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI35", "0");
+                        inisHeroes.Write("HI35", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI35", "0");
+                        inisHeroes.Write("PI35", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("35", "0");
+                        inisPI.Write("35", "false");
                     }
                 }
             }
@@ -6453,70 +6001,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK36", "1");
+                        inisHeroes.Write("SK36", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM36", "1");
+                        inisHeroes.Write("EM36", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP36", "1");
+                        inisHeroes.Write("VP36", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL36", "1");
+                        inisHeroes.Write("VL36", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP36", "1");
+                        inisHeroes.Write("SP36", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI36", "1");
+                        inisHeroes.Write("HI36", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI36", "1");
+                        inisHeroes.Write("PI36", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("36", "1");
+                        inisPI.Write("36", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK36", "0");
+                        inisHeroes.Write("SK36", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM36", "0");
+                        inisHeroes.Write("EM36", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP36", "0");
+                        inisHeroes.Write("VP36", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL36", "0");
+                        inisHeroes.Write("VL36", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP36", "0");
+                        inisHeroes.Write("SP36", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI36", "0");
+                        inisHeroes.Write("HI36", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI36", "0");
+                        inisHeroes.Write("PI36", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("36", "0");
+                        inisPI.Write("36", "false");
                     }
                 }
             }
@@ -6531,70 +6079,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK37", "1");
+                        inisHeroes.Write("SK37", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM37", "1");
+                        inisHeroes.Write("EM37", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP37", "1");
+                        inisHeroes.Write("VP37", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL37", "1");
+                        inisHeroes.Write("VL37", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP37", "1");
+                        inisHeroes.Write("SP37", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI37", "1");
+                        inisHeroes.Write("HI37", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI37", "1");
+                        inisHeroes.Write("PI37", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("37", "1");
+                        inisPI.Write("37", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK37", "0");
+                        inisHeroes.Write("SK37", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM37", "0");
+                        inisHeroes.Write("EM37", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP37", "0");
+                        inisHeroes.Write("VP37", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL37", "0");
+                        inisHeroes.Write("VL37", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP37", "0");
+                        inisHeroes.Write("SP37", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI37", "0");
+                        inisHeroes.Write("HI37", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI37", "0");
+                        inisHeroes.Write("PI37", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("37", "0");
+                        inisPI.Write("37", "false");
                     }
                 }
             }
@@ -6609,70 +6157,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK38", "1");
+                        inisHeroes.Write("SK38", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM38", "1");
+                        inisHeroes.Write("EM38", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP38", "1");
+                        inisHeroes.Write("VP38", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL38", "1");
+                        inisHeroes.Write("VL38", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP38", "1");
+                        inisHeroes.Write("SP38", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI38", "1");
+                        inisHeroes.Write("HI38", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI38", "1");
+                        inisHeroes.Write("PI38", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("38", "1");
+                        inisPI.Write("38", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK38", "0");
+                        inisHeroes.Write("SK38", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM38", "0");
+                        inisHeroes.Write("EM38", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP38", "0");
+                        inisHeroes.Write("VP38", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL38", "0");
+                        inisHeroes.Write("VL38", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP38", "0");
+                        inisHeroes.Write("SP38", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI38", "0");
+                        inisHeroes.Write("HI38", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI38", "0");
+                        inisHeroes.Write("PI38", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("38", "0");
+                        inisPI.Write("38", "false");
                     }
                 }
             }
@@ -6687,70 +6235,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK39", "1");
+                        inisHeroes.Write("SK39", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM39", "1");
+                        inisHeroes.Write("EM39", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP39", "1");
+                        inisHeroes.Write("VP39", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL39", "1");
+                        inisHeroes.Write("VL39", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP39", "1");
+                        inisHeroes.Write("SP39", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI39", "1");
+                        inisHeroes.Write("HI39", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI39", "1");
+                        inisHeroes.Write("PI39", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("39", "1");
+                        inisPI.Write("39", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK39", "0");
+                        inisHeroes.Write("SK39", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM39", "0");
+                        inisHeroes.Write("EM39", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP39", "0");
+                        inisHeroes.Write("VP39", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL39", "0");
+                        inisHeroes.Write("VL39", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP39", "0");
+                        inisHeroes.Write("SP39", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI39", "0");
+                        inisHeroes.Write("HI39", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI39", "0");
+                        inisHeroes.Write("PI39", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("39", "0");
+                        inisPI.Write("39", "false");
                     }
                 }
             }
@@ -6765,70 +6313,70 @@ namespace OverwatchLootBoxTracker
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK40", "1");
+                        inisHeroes.Write("SK40", "true");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM40", "1");
+                        inisHeroes.Write("EM40", "true");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP40", "1");
+                        inisHeroes.Write("VP40", "true");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL40", "1");
+                        inisHeroes.Write("VL40", "true");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP40", "1");
+                        inisHeroes.Write("SP40", "true");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI40", "1");
+                        inisHeroes.Write("HI40", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI40", "1");
+                        inisHeroes.Write("PI40", "true");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("40", "1");
+                        inisPI.Write("40", "true");
                     }
                 }
                 else
                 {
                     if (BackSave == Lang.Skins)
                     {
-                        inisHeroes.Write("SK40", "0");
+                        inisHeroes.Write("SK40", "false");
                     }
                     if (BackSave == Lang.Emotes)
                     {
-                        inisHeroes.Write("EM40", "0");
+                        inisHeroes.Write("EM40", "false");
                     }
                     if (BackSave == Lang.VictoryPoses)
                     {
-                        inisHeroes.Write("VP40", "0");
+                        inisHeroes.Write("VP40", "false");
                     }
                     if (BackSave == Lang.VoiceLines)
                     {
-                        inisHeroes.Write("VL40", "0");
+                        inisHeroes.Write("VL40", "false");
                     }
                     if (BackSave == Lang.Sprays)
                     {
-                        inisHeroes.Write("SP40", "0");
+                        inisHeroes.Write("SP40", "false");
                     }
                     if (BackSave == Lang.HighlightIntros)
                     {
-                        inisHeroes.Write("HI40", "0");
+                        inisHeroes.Write("HI40", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe != "PI")
                     {
-                        inisHeroes.Write("PI40", "0");
+                        inisHeroes.Write("PI40", "false");
                     }
                     if (BackSave == Lang.PlayerIcons && Heroe == "PI")
                     {
-                        inisPI.Write("40", "0");
+                        inisPI.Write("40", "false");
                     }
                 }
             }

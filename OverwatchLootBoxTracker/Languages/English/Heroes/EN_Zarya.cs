@@ -144,5 +144,61 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 
 
         //Emotes
+        //Epic
+        public string Bring_it_on_EM
+        {
+            get
+            {
+                return "Bring it on";
+            }
+        }
+
+        public string Comedy_Gold_EM
+        {
+            get
+            {
+                return "Comedy Gold";
+            }
+        }
+
+        public string Crush_you_EM
+        {
+            get
+            {
+                return "Crush you";
+            }
+        }
+
+        public string Punping_Iron_EM
+        {
+            get
+            {
+                return "Pumping Iron";
+            }
+        }
+
+        public string Take_a_knee_EM
+        {
+            get
+            {
+                return "Take a knee";
+            }
+        }
+
+        public string Dance_EM
+        {//Annyver 17
+            get
+            {
+                return "Dance";
+            }
+        }
+        //Legendary
+        public string Mystery_Gift_EM
+        {//Winter 16
+            get
+            {
+                return "Mystery Gift";
+            }
+        }
     }
 }

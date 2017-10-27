@@ -134,7 +134,63 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-        
+
         //Emotes
+        //Epic
+        public string Amused_EM
+        {
+            get
+            {
+                return "Amused";
+            }
+        }
+
+        public string Fist_EM
+        {
+            get
+            {
+                return "Fist";
+            }
+        }
+
+        public string I_see_you_EM
+        {
+            get
+            {
+                return "I see you";
+            }
+        }
+
+        public string Locked_and_loaded_EM
+        {
+            get
+            {
+                return "Locked and loaded";
+            }
+        }
+
+        public string Take_a_knee_EM
+        {
+            get
+            {
+                return "Take a knee";
+            }
+        }
+
+        public string Push_Ups_EM
+        {//Uprising 17
+            get
+            {
+                return "Push Ups";
+            }
+        }
+
+        public string Dance_EM
+        {//Annyver 17
+            get
+            {
+                return "Dance";
+            }
+        }
     }
 }

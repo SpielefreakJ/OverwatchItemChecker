@@ -248,5 +248,110 @@ namespace OverwatchLootBoxTracker.Translate
 
 
         //Emotes
+        //Epic
+        public string Laugh_matter_EM//1
+        {
+            get
+            {
+                //if (myLang == "DE")
+                //{
+                //    return DE.Sanzang_SK;
+                //}
+                //else
+                {
+                    return EN.Laughing_matter_EM;
+                }
+            }
+        }
+
+        public string Monkey_Buisness_EM//2
+        {
+            get
+            {
+                //if (myLang == "DE")
+                //{
+                //    return DE.Sanzang_SK;
+                //}
+                //else
+                {
+                    return EN.Monkey_Buisness_EM;
+                }
+            }
+        }
+
+        public string Peanut_Butter_EM//3
+        {
+            get
+            {
+                //if (myLang == "DE")
+                //{
+                //    return DE.Sanzang_SK;
+                //}
+                //else
+                {
+                    return EN.Peanut_Butter_EM;
+                }
+            }
+        }
+
+        public string Roar_EM//4
+        {
+            get
+            {
+                //if (myLang == "DE")
+                //{
+                //    return DE.Sanzang_SK;
+                //}
+                //else
+                {
+                    return EN.Roar_EM;
+                }
+            }
+        }
+
+        public string Sitting_around_EM//5
+        {
+            get
+            {
+                //if (myLang == "DE")
+                //{
+                //    return DE.Sanzang_SK;
+                //}
+                //else
+                {
+                    return EN.Sitting_around_EM;
+                }
+            }
+        }
+
+        public string Shadow_Puppets_EM//6
+        {//Halloween 16
+            get
+            {
+                //if (myLang == "DE")
+                //{
+                //    return DE.Sanzang_SK;
+                //}
+                //else
+                {
+                    return EN.Shadow_Puppets_EM;
+                }
+            }
+        }
+
+        public string Twist_EM//7
+        {//Annyver 17
+            get
+            {
+                //if (myLang == "DE")
+                //{
+                //    return DE.Sanzang_SK;
+                //}
+                //else
+                {
+                    return EN.Twist_EM;
+                }
+            }
+        }
     }
 }

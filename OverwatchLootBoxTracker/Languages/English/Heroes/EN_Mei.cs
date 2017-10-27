@@ -144,5 +144,77 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 
 
         //Emotes
+        //Epic
+        public string Companion_EM
+        {
+            get
+            {
+                return "Companion";
+            }
+        }
+
+        public string Gigle_EM
+        {
+            get
+            {
+                return "Gigle";
+            }
+        }
+
+        public string Kneel_EM
+        {
+            get
+            {
+                return "Kneel";
+            }
+        }
+
+        public string Spray_EM
+        {
+            get
+            {
+                return "Spray";
+            }
+        }
+
+        public string Yaaaaaaaaay_EM
+        {
+            get
+            {
+                return "Yaaaaaaaaay!";
+            }
+        }
+
+        public string Hopping_EM
+        {//Halloween 17
+            get
+            {
+                return "Hopping";
+            }
+        }
+
+        public string Snowman_EM
+        {//Winter 16
+            get
+            {
+                return "Snowman";
+            }
+        }
+
+        public string So_excited_EM
+        {//Rooster 17
+            get
+            {
+                return "So excited";
+            }
+        }
+
+        public string Sunny_Dance_EM
+        {//Annyver 17
+            get
+            {
+                return "Sunny Dance";
+            }
+        }
     }
 }

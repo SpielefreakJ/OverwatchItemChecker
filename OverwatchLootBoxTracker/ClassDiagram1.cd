@@ -3,7 +3,7 @@
   <Class Name="OverwatchLootBoxTracker.CCost" Collapsed="true">
     <Position X="2" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>QAAAFAgBAAEAAADIFIAAAAAQAEIAAAAAQ4AAAAACABA=</HashCode>
+      <HashCode>QAAAFAgBAEEAAADYFIAAQAEQAEIAABAAS4AQAAACABA=</HashCode>
       <FileName>CCost.cs</FileName>
     </TypeIdentifier>
   </Class>
@@ -14,11 +14,11 @@
       <FileName>CGoldweapon.cs</FileName>
     </TypeIdentifier>
   </Class>
-  <Class Name="OverwatchLootBoxTracker.CLang">
+  <Class Name="OverwatchLootBoxTracker.CIniCreator">
     <Position X="0.5" Y="0.5" Width="1.5" />
     <TypeIdentifier>
-      <HashCode>AAAAAACCQAACCIQEAIAAABAAgCBIAACBgYAAAAEAAAA=</HashCode>
-      <FileName>CLang.cs</FileName>
+      <HashCode>AAAAAAAAAAQAAAIQAAAAAAAAAABAAAAAAAAAAAAAAAg=</HashCode>
+      <FileName>CIniCreator.cs</FileName>
     </TypeIdentifier>
   </Class>
   <Font Name="Segoe UI" Size="9" />

@@ -144,5 +144,61 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 
 
         //Emotes
+        //Epic
+        public string Cackle_EM
+        {
+            get
+            {
+                return "Cackle";
+            }
+        }
+
+        public string Not_Impressed_EM
+        {
+            get
+            {
+                return "Not Impressed";
+            }
+        }
+
+        public string Shrug_EM
+        {
+            get
+            {
+                return "Shrug";
+            }
+        }
+
+        public string Slice_EM
+        {
+            get
+            {
+                return "Slice";
+            }
+        }
+
+        public string Slow_Clap_EM
+        {
+            get
+            {
+                return "Slow Clap";
+            }
+        }
+
+        public string Take_a_knee_EM
+        {
+            get
+            {
+                return "Take a knee";
+            }
+        }
+
+        public string Dance_EM
+        {//Annyver 17
+            get
+            {
+                return "Dance";
+            }
+        }
     }
 }

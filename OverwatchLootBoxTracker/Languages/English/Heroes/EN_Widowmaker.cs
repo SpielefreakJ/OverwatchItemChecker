@@ -136,5 +136,53 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 
 
         //Emotes
+        //Epic
+        public string A_rest_EM
+        {
+            get
+            {
+                return "A rest";
+            }
+        }
+
+        public string Curtain_Call_EM
+        {
+            get
+            {
+                return "Curtain Call";
+            }
+        }
+
+        public string Delighted_EM
+        {
+            get
+            {
+                return "Delighted";
+            }
+        }
+
+        public string Shot_Dead_EM
+        {
+            get
+            {
+                return "Shot Dead";
+            }
+        }
+
+        public string Widows_Kiss_EM
+        {
+            get
+            {
+                return "Widow's Kiss";
+            }
+        }
+
+        public string Ballet_EM
+        {//Annyver 17
+            get
+            {
+                return "Ballet";
+            }
+        }
     }
 }

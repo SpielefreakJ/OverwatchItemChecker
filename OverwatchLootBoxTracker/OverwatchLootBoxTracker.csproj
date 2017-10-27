@@ -28,8 +28,8 @@
     <ErrorReportUrl>https://github.com/SpielefreakJ/OverwatchLootTracker/issues</ErrorReportUrl>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>7</ApplicationRevision>
-    <ApplicationVersion>0.1.0.7</ApplicationVersion>
+    <ApplicationRevision>8</ApplicationRevision>
+    <ApplicationVersion>0.1.1.8</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -98,6 +98,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CGoldweapon.cs" />
+    <Compile Include="CIniCreator.cs" />
     <Compile Include="Languages\German\Heroes\DE_Ana.cs" />
     <Compile Include="Languages\German\Heroes\DE_Bastion.cs" />
     <Compile Include="Languages\German\Heroes\DE_Doomfist.cs" />

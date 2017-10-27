@@ -278,5 +278,82 @@ namespace OverwatchLootBoxTracker.Translate
 
 
         //Emotes
+        //Epic
+        public string Gunspinning_EM//1
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Gunspinning_EM;
+                }
+            }
+        }
+
+        public string Hat_Tip_EM//2
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Hat_Tip_EM;
+                }
+            }
+        }
+
+        public string Joker_EM//3
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Joker_EM;
+                }
+            }
+        }
+
+        public string Spit_EM//4
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Spit_EM;
+                }
+            }
+        }
+
+        public string Take_a_load_off_EM//5
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Take_a_load_off_EM;
+                }
+            }
+        }
+
+        public string Hat_Trick_EM//6
+        {//Winter 16
+            get
+            {
+                //else
+                {
+                    return EN.Hat_Tip_EM;
+                }
+            }
+        }
+
+        public string Line_Dance_EM//7
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Lifeguard_SK;
+                }
+            }
+        }
     }
 }

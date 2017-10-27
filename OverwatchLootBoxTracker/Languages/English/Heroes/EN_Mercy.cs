@@ -144,5 +144,53 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 
 
         //Emotes
+        //Epic
+        public string Applause_EM
+        {
+            get
+            {
+                return "Applause";
+            }
+        }
+
+        public string Caduceus_EM
+        {
+            get
+            {
+                return "Caduceus";
+            }
+        }
+
+        public string No_Pulse_EM
+        {
+            get
+            {
+                return "No Pulse";
+            }
+        }
+
+        public string Relax_EM
+        {
+            get
+            {
+                return "Relax";
+            }
+        }
+
+        public string The_best_Medicine_EM
+        {
+            get
+            {
+                return "The best Medicine";
+            }
+        }
+
+        public string Hustle_EM
+        {//Annyver 17
+            get
+            {
+                return "Hustle";
+            }
+        }
     }
 }

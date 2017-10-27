@@ -248,5 +248,71 @@ namespace OverwatchLootBoxTracker.Translate
 
 
         //Emotes
+        //Epic
+        public string Belly_Laugh_EM//1
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Belly_Laugh_EM;
+                }
+            }
+        }
+
+        public string Boo_EM//2
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Boo_EM;
+                }
+            }
+        }
+
+        public string Can_Crusher_EM//3
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Can_Crusher_EM;
+                }
+            }
+        }
+
+        public string Headbanging_EM//4
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Headbanging_EM;
+                }
+            }
+        }
+
+        public string Tuckered_Out_EM//5
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Tuckered_Out_EM;
+                }
+            }
+        }
+
+        public string Dance_EM//6
+        {//Annyver 17
+            get
+            {
+                //else
+                {
+                    return EN.Dance_EM;
+                }
+            }
+        }
     }
 }

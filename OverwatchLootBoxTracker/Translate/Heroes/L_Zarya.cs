@@ -278,5 +278,110 @@ namespace OverwatchLootBoxTracker.Translate
 
 
         //Emotes
+        //Epic
+        public string Bring_it_on_EM//1
+        {
+            get
+            {
+                //if (myLang == "DE")
+                //{
+                //    return DE.Sanzang_SK;
+                //}
+                //else
+                {
+                    return EN.Bring_it_on_EM;
+                }
+            }
+        }
+
+        public string Comedy_Gold_EM//2
+        {
+            get
+            {
+                //if (myLang == "DE")
+                //{
+                //    return DE.Sanzang_SK;
+                //}
+                //else
+                {
+                    return EN.Comedy_Gold_EM;
+                }
+            }
+        }
+
+        public string Chush_you_EM//3
+        {
+            get
+            {
+                //if (myLang == "DE")
+                //{
+                //    return DE.Sanzang_SK;
+                //}
+                //else
+                {
+                    return EN.Crush_you_EM;
+                }
+            }
+        }
+
+        public string Pumping_Iron_EM//4
+        {
+            get
+            {
+                //if (myLang == "DE")
+                //{
+                //    return DE.Sanzang_SK;
+                //}
+                //else
+                {
+                    return EN.Punping_Iron_EM;
+                }
+            }
+        }
+
+        public string Take_a_knee_EM//5
+        {
+            get
+            {
+                //if (myLang == "DE")
+                //{
+                //    return DE.Sanzang_SK;
+                //}
+                //else
+                {
+                    return EN.Take_a_knee_EM;
+                }
+            }
+        }
+
+        public string Dance_EM//6
+        {//Annyver 17
+            get
+            {
+                //if (myLang == "DE")
+                //{
+                //    return DE.Sanzang_SK;
+                //}
+                //else
+                {
+                    return EN.Dance_EM;
+                }
+            }
+        }
+        //Legendary
+        public string Mystery_Gift_EM//7
+        {//YWinter 16
+            get
+            {
+                //if (myLang == "DE")
+                //{
+                //    return DE.Sanzang_SK;
+                //}
+                //else
+                {
+                    return EN.Mystery_Gift_EM;
+                }
+            }
+        }
     }
 }

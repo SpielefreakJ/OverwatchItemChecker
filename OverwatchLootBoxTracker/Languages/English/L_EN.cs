@@ -17,7 +17,7 @@ namespace OverwatchLootBoxTracker.Lang
 
         private void ChangesT()
         {
-            Changes = "\n\n\nAlpha Version!\n\nFeatures:\n - Save Skins\n\nLanguages:\n- German\n- English";
+            Changes = "\n\n\nAlpha Version!\n\nFeatures:\n - Save Skins\n- Save Emotes\n\nLanguages:\n- German\n- English";
         }
 
 
@@ -80,6 +80,22 @@ namespace OverwatchLootBoxTracker.Lang
             get
             {
                 return "Back";
+            }
+        }
+
+        public string DeleteSaves
+        {
+            get
+            {
+                return "Because of changed Saves we have to delete all saves.\nDirectory: C:\\USER\\USERNAME\\AppData\\Local\\OWItemTracker\n\nOK for Delete\nCancel to Close the App (to backup and check all old files)";
+            }
+        }
+
+        public string DeleteSavesS
+        {
+            get
+            {
+                return "Successfully Deleted!";
             }
         }
 

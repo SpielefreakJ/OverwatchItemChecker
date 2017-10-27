@@ -67,6 +67,22 @@ namespace OverwatchLootBoxTracker.Lang
             }
         }
 
+        public string DeleteSaves
+        {
+            get
+            {
+                return "Die Speicherfunktion wurde geändert.\n befor die App gestartet weden kann\nmüssel alle gespeicherten sachen gelöscht werden.\nOrdner: C:\\Benutzer\\BENUTZERNAME\\AppData\\Local\\OWItemTracker\n\nOK zum Löschen\nAbbrechen zum beenden (für kopieren und checken der alten Dateien)";
+            }
+        }
+
+        public string DeleteSavesS
+        {
+            get
+            {
+                return "Alles erfolgreich Gelöscht";
+            }
+        }
+
 
         //Beim Beenden
 

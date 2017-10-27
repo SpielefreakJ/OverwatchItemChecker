@@ -263,5 +263,95 @@ namespace OverwatchLootBoxTracker.Translate
 
 
         //Emotes
+        //Epic
+        public string A_rest_EM//1
+        {
+            get
+            {
+                //if (myLang == "DE")
+                //{
+                //    return DE.Sanzang_SK;
+                //}
+                //else
+                {
+                    return EN.A_rest_EM;
+                }
+            }
+        }
+
+        public string Curtain_Call_EM//2
+        {
+            get
+            {
+                //if (myLang == "DE")
+                //{
+                //    return DE.Sanzang_SK;
+                //}
+                //else
+                {
+                    return EN.Curtain_Call_EM;
+                }
+            }
+        }
+
+        public string Delighted_EM//3
+        {
+            get
+            {
+                //if (myLang == "DE")
+                //{
+                //    return DE.Sanzang_SK;
+                //}
+                //else
+                {
+                    return EN.Delighted_EM;
+                }
+            }
+        }
+
+        public string Shot_Dead_EM//4
+        {
+            get
+            {
+                //if (myLang == "DE")
+                //{
+                //    return DE.Sanzang_SK;
+                //}
+                //else
+                {
+                    return EN.Shot_Dead_EM;
+                }
+            }
+        }
+
+        public string Widows_Kiss_EM//5
+        {
+            get
+            {
+                //if (myLang == "DE")
+                //{
+                //    return DE.Sanzang_SK;
+                //}
+                //else
+                {
+                    return EN.Widows_Kiss_EM;
+                }
+            }
+        }
+
+        public string Ballet_EM//6
+        {//Annyver 17
+            get
+            {
+                //if (myLang == "DE")
+                //{
+                //    return DE.Sanzang_SK;
+                //}
+                //else
+                {
+                    return EN.Ballet_EM;
+                }
+            }
+        }
     }
 }

@@ -308,5 +308,95 @@ namespace OverwatchLootBoxTracker.Translate
 
 
         //Emotes
+
+        public string Cheer_EM//1
+        {
+            get
+            {
+                //if (myLang == "DE")
+                //{
+                //    return DE.Sanzang_SK;
+                //}
+                //else
+                {
+                    return EN.Cheer_EM;
+                }
+            }
+        }
+
+        public string Finger_guns_EM//2
+        {
+            get
+            {
+                //if (myLang == "DE")
+                //{
+                //    return DE.Sanzang_SK;
+                //}
+                //else
+                {
+                    return EN.Finger_guns_EM;
+                }
+            }
+        }
+
+        public string Having_a_laugh_EM//3
+        {
+            get
+            {
+                //if (myLang == "DE")
+                //{
+                //    return DE.Sanzang_SK;
+                //}
+                //else
+                {
+                    return EN.Having_a_laugh_EM;
+                }
+            }
+        }
+
+        public string Sitting_arround_EM//4
+        {
+            get
+            {
+                //if (myLang == "DE")
+                //{
+                //    return DE.Sanzang_SK;
+                //}
+                //else
+                {
+                    return EN.Sitting_around_EM;
+                }
+            }
+        }
+
+        public string Spin_EM//5
+        {
+            get
+            {
+                //if (myLang == "DE")
+                //{
+                //    return DE.Sanzang_SK;
+                //}
+                //else
+                {
+                    return EN.Spin_EM;
+                }
+            }
+        }
+
+        public string Charleston_EM//6
+        {//Annyver 17
+            get
+            {
+                //if (myLang == "DE")
+                //{
+                //    return DE.Sanzang_SK;
+                //}
+                //else
+                {
+                    return EN.Charleston_EM;
+                }
+            }
+        }
     }
 }

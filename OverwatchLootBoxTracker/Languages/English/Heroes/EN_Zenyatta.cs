@@ -136,5 +136,53 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 
 
         //Emotes
+        //Epic
+        public string Focusiong_EM
+        {
+            get
+            {
+                return "Focusing";
+            }
+        }
+
+        public string Meditate_EM
+        {
+            get
+            {
+                return "Meditate";
+            }
+        }
+
+        public string Round_of_Applause_EM
+        {
+            get
+            {
+                return "Round of Applause";
+            }
+        }
+
+        public string Taunt_EM
+        {
+            get
+            {
+                return "Taunt";
+            }
+        }
+
+        public string Tickled_EM
+        {
+            get
+            {
+                return "Tickled";
+            }
+        }
+
+        public string Dance_EM
+        {//Anbnyver 17
+            get
+            {
+                return "Dance";
+            }
+        }
     }
 }
