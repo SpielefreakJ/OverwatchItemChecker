@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="OverwatchLootBoxTracker.exe" version="0.1.1.8" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="OverwatchLootBoxTracker.exe" version="0.1.1.0" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="overwatch_small.ico" asmv2:publisher="OverwatchLootBoxTracker" asmv2:product="OverwatchLootBoxTracker" asmv2:supportUrl="https://github.com/SpielefreakJ/OverwatchLootTracker" co.v1:errorReportUrl="https://github.com/SpielefreakJ/OverwatchLootTracker/issues" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -44,14 +44,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OverwatchLootBoxTracker.exe" size="354272">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OverwatchLootBoxTracker.exe" size="314848">
       <assemblyIdentity name="OverwatchLootBoxTracker" version="1.0.0.0" publicKeyToken="AF1D70E6AB47CC66" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ojcFEAgJFffEgUi7Bhfbft+CPNDSvmz9hJuDbykZXq4=</dsig:DigestValue>
+        <dsig:DigestValue>xyFvIHlTpyfaHJHWM60l0rC/9vyqmjte24l71XO4pgQ=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

@@ -9,7 +9,7 @@ namespace OverwatchLootBoxTracker
     class CIniCreator
     {
         IniStream inisHeroes = null;
-        IniStream inisPI = null;
+        //IniStream inisPI = null;
         string Path = null;
 
         public CIniCreator(string Folder)
