@@ -104,5 +104,45 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
 
 
         //Emotes
+        //Epic
+        public string Fake_Out_EM
+        {
+            get
+            {
+                return "Angetäuscht";
+            }
+        }
+
+        public string Intimidate_EM
+        {
+            get
+            {
+                return "Einschüchtern";
+            }
+        }
+
+        public string Ready_for_Battle_EM
+        {
+            get
+            {
+                return "Kampfbereit";
+            }
+        }
+
+        public string Take_a_knee_EM
+        {
+            get
+            {
+                return "In die knie";
+            }
+        }
+
+        public string Thumbs_Down_EM
+        {
+            get
+            {
+                return "Daumen runter";
+            }
+        }
     }
 }

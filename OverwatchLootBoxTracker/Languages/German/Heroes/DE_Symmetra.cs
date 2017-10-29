@@ -136,5 +136,61 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
 
 
         //Emotes
+        //Epic
+        public string Clap_EM
+        {
+            get
+            {
+                return "Klatschen";
+            }
+        }
+
+        public string Flow_EM
+        {
+            get
+            {
+                return "Fliessende Bewegung";
+            }
+        }
+
+        public string Have_a_seat_EM
+        {
+            get
+            {
+                return "Ordentlich sitztend";
+            }
+        }
+
+        public string Insignificant_EM
+        {
+            get
+            {
+                return "Unbedeutend";
+            }
+        }
+
+        public string Snicker_EM
+        {
+            get
+            {
+                return "Kichernd";
+            }
+        }
+
+        public string Ribbon_EM
+        {//Summer 16
+            get
+            {
+                return "Band";
+            }
+        }
+
+        public string Dance_EM
+        {//Annyver 17
+            get
+            {
+                return "Tanzen";
+            }
+        }
     }
 }

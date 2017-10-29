@@ -120,5 +120,61 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
 
 
         //Emotes
+        //Epic
+        public string Beckon_EM
+        {
+            get
+            {
+                return "Herausforderung";
+            }
+        }
+
+        public string Brush_Shoulder_EM
+        {
+            get
+            {
+                return "Abputzen";
+            }
+        }
+
+        public string Chuckle_EM
+        {
+            get
+            {
+                return "Kichern";
+            }
+        }
+
+        public string Meditate_EM
+        {
+            get
+            {
+                return "Meditierend";
+            }
+        }
+
+        public string Victory_EM
+        {
+            get
+            {
+                return "Sieg";
+            }
+        }
+
+        public string Training_EM
+        {//Uprising 17
+            get
+            {
+                return "Kampfübung";
+            }
+        }
+
+        public string Fisherman_Dance_EM
+        {//Annyver 17
+            get
+            {
+                return "Fischertanz";
+            }
+        }
     }
 }

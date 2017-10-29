@@ -125,7 +125,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         {
             get
             {
-                return "Chortle";
+                return "Beckon";
             }
         }
 

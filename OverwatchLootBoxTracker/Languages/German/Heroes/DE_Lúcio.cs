@@ -136,5 +136,61 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
 
 
         //Emotes
+        //Epic
+        public string Capoeira_EM
+        {
+            get
+            {
+                return "Capoeira";
+            }
+        }
+
+        public string Chilling_EM
+        {
+            get
+            {
+                return "Gechillt";
+            }
+        }
+
+        public string In_the_Groove_EM
+        {
+            get
+            {
+                return "Groovy";
+            }
+        }
+
+        public string Knee_Slapper_EM
+        {
+            get
+            {
+                return "Schenkelklatscher";
+            }
+        }
+
+        public string Nah_EM
+        {
+            get
+            {
+                return "Mix da!";
+            }
+        }
+
+        public string Juggle_EM
+        {//SFummer 16
+            get
+            {
+                return "Jonglieren";
+            }
+        }
+
+        public string Smooth_EM
+        {//Annyver 17
+            get
+            {
+                return "Tanzen";
+            }
+        }
     }
 }

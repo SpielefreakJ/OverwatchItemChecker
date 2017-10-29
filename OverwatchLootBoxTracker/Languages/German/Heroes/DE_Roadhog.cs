@@ -128,5 +128,53 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
 
 
         //Emotes
+        //Epic
+        public string Belly_Laugh_EM
+        {
+            get
+            {
+                return "Platzt vor Lachen";
+            }
+        }
+
+        public string Boo_EM
+        {
+            get
+            {
+                return "Buh!";
+            }
+        }
+
+        public string Can_Crusher_EM
+        {
+            get
+            {
+                return "Dosenquetscher";
+            }
+        }
+
+        public string Headbanging_EM
+        {
+            get
+            {
+                return "Headbanging";
+            }
+        }
+
+        public string Tuckered_Out_EM
+        {
+            get
+            {
+                return "Völlig erschöpft";
+            }
+        }
+
+        public string Dance_EM
+        {//Annyver 17
+            get
+            {
+                return "Tanzen";
+            }
+        }
     }
 }

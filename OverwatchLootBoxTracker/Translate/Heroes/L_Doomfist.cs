@@ -208,7 +208,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Fake_Out_EM;
+                }
+                else
                 {
                     return EN.Fake_Out_EM;
                 }
@@ -219,7 +223,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Intimidate_EM;
+                }
+                else
                 {
                     return EN.Intimidate_EM;
                 }
@@ -230,7 +238,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Ready_for_Battle_EM;
+                }
+                else
                 {
                     return EN.Ready_for_Battle_EM;
                 }
@@ -241,7 +253,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Take_a_knee_EM;
+                }
+                else
                 {
                     return EN.Take_a_knee_EM;
                 }
@@ -252,7 +268,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Thumbs_Down_EM;
+                }
+                else
                 {
                     return EN.Thumbs_Down_EM;
                 }

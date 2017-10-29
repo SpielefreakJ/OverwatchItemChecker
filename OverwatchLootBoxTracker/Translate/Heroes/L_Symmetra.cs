@@ -268,7 +268,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Clap_EM;
+                }
+                else
                 {
                     return EN.Clap_EM;
                 }
@@ -279,7 +283,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Flow_EM;
+                }
+                else
                 {
                     return EN.Flow_EM;
                 }
@@ -290,7 +298,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Have_a_seat_EM;
+                }
+                else
                 {
                     return EN.Have_a_seat_EM;
                 }
@@ -301,7 +313,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Insignificant_EM;
+                }
+                else
                 {
                     return EN.Insignificant_EM;
                 }
@@ -312,7 +328,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Snicker_EM;
+                }
+                else
                 {
                     return EN.Snicker_EM;
                 }
@@ -323,7 +343,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Summer 16
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Ribbon_EM;
+                }
+                else
                 {
                     return EN.Ribbon_EM;
                 }
@@ -334,7 +358,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Annyver 17
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Dance_EM;
+                }
+                else
                 {
                     return EN.Dance_EM;
                 }

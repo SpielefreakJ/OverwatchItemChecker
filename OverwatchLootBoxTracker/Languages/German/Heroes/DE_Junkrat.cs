@@ -128,5 +128,61 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
 
 
         //Emotes
+        //Epic
+        public string Cant_Deal_EM
+        {
+            get
+            {
+                return "Zum Totlachen";
+            }
+        }
+
+        public string Juggling_EM
+        {
+            get
+            {
+                return "Jongleur";
+            }
+        }
+
+        public string Lounging_EM
+        {
+            get
+            {
+                return "Abhängen";
+            }
+        }
+
+        public string Puppet_EM
+        {
+            get
+            {
+                return "Puppenspiel";
+            }
+        }
+
+        public string Vaudeville_EM
+        {
+            get
+            {
+                return "Vaudeville";
+            }
+        }
+
+        public string Dud_EM
+        {//Rooster 17
+            get
+            {
+                return "Blindgänger?";
+            }
+        }
+
+        public string Running_Rat_EM
+        {//Annyver 17
+            get
+            {
+                return "Running Rat";
+            }
+        }
     }
 }

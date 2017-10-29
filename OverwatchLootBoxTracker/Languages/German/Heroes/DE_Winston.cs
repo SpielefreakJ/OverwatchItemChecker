@@ -128,5 +128,61 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
 
 
         //Emotes
+        //Epic
+        public string Laughing_matter_EM
+        {
+            get
+            {
+                return "Zwerchfellbelastungstest";
+            }
+        }
+
+        public string Monkey_Buisness_EM
+        {
+            get
+            {
+                return "Affig";
+            }
+        }
+
+        public string Peanut_Butter_EM
+        {
+            get
+            {
+                return "Erdnussbutter";
+            }
+        }
+
+        public string Roar_EM
+        {
+            get
+            {
+                return "Brustklopfer";
+            }
+        }
+
+        public string Sitting_around_EM
+        {
+            get
+            {
+                return "Rumsitzen";
+            }
+        }
+
+        public string Shadow_Puppets_EM
+        {//Halloween 16
+            get
+            {
+                return "Schattenfiguren";
+            }
+        }
+
+        public string Twist_EM
+        {//Annyver 17
+            get
+            {
+                return "Twist";
+            }
+        }
     }
 }

@@ -144,5 +144,61 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
 
 
         //Emotes
+        //Epic
+        public string Clicking_heels_EM
+        {
+            get
+            {
+                return "Hacken zusammen";
+            }
+        }
+
+        public string Fisticuffs_EM
+        {
+            get
+            {
+                return "Wer hat noch nicht?";
+            }
+        }
+
+        public string Guffaw_EM
+        {
+            get
+            {
+                return "Herzhaft lachend";
+            }
+        }
+
+        public string Overload_EM
+        {
+            get
+            {
+                return "Ausbruch";
+            }
+        }
+
+        public string Taking_a_break_EM
+        {
+            get
+            {
+                return "Auszeit";
+            }
+        }
+
+        public string Batter_Up_EM
+        {//Halloween 17
+            get
+            {
+                return "Aufschlag";
+            }
+        }
+
+        public string Dance_EM
+        {//Annyver 17
+            get
+            {
+                return "Tanzen";
+            }
+        }
     }
 }

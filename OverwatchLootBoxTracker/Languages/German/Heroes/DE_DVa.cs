@@ -136,5 +136,61 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
 
 
         //Emotes
+        //Epic
+        public string _O__EM
+        {
+            get
+            {
+                return "^O^";
+            }
+        }
+
+        public string Bunny_Hop_EM
+        {
+            get
+            {
+                return "Bunny Hop";
+            }
+        }
+
+        public string Heartbreaker_EM
+        {
+            get
+            {
+                return "Herzensbrecher";
+            }
+        }
+
+        public string Party_Time_EM
+        {
+            get
+            {
+                return "Disco";
+            }
+        }
+
+        public string Bow_EM
+        {//Rooster 17
+            get
+            {
+                return "Verbeugung";
+            }
+        }
+
+        public string Dance_EM
+        {//Annyver 17
+            get
+            {
+                return "Tanzen";
+            }
+        }
+        //Legendary
+        public string Game_On_EM
+        {
+            get
+            {
+                return "Zocken";
+            }
+        }
     }
 }

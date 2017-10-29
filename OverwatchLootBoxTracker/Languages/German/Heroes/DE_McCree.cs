@@ -144,5 +144,61 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
 
 
         //Emotes
+        //Epic
+        public string Gunspinning_EM
+        {
+            get
+            {
+                return "Mit Revolver spielen";
+            }
+        }
+
+        public string Hat_Tip_EM
+        {
+            get
+            {
+                return "Hut antippen";
+            }
+        }
+
+        public string Joker_EM
+        {
+            get
+            {
+                return "Witzbold";
+            }
+        }
+
+        public string Spit_EM
+        {
+            get
+            {
+                return "Ausspucken";
+            }
+        }
+
+        public string Take_a_load_off_EM
+        {
+            get
+            {
+                return "Alle viere gerade sein lassen";
+            }
+        }
+
+        public string Hat_Trick_EM
+        {
+            get
+            {
+                return "Hattrick";
+            }
+        }
+
+        public string Line_Dance_EM
+        {
+            get
+            {
+                return "Line Dance";
+            }
+        }
     }
 }

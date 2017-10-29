@@ -223,7 +223,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Cheer_EM;
+                }
+                else
                 {
                     return EN.Cheer_EM;
                 }
@@ -234,7 +238,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Halt_EM;
+                }
+                else
                 {
                     return EN.Halt_EM;
                 }
@@ -245,7 +253,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Kicking_Dirt_EM;
+                }
+                else
                 {
                     return EN.Kicking_Dirt_EM;
                 }
@@ -256,7 +268,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Laugh_EM;
+                }
+                else
                 {
                     return EN.Laugh_EM;
                 }
@@ -267,7 +283,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Sit_EM;
+                }
+                else
                 {
                     return EN.Sit_EM;
                 }
@@ -278,7 +298,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Annyver 17
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Dance_EM;
+                }
+                else
                 {
                     return EN.Dance_EM;
                 }

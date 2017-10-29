@@ -283,11 +283,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //if (myLang == "DE")
-                //{
-                //    return DE.Sanzang_SK;
-                //}
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Bring_it_on_EM;
+                }
+                else
                 {
                     return EN.Bring_it_on_EM;
                 }
@@ -298,11 +298,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //if (myLang == "DE")
-                //{
-                //    return DE.Sanzang_SK;
-                //}
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Comedy_Gold_EM;
+                }
+                else
                 {
                     return EN.Comedy_Gold_EM;
                 }
@@ -313,11 +313,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //if (myLang == "DE")
-                //{
-                //    return DE.Sanzang_SK;
-                //}
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Crush_you_EM;
+                }
+                else
                 {
                     return EN.Crush_you_EM;
                 }
@@ -328,11 +328,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //if (myLang == "DE")
-                //{
-                //    return DE.Sanzang_SK;
-                //}
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Punping_Iron_EM;
+                }
+                else
                 {
                     return EN.Punping_Iron_EM;
                 }
@@ -343,11 +343,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //if (myLang == "DE")
-                //{
-                //    return DE.Sanzang_SK;
-                //}
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Take_a_knee_EM;
+                }
+                else
                 {
                     return EN.Take_a_knee_EM;
                 }
@@ -358,11 +358,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Annyver 17
             get
             {
-                //if (myLang == "DE")
-                //{
-                //    return DE.Sanzang_SK;
-                //}
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Dance_EM;
+                }
+                else
                 {
                     return EN.Dance_EM;
                 }
@@ -373,11 +373,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//YWinter 16
             get
             {
-                //if (myLang == "DE")
-                //{
-                //    return DE.Sanzang_SK;
-                //}
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Mystery_Gift_EM;
+                }
+                else
                 {
                     return EN.Mystery_Gift_EM;
                 }

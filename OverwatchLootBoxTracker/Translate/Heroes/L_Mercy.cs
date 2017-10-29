@@ -283,7 +283,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Applause_EM;
+                }
+                else
                 {
                     return EN.Applause_EM;
                 }
@@ -294,7 +298,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Caduceus_EM;
+                }
+                else
                 {
                     return EN.Caduceus_EM;
                 }
@@ -305,7 +313,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.No_Pulse_EM;
+                }
+                else
                 {
                     return EN.No_Pulse_EM;
                 }
@@ -316,7 +328,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Relax_EM;
+                }
+                else
                 {
                     return EN.Relax_EM;
                 }
@@ -327,7 +343,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.The_best_Medicine_EM;
+                }
+                else
                 {
                     return EN.The_best_Medicine_EM;
                 }
@@ -338,7 +358,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Annyver 17
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Hustle_EM;
+                }
+                else
                 {
                     return EN.Hustle_EM;
                 }
