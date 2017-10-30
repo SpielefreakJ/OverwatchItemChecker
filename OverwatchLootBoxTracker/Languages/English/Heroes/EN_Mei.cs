@@ -20,7 +20,6 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 
 
         //Skin
-
         //Rare
         public string Chrysanthemum_SK
         {
@@ -214,6 +213,57 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             get
             {
                 return "Sunny Dance";
+            }
+        }
+
+
+        //Victory Poses
+        //Rare
+        public string Casual_VP
+        {
+            get
+            {
+                return "Casual";
+            }
+        }
+
+        public string Hands_on_hips_VP
+        {
+            get
+            {
+                return "Hands on hips";
+            }
+        }
+
+        public string Kneeling_VP
+        {
+            get
+            {
+                return "Kneeling";
+            }
+        }
+
+        public string Medal_VP
+        {//Summer 16
+            get
+            {
+                return "Medal";
+            }
+        }
+
+        public string RIP_VP
+        {//Halloween 16
+            get
+            {
+                return "R.I.P.";
+            }
+        }
+
+        public string Lucky_VP
+        {//Rooster 17
+            get
+            {
+                return "Lucky!";
             }
         }
     }

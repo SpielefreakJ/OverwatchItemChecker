@@ -368,5 +368,74 @@ namespace OverwatchLootBoxTracker.Translate
                 }
             }
         }
+
+
+        //Victory Poses
+        //Rare
+        public string Angelic_VP//1
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Angelic_VP;
+                }
+            }
+        }
+
+        public string Carefree_VP//2
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Carefree_VP;
+                }
+            }
+        }
+
+        public string Ready_for_Battle_VP//3
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Ready_for_Battle_VP;
+                }
+            }
+        }
+
+        public string Medal_VP//4
+        {//Summer 17
+            get
+            {
+                //else
+                {
+                    return EN.Medal_VP;
+                }
+            }
+        }
+
+        public string RIP_VP//5
+        {//Halloween 16
+            get
+            {
+                //else
+                {
+                    return EN.RIP_VP;
+                }
+            }
+        }
+
+        public string Mistletoe_VP//6
+        {//Winter 16
+            get
+            {
+                //else
+                {
+                    return EN.Mistletoe_VP;
+                }
+            }
+        }
     }
 }

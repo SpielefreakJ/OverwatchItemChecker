@@ -20,7 +20,6 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 
 
         //Skin
-
         //Rare
         public string Electric_Purple_SK
         {
@@ -206,6 +205,57 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             get
             {
                 return "Charleston";
+            }
+        }
+
+
+        //Victory Poses
+        //Rare
+        public string Over_the_shoulder_VP
+        {
+            get
+            {
+                return "Over the shoulder";
+            }
+        }
+
+        public string Salute_VP
+        {
+            get
+            {
+                return "Salute";
+            }
+        }
+
+        public string Sitting_VP
+        {
+            get
+            {
+                return "Sitting";
+            }
+        }
+
+        public string Medal_VP
+        {//Summer 17
+            get
+            {
+                return "Medal";
+            }
+        }
+
+        public string Pumpkin_VP
+        {//Halloween 17
+            get
+            {
+                return "Pumpkin";
+            }
+        }
+
+        public string RIP_VP
+        {//Halloween 16
+            get
+            {
+                return "R.I.P.";
             }
         }
     }

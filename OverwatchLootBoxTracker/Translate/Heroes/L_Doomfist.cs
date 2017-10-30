@@ -278,5 +278,41 @@ namespace OverwatchLootBoxTracker.Translate
                 }
             }
         }
+
+
+        //Victory Poses
+        //Rare
+        public string Intense_VP//1
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Intense_VP;
+                }
+            }
+        }
+
+        public string Seismic_Slam_VP//2
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Seismic_Slam_VP;
+                }
+            }
+        }
+
+        public string Superior_VP//3
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Superior_VP;
+                }
+            }
+        }
     }
 }

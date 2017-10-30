@@ -20,7 +20,6 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 
 
         //Skin
-
         //Rare
         public string Daisy_SK
         {
@@ -142,6 +141,33 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             get
             {
                 return "Thumbs Down";
+            }
+        }
+
+
+        //Victory Poses
+        //Rare
+        public string Intense_VP
+        {
+            get
+            {
+                return "Intense";
+            }
+        }
+
+        public string Seismic_Slam_VP
+        {
+            get
+            {
+                return "Seismic Slam";
+            }
+        }
+
+        public string Superior_VP
+        {
+            get
+            {
+                return "Superior";
             }
         }
     }

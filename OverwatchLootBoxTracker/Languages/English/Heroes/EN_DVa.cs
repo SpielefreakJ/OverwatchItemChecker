@@ -20,7 +20,6 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 
 
         //Skin
-
         //Rare
         public string Blueberry_SK
         {
@@ -190,6 +189,57 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             get
             {
                 return "Game on";
+            }
+        }
+
+
+        //Victory Poses
+        //Rare
+        public string I_Heart_You_VP
+        {
+            get
+            {
+                return "I Heart You";
+            }
+        }
+
+        public string Peace_VP
+        {
+            get
+            {
+                return "Peace";
+            }
+        }
+
+        public string Sitting_VP
+        {
+            get
+            {
+                return "Sitting";
+            }
+        }
+
+        public string RIP_VP
+        {//Halloween 16
+            get
+            {
+                return "R.I.P.";
+            }
+        }
+
+        public string Festive_VP
+        {//Winter 16
+            get
+            {
+                return "Festive";
+            }
+        }
+
+        public string Lucky_Pouch_VP
+        {//Rooster 17
+            get
+            {
+                return "Lucky Pouch";
             }
         }
     }

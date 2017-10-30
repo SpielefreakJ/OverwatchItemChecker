@@ -415,7 +415,7 @@ namespace OverwatchLootBoxTracker.Translate
         }
 
         public string RIP_VP//4
-        {//Halloween 2016
+        {//Halloween 16
             get
             {
                 if (myLang == "DE")
@@ -430,7 +430,7 @@ namespace OverwatchLootBoxTracker.Translate
         }
 
         public string Toast_VP//5
-        {//Winter 2016
+        {//Winter 16
             get
             {
                 if (myLang == "DE")
@@ -445,7 +445,7 @@ namespace OverwatchLootBoxTracker.Translate
         }
 
         public string Folded_Hands_VP//6
-        {//Rooster 2017
+        {//Rooster 17
             get
             {
                 if (myLang == "DE")

@@ -309,17 +309,17 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Locked_and_loaded_EM//4
+        public string Locked_and_Loaded_EM//4
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Locked_and_loaded_EM;
+                    return DE.Locked_and_Loaded_EM;
                 }
                 else
                 {
-                    return EN.Locked_and_loaded_EM;
+                    return EN.Locked_and_Loaded_EM;
                 }
             }
         }
@@ -365,6 +365,75 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Dance_EM;
+                }
+            }
+        }
+
+
+        //Victory Poses
+        //Rare
+        public string Fist_Pump_VP//1
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Fist_Pump_VP;
+                }
+            }
+        }
+
+        public string Locked_and_Loaded_VP//2
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Locked_and_Loaded_VP;
+                }
+            }
+        }
+
+        public string Soldier_VP//3
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Soldier_VP;
+                }
+            }
+        }
+
+        public string Golf_Swing_VP//4
+        {//Summer 16
+            get
+            {
+                //else
+                {
+                    return EN.Golf_Swing_VP;
+                }
+            }
+        }
+
+        public string RIP_VP//5
+        {//Halloween 16
+            get
+            {
+                //else
+                {
+                    return EN.RIP_VP;
+                }
+            }
+        }
+
+        public string Toast_VP//6
+        {//Winter 16
+            get
+            {
+                //else
+                {
+                    return EN.Toast_VP;
                 }
             }
         }

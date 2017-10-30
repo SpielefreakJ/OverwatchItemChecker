@@ -20,7 +20,6 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 
 
         //Skin
-
         //Rare
         public string Air_SK
         {
@@ -182,6 +181,49 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             get
             {
                 return "Dance";
+            }
+        }
+
+
+        //Victory Poses
+
+        public string Balance_VP
+        {
+            get
+            {
+                return "Balance";
+            }
+        }
+
+        public string Harmony_VP
+        {
+            get
+            {
+                return "Harmony";
+            }
+        }
+
+        public string Peace_VP
+        {
+            get
+            {
+                return "Peace";
+            }
+        }
+
+        public string Medals_VP
+        {//Summer 16
+            get
+            {
+                return "Medals";
+            }
+        }
+
+        public string RIP_VP
+        {//Halloween 16
+            get
+            {
+                return "R.I.P.";
             }
         }
     }

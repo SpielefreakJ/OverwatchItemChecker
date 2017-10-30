@@ -20,7 +20,6 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 
 
         //Skin
-
         //Rare
         public string Bleached_SK
         {
@@ -182,6 +181,65 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             get
             {
                 return "Running Rat";
+            }
+        }
+
+
+        //Victory Poses
+        //Rare
+        public string Itll_freeze_that_way_VP
+        {
+            get
+            {
+                return "It'll freeze that way";
+            }
+        }
+
+        public string Kneeling_VP
+        {
+            get
+            {
+                return "Kneeling";
+            }
+        }
+
+        public string Nyah_Nyah_VP
+        {
+            get
+            {
+                return "Nyah Nyah";
+            }
+        }
+
+        public string Medal_VP
+        {//Summer 17
+            get
+            {
+                return "Medal";
+            }
+        }
+
+        public string Pumpkin_VP
+        {//Halloween 17
+            get
+            {
+                return "Pumpkin";
+            }
+        }
+
+        public string RIP_VP
+        {//Halloween 16
+            get
+            {
+                return "R.I.P.";
+            }
+        }
+
+        public string Bad_for_your_health_VP
+        {//Rooster 17
+            get
+            {
+                return "Bad for your health";
             }
         }
     }

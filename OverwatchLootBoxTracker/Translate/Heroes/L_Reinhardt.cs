@@ -383,5 +383,63 @@ namespace OverwatchLootBoxTracker.Translate
                 }
             }
         }
+
+
+        //Victory Poses
+        //Rare
+        public string Confident_VP//1
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Confident_VP;
+                }
+            }
+        }
+
+        public string Flex_VP//2
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Flex_EM;
+                }
+            }
+        }
+
+        public string Legendary_VP//3
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Legendary_VP;
+                }
+            }
+        }
+
+        public string RIP_VP//4
+        {//Halloween 16
+            get
+            {
+                //else
+                {
+                    return EN.RIP_VP;
+                }
+            }
+        }
+
+        public string Toast_VP//5
+        {//Winter 16
+            get
+            {
+                //else
+                {
+                    return EN.Toast_VP;
+                }
+            }
+        }
     }
 }

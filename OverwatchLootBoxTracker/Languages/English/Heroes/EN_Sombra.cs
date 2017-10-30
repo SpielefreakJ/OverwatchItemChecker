@@ -167,5 +167,56 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
                 return "Dance";
             }
         }
+
+
+        //Victory Poses
+        //Rare
+        public string Hacked_VP
+        {
+            get
+            {
+                return "Hacked";
+            }
+        }
+
+        public string Kneeling_VP
+        {
+            get
+            {
+                return "Kneeling";
+            }
+        }
+
+        public string Rising_VP
+        {
+            get
+            {
+                return "Rising";
+            }
+        }
+
+        public string Medal_VP
+        {//Summer 17
+            get
+            {
+                return "Medal";
+            }
+        }
+
+        public string Pumpkinette_VP
+        {//Halloween 17
+            get
+            {
+                return "Pumpkinette";
+            }
+        }
+
+        public string Sparklers_VP
+        {//Rooster 17
+            get
+            {
+                return "Sparklers";
+            }
+        }
     }
 }

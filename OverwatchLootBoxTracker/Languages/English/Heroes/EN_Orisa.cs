@@ -20,7 +20,6 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 
 
         //Skin
-
         //Rare
         public string Dawn_SK
         {
@@ -158,6 +157,41 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             get
             {
                 return "Dance";
+            }
+        }
+
+
+        //Victory Poses
+        //Rare
+        public string Confident_VP
+        {
+            get
+            {
+                return "Confident";
+            }
+        }
+
+        public string Flex_VP
+        {
+            get
+            {
+                return "Flex";
+            }
+        }
+
+        public string Halt_VP
+        {
+            get
+            {
+                return "Halt!";
+            }
+        }
+
+        public string Pumpkin_Head_VP
+        {//Halloween 17
+            get
+            {
+                return "Pumpkin Head";
             }
         }
     }

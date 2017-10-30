@@ -20,7 +20,6 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 
 
         //Skin
-
         //Rare
         public string Celestial_SK
         {
@@ -190,6 +189,57 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             get
             {
                 return "Hustle";
+            }
+        }
+
+
+        //Victory Poses
+        //Rare
+        public string Angelic_VP
+        {
+            get
+            {
+                return "Angelic";
+            }
+        }
+
+        public string Carefree_VP
+        {
+            get
+            {
+                return "Carefree";
+            }
+        }
+
+        public string Ready_for_Battle_VP
+        {
+            get
+            {
+                return "Ready for Battle";
+            }
+        }
+
+        public string Medal_VP
+        {//Summer 17
+            get
+            {
+                return "Medal";
+            }
+        }
+
+        public string RIP_VP
+        {//Halloween 16
+            get
+            {
+                return "R.I.P.";
+            }
+        }
+
+        public string Mistletoe_VP
+        {//Winter 16
+            get
+            {
+                return "Mistletoe";
             }
         }
     }

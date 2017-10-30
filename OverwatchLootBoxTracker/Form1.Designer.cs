@@ -204,14 +204,12 @@
             // 
             // btnVictoryPoses
             // 
-            this.btnVictoryPoses.Enabled = false;
             this.btnVictoryPoses.Location = new System.Drawing.Point(16, 191);
             this.btnVictoryPoses.Name = "btnVictoryPoses";
             this.btnVictoryPoses.Size = new System.Drawing.Size(100, 75);
             this.btnVictoryPoses.TabIndex = 5;
             this.btnVictoryPoses.Text = "btnVictoryPoses";
             this.btnVictoryPoses.UseVisualStyleBackColor = true;
-            this.btnVictoryPoses.Visible = false;
             this.btnVictoryPoses.Click += new System.EventHandler(this.btnVictoryPoses_Click);
             // 
             // btnVoiceLines

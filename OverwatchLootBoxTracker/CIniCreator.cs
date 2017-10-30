@@ -44,5 +44,21 @@ namespace OverwatchLootBoxTracker
                 }
             }
         }
+        public void VP(string name, int Victory_Pose)
+        {
+            inisHeroes = new IniStream(Path + "\\" + name + ".ini");
+
+            for (int i = 1; i <= Victory_Pose; i++)
+            {
+                if (i < 10)
+                {
+                    inisHeroes.Write("VP0" + i, "false");
+                }
+                else
+                {
+                    inisHeroes.Write("VP" + i, "false");
+                }
+            }
+        }
     }
 }

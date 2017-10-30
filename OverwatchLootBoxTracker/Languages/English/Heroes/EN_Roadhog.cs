@@ -20,7 +20,6 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 
 
         //Skin
-
         //Rare
         public string Kiwi_SK
         {
@@ -174,6 +173,57 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             get
             {
                 return "Dance";
+            }
+        }
+
+
+        //Victory Poses
+        //Rare
+        public string Pointing_to_the_sky_VP
+        {
+            get
+            {
+                return "Pointing to the sky";
+            }
+        }
+
+        public string Thumbs_Up_VP
+        {
+            get
+            {
+                return "Thumbs Up";
+            }
+        }
+
+        public string Tuckered_out_VP
+        {
+            get
+            {
+                return "Tuckered out";
+            }
+        }
+
+        public string Medal_VP
+        {//Summer 16
+            get
+            {
+                return "Medal";
+            }
+        }
+
+        public string RIP_VP
+        {//Halloween 16
+            get
+            {
+                return "R.I.P.";
+            }
+        }
+
+        public string Whats_mine_is_mine_VP
+        {//Rooster 17
+            get
+            {
+                return "What's mine is mine";
             }
         }
     }

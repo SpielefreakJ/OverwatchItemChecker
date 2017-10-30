@@ -308,5 +308,52 @@ namespace OverwatchLootBoxTracker.Translate
                 }
             }
         }
+
+
+        //Victory Poses
+        //Rare
+        public string Confident_VP//1
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Confident_VP;
+                }
+            }
+        }
+
+        public string Flex_VP//2
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Flex_VP;
+                }
+            }
+        }
+
+        public string Halt_VP//3
+        {
+            get
+            {
+                //else
+                {
+                    return EN.Halt_VP;
+                }
+            }
+        }
+
+        public string Pumpkin_Head_VP//4
+        {//Halloween 17
+            get
+            {
+                //else
+                {
+                    return EN.Pumpkin_Head_VP;
+                }
+            }
+        }
     }
 }

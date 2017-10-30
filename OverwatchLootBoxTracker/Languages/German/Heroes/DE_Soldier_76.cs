@@ -161,7 +161,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             }
         }
 
-        public string Locked_and_loaded_EM
+        public string Locked_and_Loaded_EM
         {
             get
             {

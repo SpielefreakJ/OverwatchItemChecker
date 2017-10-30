@@ -20,7 +20,6 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 
 
         //Skin
-
         //Rare
         public string Ebony_SK
         {
@@ -198,6 +197,49 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             get
             {
                 return "Line Dance";
+            }
+        }
+
+
+        //Victory Poses
+        //Rare
+        public string Contemplative_VP
+        {
+            get
+            {
+                return "Contemplative";
+            }
+        }
+
+        public string Over_the_shoulder_VP
+        {
+            get
+            {
+                return "Over the shoulder";
+            }
+        }
+
+        public string Take_it_easy_VP
+        {
+            get
+            {
+                return "Take it easy";
+            }
+        }
+
+        public string RIP_VP
+        {//Halloween 16
+            get
+            {
+                return "R.I.P.";
+            }
+        }
+
+        public string Showdown_VP
+        {//Uprising 17
+            get
+            {
+                return "Showdown";
             }
         }
     }
