@@ -10,6 +10,7 @@ Alpha out!
 Features:
 - Save Skins of every Heroe
 - Save Emotes of every Heroe
+- Save Victory Poses of every Heroe
 
 Languages:
 - German
@@ -23,5 +24,5 @@ If you have problems or found an issue, please create an Issue above.
 
 
 Future Features:
-- Victory Poses, ect.
+- Voice Lines, Sprays, ect.
 - ect.
