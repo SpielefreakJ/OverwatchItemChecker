@@ -107,7 +107,6 @@ namespace OverwatchLootBoxTracker
             Application.ApplicationExit += new EventHandler(this.OnApplicationExit);
 
             IniRead();
-            IniHeroes();
         }
 
         private void OnApplicationExit(object sender, EventArgs e)
@@ -323,12 +322,6 @@ namespace OverwatchLootBoxTracker
             Zenyatta.ChangeLang = Language;
 
             Texte();
-        }
-
-        private void IniHeroes()
-        {
-            //Auslesen der "Settings.ini" Datei und speichern in IniStream inisSettings
-            inisHeroes = new IniStream("Ana.ini");
         }
 
         /*
