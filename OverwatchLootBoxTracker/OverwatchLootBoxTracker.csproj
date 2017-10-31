@@ -97,7 +97,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="CGoldweapon.cs" />
     <Compile Include="CIniCreator.cs" />
     <Compile Include="Languages\German\Heroes\DE_Ana.cs" />
     <Compile Include="Languages\German\Heroes\DE_Bastion.cs" />

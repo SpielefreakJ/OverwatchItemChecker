@@ -10,7 +10,6 @@ namespace OverwatchLootBoxTracker.Translate
     {
         string myLang;
         CCost Cost;
-        CGoldweapon GoldWeapon;
 
         //Langs
         Lang.L_DE DE;
@@ -20,7 +19,6 @@ namespace OverwatchLootBoxTracker.Translate
         {
             myLang = Lang;
             Cost = new CCost();
-            GoldWeapon = new CGoldweapon();
 
             //Langs
             DE = new Lang.L_DE();
@@ -506,11 +504,11 @@ namespace OverwatchLootBoxTracker.Translate
             {
                 if (myLang == "DE")
                 {
-                    return DE.remaining1 + " " + (Cost.KostenNormal + Cost.KostenFest) + " " + DE.remaining2 + " " + GoldWeapon.KostenGes + " SR";
+                    return DE.remaining1 + " " + (Cost.CostsNonEvent + Cost.CostsEvent) + " " + DE.remaining2 + " " + Cost.CostsGoldWeapon + " SR";
                 }
                 else
                 {
-                    return EN.remaining1 + " " + (Cost.KostenNormal + Cost.KostenFest) + " " + EN.remaining2 + " " + GoldWeapon.KostenGes + " SR";
+                    return EN.remaining1 + " " + (Cost.CostsNonEvent + Cost.CostsEvent) + " " + EN.remaining2 + " " + Cost.CostsGoldWeapon + " SR";
                 }
             }
         }
@@ -536,11 +534,11 @@ namespace OverwatchLootBoxTracker.Translate
             {
                 if (myLang == "DE")
                 {
-                    return (Cost.KostenNormal + Cost.KostenFest) + " " + DE.Credits + "\n\n" + Cost.KostenNormal + " " + DE.Credits + "\n\n" + Cost.KostenFest + " " + DE.Credits + "\n\n" + GoldWeapon.KostenGes + " SR";
+                    return (Cost.CostsNonEvent + Cost.CostsEvent) + " " + DE.Credits + "\n\n" + Cost.CostsNonEvent + " " + DE.Credits + "\n\n" + Cost.CostsEvent + " " + DE.Credits + "\n\n" + Cost.CostsGoldWeapon + " SR";
                 }
                 else
                 {
-                    return (Cost.KostenNormal + Cost.KostenFest) + " " + EN.Credits + "\n\n" + Cost.KostenNormal + " " + EN.Credits + "\n\n" + Cost.KostenFest + " " + EN.Credits + "\n\n" + GoldWeapon.KostenGes + " SR";
+                    return (Cost.CostsNonEvent + Cost.CostsEvent) + " " + EN.Credits + "\n\n" + Cost.CostsNonEvent + " " + EN.Credits + "\n\n" + Cost.CostsEvent + " " + EN.Credits + "\n\n" + Cost.CostsGoldWeapon + " SR";
                 }
             }
         }
