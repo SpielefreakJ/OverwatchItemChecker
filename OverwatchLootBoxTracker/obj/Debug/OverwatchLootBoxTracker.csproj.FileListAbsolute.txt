@@ -33,3 +33,6 @@ F:\justi\Documents\GitHub\OverwatchLootTracker\OverwatchLootBoxTracker\obj\Debug
 F:\justi\Documents\GitHub\OverwatchLootTracker\OverwatchLootBoxTracker\obj\Debug\OverwatchLootBoxTracker.application
 F:\justi\Documents\GitHub\OverwatchLootTracker\OverwatchLootBoxTracker\obj\Debug\OverwatchLootBoxTracker.exe
 F:\justi\Documents\GitHub\OverwatchLootTracker\OverwatchLootBoxTracker\obj\Debug\OverwatchLootBoxTracker.pdb
+F:\justi\Documents\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\OverwatchLootBoxTracker.exe.config
+F:\justi\Documents\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\obj\Debug\OverwatchLootBoxTracker.exe
+F:\justi\Documents\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\obj\Debug\OverwatchLootBoxTracker.pdb
