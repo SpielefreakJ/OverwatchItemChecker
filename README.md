@@ -8,15 +8,18 @@ At the moment in the beginning.
 Alpha out!
 
 Features:
-- Save Skins of every Heroe
-- Save Emotes of every Heroe
-- Save Victory Poses of every Heroe
+* Save Skins of every Heroe
+* Save Emotes of every Heroe
+* Save Victory Poses of every Heroe
+
+<!---->
+* Calculation of remaining costs (Skin, Emote and Victory Pose only)
 
 Languages:
 - German
 - English
 
-Version 0.1.2
+Version 0.1.3
 
 Setup [-here-](https://poketrainer-warren.de/OWItemTracker/setup.exe)
 
