@@ -93,7 +93,7 @@ namespace OverwatchLootBoxTracker.Translate
                 //}
                 //else
                 {
-                    return "© 2017 SpielefreakJ | OWLootboxTracker Version: 0.1.2.1 Alpha | Overwatch Version: 1.16.0.2B";
+                    return "© 2017 SpielefreakJ | OWLootboxTracker Version: 0.1.3.0 Alpha | Overwatch Version: 1.16.0.2B";
                 }
             }
         }
@@ -547,11 +547,11 @@ namespace OverwatchLootBoxTracker.Translate
             {
                 if (myLang == "DE")
                 {
-                    return (Cost.CostsNonEvent + Cost.CostsEvent) + " " + DE.Credits + "\n\n" + Cost.CostsNonEvent + " " + DE.Credits + "\n\n" + Cost.CostsEvent + " " + DE.Credits + "\n\n" + Cost.CostsGoldWeapon + " SR";
+                    return (Cost.RemCostsNonEvent + Cost.RemCostsEvent) + " " + DE.Credits + "\n\n" + Cost.RemCostsNonEvent + " " + DE.Credits + "\n\n" + Cost.RemCostsEvent + " " + DE.Credits + "\n\n" + Cost.RemCostsWeapon + " SR";
                 }
                 else
                 {
-                    return (Cost.CostsNonEvent + Cost.CostsEvent) + " " + EN.Credits + "\n\n" + Cost.CostsNonEvent + " " + EN.Credits + "\n\n" + Cost.CostsEvent + " " + EN.Credits + "\n\n" + Cost.CostsGoldWeapon + " SR";
+                    return (Cost.RemCostsNonEvent + Cost.RemCostsEvent) + " " + EN.Credits + "\n\n" + Cost.RemCostsNonEvent + " " + EN.Credits + "\n\n" + Cost.RemCostsEvent + " " + EN.Credits + "\n\n" + Cost.RemCostsWeapon + " SR";
                 }
             }
         }

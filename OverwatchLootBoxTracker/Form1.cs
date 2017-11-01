@@ -370,6 +370,7 @@ namespace OverwatchLootBoxTracker
                 btnBackHeroe.BringToFront();
             }
             gBLang.Visible = false;
+            btnMoreCost.Visible = false;
 
             gbAll.Text = Lang.Skins;
         }
@@ -389,6 +390,7 @@ namespace OverwatchLootBoxTracker
                 btnBackHeroe.BringToFront();
             }
             gBLang.Visible = false;
+            btnMoreCost.Visible = false;
 
             gbAll.Text = Lang.Emotes;
         }
@@ -408,6 +410,7 @@ namespace OverwatchLootBoxTracker
                 btnBackHeroe.BringToFront();
             }
             gBLang.Visible = false;
+            btnMoreCost.Visible = false;
 
             gbAll.Text = Lang.VictoryPoses;
         }
@@ -427,6 +430,7 @@ namespace OverwatchLootBoxTracker
                 btnBackHeroe.BringToFront();
             }
             gBLang.Visible = false;
+            btnMoreCost.Visible = false;
 
             gbAll.Text = Lang.VoiceLines;
         }
@@ -446,6 +450,7 @@ namespace OverwatchLootBoxTracker
                 btnBackHeroe.BringToFront();
             }
             gBLang.Visible = false;
+            btnMoreCost.Visible = false;
 
             gbAll.Text = Lang.Sprays;
         }
@@ -465,6 +470,7 @@ namespace OverwatchLootBoxTracker
                 btnBackHeroe.BringToFront();
             }
             gBLang.Visible = false;
+            btnMoreCost.Visible = false;
 
             gbAll.Text = Lang.HighlightIntros;
         }
@@ -484,6 +490,7 @@ namespace OverwatchLootBoxTracker
                 btnBackHeroe.BringToFront();
             }
             gBLang.Visible = false;
+            btnMoreCost.Visible = false;
 
             gbAll.Text = Lang.Weapons;
         }
@@ -503,6 +510,7 @@ namespace OverwatchLootBoxTracker
                 btnBackHeroe.BringToFront();
             }
             gBLang.Visible = false;
+            btnMoreCost.Visible = false;
 
             gbAll.Text = Lang.PlayerIcons;
         }
@@ -550,7 +558,7 @@ namespace OverwatchLootBoxTracker
         private void btnWelcomeClose_Click(object sender, EventArgs e)
         {
             gBWelcome.Visible = false;
-            //btnMoreCost.Visible = true;//Da der Button sonst sichtbar und klickbar ist :/
+            btnMoreCost.Visible = true;//Da der Button sonst sichtbar und klickbar ist :/
         }
 
         //Für hier benötigte Variablen
@@ -562,6 +570,7 @@ namespace OverwatchLootBoxTracker
             {
                 gbAll.Visible = false;
                 btnBackHeroe.Visible = false;
+                btnMoreCost.Visible = true;
             }
             else
             {
@@ -3667,7 +3676,7 @@ namespace OverwatchLootBoxTracker
                 chB04.BackColor = Color.DarkViolet; chB04.Text = Zarya.Pumping_Iron_EM + " (" + Cost.Epic + ")";
                 chB05.BackColor = Color.DarkViolet; chB05.Text = Zarya.Take_a_knee_EM + " (" + Cost.Epic + ")";
                 chB06.BackColor = Color.DarkViolet; chB06.Text = Zarya.Dance_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
-                chB07.BackColor = Color.DarkViolet; chB07.Text = Zarya.Mystery_Gift_EM + " (" + Cost.LegendaryEvent + ")";//Legendary //Winter 16
+                chB07.BackColor = Color.Gold; chB07.Text = Zarya.Mystery_Gift_EM + " (" + Cost.LegendaryEvent + ")";//Legendary //Winter 16
 
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
                 chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));

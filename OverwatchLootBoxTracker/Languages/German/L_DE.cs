@@ -260,7 +260,7 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Kosten für alle Items:";
+                return "Kosten für alle übrigen Items:";
                 //return "Kosten für restliche Items:";
             }
         }
@@ -285,7 +285,7 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Kosten für alle Items:";
+                return "Kosten für alle übrigen Items:";
                 //return "Kosten für alle restliche Items:";
             }
         }
@@ -293,7 +293,7 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Kosten für alle nicht-Event-Items:";
+                return "Kosten für alle übrigen nicht-Event-Items:";
                 //return "Kosten für alle restliche nicht-Event-Items:";
             }
         }
@@ -302,7 +302,7 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Kosten für alle Event Items:";
+                return "Kosten für alle übrigen Event Items:";
                 //return "Kosten für alle restliche Event Items:";
             }
         }
@@ -311,7 +311,7 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Kosten für alle Waffen:";
+                return "Kosten für alle übrigen Waffen:";
                 //return "Kosten für alle restliche Waffen:";
             }
         }

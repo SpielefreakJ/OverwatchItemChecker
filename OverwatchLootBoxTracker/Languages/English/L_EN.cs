@@ -17,7 +17,7 @@ namespace OverwatchLootBoxTracker.Lang
 
         private void ChangesT()
         {
-            Changes = "\n\n\nAlpha Version!\n\nFeatures:\n - Save Skins\n - Save Emotes\n\n - Save Victory Poses\n\nLanguages:\n- German\n- English";
+            Changes = "\n\n\nAlpha Version!\n\nFeatures:\n - Save Skins\n - Save Emotes\n - Save Victory Poses\n\nLanguages:\n- German\n- English";
         }
 
 
@@ -276,7 +276,7 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Cost of all items:";
+                return "Remaining costs of all items:";
                 //return "Cost of remaining items:";
             }
         }
@@ -301,7 +301,7 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Costs of all Items:";
+                return "Remaining costs of all Items:";
                 //return "Costs of all remaining Items:";
             }
         }
@@ -309,7 +309,7 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Costs of all non-event Items:";
+                return "Remaining costs of all non-event Items:";
                 //return "Costs of remaining non-event Items:";
             }
         }
@@ -318,7 +318,7 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Costs of all event Items:";
+                return "Remaining costs of all event Items:";
                 //return "Costs of remaining event Items:";
             }
         }
@@ -327,7 +327,7 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Costs of all Weapon Items:";
+                return "Remaining costs of all Weapon Items:";
                 //return "Costs of remaining Weapon Items:";
             }
         }
