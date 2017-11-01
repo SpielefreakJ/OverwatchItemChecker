@@ -44,14 +44,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OverwatchLootBoxTracker.exe" size="370144">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OverwatchLootBoxTracker.exe" size="379872">
       <assemblyIdentity name="OverwatchLootBoxTracker" version="1.0.0.0" publicKeyToken="AF1D70E6AB47CC66" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>Q4TFUcSAAr/+6rFEYZbqIyJ32GapMRYourpRAWEsjlY=</dsig:DigestValue>
+        <dsig:DigestValue>gt3o7pLcN9NMSp0xagv7yVUI+PDdlo2aIoviSI9ONw4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>

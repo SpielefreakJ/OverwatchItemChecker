@@ -9,6 +9,7 @@ namespace OverwatchLootBoxTracker.Translate
     class L_Translate
     {
         string myLang;
+        string myPath=null;
         CCost Cost;
 
         //Langs
@@ -34,6 +35,18 @@ namespace OverwatchLootBoxTracker.Translate
             set
             {
                 myLang = value;
+            }
+        }
+
+        public string Path
+        {
+            get
+            {
+                return myPath;
+            }
+            set
+            {
+                myPath = value;
             }
         }
 
@@ -493,8 +506,7 @@ namespace OverwatchLootBoxTracker.Translate
                 }
             }
         }
-
-
+        
 
         //Remaining Text
 
@@ -502,13 +514,14 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
+                Cost.Calculate(myPath);
                 if (myLang == "DE")
                 {
-                    return DE.remaining1 + " " + (Cost.CostsNonEvent + Cost.CostsEvent) + " " + DE.remaining2 + " " + Cost.CostsGoldWeapon + " SR";
+                    return DE.remaining1 + " " + (Cost.RemCostsNonEvent + Cost.RemCostsEvent) + " " + DE.remaining2 + " " + Cost.RemCostsWeapon + " SR";
                 }
                 else
                 {
-                    return EN.remaining1 + " " + (Cost.CostsNonEvent + Cost.CostsEvent) + " " + EN.remaining2 + " " + Cost.CostsGoldWeapon + " SR";
+                    return EN.remaining1 + " " + (Cost.RemCostsNonEvent + Cost.RemCostsEvent) + " " + EN.remaining2 + " " + Cost.RemCostsWeapon + " SR";
                 }
             }
         }

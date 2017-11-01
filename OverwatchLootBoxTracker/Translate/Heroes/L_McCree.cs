@@ -360,11 +360,11 @@ namespace OverwatchLootBoxTracker.Translate
             {
                 if (myLang == "DE")
                 {
-                    return DE.Hat_Tip_EM;
+                    return DE.Hat_Trick_EM;
                 }
                 else
                 {
-                    return EN.Hat_Tip_EM;
+                    return EN.Hat_Trick_EM;
                 }
             }
         }

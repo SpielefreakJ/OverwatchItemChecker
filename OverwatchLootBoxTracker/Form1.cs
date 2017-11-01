@@ -70,6 +70,7 @@ namespace OverwatchLootBoxTracker
             appdata += "\\OWItemTracker";
             Directory.CreateDirectory(appdata);
             inic = new CIniCreator(appdata);
+            Lang.Path = appdata;
 
             //Auslesen der "Settings.ini" Datei und speichern in IniStream inisSettings
             inisSettings = new IniStream(appdata + "\\Settings.ini");
@@ -174,7 +175,6 @@ namespace OverwatchLootBoxTracker
         {
             //Erste mal ausrechnen, wieviel alles zusammen Kostet
             lblChanges.Text = Lang.ChangesText;
-            lblKosten.Text = Lang.Remaining;
 
             gbAll.Visible = false;
             gBLang.Visible = false;
@@ -228,6 +228,13 @@ namespace OverwatchLootBoxTracker
             btnZarya.Text = Zarya.Name;
             btnZenyatta.Text = Zenyatta.Name;
             btnBackHeroe.Text = Lang.Back;
+            //More info about remaining costs
+            TextRemaining();
+        }
+        private void TextRemaining()
+        {
+            lblKosten.Text = Lang.Remaining;
+
             //More info about remaining costs
             btnMoreCost.Text = Lang.MoreCost;
             gBMoreCost.Text = "";
@@ -518,25 +525,25 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        int i = 3;
+        int i_timer = 3;
         private void tmrWelcome_Tick(object sender, EventArgs e)
         {
-            if (i == 1)
+            if (i_timer == 1)
             {
-                i--;
+                i_timer--;
                 btnWelcomeClose.Text = Lang.Close;
                 btnWelcomeClose.Enabled = true;
                 tmrWelcome.Enabled = false;
             }
-            if (i == 2)
+            if (i_timer == 2)
             {
-                i--;
-                btnWelcomeClose.Text = Lang.Close + " (" + i + ")";
+                i_timer--;
+                btnWelcomeClose.Text = Lang.Close + " (" + i_timer + ")";
             }
-            if (i >= 3)
+            if (i_timer >= 3)
             {
-                i--;
-                btnWelcomeClose.Text = Lang.Close + " (" + i + ")";
+                i_timer--;
+                btnWelcomeClose.Text = Lang.Close + " (" + i_timer + ")";
             }
         }
 
@@ -692,6 +699,7 @@ namespace OverwatchLootBoxTracker
 
             inisHeroes = new IniStream(appdata + "\\Ana.ini");
             Heroe = "H";
+            chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
@@ -1122,6 +1130,7 @@ namespace OverwatchLootBoxTracker
                     chB06.Checked = true;
                 }
             }
+            chBSave = 1;
         }
 
         private void btnBastion_Click(object sender, EventArgs e)
@@ -1131,6 +1140,7 @@ namespace OverwatchLootBoxTracker
 
             inisHeroes = new IniStream(appdata + "\\Bastion.ini");
             Heroe = "H";
+            chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
@@ -1189,13 +1199,21 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave == Lang.Emotes)
             {
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1); chB01.Text = Bastion.Alert_Alert_EM + " (" + Cost.Epic + ")";//Epic
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2); chB02.Text = Bastion.Chortle_EM + " (" + Cost.Epic + ")";
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3); chB03.Text = Bastion.Dizzy_EM + " (" + Cost.Epic + ")";
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p4); chB04.Text = Bastion.Rest_Mode_EM + " (" + Cost.Epic + ")";
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1); chB05.Text = Bastion.Robot_EM + " (" + Cost.Epic + ")";
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2); chB06.Text = Bastion.Boxing_EM + " (" + Cost.Epic + ")";//Summer 16
-                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3); chB07.Text = Bastion.Robo_Boogie_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p4);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3);
+
+                chB01.BackColor = Color.DarkViolet; chB01.Text = Bastion.Alert_Alert_EM + " (" + Cost.Epic + ")";//Epic
+                chB02.BackColor = Color.DarkViolet; chB02.Text = Bastion.Chortle_EM + " (" + Cost.Epic + ")";
+                chB03.BackColor = Color.DarkViolet; chB03.Text = Bastion.Dizzy_EM + " (" + Cost.Epic + ")";
+                chB04.BackColor = Color.DarkViolet; chB04.Text = Bastion.Rest_Mode_EM + " (" + Cost.Epic + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Bastion.Robot_EM + " (" + Cost.Epic + ")";
+                chB06.BackColor = Color.DarkViolet; chB06.Text = Bastion.Boxing_EM + " (" + Cost.Epic + ")";//Summer 16
+                chB07.BackColor = Color.DarkViolet; chB07.Text = Bastion.Robo_Boogie_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
 
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
                 chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
@@ -1336,6 +1354,7 @@ namespace OverwatchLootBoxTracker
                     chB21.Checked = true;
                 }
             }
+            chBSave = 1;
         }
 
         private void btnDVa_Click(object sender, EventArgs e)
@@ -1345,6 +1364,7 @@ namespace OverwatchLootBoxTracker
 
             inisHeroes = new IniStream(appdata + "\\D.Va.ini");
             Heroe = "H";
+            chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
@@ -1444,6 +1464,7 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
             }
+            chBSave = 1;
         }
 
         private void btnDoomfist_Click(object sender, EventArgs e)
@@ -1453,6 +1474,7 @@ namespace OverwatchLootBoxTracker
 
             inisHeroes = new IniStream(appdata + "\\Doomfist.ini");
             Heroe = "H";
+            chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
@@ -1524,6 +1546,7 @@ namespace OverwatchLootBoxTracker
                 chB02.Checked = Convert.ToBoolean(inisHeroes.Read("VP02"));
                 chB03.Checked = Convert.ToBoolean(inisHeroes.Read("VP03"));
             }
+            chBSave = 1;
         }
 
         private void btnGeji_Click(object sender, EventArgs e)
@@ -1533,6 +1556,7 @@ namespace OverwatchLootBoxTracker
 
             inisHeroes = new IniStream(appdata + "\\Genji.ini");
             Heroe = "H";
+            chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
@@ -1625,6 +1649,7 @@ namespace OverwatchLootBoxTracker
                 chB04.Checked = Convert.ToBoolean(inisHeroes.Read("VP04"));
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
             }
+            chBSave = 1;
         }
 
         private void btnHanzo_Click(object sender, EventArgs e)
@@ -1634,6 +1659,7 @@ namespace OverwatchLootBoxTracker
 
             inisHeroes = new IniStream(appdata + "\\Hanzo.ini");
             Heroe = "H";
+            chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
@@ -1726,6 +1752,7 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
             }
+            chBSave = 1;
         }
 
         private void btnJunkrat_Click(object sender, EventArgs e)
@@ -1735,6 +1762,7 @@ namespace OverwatchLootBoxTracker
 
             inisHeroes = new IniStream(appdata + "\\Junkrat.ini");
             Heroe = "H";
+            chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
@@ -1833,6 +1861,7 @@ namespace OverwatchLootBoxTracker
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
                 chB07.Checked = Convert.ToBoolean(inisHeroes.Read("VP07"));
             }
+            chBSave = 1;
         }
 
         private void btnLúcio_Click(object sender, EventArgs e)
@@ -1842,6 +1871,7 @@ namespace OverwatchLootBoxTracker
 
             inisHeroes = new IniStream(appdata + "\\Lúcio.ini");
             Heroe = "H";
+            chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
@@ -1943,6 +1973,7 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
             }
+            chBSave = 1;
         }
 
         private void btnMcCree_Click(object sender, EventArgs e)
@@ -1952,6 +1983,7 @@ namespace OverwatchLootBoxTracker
 
             inisHeroes = new IniStream(appdata + "\\McCree.ini");
             Heroe = "H";
+            chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
@@ -2019,7 +2051,7 @@ namespace OverwatchLootBoxTracker
                 chB03.BackColor = Color.DarkViolet; chB03.Text = McCree.Joker_EM + " (" + Cost.Epic + ")";
                 chB04.BackColor = Color.DarkViolet; chB04.Text = McCree.Spit_EM + " (" + Cost.Epic + ")";
                 chB05.BackColor = Color.DarkViolet; chB05.Text = McCree.Take_a_load_off_EM + " (" + Cost.Epic + ")";
-                chB06.BackColor = Color.DarkViolet; chB06.Text = McCree.Hat_Trick_EM + " (" + Cost.Epic + ")";//Winter 16
+                chB06.BackColor = Color.DarkViolet; chB06.Text = McCree.Hat_Trick_EM + " (" + Cost.EpicEvent + ")";//Winter 16
                 chB07.BackColor = Color.DarkViolet; chB07.Text = McCree.Line_Dance_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
 
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
@@ -2050,6 +2082,7 @@ namespace OverwatchLootBoxTracker
                 chB04.Checked = Convert.ToBoolean(inisHeroes.Read("VP04"));
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
             }
+            chBSave = 1;
         }
 
         private void btnMei_Click(object sender, EventArgs e)
@@ -2059,6 +2092,7 @@ namespace OverwatchLootBoxTracker
 
             inisHeroes = new IniStream(appdata + "\\Mei.ini");
             Heroe = "H";
+            chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
@@ -2166,6 +2200,7 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
             }
+            chBSave = 1;
         }
 
         private void btnMercy_Click(object sender, EventArgs e)
@@ -2175,6 +2210,7 @@ namespace OverwatchLootBoxTracker
 
             inisHeroes = new IniStream(appdata + "\\Mercy.ini");
             Heroe = "H";
+            chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
@@ -2273,6 +2309,7 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
             }
+            chBSave = 1;
         }
 
         private void btnOrisa_Click(object sender, EventArgs e)
@@ -2282,6 +2319,7 @@ namespace OverwatchLootBoxTracker
 
             inisHeroes = new IniStream(appdata + "\\Orisa.ini");
             Heroe = "H";
+            chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
@@ -2362,6 +2400,7 @@ namespace OverwatchLootBoxTracker
                 chB03.Checked = Convert.ToBoolean(inisHeroes.Read("VP03"));
                 chB04.Checked = Convert.ToBoolean(inisHeroes.Read("VP04"));
             }
+            chBSave = 1;
         }
 
         private void btnPharah_Click(object sender, EventArgs e)
@@ -2371,6 +2410,7 @@ namespace OverwatchLootBoxTracker
 
             inisHeroes = new IniStream(appdata + "\\Pharah.ini");
             Heroe = "H";
+            chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
@@ -2469,6 +2509,7 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
             }
+            chBSave = 1;
         }
 
         private void btnReaper_Click(object sender, EventArgs e)
@@ -2478,6 +2519,7 @@ namespace OverwatchLootBoxTracker
 
             inisHeroes = new IniStream(appdata + "\\Reaper.ini");
             Heroe = "H";
+            chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
@@ -2579,6 +2621,7 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
             }
+            chBSave = 1;
         }
 
         private void btnReinhardt_Click(object sender, EventArgs e)
@@ -2588,6 +2631,7 @@ namespace OverwatchLootBoxTracker
 
             inisHeroes = new IniStream(appdata + "\\Reinhardt.ini");
             Heroe = "H";
+            chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
@@ -2686,6 +2730,7 @@ namespace OverwatchLootBoxTracker
                 chB04.Checked = Convert.ToBoolean(inisHeroes.Read("VP04"));
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
             }
+            chBSave = 1;
         }
 
         private void btnRoadhog_Click(object sender, EventArgs e)
@@ -2695,6 +2740,7 @@ namespace OverwatchLootBoxTracker
 
             inisHeroes = new IniStream(appdata + "\\Roadhog.ini");
             Heroe = "H";
+            chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
@@ -2787,6 +2833,7 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
             }
+            chBSave = 1;
         }
 
         private void btnSoldier_76_Click(object sender, EventArgs e)
@@ -2796,6 +2843,7 @@ namespace OverwatchLootBoxTracker
 
             inisHeroes = new IniStream(appdata + "\\Soldier_76.ini");
             Heroe = "H";
+            chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
@@ -2895,6 +2943,7 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
             }
+            chBSave = 1;
         }
 
         private void btnSombra_Click(object sender, EventArgs e)
@@ -2904,6 +2953,7 @@ namespace OverwatchLootBoxTracker
 
             inisHeroes = new IniStream(appdata + "\\Sombra.ini");
             Heroe = "H";
+            chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
@@ -2993,6 +3043,7 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
             }
+            chBSave = 1;
         }
 
         private void btnSymmetra_Click(object sender, EventArgs e)
@@ -3002,6 +3053,7 @@ namespace OverwatchLootBoxTracker
 
             inisHeroes = new IniStream(appdata + "\\Symmetra.ini");
             Heroe = "H";
+            chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
@@ -3100,6 +3152,7 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
             }
+            chBSave = 1;
         }
 
         private void btnTorbjörn_Click(object sender, EventArgs e)
@@ -3109,6 +3162,7 @@ namespace OverwatchLootBoxTracker
 
             inisHeroes = new IniStream(appdata + "\\Torbjörn.ini");
             Heroe = "H";
+            chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
@@ -3210,6 +3264,7 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
             }
+            chBSave = 1;
         }
 
         private void btnTracer_Click(object sender, EventArgs e)
@@ -3219,6 +3274,7 @@ namespace OverwatchLootBoxTracker
 
             inisHeroes = new IniStream(appdata + "\\Tracer.ini");
             Heroe = "H";
+            chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
@@ -3323,6 +3379,7 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
             }
+            chBSave = 1;
         }
 
         private void btnWidowmaker_Click(object sender, EventArgs e)
@@ -3332,6 +3389,7 @@ namespace OverwatchLootBoxTracker
 
             inisHeroes = new IniStream(appdata + "\\Widowmaker.ini");
             Heroe = "H";
+            chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
@@ -3424,6 +3482,7 @@ namespace OverwatchLootBoxTracker
                 chB04.Checked = Convert.ToBoolean(inisHeroes.Read("VP04"));
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
             }
+            chBSave = 1;
         }
 
         private void btnWinston_Click(object sender, EventArgs e)
@@ -3433,6 +3492,7 @@ namespace OverwatchLootBoxTracker
 
             inisHeroes = new IniStream(appdata + "\\Winston.ini");
             Heroe = "H";
+            chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
@@ -3528,6 +3588,7 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
             }
+            chBSave = 1;
         }
 
         private void btnZarya_Click(object sender, EventArgs e)
@@ -3537,6 +3598,7 @@ namespace OverwatchLootBoxTracker
 
             inisHeroes = new IniStream(appdata + "\\Zarya.ini");
             Heroe = "H";
+            chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
@@ -3635,6 +3697,7 @@ namespace OverwatchLootBoxTracker
                 chB04.Checked = Convert.ToBoolean(inisHeroes.Read("VP04"));
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
             }
+            chBSave = 1;
         }
 
         private void btnZenyatta_Click(object sender, EventArgs e)
@@ -3644,6 +3707,7 @@ namespace OverwatchLootBoxTracker
 
             inisHeroes = new IniStream(appdata + "\\Zenyatta.ini");
             Heroe = "H";
+            chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
@@ -3736,6 +3800,7 @@ namespace OverwatchLootBoxTracker
                 chB04.Checked = Convert.ToBoolean(inisHeroes.Read("VP04"));
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
             }
+            chBSave = 1;
         }
 
         private void HeroeRead()
@@ -4018,6 +4083,7 @@ namespace OverwatchLootBoxTracker
                         inisPI.Write(Nummer, "false");
                     }
                 }
+                TextRemaining();
             }
         }
     }
