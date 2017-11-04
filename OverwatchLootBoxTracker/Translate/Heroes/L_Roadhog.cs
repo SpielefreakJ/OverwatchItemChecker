@@ -346,7 +346,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Pointing_to_the_sky_VP;
+                }
+                else
                 {
                     return EN.Pointing_to_the_sky_VP;
                 }
@@ -357,7 +361,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Thumbs_Up_VP;
+                }
+                else
                 {
                     return EN.Thumbs_Up_VP;
                 }
@@ -368,7 +376,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Tuckered_Out_EM;
+                }
+                else
                 {
                     return EN.Tuckered_Out_EM;
                 }
@@ -379,7 +391,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Summer 16
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Medal_VP;
+                }
+                else
                 {
                     return EN.Medal_VP;
                 }
@@ -390,7 +406,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Halloween 16
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.RIP_VP;
+                }
+                else
                 {
                     return EN.RIP_VP;
                 }
@@ -401,7 +421,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Rooster 17
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Whats_mine_is_mine_VP;
+                }
+                else
                 {
                     return EN.Whats_mine_is_mine_VP;
                 }

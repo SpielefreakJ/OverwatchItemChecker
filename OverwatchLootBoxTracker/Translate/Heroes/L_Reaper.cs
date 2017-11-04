@@ -391,7 +391,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Casual_VP;
+                }
+                else
                 {
                     return EN.Casual_VP;
                 }
@@ -402,7 +406,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Enigmatic_VP;
+                }
+                else
                 {
                     return EN.Enigmatic_VP;
                 }
@@ -413,7 +421,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Menacing_VP;
+                }
+                else
                 {
                     return EN.Menacing_VP;
                 }
@@ -424,7 +436,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Shrug_VP;
+                }
+                else
                 {
                     return EN.Shrug_VP;
                 }
@@ -435,7 +451,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Summer 16
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Medal_VP;
+                }
+                else
                 {
                     return EN.Medal_VP;
                 }
@@ -446,7 +466,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Halloween 16
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.RIP_VP;
+                }
+                else
                 {
                     return EN.RIP_VP;
                 }

@@ -346,7 +346,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Confident_VP;
+                }
+                else
                 {
                     return EN.Confident_VP;
                 }
@@ -357,7 +361,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Kneeling_VP;
+                }
+                else
                 {
                     return EN.Kneeling_VP;
                 }
@@ -368,7 +376,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Over_the_shoulder_VP;
+                }
+                else
                 {
                     return EN.Over_the_shoulder_VP;
                 }
@@ -379,7 +391,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Summer 17
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Medal_VP;
+                }
+                else
                 {
                     return EN.Medal_VP;
                 }
@@ -390,7 +406,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Halloween 16
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.RIP_VP;
+                }
+                else
                 {
                     return EN.RIP_VP;
                 }
@@ -401,7 +421,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Halloween 17
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Skewered_VP;
+                }
+                else
                 {
                     return EN.Skewered_VP;
                 }

@@ -192,6 +192,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
+
         //Victory Poses
         //Rare
         public string Confident_VP

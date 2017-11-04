@@ -361,7 +361,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Balance_VP;
+                }
+                else
                 {
                     return EN.Balance_VP;
                 }
@@ -372,7 +376,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Harmony_VP;
+                }
+                else
                 {
                     return EN.Harmony_VP;
                 }
@@ -383,7 +391,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Peace_VP;
+                }
+                else
                 {
                     return EN.Peace_VP;
                 }
@@ -394,7 +406,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Summer 16
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Medals_VP;
+                }
+                else
                 {
                     return EN.Medals_VP;
                 }
@@ -405,7 +421,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Halloween 16
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.RIP_VP;
+                }
+                else
                 {
                     return EN.RIP_VP;
                 }

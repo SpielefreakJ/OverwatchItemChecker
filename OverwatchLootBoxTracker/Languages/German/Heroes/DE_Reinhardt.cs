@@ -20,7 +20,6 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
 
 
         //Skin
-
         //Rare
         public string Brass_SK
         {
@@ -198,6 +197,49 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             get
             {
                 return "Meine Teuerste";
+            }
+        }
+
+
+        //Victory Poses
+        //Rare
+        public string Confident_VP
+        {
+            get
+            {
+                return "Selbstbewusst";
+            }
+        }
+
+        public string Flex_VP
+        {
+            get
+            {
+                return "Muskelspiel";
+            }
+        }
+
+        public string Legendary_VP
+        {
+            get
+            {
+                return "Legendär";
+            }
+        }
+
+        public string RIP_VP
+        {//Halloween 16
+            get
+            {
+                return "R.I.P.";
+            }
+        }
+
+        public string Toast_VP
+        {//Winter 16
+            get
+            {
+                return "Bröschderlei";
             }
         }
     }

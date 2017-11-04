@@ -20,7 +20,6 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
 
 
         //Skin
-
         //Rare
         public string Cardamom_SK
         {
@@ -190,6 +189,57 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             get
             {
                 return "Tanzen";
+            }
+        }
+
+
+        //Victory Poses
+        //Rare
+        public string Balance_VP
+        {
+            get
+            {
+                return "Balance";
+            }
+        }
+
+        public string Creation_VP
+        {
+            get
+            {
+                return "Lichtkreation";
+            }
+        }
+
+        public string Dance_VP
+        {
+            get
+            {
+                return "Tanzend";
+            }
+        }
+
+        public string Medal_VP
+        {//Summer 17
+            get
+            {
+                return "Medaille";
+            }
+        }
+
+        public string RIP_VP
+        {//Halloween 16
+            get
+            {
+                return "R.I.P.";
+            }
+        }
+
+        public string Light_Reading_VP
+        {//Uprising 17
+            get
+            {
+                return "Leichte Lektüre";
             }
         }
     }

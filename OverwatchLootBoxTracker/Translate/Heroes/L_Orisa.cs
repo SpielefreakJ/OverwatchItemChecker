@@ -316,7 +316,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Confident_VP;
+                }
+                else
                 {
                     return EN.Confident_VP;
                 }
@@ -327,7 +331,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Flex_VP;
+                }
+                else
                 {
                     return EN.Flex_VP;
                 }
@@ -338,7 +346,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Halt_VP;
+                }
+                else
                 {
                     return EN.Halt_VP;
                 }
@@ -349,7 +361,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Halloween 17
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Pumpkin_Head_VP;
+                }
+                else
                 {
                     return EN.Pumpkin_Head_VP;
                 }

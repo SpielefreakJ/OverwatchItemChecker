@@ -375,7 +375,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.I_Heart_You_VP;
+                }
+                else
                 {
                     return EN.I_Heart_You_VP;
                 }
@@ -386,7 +390,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Peace_VP;
+                }
+                else
                 {
                     return EN.Peace_VP;
                 }
@@ -397,7 +405,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Sitting_VP;
+                }
+                else
                 {
                     return EN.Sitting_VP;
                 }
@@ -408,7 +420,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Halloween 16
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.RIP_VP;
+                }
+                else
                 {
                     return EN.RIP_VP;
                 }
@@ -419,7 +435,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Winter 16
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Festive_VP;
+                }
+                else
                 {
                     return EN.Festive_VP;
                 }
@@ -430,7 +450,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Rooster 17
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Lucky_Pouch_VP;
+                }
+                else
                 {
                     return EN.Lucky_Pouch_VP;
                 }

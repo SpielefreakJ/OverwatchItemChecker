@@ -125,6 +125,7 @@
             this.btnWelcomeClose = new System.Windows.Forms.Button();
             this.tmrWelcome = new System.Windows.Forms.Timer(this.components);
             this.btnBackHeroe = new System.Windows.Forms.Button();
+            this.btnMoira = new System.Windows.Forms.Button();
             this.gBLang.SuspendLayout();
             this.gbAll.SuspendLayout();
             this.gBMoreCost.SuspendLayout();
@@ -274,6 +275,7 @@
             // 
             // gbAll
             // 
+            this.gbAll.Controls.Add(this.btnMoira);
             this.gbAll.Controls.Add(this.chB40);
             this.gbAll.Controls.Add(this.chB39);
             this.gbAll.Controls.Add(this.chB38);
@@ -340,7 +342,7 @@
             this.gbAll.Controls.Add(this.btnBastion);
             this.gbAll.Controls.Add(this.btnAna);
             this.gbAll.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.gbAll.Location = new System.Drawing.Point(206, 130);
+            this.gbAll.Location = new System.Drawing.Point(137, 37);
             this.gbAll.Name = "gbAll";
             this.gbAll.Size = new System.Drawing.Size(868, 642);
             this.gbAll.TabIndex = 12;
@@ -1251,6 +1253,17 @@
             this.btnBackHeroe.Visible = false;
             this.btnBackHeroe.Click += new System.EventHandler(this.btnBackHeroe_Click);
             // 
+            // btnMoira
+            // 
+            this.btnMoira.Enabled = false;
+            this.btnMoira.Location = new System.Drawing.Point(68, 605);
+            this.btnMoira.Name = "btnMoira";
+            this.btnMoira.Size = new System.Drawing.Size(101, 23);
+            this.btnMoira.TabIndex = 65;
+            this.btnMoira.Text = "btnMoira";
+            this.btnMoira.UseVisualStyleBackColor = true;
+            this.btnMoira.Click += new System.EventHandler(this.btnMoira_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1395,6 +1408,7 @@
         private System.Windows.Forms.CheckBox chB21;
         private System.Windows.Forms.Label lblCopyrightVersion;
         private System.Windows.Forms.Label lblContributor;
+        private System.Windows.Forms.Button btnMoira;
     }
 }
 

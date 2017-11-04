@@ -358,7 +358,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
-    public string Whoo_Vweeeeee_VL
+        public string Whoo_Vweeeeee_VL
         {//Summer 2016
             get
             {
@@ -432,5 +432,5 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 
 
         //Sprays
-}
+    }
 }

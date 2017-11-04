@@ -4,170 +4,170 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace OverwatchLootBoxTracker.Languages.German.Heroes
+namespace OverwatchLootBoxTracker.Languages.English.Heroes
 {
-    class DE_Doomfist
+    class EN_Moira
     {
-        public DE_Doomfist() { }
+        public EN_Moira() { }
 
         public string Name
         {
             get
             {
-                return "Doomfist";
+                return "Moira";
             }
         }
 
 
         //Skin
         //Rare
-        public string Daisy_SK
+        public string I_SK
         {
             get
             {
-                return "Gerbera";
+                return "";
             }
         }
 
-        public string Lake_SK
+        public string II_SK
         {
             get
             {
-                return "See";
+                return "";
             }
         }
 
-        public string Plains_SK
+        public string III_SK
         {
             get
             {
-                return "Steppe";
+                return "";
             }
         }
 
-        public string Sunset_SK
+        public string IV_SK
         {
             get
             {
-                return "Sonnenuntergang";
+                return "";
             }
         }
         //Epic
-        public string Leopard_SK
+        public string V_SK
         {
             get
             {
-                return "Leopard";
+                return "";
             }
         }
 
-        public string Painted_SK
+        public string VI_SK
         {
             get
             {
-                return "Kriegsbemalung";
+                return "";
             }
         }
         //Legendary
-        public string Caution_SK
+        public string VII_SK
         {
             get
             {
-                return "Achtung";
+                return "";
             }
         }
 
-        public string Irin_SK
+        public string VIII_SK
         {
             get
             {
-                return "Irin";
+                return "";
             }
         }
 
-        public string Avatar_SK
+        public string IX_SK
         {
             get
             {
-                return "Reinkarnation";
+                return "";
             }
         }
 
-        public string Spirit_SK
+        public string X_SK
         {
             get
             {
-                return "Seelenwanderung";
+                return "";
             }
         }
 
 
         //Emotes
         //Epic
-        public string Fake_Out_EM
+        public string I_EM
         {
             get
             {
-                return "Angetäuscht";
+                return "";
             }
         }
 
-        public string Intimidate_EM
+        public string II_EM
         {
             get
             {
-                return "Einschüchtern";
+                return "";
             }
         }
 
-        public string Ready_for_Battle_EM
+        public string III_EM
         {
             get
             {
-                return "Kampfbereit";
+                return "";
             }
         }
 
-        public string Take_a_knee_EM
+        public string IV_EM
         {
             get
             {
-                return "In die knie";
+                return "";
             }
         }
 
-        public string Thumbs_Down_EM
+        public string V_EM
         {
             get
             {
-                return "Daumen runter";
+                return "";
             }
         }
 
 
         //Victory Poses
         //Rare
-        public string Intense_VP
+        public string I_VP
         {
             get
             {
-                return "Versuch's nur!";
+                return "";
             }
         }
 
-        public string Seismic_Slam_VP
+        public string II_VP
         {
             get
             {
-                return "Seismischer Schlag";
+                return "";
             }
         }
 
-        public string Superior_VP
+        public string III_VP
         {
             get
             {
-                return "Überlegen";
+                return "";
             }
         }
     }

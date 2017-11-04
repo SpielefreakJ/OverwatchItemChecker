@@ -20,7 +20,6 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
 
 
         //Skin
-
         //Rare
         public string Jet_SK
         {
@@ -190,6 +189,57 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             get
             {
                 return "Tanzen";
+            }
+        }
+
+
+        //Victory Poses
+        //Rare
+        public string Fist_Pump_VP
+        {
+            get
+            {
+                return "Geballte Faust";
+            }
+        }
+
+        public string Locked_and_Loaded_VP
+        {
+            get
+            {
+                return "Geladen und Entsichert";
+            }
+        }
+
+        public string Soldier_VP
+        {
+            get
+            {
+                return "Soldier";
+            }
+        }
+
+        public string Golf_Swing_VP
+        {//Summer 16
+            get
+            {
+                return "Golfschlag";
+            }
+        }
+
+        public string RIP_VP
+        {//Halloween 16
+            get
+            {
+                return "R.I.P.";
+            }
+        }
+
+        public string Toast_VP
+        {//Winter 16
+            get
+            {
+                return "Prost";
             }
         }
     }

@@ -186,7 +186,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 
 
         //Victory Poses
-
+        //Rare
         public string Balance_VP
         {
             get

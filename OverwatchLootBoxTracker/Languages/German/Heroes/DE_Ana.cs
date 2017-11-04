@@ -9,7 +9,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
     class DE_Ana
     {
         public DE_Ana() { }
-        
+
         public string Name
         {
             get
@@ -19,7 +19,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         }
 
 
-            //Skins
+        //Skins
         //Rare
         public string Citrine_SK
         {
@@ -128,7 +128,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         }
 
 
-            //Emotes
+        //Emotes
         //Epic
         public string Not_Impressed_EM
         {
@@ -195,7 +195,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         }
 
 
-            //Victory Poses
+        //Victory Poses
         //Rare
         public string Mission_Complete_VP
         {
@@ -246,7 +246,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         }
 
 
-            //Voice Lines
+        //Voice Lines
         //Common
         public string Justice_Delivered_VL
         {
@@ -417,7 +417,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         }
 
 
-            //Sprays
+        //Sprays
         //Common
         public string Action_SP
         {
@@ -692,7 +692,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         }
 
 
-            //Highlight Intros
+        //Highlight Intros
         //Epic
         public string Guardian_HI
         {
@@ -719,7 +719,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         }
 
 
-            //Player Icons
+        //Player Icons
         //Rare
         public string Ana_PI
         {

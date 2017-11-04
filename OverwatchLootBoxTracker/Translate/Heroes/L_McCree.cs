@@ -391,7 +391,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Contemplative_VP;
+                }
+                else
                 {
                     return EN.Contemplative_VP;
                 }
@@ -402,7 +406,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Over_the_shoulder_VP;
+                }
+                else
                 {
                     return EN.Over_the_shoulder_VP;
                 }
@@ -413,7 +421,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Take_a_load_off_EM;
+                }
+                else
                 {
                     return EN.Take_a_load_off_EM;
                 }
@@ -424,7 +436,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Halloween 16
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.RIP_VP;
+                }
+                else
                 {
                     return EN.RIP_VP;
                 }
@@ -435,7 +451,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Uprising 17
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Showdown_VP;
+                }
+                else
                 {
                     return EN.Showdown_VP;
                 }

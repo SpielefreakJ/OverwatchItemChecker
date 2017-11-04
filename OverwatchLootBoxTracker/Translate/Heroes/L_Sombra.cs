@@ -330,7 +330,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Hacked_VP;
+                }
+                else
                 {
                     return EN.Hacked_VP;
                 }
@@ -341,7 +345,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Kneeling_VP;
+                }
+                else
                 {
                     return EN.Kneeling_VP;
                 }
@@ -352,7 +360,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Rising_VP;
+                }
+                else
                 {
                     return EN.Rising_VP;
                 }
@@ -363,7 +375,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Summer 17
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Medal_VP;
+                }
+                else
                 {
                     return EN.Medal_VP;
                 }
@@ -374,7 +390,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Halloween 17
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Pumpkinette_VP;
+                }
+                else
                 {
                     return EN.Pumpkinette_VP;
                 }
@@ -385,7 +405,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Rooster 17
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Sparklers_VP;
+                }
+                else
                 {
                     return EN.Sparklers_VP;
                 }

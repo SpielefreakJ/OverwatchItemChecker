@@ -376,7 +376,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Fist_Pump_VP;
+                }
+                else
                 {
                     return EN.Fist_Pump_VP;
                 }
@@ -387,7 +391,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Locked_and_Loaded_VP;
+                }
+                else
                 {
                     return EN.Locked_and_Loaded_VP;
                 }
@@ -398,7 +406,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Soldier_VP;
+                }
+                else
                 {
                     return EN.Soldier_VP;
                 }
@@ -409,7 +421,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Summer 16
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Golf_Swing_VP;
+                }
+                else
                 {
                     return EN.Golf_Swing_VP;
                 }
@@ -420,7 +436,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Halloween 16
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.RIP_VP;
+                }
+                else
                 {
                     return EN.RIP_VP;
                 }
@@ -431,7 +451,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Winter 16
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Toast_VP;
+                }
+                else
                 {
                     return EN.Toast_VP;
                 }

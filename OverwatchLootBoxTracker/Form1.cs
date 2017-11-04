@@ -35,6 +35,7 @@ namespace OverwatchLootBoxTracker
         Translate.L_McCree McCree;
         Translate.L_Mei Mei;
         Translate.L_Mercy Mercy;
+        Translate.L_Moira Moira;
         Translate.L_Orisa Orisa;
         Translate.L_Pharah Pharah;
         Translate.L_Reaper Reaper;
@@ -54,6 +55,7 @@ namespace OverwatchLootBoxTracker
         int gBAllWeited3, gBAllWeited3p1, gBAllWeited3p2;
         int gBAllWeited4, gBAllWeited4p1, gBAllWeited4p2, gBAllWeited4p3;
         //int gBAllWeited5, gBAllWeited5p1, gBAllWeited5p2, gBAllWeited5p3, gBAllWeited5p4;
+        int p1 = 194; int p2 = 217; int p3 = 240; int p4 = 263; int p5 = 286; int p6 = 309; int p7 = 332; int p8 = 355; int p9 = 378; int p10 = 401;
 
         string BackSave;
 
@@ -61,9 +63,7 @@ namespace OverwatchLootBoxTracker
 
         public Form1()
         {
-            InitializeComponent();
-            KlassenInst();
-            ChangePos();
+            Lang = new Translate.L_Translate(Language);
             this.Width = 912; this.Height = 751;
 
             //Erstellen des Verzeichnisses "OWItemTracker" in C:\\User\[Username]\AppData\Local
@@ -108,6 +108,10 @@ namespace OverwatchLootBoxTracker
             Application.ApplicationExit += new EventHandler(this.OnApplicationExit);
 
             IniRead();
+            InitializeComponent();
+            KlassenInst();
+            ChangePos();
+            Texte();
         }
 
         private void OnApplicationExit(object sender, EventArgs e)
@@ -136,14 +140,11 @@ namespace OverwatchLootBoxTracker
             //Farbe auslesen und auf dem Hintergrund anwenden
             Language = inisSettings.Read("Lang");
             Lang.ChangeLang = Language;
-
-            Texte();
         }
 
         private void KlassenInst()
         {
             Cost = new CCost();
-            Lang = new Translate.L_Translate(Language);
             Ana = new Translate.L_Ana(Language);
             Bastion = new Translate.L_Bastion(Language);
             DVa = new Translate.L_DVa(Language);
@@ -155,6 +156,7 @@ namespace OverwatchLootBoxTracker
             McCree = new Translate.L_McCree(Language);
             Mei = new Translate.L_Mei(Language);
             Mercy = new Translate.L_Mercy(Language);
+            Moira = new Translate.L_Moira(Language);
             Orisa = new Translate.L_Orisa(Language);
             Pharah = new Translate.L_Pharah(Language);
             Reaper = new Translate.L_Reaper(Language);
@@ -213,6 +215,7 @@ namespace OverwatchLootBoxTracker
             btnMcCree.Text = McCree.Name;
             btnMei.Text = Mei.Name;
             btnMercy.Text = Mercy.Name;
+            btnMoira.Text = Moira.Name;
             btnOrisa.Text = Orisa.Name;
             btnPharah.Text = Pharah.Name;
             btnReaper.Text = Reaper.Name;
@@ -244,6 +247,18 @@ namespace OverwatchLootBoxTracker
 
         private void ChangePos()
         {
+            gBAllWeited3 = gbAll.Width;
+            gBAllWeited3 /= 3;
+            gBAllWeited3p1 = gBAllWeited3 - 57;
+            gBAllWeited3p2 = gBAllWeited3 * 2 - 57;
+
+            gBAllWeited4 = gbAll.Width;
+            gBAllWeited4 /= 4;
+            gBAllWeited4p1 = gBAllWeited4 - 57;
+            gBAllWeited4p2 = gBAllWeited4 * 2 - 57;
+            gBAllWeited4p3 = gBAllWeited4 * 3 - 57;
+
+
             gBWelcome.Location = new Point(12, 12);
             gBWelcome.Width = 872; gBWelcome.Height = 688;
 
@@ -259,7 +274,7 @@ namespace OverwatchLootBoxTracker
             btnBackHeroe.Location = new Point(16, 677);
 
             //Buttons der Helden
-            btnAna.Location = new Point(7, 20);
+            /*btnAna.Location = new Point(7, 20);
             btnBastion.Location = new Point(7, 49);
             btnDVa.Location = new Point(7, 78);
             btnDoomfist.Location = new Point(7, 107);
@@ -284,19 +299,34 @@ namespace OverwatchLootBoxTracker
             btnWidowmaker.Location = new Point(114, 252);
             btnWinston.Location = new Point(114, 281);
             btnZarya.Location = new Point(114, 310);
-            btnZenyatta.Location = new Point(114, 339);
+            btnZenyatta.Location = new Point(114, 339);*/
+            btnAna.Location = new Point(7, 20);
+            btnBastion.Location = new Point(7, 49);
+            btnDVa.Location = new Point(7, 78);
+            btnDoomfist.Location = new Point(7, 107);
+            btnGeji.Location = new Point(7, 136);
+            btnHanzo.Location = new Point(7, 165);
+            btnJunkrat.Location = new Point(7, 194);
+            btnLúcio.Location = new Point(7, 223);
+            btnMcCree.Location = new Point(7, 252);
+            btnMei.Location = new Point(7, 281);
+            btnMercy.Location = new Point(7, 310);
+            btnMoira.Location = new Point(7, 339);
+            btnOrisa.Location = new Point(7, 368);
 
-
-            gBAllWeited3 = gbAll.Width;
-            gBAllWeited3 /= 3;
-            gBAllWeited3p1 = gBAllWeited3 - 57;
-            gBAllWeited3p2 = gBAllWeited3 * 2 - 57;
-
-            gBAllWeited4 = gbAll.Width;
-            gBAllWeited4 /= 4;
-            gBAllWeited4p1 = gBAllWeited4 - 57;
-            gBAllWeited4p2 = gBAllWeited4 * 2 - 57;
-            gBAllWeited4p3 = gBAllWeited4 * 3 - 57;
+            btnPharah.Location = new Point(114, 20);
+            btnReaper.Location = new Point(114, 49);
+            btnReinhardt.Location = new Point(114, 78);
+            btnRoadhog.Location = new Point(114, 107);
+            btnSoldier_76.Location = new Point(114, 136);
+            btnSombra.Location = new Point(114, 165);
+            btnSymmetra.Location = new Point(114, 194);
+            btnTorbjörn.Location = new Point(114, 223);
+            btnTracer.Location = new Point(114, 252);
+            btnWidowmaker.Location = new Point(114, 281);
+            btnWinston.Location = new Point(114, 310);
+            btnZarya.Location = new Point(114, 339);
+            btnZenyatta.Location = new Point(114, 368);
         }
 
         private void ChangeLang()
@@ -313,6 +343,7 @@ namespace OverwatchLootBoxTracker
             McCree.ChangeLang = Language;
             Mei.ChangeLang = Language;
             Mercy.ChangeLang = Language;
+            Moira.ChangeLang = Language;
             Orisa.ChangeLang = Language;
             Pharah.ChangeLang = Language;
             Reaper.ChangeLang = Language;
@@ -585,6 +616,7 @@ namespace OverwatchLootBoxTracker
                 btnMcCree.Visible = true;
                 btnMei.Visible = true;
                 btnMercy.Visible = true;
+                btnMoira.Visible = true;
                 btnOrisa.Visible = true;
                 btnPharah.Visible = true;
                 btnReaper.Visible = true;
@@ -680,6 +712,7 @@ namespace OverwatchLootBoxTracker
             btnMcCree.Visible = false;
             btnMei.Visible = false;
             btnMercy.Visible = false;
+            btnMoira.Visible = false;
             btnOrisa.Visible = false;
             btnPharah.Visible = false;
             btnReaper.Visible = false;
@@ -698,8 +731,6 @@ namespace OverwatchLootBoxTracker
             BackSave = gbAll.Text;
             chBSave = 1;
         }
-
-        int p1 = 194; int p2 = 217; int p3 = 240; int p4 = 263; int p5 = 286; int p6 = 309; int p7 = 332; int p8 = 355; int p9 = 378; int p10 = 401;
 
         private void btnAna_Click(object sender, EventArgs e)
         {
@@ -2317,6 +2348,88 @@ namespace OverwatchLootBoxTracker
                 chB04.Checked = Convert.ToBoolean(inisHeroes.Read("VP04"));
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
+            }
+            chBSave = 1;
+        }
+
+        private void btnMoira_Click(object sender, EventArgs e)
+        {
+            btnHeroeinvisible("Moira", 15, 6, 6);
+            gbAll.Text += " / " + Moira.Name;
+
+            inisHeroes = new IniStream(appdata + "\\Moira.ini");
+            Heroe = "H";
+            chBSave = 0;
+
+            //Anzeigen, Auslesen und anwenden der chB
+            if (BackSave == Lang.Skins)
+            {
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p3, p1);
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p2);
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p3);
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p4);
+
+                chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Moira.I_SK + " (" + Cost.Rare + ")";//Rare
+                chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Moira.II_SK + " (" + Cost.Rare + ")";
+                chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Moira.III_SK + " (" + Cost.Rare + ")";
+                chB04.BackColor = Color.DeepSkyBlue; chB04.Text = Moira.IV_SK + " (" + Cost.Rare + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Moira.V_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.BackColor = Color.DarkViolet; chB06.Text = Moira.VI_SK + " (" + Cost.Epic + ")";
+                chB07.BackColor = Color.Gold; chB09.Text = Moira.VII_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB08.BackColor = Color.Gold; chB10.Text = Moira.VIII_SK + " (" + Cost.Legendary + ")";
+                chB09.BackColor = Color.Gold; chB11.Text = Moira.IX_SK + " (" + Cost.Legendary + ")";
+                chB10.BackColor = Color.Gold; chB12.Text = Moira.X_SK + " (" + Cost.Legendary + ")";
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
+            }
+            if (BackSave == Lang.Emotes)
+            {
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
+
+                chB01.BackColor = Color.DarkViolet; chB01.Text = Moira.I_EM + " (" + Cost.Epic + ")";//Epic
+                chB02.BackColor = Color.DarkViolet; chB02.Text = Moira.II_EM + " (" + Cost.Epic + ")";
+                chB03.BackColor = Color.DarkViolet; chB03.Text = Moira.III_EM + " (" + Cost.Epic + ")";
+                chB04.BackColor = Color.DarkViolet; chB04.Text = Moira.IV_EM + " (" + Cost.Epic + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Moira.V_EM + " (" + Cost.Epic + ")";
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("EM05"));
+            }
+            if (BackSave == Lang.VictoryPoses)
+            {
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p2, p1);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p3, p1);
+
+                chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Moira.I_VP + " (" + Cost.Rare + ")";//Rare
+                chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Moira.II_VP + " (" + Cost.Rare + ")";
+                chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Moira.III_VP + " (" + Cost.Rare + ")";
+
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("VP01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("VP02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("VP03"));
             }
             chBSave = 1;
         }

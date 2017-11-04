@@ -391,7 +391,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Confident_VP;
+                }
+                else
                 {
                     return EN.Confident_VP;
                 }
@@ -402,7 +406,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Flex_EM;
+                }
+                else
                 {
                     return EN.Flex_EM;
                 }
@@ -413,7 +421,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Legendary_VP;
+                }
+                else
                 {
                     return EN.Legendary_VP;
                 }
@@ -424,7 +436,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Halloween 16
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.RIP_VP;
+                }
+                else
                 {
                     return EN.RIP_VP;
                 }
@@ -435,7 +451,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Winter 16
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Toast_VP;
+                }
+                else
                 {
                     return EN.Toast_VP;
                 }

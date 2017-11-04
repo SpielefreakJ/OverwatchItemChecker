@@ -376,7 +376,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Confident_VP;
+                }
+                else
                 {
                     return EN.Confident_VP;
                 }
@@ -387,7 +391,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Grooving_VP;
+                }
+                else
                 {
                     return EN.Grooving_VP;
                 }
@@ -398,7 +406,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Ready_for_action_VP;
+                }
+                else
                 {
                     return EN.Ready_for_action_VP;
                 }
@@ -409,7 +421,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Halloween 17
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Pumpkin_Control_VP;
+                }
+                else
                 {
                     return EN.Pumpkin_Control_VP;
                 }
@@ -420,7 +436,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Halloween 16
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.RIP_VP;
+                }
+                else
                 {
                     return EN.RIP_VP;
                 }
@@ -431,7 +451,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Uprising 17
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Handstand_VP;
+                }
+                else
                 {
                     return EN.Handstand_VP;
                 }

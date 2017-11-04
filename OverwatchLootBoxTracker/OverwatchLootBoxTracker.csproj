@@ -28,8 +28,8 @@
     <ErrorReportUrl>https://github.com/SpielefreakJ/OverwatchLootTracker/issues</ErrorReportUrl>
     <CreateWebPageOnPublish>true</CreateWebPageOnPublish>
     <WebPage>publish.htm</WebPage>
-    <ApplicationRevision>1</ApplicationRevision>
-    <ApplicationVersion>0.1.3.1</ApplicationVersion>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>0.1.4.0</ApplicationVersion>
     <UseApplicationTrust>true</UseApplicationTrust>
     <CreateDesktopShortcut>true</CreateDesktopShortcut>
     <PublishWizardCompleted>true</PublishWizardCompleted>
@@ -98,6 +98,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="CIniCreator.cs" />
+    <Compile Include="Languages\English\Heroes\EN_Moira.cs" />
     <Compile Include="Languages\German\Heroes\DE_Ana.cs" />
     <Compile Include="Languages\German\Heroes\DE_Bastion.cs" />
     <Compile Include="Languages\German\Heroes\DE_Doomfist.cs" />
@@ -123,6 +124,8 @@
     <Compile Include="Languages\German\Heroes\DE_Winston.cs" />
     <Compile Include="Languages\German\Heroes\DE_Zarya.cs" />
     <Compile Include="Languages\German\Heroes\DE_Zenyatta.cs" />
+    <Compile Include="Languages\German\Heroes\DE_Moira.cs" />
+    <Compile Include="Translate\Heroes\L_Moira.cs" />
     <Compile Include="Translate\Heroes\L_Lúcio.cs" />
     <Compile Include="Translate\Heroes\L_McCree.cs" />
     <Compile Include="Translate\Heroes\L_Mei.cs" />

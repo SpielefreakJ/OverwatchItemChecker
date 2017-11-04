@@ -20,7 +20,6 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
 
 
         //Skin
-
         //Rare
         public string Amethyst_SK
         {
@@ -190,6 +189,57 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             get
             {
                 return "Luftrakete";
+            }
+        }
+
+
+        //Victory Poses
+        //Rare
+        public string Guardian_VP
+        {
+            get
+            {
+                return "Wächter";
+            }
+        }
+
+        public string Kneeling_VP
+        {
+            get
+            {
+                return "Kniend";
+            }
+        }
+
+        public string Jump_Jet_VP
+        {
+            get
+            {
+                return "Senkrechtstarter";
+            }
+        }
+
+        public string Medal_VP
+        {//Summer 16
+            get
+            {
+                return "Medaille";
+            }
+        }
+
+        public string RIP_VP
+        {//Halloween 16
+            get
+            {
+                return "R.I.P.";
+            }
+        }
+
+        public string Toast_VP
+        {//Winter 16
+            get
+            {
+                return "Prost";
             }
         }
     }

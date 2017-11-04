@@ -361,7 +361,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Beast_VP;
+                }
+                else
                 {
                     return EN.Beast_VP;
                 }
@@ -372,7 +376,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Glasses_VP;
+                }
+                else
                 {
                     return EN.Glasses_VP;
                 }
@@ -383,7 +391,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.The_Thinker_VP;
+                }
+                else
                 {
                     return EN.The_Thinker_VP;
                 }
@@ -394,7 +406,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Summer 16
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Medal_VP;
+                }
+                else
                 {
                     return EN.Medal_VP;
                 }
@@ -405,7 +421,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Halloween 16
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.RIP_VP;
+                }
+                else
                 {
                     return EN.RIP_VP;
                 }
@@ -416,7 +436,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Uprising 17
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Peanut_Butter_EM;
+                }
+                else
                 {
                     return EN.Peanut_Butter_EM;
                 }

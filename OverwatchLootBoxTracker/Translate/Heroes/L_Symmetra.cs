@@ -376,7 +376,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Balance_VP;
+                }
+                else
                 {
                     return EN.Balance_VP;
                 }
@@ -387,7 +391,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Creation_VP;
+                }
+                else
                 {
                     return EN.Creation_VP;
                 }
@@ -398,7 +406,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Dance_EM;
+                }
+                else
                 {
                     return EN.Dance_EM;
                 }
@@ -409,7 +421,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Summer 17
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Medal_VP;
+                }
+                else
                 {
                     return EN.Medal_VP;
                 }
@@ -420,7 +436,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Halloween 16
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.RIP_VP;
+                }
+                else
                 {
                     return EN.RIP_VP;
                 }
@@ -431,7 +451,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Uprising 17
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Light_Reading_VP;
+                }
+                else
                 {
                     return EN.Light_Reading_VP;
                 }

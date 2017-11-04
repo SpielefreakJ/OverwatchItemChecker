@@ -20,7 +20,6 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
 
 
         //Skin
-
         //Rare
         public string Blå_SK
         {
@@ -198,6 +197,57 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             get
             {
                 return "Tanzen";
+            }
+        }
+
+
+        //Victory Poses
+        //Rare
+        public string Hammer_VP
+        {
+            get
+            {
+                return "Hammer";
+            }
+        }
+
+        public string Sitting_pretty_VP
+        {
+            get
+            {
+                return "Gemütlich Sitzend";
+            }
+        }
+
+        public string Take_Five_VP
+        {
+            get
+            {
+                return "Kleine Pause";
+            }
+        }
+
+        public string Medal_VP
+        {//Summer 16
+            get
+            {
+                return "Medaille";
+            }
+        }
+
+        public string RIP_VP
+        {//Halloween 16
+            get
+            {
+                return "R.I.P.";
+            }
+        }
+
+        public string Toast_VP
+        {//Winter 16
+            get
+            {
+                return "Prost";
             }
         }
     }

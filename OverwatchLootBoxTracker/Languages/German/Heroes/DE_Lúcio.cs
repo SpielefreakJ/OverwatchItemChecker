@@ -20,7 +20,6 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
 
 
         //Skin
-
         //Rare
         public string Azul_SK
         {
@@ -190,6 +189,57 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             get
             {
                 return "Tanzen";
+            }
+        }
+
+
+        //Victory Poses
+        //Rare
+        public string Confident_VP
+        {
+            get
+            {
+                return "Selbstbewusst";
+            }
+        }
+
+        public string Grooving_VP
+        {
+            get
+            {
+                return "Groovend";
+            }
+        }
+
+        public string Ready_for_action_VP
+        {
+            get
+            {
+                return "Kann Losgehen";
+            }
+        }
+
+        public string Pumpkin_Control_VP
+        {//Halloween 17
+            get
+            {
+                return "Kürbiskontrolle";
+            }
+        }
+
+        public string RIP_VP
+        {//Halloween 16
+            get
+            {
+                return "R.I.P.";
+            }
+        }
+
+        public string Handstand_VP
+        {//Uprising 17
+            get
+            {
+                return "Handstand";
             }
         }
     }

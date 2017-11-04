@@ -20,7 +20,6 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
 
 
         //Skin
-
         //Rare
         public string Azuki_SK
         {
@@ -174,6 +173,57 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             get
             {
                 return "Fischertanz";
+            }
+        }
+
+
+        //Victory Poses
+        //Rare
+        public string Confident_VP
+        {
+            get
+            {
+                return "Selbstbewusst";
+            }
+        }
+
+        public string Kneeling_VP
+        {
+            get
+            {
+                return "Kniend";
+            }
+        }
+
+        public string Over_the_shoulder_VP
+        {
+            get
+            {
+                return "Schulterblick";
+            }
+        }
+
+        public string Medal_VP
+        {//Summer 17
+            get
+            {
+                return "Medaille";
+            }
+        }
+
+        public string RIP_VP
+        {//Halloween 16
+            get
+            {
+                return "R.I.P.";
+            }
+        }
+
+        public string Skewered_VP
+        {//Halloween 17
+            get
+            {
+                return "Durchbohrt";
             }
         }
     }

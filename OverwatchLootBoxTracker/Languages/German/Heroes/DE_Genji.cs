@@ -20,7 +20,6 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
 
 
         //Skin
-
         //Rare
         public string Azurite_SK
         {
@@ -182,6 +181,49 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             get
             {
                 return "Tanzen";
+            }
+        }
+
+
+        //Victory Poses
+        //Rare
+        public string Kneeling_VP
+        {
+            get
+            {
+                return "Kniend";
+            }
+        }
+
+        public string Shuriken_VP
+        {
+            get
+            {
+                return "Shuriken";
+            }
+        }
+
+        public string Sword_Stance_VP
+        {
+            get
+            {
+                return "Schwerthaltung";
+            }
+        }
+
+        public string RIP_VP
+        {//Halloween 16
+            get
+            {
+                return "R.I.P.";
+            }
+        }
+
+        public string Meditate_VP
+        {//Uprising 17
+            get
+            {
+                return "Meditierend";
             }
         }
     }

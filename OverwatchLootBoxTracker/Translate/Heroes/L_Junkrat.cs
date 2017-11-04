@@ -361,7 +361,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Itll_freeze_that_way_VP;
+                }
+                else
                 {
                     return EN.Itll_freeze_that_way_VP;
                 }
@@ -372,7 +376,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Kneeling_VP;
+                }
+                else
                 {
                     return EN.Kneeling_VP;
                 }
@@ -383,7 +391,11 @@ namespace OverwatchLootBoxTracker.Translate
         {
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Nyah_Nyah_VP;
+                }
+                else
                 {
                     return EN.Nyah_Nyah_VP;
                 }
@@ -394,7 +406,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Summer 17
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Medal_VP;
+                }
+                else
                 {
                     return EN.Medal_VP;
                 }
@@ -405,7 +421,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Halloween 17
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Pumpkin_VP;
+                }
+                else
                 {
                     return EN.Pumpkin_VP;
                 }
@@ -416,7 +436,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Halloween 16
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.RIP_VP;
+                }
+                else
                 {
                     return EN.RIP_VP;
                 }
@@ -427,7 +451,11 @@ namespace OverwatchLootBoxTracker.Translate
         {//Rooster 17
             get
             {
-                //else
+                if (myLang == "DE")
+                {
+                    return DE.Bad_for_your_health_VP;
+                }
+                else
                 {
                     return EN.Bad_for_your_health_VP;
                 }

@@ -20,7 +20,6 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
 
 
         //Skin
-
         //Rare
         public string Blood_SK
         {
@@ -198,6 +197,57 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             get
             {
                 return "Tanzen";
+            }
+        }
+
+
+        //Victory Poses
+        //Rare
+        public string Casual_VP
+        {
+            get
+            {
+                return "Lässig";
+            }
+        }
+
+        public string Enigmatic_VP
+        {
+            get
+            {
+                return "Geheimnisvoll";
+            }
+        }
+
+        public string Menacing_VP
+        {
+            get
+            {
+                return "Bedrohlich";
+            }
+        }
+
+        public string Shrug_VP
+        {
+            get
+            {
+                return "Achselzucken";
+            }
+        }
+
+        public string Medal_VP
+        {//Summer 16
+            get
+            {
+                return "Medaille";
+            }
+        }
+
+        public string RIP_VP
+        {//Halloween 16
+            get
+            {
+                return "R.I.P.";
             }
         }
     }

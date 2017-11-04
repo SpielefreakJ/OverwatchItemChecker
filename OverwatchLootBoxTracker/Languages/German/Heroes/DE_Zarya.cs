@@ -20,7 +20,6 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
 
 
         //Skin
-
         //Rare
         public string Brick_SK
         {
@@ -198,6 +197,49 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             get
             {
                 return "Geheimnisvolles Geschenk";
+            }
+        }
+
+
+        //Victory Poses
+        //Rare
+        public string Casual_VP
+        {
+            get
+            {
+                return "Lässig";
+            }
+        }
+
+        public string Check_out_this_gun_VP
+        {
+            get
+            {
+                return "Das ist eine Waffe";
+            }
+        }
+
+        public string Flexing_VP
+        {
+            get
+            {
+                return "Muskelspiel";
+            }
+        }
+
+        public string RIP_VP
+        {//Halloween 16
+            get
+            {
+                return "R.I.P.";
+            }
+        }
+
+        public string This_is_strength_VP
+        {//Uprising 17
+            get
+            {
+                return "Das ist stärke";
             }
         }
     }

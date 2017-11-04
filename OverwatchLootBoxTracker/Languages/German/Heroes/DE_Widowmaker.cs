@@ -20,7 +20,6 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
 
 
         //Skin
-
         //Rare
         public string Ciel_SK
         {
@@ -182,6 +181,49 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             get
             {
                 return "Ballett";
+            }
+        }
+
+
+        //Victory Poses
+        //Rare
+        public string Activating_Visor_VP
+        {
+            get
+            {
+                return "Visoraktivierung";
+            }
+        }
+
+        public string Gaze_VP
+        {
+            get
+            {
+                return "Fester Blick";
+            }
+        }
+
+        public string Over_the_shoulder_VP
+        {
+            get
+            {
+                return "Schulterblick";
+            }
+        }
+
+        public string Medal_VP
+        {//Summer 16
+            get
+            {
+                return "Medaille";
+            }
+        }
+
+        public string RIP_VP
+        {//Halloween 16
+            get
+            {
+                return "R.I.P.";
             }
         }
     }

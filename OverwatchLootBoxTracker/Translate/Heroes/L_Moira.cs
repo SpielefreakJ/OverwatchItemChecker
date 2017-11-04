@@ -6,20 +6,19 @@ using System.Threading.Tasks;
 
 namespace OverwatchLootBoxTracker.Translate
 {
-    class L_Doomfist
+    class L_Moira
     {
-        Languages.English.Heroes.EN_Doomfist EN;
-        Languages.German.Heroes.DE_Doomfist DE;
+        Languages.English.Heroes.EN_Moira EN;
+        Languages.German.Heroes.DE_Moira DE;
         string myLang;
 
-        public L_Doomfist(string Lang)
+        public L_Moira(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Doomfist();
-            DE = new Languages.German.Heroes.DE_Doomfist();
+            EN = new Languages.English.Heroes.EN_Moira();
+            DE = new Languages.German.Heroes.DE_Moira();
         }
-
         public string ChangeLang
         {
             get
@@ -49,154 +48,153 @@ namespace OverwatchLootBoxTracker.Translate
 
 
         //Skin
-
         //Rare
-        public string Daisy_SK//1
+        public string I_SK//1
         {
             get
             {
-                if (myLang == "DE")
+                if (myLang=="DE")
                 {
-                    return DE.Daisy_SK;
+                    return DE.I_SK;
                 }
                 else
                 {
-                    return EN.Daisy_SK;
+                    return DE.I_SK;
                 }
             }
         }
 
-        public string Lake_SK//2
+        public string II_SK//2
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Lake_SK;
+                    return DE.II_SK;
                 }
                 else
                 {
-                    return EN.Lake_SK;
+                    return EN.II_SK;
                 }
             }
         }
 
-        public string Plains_SK//3
+        public string III_SK//3
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Plains_SK;
+                    return DE.III_SK;
                 }
                 else
                 {
-                    return EN.Plains_SK;
+                    return EN.III_SK;
                 }
             }
         }
 
-        public string Sunset_SK//4
+        public string IV_SK//4
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Sunset_SK;
+                    return DE.IV_SK;
                 }
                 else
                 {
-                    return EN.Sunset_SK;
+                    return EN.IV_SK;
                 }
             }
         }
         //Epic
-        public string Leopard_SK//5
+        public string V_SK//5
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Leopard_SK;
+                    return DE.V_SK;
                 }
                 else
                 {
-                    return EN.Leopard_SK;
+                    return EN.V_SK;
                 }
             }
         }
 
-        public string Painted_SK//6
+        public string VI_SK//6
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Painted_SK;
+                    return DE.VI_SK;
                 }
                 else
                 {
-                    return EN.Painted_SK;
+                    return EN.VI_SK;
                 }
             }
         }
         //Legendary
-        public string Caution_SK//7
+        public string VII_SK//7
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Caution_SK;
+                    return DE.VII_SK;
                 }
                 else
                 {
-                    return EN.Caution_SK;
+                    return EN.VII_SK;
                 }
             }
         }
 
-        public string Irin_SK//8
+        public string VIII_SK//8
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Irin_SK;
+                    return DE.VIII_SK;
                 }
                 else
                 {
-                    return EN.Irin_SK;
+                    return EN.VIII_SK;
                 }
             }
         }
 
-        public string Avatar_SK//9
+        public string IX_SK//9
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Avatar_SK;
+                    return DE.IX_SK;
                 }
                 else
                 {
-                    return EN.Avatar_SK;
+                    return EN.IX_SK;
                 }
             }
         }
 
-        public string Spirit_SK//10
+        public string X_SK//10
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Spirit_SK;
+                    return DE.X_SK;
                 }
                 else
                 {
-                    return EN.Spirit_SK;
+                    return EN.X_SK;
                 }
             }
         }
@@ -204,77 +202,77 @@ namespace OverwatchLootBoxTracker.Translate
 
         //Emotes
         //Epic
-        public string Fake_Out_EM//1
+        public string I_EM//1
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Fake_Out_EM;
+                    return DE.I_EM;
                 }
                 else
                 {
-                    return EN.Fake_Out_EM;
+                    return EN.I_EM;
                 }
             }
         }
 
-        public string Intimidate_EM//2
+        public string II_EM//2
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Intimidate_EM;
+                    return DE.II_EM;
                 }
                 else
                 {
-                    return EN.Intimidate_EM;
+                    return EN.II_EM;
                 }
             }
         }
 
-        public string Ready_for_Battle_EM//3
+        public string III_EM//3
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Ready_for_Battle_EM;
+                    return DE.III_EM;
                 }
                 else
                 {
-                    return EN.Ready_for_Battle_EM;
+                    return EN.III_EM;
                 }
             }
         }
 
-        public string Take_a_knee_EM//4
+        public string IV_EM//4
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Take_a_knee_EM;
+                    return DE.IV_EM;
                 }
                 else
                 {
-                    return EN.Take_a_knee_EM;
+                    return EN.IV_EM;
                 }
             }
         }
 
-        public string Thumbs_Down_EM//5
+        public string V_EM//5
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Thumbs_Down_EM;
+                    return DE.V_EM;
                 }
                 else
                 {
-                    return EN.Thumbs_Down_EM;
+                    return EN.V_EM;
                 }
             }
         }
@@ -282,47 +280,47 @@ namespace OverwatchLootBoxTracker.Translate
 
         //Victory Poses
         //Rare
-        public string Intense_VP//1
+        public string I_VP//1
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Intense_VP;
+                    return DE.I_VP;
                 }
                 else
                 {
-                    return EN.Intense_VP;
+                    return EN.I_VP;
                 }
             }
         }
 
-        public string Seismic_Slam_VP//2
+        public string II_VP//2
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Seismic_Slam_VP;
+                    return DE.II_VP;
                 }
                 else
                 {
-                    return EN.Seismic_Slam_VP;
+                    return EN.II_VP;
                 }
             }
         }
 
-        public string Superior_VP//3
+        public string III_VP//3
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Superior_VP;
+                    return DE.III_VP;
                 }
                 else
                 {
-                    return EN.Superior_VP;
+                    return EN.III_VP;
                 }
             }
         }

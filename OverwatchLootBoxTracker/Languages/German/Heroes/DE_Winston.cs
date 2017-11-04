@@ -20,7 +20,6 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
 
 
         //Skin
-
         //Rare
         public string Atmosphere_SK
         {
@@ -182,6 +181,57 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             get
             {
                 return "Twist";
+            }
+        }
+
+
+        //Victory Poses
+        //Rare
+        public string Beast_VP
+        {
+            get
+            {
+                return "Wildes Biest";
+            }
+        }
+
+        public string Glasses_VP
+        {
+            get
+            {
+                return "Brille";
+            }
+        }
+
+        public string The_Thinker_VP
+        {
+            get
+            {
+                return "Denkerpose";
+            }
+        }
+
+        public string Medal_VP
+        {//Summer 16
+            get
+            {
+                return "Medaille";
+            }
+        }
+
+        public string RIP_VP
+        {//Halloween 16
+            get
+            {
+                return "R.I.P.";
+            }
+        }
+
+        public string Peanut_Butter_VP
+        {//Uprising 17
+            get
+            {
+                return "Erdnussbutter";
             }
         }
     }
