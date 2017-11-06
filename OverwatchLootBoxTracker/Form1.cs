@@ -2458,10 +2458,10 @@ namespace OverwatchLootBoxTracker
                 chB04.BackColor = Color.DeepSkyBlue; chB04.Text = Moira.Whiskey_SK + " (" + Cost.Rare + ")";
                 chB05.BackColor = Color.DarkViolet; chB05.Text = Moira.Ornate_SK + " (" + Cost.Epic + ")";//Epic
                 chB06.BackColor = Color.DarkViolet; chB06.Text = Moira.Pale_SK + " (" + Cost.Epic + ")";
-                chB07.BackColor = Color.Gold; chB09.Text = Moira.Minister_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB08.BackColor = Color.Gold; chB10.Text = Moira.Oasis_SK + " (" + Cost.Legendary + ")";
-                chB09.BackColor = Color.Gold; chB11.Text = Moira.Glam_SK + " (" + Cost.Legendary + ")";
-                chB10.BackColor = Color.Gold; chB12.Text = Moira.Moon_SK + " (" + Cost.Legendary + ")";
+                chB07.BackColor = Color.Gold; chB07.Text = Moira.Minister_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB08.BackColor = Color.Gold; chB08.Text = Moira.Oasis_SK + " (" + Cost.Legendary + ")";
+                chB09.BackColor = Color.Gold; chB09.Text = Moira.Glam_SK + " (" + Cost.Legendary + ")";
+                chB10.BackColor = Color.Gold; chB10.Text = Moira.Moon_SK + " (" + Cost.Legendary + ")";
 
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
                 chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
