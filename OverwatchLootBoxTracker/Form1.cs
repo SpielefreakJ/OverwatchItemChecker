@@ -638,6 +638,7 @@ namespace OverwatchLootBoxTracker
                 //Erst sagen, dass die Checkboxen nicht speichern sollen
                 chBSave = 0;
                 //Resetten aller Checkboxen und Ausblenden
+                chB00.Visible = false;
                 chB01.Checked = false; chB01.Visible = false;
                 chB02.Checked = false; chB02.Visible = false;
                 chB03.Checked = false; chB03.Visible = false;
@@ -678,13 +679,12 @@ namespace OverwatchLootBoxTracker
                 chB37.Checked = false; chB37.Visible = false;
                 chB38.Checked = false; chB38.Visible = false;
                 chB39.Checked = false; chB39.Visible = false;
-                chB40.Checked = false; chB40.Visible = false;
                 //Nun sagen, dass die Checkboxen speichern sollen
                 chBSave = 1;
             }
         }
 
-        private void btnHeroeinvisible(string H, int SK, int EM, int VP)
+        private void btnHeroeinvisible(string H, int SK, int EM, int VP/*, VL*/)
         {
             if (inisSettings.Read(H) == "Y")
             {
@@ -699,7 +699,12 @@ namespace OverwatchLootBoxTracker
             {
                 inic.VP(H, VP);
                 inisSettings.Write(H, "2");
-            }
+            }/*
+            if (inisSettings.Read(H) == "2")
+            {
+                inic.VL(H, VL);
+                inisSettings.Write(H, "3");
+            }*/
 
             btnAna.Visible = false;
             btnBastion.Visible = false;
@@ -744,10 +749,11 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1);
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5);
                 chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1);
                 chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2);
                 chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3);
@@ -758,6 +764,7 @@ namespace OverwatchLootBoxTracker
                 chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p4);
                 chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p5);
 
+                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Classic;//Default
                 chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Ana.Citrine_SK + " (" + Cost.Rare + ")";//Rare
                 chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Ana.Garnet_SK + " (" + Cost.Rare + ")";
                 chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Ana.Peridot_SK + " (" + Cost.Rare + ")";
@@ -772,6 +779,7 @@ namespace OverwatchLootBoxTracker
                 chB12.BackColor = Color.Gold; chB12.Text = Ana.Horus_SK + " (" + Cost.Legendary + ")";
                 chB13.BackColor = Color.Gold; chB13.Text = Ana.Corsair_SK + " (" + Cost.LegendaryEvent + ")";//Halloween 17
 
+                chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
                 chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
                 chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
@@ -788,15 +796,17 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave == Lang.Emotes)
             {
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p4);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p5);
                 chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1);
                 chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2);
                 chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3);
                 chB08.Visible = true; chB08.Location = new Point(gBAllWeited3p2, p4);
 
+                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Heroic;//DEfault
                 chB01.BackColor = Color.DarkViolet; chB01.Text = Ana.Not_Impressed_EM + " (" + Cost.Epic + ")";//Epic
                 chB02.BackColor = Color.DarkViolet; chB02.Text = Ana.Disapproving_EM + " (" + Cost.Epic + ")";
                 chB03.BackColor = Color.DarkViolet; chB03.Text = Ana.Protector_EM + " (" + Cost.Epic + ")";
@@ -817,13 +827,15 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave == Lang.VictoryPoses)
             {
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4);
                 chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
                 chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
                 chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3);
 
+                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Heroic;//Default
                 chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Ana.Mission_Complete_VP + " (" + Cost.Rare + ")";//Rare
                 chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Ana.Protector_VP + " (" + Cost.Rare + ")";
                 chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Ana.Seated_VP + " (" + Cost.Rare + ")";
@@ -840,111 +852,71 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave == Lang.VoiceLines)
             {
-                chB01.Visible = true; chB01.Text = Ana.Justice_Delivered_VL + " (" + Cost.Common + ")";//Common
-                chB02.Visible = true; chB02.Text = Ana.Children_behave_VL + " (" + Cost.Common + ")";
-                chB03.Visible = true; chB03.Text = Ana.Everyone_dies_VL + " (" + Cost.Common + ")";
-                chB04.Visible = true; chB04.Text = Ana.It_takes_a_woman_to_know_VL + " (" + Cost.Common + ")";
-                chB05.Visible = true; chB05.Text = Ana.Justice_rains_from_above_VL + " (" + Cost.Common + ")";
-                chB06.Visible = true; chB06.Text = Ana.Mother_knows_best_VL + " (" + Cost.Common + ")";
-                chB07.Visible = true; chB07.Text = Ana.No_scope_needed_VL + " (" + Cost.Common + ")";
-                chB08.Visible = true; chB08.Text = Ana.What_are_you_thinking_VL + " (" + Cost.Common + ")";
-                chB09.Visible = true; chB09.Text = Ana.Witness_me_VL + " (" + Cost.Common + ")";
-                chB10.Visible = true; chB10.Text = Ana.You_know_nothing_VL + " (" + Cost.Common + ")";
-                chB11.Visible = true; chB11.Text = Ana.Someone_to_tuck_you_in_VL + " (" + Cost.Common + ")";
-                chB12.Visible = true; chB12.Text = Ana.Better_than_retirement_VL + " (" + Cost.CommonEvent + ")";//Summer 17
-                chB13.Visible = true; chB13.Text = Ana.Learn_from_the_pain_VL + " (" + Cost.Common + ")";//Summer 16
-                chB14.Visible = true; chB14.Text = Ana.Are_you_scared_VL + " (" + Cost.Common + ")";//Halloween 16
-                chB15.Visible = true; chB15.Text = Ana.Dont_be_scared_VL + " (" + Cost.CommonEvent + ")";//Halloween 17
-                chB16.Visible = true; chB16.Text = Ana.Im_watching_out_for_you_VL + " (" + Cost.CommonEvent + ")";//Winter 16
-                chB17.Visible = true; chB17.Text = Ana.The_Moon_in_Winter_VL + " (" + Cost.CommonEvent + ")";//Rooster 17
-                chB18.Visible = true; chB18.Text = Ana.Damn_VL + " (" + Cost.CommonEvent + ")";//Uprising 17
-                chB19.Visible = true; chB19.Text = Ana.The_Ghost_watches_VL + " (" + Cost.CommonEvent + ")";//Uprising 17
-                chB20.Visible = true; chB20.Text = Ana.Follow_me_VL + " (" + Cost.CommonEvent + ")";//Annyver 17
-                chB21.Visible = true; chB21.Text = Ana.The_adults_are_talking_VL + " (" + Cost.CommonEvent + ")";//Annyver 17
-                if (inisHeroes.Read("VL01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("VL02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("VL03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("VL04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("VL05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("VL06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("VL07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("VL08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("VL09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("VL10") == "1")
-                {
-                    chB10.Checked = true;
-                }
-                if (inisHeroes.Read("VL11") == "1")
-                {
-                    chB11.Checked = true;
-                }
-                if (inisHeroes.Read("VL12") == "1")
-                {
-                    chB12.Checked = true;
-                }
-                if (inisHeroes.Read("VL13") == "1")
-                {
-                    chB13.Checked = true;
-                }
-                if (inisHeroes.Read("VL14") == "1")
-                {
-                    chB14.Checked = true;
-                }
-                if (inisHeroes.Read("VL15") == "1")
-                {
-                    chB15.Checked = true;
-                }
-                if (inisHeroes.Read("VL16") == "1")
-                {
-                    chB16.Checked = true;
-                }
-                if (inisHeroes.Read("VL17") == "1")
-                {
-                    chB17.Checked = true;
-                }
-                if (inisHeroes.Read("VL18") == "1")
-                {
-                    chB18.Checked = true;
-                }
-                if (inisHeroes.Read("VL19") == "1")
-                {
-                    chB19.Checked = true;
-                }
-                if (inisHeroes.Read("VL20") == "1")
-                {
-                    chB20.Checked = true;
-                }
-                if (inisHeroes.Read("VL21") == "1")
-                {
-                    chB21.Checked = true;
-                }
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1);
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p1, p6);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p1, p7);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p1);
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p2, p2);
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p2, p3);
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p2, p4);
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p2, p5);
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p2, p6);
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p2, p7);
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p1);
+                chB15.Visible = true; chB15.Location = new Point(gBAllWeited4p3, p2);
+                chB16.Visible = true; chB16.Location = new Point(gBAllWeited4p3, p3);
+                chB17.Visible = true; chB17.Location = new Point(gBAllWeited4p3, p4);
+                chB18.Visible = true; chB18.Location = new Point(gBAllWeited4p3, p5);
+                chB19.Visible = true; chB19.Location = new Point(gBAllWeited4p3, p6);
+                chB20.Visible = true; chB20.Location = new Point(gBAllWeited4p3, p7);
+
+                chB00.BackColor = Color.Gainsboro; chB00.Text = Ana.Justice_Delivered_VL;//Default
+                chB01.BackColor = Color.Gainsboro; chB01.Text = Ana.Children_behave_VL + " (" + Cost.Common + ")";//Common
+                chB02.BackColor = Color.Gainsboro; chB02.Text = Ana.Everyone_dies_VL + " (" + Cost.Common + ")";
+                chB03.BackColor = Color.Gainsboro; chB03.Text = Ana.It_takes_a_woman_to_know_VL + " (" + Cost.Common + ")";
+                chB04.BackColor = Color.Gainsboro; chB04.Text = Ana.Justice_rains_from_above_VL + " (" + Cost.Common + ")";
+                chB05.BackColor = Color.Gainsboro; chB05.Text = Ana.Mother_knows_best_VL + " (" + Cost.Common + ")";
+                chB06.BackColor = Color.Gainsboro; chB06.Text = Ana.No_scope_needed_VL + " (" + Cost.Common + ")";
+                chB07.BackColor = Color.Gainsboro; chB07.Text = Ana.What_are_you_thinking_VL + " (" + Cost.Common + ")";
+                chB08.BackColor = Color.Gainsboro; chB08.Text = Ana.Witness_me_VL + " (" + Cost.Common + ")";
+                chB09.BackColor = Color.Gainsboro; chB09.Text = Ana.You_know_nothing_VL + " (" + Cost.Common + ")";
+                chB10.BackColor = Color.Gainsboro; chB10.Text = Ana.Someone_to_tuck_you_in_VL + " (" + Cost.Common + ")";
+                chB11.BackColor = Color.Gainsboro; chB11.Text = Ana.Better_than_retirement_VL + " (" + Cost.CommonEvent + ")";//Summer 17
+                chB12.BackColor = Color.Gainsboro; chB12.Text = Ana.Learn_from_the_pain_VL + " (" + Cost.Common + ")";//Summer 16
+                chB13.BackColor = Color.Gainsboro; chB13.Text = Ana.Are_you_scared_VL + " (" + Cost.Common + ")";//Halloween 16
+                chB14.BackColor = Color.Gainsboro; chB14.Text = Ana.Dont_be_scared_VL + " (" + Cost.CommonEvent + ")";//Halloween 17
+                chB15.BackColor = Color.Gainsboro; chB15.Text = Ana.Im_watching_out_for_you_VL + " (" + Cost.CommonEvent + ")";//Winter 16
+                chB16.BackColor = Color.Gainsboro; chB16.Text = Ana.The_Moon_in_Winter_VL + " (" + Cost.CommonEvent + ")";//Rooster 17
+                chB17.BackColor = Color.Gainsboro; chB17.Text = Ana.Damn_VL + " (" + Cost.CommonEvent + ")";//Uprising 17
+                chB18.BackColor = Color.Gainsboro; chB18.Text = Ana.The_Ghost_watches_VL + " (" + Cost.CommonEvent + ")";//Uprising 17
+                chB19.BackColor = Color.Gainsboro; chB19.Text = Ana.Follow_me_VL + " (" + Cost.CommonEvent + ")";//Annyver 17
+                chB20.BackColor = Color.Gainsboro; chB20.Text = Ana.The_adults_are_talking_VL + " (" + Cost.CommonEvent + ")";//Annyver 17
+
+                chB00.Checked = true;
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("VL01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("VL02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("VL03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("VL04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VL05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VL06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("VL07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("VL08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("VL09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("VL10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("VL11"));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("VL12"));
+                chB13.Checked = Convert.ToBoolean(inisHeroes.Read("VL13"));
+                chB14.Checked = Convert.ToBoolean(inisHeroes.Read("VL14"));
+                chB15.Checked = Convert.ToBoolean(inisHeroes.Read("VL15"));
+                chB16.Checked = Convert.ToBoolean(inisHeroes.Read("VL16"));
+                chB17.Checked = Convert.ToBoolean(inisHeroes.Read("VL17"));
+                chB18.Checked = Convert.ToBoolean(inisHeroes.Read("VL18"));
+                chB19.Checked = Convert.ToBoolean(inisHeroes.Read("VL19"));
+                chB20.Checked = Convert.ToBoolean(inisHeroes.Read("VL20"));
             }
             if (BackSave == Lang.Sprays)
             {
@@ -1185,10 +1157,11 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1);
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5);
                 chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1);
                 chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2);
                 chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3);
@@ -1202,6 +1175,7 @@ namespace OverwatchLootBoxTracker
                 chB15.Visible = true; chB15.Location = new Point(gBAllWeited4p3, p5);
                 chB16.Visible = true; chB16.Location = new Point(gBAllWeited4p3, p6);
 
+                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Classic;//Default
                 chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Bastion.Dawn_SK + " (" + Cost.Rare + ")";//Rare
                 chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Bastion.Meadow_SK + " (" + Cost.Rare + ")";
                 chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Bastion.Sky_SK + " (" + Cost.Rare + ")";
@@ -1219,6 +1193,7 @@ namespace OverwatchLootBoxTracker
                 chB15.BackColor = Color.Gold; chB15.Text = Bastion.Overgrown_SK + " (" + Lang.OriginGotY + ")";//Origin
                 chB16.BackColor = Color.Gold; chB16.Text = Bastion.Dune_Buggy_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
 
+                chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
                 chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
                 chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
@@ -1239,14 +1214,16 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave == Lang.Emotes)
             {
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p4);
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1);
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2);
-                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p4);
 
+                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Heroic;//Default
                 chB01.BackColor = Color.DarkViolet; chB01.Text = Bastion.Alert_Alert_EM + " (" + Cost.Epic + ")";//Epic
                 chB02.BackColor = Color.DarkViolet; chB02.Text = Bastion.Chortle_EM + " (" + Cost.Epic + ")";
                 chB03.BackColor = Color.DarkViolet; chB03.Text = Bastion.Dizzy_EM + " (" + Cost.Epic + ")";
@@ -1255,6 +1232,7 @@ namespace OverwatchLootBoxTracker
                 chB06.BackColor = Color.DarkViolet; chB06.Text = Bastion.Boxing_EM + " (" + Cost.Epic + ")";//Summer 16
                 chB07.BackColor = Color.DarkViolet; chB07.Text = Bastion.Robo_Boogie_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
 
+                chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
                 chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
                 chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
@@ -1265,13 +1243,15 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave == Lang.VictoryPoses)
             {
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4);
                 chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
                 chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
                 chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3);
 
+                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Heroic;//Default
                 chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Bastion.Birdwatching_VP + " (" + Cost.Rare + ")";//Rare
                 chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Bastion.Pop_up_VP + " (" + Cost.Rare + ")";
                 chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Bastion.Tank_EM + " (" + Cost.Rare + ")";
@@ -1279,6 +1259,7 @@ namespace OverwatchLootBoxTracker
                 chB05.BackColor = Color.DeepSkyBlue; chB05.Text = Bastion.RIP_VP + " (" + Cost.Rare + ")";//Halloween 16
                 chB06.BackColor = Color.DeepSkyBlue; chB06.Text = Bastion.Firework_VP + " (" + Cost.RareEvent + ")";//Rooster 17
 
+                chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("VP01"));
                 chB02.Checked = Convert.ToBoolean(inisHeroes.Read("VP02"));
                 chB03.Checked = Convert.ToBoolean(inisHeroes.Read("VP03"));
@@ -1288,111 +1269,71 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave == Lang.VoiceLines)
             {
-                chB01.Visible = true; chB01.Text = Bastion.Doo_Woo_VL + " (" + Cost.Common + ")";//Common
-                chB02.Visible = true; chB02.Text = Bastion.Beeple_VL + " (" + Cost.Common + ")";
-                chB03.Visible = true; chB03.Text = Bastion.Boo_Boo_Doo_De_Doo_VL + " (" + Cost.Common + ")";
-                chB04.Visible = true; chB04.Text = Bastion.Bweeeeeeeeeee_VL + " (" + Cost.Common + ")";
-                chB05.Visible = true; chB05.Text = Bastion.Chirr_Chirr_Chirr_VL + " (" + Cost.Common + ")";
-                chB06.Visible = true; chB06.Text = Bastion.Dah_Dah_Weeeee_VL + " (" + Cost.Common + ")";
-                chB07.Visible = true; chB07.Text = Bastion.Dun_Dun_Boop_Boop_VL + " (" + Cost.Common + ")";
-                chB08.Visible = true; chB08.Text = Bastion.Dweet_Dweet_Dweet_VL + " (" + Cost.Common + ")";
-                chB09.Visible = true; chB09.Text = Bastion.Hee_Hoo_Hoo_VL + " (" + Cost.Common + ")";
-                chB10.Visible = true; chB10.Text = Bastion.Sh_Sh_Sh_VL + " (" + Cost.Common + ")";
-                chB11.Visible = true; chB11.Text = Bastion.Zwee_VL + " (" + Cost.Common + ")";
-                chB12.Visible = true; chB12.Text = Bastion.Doo_Do_Doo_Dee_VL + " (" + Cost.RareEvent + ")";//Summer 17
-                chB13.Visible = true; chB13.Text = Bastion.Whoo_Vweeeeee_VL + " (" + Cost.Common + ")";//Summer 16
-                chB14.Visible = true; chB14.Text = Bastion.Oooooooooooo_VL + " (" + Cost.RareEvent + ")";//Halloween 17
-                chB15.Visible = true; chB15.Text = Bastion.W_W_Wooooo_VL + " (" + Cost.Common + ")";//Halloween 16
-                chB16.Visible = true; chB16.Text = Bastion.Dwee_Doo_Hoo_VL + " (" + Cost.RareEvent + ")";//Winter 16
-                chB17.Visible = true; chB17.Text = Bastion.Woop_Doo_Woo_Dun_Woop_VL + " (" + Cost.RareEvent + ")";//Rooster 17
-                chB18.Visible = true; chB18.Text = Bastion.Dwee_Wee_Woh_VL + " (" + Cost.RareEvent + ")";//Uprising 17
-                chB19.Visible = true; chB19.Text = Bastion.Zwee_Ah_Wheee_Doo_Woo_VL + " (" + Cost.RareEvent + ")";//Uprising 17
-                chB20.Visible = true; chB20.Text = Bastion.Bew_Woo_Bew_Woo_VL + " (" + Cost.RareEvent + ")";//Annyver 17
-                chB21.Visible = true; chB21.Text = Bastion.Doo_Dun_Dun_Woo_VL + " (" + Cost.RareEvent + ")";//Annyver 17
-                if (inisHeroes.Read("VL01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("VL02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("VL03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("VL04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("VL05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("VL06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("VL07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("VL08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("VL09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("VL10") == "1")
-                {
-                    chB10.Checked = true;
-                }
-                if (inisHeroes.Read("VL11") == "1")
-                {
-                    chB11.Checked = true;
-                }
-                if (inisHeroes.Read("VL12") == "1")
-                {
-                    chB12.Checked = true;
-                }
-                if (inisHeroes.Read("VL13") == "1")
-                {
-                    chB13.Checked = true;
-                }
-                if (inisHeroes.Read("VL14") == "1")
-                {
-                    chB14.Checked = true;
-                }
-                if (inisHeroes.Read("VL15") == "1")
-                {
-                    chB15.Checked = true;
-                }
-                if (inisHeroes.Read("VL16") == "1")
-                {
-                    chB16.Checked = true;
-                }
-                if (inisHeroes.Read("VL17") == "1")
-                {
-                    chB17.Checked = true;
-                }
-                if (inisHeroes.Read("VL18") == "1")
-                {
-                    chB18.Checked = true;
-                }
-                if (inisHeroes.Read("VL19") == "1")
-                {
-                    chB19.Checked = true;
-                }
-                if (inisHeroes.Read("VL20") == "1")
-                {
-                    chB20.Checked = true;
-                }
-                if (inisHeroes.Read("VL21") == "1")
-                {
-                    chB21.Checked = true;
-                }
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1);
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p1, p6);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p1, p7);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p1);
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p2, p2);
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p2, p3);
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p2, p4);
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p2, p5);
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p2, p6);
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p2, p7);
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p1);
+                chB15.Visible = true; chB15.Location = new Point(gBAllWeited4p3, p2);
+                chB16.Visible = true; chB16.Location = new Point(gBAllWeited4p3, p3);
+                chB17.Visible = true; chB17.Location = new Point(gBAllWeited4p3, p4);
+                chB18.Visible = true; chB18.Location = new Point(gBAllWeited4p3, p5);
+                chB19.Visible = true; chB19.Location = new Point(gBAllWeited4p3, p6);
+                chB20.Visible = true; chB20.Location = new Point(gBAllWeited4p3, p7);
+
+                chB00.BackColor = Color.Gainsboro; chB00.Text = Bastion.Beeple_VL;//Default
+                chB01.BackColor = Color.Gainsboro; chB01.Text = Bastion.Doo_Woo_VL + " (" + Cost.Common + ")";
+                chB02.BackColor = Color.Gainsboro; chB02.Text = Bastion.Boo_Boo_Doo_De_Doo_VL + " (" + Cost.Common + ")";
+                chB03.BackColor = Color.Gainsboro; chB03.Text = Bastion.Bweeeeeeeeeee_VL + " (" + Cost.Common + ")";
+                chB04.BackColor = Color.Gainsboro; chB04.Text = Bastion.Chirr_Chirr_Chirr_VL + " (" + Cost.Common + ")";
+                chB05.BackColor = Color.Gainsboro; chB05.Text = Bastion.Dah_Dah_Weeeee_VL + " (" + Cost.Common + ")";
+                chB06.BackColor = Color.Gainsboro; chB06.Text = Bastion.Dun_Dun_Boop_Boop_VL + " (" + Cost.Common + ")";
+                chB07.BackColor = Color.Gainsboro; chB07.Text = Bastion.Dweet_Dweet_Dweet_VL + " (" + Cost.Common + ")";
+                chB08.BackColor = Color.Gainsboro; chB08.Text = Bastion.Hee_Hoo_Hoo_VL + " (" + Cost.Common + ")";
+                chB09.BackColor = Color.Gainsboro; chB09.Text = Bastion.Sh_Sh_Sh_VL + " (" + Cost.Common + ")";
+                chB10.BackColor = Color.Gainsboro; chB10.Text = Bastion.Zwee_VL + " (" + Cost.Common + ")";
+                chB11.BackColor = Color.Gainsboro; chB11.Text = Bastion.Doo_Do_Doo_Dee_VL + " (" + Cost.RareEvent + ")";//Summer 17
+                chB12.BackColor = Color.Gainsboro; chB12.Text = Bastion.Whoo_Vweeeeee_VL + " (" + Cost.Common + ")";//Summer 16
+                chB13.BackColor = Color.Gainsboro; chB13.Text = Bastion.Oooooooooooo_VL + " (" + Cost.RareEvent + ")";//Halloween 17
+                chB14.BackColor = Color.Gainsboro; chB14.Text = Bastion.W_W_Wooooo_VL + " (" + Cost.Common + ")";//Halloween 16
+                chB15.BackColor = Color.Gainsboro; chB15.Text = Bastion.Dwee_Doo_Hoo_VL + " (" + Cost.RareEvent + ")";//Winter 16
+                chB16.BackColor = Color.Gainsboro; chB16.Text = Bastion.Woop_Doo_Woo_Dun_Woop_VL + " (" + Cost.RareEvent + ")";//Rooster 17
+                chB17.BackColor = Color.Gainsboro; chB17.Text = Bastion.Dwee_Wee_Woh_VL + " (" + Cost.RareEvent + ")";//Uprising 17
+                chB18.BackColor = Color.Gainsboro; chB18.Text = Bastion.Zwee_Ah_Wheee_Doo_Woo_VL + " (" + Cost.RareEvent + ")";//Uprising 17
+                chB19.BackColor = Color.Gainsboro; chB19.Text = Bastion.Bew_Woo_Bew_Woo_VL + " (" + Cost.RareEvent + ")";//Annyver 17
+                chB20.BackColor = Color.Gainsboro; chB20.Text = Bastion.Doo_Dun_Dun_Woo_VL + " (" + Cost.RareEvent + ")";//Annyver 17
+                
+                chB00.Checked = true;
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("VL01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("VL02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("VL03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("VL04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VL05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VL06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("VL07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("VL08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("VL09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("VL10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("VL11"));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("VL12"));
+                chB13.Checked = Convert.ToBoolean(inisHeroes.Read("VL13"));
+                chB14.Checked = Convert.ToBoolean(inisHeroes.Read("VL14"));
+                chB15.Checked = Convert.ToBoolean(inisHeroes.Read("VL15"));
+                chB16.Checked = Convert.ToBoolean(inisHeroes.Read("VL16"));
+                chB17.Checked = Convert.ToBoolean(inisHeroes.Read("VL17"));
+                chB18.Checked = Convert.ToBoolean(inisHeroes.Read("VL18"));
+                chB19.Checked = Convert.ToBoolean(inisHeroes.Read("VL19"));
+                chB20.Checked = Convert.ToBoolean(inisHeroes.Read("VL20"));
             }
             chBSave = 1;
         }
@@ -1504,6 +1445,74 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
             }
+            if (BackSave == Lang.VoiceLines)
+            {
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1);
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p1, p6);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p1, p7);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p1);
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p2, p2);
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p2, p3);
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p2, p4);
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p2, p5);
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p2, p6);
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p2, p7);
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p1);
+                chB15.Visible = true; chB15.Location = new Point(gBAllWeited4p3, p2);
+                chB16.Visible = true; chB16.Location = new Point(gBAllWeited4p3, p3);
+                chB17.Visible = true; chB17.Location = new Point(gBAllWeited4p3, p4);
+                chB18.Visible = true; chB18.Location = new Point(gBAllWeited4p3, p5);
+                chB19.Visible = true; chB19.Location = new Point(gBAllWeited4p3, p6);
+                chB20.Visible = true; chB20.Location = new Point(gBAllWeited4p3, p7);
+
+                chB00.BackColor = Color.Gainsboro; chB00.Text = DVa.Love_DVa_VL;//Default
+                chB01.BackColor = Color.Gainsboro; chB01.Text = DVa.Winkyface_VL + " (" + Cost.Common + ")";//Common
+                chB02.BackColor = Color.Gainsboro; chB02.Text = DVa.A_new_challenger_VL + " (" + Cost.Common + ")";
+                chB03.BackColor = Color.Gainsboro; chB03.Text = DVa.AFK_VL + " (" + Cost.Common + ")";
+                chB04.BackColor = Color.Gainsboro; chB04.Text = DVa.Aw_Yeah_VL + " (" + Cost.Common + ")";
+                chB05.BackColor = Color.Gainsboro; chB05.Text = DVa.DVa_1_Bad_Guys_0_VL + " (" + Cost.Common + ")";
+                chB06.BackColor = Color.Gainsboro; chB06.Text = DVa.GG_VL + " (" + Cost.Common + ")";
+                chB07.BackColor = Color.Gainsboro; chB07.Text = DVa.I_play_to_win_VL + " (" + Cost.Common + ")";
+                chB08.BackColor = Color.Gainsboro; chB08.Text = DVa.Is_this_Easy_Mode_VL + " (" + Cost.Common + ")";
+                chB09.BackColor = Color.Gainsboro; chB09.Text = DVa.LOL_VL + " (" + Cost.Common + ")";
+                chB10.BackColor = Color.Gainsboro; chB10.Text = DVa.No_hacks_required_VL + " (" + Cost.Common + ")";
+                chB11.BackColor = Color.Gainsboro; chB11.Text = DVa.Im_N_1_VL + " (" + Cost.Common + ")";//Summer 16
+                chB12.BackColor = Color.Gainsboro; chB12.Text = DVa.Scoreboard_VL + " (" + Cost.CommonEvent + ")";//Summer 17
+                chB13.BackColor = Color.Gainsboro; chB13.Text = DVa.Happy_Halloween_VL + " (" + Cost.Common + ")";//Halloween 16
+                chB14.BackColor = Color.Gainsboro; chB14.Text = DVa.Im_not_scared_VL + " (" + Cost.CommonEvent + ")";//Halloween 17
+                chB15.BackColor = Color.Gainsboro; chB15.Text = DVa.Aw_you_shouldnt_have_VL + " (" + Cost.CommonEvent + ")";//Winter 16
+                chB16.BackColor = Color.Gainsboro; chB16.Text = DVa.The_best_things_in_life_VL + " (" + Cost.CommonEvent + ")";//Rooster 17
+                chB17.BackColor = Color.Gainsboro; chB17.Text = DVa.Not_taking_me_seriously_VL + " (" + Cost.CommonEvent + ")";//Uprising 17
+                chB18.BackColor = Color.Gainsboro; chB18.Text = DVa.Try_and_keep_up_VL + " (" + Cost.CommonEvent + ")";//Uprising 17
+                chB19.BackColor = Color.Gainsboro; chB19.Text = DVa.Level_Up_VL + " (" + Cost.CommonEvent + ")";//Annyver 17
+                chB20.BackColor = Color.Gainsboro; chB20.Text = DVa.No_Way_VL + " (" + Cost.CommonEvent + ")";//Annyver 17
+
+                chB00.Checked = true;
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("VL01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("VL02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("VL03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("VL04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VL05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VL06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("VL07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("VL08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("VL09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("VL10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("VL11"));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("VL12"));
+                chB13.Checked = Convert.ToBoolean(inisHeroes.Read("VL13"));
+                chB14.Checked = Convert.ToBoolean(inisHeroes.Read("VL14"));
+                chB15.Checked = Convert.ToBoolean(inisHeroes.Read("VL15"));
+                chB16.Checked = Convert.ToBoolean(inisHeroes.Read("VL16"));
+                chB17.Checked = Convert.ToBoolean(inisHeroes.Read("VL17"));
+                chB18.Checked = Convert.ToBoolean(inisHeroes.Read("VL18"));
+                chB19.Checked = Convert.ToBoolean(inisHeroes.Read("VL19"));
+                chB20.Checked = Convert.ToBoolean(inisHeroes.Read("VL20"));
+            }
             chBSave = 1;
         }
 
@@ -1519,10 +1528,11 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1);
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5);
                 chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1);
                 chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2);
                 chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p3, p1);
@@ -1530,6 +1540,7 @@ namespace OverwatchLootBoxTracker
                 chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p3);
                 chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p4);
 
+                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Classic;//Default
                 chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Doomfist.Daisy_SK + " (" + Cost.Rare + ")";//Rare
                 chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Doomfist.Lake_SK + " (" + Cost.Rare + ")";
                 chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Doomfist.Plains_SK + " (" + Cost.Rare + ")";
@@ -1541,6 +1552,7 @@ namespace OverwatchLootBoxTracker
                 chB09.BackColor = Color.Gold; chB09.Text = Doomfist.Avatar_SK + " (" + Cost.Legendary + ")";
                 chB10.BackColor = Color.Gold; chB10.Text = Doomfist.Spirit_SK + " (" + Cost.Legendary + ")";
 
+                chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
                 chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
                 chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
@@ -1554,18 +1566,21 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave == Lang.Emotes)
             {
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p1);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p2);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p3);
 
+                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Heroic;//Default
                 chB01.BackColor = Color.DarkViolet; chB01.Text = Doomfist.Fake_Out_EM + " (" + Cost.Epic + ")";//Epic
                 chB02.BackColor = Color.DarkViolet; chB02.Text = Doomfist.Intimidate_EM + " (" + Cost.Epic + ")";
                 chB03.BackColor = Color.DarkViolet; chB03.Text = Doomfist.Ready_for_Battle_EM + " (" + Cost.Epic + ")";
                 chB04.BackColor = Color.DarkViolet; chB04.Text = Doomfist.Take_a_knee_EM + " (" + Cost.Epic + ")";
                 chB05.BackColor = Color.DarkViolet; chB05.Text = Doomfist.Thumbs_Down_EM + " (" + Cost.Epic + ")";
 
+                chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
                 chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
                 chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
@@ -1574,17 +1589,70 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave == Lang.VictoryPoses)
             {
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p2, p1);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p3, p1);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p2, p1);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p2, p2);
 
+                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Heroic;//Default
                 chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Doomfist.Intense_VP + " (" + Cost.Rare + ")";//Rare
                 chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Doomfist.Seismic_Slam_VP + " (" + Cost.Rare + ")";
                 chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Doomfist.Superior_VP + " (" + Cost.Rare + ")";
 
+                chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("VP01"));
                 chB02.Checked = Convert.ToBoolean(inisHeroes.Read("VP02"));
                 chB03.Checked = Convert.ToBoolean(inisHeroes.Read("VP03"));
+            }
+            if (BackSave == Lang.VoiceLines)
+            {
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1);
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3);
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p2, p4);
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p2, p5);
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p1);
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p2);
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p3);
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p4);
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p5);
+
+                chB00.BackColor = Color.Gainsboro; chB00.Text = Doomfist.Try_me_VL;//Default
+                chB01.BackColor = Color.Gainsboro; chB01.Text = Doomfist.Combo_Breakere_VL + " (" + Cost.Common + ")";//Common
+                chB02.BackColor = Color.Gainsboro; chB02.Text = Doomfist.Dont_get_back_up_VL + " (" + Cost.Common + ")";
+                chB03.BackColor = Color.Gainsboro; chB03.Text = Doomfist.Go_and_sit_down_VL + " (" + Cost.Common + ")";
+                chB04.BackColor = Color.Gainsboro; chB04.Text = Doomfist.I_havent_even_started_VL + " (" + Cost.Common + ")";
+                chB05.BackColor = Color.Gainsboro; chB05.Text = Doomfist.K_O_VL + " (" + Cost.Common + ")";
+                chB06.BackColor = Color.Gainsboro; chB06.Text = Doomfist.One_punch_is_all_i_need_VL + " (" + Cost.Common + ")";
+                chB07.BackColor = Color.Gainsboro; chB07.Text = Doomfist.Spare_me_the_commentary_VL + " (" + Cost.Common + ")";
+                chB08.BackColor = Color.Gainsboro; chB08.Text = Doomfist.Talk_to_the_fist_VL + " (" + Cost.Common + ")";
+                chB09.BackColor = Color.Gainsboro; chB09.Text = Doomfist.Youre_not_bad_VL + " (" + Cost.Common + ")";
+                chB10.BackColor = Color.Gainsboro; chB10.Text = Doomfist.You_must_be_joking_VL + " (" + Cost.Common + ")";
+                chB11.BackColor = Color.Gainsboro; chB11.Text = Doomfist.I_make_medicine_sick_VL + " (" + Cost.CommonEvent + ")";//Summer 17
+                chB12.BackColor = Color.Gainsboro; chB12.Text = Doomfist.Make_you_punch_drunk_VL + " (" + Cost.CommonEvent + ")";//Summer 17
+                chB13.BackColor = Color.Gainsboro; chB13.Text = Doomfist.I_have_something_for_you_VL + " (" + Cost.CommonEvent + ")";//Halloween 17
+                chB14.BackColor = Color.Gainsboro; chB14.Text = Doomfist.You_should_be_scared_VL + " (" + Cost.CommonEvent + ")";//Halloween 17
+
+                chB00.Checked = true;
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("VL01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("VL02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("VL03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("VL04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VL05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VL06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("VL07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("VL08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("VL09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("VL10"));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("VL11"));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("VL12"));
+                chB13.Checked = Convert.ToBoolean(inisHeroes.Read("VL13"));
+                chB14.Checked = Convert.ToBoolean(inisHeroes.Read("VL14"));
             }
             chBSave = 1;
         }
@@ -1601,10 +1669,11 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave == Lang.Skins)
             {
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p1);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p2);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p3);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p4);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1);
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5);
                 chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1);
                 chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2);
                 chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3);
@@ -1616,6 +1685,7 @@ namespace OverwatchLootBoxTracker
                 chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p6);
                 chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p7);
 
+                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Classic;//Default
                 chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Genji.Azurite_SK + " (" + Cost.Rare + ")";//Rare
                 chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Genji.Cinnabar_SK + " (" + Cost.Rare + ")";
                 chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Genji.Malachite_SK + " (" + Cost.Rare + ")";
@@ -1631,6 +1701,7 @@ namespace OverwatchLootBoxTracker
                 chB13.BackColor = Color.Gold; chB13.Text = Genji.Blackwatch_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
                 chB14.BackColor = Color.Gold; chB14.Text = Genji.Sentai_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
 
+                chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
                 chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
                 chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
@@ -1648,13 +1719,15 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave == Lang.Emotes)
             {
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4);
                 chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
                 chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
                 chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3);
 
+                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Heroic;//Default
                 chB01.BackColor = Color.DarkViolet; chB01.Text = Genji.Amusing_EM + " (" + Cost.Epic + ")";//Rare
                 chB02.BackColor = Color.DarkViolet; chB02.Text = Genji.Challenge_EM + " (" + Cost.Epic + ")";
                 chB03.BackColor = Color.DarkViolet; chB03.Text = Genji.Cutting_Edge_EM + " (" + Cost.Epic + ")";
@@ -1662,6 +1735,7 @@ namespace OverwatchLootBoxTracker
                 chB05.BackColor = Color.DarkViolet; chB05.Text = Genji.Salute_EM + " (" + Cost.Epic + ")";
                 chB06.BackColor = Color.DarkViolet; chB06.Text = Genji.Dance_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
 
+                chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
                 chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
                 chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
@@ -1671,18 +1745,21 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave == Lang.VictoryPoses)
             {
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p1);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p2);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p3);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p2, p1);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p2);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p3);
 
+                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Heroic;//Default
                 chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Genji.Kneeling_VP + " (" + Cost.Rare + ")";//Rare
                 chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Genji.Shuriken_VP + " (" + Cost.Rare + ")";
                 chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Genji.Sword_Stance_VP + " (" + Cost.Rare + ")";
                 chB04.BackColor = Color.DeepSkyBlue; chB04.Text = Genji.RIP_VP + " (" + Cost.Rare + ")";//Halloween 16
                 chB05.BackColor = Color.DeepSkyBlue; chB05.Text = Genji.Meditate_EM + " (" + Cost.RareEvent + ")";//Uprising 17
 
+                chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("VP01"));
                 chB02.Checked = Convert.ToBoolean(inisHeroes.Read("VP02"));
                 chB03.Checked = Convert.ToBoolean(inisHeroes.Read("VP03"));
@@ -2375,16 +2452,16 @@ namespace OverwatchLootBoxTracker
                 chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p3);
                 chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p4);
 
-                chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Moira.I_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Moira.II_SK + " (" + Cost.Rare + ")";
-                chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Moira.III_SK + " (" + Cost.Rare + ")";
-                chB04.BackColor = Color.DeepSkyBlue; chB04.Text = Moira.IV_SK + " (" + Cost.Rare + ")";
-                chB05.BackColor = Color.DarkViolet; chB05.Text = Moira.V_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.BackColor = Color.DarkViolet; chB06.Text = Moira.VI_SK + " (" + Cost.Epic + ")";
-                chB07.BackColor = Color.Gold; chB09.Text = Moira.VII_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB08.BackColor = Color.Gold; chB10.Text = Moira.VIII_SK + " (" + Cost.Legendary + ")";
-                chB09.BackColor = Color.Gold; chB11.Text = Moira.IX_SK + " (" + Cost.Legendary + ")";
-                chB10.BackColor = Color.Gold; chB12.Text = Moira.X_SK + " (" + Cost.Legendary + ")";
+                chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Moira.Fiery_SK + " (" + Cost.Rare + ")";//Rare
+                chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Moira.Royal_SK + " (" + Cost.Rare + ")";
+                chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Moira.Selkie_SK + " (" + Cost.Rare + ")";
+                chB04.BackColor = Color.DeepSkyBlue; chB04.Text = Moira.Whiskey_SK + " (" + Cost.Rare + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Moira.Ornate_SK + " (" + Cost.Epic + ")";//Epic
+                chB06.BackColor = Color.DarkViolet; chB06.Text = Moira.Pale_SK + " (" + Cost.Epic + ")";
+                chB07.BackColor = Color.Gold; chB09.Text = Moira.Minister_SK + " (" + Cost.Legendary + ")";//Legendary
+                chB08.BackColor = Color.Gold; chB10.Text = Moira.Oasis_SK + " (" + Cost.Legendary + ")";
+                chB09.BackColor = Color.Gold; chB11.Text = Moira.Glam_SK + " (" + Cost.Legendary + ")";
+                chB10.BackColor = Color.Gold; chB12.Text = Moira.Moon_SK + " (" + Cost.Legendary + ")";
 
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
                 chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
@@ -2405,11 +2482,11 @@ namespace OverwatchLootBoxTracker
                 chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
                 chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
 
-                chB01.BackColor = Color.DarkViolet; chB01.Text = Moira.I_EM + " (" + Cost.Epic + ")";//Epic
-                chB02.BackColor = Color.DarkViolet; chB02.Text = Moira.II_EM + " (" + Cost.Epic + ")";
-                chB03.BackColor = Color.DarkViolet; chB03.Text = Moira.III_EM + " (" + Cost.Epic + ")";
-                chB04.BackColor = Color.DarkViolet; chB04.Text = Moira.IV_EM + " (" + Cost.Epic + ")";
-                chB05.BackColor = Color.DarkViolet; chB05.Text = Moira.V_EM + " (" + Cost.Epic + ")";
+                chB01.BackColor = Color.DarkViolet; chB01.Text = Moira.A_your_service_EM + " (" + Cost.Epic + ")";//Epic
+                chB02.BackColor = Color.DarkViolet; chB02.Text = Moira.Come_here_EM + " (" + Cost.Epic + ")";
+                chB03.BackColor = Color.DarkViolet; chB03.Text = Moira.Give_and_take_EM + " (" + Cost.Epic + ")";
+                chB04.BackColor = Color.DarkViolet; chB04.Text = Moira.How_amusing_EM + " (" + Cost.Epic + ")";
+                chB05.BackColor = Color.DarkViolet; chB05.Text = Moira.Waiting_EM + " (" + Cost.Epic + ")";
 
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
                 chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
@@ -2423,9 +2500,9 @@ namespace OverwatchLootBoxTracker
                 chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p2, p1);
                 chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p3, p1);
 
-                chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Moira.I_VP + " (" + Cost.Rare + ")";//Rare
-                chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Moira.II_VP + " (" + Cost.Rare + ")";
-                chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Moira.III_VP + " (" + Cost.Rare + ")";
+                chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Moira.Orbs_VP + " (" + Cost.Rare + ")";//Rare
+                chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Moira.Prim_VP + " (" + Cost.Rare + ")";
+                chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Moira.Steepling_VP + " (" + Cost.Rare + ")";
 
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("VP01"));
                 chB02.Checked = Convert.ToBoolean(inisHeroes.Read("VP02"));
@@ -4125,9 +4202,12 @@ namespace OverwatchLootBoxTracker
             chBChange("39", chB39.Checked);
         }
 
-        private void chB40_CheckedChanged(object sender, EventArgs e)
+        private void chB00_CheckedChanged(object sender, EventArgs e)
         {
-            chBChange("40", chB40.Checked);
+            if (chBSave==1)
+            {
+                MessageBox.Show("Something went wrong.\nPlease create an Issue on Github woth the Title 'Error 0' and\n describe, what you have done.", "Error 0", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void chBChange(string Nummer, bool Checkbox)

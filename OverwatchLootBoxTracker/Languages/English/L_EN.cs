@@ -331,5 +331,31 @@ namespace OverwatchLootBoxTracker.Lang
                 //return "Costs of remaining Weapon Items:";
             }
         }
+
+
+        //Default Items
+        public string Classic
+        {//Skin
+            get
+            {
+                return "Classic";
+            }
+        }
+
+        public string Heroic
+        {//Emote, Victory Pose, Highlight Intro
+            get
+            {
+                return "Heroic";
+            }
+        }
+
+        public string Default
+        {//Weapon
+            get
+            {
+                return "Default";
+            }
+        }
     }
 }

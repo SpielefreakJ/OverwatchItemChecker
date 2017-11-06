@@ -44,6 +44,7 @@ namespace OverwatchLootBoxTracker
                 }
             }
         }
+
         public void VP(string name, int Victory_Pose)
         {
             inisHeroes = new IniStream(Path + "\\" + name + ".ini");
@@ -57,6 +58,23 @@ namespace OverwatchLootBoxTracker
                 else
                 {
                     inisHeroes.Write("VP" + i, "false");
+                }
+            }
+        }
+
+        public void VL(string name, int Voice_Line)
+        {
+            inisHeroes = new IniStream(Path + "\\" + name + ".ini");
+
+            for (int i = 1; i <= Voice_Line; i++)
+            {
+                if (i < 10)
+                {
+                    inisHeroes.Write("VL0" + i, "false");
+                }
+                else
+                {
+                    inisHeroes.Write("VL" + i, "false");
                 }
             }
         }

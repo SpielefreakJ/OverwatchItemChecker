@@ -43,7 +43,8 @@
             this.btnWeapons = new System.Windows.Forms.Button();
             this.btnPlayerIcons = new System.Windows.Forms.Button();
             this.gbAll = new System.Windows.Forms.GroupBox();
-            this.chB40 = new System.Windows.Forms.CheckBox();
+            this.btnMoira = new System.Windows.Forms.Button();
+            this.chB00 = new System.Windows.Forms.CheckBox();
             this.chB39 = new System.Windows.Forms.CheckBox();
             this.chB38 = new System.Windows.Forms.CheckBox();
             this.chB37 = new System.Windows.Forms.CheckBox();
@@ -125,7 +126,6 @@
             this.btnWelcomeClose = new System.Windows.Forms.Button();
             this.tmrWelcome = new System.Windows.Forms.Timer(this.components);
             this.btnBackHeroe = new System.Windows.Forms.Button();
-            this.btnMoira = new System.Windows.Forms.Button();
             this.gBLang.SuspendLayout();
             this.gbAll.SuspendLayout();
             this.gBMoreCost.SuspendLayout();
@@ -215,7 +215,6 @@
             // 
             // btnVoiceLines
             // 
-            this.btnVoiceLines.Enabled = false;
             this.btnVoiceLines.Location = new System.Drawing.Point(16, 272);
             this.btnVoiceLines.Name = "btnVoiceLines";
             this.btnVoiceLines.Size = new System.Drawing.Size(100, 75);
@@ -276,7 +275,7 @@
             // gbAll
             // 
             this.gbAll.Controls.Add(this.btnMoira);
-            this.gbAll.Controls.Add(this.chB40);
+            this.gbAll.Controls.Add(this.chB00);
             this.gbAll.Controls.Add(this.chB39);
             this.gbAll.Controls.Add(this.chB38);
             this.gbAll.Controls.Add(this.chB37);
@@ -350,17 +349,30 @@
             this.gbAll.Text = "gbAll";
             this.gbAll.Visible = false;
             // 
-            // chB40
+            // btnMoira
             // 
-            this.chB40.AutoSize = true;
-            this.chB40.Location = new System.Drawing.Point(671, 410);
-            this.chB40.Name = "chB40";
-            this.chB40.Size = new System.Drawing.Size(57, 17);
-            this.chB40.TabIndex = 64;
-            this.chB40.Text = "chB40";
-            this.chB40.UseVisualStyleBackColor = true;
-            this.chB40.Visible = false;
-            this.chB40.CheckedChanged += new System.EventHandler(this.chB40_CheckedChanged);
+            this.btnMoira.Location = new System.Drawing.Point(68, 605);
+            this.btnMoira.Name = "btnMoira";
+            this.btnMoira.Size = new System.Drawing.Size(101, 23);
+            this.btnMoira.TabIndex = 65;
+            this.btnMoira.Text = "btnMoira";
+            this.btnMoira.UseVisualStyleBackColor = true;
+            this.btnMoira.Click += new System.EventHandler(this.btnMoira_Click);
+            // 
+            // chB00
+            // 
+            this.chB00.AutoSize = true;
+            this.chB00.Checked = true;
+            this.chB00.CheckState = System.Windows.Forms.CheckState.Checked;
+            this.chB00.Enabled = false;
+            this.chB00.Location = new System.Drawing.Point(671, 410);
+            this.chB00.Name = "chB00";
+            this.chB00.Size = new System.Drawing.Size(57, 17);
+            this.chB00.TabIndex = 64;
+            this.chB00.Text = "chB00";
+            this.chB00.UseVisualStyleBackColor = true;
+            this.chB00.Visible = false;
+            this.chB00.CheckedChanged += new System.EventHandler(this.chB00_CheckedChanged);
             // 
             // chB39
             // 
@@ -1253,17 +1265,6 @@
             this.btnBackHeroe.Visible = false;
             this.btnBackHeroe.Click += new System.EventHandler(this.btnBackHeroe_Click);
             // 
-            // btnMoira
-            // 
-            this.btnMoira.Enabled = false;
-            this.btnMoira.Location = new System.Drawing.Point(68, 605);
-            this.btnMoira.Name = "btnMoira";
-            this.btnMoira.Size = new System.Drawing.Size(101, 23);
-            this.btnMoira.TabIndex = 65;
-            this.btnMoira.Text = "btnMoira";
-            this.btnMoira.UseVisualStyleBackColor = true;
-            this.btnMoira.Click += new System.EventHandler(this.btnMoira_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1386,7 +1387,7 @@
         private System.Windows.Forms.CheckBox chB19;
         private System.Windows.Forms.CheckBox chB18;
         private System.Windows.Forms.CheckBox chB17;
-        private System.Windows.Forms.CheckBox chB40;
+        private System.Windows.Forms.CheckBox chB00;
         private System.Windows.Forms.CheckBox chB39;
         private System.Windows.Forms.CheckBox chB38;
         private System.Windows.Forms.CheckBox chB37;

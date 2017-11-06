@@ -326,5 +326,233 @@ namespace OverwatchLootBoxTracker.Translate
                 }
             }
         }
+
+
+        //Voice Lines
+        //Common
+        public string Try_me_VL
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Try_me_VL;
+                }
+                else
+                {
+                    return EN.Try_me_VL;
+                }
+            }
+        }
+
+        public string Combo_Breakere_VL
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Combo_Breakere_VL;
+                }
+                else
+                {
+                    return EN.Combo_Breakere_VL;
+                }
+            }
+        }
+
+        public string Dont_get_back_up_VL
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Dont_get_back_up_VL;
+                }
+                else
+                {
+                    return EN.Dont_get_back_up_VL;
+                }
+            }
+        }
+
+        public string Go_and_sit_down_VL
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Go_and_sit_down_VL;
+                }
+                else
+                {
+                    return EN.Go_and_sit_down_VL;
+                }
+            }
+        }
+
+        public string I_havent_even_started_VL
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.I_havent_even_started_VL;
+                }
+                else
+                {
+                    return EN.I_havent_even_started_VL;
+                }
+            }
+        }
+
+        public string K_O_VL
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.K_O_VL;
+                }
+                else
+                {
+                    return EN.K_O_VL;
+                }
+            }
+        }
+
+        public string One_punch_is_all_i_need_VL
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.One_punch_is_all_i_need_VL;
+                }
+                else
+                {
+                    return EN.One_punch_is_all_i_need_VL;
+                }
+            }
+        }
+
+        public string Spare_me_the_commentary_VL
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Spare_me_the_commentary_VL;
+                }
+                else
+                {
+                    return EN.Spare_me_the_commentary_VL;
+                }
+            }
+        }
+
+        public string Talk_to_the_fist_VL
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Talk_to_the_fist_VL;
+                }
+                else
+                {
+                    return EN.Talk_to_the_fist_VL;
+                }
+            }
+        }
+
+        public string Youre_not_bad_VL
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Youre_not_bad_VL;
+                }
+                else
+                {
+                    return EN.Youre_not_bad_VL;
+                }
+            }
+        }
+
+        public string You_must_be_joking_VL
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.You_must_be_joking_VL;
+                }
+                else
+                {
+                    return EN.You_must_be_joking_VL;
+                }
+            }
+        }
+
+        public string I_make_medicine_sick_VL
+        {//Summer 17
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.I_make_medicine_sick_VL;
+                }
+                else
+                {
+                    return EN.I_make_medicine_sick_VL;
+                }
+            }
+        }
+
+        public string Make_you_punch_drunk_VL
+        {//Summer 17
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Make_you_punch_drunk_VL;
+                }
+                else
+                {
+                    return EN.Make_you_punch_drunk_VL;
+                }
+            }
+        }
+
+        public string I_have_something_for_you_VL
+        {//Halloween 17
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.I_have_something_for_you_VL;
+                }
+                else
+                {
+                    return EN.I_have_something_for_you_VL;
+                }
+            }
+        }
+
+        public string You_should_be_scared_VL
+        {//Halloween 17
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.You_should_be_scared_VL;
+                }
+                else
+                {
+                    return EN.You_should_be_scared_VL;
+                }
+            }
+        }
     }
 }

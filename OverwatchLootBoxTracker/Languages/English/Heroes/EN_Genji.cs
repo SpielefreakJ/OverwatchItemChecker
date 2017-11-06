@@ -226,5 +226,176 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
                 return "Meditate";
             }
         }
+
+
+        //Voice Lines
+        //Common
+        public string A_steady_blade_VL
+        {
+            get
+            {
+                return "A steady blade";
+            }
+        }
+
+        public string Come_on_VL
+        {
+            get
+            {
+                return "Come on!";
+            }
+        }
+
+        public string Damn_VL
+        {
+            get
+            {
+                return "Damn!";
+            }
+        }
+
+        public string I_am_prepared_VL
+        {
+            get
+            {
+                return "I am prepared!";
+            }
+        }
+
+        public string Lets_fight_VL
+        {
+            get
+            {
+                return "Let's fight!";
+            }
+        }
+
+        public string Measure_twice_cut_once_VL
+        {
+            get
+            {
+                return "Measure twice, Cut once";
+            }
+        }
+
+        public string My_sould_seeks_balance_VL
+        {
+            get
+            {
+                return "My soul seeks balance";
+            }
+        }
+
+        public string Not_good_enough_VL
+        {
+            get
+            {
+                return "Not good enough";
+            }
+        }
+
+        public string Simple_VL
+        {
+            get
+            {
+                return "Simple";
+            }
+        }
+
+        public string Yeah_VL
+        {
+            get
+            {
+                return "Yeah!";
+            }
+        }
+
+        public string You_are_only_human_VL
+        {
+            get
+            {
+                return "You are only human";
+            }
+        }
+
+        public string Hoping_for_a_challenge_VL
+        {//Summer 16
+            get
+            {
+                return "Hoping_for_a_challenge";
+            }
+        }
+
+        public string Touché_VL
+        {//Summer 17
+            get
+            {
+                return "Touché";
+            }
+        }
+
+        public string Happy_Halloween_VL
+        {//Halloween 17
+            get
+            {
+                return "Happy Halloween";
+            }
+        }
+
+        public string My_Halloween_costume_VL
+        {//Halloween 16
+            get
+            {
+                return "My Halloween costume?";
+            }
+        }
+
+        public string Merry_Christmas_VL
+        {//Winter 16
+            get
+            {
+                return "Merry Christmas!";
+            }
+        }
+
+        public string To_know_yourself_VL
+        {//Rooster 17
+            get
+            {
+                return "To know yourself";
+            }
+        }
+
+        public string Another_VL
+        {//Uprising 17
+            get
+            {
+                return "Another!";
+            }
+        }
+
+        public string Life_and_Death_balanced_VL
+        {//Uprising 17
+            get
+            {
+                return "Life and Death balanced";
+            }
+        }
+
+        public string Im_not_impressed_VL
+        {//Annyver 17
+            get
+            {
+                return "I'm not impressed";
+            }
+        }
+
+        public string You_seem_nice_VL
+        {//Annyver 17
+            get
+            {
+                return "You seem nice";
+            }
+        }
     }
 }

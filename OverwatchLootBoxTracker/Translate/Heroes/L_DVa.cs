@@ -460,5 +460,323 @@ namespace OverwatchLootBoxTracker.Translate
                 }
             }
         }
+
+
+        //Voice Lines
+        //Common
+        public string Love_DVa_VL//1
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Love_DVa_VL;
+                }
+                else
+                {
+                    return EN.Love_DVa_VL;
+                }
+            }
+        }
+
+        public string Winkyface_VL//2
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Winkyface_VL;
+                }
+                else
+                {
+                    return EN.Winkyface_VL;
+                }
+            }
+        }
+
+        public string A_new_challenger_VL//3
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.A_new_challenger_VL;
+                }
+                else
+                {
+                    return EN.A_new_challenger_VL;
+                }
+            }
+        }
+
+        public string AFK_VL//4
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.AFK_VL;
+                }
+                else
+                {
+                    return EN.AFK_VL;
+                }
+            }
+        }
+
+        public string Aw_Yeah_VL//5
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Aw_Yeah_VL;
+                }
+                else
+                {
+                    return EN.Aw_Yeah_VL;
+                }
+            }
+        }
+
+        public string DVa_1_Bad_Guys_0_VL//6
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.DVa_1_Bad_Guys_0_VL;
+                }
+                else
+                {
+                    return EN.DVa_1_Bad_Guys_0_VL;
+                }
+            }
+        }
+
+        public string GG_VL//7
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.GG_VL;
+                }
+                else
+                {
+                    return EN.GG_VL;
+                }
+            }
+        }
+
+        public string I_play_to_win_VL//8
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.I_play_to_win_VL;
+                }
+                else
+                {
+                    return EN.I_play_to_win_VL;
+                }
+            }
+        }
+
+        public string Is_this_Easy_Mode_VL//9
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Is_this_Easy_Mode_VL;
+                }
+                else
+                {
+                    return EN.Is_this_Easy_Mode_VL;
+                }
+            }
+        }
+
+        public string LOL_VL//10
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.LOL_VL;
+                }
+                else
+                {
+                    return EN.LOL_VL;
+                }
+            }
+        }
+
+        public string No_hacks_required_VL//11
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.No_hacks_required_VL;
+                }
+                else
+                {
+                    return EN.No_hacks_required_VL;
+                }
+            }
+        }
+
+        public string Im_N_1_VL//12
+        {//Summer 16
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Im_N_1_VL;
+                }
+                else
+                {
+                    return EN.Im_N_1_VL;
+                }
+            }
+        }
+
+        public string Scoreboard_VL//13
+        {//Summer 17
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Scoreboard_VL;
+                }
+                else
+                {
+                    return EN.Scoreboard_VL;
+                }
+            }
+        }
+
+        public string Happy_Halloween_VL//14
+        {//Halloween 16
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Happy_Halloween_VL;
+                }
+                else
+                {
+                    return EN.Happy_Halloween_VL;
+                }
+            }
+        }
+
+        public string Im_not_scared_VL//15
+        {//Halloween 17
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Im_not_scared_VL;
+                }
+                else
+                {
+                    return EN.Im_not_scared_VL;
+                }
+            }
+        }
+
+        public string Aw_you_shouldnt_have_VL//16
+        {//Winter 16
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Aw_you_shouldnt_have_VL;
+                }
+                else
+                {
+                    return EN.Aw_you_shouldnt_have_VL;
+                }
+            }
+        }
+
+        public string The_best_things_in_life_VL//17
+        {//Rooster 17
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.The_best_things_in_life_VL;
+                }
+                else
+                {
+                    return EN.The_best_things_in_life_VL;
+                }
+            }
+        }
+
+        public string Not_taking_me_seriously_VL//18
+        {//Uprising 17
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Not_taking_me_seriously_VL;
+                }
+                else
+                {
+                    return EN.Not_taking_me_seriously_VL;
+                }
+            }
+        }
+
+        public string Try_and_keep_up_VL//19
+        {//Uprising 17
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Try_and_keep_up_VL;
+                }
+                else
+                {
+                    return EN.Try_and_keep_up_VL;
+                }
+            }
+        }
+
+        public string Level_Up_VL//20
+        {//Annyver 17
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Level_Up_VL;
+                }
+                else
+                {
+                    return EN.Level_Up_VL;
+                }
+            }
+        }
+
+        public string No_Way_VL//21
+        {//Annyver 17
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.No_Way_VL;
+                }
+                else
+                {
+                    return EN.No_Way_VL;
+                }
+            }
+        }
     }
 }

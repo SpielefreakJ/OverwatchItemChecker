@@ -93,7 +93,7 @@ namespace OverwatchLootBoxTracker.Translate
                 //}
                 //else
                 {
-                    return "© 2017 SpielefreakJ | OWLootboxTracker Version: 0.1.4.0 Alpha | Overwatch Version: 1.16.0.2B";
+                    return "© 2017 SpielefreakJ | OWLootboxTracker Version: 0.1.4.1 Alpha | Overwatch Version: 1.17.0.1";
                 }
             }
         }
@@ -552,6 +552,53 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return (Cost.RemCostsNonEvent + Cost.RemCostsEvent) + " " + EN.Credits + "\n\n" + Cost.RemCostsNonEvent + " " + EN.Credits + "\n\n" + Cost.RemCostsEvent + " " + EN.Credits + "\n\n" + Cost.RemCostsWeapon + " SR";
+                }
+            }
+        }
+
+
+        //Default Items
+        public string Classic
+        {//Skin
+            get
+            {
+                if (myLang=="DE")
+                {
+                    return DE.Classic;
+                }
+                else
+                {
+                    return EN.Classic;
+                }
+            }
+        }
+
+        public string Heroic
+        {//Emote, Victory Pose, Highlight Intro
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Heroic;
+                }
+                else
+                {
+                    return EN.Heroic;
+                }
+            }
+        }
+
+        public string Default
+        {//Weapon
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Default;
+                }
+                else
+                {
+                    return EN.Default;
                 }
             }
         }

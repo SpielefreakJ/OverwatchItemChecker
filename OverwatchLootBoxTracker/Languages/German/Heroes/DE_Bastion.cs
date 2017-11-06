@@ -262,19 +262,19 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
 
         //Voice Lines
         //Common
-        public string Doo_Woo_VL
-        {
-            get
-            {
-                return "Doo-Woo";
-            }
-        }
-
         public string Beeple_VL
         {
             get
             {
                 return "Beeple";
+            }
+        }
+
+        public string Doo_Woo_VL
+        {
+            get
+            {
+                return "Doo-Woo";
             }
         }
 

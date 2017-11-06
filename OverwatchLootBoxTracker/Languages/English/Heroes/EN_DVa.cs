@@ -242,5 +242,176 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
                 return "Lucky Pouch";
             }
         }
+
+
+        //Voice Lines
+        //Common
+        public string Love_DVa_VL
+        {
+            get
+            {
+                return "Love, D.Va";
+            }
+        }
+
+        public string Winkyface_VL
+        {
+            get
+            {
+                return ";)";
+            }
+        }
+
+        public string A_new_challenger_VL
+        {
+            get
+            {
+                return "A new challenger";
+            }
+        }
+
+        public string AFK_VL
+        {
+            get
+            {
+                return "AFK";
+            }
+        }
+
+        public string Aw_Yeah_VL
+        {
+            get
+            {
+                return "Aw, Yeah!";
+            }
+        }
+
+        public string DVa_1_Bad_Guys_0_VL
+        {
+            get
+            {
+                return "D.Va: 1, Bad Guys: 0";
+            }
+        }
+
+        public string GG_VL
+        {
+            get
+            {
+                return "GG!";
+            }
+        }
+
+        public string I_play_to_win_VL
+        {
+            get
+            {
+                return "I play to win";
+            }
+        }
+
+        public string Is_this_Easy_Mode_VL
+        {
+            get
+            {
+                return "Is this Easy Mode?";
+            }
+        }
+
+        public string LOL_VL
+        {
+            get
+            {
+                return "LOL";
+            }
+        }
+
+        public string No_hacks_required_VL
+        {
+            get
+            {
+                return "No hacks required";
+            }
+        }
+
+        public string Im_N_1_VL
+        {//Summer 16
+            get
+            {
+                return "I'm #1";
+            }
+        }
+
+        public string Scoreboard_VL
+        {//Summer 17
+            get
+            {
+                return "Scoreboard";
+            }
+        }
+
+        public string Happy_Halloween_VL
+        {//Halloween 16
+            get
+            {
+                return "Happy Halloween!";
+            }
+        }
+
+        public string Im_not_scared_VL
+        {//Halloween 17
+            get
+            {
+                return "I'm not scared";
+            }
+        }
+
+        public string Aw_you_shouldnt_have_VL
+        {//Winter 16
+            get
+            {
+                return "Aw, you schouldn't have";
+            }
+        }
+
+        public string The_best_things_in_life_VL
+        {//Rooster 17
+            get
+            {
+                return "The best things in life";
+            }
+        }
+
+        public string Not_taking_me_seriously_VL
+        {//Uprising 17
+            get
+            {
+                return "Not taking me seriously";
+            }
+        }
+
+        public string Try_and_keep_up_VL
+        {//Uprising 17
+            get
+            {
+                return "Try annd keep up";
+            }
+        }
+
+        public string Level_Up_VL
+        {//Annyver 17
+            get
+            {
+                return "Level Up!";
+            }
+        }
+
+        public string No_Way_VL
+        {//Annyver 17
+            get
+            {
+                return "No way";
+            }
+        }
     }
 }

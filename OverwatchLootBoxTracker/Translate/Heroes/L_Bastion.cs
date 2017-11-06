@@ -494,22 +494,7 @@ namespace OverwatchLootBoxTracker.Translate
 
         //Voice Lines
         //Common
-        public string Doo_Woo_VL//1
-        {
-            get
-            {
-                if (myLang == "DE")
-                {
-                    return DE.Doo_Woo_VL;
-                }
-                else
-                {
-                    return EN.Doo_Woo_VL;
-                }
-            }
-        }
-
-        public string Beeple_VL//2
+        public string Beeple_VL//1
         {
             get
             {
@@ -520,6 +505,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Beeple_VL;
+                }
+            }
+        }
+
+        public string Doo_Woo_VL//2
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Doo_Woo_VL;
+                }
+                else
+                {
+                    return EN.Doo_Woo_VL;
                 }
             }
         }

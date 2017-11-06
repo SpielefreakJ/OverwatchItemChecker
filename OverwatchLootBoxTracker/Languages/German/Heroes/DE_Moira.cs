@@ -21,153 +21,153 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
 
         //Skin
         //Rare
-        public string I_SK
+        public string Fiery_SK
         {
             get
             {
-                return "";
+                return "Feurig";
             }
         }
 
-        public string II_SK
+        public string Royal_SK
         {
             get
             {
-                return "";
+                return "Royal";
             }
         }
 
-        public string III_SK
+        public string Selkie_SK
         {
             get
             {
-                return "";
+                return "Selkie";
             }
         }
 
-        public string IV_SK
+        public string Whiskey_SK
         {
             get
             {
-                return "";
+                return "Whiskey";
             }
         }
         //Epic
-        public string V_SK
+        public string Ornate_SK
         {
             get
             {
-                return "";
+                return "Prächtig";
             }
         }
 
-        public string VI_SK
+        public string Pale_SK
         {
             get
             {
-                return "";
+                return "Blass";
             }
         }
         //Legendary
-        public string VII_SK
+        public string Minister_SK
         {
             get
             {
-                return "";
+                return "Ministerin";
             }
         }
 
-        public string VIII_SK
+        public string Oasis_SK
         {
             get
             {
-                return "";
+                return "Oasis";
             }
         }
 
-        public string IX_SK
+        public string Glam_SK
         {
             get
             {
-                return "";
+                return "Glam";
             }
         }
 
-        public string X_SK
+        public string Moon_SK
         {
             get
             {
-                return "";
+                return "Mond";
             }
         }
 
 
         //Emotes
         //Epic
-        public string I_EM
+        public string A_your_service_EM
         {
             get
             {
-                return "";
+                return "Zu euren Diensten";
             }
         }
 
-        public string II_EM
+        public string Come_here_EM
         {
             get
             {
-                return "";
+                return "Komm her";
             }
         }
 
-        public string III_EM
+        public string Give_and_take_EM
         {
             get
             {
-                return "";
+                return "Geben und nehmen";
             }
         }
 
-        public string IV_EM
+        public string How_amusing_EM
         {
             get
             {
-                return "";
+                return "Wie amüsant";
             }
         }
 
-        public string V_EM
+        public string Waiting_EM
         {
             get
             {
-                return "";
+                return "Wartend";
             }
         }
 
 
         //Victory Poses
         //Rare
-        public string I_VP
+        public string Orbs_VP
         {
             get
             {
-                return "";
+                return "Sphären";
             }
         }
 
-        public string II_VP
+        public string Prim_VP
         {
             get
             {
-                return "";
+                return "Korrekt";
             }
         }
 
-        public string III_VP
+        public string Steepling_VP
         {
             get
             {
-                return "";
+                return "Fingerspitzen";
             }
         }
     }
