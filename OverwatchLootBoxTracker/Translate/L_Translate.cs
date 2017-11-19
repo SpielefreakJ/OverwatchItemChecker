@@ -506,15 +506,15 @@ namespace OverwatchLootBoxTracker.Translate
                 }
             }
         }
-        
+
 
         //Remaining Text
-
+        string myRemainingHeroe = "All";
         public string Remaining
         {
             get
             {
-                Cost.Calculate(myPath);
+                Cost.Calculate(myPath, myRemainingHeroe);
                 if (myLang == "DE")
                 {
                     return DE.remaining1 + " " + (Cost.RemCostsNonEvent + Cost.RemCostsEvent) + " " + DE.remaining2 + " " + Cost.RemCostsWeapon + " SR";
@@ -524,7 +524,24 @@ namespace OverwatchLootBoxTracker.Translate
                     return EN.remaining1 + " " + (Cost.RemCostsNonEvent + Cost.RemCostsEvent) + " " + EN.remaining2 + " " + Cost.RemCostsWeapon + " SR";
                 }
             }
+            set
+            {
+
+            }
         }
+
+        public string RemainingHeroe
+        {
+            get
+            {
+                return myRemainingHeroe;
+            }
+            set
+            {
+                myRemainingHeroe = value;
+            }
+        }
+
         //For "More Infos about remaining Costs"
         public string RemMoreInfo1
         {

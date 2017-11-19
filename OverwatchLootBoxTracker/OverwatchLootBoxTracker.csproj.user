@@ -14,4 +14,7 @@
     <DebugSecurityZoneURL>
     </DebugSecurityZoneURL>
   </PropertyGroup>
+  <PropertyGroup>
+    <EnableSecurityDebugging>false</EnableSecurityDebugging>
+  </PropertyGroup>
 </Project>

@@ -186,8 +186,9 @@ namespace OverwatchLootBoxTracker
         //Calculate all Costs
 
         IniStream inisHeroes = null;
-        int myCostsNonEvent = 0;
-        int myCostsEvent = 0;
+
+        int[] myCosts = new int[27];
+        int[] myCostsEvent = new int[27];
         int myCostsWeapon = 0;
         string ii = "01";
         string SaveFolder = null;
@@ -198,7 +199,14 @@ namespace OverwatchLootBoxTracker
         {
             get
             {
-                return myCostsNonEvent;
+                myCosts[0] = 0;
+
+                for (int i = 1; i <= 26; i++)
+                {
+                    myCosts[0] += myCosts[i];
+                }
+
+                return myCosts[0];
             }
         }
 
@@ -206,7 +214,14 @@ namespace OverwatchLootBoxTracker
         {
             get
             {
-                return myCostsEvent;
+                myCostsEvent[0] = 0;
+
+                for (int i = 1; i <= 26; i++)
+                {
+                    myCostsEvent[0] += myCostsEvent[i];
+                }
+
+                return myCostsEvent[0];
             }
         }
 
@@ -218,45 +233,154 @@ namespace OverwatchLootBoxTracker
                 return myCostsWeapon;
             }
         }
+        
+        //Reste Ausrechnen
 
-        public void Calculate(string Folder)
+        public void Calculate(string Folder, string Heroe)
         {
             SaveFolder = Folder;
 
-            myCostsNonEvent = 0;
-            myCostsEvent = 0;
-            //myCostsWeapon = 0;
-
-            Ana();
-            Bastion();
-            DVa();
-            Doomfist();
-            Genji();
-            Hanzo();
-            Junkrat();
-            Lúcio();
-            McCree();
-            Mei();
-            Mercy();
-            Orisa();
-            Pharah();
-            Reaper();
-            Reinhardt();
-            Roadhog();
-            Soldier_76();
-            Sombra();
-            Symmetra();
-            Torbjörn();
-            Tracer();
-            Widowmaker();
-            Winston();
-            Zarya();
-            Zenyatta();
+            if (Heroe == "Ana")
+            {
+                Ana();
+            }
+            if (Heroe == "Bastion")
+            {
+                Bastion();
+            }
+            if (Heroe == "DVa")
+            {
+                DVa();
+            }
+            if (Heroe == "Doomfist")
+            {
+                Doomfist();
+            }
+            if (Heroe == "Genji")
+            {
+                Genji();
+            }
+            if (Heroe == "Hanzo")
+            {
+                Hanzo();
+            }
+            if (Heroe == "Junkrat")
+            {
+                Junkrat();
+            }
+            if (Heroe == "Lúcio")
+            {
+                Lúcio();
+            }
+            if (Heroe == "McCree")
+            {
+                McCree();
+            }
+            if (Heroe == "Mei")
+            {
+                Mei();
+            }
+            if (Heroe == "Mercy")
+            {
+                Mercy();
+            }
+            if (Heroe == "Moira")
+            {
+                Moira();
+            }
+            if (Heroe == "Orisa")
+            {
+                Orisa();
+            }
+            if (Heroe == "Pharah")
+            {
+                Pharah();
+            }
+            if (Heroe == "Reaper")
+            {
+                Reaper();
+            }
+            if (Heroe == "Reinhardt")
+            {
+                Reinhardt();
+            }
+            if (Heroe == "Roadhog")
+            {
+                Roadhog();
+            }
+            if (Heroe == "Soldier 76")
+            {
+                Soldier_76();
+            }
+            if (Heroe == "Sombra")
+            {
+                Sombra();
+            }
+            if (Heroe == "Symmetra")
+            {
+                Symmetra();
+            }
+            if (Heroe == "Torbjörn")
+            {
+                Torbjörn();
+            }
+            if (Heroe == "Tracer")
+            {
+                Tracer();
+            }
+            if (Heroe == "Widowmaker")
+            {
+                Widowmaker();
+            }
+            if (Heroe == "Winston")
+            {
+                Winston();
+            }
+            if (Heroe == "Zarya")
+            {
+                Zarya();
+            }
+            if (Heroe == "Zenyatta")
+            {
+                Zenyatta();
+            }
+            
+            else
+            {
+                Ana();
+                Bastion();
+                DVa();
+                Doomfist();
+                Genji();
+                Hanzo();
+                Junkrat();
+                Lúcio();
+                McCree();
+                Mei();
+                Mercy();
+                Orisa();
+                Pharah();
+                Reaper();
+                Reinhardt();
+                Roadhog();
+                Soldier_76();
+                Sombra();
+                Symmetra();
+                Torbjörn();
+                Tracer();
+                Widowmaker();
+                Winston();
+                Zarya();
+                Zenyatta();
+            }
         }
 
         private void Ana()
         {
             inisHeroes = new IniStream(SaveFolder + "\\Ana.ini");
+
+            myCosts[1] = 0;
+            myCostsEvent[1] = 0;
 
             for (int i = 1; i <= 40; i++)
             {
@@ -269,63 +393,63 @@ namespace OverwatchLootBoxTracker
                     ii = i.ToString();
                 }
                 //Skins
-                if (inisHeroes.Read("SK" + ii) != "true")
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[1] += myRare;
                     }
                     if (i >= 5 && i <= 6)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[1] += myEpic;
                     }
                     if (i == 7)
                     {//Epic Halloween 16
-                        myCostsEvent += myEpic;
+                        myCostsEvent[1] += myEpic;
                     }
                     if (i == 8)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[1] += myEpicEvent;
                     }
                     if (i >= 9 && i <= 12)
                     {//Legendary
-                        myCostsNonEvent += myLegendary;
+                        myCosts[1] += myLegendary;
                     }
                     if (i == 13)
                     {//Legendary Event
-                        myCostsEvent += myLegendaryEvent;
+                        myCostsEvent[1] += myLegendaryEvent;
                     }
                 }
                 //Emotes
-                if (inisHeroes.Read("EM" + ii) != "true")
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
                 {
                     if (i >= 1 && i <= 5)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[1] += myEpic;
                     }
                     if (i == 6 || i == 8)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[1] += myEpicEvent;
                     }
                     if (i == 7)
                     {//Epic Halloween 16
-                        myCostsEvent += myEpic;
+                        myCostsEvent[1] += myEpic;
                     }
                 }
                 //Victory Poses
-                if (inisHeroes.Read("VP" + ii) != "true")
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
                 {
                     if (i >= 1 && i <= 3)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[1] += myRare;
                     }
                     if (i == 4)
                     {//Rare Halloween 16
-                        myCostsEvent += myRare;
+                        myCostsEvent[1] += myRare;
                     }
                     if (i >= 5 && i <= 6)
                     {//Rare Event
-                        myCostsEvent += myRareEvent;
+                        myCostsEvent[1] += myRareEvent;
                     }
                 }
             }
@@ -335,6 +459,9 @@ namespace OverwatchLootBoxTracker
         {
             inisHeroes = new IniStream(SaveFolder + "\\Bastion.ini");
 
+            myCosts[2] = 0;
+            myCostsEvent[2] = 0;
+
             for (int i = 1; i <= 40; i++)
             {
                 if (i < 10)
@@ -346,15 +473,15 @@ namespace OverwatchLootBoxTracker
                     ii = i.ToString();
                 }
                 //Skins
-                if (inisHeroes.Read("SK" + ii) == "false")
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[2] += myRare;
                     }
                     if (i >= 5 && i <= 6)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[2] += myEpic;
                     }
                     if (i == 7)
                     {//Epic BlizzCon 16
@@ -362,15 +489,15 @@ namespace OverwatchLootBoxTracker
                     }
                     if (i == 8)
                     {//Epic Halloween 16
-                        myCostsEvent += myEpic;
+                        myCostsEvent[2] += myEpic;
                     }
                     if (i >= 9 && i <= 10)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[2] += myEpicEvent;
                     }
                     if (i >= 11 && i <= 14)
                     {//Legendary
-                        myCostsNonEvent += myLegendary;
+                        myCosts[2] += myLegendary;
                     }
                     if (i == 15)
                     {//Origin/GotY
@@ -378,39 +505,39 @@ namespace OverwatchLootBoxTracker
                     }
                     if (i == 16)
                     {//Legendary Event
-                        myCostsEvent += myLegendaryEvent;
+                        myCostsEvent[2] += myLegendaryEvent;
                     }
                 }
                 //Emotes
-                if (inisHeroes.Read("EM" + ii) == "false")
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
                 {
                     if (i >= 1 && i <= 5)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[2] += myEpic;
                     }
                     if (i == 6)
                     {//Epic Summer 16
-                        myCostsEvent += myEpic;
+                        myCostsEvent[2] += myEpic;
                     }
                     if (i == 7)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[2] += myEpicEvent;
                     }
                 }
                 //Victory Poses
-                if (inisHeroes.Read("VP" + ii) == "false")
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
                 {
                     if (i >= 1 && i <= 3)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[2] += myRare;
                     }
                     if (i == 4 || i == 6)
                     {//Rare Event
-                        myCostsEvent += myRareEvent;
+                        myCostsEvent[2] += myRareEvent;
                     }
                     if (i == 5)
                     {//Rare Halloween 16
-                        myCostsEvent += myRare;
+                        myCostsEvent[2] += myRare;
                     }
                 }
             }
@@ -420,6 +547,9 @@ namespace OverwatchLootBoxTracker
         {
             inisHeroes = new IniStream(SaveFolder + "\\D.Va.ini");
 
+            myCosts[3] = 0;
+            myCostsEvent[3] = 0;
+
             for (int i = 1; i <= 40; i++)
             {
                 if (i < 10)
@@ -431,59 +561,59 @@ namespace OverwatchLootBoxTracker
                     ii = i.ToString();
                 }
                 //Skins
-                if (inisHeroes.Read("SK" + ii) != "true")
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[3] += myRare;
                     }
                     if (i >= 5 && i <= 6)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[3] += myEpic;
                     }
                     if (i == 7)
                     {//Epic Summer 16
-                        myCostsEvent += myEpic;
+                        myCostsEvent[3] += myEpic;
                     }
                     if (i >= 8 && i <= 12)
                     {//Legendary
-                        myCostsNonEvent += myLegendary;
+                        myCosts[3] += myLegendary;
                     }
                     if (i >= 13 && i <= 14)
                     {//Legendary Event
-                        myCostsEvent += myLegendaryEvent;
+                        myCostsEvent[3] += myLegendaryEvent;
                     }
                 }
                 //Emotes
-                if (inisHeroes.Read("EM" + ii) != "true")
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
                 {
                     if (i >= 1 && i <= 5)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[3] += myEpic;
                     }
                     if (i >= 5 && i <= 6)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[3] += myEpicEvent;
                     }
                     if (i == 7)
                     {//Legendary
-                        myCostsNonEvent += myLegendary;
+                        myCosts[3] += myLegendary;
                     }
                 }
                 //Victory Poses
-                if (inisHeroes.Read("VP" + ii) != "true")
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
                 {
                     if (i >= 1 && i <= 3)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[3] += myRare;
                     }
                     if (i == 4)
                     {//Rare Halloween 16
-                        myCostsEvent += myRare;
+                        myCostsEvent[3] += myRare;
                     }
                     if (i >= 5 && i <= 6)
                     {//Rare Event
-                        myCostsEvent += myRareEvent;
+                        myCostsEvent[3] += myRareEvent;
                     }
                 }
             }
@@ -493,6 +623,9 @@ namespace OverwatchLootBoxTracker
         {
             inisHeroes = new IniStream(SaveFolder + "\\Doomfist.ini");
 
+            myCosts[4] = 0;
+            myCostsEvent[4] = 0;
+
             for (int i = 1; i <= 40; i++)
             {
                 if (i < 10)
@@ -504,35 +637,35 @@ namespace OverwatchLootBoxTracker
                     ii = i.ToString();
                 }
                 //Skins
-                if (inisHeroes.Read("SK" + ii) != "true")
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[4] += myRare;
                     }
                     if (i >= 5 && i <= 6)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[4] += myEpic;
                     }
                     if (i >= 7 && i <= 10)
                     {//Legendary
-                        myCostsNonEvent += myLegendary;
+                        myCosts[4] += myLegendary;
                     }
                 }
                 //Emotes
-                if (inisHeroes.Read("EM" + ii) != "true")
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
                 {
                     if (i >= 1 && i <= 5)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[4] += myEpic;
                     }
                 }
                 //Victory Poses
-                if (inisHeroes.Read("VP" + ii) != "true")
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
                 {
                     if (i >= 1 && i <= 3)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[4] += myRare;
                     }
                 }
             }
@@ -542,6 +675,9 @@ namespace OverwatchLootBoxTracker
         {
             inisHeroes = new IniStream(SaveFolder + "\\Genji.ini");
 
+            myCosts[5] = 0;
+            myCostsEvent[5] = 0;
+
             for (int i = 1; i <= 40; i++)
             {
                 if (i < 10)
@@ -553,55 +689,55 @@ namespace OverwatchLootBoxTracker
                     ii = i.ToString();
                 }
                 //Skins
-                if (inisHeroes.Read("SK" + ii) != "true")
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[5] += myRare;
                     }
                     if (i >= 5 && i <= 6)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[5] += myEpic;
                     }
                     if (i == 7)
                     {//Epic Summer 16
-                        myCostsEvent += myEpic;
+                        myCostsEvent[5] += myEpic;
                     }
                     if (i >= 8 && i <= 12)
                     {//Legendary
-                        myCostsNonEvent += myLegendary;
+                        myCosts[5] += myLegendary;
                     }
                     if (i >= 13 && i <= 14)
                     {//Legendary Event
-                        myCostsEvent += myLegendaryEvent;
+                        myCostsEvent[5] += myLegendaryEvent;
                     }
                 }
                 //Emotes
-                if (inisHeroes.Read("EM" + ii) != "true")
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
                 {
                     if (i >= 1 && i <= 5)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[5] += myEpic;
                     }
                     if (i == 6)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[5] += myEpicEvent;
                     }
                 }
                 //Victory Poses
-                if (inisHeroes.Read("VP" + ii) != "true")
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
                 {
                     if (i >= 1 && i <= 3)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[5] += myRare;
                     }
                     if (i == 4)
                     {//Rare Halloween 16
-                        myCostsEvent += myRare;
+                        myCostsEvent[5] += myRare;
                     }
                     if (i == 5)
                     {//Rare Event
-                        myCostsEvent += myRareEvent;
+                        myCostsEvent[5] += myRareEvent;
                     }
                 }
             }
@@ -611,6 +747,9 @@ namespace OverwatchLootBoxTracker
         {
             inisHeroes = new IniStream(SaveFolder + "\\Hanzo.ini");
 
+            myCosts[6] = 0;
+            myCostsEvent[6] = 0;
+
             for (int i = 1; i <= 40; i++)
             {
                 if (i < 10)
@@ -622,55 +761,55 @@ namespace OverwatchLootBoxTracker
                     ii = i.ToString();
                 }
                 //Skins
-                if (inisHeroes.Read("SK" + ii) != "true")
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[6] += myRare;
                     }
                     if (i >= 5 && i <= 6)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[6] += myEpic;
                     }
                     if (i == 7)
                     {//Epic Halloween 16
-                        myCostsEvent += myEpic;
+                        myCostsEvent[6] += myEpic;
                     }
                     if (i >= 8 && i <= 11)
                     {//Legendary
-                        myCostsNonEvent += myLegendary;
+                        myCosts[6] += myLegendary;
                     }
                     if (i == 12)
                     {//Legendary Event
-                        myCostsEvent += myLegendaryEvent;
+                        myCostsEvent[6] += myLegendaryEvent;
                     }
                 }
                 //Emotes
-                if (inisHeroes.Read("EM" + ii) != "true")
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
                 {
                     if (i >= 1 && i <= 5)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[6] += myEpic;
                     }
                     if (i >= 6 && i <= 7)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[6] += myEpicEvent;
                     }
                 }
                 //Victory Poses
-                if (inisHeroes.Read("VP" + ii) != "true")
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
                 {
                     if (i >= 1 && i <= 3)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[6] += myRare;
                     }
                     if (i == 4 || i == 6)
                     {//Rare Event
-                        myCostsEvent += myRareEvent;
+                        myCostsEvent[6] += myRareEvent;
                     }
                     if (i == 5)
                     {//Rare Halloween 16
-                        myCostsEvent += myRare;
+                        myCostsEvent[6] += myRare;
                     }
                 }
             }
@@ -680,6 +819,9 @@ namespace OverwatchLootBoxTracker
         {
             inisHeroes = new IniStream(SaveFolder + "\\Junkrat.ini");
 
+            myCosts[7] = 0;
+            myCostsEvent[7] = 0;
+
             for (int i = 1; i <= 40; i++)
             {
                 if (i < 10)
@@ -691,59 +833,59 @@ namespace OverwatchLootBoxTracker
                     ii = i.ToString();
                 }
                 //Skins
-                if (inisHeroes.Read("SK" + ii) != "true")
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[7] += myRare;
                     }
                     if (i >= 5 && i <= 6)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[7] += myEpic;
                     }
                     if (i == 7)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[7] += myEpicEvent;
                     }
                     if (i >= 8 && i <= 11)
                     {//Legendary
-                        myCostsNonEvent += myLegendary;
+                        myCosts[7] += myLegendary;
                     }
                     if (i == 12)
                     {//Legendary Halloween 16
-                        myCostsEvent += myLegendary;
+                        myCostsEvent[7] += myLegendary;
                     }
                     if (i == 13)
                     {//Legendary Event
-                        myCostsEvent += myLegendaryEvent;
+                        myCostsEvent[7] += myLegendaryEvent;
                     }
                 }
                 //Emotes
-                if (inisHeroes.Read("EM" + ii) != "true")
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
                 {
                     if (i >= 1 && i <= 5)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[7] += myEpic;
                     }
                     if (i >= 6 && i <= 7)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[7] += myEpicEvent;
                     }
                 }
                 //Victory Poses
-                if (inisHeroes.Read("VP" + ii) != "true")
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
                 {
                     if (i >= 1 && i <= 3)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[7] += myRare;
                     }
                     if (i >= 4 && i <= 5 || i == 7)
                     {//Rare Event
-                        myCostsEvent += myRareEvent;
+                        myCostsEvent[7] += myRareEvent;
                     }
                     if (i == 6)
                     {//Rare Halloween 16
-                        myCostsEvent += myRare;
+                        myCostsEvent[7] += myRare;
                     }
                 }
             }
@@ -753,6 +895,9 @@ namespace OverwatchLootBoxTracker
         {
             inisHeroes = new IniStream(SaveFolder + "\\Lúcio.ini");
 
+            myCosts[8] = 0;
+            myCostsEvent[8] = 0;
+
             for (int i = 1; i <= 40; i++)
             {
                 if (i < 10)
@@ -764,63 +909,63 @@ namespace OverwatchLootBoxTracker
                     ii = i.ToString();
                 }
                 //Skins
-                if (inisHeroes.Read("SK" + ii) != "true")
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[8] += myRare;
                     }
                     if (i >= 5 && i <= 6)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[8] += myEpic;
                     }
                     if (i == 7)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[8] += myEpicEvent;
                     }
                     if (i >= 8 && i <= 11)
                     {//Legendary
-                        myCostsNonEvent += myLegendary;
+                        myCosts[8] += myLegendary;
                     }
                     if (i >= 12 && i <= 13)
                     {//Legendary Summer 16
-                        myCostsEvent += myLegendary;
+                        myCostsEvent[8] += myLegendary;
                     }
                     if (i == 14)
                     {//Legendary Event
-                        myCostsEvent += myLegendaryEvent;
+                        myCostsEvent[8] += myLegendaryEvent;
                     }
                 }
                 //Emotes
-                if (inisHeroes.Read("EM" + ii) != "true")
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
                 {
                     if (i >= 1 && i <= 5)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[8] += myEpic;
                     }
                     if (i == 6)
                     {//Epic Summer 16
-                        myCostsEvent += myEpic;
+                        myCostsEvent[8] += myEpic;
                     }
                     if (i == 7)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[8] += myEpicEvent;
                     }
                 }
                 //Victory Poses
-                if (inisHeroes.Read("VP" + ii) != "true")
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
                 {
                     if (i >= 1 && i <= 3)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[8] += myRare;
                     }
                     if (i == 4 || i == 6)
                     {//Rare Event
-                        myCostsEvent += myRareEvent;
+                        myCostsEvent[8] += myRareEvent;
                     }
                     if (i == 5)
                     {//Rare Halloween 16
-                        myCostsEvent += myRare;
+                        myCostsEvent[8] += myRare;
                     }
                 }
             }
@@ -830,6 +975,9 @@ namespace OverwatchLootBoxTracker
         {
             inisHeroes = new IniStream(SaveFolder + "\\McCree.ini");
 
+            myCosts[9] = 0;
+            myCostsEvent[9] = 0;
+
             for (int i = 1; i <= 40; i++)
             {
                 if (i < 10)
@@ -841,59 +989,59 @@ namespace OverwatchLootBoxTracker
                     ii = i.ToString();
                 }
                 //Skins
-                if (inisHeroes.Read("SK" + ii) != "true")
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[9] += myRare;
                     }
                     if (i >= 5 && i <= 6)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[9] += myEpic;
                     }
                     if (i == 7)
                     {//Epic Summer 16
-                        myCostsEvent += myEpic;
+                        myCostsEvent[9] += myEpic;
                     }
                     if (i == 8)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[9] += myEpicEvent;
                     }
                     if (i >= 9 && i <= 12)
                     {//Legendary
-                        myCostsNonEvent += myLegendary;
+                        myCosts[9] += myLegendary;
                     }
                     if (i >= 13 && i <= 15)
                     {//Legendary Event
-                        myCostsEvent += myLegendaryEvent;
+                        myCostsEvent[9] += myLegendaryEvent;
                     }
                 }
                 //Emotes
-                if (inisHeroes.Read("EM" + ii) != "true")
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
                 {
                     if (i >= 1 && i <= 5)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[9] += myEpic;
                     }
                     if (i >= 6 && i <= 7)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[9] += myEpicEvent;
                     }
                 }
                 //Victory Poses
-                if (inisHeroes.Read("VP" + ii) != "true")
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
                 {
                     if (i >= 1 && i <= 3)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[9] += myRare;
                     }
                     if (i == 4)
                     {//Rare Halloween 16
-                        myCostsEvent += myRare;
+                        myCostsEvent[9] += myRare;
                     }
                     if (i == 5)
                     {//Rare Event
-                        myCostsEvent += myRareEvent;
+                        myCostsEvent[9] += myRareEvent;
                     }
                 }
             }
@@ -903,6 +1051,9 @@ namespace OverwatchLootBoxTracker
         {
             inisHeroes = new IniStream(SaveFolder + "\\Mei.ini");
 
+            myCosts[10] = 0;
+            myCostsEvent[10] = 0;
+
             for (int i = 1; i <= 40; i++)
             {
                 if (i < 10)
@@ -914,51 +1065,51 @@ namespace OverwatchLootBoxTracker
                     ii = i.ToString();
                 }
                 //Skins
-                if (inisHeroes.Read("SK" + ii) != "true")
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[10] += myRare;
                     }
                     if (i >= 5 && i <= 6)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[10] += myEpic;
                     }
                     if (i >= 7 && i <= 10)
                     {//Legendary
-                        myCostsNonEvent += myLegendary;
+                        myCosts[10] += myLegendary;
                     }
                     if (i >= 11 && i <= 15)
                     {//Legendary Event
-                        myCostsEvent += myLegendaryEvent;
+                        myCostsEvent[10] += myLegendaryEvent;
                     }
                 }
                 //Emotes
-                if (inisHeroes.Read("EM" + ii) != "true")
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
                 {
                     if (i >= 1 && i <= 5)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[10] += myEpic;
                     }
                     if (i >= 6 && i <= 9)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[10] += myEpicEvent;
                     }
                 }
                 //Victory Poses
-                if (inisHeroes.Read("VP" + ii) != "true")
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
                 {
                     if (i >= 1 && i <= 3)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[10] += myRare;
                     }
                     if (i >= 4 && i <= 5)
                     {//Rare Summer/Halloween 16
-                        myCostsEvent += myRare;
+                        myCostsEvent[10] += myRare;
                     }
                     if (i == 6)
                     {//Rare Event
-                        myCostsEvent += myRareEvent;
+                        myCostsEvent[10] += myRareEvent;
                     }
                 }
             }
@@ -968,6 +1119,9 @@ namespace OverwatchLootBoxTracker
         {
             inisHeroes = new IniStream(SaveFolder + "\\Mercy.ini");
 
+            myCosts[11] = 0;
+            myCostsEvent[11] = 0;
+
             for (int i = 1; i <= 40; i++)
             {
                 if (i < 10)
@@ -979,63 +1133,115 @@ namespace OverwatchLootBoxTracker
                     ii = i.ToString();
                 }
                 //Skins
-                if (inisHeroes.Read("SK" + ii) != "true")
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[11] += myRare;
                     }
                     if (i >= 5 && i <= 6)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[11] += myEpic;
                     }
                     if (i == 7)
                     {//Epic Summer 16
-                        myCostsEvent += myEpic;
+                        myCostsEvent[11] += myEpic;
                     }
                     if (i == 8)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[11] += myEpicEvent;
                     }
                     if (i >= 9 && i <= 12)
                     {//Legendary
-                        myCostsNonEvent += myLegendary;
+                        myCosts[11] += myLegendary;
                     }
                     if (i == 13 || i == 15)
                     {//Legendary Event
-                        myCostsEvent += myLegendaryEvent;
+                        myCostsEvent[11] += myLegendaryEvent;
                     }
                     if (i == 14)
                     {//Legendary Halloween 16
-                        myCostsEvent += myLegendary;
+                        myCostsEvent[11] += myLegendary;
                     }
                 }
                 //Emotes
-                if (inisHeroes.Read("EM" + ii) != "true")
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
                 {
                     if (i >= 1 && i <= 5)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[11] += myEpic;
                     }
                     if (i == 6)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[11] += myEpicEvent;
                     }
                 }
                 //Victory Poses
-                if (inisHeroes.Read("VP" + ii) != "true")
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
                 {
                     if (i >= 1 && i <= 3)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[11] += myRare;
                     }
                     if (i == 4 || i == 6)
                     {//Rare Event
-                        myCostsEvent += myRareEvent;
+                        myCostsEvent[11] += myRareEvent;
                     }
                     if (i == 5)
                     {//Rare Halloween 16
-                        myCostsEvent += myRare;
+                        myCostsEvent[11] += myRare;
+                    }
+                }
+            }
+        }
+
+        private void Moira()
+        {
+            inisHeroes = new IniStream(SaveFolder + "\\Moira.ini");
+
+            myCosts[12] = 0;
+            myCostsEvent[12] = 0;
+
+            for (int i = 1; i <= 40; i++)
+            {
+                if (i < 10)
+                {
+                    ii = "0" + i.ToString();
+                }
+                else
+                {
+                    ii = i.ToString();
+                }
+                //Skins
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
+                {
+                    if (i >= 1 && i <= 4)
+                    {//Rare
+                        myCosts[12] += myRare;
+                    }
+                    if (i >= 5 && i <= 6)
+                    {//Epic
+                        myCosts[12] += myEpic;
+                    }
+                    if (i >= 7 && i <= 10)
+                    {//Legendary
+                        myCosts[12] += myLegendary;
+                    }
+                }
+                //Emotes
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
+                {
+                    if (i >= 1 && i <= 5)
+                    {//Epic
+                        myCosts[12] += myEpic;
+                    }
+                }
+                //Victory Poses
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
+                {
+                    if (i >= 1 && i <= 3)
+                    {//Rare
+                        myCosts[12] += myRare;
                     }
                 }
             }
@@ -1045,6 +1251,9 @@ namespace OverwatchLootBoxTracker
         {
             inisHeroes = new IniStream(SaveFolder + "\\Orisa.ini");
 
+            myCosts[13] = 0;
+            myCostsEvent[13] = 0;
+
             for (int i = 1; i <= 40; i++)
             {
                 if (i < 10)
@@ -1056,47 +1265,47 @@ namespace OverwatchLootBoxTracker
                     ii = i.ToString();
                 }
                 //Skins
-                if (inisHeroes.Read("SK" + ii) != "true")
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[13] += myRare;
                     }
                     if (i >= 5 && i <= 6)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[13] += myEpic;
                     }
                     if (i >= 7 && i <= 10)
                     {//Legendary
-                        myCostsNonEvent += myLegendary;
+                        myCosts[13] += myLegendary;
                     }
                     if (i == 11)
                     {//Legendary Event
-                        myCostsEvent += myLegendaryEvent;
+                        myCostsEvent[13] += myLegendaryEvent;
                     }
                 }
                 //Emotes
-                if (inisHeroes.Read("EM" + ii) != "true")
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
                 {
                     if (i >= 1 && i <= 5)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[13] += myEpic;
                     }
                     if (i == 6)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[13] += myEpicEvent;
                     }
                 }
                 //Victory Poses
-                if (inisHeroes.Read("VP" + ii) != "true")
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
                 {
                     if (i >= 1 && i <= 3)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[13] += myRare;
                     }
                     if (i == 4)
                     {//Rare Event
-                        myCostsEvent += myRareEvent;
+                        myCostsEvent[13] += myRareEvent;
                     }
                 }
             }
@@ -1106,6 +1315,9 @@ namespace OverwatchLootBoxTracker
         {
             inisHeroes = new IniStream(SaveFolder + "\\Pharah.ini");
 
+            myCosts[14] = 0;
+            myCostsEvent[14] = 0;
+
             for (int i = 1; i <= 40; i++)
             {
                 if (i < 10)
@@ -1117,27 +1329,27 @@ namespace OverwatchLootBoxTracker
                     ii = i.ToString();
                 }
                 //Skins
-                if (inisHeroes.Read("SK" + ii) != "true")
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[14] += myRare;
                     }
                     if (i >= 5 && i <= 6)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[14] += myEpic;
                     }
                     if (i == 7)
                     {//Epic Halloween 16
-                        myCostsEvent += myEpic;
+                        myCostsEvent[14] += myEpic;
                     }
                     if (i == 8)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[14] += myEpicEvent;
                     }
                     if (i >= 9 && i <= 12)
                     {//Legendary
-                        myCostsNonEvent += myLegendary;
+                        myCosts[14] += myLegendary;
                     }
                     if (i == 13)
                     {//Origin/GotY
@@ -1145,35 +1357,35 @@ namespace OverwatchLootBoxTracker
                     }
                     if (i == 14)
                     {//Legendary Event
-                        myCostsEvent += myLegendaryEvent;
+                        myCostsEvent[14] += myLegendaryEvent;
                     }
                 }
                 //Emotes
-                if (inisHeroes.Read("EM" + ii) != "true")
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
                 {
                     if (i >= 1 && i <= 5)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[14] += myEpic;
                     }
                     if (i >= 6 && i <= 7)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[14] += myEpicEvent;
                     }
                 }
                 //Victory Poses
-                if (inisHeroes.Read("VP" + ii) != "true")
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
                 {
                     if (i >= 1 && i <= 3)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[14] += myRare;
                     }
                     if (i >= 4 && i <= 5)
                     {//Rare Summer/Halloween 16
-                        myCostsEvent += myRare;
+                        myCostsEvent[14] += myRare;
                     }
                     if (i == 6)
                     {//Rare Event
-                        myCostsEvent += myRareEvent;
+                        myCostsEvent[14] += myRareEvent;
                     }
                 }
             }
@@ -1183,6 +1395,9 @@ namespace OverwatchLootBoxTracker
         {
             inisHeroes = new IniStream(SaveFolder + "\\Reaper.ini");
 
+            myCosts[15] = 0;
+            myCostsEvent[15] = 0;
+
             for (int i = 1; i <= 40; i++)
             {
                 if (i < 10)
@@ -1194,23 +1409,23 @@ namespace OverwatchLootBoxTracker
                     ii = i.ToString();
                 }
                 //Skins
-                if (inisHeroes.Read("SK" + ii) != "true")
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[15] += myRare;
                     }
                     if (i >= 5 && i <= 6)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[15] += myEpic;
                     }
                     if (i == 7)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[15] += myEpicEvent;
                     }
                     if (i >= 8 && i <= 11)
                     {//Legendary
-                        myCostsNonEvent += myLegendary;
+                        myCosts[15] += myLegendary;
                     }
                     if (i == 12)
                     {//Legendary Origin/GotY
@@ -1218,35 +1433,35 @@ namespace OverwatchLootBoxTracker
                     }
                     if (i >= 13 && i <= 14)
                     {//Legendary Event
-                        myCostsEvent += myLegendaryEvent;
+                        myCostsEvent[15] += myLegendaryEvent;
                     }
                     if (i == 15)
                     {//Legendary Halloween 16
-                        myCostsEvent += myLegendary;
+                        myCostsEvent[15] += myLegendary;
                     }
                 }
                 //Emotes
-                if (inisHeroes.Read("EM" + ii) != "true")
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
                 {
                     if (i >= 1 && i <= 6)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[15] += myEpic;
                     }
                     if (i == 7)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[15] += myEpicEvent;
                     }
                 }
                 //Victory Poses
-                if (inisHeroes.Read("VP" + ii) != "true")
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[15] += myRare;
                     }
                     if (i >= 5 && i <= 5)
                     {//Rare Summer/Halloween 16
-                        myCostsEvent += myRare;
+                        myCostsEvent[15] += myRare;
                     }
                 }
             }
@@ -1256,6 +1471,9 @@ namespace OverwatchLootBoxTracker
         {
             inisHeroes = new IniStream(SaveFolder + "\\Reinhardt.ini");
 
+            myCosts[16] = 0;
+            myCostsEvent[16] = 0;
+
             for (int i = 1; i <= 40; i++)
             {
                 if (i < 10)
@@ -1267,63 +1485,63 @@ namespace OverwatchLootBoxTracker
                     ii = i.ToString();
                 }
                 //Skins
-                if (inisHeroes.Read("SK" + ii) != "true")
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[16] += myRare;
                     }
                     if (i >= 5 && i <= 6)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[16] += myEpic;
                     }
                     if (i == 7)
                     {//Epic Halloween 16
-                        myCostsEvent += myEpic;
+                        myCostsEvent[16] += myEpic;
                     }
                     if (i == 8)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[16] += myEpicEvent;
                     }
                     if (i >= 9 && i <= 14)
                     {//Legendary
-                        myCostsNonEvent += myLegendary;
+                        myCosts[16] += myLegendary;
                     }
                     if (i == 15)
                     {//Legendary Event
-                        myCostsEvent += myLegendaryEvent;
+                        myCostsEvent[16] += myLegendaryEvent;
                     }
                 }
                 //Emotes
-                if (inisHeroes.Read("EM" + ii) != "true")
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
                 {
                     if (i >= 1 && i <= 5)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[16] += myEpic;
                     }
                     if (i == 6)
                     {//Epic Halloween 16
-                        myCostsEvent += myEpic;
+                        myCostsEvent[16] += myEpic;
                     }
                     if (i == 7)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[16] += myEpicEvent;
                     }
                 }
                 //Victory Poses
-                if (inisHeroes.Read("VP" + ii) != "true")
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
                 {
                     if (i >= 1 && i <= 3)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[16] += myRare;
                     }
                     if (i == 4)
                     {//Rare Halloween 16
-                        myCostsEvent += myRare;
+                        myCostsEvent[16] += myRare;
                     }
                     if (i == 5)
                     {//Rare Event
-                        myCostsEvent += myRareEvent;
+                        myCostsEvent[16] += myRareEvent;
                     }
                 }
             }
@@ -1333,6 +1551,9 @@ namespace OverwatchLootBoxTracker
         {
             inisHeroes = new IniStream(SaveFolder + "\\Roadhog.ini");
 
+            myCosts[17] = 0;
+            myCostsEvent[17] = 0;
+
             for (int i = 1; i <= 40; i++)
             {
                 if (i < 10)
@@ -1344,59 +1565,59 @@ namespace OverwatchLootBoxTracker
                     ii = i.ToString();
                 }
                 //Skins
-                if (inisHeroes.Read("SK" + ii) != "true")
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[17] += myRare;
                     }
                     if (i >= 5 && i <= 6)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[17] += myEpic;
                     }
                     if (i == 7)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[17] += myEpicEvent;
                     }
                     if (i >= 8 && i <= 11)
                     {//Legendary
-                        myCostsNonEvent += myLegendary;
+                        myCosts[17] += myLegendary;
                     }
                     if (i == 12)
                     {//Legendary Halloween 16
-                        myCostsEvent += myLegendary;
+                        myCostsEvent[17] += myLegendary;
                     }
                     if (i == 13)
                     {//Legendary Event
-                        myCostsEvent += myLegendaryEvent;
+                        myCostsEvent[17] += myLegendaryEvent;
                     }
                 }
                 //Emotes
-                if (inisHeroes.Read("EM" + ii) != "true")
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
                 {
                     if (i >= 1 && i <= 5)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[17] += myEpic;
                     }
                     if (i == 6)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[17] += myEpicEvent;
                     }
                 }
                 //Victory Poses
-                if (inisHeroes.Read("VP" + ii) != "true")
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
                 {
                     if (i >= 1 && i <= 3)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[17] += myRare;
                     }
                     if (i >= 4 && i <= 5)
                     {//Rare Summer/Halloween 16
-                        myCostsEvent += myRare;
+                        myCostsEvent[17] += myRare;
                     }
                     if (i == 6)
                     {//Rare Event
-                        myCostsEvent += myRareEvent;
+                        myCostsEvent[17] += myRareEvent;
                     }
                 }
             }
@@ -1406,6 +1627,9 @@ namespace OverwatchLootBoxTracker
         {
             inisHeroes = new IniStream(SaveFolder + "\\Soldier_76.ini");
 
+            myCosts[18] = 0;
+            myCostsEvent[18] = 0;
+
             for (int i = 1; i <= 40; i++)
             {
                 if (i < 10)
@@ -1417,23 +1641,23 @@ namespace OverwatchLootBoxTracker
                     ii = i.ToString();
                 }
                 //Skins
-                if (inisHeroes.Read("SK" + ii) != "true")
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[18] += myRare;
                     }
                     if (i >= 5 && i <= 6)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[18] += myEpic;
                     }
                     if (i == 7)
                     {//Epic Halloween 16
-                        myCostsEvent += myEpic;
+                        myCostsEvent[18] += myEpic;
                     }
                     if (i >= 8 && i <= 11)
                     {//Legendary
-                        myCostsNonEvent += myLegendary;
+                        myCosts[18] += myLegendary;
                     }
                     if (i == 12)
                     {//Legendary Origin/GotY
@@ -1441,35 +1665,35 @@ namespace OverwatchLootBoxTracker
                     }
                     if (i >= 13 && i <= 14)
                     {//Legendary Event
-                        myCostsEvent += myLegendaryEvent;
+                        myCostsEvent[18] += myLegendaryEvent;
                     }
                 }
                 //Emotes
-                if (inisHeroes.Read("EM" + ii) != "true")
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
                 {
                     if (i >= 1 && i <= 5)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[18] += myEpic;
                     }
                     if (i >= 6 && i <= 7)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[18] += myEpicEvent;
                     }
                 }
                 //Victory Poses
-                if (inisHeroes.Read("VP" + ii) != "true")
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
                 {
                     if (i >= 1 && i <= 3)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[18] += myRare;
                     }
                     if (i >= 4 && i <= 5)
                     {//Rare Summer/Halloween 16
-                        myCostsEvent += myRare;
+                        myCostsEvent[18] += myRare;
                     }
                     if (i == 6)
                     {//Rare Event
-                        myCostsEvent += myRareEvent;
+                        myCostsEvent[18] += myRareEvent;
                     }
                 }
             }
@@ -1479,6 +1703,9 @@ namespace OverwatchLootBoxTracker
         {
             inisHeroes = new IniStream(SaveFolder + "\\Sombra.ini");
 
+            myCosts[19] = 0;
+            myCostsEvent[19] = 0;
+
             for (int i = 1; i <= 40; i++)
             {
                 if (i < 10)
@@ -1490,51 +1717,51 @@ namespace OverwatchLootBoxTracker
                     ii = i.ToString();
                 }
                 //Skins
-                if (inisHeroes.Read("SK" + ii) != "true")
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[19] += myRare;
                     }
                     if (i >= 5 && i <= 6)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[19] += myEpic;
                     }
                     if (i == 7)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[19] += myEpicEvent;
                     }
                     if (i >= 8 && i <= 11)
                     {//Legendary
-                        myCostsNonEvent += myLegendary;
+                        myCosts[19] += myLegendary;
                     }
                     if (i == 12)
                     {//Legendary Event
-                        myCostsEvent += myLegendaryEvent;
+                        myCostsEvent[19] += myLegendaryEvent;
                     }
                 }
                 //Emotes
-                if (inisHeroes.Read("EM" + ii) != "true")
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
                 {
                     if (i >= 1 && i <= 5)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[19] += myEpic;
                     }
                     if (i == 6)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[19] += myEpicEvent;
                     }
                 }
                 //Victory Poses
-                if (inisHeroes.Read("VP" + ii) != "true")
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
                 {
                     if (i >= 1 && i <= 3)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[19] += myRare;
                     }
                     if (i >= 4 && i <= 6)
                     {//Rare Event
-                        myCostsEvent += myRareEvent;
+                        myCostsEvent[19] += myRareEvent;
                     }
                 }
             }
@@ -1544,6 +1771,9 @@ namespace OverwatchLootBoxTracker
         {
             inisHeroes = new IniStream(SaveFolder + "\\Symmetra.ini");
 
+            myCosts[20] = 0;
+            myCostsEvent[20] = 0;
+
             for (int i = 1; i <= 40; i++)
             {
                 if (i < 10)
@@ -1555,63 +1785,63 @@ namespace OverwatchLootBoxTracker
                     ii = i.ToString();
                 }
                 //Skins
-                if (inisHeroes.Read("SK" + ii) != "true")
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[20] += myRare;
                     }
                     if (i >= 5 && i <= 6)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[20] += myEpic;
                     }
                     if (i == 7)
                     {//Epic Halloween 16
-                        myCostsEvent += myEpic;
+                        myCostsEvent[20] += myEpic;
                     }
                     if (i == 8)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[20] += myEpicEvent;
                     }
                     if (i >= 9 && i <= 12)
                     {//Legendary
-                        myCostsNonEvent += myLegendary;
+                        myCosts[20] += myLegendary;
                     }
                     if (i >= 13 && i <= 14)
                     {//Legendary Event
-                        myCostsEvent += myLegendaryEvent;
+                        myCostsEvent[20] += myLegendaryEvent;
                     }
                 }
                 //Emotes
-                if (inisHeroes.Read("EM" + ii) != "true")
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
                 {
                     if (i >= 1 && i <= 5)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[20] += myEpic;
                     }
                     if (i == 6)
                     {//Epic Summer 16
-                        myCostsEvent += myEpic;
+                        myCostsEvent[20] += myEpic;
                     }
                     if (i == 7)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[20] += myEpicEvent;
                     }
                 }
                 //Victory Poses
-                if (inisHeroes.Read("VP" + ii) != "true")
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
                 {
                     if (i >= 1 && i <= 3)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[20] += myRare;
                     }
                     if (i == 4 || i == 6)
                     {//Rare Event
-                        myCostsEvent += myRareEvent;
+                        myCostsEvent[20] += myRareEvent;
                     }
                     if (i == 5)
                     {//Rare Halloween 16
-                        myCostsEvent += myRare;
+                        myCostsEvent[20] += myRare;
                     }
                 }
             }
@@ -1621,6 +1851,9 @@ namespace OverwatchLootBoxTracker
         {
             inisHeroes = new IniStream(SaveFolder + "\\Torbjörn.ini");
 
+            myCosts[21] = 0;
+            myCostsEvent[21] = 0;
+
             for (int i = 1; i <= 40; i++)
             {
                 if (i < 10)
@@ -1632,55 +1865,55 @@ namespace OverwatchLootBoxTracker
                     ii = i.ToString();
                 }
                 //Skins
-                if (inisHeroes.Read("SK" + ii) != "true")
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[21] += myRare;
                     }
                     if (i >= 5 && i <= 6)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[21] += myEpic;
                     }
                     if (i == 7)
                     {//Epic Summer 16
-                        myCostsEvent += myEpic;
+                        myCostsEvent[21] += myEpic;
                     }
                     if (i >= 8 && i <= 11)
                     {//Legendary
-                        myCostsNonEvent += myLegendary;
+                        myCosts[21] += myLegendary;
                     }
                     if (i >= 12 && i <= 15)
                     {//Legendary Event
-                        myCostsEvent += myLegendaryEvent;
+                        myCostsEvent[21] += myLegendaryEvent;
                     }
                 }
                 //Emotes
-                if (inisHeroes.Read("EM" + ii) != "true")
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
                 {
                     if (i >= 1 && i <= 5)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[21] += myEpic;
                     }
                     if (i >= 6 && i <= 7)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[21] += myEpicEvent;
                     }
                 }
                 //Victory Poses
-                if (inisHeroes.Read("VP" + ii) != "true")
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
                 {
                     if (i >= 1 && i <= 3)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[21] += myRare;
                     }
                     if (i >= 4 && i <= 5)
                     {//Rare Summer/Halloween 16
-                        myCostsEvent += myRare;
+                        myCostsEvent[21] += myRare;
                     }
                     if (i == 6)
                     {//Rare Event
-                        myCostsEvent += myRareEvent;
+                        myCostsEvent[21] += myRareEvent;
                     }
                 }
             }
@@ -1690,6 +1923,9 @@ namespace OverwatchLootBoxTracker
         {
             inisHeroes = new IniStream(SaveFolder + "\\Tracer.ini");
 
+            myCosts[22] = 0;
+            myCostsEvent[22] = 0;
+
             for (int i = 1; i <= 40; i++)
             {
                 if (i < 10)
@@ -1701,23 +1937,23 @@ namespace OverwatchLootBoxTracker
                     ii = i.ToString();
                 }
                 //Skins
-                if (inisHeroes.Read("SK" + ii) != "true")
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[22] += myRare;
                     }
                     if (i >= 5 && i <= 6)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[22] += myEpic;
                     }
                     if (i == 7)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[22] += myEpicEvent;
                     }
                     if (i >= 8 && i <= 11)
                     {//Legendary
-                        myCostsNonEvent += myLegendary;
+                        myCosts[22] += myLegendary;
                     }
                     if (i == 12)
                     {//Legendary Origin/GotY
@@ -1725,39 +1961,39 @@ namespace OverwatchLootBoxTracker
                     }
                     if (i >= 13 && i <= 14)
                     {//Legendary Summer 16
-                        myCostsEvent += myLegendary;
+                        myCostsEvent[22] += myLegendary;
                     }
                     if (i >= 15 && i <= 17)
                     {//Legendary Event
-                        myCostsEvent += myLegendaryEvent;
+                        myCostsEvent[22] += myLegendaryEvent;
                     }
                 }
                 //Emotes
-                if (inisHeroes.Read("EM" + ii) != "true")
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
                 {
                     if (i >= 1 && i <= 5)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[22] += myEpic;
                     }
                     if (i == 6)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[22] += myEpicEvent;
                     }
                 }
                 //Victory Poses
-                if (inisHeroes.Read("VP" + ii) != "true")
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
                 {
                     if (i >= 1 && i <= 3)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[22] += myRare;
                     }
                     if (i >= 4 && i <= 5)
                     {//Rare Event
-                        myCostsEvent += myRareEvent;
+                        myCostsEvent[22] += myRareEvent;
                     }
                     if (i == 6)
                     {//Rare Halloween 16
-                        myCostsEvent += myRare;
+                        myCostsEvent[22] += myRare;
                     }
                 }
             }
@@ -1767,6 +2003,9 @@ namespace OverwatchLootBoxTracker
         {
             inisHeroes = new IniStream(SaveFolder + "\\Widowmaker.ini");
 
+            myCosts[23] = 0;
+            myCostsEvent[23] = 0;
+
             for (int i = 1; i <= 40; i++)
             {
                 if (i < 10)
@@ -1778,23 +2017,23 @@ namespace OverwatchLootBoxTracker
                     ii = i.ToString();
                 }
                 //Skins
-                if (inisHeroes.Read("SK" + ii) != "true")
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[23] += myRare;
                     }
                     if (i >= 5 && i <= 6)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[23] += myEpic;
                     }
                     if (i == 7)
                     {//Epic Summer 16
-                        myCostsEvent += myEpic;
+                        myCostsEvent[23] += myEpic;
                     }
                     if (i >= 8 && i <= 11)
                     {//Legendary
-                        myCostsNonEvent += myLegendary;
+                        myCosts[23] += myLegendary;
                     }
                     if (i == 12)
                     {//Legendary Prepurchase
@@ -1802,31 +2041,31 @@ namespace OverwatchLootBoxTracker
                     }
                     if (i >= 13 && i <= 14)
                     {//Legendary Event
-                        myCostsEvent += myLegendaryEvent;
+                        myCostsEvent[23] += myLegendaryEvent;
                     }
                 }
                 //Emotes
-                if (inisHeroes.Read("EM" + ii) != "true")
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
                 {
                     if (i >= 1 && i <= 5)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[23] += myEpic;
                     }
                     if (i == 6)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[23] += myEpicEvent;
                     }
                 }
                 //Victory Poses
-                if (inisHeroes.Read("VP" + ii) != "true")
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
                 {
                     if (i >= 1 && i <= 3)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[23] += myRare;
                     }
                     if (i >= 4 && i <= 5)
                     {//Rare Summer/Halloween 16
-                        myCostsEvent += myRare;
+                        myCostsEvent[23] += myRare;
                     }
                 }
             }
@@ -1836,6 +2075,9 @@ namespace OverwatchLootBoxTracker
         {
             inisHeroes = new IniStream(SaveFolder + "\\Winston.ini");
 
+            myCosts[24] = 0;
+            myCostsEvent[24] = 0;
+
             for (int i = 1; i <= 40; i++)
             {
                 if (i < 10)
@@ -1847,15 +2089,15 @@ namespace OverwatchLootBoxTracker
                     ii = i.ToString();
                 }
                 //Skins
-                if (inisHeroes.Read("SK" + ii) != "true")
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[24] += myRare;
                     }
                     if (i >= 5 && i <= 6)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[24] += myEpic;
                     }
                     if (i == 7)
                     {//Epic BlizzCon
@@ -1863,43 +2105,43 @@ namespace OverwatchLootBoxTracker
                     }
                     if (i >= 8 && i <= 11)
                     {//Legendary
-                        myCostsNonEvent += myLegendary;
+                        myCosts[24] += myLegendary;
                     }
                     if (i >= 12 && i <= 13)
                     {//Legendary Event
-                        myCostsEvent += myLegendaryEvent;
+                        myCostsEvent[24] += myLegendaryEvent;
                     }
                 }
                 //Emotes
-                if (inisHeroes.Read("EM" + ii) != "true")
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
                 {
                     if (i >= 1 && i <= 5)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[24] += myEpic;
                     }
                     if (i == 6)
                     {//Epic Halloween 16
-                        myCostsEvent += myEpic;
+                        myCostsEvent[24] += myEpic;
                     }
                     if (i == 7)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[24] += myEpicEvent;
                     }
                 }
                 //Victory Poses
-                if (inisHeroes.Read("VP" + ii) != "true")
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
                 {
                     if (i >= 1 && i <= 3)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[24] += myRare;
                     }
                     if (i >= 4 && i <= 5)
                     {//Rare Summer/Halloween 16
-                        myCostsEvent += myRare;
+                        myCostsEvent[24] += myRare;
                     }
                     if (i == 6)
                     {//Rare Event
-                        myCostsEvent += myRareEvent;
+                        myCostsEvent[24] += myRareEvent;
                     }
                 }
             }
@@ -1909,6 +2151,9 @@ namespace OverwatchLootBoxTracker
         {
             inisHeroes = new IniStream(SaveFolder + "\\Zarya.ini");
 
+            myCosts[25] = 0;
+            myCostsEvent[25] = 0;
+
             for (int i = 1; i <= 40; i++)
             {
                 if (i < 10)
@@ -1920,63 +2165,63 @@ namespace OverwatchLootBoxTracker
                     ii = i.ToString();
                 }
                 //Skins
-                if (inisHeroes.Read("SK" + ii) != "true")
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[25] += myRare;
                     }
                     if (i >= 5 && i <= 6)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[25] += myEpic;
                     }
                     if (i == 7)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[25] += myEpicEvent;
                     }
                     if (i >= 8 && i <= 11)
                     {//Legendary
-                        myCostsNonEvent += myLegendary;
+                        myCosts[25] += myLegendary;
                     }
                     if (i >= 12 && i <= 13)
                     {//Legendary Summer 16
-                        myCostsEvent += myLegendary;
+                        myCostsEvent[25] += myLegendary;
                     }
                     if (i >= 14 && i <= 15)
                     {//Legendary Event
-                        myCostsEvent += myLegendaryEvent;
+                        myCostsEvent[25] += myLegendaryEvent;
                     }
                 }
                 //Emotes
-                if (inisHeroes.Read("EM" + ii) != "true")
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EN" + ii) != "true")
                 {
                     if (i >= 1 && i <= 5)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[25] += myEpic;
                     }
                     if (i == 6)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[25] += myEpicEvent;
                     }
                     if (i == 6)
                     {//Legendary Event
-                        myCostsEvent += myLegendaryEvent;
+                        myCostsEvent[25] += myLegendaryEvent;
                     }
                 }
                 //Victory Poses
-                if (inisHeroes.Read("VP" + ii) != "true")
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
                 {
                     if (i >= 1 && i <= 3)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[25] += myRare;
                     }
                     if (i == 4)
                     {//Rare Halloween 16
-                        myCostsEvent += myRare;
+                        myCostsEvent[25] += myRare;
                     }
                     if (i == 5)
                     {//Rare Event
-                        myCostsEvent += myRareEvent;
+                        myCostsEvent[25] += myRareEvent;
                     }
                 }
             }
@@ -1986,6 +2231,9 @@ namespace OverwatchLootBoxTracker
         {
             inisHeroes = new IniStream(SaveFolder + "\\Zenyatta.ini");
 
+            myCosts[26] = 0;
+            myCostsEvent[26] = 0;
+
             for (int i = 1; i <= 40; i++)
             {
                 if (i < 10)
@@ -1997,51 +2245,51 @@ namespace OverwatchLootBoxTracker
                     ii = i.ToString();
                 }
                 //Skins
-                if (inisHeroes.Read("SK" + ii) != "true")
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[26] += myRare;
                     }
                     if (i >= 5 && i <= 6)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[26] += myEpic;
                     }
                     if (i == 7)
                     {//Epic
-                        myCostsEvent += myEpic;
+                        myCostsEvent[26] += myEpic;
                     }
                     if (i >= 8 && i <= 11)
                     {//Legendary
-                        myCostsNonEvent += myLegendary;
+                        myCosts[26] += myLegendary;
                     }
                     if (i >= 12 && i <= 14)
                     {//Legendary Event
-                        myCostsEvent += myLegendaryEvent;
+                        myCostsEvent[26] += myLegendaryEvent;
                     }
                 }
                 //Emotes
-                if (inisHeroes.Read("EM" + ii) != "true")
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
                 {
                     if (i >= 1 && i <= 5)
                     {//Epic
-                        myCostsNonEvent += myEpic;
+                        myCosts[26] += myEpic;
                     }
                     if (i == 6)
                     {//Epic Event
-                        myCostsEvent += myEpicEvent;
+                        myCostsEvent[26] += myEpicEvent;
                     }
                 }
                 //Victory Poses
-                if (inisHeroes.Read("VP" + ii) != "true")
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
                 {
                     if (i >= 1 && i <= 3)
                     {//Rare
-                        myCostsNonEvent += myRare;
+                        myCosts[26] += myRare;
                     }
                     if (i >= 4 && i <= 5)
                     {//Rare Summer/Halloween 16
-                        myCostsEvent += myRare;
+                        myCostsEvent[26] += myRare;
                     }
                 }
             }
