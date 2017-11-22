@@ -112,6 +112,7 @@ namespace OverwatchLootBoxTracker
             KlassenInst();
             ChangePos();
             Texte();
+            Tooltips();
         }
 
         private void OnApplicationExit(object sender, EventArgs e)
@@ -139,7 +140,15 @@ namespace OverwatchLootBoxTracker
         {
             //Farbe auslesen und auf dem Hintergrund anwenden
             Language = inisSettings.Read("Lang");
+            DisabledLangs();
             Lang.ChangeLang = Language;
+        }
+        private void DisabledLangs()
+        {
+            if (Language == "DE")
+            {
+                Language = "EN";
+            }
         }
 
         private void KlassenInst()
@@ -276,32 +285,6 @@ namespace OverwatchLootBoxTracker
             btnBackHeroe.Location = new Point(16, 677);
 
             //Buttons der Helden
-            /*btnAna.Location = new Point(7, 20);
-            btnBastion.Location = new Point(7, 49);
-            btnDVa.Location = new Point(7, 78);
-            btnDoomfist.Location = new Point(7, 107);
-            btnGeji.Location = new Point(7, 136);
-            btnHanzo.Location = new Point(7, 165);
-            btnJunkrat.Location = new Point(7, 194);
-            btnLúcio.Location = new Point(7, 223);
-            btnMcCree.Location = new Point(7, 252);
-            btnMei.Location = new Point(7, 281);
-            btnMercy.Location = new Point(7, 310);
-            btnOrisa.Location = new Point(7, 339);
-            btnPharah.Location = new Point(7, 368);
-
-            btnReaper.Location = new Point(114, 20);
-            btnReinhardt.Location = new Point(114, 49);
-            btnRoadhog.Location = new Point(114, 78);
-            btnSoldier_76.Location = new Point(114, 107);
-            btnSombra.Location = new Point(114, 136);
-            btnSymmetra.Location = new Point(114, 165);
-            btnTorbjörn.Location = new Point(114, 194);
-            btnTracer.Location = new Point(114, 223);
-            btnWidowmaker.Location = new Point(114, 252);
-            btnWinston.Location = new Point(114, 281);
-            btnZarya.Location = new Point(114, 310);
-            btnZenyatta.Location = new Point(114, 339);*/
             btnAna.Location = new Point(7, 20);
             btnBastion.Location = new Point(7, 49);
             btnDVa.Location = new Point(7, 78);
@@ -364,6 +347,23 @@ namespace OverwatchLootBoxTracker
             Texte();
         }
 
+        private void Tooltips()
+        {
+            // Create the ToolTip and associate with the Form container.
+            ToolTip tt = new ToolTip();
+
+            // Set up the delays for the ToolTip.
+            tt.AutoPopDelay = 5000;
+            tt.InitialDelay = 1000;
+            tt.ReshowDelay = 500;
+            // Force the ToolTip text to be displayed whether or not the form is active.
+            tt.ShowAlways = true;
+
+            // Set up the ToolTip text for the Button and Checkbox.
+            tt.SetToolTip(this.btnLangGerman, "Currently disabled!");
+            btnLangGerman.Enabled = false;
+        }
+
         /*
         // Ab hier beginnt der richtige Code
         */
@@ -390,18 +390,11 @@ namespace OverwatchLootBoxTracker
 
         private void btnSkins_Click(object sender, EventArgs e)
         {
-            if (gbAll.Text == Lang.Skins)
-            {
-                gbAll.Visible = !gbAll.Visible;
-                btnBackHeroe.Visible = gbAll.Visible;
-            }
-            else
-            {
-                gbAll.Visible = true;
-                gbAll.BringToFront();
-                btnBackHeroe.Visible = true;
-                btnBackHeroe.BringToFront();
-            }
+            gbAll.Visible = true;
+            gbAll.BringToFront();
+            btnBackHeroe.Visible = true;
+            btnBackHeroe.BringToFront();
+
             gBLang.Visible = false;
             btnMoreCost.Visible = false;
 
@@ -410,18 +403,11 @@ namespace OverwatchLootBoxTracker
 
         private void btnEmotes_Click(object sender, EventArgs e)
         {
-            if (gbAll.Text == Lang.Emotes)
-            {
-                gbAll.Visible = !gbAll.Visible;
-                btnBackHeroe.Visible = gbAll.Visible;
-            }
-            else
-            {
-                gbAll.Visible = true;
-                gbAll.BringToFront();
-                btnBackHeroe.Visible = true;
-                btnBackHeroe.BringToFront();
-            }
+            gbAll.Visible = true;
+            gbAll.BringToFront();
+            btnBackHeroe.Visible = true;
+            btnBackHeroe.BringToFront();
+
             gBLang.Visible = false;
             btnMoreCost.Visible = false;
 
@@ -430,18 +416,11 @@ namespace OverwatchLootBoxTracker
 
         private void btnVictoryPoses_Click(object sender, EventArgs e)
         {
-            if (gbAll.Text == Lang.VictoryPoses)
-            {
-                gbAll.Visible = !gbAll.Visible;
-                btnBackHeroe.Visible = gbAll.Visible;
-            }
-            else
-            {
-                gbAll.Visible = true;
-                gbAll.BringToFront();
-                btnBackHeroe.Visible = true;
-                btnBackHeroe.BringToFront();
-            }
+            gbAll.Visible = true;
+            gbAll.BringToFront();
+            btnBackHeroe.Visible = true;
+            btnBackHeroe.BringToFront();
+
             gBLang.Visible = false;
             btnMoreCost.Visible = false;
 
@@ -450,18 +429,11 @@ namespace OverwatchLootBoxTracker
 
         private void btnVoiceLines_Click(object sender, EventArgs e)
         {
-            if (gbAll.Text == Lang.VoiceLines)
-            {
-                gbAll.Visible = !gbAll.Visible;
-                btnBackHeroe.Visible = gbAll.Visible;
-            }
-            else
-            {
-                gbAll.Visible = true;
-                gbAll.BringToFront();
-                btnBackHeroe.Visible = true;
-                btnBackHeroe.BringToFront();
-            }
+            gbAll.Visible = true;
+            gbAll.BringToFront();
+            btnBackHeroe.Visible = true;
+            btnBackHeroe.BringToFront();
+
             gBLang.Visible = false;
             btnMoreCost.Visible = false;
 
@@ -470,18 +442,11 @@ namespace OverwatchLootBoxTracker
 
         private void btnSprays_Click(object sender, EventArgs e)
         {
-            if (gbAll.Text == Lang.Sprays)
-            {
-                gbAll.Visible = !gbAll.Visible;
-                btnBackHeroe.Visible = gbAll.Visible;
-            }
-            else
-            {
-                gbAll.Visible = true;
-                gbAll.BringToFront();
-                btnBackHeroe.Visible = true;
-                btnBackHeroe.BringToFront();
-            }
+            gbAll.Visible = true;
+            gbAll.BringToFront();
+            btnBackHeroe.Visible = true;
+            btnBackHeroe.BringToFront();
+
             gBLang.Visible = false;
             btnMoreCost.Visible = false;
 
@@ -490,18 +455,11 @@ namespace OverwatchLootBoxTracker
 
         private void btnHighlightIntros_Click(object sender, EventArgs e)
         {
-            if (gbAll.Text == Lang.HighlightIntros)
-            {
-                gbAll.Visible = !gbAll.Visible;
-                btnBackHeroe.Visible = gbAll.Visible;
-            }
-            else
-            {
-                gbAll.Visible = true;
-                gbAll.BringToFront();
-                btnBackHeroe.Visible = true;
-                btnBackHeroe.BringToFront();
-            }
+            gbAll.Visible = true;
+            gbAll.BringToFront();
+            btnBackHeroe.Visible = true;
+            btnBackHeroe.BringToFront();
+
             gBLang.Visible = false;
             btnMoreCost.Visible = false;
 
@@ -510,18 +468,11 @@ namespace OverwatchLootBoxTracker
 
         private void btnWeapons_Click(object sender, EventArgs e)
         {
-            if (gbAll.Text == Lang.Weapons)
-            {
-                gbAll.Visible = !gbAll.Visible;
-                btnBackHeroe.Visible = gbAll.Visible;
-            }
-            else
-            {
-                gbAll.Visible = true;
-                gbAll.BringToFront();
-                btnBackHeroe.Visible = true;
-                btnBackHeroe.BringToFront();
-            }
+            gbAll.Visible = true;
+            gbAll.BringToFront();
+            btnBackHeroe.Visible = true;
+            btnBackHeroe.BringToFront();
+
             gBLang.Visible = false;
             btnMoreCost.Visible = false;
 
@@ -530,18 +481,11 @@ namespace OverwatchLootBoxTracker
 
         private void btnPlayerIcons_Click(object sender, EventArgs e)
         {
-            if (gbAll.Text == Lang.PlayerIcons)
-            {
-                gbAll.Visible = !gbAll.Visible;
-                btnBackHeroe.Visible = gbAll.Visible;
-            }
-            else
-            {
-                gbAll.Visible = true;
-                gbAll.BringToFront();
-                btnBackHeroe.Visible = true;
-                btnBackHeroe.BringToFront();
-            }
+            gbAll.Visible = true;
+            gbAll.BringToFront();
+            btnBackHeroe.Visible = true;
+            btnBackHeroe.BringToFront();
+
             gBLang.Visible = false;
             btnMoreCost.Visible = false;
 

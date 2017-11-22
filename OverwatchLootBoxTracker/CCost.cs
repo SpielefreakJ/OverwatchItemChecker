@@ -229,7 +229,7 @@ namespace OverwatchLootBoxTracker
         {
             get
             {
-                myCostsWeapon = 75000;
+                myCostsWeapon = (3000*26);
                 return myCostsWeapon;
             }
         }
