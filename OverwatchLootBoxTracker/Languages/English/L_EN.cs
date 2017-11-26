@@ -71,7 +71,7 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "More Info about Costs";
+                return "More info about costs";
             }
         }
 
@@ -95,7 +95,7 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Successfully Deleted!";
+                return "Successfully deleted!";
             }
         }
 
@@ -301,7 +301,7 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Remaining costs of all Items:";
+                return "Remaining costs of all items:";
                 //return "Costs of all remaining Items:";
             }
         }
@@ -309,7 +309,7 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Remaining costs of all non-event Items:";
+                return "Remaining costs of all non-event items:";
                 //return "Costs of remaining non-event Items:";
             }
         }
@@ -318,7 +318,7 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Remaining costs of all event Items:";
+                return "Remaining costs of all event items:";
                 //return "Costs of remaining event Items:";
             }
         }
@@ -327,7 +327,7 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Remaining costs of all Weapon Items:";
+                return "Remaining costs of all weapon items:";
                 //return "Costs of remaining Weapon Items:";
             }
         }
