@@ -322,7 +322,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         {//Summer 16
             get
             {
-                return "Hoping_for_a_challenge";
+                return "Hoping for a challenge";
             }
         }
 

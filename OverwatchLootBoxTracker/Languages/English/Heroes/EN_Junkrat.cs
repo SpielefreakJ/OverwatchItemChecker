@@ -242,5 +242,176 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
                 return "Bad for your health";
             }
         }
+
+
+        //Voice Lines
+        //Common
+        public string Tick_Tock_Tick_Tock_VL
+        {
+            get
+            {
+                return "Tick-Tock-Tick-Tock";
+            }
+        }
+
+        public string _blow_it_up_again_VL
+        {
+            get
+            {
+                return "...blow it up again";
+            }
+        }
+
+        public string Anyone_want_some_BBQ_VL
+        {
+            get
+            {
+                return "Anyone want some BBQ?";
+            }
+        }
+
+        public string Brrring_VL
+        {
+            get
+            {
+                return "Brrring!";
+            }
+        }
+
+        public string Coming_up_explodey_VL
+        {
+            get
+            {
+                return "Coming up explodey!";
+            }
+        }
+
+        public string Happy_Birthday_VL
+        {
+            get
+            {
+                return "Happy Birthday";
+            }
+        }
+
+        public string Have_a_nice_day_VL
+        {
+            get
+            {
+                return "Have a nice day!";
+            }
+        }
+
+        public string It_s_the_little_things_VL
+        {
+            get
+            {
+                return "It's the little things";
+            }
+        }
+
+        public string Kaboom_VL
+        {
+            get
+            {
+                return "Kaboom";
+            }
+        }
+
+        public string Ooh_shiny_VL
+        {
+            get
+            {
+                return "Ooh, Shiny";
+            }
+        }
+
+        public string Smile_VL
+        {
+            get
+            {
+                return "Smile";
+            }
+        }
+
+        public string I_give_it_a_10_VL
+        {//Summer 16
+            get
+            {
+                return "I give it a 10!";
+            }
+        }
+
+        public string I_give_it_a_3_VL
+        {//Summer 17
+            get
+            {
+                return "I give it a 3!";
+            }
+        }
+
+        public string Happy_Halloween_VL
+        {//Halloween 16
+            get
+            {
+                return "Happy Halloween";
+            }
+        }
+
+        public string I_m_alive_VL
+        {//Halloween 17
+            get
+            {
+                return "I'm alive!";
+            }
+        }
+
+        public string Merry_Christmas_VL
+        {//Winter 16
+            get
+            {
+                return "Merry Christmas";
+            }
+        }
+
+        public string Gong_xi_fa_cai_VL
+        {//Rooster 17
+            get
+            {
+                return "Gong xi fa cai";
+            }
+        }
+
+        public string Come_the_raw_prawn_VL
+        {//Uprising 17
+            get
+            {
+                return "Come the raw prawn";
+            }
+        }
+
+        public string Too_right_VL
+        {//Uprising 17
+            get
+            {
+                return "Too right";
+            }
+        }
+
+        public string Dipstick_VL
+        {//Annyver 17
+            get
+            {
+                return "Dipstick";
+            }
+        }
+
+        public string Oops_Dropped_something_VL
+        {//Annyver 17
+            get
+            {
+                return "Oops... Dropped something";
+            }
+        }
     }
 }
