@@ -19,9 +19,9 @@ Languages:
 - German
 - English
 
-Version 0.1.5
+Version 0.1.6
 
-Setup [-here-](https://poketrainer-warren.de/OWItemTracker/setup.exe)
+Setup -soon-
 
 If you have problems or found an issue, please create an Issue above.
 
