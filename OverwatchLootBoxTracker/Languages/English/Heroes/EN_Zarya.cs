@@ -235,6 +235,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
+        public string Toast_VP
+        {//Winter 17
+            get
+            {
+                return "Toast";
+            }
+        }
+
         public string This_is_strength_VP
         {//Uprising 17
             get

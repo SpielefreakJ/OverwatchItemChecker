@@ -159,6 +159,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
                 return "Dance";
             }
         }
+        //Legendary
+        public string Puppy_EM
+        {//Winter 17
+            get
+            {
+                return "Puppy";
+            }
+        }
 
 
         //Victory Poses

@@ -141,6 +141,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
+        public string Avalanche_SK
+        {//Winter 17
+            get
+            {
+                return "Avalanche";
+            }
+        }
+
         public string Dune_Buggy_SK
         {//Annyver 2017
             get
@@ -379,6 +387,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             get
             {
                 return "W-W-Wooooo...?";
+            }
+        }
+
+        public string Bwoo_Bwoo_Bwoo_VL
+        {//Winter 2017
+            get
+            {
+                return "Bwoo Bwoo Bwoo";
             }
         }
 

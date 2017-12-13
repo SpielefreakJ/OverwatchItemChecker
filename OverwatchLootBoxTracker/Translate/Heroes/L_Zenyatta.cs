@@ -354,6 +354,21 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
+        public string Snowflake_EM//7
+        {//Winter 17
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Dance_EM;
+                }
+                else
+                {
+                    return EN.Snowflake_EM;
+                }
+            }
+        }
+
 
         //Victory Poses
         //Rare
@@ -428,6 +443,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.RIP_VP;
+                }
+            }
+        }
+
+        public string Toast_VP//6
+        {//Winter 17
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.RIP_VP;
+                }
+                else
+                {
+                    return EN.Toast_VP;
                 }
             }
         }

@@ -554,5 +554,35 @@ namespace OverwatchLootBoxTracker.Translate
                 }
             }
         }
+
+        public string And_they_sais_chivalry_is_dead_VL
+        {//Halloween 17
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.You_should_be_scared_VL;
+                }
+                else
+                {
+                    return EN.And_they_sais_chivalry_is_dead_VL;
+                }
+            }
+        }
+
+        public string Did_you_bring_me_a_present_VL
+        {//Halloween 17
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.You_should_be_scared_VL;
+                }
+                else
+                {
+                    return EN.Did_you_bring_me_a_present_VL;
+                }
+            }
+        }
     }
 }

@@ -230,6 +230,21 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
+        public string Rime_SK//13
+        {//Winter 2017
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Tulum_SK;
+                }
+                else
+                {
+                    return EN.Rime_SK;
+                }
+            }
+        }
+
 
         //Emotes
         //Epic

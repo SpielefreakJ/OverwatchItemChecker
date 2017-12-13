@@ -243,6 +243,21 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
+        public string Snow_Owl_SK//14
+        {//Winter 2017
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Corsair_SK;
+                }
+                else
+                {
+                    return EN.Snow_Owl_SK;
+                }
+            }
+        }
+
 
         //Emotes
         //Epic
@@ -774,6 +789,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.The_adults_are_talking_VL;
+                }
+            }
+        }
+
+        public string Im_too_old_for_surprises_VL//22
+        {//Winter 2017
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Im_watching_out_for_you_VL;
+                }
+                else
+                {
+                    return EN.Im_too_old_for_surprises_VL;
                 }
             }
         }

@@ -78,5 +78,49 @@ namespace OverwatchLootBoxTracker
                 }
             }
         }
+
+        public void create3()
+        {
+            inisHeroes = new IniStream(Path + "\\Ana.ini");
+            inisHeroes.Write("SK14", "false");
+
+            inisHeroes = new IniStream(Path + "\\Bastion.ini");
+            inisHeroes.Write("SK17", "false");
+
+            inisHeroes = new IniStream(Path + "\\Genji.ini");
+            inisHeroes.Write("VP06", "false");
+
+            inisHeroes = new IniStream(Path + "\\Hanzo.ini");
+            inisHeroes.Write("SK13", "false");
+
+            inisHeroes = new IniStream(Path + "\\Junkrat.ini");
+            inisHeroes.Write("SK14", "false");
+
+            inisHeroes = new IniStream(Path + "\\Mercy.ini");
+            inisHeroes.Write("VP07", "false");
+
+            inisHeroes = new IniStream(Path + "\\Orisa.ini");
+            inisHeroes.Write("EM07", "false");
+
+            inisHeroes = new IniStream(Path + "\\Roadhog.ini");
+            inisHeroes.Write("SK14", "false");
+            inisHeroes.Write("VP07", "false");
+
+            inisHeroes = new IniStream(Path + "\\Soldier_76.ini");
+            inisHeroes.Write("SK15", "false");
+
+            inisHeroes = new IniStream(Path + "\\Sombra.ini");
+            inisHeroes.Write("SK13", "false");
+
+            inisHeroes = new IniStream(Path + "\\Widowmaker.ini");
+            inisHeroes.Write("VP06", "false");
+
+            inisHeroes = new IniStream(Path + "\\Zarya.ini");
+            inisHeroes.Write("VP06", "false");
+
+            inisHeroes = new IniStream(Path + "\\Zenyatta.ini");
+            inisHeroes.Write("EM07", "false");
+            inisHeroes.Write("VP06", "false");
+        }
     }
 }

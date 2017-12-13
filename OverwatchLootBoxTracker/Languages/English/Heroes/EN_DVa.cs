@@ -374,6 +374,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
+        public string Happy_Holidays_VL
+        {//Winter 17
+            get
+            {
+                return "Happy Holidays";
+            }
+        }
+
         public string The_best_things_in_life_VL
         {//Rooster 17
             get

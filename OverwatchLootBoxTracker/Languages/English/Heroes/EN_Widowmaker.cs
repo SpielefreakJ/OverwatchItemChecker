@@ -226,5 +226,13 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
                 return "R.I.P.";
             }
         }
+
+        public string Toast_VP
+        {//Winter 17
+            get
+            {
+                return "Toast";
+            }
+        }
     }
 }

@@ -125,6 +125,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
+        public string Beachrat_SK
+        {//Winter 17
+            get
+            {
+                return "Beachrat";
+            }
+        }
+
 
         //Emotes
         //Epic
@@ -363,6 +371,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             get
             {
                 return "I'm alive!";
+            }
+        }
+
+        public string Go_on_give_it_a_shake_VL
+        {//Winter 17
+            get
+            {
+                return "Go on... Give it a shake!";
             }
         }
 

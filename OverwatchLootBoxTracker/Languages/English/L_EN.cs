@@ -17,7 +17,7 @@ namespace OverwatchLootBoxTracker.Lang
 
         private void ChangesT()
         {
-            Changes = "\n\n\nAlpha Version!\n\nFeatures:\n - Save Skins\n - Save Emotes\n - Save Victory Poses\n\nLanguages:\n- German\n- English";
+            Changes = "\n\n\nAlpha Version!\n\nFeatures:\n - Save Skins\n - Save Emotes\n - Save Victory Poses\n\nNewest Addings:\nNew Winter Items!\n\nLanguages:\n- German (Currently disabled)\n- English";
         }
 
 

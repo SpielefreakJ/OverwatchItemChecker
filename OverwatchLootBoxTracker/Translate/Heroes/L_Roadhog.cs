@@ -246,6 +246,21 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
+        public string Ice_Fisherman_SK//14
+        {//Winter 2017
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Bajie_SK;
+                }
+                else
+                {
+                    return EN.Ice_Fisherman_SK;
+                }
+            }
+        }
+
 
         //Emotes
         //Epic
@@ -428,6 +443,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Whats_mine_is_mine_VP;
+                }
+            }
+        }
+
+        public string Toast_VP//7
+        {//Winter 17
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Whats_mine_is_mine_VP;
+                }
+                else
+                {
+                    return EN.Toast_VP;
                 }
             }
         }

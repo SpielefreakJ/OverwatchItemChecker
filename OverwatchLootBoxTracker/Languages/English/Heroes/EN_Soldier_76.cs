@@ -125,6 +125,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
+        public string Alpine_76_SK
+        {//Winter 17
+            get
+            {
+                return "Alpine: 76";
+            }
+        }
+
         public string Cyborg_76_SK
         {//Annyver 2017
             get

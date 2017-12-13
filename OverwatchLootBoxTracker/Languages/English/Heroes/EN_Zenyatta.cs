@@ -176,8 +176,16 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
+        public string Snowflake_EM
+        {//Winter 17
+            get
+            {
+                return "Snowflake";
+            }
+        }
+
         public string Dance_EM
-        {//Anbnyver 17
+        {//Annyver 17
             get
             {
                 return "Dance";
@@ -224,6 +232,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             get
             {
                 return "R.I.P.";
+            }
+        }
+
+        public string Toast_VP
+        {//Winter 17
+            get
+            {
+                return "Toast";
             }
         }
     }

@@ -308,6 +308,21 @@ namespace OverwatchLootBoxTracker.Translate
                 }
             }
         }
+        //Legendary
+        public string Puppy_EM//7
+        {//Annyver 17
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Dance_EM;
+                }
+                else
+                {
+                    return EN.Puppy_EM;
+                }
+            }
+        }
 
 
         //Victory Poses

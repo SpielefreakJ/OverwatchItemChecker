@@ -109,6 +109,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
+        public string Casual_SK
+        {//Winter 17
+            get
+            {
+                return "Casual";
+            }
+        }
+
         public string Cyberninja_SK
         {//Annyver 2017
             get
@@ -355,6 +363,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             get
             {
                 return "A gift for you";
+            }
+        }
+
+        public string Cold_as_Ice_VL
+        {//Winter 17
+            get
+            {
+                return "Cold as Ice";
             }
         }
 

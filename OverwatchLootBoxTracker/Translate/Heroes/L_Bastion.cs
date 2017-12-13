@@ -290,6 +290,21 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
+        public string Avalanche_SK//17
+        {//Winter 2017
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Dune_Buggy_SK;
+                }
+                else
+                {
+                    return EN.Avalanche_SK;
+                }
+            }
+        }
+
 
         //Emotes
         //Rare
@@ -805,6 +820,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Doo_Dun_Dun_Woo_VL;
+                }
+            }
+        }
+
+        public string Bwoo_Bwoo_Bwoo_VL//22
+        {//Winter 2017
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Dwee_Doo_Hoo_VL;
+                }
+                else
+                {
+                    return EN.Bwoo_Bwoo_Bwoo_VL;
                 }
             }
         }

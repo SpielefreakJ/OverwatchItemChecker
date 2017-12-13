@@ -231,6 +231,21 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
+        public string Casual_SK//13
+        {//Winter 2017
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Cyberninja_SK;
+                }
+                else
+                {
+                    return EN.Casual_SK;
+                }
+            }
+        }
+
 
         //Emotes
         //Epic

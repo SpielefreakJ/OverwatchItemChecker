@@ -117,6 +117,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
+        public string Rime_SK
+        {//Winter 17
+            get
+            {
+                return "Rime";
+            }
+        }
+
 
         //Emotes
         //Epic

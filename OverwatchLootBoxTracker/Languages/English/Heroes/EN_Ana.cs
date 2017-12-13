@@ -127,6 +127,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
+        public string Snow_Owl_SK
+        {//Summer 2017
+            get
+            {
+                return "Snow Owl";
+            }
+        }
+
 
         //Emotes
         //Epic
@@ -337,7 +345,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         }
 
         public string Better_than_retirement_VL
-        {//Halloween 2016
+        {//Summer 2016
             get
             {
                 return "Better than retirement";
@@ -365,6 +373,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             get
             {
                 return "Don't be Scared";
+            }
+        }
+
+        public string Im_too_old_for_surprises_VL
+        {//Winter 2017
+            get
+            {
+                return "I'm too old for Surprises";
             }
         }
 

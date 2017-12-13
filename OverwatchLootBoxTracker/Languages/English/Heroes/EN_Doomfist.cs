@@ -293,5 +293,21 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
                 return "You should be scared";
             }
         }
+
+        public string And_they_sais_chivalry_is_dead_VL
+        {//Winter 17
+            get
+            {
+                return "And they said Chivalry is dead";
+            }
+        }
+
+        public string Did_you_bring_me_a_present_VL
+        {//Winter 17
+            get
+            {
+                return "Did you bring me a present?";
+            }
+        }
     }
 }

@@ -778,5 +778,20 @@ namespace OverwatchLootBoxTracker.Translate
                 }
             }
         }
+
+        public string Happy_Holidays_VL//22
+        {//Winter 17
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Aw_you_shouldnt_have_VL;
+                }
+                else
+                {
+                    return EN.Happy_Holidays_VL;
+                }
+            }
+        }
     }
 }

@@ -219,6 +219,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
+        public string Toast_VP
+        {//Winter 17
+            get
+            {
+                return "Toast";
+            }
+        }
+
         public string Meditate_VP
         {//Uprising 17
             get
@@ -347,6 +355,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             get
             {
                 return "My Halloween costume?";
+            }
+        }
+
+        public string Count_your_blessings_VL
+        {//Winter 17
+            get
+            {
+                return "Count your blessings";
             }
         }
 

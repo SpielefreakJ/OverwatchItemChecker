@@ -117,6 +117,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
+        public string Ice_Fisherman_SK
+        {//Winter 17
+            get
+            {
+                return "Ice Fisherman";
+            }
+        }
+
         public string Bajie_SK
         {//Rooster 2017
             get
@@ -216,6 +224,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             get
             {
                 return "R.I.P.";
+            }
+        }
+
+        public string Toast_VP
+        {//Winter 17
+            get
+            {
+                return "Toast";
             }
         }
 

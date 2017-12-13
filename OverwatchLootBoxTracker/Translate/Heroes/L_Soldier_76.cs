@@ -261,6 +261,21 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
+        public string Alpine_76_SK//15
+        {//Winter 2017
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Cyborg_76_SK;
+                }
+                else
+                {
+                    return EN.Alpine_76_SK;
+                }
+            }
+        }
+
 
         //Emotes
         //Epic

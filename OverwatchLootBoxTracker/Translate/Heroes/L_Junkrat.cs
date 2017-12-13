@@ -246,6 +246,21 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
+        public string Beachrat_SK//13
+        {//Winter 2017
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Dr_Junkenstein_SK;
+                }
+                else
+                {
+                    return EN.Beachrat_SK;
+                }
+            }
+        }
+
 
         //Emotes
         //Epic
