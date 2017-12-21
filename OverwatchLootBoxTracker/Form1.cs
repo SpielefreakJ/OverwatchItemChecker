@@ -18,11 +18,15 @@ namespace OverwatchLootBoxTracker
 {
     public partial class Form1 : Form
     {
+
+        #region Variablen
+
         IniStream inisSettings = null;
         IniStream inisHeroes = null;
         IniStream inisPI = null;
         CIniCreator inic;
         CCost Cost;
+        //Languages
         Translate.L_Translate Lang;
         Translate.L_Ana Ana;
         Translate.L_Bastion Bastion;
@@ -50,6 +54,12 @@ namespace OverwatchLootBoxTracker
         Translate.L_Winston Winston;
         Translate.L_Zarya Zarya;
         Translate.L_Zenyatta Zenyatta;
+        //Images
+        CHeroImage AnaProfile;
+        CHeroImage BastionProfile;
+        CHeroImage DVaProfile;
+        //
+        //Others
         string Language = "EN";
         int newSave = 0;
         int gBAllWeited3, gBAllWeited3p1, gBAllWeited3p2;
@@ -57,14 +67,15 @@ namespace OverwatchLootBoxTracker
         //int gBAllWeited5, gBAllWeited5p1, gBAllWeited5p2, gBAllWeited5p3, gBAllWeited5p4;
         int p1 = 194; int p2 = 217; int p3 = 240; int p4 = 263; int p5 = 286; int p6 = 309; int p7 = 332; int p8 = 355; int p9 = 378; int p10 = 401;
 
-        string BackSave;
+        string BackSave, BackSave2;
 
         String appdata = System.Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData);
+
+        #endregion
 
         public Form1()
         {
             Lang = new Translate.L_Translate(Language);
-            this.Width = 912; this.Height = 751;
 
             //Erstellen des Verzeichnisses "OWItemTracker" in C:\\User\[Username]\AppData\Local
             appdata += "\\OWItemTracker";
@@ -213,32 +224,6 @@ namespace OverwatchLootBoxTracker
             btnUprising.Text = Lang.Uprising;
             btnAnnyver.Text = Lang.Annyver;
             //Heroebuttons
-            btnAna.Text = Ana.Name;
-            btnBastion.Text = Bastion.Name;
-            btnDVa.Text = DVa.Name;
-            btnDoomfist.Text = Doomfist.Name;
-            btnGeji.Text = Genji.Name;
-            btnHanzo.Text = Hanzo.Name;
-            btnJunkrat.Text = Junkrat.Name;
-            btnLúcio.Text = Lúcio.Name;
-            btnMcCree.Text = McCree.Name;
-            btnMei.Text = Mei.Name;
-            btnMercy.Text = Mercy.Name;
-            btnMoira.Text = Moira.Name;
-            btnOrisa.Text = Orisa.Name;
-            btnPharah.Text = Pharah.Name;
-            btnReaper.Text = Reaper.Name;
-            btnReinhardt.Text = Reinhardt.Name;
-            btnRoadhog.Text = Roadhog.Name;
-            btnSoldier_76.Text = Soldier_76.Name;
-            btnSombra.Text = Sombra.Name;
-            btnSymmetra.Text = Symmetra.Name;
-            btnTorbjörn.Text = Torbjörn.Name;
-            btnTracer.Text = Tracer.Name;
-            btnWidowmaker.Text = Widowmaker.Name;
-            btnWinston.Text = Winston.Name;
-            btnZarya.Text = Zarya.Name;
-            btnZenyatta.Text = Zenyatta.Name;
             btnBackHeroe.Text = Lang.Back;
             //More info about remaining costs
             TextRemaining("All");
@@ -258,6 +243,8 @@ namespace OverwatchLootBoxTracker
 
         private void ChangePos()
         {
+            this.Width = 912; this.Height = 751;
+
             gBAllWeited3 = gbAll.Width;
             gBAllWeited3 /= 3;
             gBAllWeited3p1 = gBAllWeited3 - 57;
@@ -284,9 +271,79 @@ namespace OverwatchLootBoxTracker
 
             btnBackHeroe.Location = new Point(16, 677);
 
+            ChangePosHeroButton();
+        }
+
+        private void ChangePosHeroButton()
+        {
+
+            int Breite = this.Width / 10 - 28;
+
+            //Ana
+            AnaProfile = new CHeroImage("Ana");
+            Controls.Add(AnaProfile);
+            AnaProfile.Location = new Point(Breite, 50);
+            AnaProfile.Click += Ana_Click;
+
+            //Bastion
+            BastionProfile = new CHeroImage("Bastion");
+            Controls.Add(BastionProfile);
+            BastionProfile.Location = new Point(Breite + 60, 50);
+            BastionProfile.Click += Bastion_Click;
+
+            //D.Va
+            DVaProfile = new CHeroImage("D.Va");
+            Controls.Add(DVaProfile);
+            DVaProfile.Location = new Point(Breite + 120, 50);
+            DVaProfile.Click += DVa_Click;
+/*
+            //Doomfist
+            ProfilePic[4] = new CHeroImage("Doomfist");
+            Controls.Add(ProfilePic[4]);
+            ProfilePic[4].Location = new Point(Breite+180, 50);
+            ProfilePic[4].Click += Doomfist_Click;
+
+            //Genji
+            ProfilePic[5] = new CHeroImage("Genji");
+            Controls.Add(ProfilePic[5]);
+            ProfilePic[5].Location = new Point(Breite+240, 50);
+            ProfilePic[5].Click += Genji_Click;
+
+            //Hanzo
+            ProfilePic[6] = new CHeroImage("Hanzo");
+            Controls.Add(ProfilePic[6]);
+            ProfilePic[6].Location = new Point(Breite+300, 50);
+            ProfilePic[6].Click += Hanzo_Click;
+
+            //Junkrat
+            ProfilePic[7] = new CHeroImage("Junkrat");
+            Controls.Add(ProfilePic[7]);
+            ProfilePic[7].Location = new Point(Breite+360, 50);
+            ProfilePic[7].Click += Junkrat_Click;
+
+            //Lúcio
+            ProfilePic[8] = new CHeroImage("Lúcio");
+            Controls.Add(ProfilePic[8]);
+            ProfilePic[8].Location = new Point(Breite+420, 50);
+            ProfilePic[8].Click += Lúcio_Click;
+
+            //McCree
+            ProfilePic[9] = new CHeroImage("McCree");
+            Controls.Add(ProfilePic[9]);
+            ProfilePic[9].Location = new Point(Breite+480, 50);
+            ProfilePic[9].Click += McCree_Click;
+
+            //Mei
+            ProfilePic[10] = new CHeroImage("Mei");
+            Controls.Add(ProfilePic[10]);
+            ProfilePic[10].Location = new Point(Breite+540, 50);
+            ProfilePic[10].Click += Mei_Click;
+            */
+
             //Buttons der Helden
-            btnAna.Location = new Point(7, 20);
-            btnBastion.Location = new Point(7, 49);
+            /*
+            btnAna.Location = new Point(Breite, 30);
+            btnBastion.Location = new Point(Breite+Breite, 30);
             btnDVa.Location = new Point(7, 78);
             btnDoomfist.Location = new Point(7, 107);
             btnGeji.Location = new Point(7, 136);
@@ -311,7 +368,7 @@ namespace OverwatchLootBoxTracker
             btnWidowmaker.Location = new Point(114, 281);
             btnWinston.Location = new Point(114, 310);
             btnZarya.Location = new Point(114, 339);
-            btnZenyatta.Location = new Point(114, 368);
+            btnZenyatta.Location = new Point(114, 368);*/
         }
 
         private void ChangeLang()
@@ -353,8 +410,8 @@ namespace OverwatchLootBoxTracker
             ToolTip tt = new ToolTip();
 
             // Set up the delays for the ToolTip.
-            tt.AutoPopDelay = 5000;
-            tt.InitialDelay = 1000;
+            tt.AutoPopDelay = 10000;
+            tt.InitialDelay = 500;
             tt.ReshowDelay = 500;
             // Force the ToolTip text to be displayed whether or not the form is active.
             tt.ShowAlways = true;
@@ -362,6 +419,10 @@ namespace OverwatchLootBoxTracker
             // Set up the ToolTip text for the Button and Checkbox.
             tt.SetToolTip(this.btnLangGerman, "Currently disabled!");
             btnLangGerman.Enabled = false;
+
+            tt.SetToolTip(this.AnaProfile, "ANA");
+            tt.SetToolTip(this.BastionProfile, "BASTION");
+            tt.SetToolTip(this.DVaProfile, "D.VA");
         }
 
         /*
@@ -390,97 +451,83 @@ namespace OverwatchLootBoxTracker
 
         private void btnSkins_Click(object sender, EventArgs e)
         {
-            gbAll.Visible = true;
-            gbAll.BringToFront();
-            btnBackHeroe.Visible = true;
-            btnBackHeroe.BringToFront();
+            BackSave2 = Lang.Skins;
+            BtnSichtbar();
 
-            gBLang.Visible = false;
-            btnMoreCost.Visible = false;
-
-            gbAll.Text = Lang.Skins;
+            gbAll.Text += " / " + Lang.Skins;
         }
 
         private void btnEmotes_Click(object sender, EventArgs e)
         {
-            gbAll.Visible = true;
-            gbAll.BringToFront();
-            btnBackHeroe.Visible = true;
-            btnBackHeroe.BringToFront();
+            BackSave2 = Lang.Emotes;
+            BtnSichtbar();
 
-            gBLang.Visible = false;
-            btnMoreCost.Visible = false;
-
-            gbAll.Text = Lang.Emotes;
+            gbAll.Text += " / " + Lang.Emotes;
         }
 
         private void btnVictoryPoses_Click(object sender, EventArgs e)
         {
-            gbAll.Visible = true;
-            gbAll.BringToFront();
-            btnBackHeroe.Visible = true;
-            btnBackHeroe.BringToFront();
+            BackSave2 = Lang.VictoryPoses;
+            BtnSichtbar();
 
-            gBLang.Visible = false;
-            btnMoreCost.Visible = false;
-
-            gbAll.Text = Lang.VictoryPoses;
+            gbAll.Text += " / " + Lang.VictoryPoses;
         }
 
         private void btnVoiceLines_Click(object sender, EventArgs e)
         {
-            gbAll.Visible = true;
-            gbAll.BringToFront();
-            btnBackHeroe.Visible = true;
-            btnBackHeroe.BringToFront();
+            BackSave2 = Lang.VoiceLines;
+            BtnSichtbar();
 
-            gBLang.Visible = false;
-            btnMoreCost.Visible = false;
-
-            gbAll.Text = Lang.VoiceLines;
+            gbAll.Text += " / " + Lang.VoiceLines;
         }
 
         private void btnSprays_Click(object sender, EventArgs e)
         {
-            gbAll.Visible = true;
-            gbAll.BringToFront();
-            btnBackHeroe.Visible = true;
-            btnBackHeroe.BringToFront();
+            BackSave2 = Lang.Sprays;
+            BtnSichtbar();
 
-            gBLang.Visible = false;
-            btnMoreCost.Visible = false;
-
-            gbAll.Text = Lang.Sprays;
+            gbAll.Text += " / " + Lang.Sprays;
         }
 
         private void btnHighlightIntros_Click(object sender, EventArgs e)
         {
-            gbAll.Visible = true;
-            gbAll.BringToFront();
-            btnBackHeroe.Visible = true;
-            btnBackHeroe.BringToFront();
+            BackSave2 = Lang.HighlightIntros;
+            BtnSichtbar();
 
-            gBLang.Visible = false;
-            btnMoreCost.Visible = false;
-
-            gbAll.Text = Lang.HighlightIntros;
+            gbAll.Text += " / " + Lang.HighlightIntros;
         }
 
         private void btnWeapons_Click(object sender, EventArgs e)
         {
-            gbAll.Visible = true;
-            gbAll.BringToFront();
-            btnBackHeroe.Visible = true;
-            btnBackHeroe.BringToFront();
+            BackSave2 = Lang.Weapons;
+            BtnSichtbar();
 
-            gBLang.Visible = false;
-            btnMoreCost.Visible = false;
+            gbAll.Text += " / " + Lang.Weapons;
+        }
 
-            gbAll.Text = Lang.Weapons;
+        private void BtnSichtbar()
+        {
+            btnSkins.Visible = false;
+            btnEmotes.Visible = false;
+            btnVictoryPoses.Visible = false;
+
+            //
+            if (Heroe == "Ana")
+            {
+                btnAna();
+            }
+            if (Heroe == "Bastion")
+            {
+                btnBastion();
+            }
+            if (Heroe == "DVa")
+            {
+                btnDVa();
+            }
         }
 
         private void btnPlayerIcons_Click(object sender, EventArgs e)
-        {
+        {/*
             gbAll.Visible = true;
             gbAll.BringToFront();
             btnBackHeroe.Visible = true;
@@ -490,7 +537,7 @@ namespace OverwatchLootBoxTracker
             btnMoreCost.Visible = false;
 
             gbAll.Text = Lang.PlayerIcons;
-        }
+        */}
 
         private void btnMoreCost_Click(object sender, EventArgs e)
         {
@@ -543,17 +590,11 @@ namespace OverwatchLootBoxTracker
 
         private void btnBackHeroe_Click(object sender, EventArgs e)
         {
-            if (gbAll.Text == Lang.Skins || gbAll.Text == Lang.Emotes || gbAll.Text == Lang.VictoryPoses || gbAll.Text == Lang.VoiceLines || gbAll.Text == Lang.Sprays || gbAll.Text == Lang.HighlightIntros || gbAll.Text == Lang.Weapons || gbAll.Text == Lang.PlayerIcons)
+            if (gbAll.Text==BackSave)
             {
-                gbAll.Visible = false;
-                btnBackHeroe.Visible = false;
-                btnMoreCost.Visible = true;
-            }
-            else
-            {
-                btnAna.Visible = true;
-                btnBastion.Visible = true;
-                btnDVa.Visible = true;
+                AnaProfile.Visible = true;
+                BastionProfile.Visible = true;
+                DVaProfile.Visible = true;
                 btnDoomfist.Visible = true;
                 btnGeji.Visible = true;
                 btnHanzo.Visible = true;
@@ -577,6 +618,16 @@ namespace OverwatchLootBoxTracker
                 btnWinston.Visible = true;
                 btnZarya.Visible = true;
                 btnZenyatta.Visible = true;
+
+                gbAll.Visible = false;
+                btnBackHeroe.Visible = false;
+                btnMoreCost.Visible = true;
+            }
+            else if (gbAll.Text == BackSave + " / " + BackSave2)
+            {
+                btnSkins.Visible = true;
+                btnEmotes.Visible = true;
+                btnVictoryPoses.Visible = true;
 
                 gbAll.Text = BackSave;
 
@@ -657,9 +708,13 @@ namespace OverwatchLootBoxTracker
                 inisSettings.Write(H, "4");
             }*/
 
-            btnAna.Visible = false;
-            btnBastion.Visible = false;
-            btnDVa.Visible = false;
+            gBLang.Visible = false;
+            btnMoreCost.Visible = false;
+            btnBackHeroe.Visible = true;
+
+            AnaProfile.Visible = false;
+            BastionProfile.Visible = false;
+            DVaProfile.Visible = false;
             btnDoomfist.Visible = false;
             btnGeji.Visible = false;
             btnHanzo.Visible = false;
@@ -684,21 +739,26 @@ namespace OverwatchLootBoxTracker
             btnZarya.Visible = false;
             btnZenyatta.Visible = false;
 
+            gbAll.Visible = true;
             BackSave = gbAll.Text;
             chBSave = 1;
         }
 
-        private void btnAna_Click(object sender, EventArgs e)
+        private void Ana_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible("Ana", 13, 8, 6);
-            gbAll.Text += " / " + Ana.Name;
-
-            inisHeroes = new IniStream(appdata + "\\Ana.ini");
+            gbAll.Text = Ana.Name;
+            BackSave = gbAll.Text;
             Heroe = "Ana";
+        }
+
+        private void btnAna()
+        {
+            inisHeroes = new IniStream(appdata + "\\Ana.ini");
             chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
-            if (BackSave == Lang.Skins)
+            if (BackSave2 == Lang.Skins)
             {
                 chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1);
                 chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2);
@@ -748,7 +808,7 @@ namespace OverwatchLootBoxTracker
                 chB13.Checked = Convert.ToBoolean(inisHeroes.Read("SK13"));
                 chB14.Checked = Convert.ToBoolean(inisHeroes.Read("SK14"));
             }
-            if (BackSave == Lang.Emotes)
+            if (BackSave2 == Lang.Emotes)
             {
                 chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
                 chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
@@ -779,7 +839,7 @@ namespace OverwatchLootBoxTracker
                 chB07.Checked = Convert.ToBoolean(inisHeroes.Read("EM07"));
                 chB08.Checked = Convert.ToBoolean(inisHeroes.Read("EM08"));
             }
-            if (BackSave == Lang.VictoryPoses)
+            if (BackSave2 == Lang.VictoryPoses)
             {
                 chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
                 chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
@@ -794,7 +854,7 @@ namespace OverwatchLootBoxTracker
                 chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Ana.Protector_VP + " (" + Cost.Rare + ")";
                 chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Ana.Seated_VP + " (" + Cost.Rare + ")";
                 chB04.BackColor = Color.DeepSkyBlue; chB04.Text = Ana.RIP_VP + " (" + Cost.Rare + ")";//Halloween 16
-                chB05.BackColor = Color.DeepSkyBlue; chB05.Text = Ana.Toast_VP + " (" + Cost.RareEvent + ")";//Winter 16
+                chB05.BackColor = Color.DeepSkyBlue; chB05.Text = Ana.Toast_VP + " (" + Cost.Rare + ")";//Winter 16
                 chB06.BackColor = Color.DeepSkyBlue; chB06.Text = Ana.Folded_Hands_VP + " (" + Cost.RareEvent + ")";//Rooster 17
 
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("VP01"));
@@ -804,7 +864,7 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
             }
-            if (BackSave == Lang.VoiceLines)
+            if (BackSave2 == Lang.VoiceLines)
             {
                 chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1);
                 chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2);
@@ -875,7 +935,7 @@ namespace OverwatchLootBoxTracker
                 chB20.Checked = Convert.ToBoolean(inisHeroes.Read("VL20"));
                 chB21.Checked = Convert.ToBoolean(inisHeroes.Read("VL21"));
             }
-            if (BackSave == Lang.Sprays)
+            if (BackSave2 == Lang.Sprays)
             {
                 chB01.Visible = true; chB01.Text = Ana.Action_SP + " (" + Cost.Common + ")";//Common
                 chB02.Visible = true; chB02.Text = Ana.Ana_SP + " (" + Cost.Common + ")";
@@ -1048,7 +1108,7 @@ namespace OverwatchLootBoxTracker
                     chB34.Checked = true;
                 }
             }
-            if (BackSave == Lang.HighlightIntros)
+            if (BackSave2 == Lang.HighlightIntros)
             {
                 chB01.Visible = true; chB01.Text = Ana.Guardian_HI + " (" + Cost.Epic + ")";//Epic
                 chB02.Visible = true; chB02.Text = Ana.Locked_on_HI + " (" + Cost.Epic + ")";
@@ -1066,7 +1126,7 @@ namespace OverwatchLootBoxTracker
                     chB03.Checked = true;
                 }
             }
-            if (BackSave == Lang.PlayerIcons)
+            if (BackSave2 == Lang.PlayerIcons)
             {
                 chB01.Visible = true; chB01.Text = Ana.Ana_PI;//Rare
                 chB02.Visible = true; chB02.Text = Ana.Watcher_PI;
@@ -1102,17 +1162,22 @@ namespace OverwatchLootBoxTracker
             chBSave = 1;
         }
 
-        private void btnBastion_Click(object sender, EventArgs e)
-        {
-            btnHeroeinvisible("Bastion", 16, 7, 6);
-            gbAll.Text += " / " + Bastion.Name;
 
-            inisHeroes = new IniStream(appdata + "\\Bastion.ini");
+        private void Bastion_Click(object sender, EventArgs e)
+        {
+            btnHeroeinvisible("Bastion", 13, 8, 6);
+            gbAll.Text = Bastion.Name;
+            BackSave = gbAll.Text;
             Heroe = "Bastion";
+        }
+
+        private void btnBastion()
+        {
+            inisHeroes = new IniStream(appdata + "\\Bastion.ini");
             chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
-            if (BackSave == Lang.Skins)
+            if (BackSave2 == Lang.Skins)
             {
                 chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1);
                 chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2);
@@ -1172,7 +1237,7 @@ namespace OverwatchLootBoxTracker
                 chB17.Checked = Convert.ToBoolean(inisHeroes.Read("SK17"));
 
             }
-            if (BackSave == Lang.Emotes)
+            if (BackSave2 == Lang.Emotes)
             {
                 chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
                 chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
@@ -1201,7 +1266,7 @@ namespace OverwatchLootBoxTracker
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("EM06"));
                 chB07.Checked = Convert.ToBoolean(inisHeroes.Read("EM07"));
             }
-            if (BackSave == Lang.VictoryPoses)
+            if (BackSave2 == Lang.VictoryPoses)
             {
                 chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
                 chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
@@ -1227,7 +1292,7 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
             }
-            if (BackSave == Lang.VoiceLines)
+            if (BackSave2 == Lang.VoiceLines)
             {
                 chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1);
                 chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2);
@@ -1301,17 +1366,22 @@ namespace OverwatchLootBoxTracker
             chBSave = 1;
         }
 
-        private void btnDVa_Click(object sender, EventArgs e)
+
+        private void DVa_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible("D.Va", 14, 7, 6);
-            gbAll.Text += " / " + DVa.Name;
-
-            inisHeroes = new IniStream(appdata + "\\D.Va.ini");
+            gbAll.Text = DVa.Name;
+            BackSave = gbAll.Text;
             Heroe = "DVa";
+        }
+
+        private void btnDVa()
+        {
+            inisHeroes = new IniStream(appdata + "\\D.Va.ini");
             chBSave = 0;
 
             //Anzeigen, Auslesen und anwenden der chB
-            if (BackSave == Lang.Skins)
+            if (BackSave2 == Lang.Skins)
             {
                 chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1);
                 chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2);
@@ -1362,7 +1432,7 @@ namespace OverwatchLootBoxTracker
                 chB14.Checked = Convert.ToBoolean(inisHeroes.Read("SK14"));
 
             }
-            if (BackSave == Lang.Emotes)
+            if (BackSave2 == Lang.Emotes)
             {
                 chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
                 chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
@@ -1391,7 +1461,7 @@ namespace OverwatchLootBoxTracker
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("EM06"));
                 chB07.Checked = Convert.ToBoolean(inisHeroes.Read("EM07"));
             }
-            if (BackSave == Lang.VictoryPoses)
+            if (BackSave2 == Lang.VictoryPoses)
             {
                 chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
                 chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
@@ -1406,7 +1476,7 @@ namespace OverwatchLootBoxTracker
                 chB02.BackColor = Color.DeepSkyBlue; chB02.Text = DVa.Peace_VP + " (" + Cost.Rare + ")";
                 chB03.BackColor = Color.DeepSkyBlue; chB03.Text = DVa.Sitting_VP + " (" + Cost.Rare + ")";
                 chB04.BackColor = Color.DeepSkyBlue; chB04.Text = DVa.RIP_VP + " (" + Cost.Rare + ")";//Halloween 16
-                chB05.BackColor = Color.DeepSkyBlue; chB05.Text = DVa.Festive_VP + " (" + Cost.RareEvent + ")";//Winter 16
+                chB05.BackColor = Color.DeepSkyBlue; chB05.Text = DVa.Festive_VP + " (" + Cost.Rare + ")";//Winter 16
                 chB06.BackColor = Color.DeepSkyBlue; chB06.Text = DVa.Lucky_Pouch_VP + " (" + Cost.RareEvent + ")";//Rooster 17
 
                 chB00.Checked = true;
@@ -1417,7 +1487,7 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
             }
-            if (BackSave == Lang.VoiceLines)
+            if (BackSave2 == Lang.VoiceLines)
             {
                 chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1);
                 chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2);
@@ -1489,6 +1559,11 @@ namespace OverwatchLootBoxTracker
                 chB21.Checked = Convert.ToBoolean(inisHeroes.Read("VL21"));
             }
             chBSave = 1;
+        }
+
+        private void Doomfist_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void btnDoomfist_Click(object sender, EventArgs e)
@@ -1598,7 +1673,7 @@ namespace OverwatchLootBoxTracker
                 chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p3);
                 chB15.Visible = true; chB15.Location = new Point(gBAllWeited4p3, p4);
                 chB16.Visible = true; chB16.Location = new Point(gBAllWeited4p3, p5);
-             
+
                 chB00.BackColor = Color.Gainsboro; chB00.Text = Doomfist.Try_me_VL;//Default
                 chB01.BackColor = Color.Gainsboro; chB01.Text = Doomfist.Combo_Breakere_VL + " (" + Cost.Common + ")";//Common
                 chB02.BackColor = Color.Gainsboro; chB02.Text = Doomfist.Dont_get_back_up_VL + " (" + Cost.Common + ")";
@@ -1636,6 +1711,11 @@ namespace OverwatchLootBoxTracker
                 chB16.Checked = Convert.ToBoolean(inisHeroes.Read("VL16"));
             }
             chBSave = 1;
+        }
+
+        private void Genji_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void btnGeji_Click(object sender, EventArgs e)
@@ -1753,6 +1833,11 @@ namespace OverwatchLootBoxTracker
             chBSave = 1;
         }//////////////
 
+        private void Hanzo_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         private void btnHanzo_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible("Hanzo", 12, 7, 6);
@@ -1866,6 +1951,11 @@ namespace OverwatchLootBoxTracker
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
             }
             chBSave = 1;
+        }
+
+        private void Junkrat_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void btnJunkrat_Click(object sender, EventArgs e)
@@ -1989,6 +2079,11 @@ namespace OverwatchLootBoxTracker
             chBSave = 1;
         }
 
+        private void Lúcio_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         private void btnLúcio_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible("Lúcio", 17, 7, 6);
@@ -2110,6 +2205,11 @@ namespace OverwatchLootBoxTracker
             chBSave = 1;
         }
 
+        private void McCree_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
+        }
+
         private void btnMcCree_Click(object sender, EventArgs e)
         {
             btnHeroeinvisible("McCree", 15, 7, 5);
@@ -2147,7 +2247,7 @@ namespace OverwatchLootBoxTracker
                 chB05.BackColor = Color.DarkViolet; chB05.Text = McCree.On_The_Range_SK + " (" + Cost.Epic + ")";//Epic
                 chB06.BackColor = Color.DarkViolet; chB06.Text = McCree.White_Hat_SK + " (" + Cost.Epic + ")";
                 chB07.BackColor = Color.DarkViolet; chB07.Text = McCree.American_SK + " (" + Cost.Epic + ")";//Summer 16
-                chB08.BackColor = Color.DarkViolet; chB08.Text = McCree.Scrooge_SK + " (" + Cost.EpicEvent + ")";//Winter 16
+                chB08.BackColor = Color.DarkViolet; chB08.Text = McCree.Scrooge_SK + " (" + Cost.Epic + ")";//Winter 16
                 chB09.BackColor = Color.Gold; chB09.Text = McCree.Gambler_SK + " (" + Cost.Legendary + ")";//Legendary
                 chB10.BackColor = Color.Gold; chB10.Text = McCree.Riverboat_SK + " (" + Cost.Legendary + ")";
                 chB11.BackColor = Color.Gold; chB11.Text = McCree.Mystery_Man_SK + " (" + Cost.Legendary + ")";
@@ -2190,7 +2290,7 @@ namespace OverwatchLootBoxTracker
                 chB03.BackColor = Color.DarkViolet; chB03.Text = McCree.Joker_EM + " (" + Cost.Epic + ")";
                 chB04.BackColor = Color.DarkViolet; chB04.Text = McCree.Spit_EM + " (" + Cost.Epic + ")";
                 chB05.BackColor = Color.DarkViolet; chB05.Text = McCree.Take_a_load_off_EM + " (" + Cost.Epic + ")";
-                chB06.BackColor = Color.DarkViolet; chB06.Text = McCree.Hat_Trick_EM + " (" + Cost.EpicEvent + ")";//Winter 16
+                chB06.BackColor = Color.DarkViolet; chB06.Text = McCree.Hat_Trick_EM + " (" + Cost.Epic + ")";//Winter 16
                 chB07.BackColor = Color.DarkViolet; chB07.Text = McCree.Line_Dance_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
 
                 chB00.Checked = true;
@@ -2226,6 +2326,11 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
             }
             chBSave = 1;
+        }
+
+        private void Mei_Click(object sender, EventArgs e)
+        {
+            throw new NotImplementedException();
         }
 
         private void btnMei_Click(object sender, EventArgs e)
@@ -2311,7 +2416,7 @@ namespace OverwatchLootBoxTracker
                 chB04.BackColor = Color.DarkViolet; chB04.Text = Mei.Spray_EM + " (" + Cost.Epic + ")";
                 chB05.BackColor = Color.DarkViolet; chB05.Text = Mei.Yaaaaaaaaay_EM + " (" + Cost.Epic + ")";
                 chB06.BackColor = Color.DarkViolet; chB06.Text = Mei.Hopping_EM + " (" + Cost.EpicEvent + ")";//Halloween 17
-                chB07.BackColor = Color.DarkViolet; chB07.Text = Mei.Snowman_EM + " (" + Cost.EpicEvent + ")";//Winter 16
+                chB07.BackColor = Color.DarkViolet; chB07.Text = Mei.Snowman_EM + " (" + Cost.Epic + ")";//Winter 16
                 chB08.BackColor = Color.DarkViolet; chB08.Text = Mei.So_excited_EM + " (" + Cost.EpicEvent + ")";//Rooster 17
                 chB09.BackColor = Color.DarkViolet; chB09.Text = Mei.Sunny_Dance_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
 
@@ -3357,7 +3462,8 @@ namespace OverwatchLootBoxTracker
                 chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4);
                 chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
                 chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p4);
 
                 chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Heroic;//Default
                 chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Sombra.Hacked_VP + " (" + Cost.Rare + ")";//Rare
@@ -3365,6 +3471,7 @@ namespace OverwatchLootBoxTracker
                 chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Sombra.Rising_VP + " (" + Cost.Rare + ")";
                 chB04.BackColor = Color.DeepSkyBlue; chB04.Text = Sombra.Medal_VP + " (" + Cost.RareEvent + ")";//Summer 17
                 chB05.BackColor = Color.DeepSkyBlue; chB05.Text = Sombra.Pumpkinette_VP + " (" + Cost.RareEvent + ")";//Halloween 17
+                chB07.BackColor = Color.DeepSkyBlue; chB07.Text = Sombra.Toast_VP + " (" + Cost.RareEvent + ")";//Halloween 17
                 chB06.BackColor = Color.DeepSkyBlue; chB06.Text = Sombra.Sparklers_VP + " (" + Cost.RareEvent + ")";//Rooster 17
 
                 chB00.Checked = true;
@@ -3374,6 +3481,7 @@ namespace OverwatchLootBoxTracker
                 chB04.Checked = Convert.ToBoolean(inisHeroes.Read("VP04"));
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("VP07"));
             }
             chBSave = 1;
         }
@@ -4198,7 +4306,7 @@ namespace OverwatchLootBoxTracker
                 chB04.BackColor = Color.DeepSkyBlue; chB04.Text = Zenyatta.Medals_VP + " (" + Cost.Rare + ")";//Summer 16
                 chB05.BackColor = Color.DeepSkyBlue; chB05.Text = Zenyatta.RIP_VP + " (" + Cost.Rare + ")";//Halloween 16
                 chB06.BackColor = Color.DeepSkyBlue; chB06.Text = Zenyatta.Toast_VP + " (" + Cost.Rare + ")";//Winter 17
-             
+
                 chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("VP01"));
                 chB02.Checked = Convert.ToBoolean(inisHeroes.Read("VP02"));
@@ -4214,6 +4322,8 @@ namespace OverwatchLootBoxTracker
         {
 
         }
+
+        #region Checkboxen
 
         private void chB01_CheckedChanged(object sender, EventArgs e)
         {
@@ -4418,43 +4528,45 @@ namespace OverwatchLootBoxTracker
             }
         }
 
+        #endregion
+
         private void chBChange(string Nummer, bool Checkbox)
         {
             //Speichern
             if (chBSave == 1)
             {
-                if (BackSave == Lang.Skins)
+                if (BackSave2 == Lang.Skins)
                 {
                     inisHeroes.Write("SK" + Nummer, Checkbox.ToString());
                 }
-                if (BackSave == Lang.Emotes)
+                if (BackSave2 == Lang.Emotes)
                 {
                     inisHeroes.Write("EM" + Nummer, Checkbox.ToString());
                 }
-                if (BackSave == Lang.VictoryPoses)
+                if (BackSave2 == Lang.VictoryPoses)
                 {
                     inisHeroes.Write("VP" + Nummer, Checkbox.ToString());
-                }
-                if (BackSave == Lang.VoiceLines)
+                }/*
+                if (BackSave2 == Lang.VoiceLines)
                 {
                     inisHeroes.Write("VL" + Nummer, Checkbox.ToString());
                 }
-                if (BackSave == Lang.Sprays)
+                if (BackSave2 == Lang.Sprays)
                 {
                     inisHeroes.Write("SP" + Nummer, Checkbox.ToString());
                 }
-                if (BackSave == Lang.HighlightIntros)
+                if (BackSave2 == Lang.HighlightIntros)
                 {
                     inisHeroes.Write("HI" + Nummer, Checkbox.ToString());
                 }
-                if (BackSave == Lang.PlayerIcons && Heroe != "PI")
+                if (BackSave2 == Lang.PlayerIcons && Heroe != "PI")
                 {
                     inisHeroes.Write("PI" + Nummer, Checkbox.ToString());
                 }
-                if (BackSave == Lang.PlayerIcons && Heroe == "PI")
+                if (BackSave2 == Lang.PlayerIcons && Heroe == "PI")
                 {
                     inisPI.Write(Nummer, Checkbox.ToString());
-                }
+                }*/
 
                 TextRemaining(Heroe);
             }

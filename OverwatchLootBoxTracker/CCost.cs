@@ -393,7 +393,7 @@ namespace OverwatchLootBoxTracker
                     ii = i.ToString();
                 }
                 //Skins
-                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
+                if (inisHeroes.Read("SK" + ii) == "False" | inisHeroes.Read("SK" + ii) == "false")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
@@ -421,7 +421,7 @@ namespace OverwatchLootBoxTracker
                     }
                 }
                 //Emotes
-                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
+                if (inisHeroes.Read("EM" + ii) == "False" | inisHeroes.Read("EM" + ii) == "false")
                 {
                     if (i >= 1 && i <= 5)
                     {//Epic
@@ -437,17 +437,17 @@ namespace OverwatchLootBoxTracker
                     }
                 }
                 //Victory Poses
-                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
+                if (inisHeroes.Read("VP" + ii) == "False" | inisHeroes.Read("VP" + ii) == "false")
                 {
                     if (i >= 1 && i <= 3)
                     {//Rare
                         myCosts[1] += myRare;
                     }
-                    if (i == 4)
+                    if (i >= 4 && i <= 5)
                     {//Rare Halloween 16
                         myCostsEvent[1] += myRare;
                     }
-                    if (i >= 5 && i <= 6)
+                    if (i == 6)
                     {//Rare Event
                         myCostsEvent[1] += myRareEvent;
                     }
@@ -587,7 +587,7 @@ namespace OverwatchLootBoxTracker
                 //Emotes
                 if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
                 {
-                    if (i >= 1 && i <= 5)
+                    if (i >= 1 && i <= 4)
                     {//Epic
                         myCosts[3] += myEpic;
                     }
@@ -607,11 +607,11 @@ namespace OverwatchLootBoxTracker
                     {//Rare
                         myCosts[3] += myRare;
                     }
-                    if (i == 4)
-                    {//Rare Halloween 16
+                    if (i >= 4 && i <= 5)
+                    {//Rare Halloween/Winter 16
                         myCostsEvent[3] += myRare;
                     }
-                    if (i >= 5 && i <= 6)
+                    if (i == 6)
                     {//Rare Event
                         myCostsEvent[3] += myRareEvent;
                     }
@@ -879,7 +879,7 @@ namespace OverwatchLootBoxTracker
                     {//Rare
                         myCosts[7] += myRare;
                     }
-                    if (i >= 4 && i <= 5 || i == 7)
+                    if (i == 4 || i == 5 || i == 7)
                     {//Rare Event
                         myCostsEvent[7] += myRareEvent;
                     }
@@ -999,13 +999,9 @@ namespace OverwatchLootBoxTracker
                     {//Epic
                         myCosts[9] += myEpic;
                     }
-                    if (i == 7)
-                    {//Epic Summer 16
+                    if (i >= 7 && i <= 8)
+                    {//Epic Summer/Winter 16
                         myCostsEvent[9] += myEpic;
-                    }
-                    if (i == 8)
-                    {//Epic Event
-                        myCostsEvent[9] += myEpicEvent;
                     }
                     if (i >= 9 && i <= 12)
                     {//Legendary
@@ -1023,7 +1019,11 @@ namespace OverwatchLootBoxTracker
                     {//Epic
                         myCosts[9] += myEpic;
                     }
-                    if (i >= 6 && i <= 7)
+                    if (i == 6)
+                    {//Epic Winter 16
+                        myCostsEvent[9] += myEpic;
+                    }
+                    if (i == 7)
                     {//Epic Event
                         myCostsEvent[9] += myEpicEvent;
                     }
@@ -1091,9 +1091,13 @@ namespace OverwatchLootBoxTracker
                     {//Epic
                         myCosts[10] += myEpic;
                     }
-                    if (i >= 6 && i <= 9)
+                    if (i == 6 || i == 8 || i == 9)
                     {//Epic Event
                         myCostsEvent[10] += myEpicEvent;
+                    }
+                    if (i == 7)
+                    {//Epic Winter 16
+                        myCostsEvent[10] += myEpic;
                     }
                 }
                 //Victory Poses
@@ -1343,13 +1347,9 @@ namespace OverwatchLootBoxTracker
                     {//Epic
                         myCosts[14] += myEpic;
                     }
-                    if (i == 7)
-                    {//Epic Halloween 16
+                    if (i >= 7 && i <= 8)
+                    {//Epic Halloween/Winter 16
                         myCostsEvent[14] += myEpic;
-                    }
-                    if (i == 8)
-                    {//Epic Event
-                        myCostsEvent[14] += myEpicEvent;
                     }
                     if (i >= 9 && i <= 12)
                     {//Legendary
@@ -1420,8 +1420,8 @@ namespace OverwatchLootBoxTracker
                         myCosts[15] += myEpic;
                     }
                     if (i == 7)
-                    {//Epic Event
-                        myCostsEvent[15] += myEpicEvent;
+                    {//Epic Winter 16
+                        myCostsEvent[15] += myEpic;
                     }
                     if (i >= 8 && i <= 11)
                     {//Legendary
@@ -1572,8 +1572,8 @@ namespace OverwatchLootBoxTracker
                         myCosts[17] += myEpic;
                     }
                     if (i == 7)
-                    {//Epic Event
-                        myCostsEvent[17] += myEpicEvent;
+                    {//Epic Winter 16
+                        myCostsEvent[17] += myEpic;
                     }
                     if (i >= 8 && i <= 11)
                     {//Legendary
@@ -1720,8 +1720,8 @@ namespace OverwatchLootBoxTracker
                         myCosts[19] += myEpic;
                     }
                     if (i == 7)
-                    {//Epic Event
-                        myCostsEvent[19] += myEpicEvent;
+                    {//Epic Winter 16
+                        myCostsEvent[19] += myEpic;
                     }
                     if (i >= 8 && i <= 11)
                     {//Legendary
@@ -1751,7 +1751,7 @@ namespace OverwatchLootBoxTracker
                     {//Rare
                         myCosts[19] += myRare;
                     }
-                    if (i >= 4 && i <= 6)
+                    if (i >= 4 && i <= 7)
                     {//Rare Event
                         myCostsEvent[19] += myRareEvent;
                     }
@@ -1875,9 +1875,13 @@ namespace OverwatchLootBoxTracker
                     {//Legendary
                         myCosts[21] += myLegendary;
                     }
-                    if (i >= 12 && i <= 15)
+                    if (i == 12 || i == 14 || i == 15)
                     {//Legendary Event
                         myCostsEvent[21] += myLegendaryEvent;
+                    }
+                    if (i == 13)
+                    {//Legendary Winter 16
+                        myCostsEvent[21] += myLegendary;
                     }
                 }
                 //Emotes
@@ -2099,7 +2103,11 @@ namespace OverwatchLootBoxTracker
                     {//Legendary
                         myCosts[24] += myLegendary;
                     }
-                    if (i >= 12 && i <= 13)
+                    if (i == 12)
+                    {//Legendary Winter 16
+                        myCostsEvent[24] += myLegendary;
+                    }
+                    if (i == 13)
                     {//Legendary Event
                         myCostsEvent[24] += myLegendaryEvent;
                     }
@@ -2248,7 +2256,7 @@ namespace OverwatchLootBoxTracker
                         myCosts[26] += myEpic;
                     }
                     if (i == 7)
-                    {//Epic
+                    {//Epic Halloween 16
                         myCostsEvent[26] += myEpic;
                     }
                     if (i >= 8 && i <= 11)

@@ -44,17 +44,251 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OverwatchLootBoxTracker.exe" size="453600">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OverwatchLootBoxTracker.exe" size="452576">
       <assemblyIdentity name="OverwatchLootBoxTracker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>UvECZhYjAx0aytgWQN21JJ38MgKBPLziRoVp/4jIFos=</dsig:DigestValue>
+        <dsig:DigestValue>NOa+cww80EQXd9hfzEuKN6k6hCHb1+3Qb1ik4iycaZo=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
+  <file name="Images\Ana_link.png" size="20481">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ytHRRhlWgYMF1IiNnUuoD7ifXo3kn7BCxW3qIP3uBGk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Bastion_link.png" size="14450">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PnhpmNZfO4/PwrZ+4yYfJh6tSsXhLYTWEgsTXTvq1mg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\D.Va_link.png" size="20545">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jZuSqQqS6uJmtO0NadatmJ3BIye312PlllqsvB+TYi0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Doomfist_link.png" size="20011">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>aO68fRdSD4Kh9Ryu7/X0zpKM23BPXJJVg7Aqjoc0WGU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Genji_link.png" size="19160">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dBL6hi9cYtTdyojv5qAf2tg8CXSsf5xlZgVOTOGtYcU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Hanzo_link.png" size="20461">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yQ6O+HbqVOuQhOs6+JzoynKbU4YwGP+Bqj8JqcnVQjc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Junkrat_link.png" size="21938">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FUK2XVwXudzoWPHUgf/2Xi2Ie1tm3EBfPNNNSl506Cg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Lúcio_link.png" size="18751">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>f4LUZO3hi1x1ocaRuIfLGQ28Th+KOjNWLhAwVn4VXI8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\McCree_link.png" size="20499">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>a/Ze+WiEb4dBZ3hdrfgN7AWAfAlvXUEFinixbNGOWPk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Mei_link.png" size="21153">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qE4E0UPlz4BgPS2a51dIzIsEbtS+8GBtSHS0HZmeHIc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Mercy_link.png" size="21505">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>eMiRYQcOSTgvZLx2whZ1hkDPGdwNKIdhEr4K03tFY8s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Moira_link.png" size="20763">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Nm4ypCTQWmpCs514dDdmM+pP1FdZmhqkd1Me6g2uAbg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Orisa_link.png" size="24433">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>V15hjUfU15qH09KYZcVmOUFn4rOXZqPE7CaZEvqrYm8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Pharah_link.png" size="21012">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qzRFLcEMsSKTGvdAKN7oCUEuWj0Jc7cUy+zHzfguKWM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Reaper_link.png" size="15918">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>wIAjdfz2eQEYEShQoxYzwkhdaGUxxRmf7u2n4ZHpzbg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Reinhardt_link.png" size="18307">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GGceASGEb2XZMNOAG1/2UVcsnVJIOzXs/yQUS5tpil0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Roadhog_link.png" size="20186">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QMJbhddPbGrYRx/+3AFR5A0ZTjitdSxTx0zJkWCh+iU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Soldier_76_link.png" size="15536">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>DhKHqOxhWoBgVKrEF2ksK8tKOT2c6gaNzOMk9hz37VY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Sombra_link.png" size="21491">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>i/LsPJhHxqXguW5quRrZEo/0PzZs4RJ0eS6Bua1FzyE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Symmetra_link.png" size="17355">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4/AwOZctB02oBOVo5VfbjiZ6ZdOKLyJeuvKsCnytRec=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Torbjörn_link.png" size="18394">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/U8pqQnGupNpwZXCVsnqTZ8wwMKfk5Qr6D9hWGDtmlw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Tracer_link.png" size="17475">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yXQzxafKnEisdGQ5gWUD/tbcA3oTb3SBPqdfDwlxmQQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Widowmaker_link.png" size="16168">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GXnCT8sD/FxVeO3FWZcCtwgS5pY99dZLWLLvR1MvQJ8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Winston_link.png" size="22714">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3WbdMXJH01HE3ZiXG3Aw9aEUJP+A8FpGQo7lNHb+ymc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Zarya_link.png" size="20856">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RIOKs5pGShXTwDJAINUkE7BIMk1FqD3ZpKLVdYhqJig=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Zenyatta_link.png" size="15943">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yrhGphX0DPROB07LD0CPU1N0BG54JFqGBU7zaDGDrj4=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="overwatch_small.ico" size="5430">
     <hash>
       <dsig:Transforms>
@@ -71,6 +305,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>6N7MliNbVJSIAIPrecIshMbZ7zEoKLr5SQvud4LDUOw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Properties\Junkrat_link.png" size="21938">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NwWJCpbY9VF1274B5W4nNCtkku9u1/Kai4o4+SKEoGk=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

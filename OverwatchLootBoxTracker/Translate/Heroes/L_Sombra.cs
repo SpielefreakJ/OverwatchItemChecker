@@ -416,6 +416,21 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
+        public string Toast_VP//5
+        {//Winter 17
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Pumpkinette_VP;
+                }
+                else
+                {
+                    return EN.Toast_VP;
+                }
+            }
+        }
+
         public string Sparklers_VP//6
         {//Rooster 17
             get

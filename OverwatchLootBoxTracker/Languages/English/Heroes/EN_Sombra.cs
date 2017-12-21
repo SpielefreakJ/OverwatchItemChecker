@@ -219,6 +219,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             }
         }
 
+        public string Toast_VP
+        {//Winter 17
+            get
+            {
+                return "Toast";
+            }
+        }
+
         public string Sparklers_VP
         {//Rooster 17
             get

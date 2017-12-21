@@ -43,7 +43,6 @@
             this.btnWeapons = new System.Windows.Forms.Button();
             this.btnPlayerIcons = new System.Windows.Forms.Button();
             this.gbAll = new System.Windows.Forms.GroupBox();
-            this.btnMoira = new System.Windows.Forms.Button();
             this.chB00 = new System.Windows.Forms.CheckBox();
             this.chB39 = new System.Windows.Forms.CheckBox();
             this.chB38 = new System.Windows.Forms.CheckBox();
@@ -84,6 +83,7 @@
             this.chB03 = new System.Windows.Forms.CheckBox();
             this.chB02 = new System.Windows.Forms.CheckBox();
             this.chB01 = new System.Windows.Forms.CheckBox();
+            this.btnMoira = new System.Windows.Forms.Button();
             this.btnZenyatta = new System.Windows.Forms.Button();
             this.btnZarya = new System.Windows.Forms.Button();
             this.btnWinston = new System.Windows.Forms.Button();
@@ -106,9 +106,6 @@
             this.btnHanzo = new System.Windows.Forms.Button();
             this.btnGeji = new System.Windows.Forms.Button();
             this.btnDoomfist = new System.Windows.Forms.Button();
-            this.btnDVa = new System.Windows.Forms.Button();
-            this.btnBastion = new System.Windows.Forms.Button();
-            this.btnAna = new System.Windows.Forms.Button();
             this.gBMoreCost = new System.Windows.Forms.GroupBox();
             this.lblMoreInfoCost2 = new System.Windows.Forms.Label();
             this.lblMoreInfoCost = new System.Windows.Forms.Label();
@@ -145,7 +142,7 @@
             // 
             this.gBLang.Controls.Add(this.btnLangEnglish);
             this.gBLang.Controls.Add(this.btnLangGerman);
-            this.gBLang.Location = new System.Drawing.Point(848, 649);
+            this.gBLang.Location = new System.Drawing.Point(1162, 592);
             this.gBLang.Name = "gBLang";
             this.gBLang.Size = new System.Drawing.Size(200, 100);
             this.gBLang.TabIndex = 1;
@@ -185,7 +182,7 @@
             // 
             // btnSkins
             // 
-            this.btnSkins.Location = new System.Drawing.Point(16, 29);
+            this.btnSkins.Location = new System.Drawing.Point(6, 19);
             this.btnSkins.Name = "btnSkins";
             this.btnSkins.Size = new System.Drawing.Size(100, 75);
             this.btnSkins.TabIndex = 3;
@@ -195,7 +192,7 @@
             // 
             // btnEmotes
             // 
-            this.btnEmotes.Location = new System.Drawing.Point(16, 110);
+            this.btnEmotes.Location = new System.Drawing.Point(6, 100);
             this.btnEmotes.Name = "btnEmotes";
             this.btnEmotes.Size = new System.Drawing.Size(100, 75);
             this.btnEmotes.TabIndex = 4;
@@ -205,7 +202,7 @@
             // 
             // btnVictoryPoses
             // 
-            this.btnVictoryPoses.Location = new System.Drawing.Point(16, 191);
+            this.btnVictoryPoses.Location = new System.Drawing.Point(6, 180);
             this.btnVictoryPoses.Name = "btnVictoryPoses";
             this.btnVictoryPoses.Size = new System.Drawing.Size(100, 75);
             this.btnVictoryPoses.TabIndex = 5;
@@ -215,7 +212,7 @@
             // 
             // btnVoiceLines
             // 
-            this.btnVoiceLines.Location = new System.Drawing.Point(16, 272);
+            this.btnVoiceLines.Location = new System.Drawing.Point(6, 263);
             this.btnVoiceLines.Name = "btnVoiceLines";
             this.btnVoiceLines.Size = new System.Drawing.Size(100, 75);
             this.btnVoiceLines.TabIndex = 6;
@@ -227,7 +224,7 @@
             // btnSprays
             // 
             this.btnSprays.Enabled = false;
-            this.btnSprays.Location = new System.Drawing.Point(16, 353);
+            this.btnSprays.Location = new System.Drawing.Point(6, 344);
             this.btnSprays.Name = "btnSprays";
             this.btnSprays.Size = new System.Drawing.Size(100, 75);
             this.btnSprays.TabIndex = 7;
@@ -239,7 +236,7 @@
             // btnHighlightIntros
             // 
             this.btnHighlightIntros.Enabled = false;
-            this.btnHighlightIntros.Location = new System.Drawing.Point(16, 434);
+            this.btnHighlightIntros.Location = new System.Drawing.Point(6, 425);
             this.btnHighlightIntros.Name = "btnHighlightIntros";
             this.btnHighlightIntros.Size = new System.Drawing.Size(100, 75);
             this.btnHighlightIntros.TabIndex = 8;
@@ -251,7 +248,7 @@
             // btnWeapons
             // 
             this.btnWeapons.Enabled = false;
-            this.btnWeapons.Location = new System.Drawing.Point(16, 515);
+            this.btnWeapons.Location = new System.Drawing.Point(6, 506);
             this.btnWeapons.Name = "btnWeapons";
             this.btnWeapons.Size = new System.Drawing.Size(100, 75);
             this.btnWeapons.TabIndex = 10;
@@ -274,7 +271,6 @@
             // 
             // gbAll
             // 
-            this.gbAll.Controls.Add(this.btnMoira);
             this.gbAll.Controls.Add(this.chB00);
             this.gbAll.Controls.Add(this.chB39);
             this.gbAll.Controls.Add(this.chB38);
@@ -284,12 +280,19 @@
             this.gbAll.Controls.Add(this.chB34);
             this.gbAll.Controls.Add(this.chB33);
             this.gbAll.Controls.Add(this.chB32);
+            this.gbAll.Controls.Add(this.btnWeapons);
             this.gbAll.Controls.Add(this.chB31);
+            this.gbAll.Controls.Add(this.btnHighlightIntros);
             this.gbAll.Controls.Add(this.chB30);
+            this.gbAll.Controls.Add(this.btnSprays);
             this.gbAll.Controls.Add(this.chB29);
+            this.gbAll.Controls.Add(this.btnVoiceLines);
             this.gbAll.Controls.Add(this.chB28);
+            this.gbAll.Controls.Add(this.btnVictoryPoses);
             this.gbAll.Controls.Add(this.chB27);
+            this.gbAll.Controls.Add(this.btnEmotes);
             this.gbAll.Controls.Add(this.chB26);
+            this.gbAll.Controls.Add(this.btnSkins);
             this.gbAll.Controls.Add(this.chB25);
             this.gbAll.Controls.Add(this.chB24);
             this.gbAll.Controls.Add(this.chB23);
@@ -315,49 +318,14 @@
             this.gbAll.Controls.Add(this.chB03);
             this.gbAll.Controls.Add(this.chB02);
             this.gbAll.Controls.Add(this.chB01);
-            this.gbAll.Controls.Add(this.btnZenyatta);
-            this.gbAll.Controls.Add(this.btnZarya);
-            this.gbAll.Controls.Add(this.btnWinston);
-            this.gbAll.Controls.Add(this.btnWidowmaker);
-            this.gbAll.Controls.Add(this.btnTracer);
-            this.gbAll.Controls.Add(this.btnTorbjörn);
-            this.gbAll.Controls.Add(this.btnSymmetra);
-            this.gbAll.Controls.Add(this.btnSombra);
-            this.gbAll.Controls.Add(this.btnSoldier_76);
-            this.gbAll.Controls.Add(this.btnRoadhog);
-            this.gbAll.Controls.Add(this.btnReinhardt);
-            this.gbAll.Controls.Add(this.btnReaper);
-            this.gbAll.Controls.Add(this.btnPharah);
-            this.gbAll.Controls.Add(this.btnOrisa);
-            this.gbAll.Controls.Add(this.btnMercy);
-            this.gbAll.Controls.Add(this.btnMei);
-            this.gbAll.Controls.Add(this.btnMcCree);
-            this.gbAll.Controls.Add(this.btnLúcio);
-            this.gbAll.Controls.Add(this.btnJunkrat);
-            this.gbAll.Controls.Add(this.btnHanzo);
-            this.gbAll.Controls.Add(this.btnGeji);
-            this.gbAll.Controls.Add(this.btnDoomfist);
-            this.gbAll.Controls.Add(this.btnDVa);
-            this.gbAll.Controls.Add(this.btnBastion);
-            this.gbAll.Controls.Add(this.btnAna);
             this.gbAll.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.gbAll.Location = new System.Drawing.Point(137, 37);
+            this.gbAll.Location = new System.Drawing.Point(1313, 709);
             this.gbAll.Name = "gbAll";
             this.gbAll.Size = new System.Drawing.Size(868, 642);
             this.gbAll.TabIndex = 12;
             this.gbAll.TabStop = false;
             this.gbAll.Text = "gbAll";
             this.gbAll.Visible = false;
-            // 
-            // btnMoira
-            // 
-            this.btnMoira.Location = new System.Drawing.Point(68, 605);
-            this.btnMoira.Name = "btnMoira";
-            this.btnMoira.Size = new System.Drawing.Size(101, 23);
-            this.btnMoira.TabIndex = 65;
-            this.btnMoira.Text = "btnMoira";
-            this.btnMoira.UseVisualStyleBackColor = true;
-            this.btnMoira.Click += new System.EventHandler(this.btnMoira_Click);
             // 
             // chB00
             // 
@@ -846,9 +814,19 @@
             this.chB01.Visible = false;
             this.chB01.CheckedChanged += new System.EventHandler(this.chB01_CheckedChanged);
             // 
+            // btnMoira
+            // 
+            this.btnMoira.Location = new System.Drawing.Point(1028, 342);
+            this.btnMoira.Name = "btnMoira";
+            this.btnMoira.Size = new System.Drawing.Size(101, 23);
+            this.btnMoira.TabIndex = 65;
+            this.btnMoira.Text = "btnMoira";
+            this.btnMoira.UseVisualStyleBackColor = true;
+            this.btnMoira.Click += new System.EventHandler(this.btnMoira_Click);
+            // 
             // btnZenyatta
             // 
-            this.btnZenyatta.Location = new System.Drawing.Point(699, 605);
+            this.btnZenyatta.Location = new System.Drawing.Point(1028, 748);
             this.btnZenyatta.Name = "btnZenyatta";
             this.btnZenyatta.Size = new System.Drawing.Size(101, 23);
             this.btnZenyatta.TabIndex = 24;
@@ -858,7 +836,7 @@
             // 
             // btnZarya
             // 
-            this.btnZarya.Location = new System.Drawing.Point(671, 605);
+            this.btnZarya.Location = new System.Drawing.Point(1028, 719);
             this.btnZarya.Name = "btnZarya";
             this.btnZarya.Size = new System.Drawing.Size(101, 23);
             this.btnZarya.TabIndex = 23;
@@ -868,7 +846,7 @@
             // 
             // btnWinston
             // 
-            this.btnWinston.Location = new System.Drawing.Point(639, 605);
+            this.btnWinston.Location = new System.Drawing.Point(1028, 690);
             this.btnWinston.Name = "btnWinston";
             this.btnWinston.Size = new System.Drawing.Size(101, 23);
             this.btnWinston.TabIndex = 22;
@@ -878,7 +856,7 @@
             // 
             // btnWidowmaker
             // 
-            this.btnWidowmaker.Location = new System.Drawing.Point(611, 605);
+            this.btnWidowmaker.Location = new System.Drawing.Point(1028, 661);
             this.btnWidowmaker.Name = "btnWidowmaker";
             this.btnWidowmaker.Size = new System.Drawing.Size(101, 23);
             this.btnWidowmaker.TabIndex = 21;
@@ -888,7 +866,7 @@
             // 
             // btnTracer
             // 
-            this.btnTracer.Location = new System.Drawing.Point(558, 605);
+            this.btnTracer.Location = new System.Drawing.Point(1028, 632);
             this.btnTracer.Name = "btnTracer";
             this.btnTracer.Size = new System.Drawing.Size(101, 23);
             this.btnTracer.TabIndex = 20;
@@ -898,7 +876,7 @@
             // 
             // btnTorbjörn
             // 
-            this.btnTorbjörn.Location = new System.Drawing.Point(521, 605);
+            this.btnTorbjörn.Location = new System.Drawing.Point(1028, 603);
             this.btnTorbjörn.Name = "btnTorbjörn";
             this.btnTorbjörn.Size = new System.Drawing.Size(101, 23);
             this.btnTorbjörn.TabIndex = 19;
@@ -908,7 +886,7 @@
             // 
             // btnSymmetra
             // 
-            this.btnSymmetra.Location = new System.Drawing.Point(492, 605);
+            this.btnSymmetra.Location = new System.Drawing.Point(1028, 574);
             this.btnSymmetra.Name = "btnSymmetra";
             this.btnSymmetra.Size = new System.Drawing.Size(101, 23);
             this.btnSymmetra.TabIndex = 18;
@@ -918,7 +896,7 @@
             // 
             // btnSombra
             // 
-            this.btnSombra.Location = new System.Drawing.Point(463, 605);
+            this.btnSombra.Location = new System.Drawing.Point(1028, 545);
             this.btnSombra.Name = "btnSombra";
             this.btnSombra.Size = new System.Drawing.Size(101, 23);
             this.btnSombra.TabIndex = 17;
@@ -928,7 +906,7 @@
             // 
             // btnSoldier_76
             // 
-            this.btnSoldier_76.Location = new System.Drawing.Point(432, 605);
+            this.btnSoldier_76.Location = new System.Drawing.Point(1028, 516);
             this.btnSoldier_76.Name = "btnSoldier_76";
             this.btnSoldier_76.Size = new System.Drawing.Size(101, 23);
             this.btnSoldier_76.TabIndex = 16;
@@ -938,7 +916,7 @@
             // 
             // btnRoadhog
             // 
-            this.btnRoadhog.Location = new System.Drawing.Point(405, 605);
+            this.btnRoadhog.Location = new System.Drawing.Point(1028, 487);
             this.btnRoadhog.Name = "btnRoadhog";
             this.btnRoadhog.Size = new System.Drawing.Size(101, 23);
             this.btnRoadhog.TabIndex = 15;
@@ -948,7 +926,7 @@
             // 
             // btnReinhardt
             // 
-            this.btnReinhardt.Location = new System.Drawing.Point(385, 605);
+            this.btnReinhardt.Location = new System.Drawing.Point(1028, 458);
             this.btnReinhardt.Name = "btnReinhardt";
             this.btnReinhardt.Size = new System.Drawing.Size(101, 23);
             this.btnReinhardt.TabIndex = 14;
@@ -958,7 +936,7 @@
             // 
             // btnReaper
             // 
-            this.btnReaper.Location = new System.Drawing.Point(356, 605);
+            this.btnReaper.Location = new System.Drawing.Point(1028, 429);
             this.btnReaper.Name = "btnReaper";
             this.btnReaper.Size = new System.Drawing.Size(101, 23);
             this.btnReaper.TabIndex = 13;
@@ -968,7 +946,7 @@
             // 
             // btnPharah
             // 
-            this.btnPharah.Location = new System.Drawing.Point(339, 605);
+            this.btnPharah.Location = new System.Drawing.Point(1028, 400);
             this.btnPharah.Name = "btnPharah";
             this.btnPharah.Size = new System.Drawing.Size(101, 23);
             this.btnPharah.TabIndex = 12;
@@ -978,7 +956,7 @@
             // 
             // btnOrisa
             // 
-            this.btnOrisa.Location = new System.Drawing.Point(325, 605);
+            this.btnOrisa.Location = new System.Drawing.Point(1028, 371);
             this.btnOrisa.Name = "btnOrisa";
             this.btnOrisa.Size = new System.Drawing.Size(101, 23);
             this.btnOrisa.TabIndex = 11;
@@ -988,7 +966,7 @@
             // 
             // btnMercy
             // 
-            this.btnMercy.Location = new System.Drawing.Point(310, 605);
+            this.btnMercy.Location = new System.Drawing.Point(1028, 313);
             this.btnMercy.Name = "btnMercy";
             this.btnMercy.Size = new System.Drawing.Size(101, 23);
             this.btnMercy.TabIndex = 10;
@@ -998,7 +976,7 @@
             // 
             // btnMei
             // 
-            this.btnMei.Location = new System.Drawing.Point(298, 605);
+            this.btnMei.Location = new System.Drawing.Point(1028, 284);
             this.btnMei.Name = "btnMei";
             this.btnMei.Size = new System.Drawing.Size(101, 23);
             this.btnMei.TabIndex = 9;
@@ -1008,7 +986,7 @@
             // 
             // btnMcCree
             // 
-            this.btnMcCree.Location = new System.Drawing.Point(290, 605);
+            this.btnMcCree.Location = new System.Drawing.Point(1028, 255);
             this.btnMcCree.Name = "btnMcCree";
             this.btnMcCree.Size = new System.Drawing.Size(101, 23);
             this.btnMcCree.TabIndex = 8;
@@ -1018,7 +996,7 @@
             // 
             // btnLúcio
             // 
-            this.btnLúcio.Location = new System.Drawing.Point(266, 605);
+            this.btnLúcio.Location = new System.Drawing.Point(1028, 226);
             this.btnLúcio.Name = "btnLúcio";
             this.btnLúcio.Size = new System.Drawing.Size(101, 23);
             this.btnLúcio.TabIndex = 7;
@@ -1028,7 +1006,7 @@
             // 
             // btnJunkrat
             // 
-            this.btnJunkrat.Location = new System.Drawing.Point(249, 605);
+            this.btnJunkrat.Location = new System.Drawing.Point(1028, 197);
             this.btnJunkrat.Name = "btnJunkrat";
             this.btnJunkrat.Size = new System.Drawing.Size(101, 23);
             this.btnJunkrat.TabIndex = 6;
@@ -1038,7 +1016,7 @@
             // 
             // btnHanzo
             // 
-            this.btnHanzo.Location = new System.Drawing.Point(232, 605);
+            this.btnHanzo.Location = new System.Drawing.Point(1028, 168);
             this.btnHanzo.Name = "btnHanzo";
             this.btnHanzo.Size = new System.Drawing.Size(101, 23);
             this.btnHanzo.TabIndex = 5;
@@ -1048,7 +1026,7 @@
             // 
             // btnGeji
             // 
-            this.btnGeji.Location = new System.Drawing.Point(203, 605);
+            this.btnGeji.Location = new System.Drawing.Point(1028, 139);
             this.btnGeji.Name = "btnGeji";
             this.btnGeji.Size = new System.Drawing.Size(101, 23);
             this.btnGeji.TabIndex = 4;
@@ -1058,7 +1036,7 @@
             // 
             // btnDoomfist
             // 
-            this.btnDoomfist.Location = new System.Drawing.Point(175, 605);
+            this.btnDoomfist.Location = new System.Drawing.Point(1028, 110);
             this.btnDoomfist.Name = "btnDoomfist";
             this.btnDoomfist.Size = new System.Drawing.Size(101, 23);
             this.btnDoomfist.TabIndex = 3;
@@ -1066,41 +1044,11 @@
             this.btnDoomfist.UseVisualStyleBackColor = true;
             this.btnDoomfist.Click += new System.EventHandler(this.btnDoomfist_Click);
             // 
-            // btnDVa
-            // 
-            this.btnDVa.Location = new System.Drawing.Point(142, 605);
-            this.btnDVa.Name = "btnDVa";
-            this.btnDVa.Size = new System.Drawing.Size(101, 23);
-            this.btnDVa.TabIndex = 2;
-            this.btnDVa.Text = "btnDVa";
-            this.btnDVa.UseVisualStyleBackColor = true;
-            this.btnDVa.Click += new System.EventHandler(this.btnDVa_Click);
-            // 
-            // btnBastion
-            // 
-            this.btnBastion.Location = new System.Drawing.Point(125, 605);
-            this.btnBastion.Name = "btnBastion";
-            this.btnBastion.Size = new System.Drawing.Size(101, 23);
-            this.btnBastion.TabIndex = 1;
-            this.btnBastion.Text = "btnBastion";
-            this.btnBastion.UseVisualStyleBackColor = true;
-            this.btnBastion.Click += new System.EventHandler(this.btnBastion_Click);
-            // 
-            // btnAna
-            // 
-            this.btnAna.Location = new System.Drawing.Point(96, 605);
-            this.btnAna.Name = "btnAna";
-            this.btnAna.Size = new System.Drawing.Size(101, 23);
-            this.btnAna.TabIndex = 0;
-            this.btnAna.Text = "btnAna";
-            this.btnAna.UseVisualStyleBackColor = true;
-            this.btnAna.Click += new System.EventHandler(this.btnAna_Click);
-            // 
             // gBMoreCost
             // 
             this.gBMoreCost.Controls.Add(this.lblMoreInfoCost2);
             this.gBMoreCost.Controls.Add(this.lblMoreInfoCost);
-            this.gBMoreCost.Location = new System.Drawing.Point(187, 697);
+            this.gBMoreCost.Location = new System.Drawing.Point(250, 698);
             this.gBMoreCost.Name = "gBMoreCost";
             this.gBMoreCost.Size = new System.Drawing.Size(236, 278);
             this.gBMoreCost.TabIndex = 0;
@@ -1204,7 +1152,7 @@
             this.gBWelcome.Controls.Add(this.lblCopyrightVersion);
             this.gBWelcome.Controls.Add(this.lblChanges);
             this.gBWelcome.Controls.Add(this.btnWelcomeClose);
-            this.gBWelcome.Location = new System.Drawing.Point(791, 677);
+            this.gBWelcome.Location = new System.Drawing.Point(664, 755);
             this.gBWelcome.Name = "gBWelcome";
             this.gBWelcome.Size = new System.Drawing.Size(283, 184);
             this.gBWelcome.TabIndex = 20;
@@ -1270,7 +1218,8 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
-            this.ClientSize = new System.Drawing.Size(896, 712);
+            this.ClientSize = new System.Drawing.Size(1433, 808);
+            this.Controls.Add(this.btnMoira);
             this.Controls.Add(this.gBWelcome);
             this.Controls.Add(this.btnBackHeroe);
             this.Controls.Add(this.gBMoreCost);
@@ -1279,13 +1228,6 @@
             this.Controls.Add(this.gBLang);
             this.Controls.Add(this.gbAll);
             this.Controls.Add(this.btnPlayerIcons);
-            this.Controls.Add(this.btnWeapons);
-            this.Controls.Add(this.btnHighlightIntros);
-            this.Controls.Add(this.btnSprays);
-            this.Controls.Add(this.btnVoiceLines);
-            this.Controls.Add(this.btnVictoryPoses);
-            this.Controls.Add(this.btnEmotes);
-            this.Controls.Add(this.btnSkins);
             this.Controls.Add(this.lblKosten);
             this.Controls.Add(this.btnAnnyver);
             this.Controls.Add(this.btnUprising);
@@ -1293,6 +1235,28 @@
             this.Controls.Add(this.btnWinter);
             this.Controls.Add(this.btnHalloween);
             this.Controls.Add(this.btnSummer);
+            this.Controls.Add(this.btnSombra);
+            this.Controls.Add(this.btnDoomfist);
+            this.Controls.Add(this.btnGeji);
+            this.Controls.Add(this.btnHanzo);
+            this.Controls.Add(this.btnJunkrat);
+            this.Controls.Add(this.btnLúcio);
+            this.Controls.Add(this.btnMcCree);
+            this.Controls.Add(this.btnMei);
+            this.Controls.Add(this.btnMercy);
+            this.Controls.Add(this.btnOrisa);
+            this.Controls.Add(this.btnPharah);
+            this.Controls.Add(this.btnReaper);
+            this.Controls.Add(this.btnReinhardt);
+            this.Controls.Add(this.btnRoadhog);
+            this.Controls.Add(this.btnSoldier_76);
+            this.Controls.Add(this.btnSymmetra);
+            this.Controls.Add(this.btnZenyatta);
+            this.Controls.Add(this.btnTorbjörn);
+            this.Controls.Add(this.btnZarya);
+            this.Controls.Add(this.btnTracer);
+            this.Controls.Add(this.btnWinston);
+            this.Controls.Add(this.btnWidowmaker);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -1341,7 +1305,6 @@
         private System.Windows.Forms.Timer tmrWelcome;
         private System.Windows.Forms.Button btnWelcomeClose;
         private System.Windows.Forms.Label lblChanges;
-        private System.Windows.Forms.Button btnAna;
         private System.Windows.Forms.Button btnZenyatta;
         private System.Windows.Forms.Button btnZarya;
         private System.Windows.Forms.Button btnWinston;
@@ -1364,8 +1327,6 @@
         private System.Windows.Forms.Button btnHanzo;
         private System.Windows.Forms.Button btnGeji;
         private System.Windows.Forms.Button btnDoomfist;
-        private System.Windows.Forms.Button btnDVa;
-        private System.Windows.Forms.Button btnBastion;
         private System.Windows.Forms.Button btnBackHeroe;
         private System.Windows.Forms.CheckBox chB01;
         private System.Windows.Forms.CheckBox chB16;

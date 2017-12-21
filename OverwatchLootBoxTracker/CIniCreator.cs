@@ -111,6 +111,7 @@ namespace OverwatchLootBoxTracker
 
             inisHeroes = new IniStream(Path + "\\Sombra.ini");
             inisHeroes.Write("SK13", "false");
+            inisHeroes.Write("VP07", "false");
 
             inisHeroes = new IniStream(Path + "\\Widowmaker.ini");
             inisHeroes.Write("VP06", "false");
