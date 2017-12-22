@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Drawing;
 
 namespace OverwatchLootBoxTracker.Translate
 {
-    class L_Mercy
+    class L_Mercy : PictureBox
     {
         Languages.English.Heroes.EN_Mercy EN;
         Languages.German.Heroes.DE_Mercy DE;
@@ -18,6 +20,9 @@ namespace OverwatchLootBoxTracker.Translate
 
             EN = new Languages.English.Heroes.EN_Mercy();
             DE = new Languages.German.Heroes.DE_Mercy();
+
+            SizeMode = PictureBoxSizeMode.AutoSize;
+            Image = Image.FromFile("Images\\Mercy_link.png");
         }
 
         public string ChangeLang
@@ -32,18 +37,15 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Name
+        public string GetName()
         {
-            get
+            if (myLang == "DE")
             {
-                if (myLang == "DE")
-                {
-                    return DE.Name;
-                }
-                else
-                {
-                    return EN.Name;
-                }
+                return DE.Name;
+            }
+            else
+            {
+                return EN.Name;
             }
         }
 

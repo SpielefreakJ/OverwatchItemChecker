@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Drawing;
 
 namespace OverwatchLootBoxTracker.Translate
 {
-    class L_DVa
+    class L_DVa : PictureBox
     {
         Languages.English.Heroes.EN_DVa EN;
         Languages.German.Heroes.DE_DVa DE;
@@ -18,6 +20,9 @@ namespace OverwatchLootBoxTracker.Translate
 
             EN = new Languages.English.Heroes.EN_DVa();
             DE = new Languages.German.Heroes.DE_DVa();
+
+            SizeMode = PictureBoxSizeMode.AutoSize;
+            Image = Image.FromFile("Images\\D.Va_link.png");
         }
 
         public string ChangeLang
@@ -32,18 +37,15 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Name
+        public string GetName()
         {
-            get
+            if (myLang == "DE")
             {
-                if (myLang == "DE")
-                {
-                    return DE.Name;
-                }
-                else
-                {
-                    return EN.Name;
-                }
+                return DE.Name;
+            }
+            else
+            {
+                return EN.Name;
             }
         }
 

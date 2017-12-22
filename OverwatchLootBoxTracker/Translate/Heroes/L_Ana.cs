@@ -3,10 +3,12 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
+using System.Drawing;
 
 namespace OverwatchLootBoxTracker.Translate
 {
-    class L_Ana
+    class L_Ana : PictureBox
     {
         Languages.English.Heroes.EN_Ana EN;
         Languages.German.Heroes.DE_Ana DE;
@@ -18,6 +20,9 @@ namespace OverwatchLootBoxTracker.Translate
 
             EN = new Languages.English.Heroes.EN_Ana();
             DE = new Languages.German.Heroes.DE_Ana();
+
+            SizeMode = PictureBoxSizeMode.AutoSize;
+            Image = Image.FromFile("Images\\Ana_link.png");
         }
 
         public string ChangeLang
@@ -32,14 +37,15 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Name
+        public string GetName()
         {
-            get
+            if (myLang == "DE")
             {
-                //else
-                {
-                    return EN.Name;
-                }
+                return DE.Name;
+            }
+            else
+            {
+                return EN.Name;
             }
         }
 
@@ -63,7 +69,7 @@ namespace OverwatchLootBoxTracker.Translate
 
         public string Garnet_SK//2
         {
-           get
+            get
             {
                 if (myLang == "DE")
                 {

@@ -43,6 +43,21 @@
             this.btnWeapons = new System.Windows.Forms.Button();
             this.btnPlayerIcons = new System.Windows.Forms.Button();
             this.gbAll = new System.Windows.Forms.GroupBox();
+            this.btn00 = new System.Windows.Forms.Button();
+            this.btn14 = new System.Windows.Forms.Button();
+            this.btn13 = new System.Windows.Forms.Button();
+            this.btn12 = new System.Windows.Forms.Button();
+            this.btn11 = new System.Windows.Forms.Button();
+            this.btn10 = new System.Windows.Forms.Button();
+            this.btn09 = new System.Windows.Forms.Button();
+            this.btn08 = new System.Windows.Forms.Button();
+            this.btn07 = new System.Windows.Forms.Button();
+            this.btn06 = new System.Windows.Forms.Button();
+            this.btn05 = new System.Windows.Forms.Button();
+            this.btn04 = new System.Windows.Forms.Button();
+            this.btn03 = new System.Windows.Forms.Button();
+            this.btn02 = new System.Windows.Forms.Button();
+            this.btn01 = new System.Windows.Forms.Button();
             this.chB00 = new System.Windows.Forms.CheckBox();
             this.chB39 = new System.Windows.Forms.CheckBox();
             this.chB38 = new System.Windows.Forms.CheckBox();
@@ -83,29 +98,6 @@
             this.chB03 = new System.Windows.Forms.CheckBox();
             this.chB02 = new System.Windows.Forms.CheckBox();
             this.chB01 = new System.Windows.Forms.CheckBox();
-            this.btnMoira = new System.Windows.Forms.Button();
-            this.btnZenyatta = new System.Windows.Forms.Button();
-            this.btnZarya = new System.Windows.Forms.Button();
-            this.btnWinston = new System.Windows.Forms.Button();
-            this.btnWidowmaker = new System.Windows.Forms.Button();
-            this.btnTracer = new System.Windows.Forms.Button();
-            this.btnTorbjörn = new System.Windows.Forms.Button();
-            this.btnSymmetra = new System.Windows.Forms.Button();
-            this.btnSombra = new System.Windows.Forms.Button();
-            this.btnSoldier_76 = new System.Windows.Forms.Button();
-            this.btnRoadhog = new System.Windows.Forms.Button();
-            this.btnReinhardt = new System.Windows.Forms.Button();
-            this.btnReaper = new System.Windows.Forms.Button();
-            this.btnPharah = new System.Windows.Forms.Button();
-            this.btnOrisa = new System.Windows.Forms.Button();
-            this.btnMercy = new System.Windows.Forms.Button();
-            this.btnMei = new System.Windows.Forms.Button();
-            this.btnMcCree = new System.Windows.Forms.Button();
-            this.btnLúcio = new System.Windows.Forms.Button();
-            this.btnJunkrat = new System.Windows.Forms.Button();
-            this.btnHanzo = new System.Windows.Forms.Button();
-            this.btnGeji = new System.Windows.Forms.Button();
-            this.btnDoomfist = new System.Windows.Forms.Button();
             this.gBMoreCost = new System.Windows.Forms.GroupBox();
             this.lblMoreInfoCost2 = new System.Windows.Forms.Label();
             this.lblMoreInfoCost = new System.Windows.Forms.Label();
@@ -122,7 +114,8 @@
             this.lblChanges = new System.Windows.Forms.Label();
             this.btnWelcomeClose = new System.Windows.Forms.Button();
             this.tmrWelcome = new System.Windows.Forms.Timer(this.components);
-            this.btnBackHeroe = new System.Windows.Forms.Button();
+            this.btnBackHero = new System.Windows.Forms.Button();
+            this.lblCloseImage = new System.Windows.Forms.Label();
             this.gBLang.SuspendLayout();
             this.gbAll.SuspendLayout();
             this.gBMoreCost.SuspendLayout();
@@ -132,6 +125,7 @@
             // lblKosten
             // 
             this.lblKosten.AutoSize = true;
+            this.lblKosten.BackColor = System.Drawing.Color.Transparent;
             this.lblKosten.Location = new System.Drawing.Point(13, 13);
             this.lblKosten.Name = "lblKosten";
             this.lblKosten.Size = new System.Drawing.Size(50, 13);
@@ -271,6 +265,21 @@
             // 
             // gbAll
             // 
+            this.gbAll.Controls.Add(this.btn00);
+            this.gbAll.Controls.Add(this.btn14);
+            this.gbAll.Controls.Add(this.btn13);
+            this.gbAll.Controls.Add(this.btn12);
+            this.gbAll.Controls.Add(this.btn11);
+            this.gbAll.Controls.Add(this.btn10);
+            this.gbAll.Controls.Add(this.btn09);
+            this.gbAll.Controls.Add(this.btn08);
+            this.gbAll.Controls.Add(this.btn07);
+            this.gbAll.Controls.Add(this.btn06);
+            this.gbAll.Controls.Add(this.btn05);
+            this.gbAll.Controls.Add(this.btn04);
+            this.gbAll.Controls.Add(this.btn03);
+            this.gbAll.Controls.Add(this.btn02);
+            this.gbAll.Controls.Add(this.btn01);
             this.gbAll.Controls.Add(this.chB00);
             this.gbAll.Controls.Add(this.chB39);
             this.gbAll.Controls.Add(this.chB38);
@@ -319,13 +328,193 @@
             this.gbAll.Controls.Add(this.chB02);
             this.gbAll.Controls.Add(this.chB01);
             this.gbAll.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.gbAll.Location = new System.Drawing.Point(1313, 709);
+            this.gbAll.Location = new System.Drawing.Point(181, 291);
             this.gbAll.Name = "gbAll";
             this.gbAll.Size = new System.Drawing.Size(868, 642);
             this.gbAll.TabIndex = 12;
             this.gbAll.TabStop = false;
             this.gbAll.Text = "gbAll";
             this.gbAll.Visible = false;
+            // 
+            // btn00
+            // 
+            this.btn00.AutoSize = true;
+            this.btn00.Location = new System.Drawing.Point(112, 152);
+            this.btn00.Name = "btn00";
+            this.btn00.Size = new System.Drawing.Size(75, 23);
+            this.btn00.TabIndex = 78;
+            this.btn00.Text = "btn00";
+            this.btn00.UseVisualStyleBackColor = true;
+            this.btn00.Visible = false;
+            this.btn00.Click += new System.EventHandler(this.btn00_Click);
+            // 
+            // btn14
+            // 
+            this.btn14.AutoSize = true;
+            this.btn14.Location = new System.Drawing.Point(446, 48);
+            this.btn14.Name = "btn14";
+            this.btn14.Size = new System.Drawing.Size(75, 23);
+            this.btn14.TabIndex = 77;
+            this.btn14.Text = "btn14";
+            this.btn14.UseVisualStyleBackColor = true;
+            this.btn14.Visible = false;
+            this.btn14.Click += new System.EventHandler(this.btn14_Click);
+            // 
+            // btn13
+            // 
+            this.btn13.AutoSize = true;
+            this.btn13.Location = new System.Drawing.Point(365, 48);
+            this.btn13.Name = "btn13";
+            this.btn13.Size = new System.Drawing.Size(75, 23);
+            this.btn13.TabIndex = 76;
+            this.btn13.Text = "btn13";
+            this.btn13.UseVisualStyleBackColor = true;
+            this.btn13.Visible = false;
+            this.btn13.Click += new System.EventHandler(this.btn13_Click);
+            // 
+            // btn12
+            // 
+            this.btn12.AutoSize = true;
+            this.btn12.Location = new System.Drawing.Point(284, 48);
+            this.btn12.Name = "btn12";
+            this.btn12.Size = new System.Drawing.Size(75, 23);
+            this.btn12.TabIndex = 75;
+            this.btn12.Text = "btn12";
+            this.btn12.UseVisualStyleBackColor = true;
+            this.btn12.Visible = false;
+            this.btn12.Click += new System.EventHandler(this.btn12_Click);
+            // 
+            // btn11
+            // 
+            this.btn11.AutoSize = true;
+            this.btn11.Location = new System.Drawing.Point(203, 48);
+            this.btn11.Name = "btn11";
+            this.btn11.Size = new System.Drawing.Size(75, 23);
+            this.btn11.TabIndex = 74;
+            this.btn11.Text = "btn11";
+            this.btn11.UseVisualStyleBackColor = true;
+            this.btn11.Visible = false;
+            this.btn11.Click += new System.EventHandler(this.btn11_Click);
+            // 
+            // btn10
+            // 
+            this.btn10.AutoSize = true;
+            this.btn10.Location = new System.Drawing.Point(122, 48);
+            this.btn10.Name = "btn10";
+            this.btn10.Size = new System.Drawing.Size(75, 23);
+            this.btn10.TabIndex = 73;
+            this.btn10.Text = "btn10";
+            this.btn10.UseVisualStyleBackColor = true;
+            this.btn10.Visible = false;
+            this.btn10.Click += new System.EventHandler(this.btn10_Click);
+            // 
+            // btn09
+            // 
+            this.btn09.AutoSize = true;
+            this.btn09.Location = new System.Drawing.Point(770, 19);
+            this.btn09.Name = "btn09";
+            this.btn09.Size = new System.Drawing.Size(75, 23);
+            this.btn09.TabIndex = 72;
+            this.btn09.Text = "btn09";
+            this.btn09.UseVisualStyleBackColor = true;
+            this.btn09.Visible = false;
+            this.btn09.Click += new System.EventHandler(this.btn09_Click);
+            // 
+            // btn08
+            // 
+            this.btn08.AutoSize = true;
+            this.btn08.Location = new System.Drawing.Point(689, 19);
+            this.btn08.Name = "btn08";
+            this.btn08.Size = new System.Drawing.Size(75, 23);
+            this.btn08.TabIndex = 71;
+            this.btn08.Text = "btn08";
+            this.btn08.UseVisualStyleBackColor = true;
+            this.btn08.Visible = false;
+            this.btn08.Click += new System.EventHandler(this.btn08_Click);
+            // 
+            // btn07
+            // 
+            this.btn07.AutoSize = true;
+            this.btn07.Location = new System.Drawing.Point(608, 19);
+            this.btn07.Name = "btn07";
+            this.btn07.Size = new System.Drawing.Size(75, 23);
+            this.btn07.TabIndex = 70;
+            this.btn07.Text = "btn07";
+            this.btn07.UseVisualStyleBackColor = true;
+            this.btn07.Visible = false;
+            this.btn07.Click += new System.EventHandler(this.btn07_Click);
+            // 
+            // btn06
+            // 
+            this.btn06.AutoSize = true;
+            this.btn06.Location = new System.Drawing.Point(527, 19);
+            this.btn06.Name = "btn06";
+            this.btn06.Size = new System.Drawing.Size(75, 23);
+            this.btn06.TabIndex = 69;
+            this.btn06.Text = "btn06";
+            this.btn06.UseVisualStyleBackColor = true;
+            this.btn06.Visible = false;
+            this.btn06.Click += new System.EventHandler(this.btn06_Click);
+            // 
+            // btn05
+            // 
+            this.btn05.AutoSize = true;
+            this.btn05.Location = new System.Drawing.Point(446, 19);
+            this.btn05.Name = "btn05";
+            this.btn05.Size = new System.Drawing.Size(75, 23);
+            this.btn05.TabIndex = 68;
+            this.btn05.Text = "btn05";
+            this.btn05.UseVisualStyleBackColor = true;
+            this.btn05.Visible = false;
+            this.btn05.Click += new System.EventHandler(this.btn05_Click);
+            // 
+            // btn04
+            // 
+            this.btn04.AutoSize = true;
+            this.btn04.Location = new System.Drawing.Point(365, 19);
+            this.btn04.Name = "btn04";
+            this.btn04.Size = new System.Drawing.Size(75, 23);
+            this.btn04.TabIndex = 67;
+            this.btn04.Text = "btn04";
+            this.btn04.UseVisualStyleBackColor = true;
+            this.btn04.Visible = false;
+            this.btn04.Click += new System.EventHandler(this.btn04_Click);
+            // 
+            // btn03
+            // 
+            this.btn03.AutoSize = true;
+            this.btn03.Location = new System.Drawing.Point(284, 19);
+            this.btn03.Name = "btn03";
+            this.btn03.Size = new System.Drawing.Size(75, 23);
+            this.btn03.TabIndex = 66;
+            this.btn03.Text = "btn03";
+            this.btn03.UseVisualStyleBackColor = true;
+            this.btn03.Visible = false;
+            this.btn03.Click += new System.EventHandler(this.btn03_Click);
+            // 
+            // btn02
+            // 
+            this.btn02.AutoSize = true;
+            this.btn02.Location = new System.Drawing.Point(203, 19);
+            this.btn02.Name = "btn02";
+            this.btn02.Size = new System.Drawing.Size(75, 23);
+            this.btn02.TabIndex = 65;
+            this.btn02.Text = "btn02";
+            this.btn02.UseVisualStyleBackColor = true;
+            this.btn02.Visible = false;
+            this.btn02.Click += new System.EventHandler(this.btn02_Click);
+            // 
+            // btn01
+            // 
+            this.btn01.AutoSize = true;
+            this.btn01.Location = new System.Drawing.Point(122, 19);
+            this.btn01.Name = "btn01";
+            this.btn01.Size = new System.Drawing.Size(75, 23);
+            this.btn01.TabIndex = 26;
+            this.btn01.Text = "btn01";
+            this.btn01.UseVisualStyleBackColor = true;
+            this.btn01.Visible = false;
+            this.btn01.Click += new System.EventHandler(this.btn01_Click);
             // 
             // chB00
             // 
@@ -814,236 +1003,6 @@
             this.chB01.Visible = false;
             this.chB01.CheckedChanged += new System.EventHandler(this.chB01_CheckedChanged);
             // 
-            // btnMoira
-            // 
-            this.btnMoira.Location = new System.Drawing.Point(1028, 342);
-            this.btnMoira.Name = "btnMoira";
-            this.btnMoira.Size = new System.Drawing.Size(101, 23);
-            this.btnMoira.TabIndex = 65;
-            this.btnMoira.Text = "btnMoira";
-            this.btnMoira.UseVisualStyleBackColor = true;
-            this.btnMoira.Click += new System.EventHandler(this.btnMoira_Click);
-            // 
-            // btnZenyatta
-            // 
-            this.btnZenyatta.Location = new System.Drawing.Point(1028, 748);
-            this.btnZenyatta.Name = "btnZenyatta";
-            this.btnZenyatta.Size = new System.Drawing.Size(101, 23);
-            this.btnZenyatta.TabIndex = 24;
-            this.btnZenyatta.Text = "btnZenyatta";
-            this.btnZenyatta.UseVisualStyleBackColor = true;
-            this.btnZenyatta.Click += new System.EventHandler(this.btnZenyatta_Click);
-            // 
-            // btnZarya
-            // 
-            this.btnZarya.Location = new System.Drawing.Point(1028, 719);
-            this.btnZarya.Name = "btnZarya";
-            this.btnZarya.Size = new System.Drawing.Size(101, 23);
-            this.btnZarya.TabIndex = 23;
-            this.btnZarya.Text = "btnZarya";
-            this.btnZarya.UseVisualStyleBackColor = true;
-            this.btnZarya.Click += new System.EventHandler(this.btnZarya_Click);
-            // 
-            // btnWinston
-            // 
-            this.btnWinston.Location = new System.Drawing.Point(1028, 690);
-            this.btnWinston.Name = "btnWinston";
-            this.btnWinston.Size = new System.Drawing.Size(101, 23);
-            this.btnWinston.TabIndex = 22;
-            this.btnWinston.Text = "btnWinston";
-            this.btnWinston.UseVisualStyleBackColor = true;
-            this.btnWinston.Click += new System.EventHandler(this.btnWinston_Click);
-            // 
-            // btnWidowmaker
-            // 
-            this.btnWidowmaker.Location = new System.Drawing.Point(1028, 661);
-            this.btnWidowmaker.Name = "btnWidowmaker";
-            this.btnWidowmaker.Size = new System.Drawing.Size(101, 23);
-            this.btnWidowmaker.TabIndex = 21;
-            this.btnWidowmaker.Text = "btnWidowmaker";
-            this.btnWidowmaker.UseVisualStyleBackColor = true;
-            this.btnWidowmaker.Click += new System.EventHandler(this.btnWidowmaker_Click);
-            // 
-            // btnTracer
-            // 
-            this.btnTracer.Location = new System.Drawing.Point(1028, 632);
-            this.btnTracer.Name = "btnTracer";
-            this.btnTracer.Size = new System.Drawing.Size(101, 23);
-            this.btnTracer.TabIndex = 20;
-            this.btnTracer.Text = "btnTracer";
-            this.btnTracer.UseVisualStyleBackColor = true;
-            this.btnTracer.Click += new System.EventHandler(this.btnTracer_Click);
-            // 
-            // btnTorbjörn
-            // 
-            this.btnTorbjörn.Location = new System.Drawing.Point(1028, 603);
-            this.btnTorbjörn.Name = "btnTorbjörn";
-            this.btnTorbjörn.Size = new System.Drawing.Size(101, 23);
-            this.btnTorbjörn.TabIndex = 19;
-            this.btnTorbjörn.Text = "btnTorbjörn";
-            this.btnTorbjörn.UseVisualStyleBackColor = true;
-            this.btnTorbjörn.Click += new System.EventHandler(this.btnTorbjörn_Click);
-            // 
-            // btnSymmetra
-            // 
-            this.btnSymmetra.Location = new System.Drawing.Point(1028, 574);
-            this.btnSymmetra.Name = "btnSymmetra";
-            this.btnSymmetra.Size = new System.Drawing.Size(101, 23);
-            this.btnSymmetra.TabIndex = 18;
-            this.btnSymmetra.Text = "btnSymmetra";
-            this.btnSymmetra.UseVisualStyleBackColor = true;
-            this.btnSymmetra.Click += new System.EventHandler(this.btnSymmetra_Click);
-            // 
-            // btnSombra
-            // 
-            this.btnSombra.Location = new System.Drawing.Point(1028, 545);
-            this.btnSombra.Name = "btnSombra";
-            this.btnSombra.Size = new System.Drawing.Size(101, 23);
-            this.btnSombra.TabIndex = 17;
-            this.btnSombra.Text = "btnSombra";
-            this.btnSombra.UseVisualStyleBackColor = true;
-            this.btnSombra.Click += new System.EventHandler(this.btnSombra_Click);
-            // 
-            // btnSoldier_76
-            // 
-            this.btnSoldier_76.Location = new System.Drawing.Point(1028, 516);
-            this.btnSoldier_76.Name = "btnSoldier_76";
-            this.btnSoldier_76.Size = new System.Drawing.Size(101, 23);
-            this.btnSoldier_76.TabIndex = 16;
-            this.btnSoldier_76.Text = "btnSoldier_76";
-            this.btnSoldier_76.UseVisualStyleBackColor = true;
-            this.btnSoldier_76.Click += new System.EventHandler(this.btnSoldier_76_Click);
-            // 
-            // btnRoadhog
-            // 
-            this.btnRoadhog.Location = new System.Drawing.Point(1028, 487);
-            this.btnRoadhog.Name = "btnRoadhog";
-            this.btnRoadhog.Size = new System.Drawing.Size(101, 23);
-            this.btnRoadhog.TabIndex = 15;
-            this.btnRoadhog.Text = "btnRoadhog";
-            this.btnRoadhog.UseVisualStyleBackColor = true;
-            this.btnRoadhog.Click += new System.EventHandler(this.btnRoadhog_Click);
-            // 
-            // btnReinhardt
-            // 
-            this.btnReinhardt.Location = new System.Drawing.Point(1028, 458);
-            this.btnReinhardt.Name = "btnReinhardt";
-            this.btnReinhardt.Size = new System.Drawing.Size(101, 23);
-            this.btnReinhardt.TabIndex = 14;
-            this.btnReinhardt.Text = "btnReinhardt";
-            this.btnReinhardt.UseVisualStyleBackColor = true;
-            this.btnReinhardt.Click += new System.EventHandler(this.btnReinhardt_Click);
-            // 
-            // btnReaper
-            // 
-            this.btnReaper.Location = new System.Drawing.Point(1028, 429);
-            this.btnReaper.Name = "btnReaper";
-            this.btnReaper.Size = new System.Drawing.Size(101, 23);
-            this.btnReaper.TabIndex = 13;
-            this.btnReaper.Text = "btnReaper";
-            this.btnReaper.UseVisualStyleBackColor = true;
-            this.btnReaper.Click += new System.EventHandler(this.btnReaper_Click);
-            // 
-            // btnPharah
-            // 
-            this.btnPharah.Location = new System.Drawing.Point(1028, 400);
-            this.btnPharah.Name = "btnPharah";
-            this.btnPharah.Size = new System.Drawing.Size(101, 23);
-            this.btnPharah.TabIndex = 12;
-            this.btnPharah.Text = "btnPharah";
-            this.btnPharah.UseVisualStyleBackColor = true;
-            this.btnPharah.Click += new System.EventHandler(this.btnPharah_Click);
-            // 
-            // btnOrisa
-            // 
-            this.btnOrisa.Location = new System.Drawing.Point(1028, 371);
-            this.btnOrisa.Name = "btnOrisa";
-            this.btnOrisa.Size = new System.Drawing.Size(101, 23);
-            this.btnOrisa.TabIndex = 11;
-            this.btnOrisa.Text = "btnOrisa";
-            this.btnOrisa.UseVisualStyleBackColor = true;
-            this.btnOrisa.Click += new System.EventHandler(this.btnOrisa_Click);
-            // 
-            // btnMercy
-            // 
-            this.btnMercy.Location = new System.Drawing.Point(1028, 313);
-            this.btnMercy.Name = "btnMercy";
-            this.btnMercy.Size = new System.Drawing.Size(101, 23);
-            this.btnMercy.TabIndex = 10;
-            this.btnMercy.Text = "btnMercy";
-            this.btnMercy.UseVisualStyleBackColor = true;
-            this.btnMercy.Click += new System.EventHandler(this.btnMercy_Click);
-            // 
-            // btnMei
-            // 
-            this.btnMei.Location = new System.Drawing.Point(1028, 284);
-            this.btnMei.Name = "btnMei";
-            this.btnMei.Size = new System.Drawing.Size(101, 23);
-            this.btnMei.TabIndex = 9;
-            this.btnMei.Text = "btnMei";
-            this.btnMei.UseVisualStyleBackColor = true;
-            this.btnMei.Click += new System.EventHandler(this.btnMei_Click);
-            // 
-            // btnMcCree
-            // 
-            this.btnMcCree.Location = new System.Drawing.Point(1028, 255);
-            this.btnMcCree.Name = "btnMcCree";
-            this.btnMcCree.Size = new System.Drawing.Size(101, 23);
-            this.btnMcCree.TabIndex = 8;
-            this.btnMcCree.Text = "btnMcCree";
-            this.btnMcCree.UseVisualStyleBackColor = true;
-            this.btnMcCree.Click += new System.EventHandler(this.btnMcCree_Click);
-            // 
-            // btnLúcio
-            // 
-            this.btnLúcio.Location = new System.Drawing.Point(1028, 226);
-            this.btnLúcio.Name = "btnLúcio";
-            this.btnLúcio.Size = new System.Drawing.Size(101, 23);
-            this.btnLúcio.TabIndex = 7;
-            this.btnLúcio.Text = "btnLúcio";
-            this.btnLúcio.UseVisualStyleBackColor = true;
-            this.btnLúcio.Click += new System.EventHandler(this.btnLúcio_Click);
-            // 
-            // btnJunkrat
-            // 
-            this.btnJunkrat.Location = new System.Drawing.Point(1028, 197);
-            this.btnJunkrat.Name = "btnJunkrat";
-            this.btnJunkrat.Size = new System.Drawing.Size(101, 23);
-            this.btnJunkrat.TabIndex = 6;
-            this.btnJunkrat.Text = "btnJunkrat";
-            this.btnJunkrat.UseVisualStyleBackColor = true;
-            this.btnJunkrat.Click += new System.EventHandler(this.btnJunkrat_Click);
-            // 
-            // btnHanzo
-            // 
-            this.btnHanzo.Location = new System.Drawing.Point(1028, 168);
-            this.btnHanzo.Name = "btnHanzo";
-            this.btnHanzo.Size = new System.Drawing.Size(101, 23);
-            this.btnHanzo.TabIndex = 5;
-            this.btnHanzo.Text = "btnHanzo";
-            this.btnHanzo.UseVisualStyleBackColor = true;
-            this.btnHanzo.Click += new System.EventHandler(this.btnHanzo_Click);
-            // 
-            // btnGeji
-            // 
-            this.btnGeji.Location = new System.Drawing.Point(1028, 139);
-            this.btnGeji.Name = "btnGeji";
-            this.btnGeji.Size = new System.Drawing.Size(101, 23);
-            this.btnGeji.TabIndex = 4;
-            this.btnGeji.Text = "btnGeji";
-            this.btnGeji.UseVisualStyleBackColor = true;
-            this.btnGeji.Click += new System.EventHandler(this.btnGeji_Click);
-            // 
-            // btnDoomfist
-            // 
-            this.btnDoomfist.Location = new System.Drawing.Point(1028, 110);
-            this.btnDoomfist.Name = "btnDoomfist";
-            this.btnDoomfist.Size = new System.Drawing.Size(101, 23);
-            this.btnDoomfist.TabIndex = 3;
-            this.btnDoomfist.Text = "btnDoomfist";
-            this.btnDoomfist.UseVisualStyleBackColor = true;
-            this.btnDoomfist.Click += new System.EventHandler(this.btnDoomfist_Click);
-            // 
             // gBMoreCost
             // 
             this.gBMoreCost.Controls.Add(this.lblMoreInfoCost2);
@@ -1077,12 +1036,13 @@
             // 
             // btnMoreCost
             // 
+            this.btnMoreCost.BackColor = System.Drawing.Color.Transparent;
             this.btnMoreCost.Location = new System.Drawing.Point(711, 8);
             this.btnMoreCost.Name = "btnMoreCost";
             this.btnMoreCost.Size = new System.Drawing.Size(173, 23);
             this.btnMoreCost.TabIndex = 13;
             this.btnMoreCost.Text = "btnMoreCost";
-            this.btnMoreCost.UseVisualStyleBackColor = true;
+            this.btnMoreCost.UseVisualStyleBackColor = false;
             this.btnMoreCost.Visible = false;
             this.btnMoreCost.Click += new System.EventHandler(this.btnMoreCost_Click);
             // 
@@ -1148,6 +1108,7 @@
             // 
             // gBWelcome
             // 
+            this.gBWelcome.BackColor = System.Drawing.Color.Transparent;
             this.gBWelcome.Controls.Add(this.lblContributor);
             this.gBWelcome.Controls.Add(this.lblCopyrightVersion);
             this.gBWelcome.Controls.Add(this.lblChanges);
@@ -1202,16 +1163,29 @@
             this.tmrWelcome.Interval = 1000;
             this.tmrWelcome.Tick += new System.EventHandler(this.tmrWelcome_Tick);
             // 
-            // btnBackHeroe
+            // btnBackHero
             // 
-            this.btnBackHeroe.Location = new System.Drawing.Point(16, 677);
-            this.btnBackHeroe.Name = "btnBackHeroe";
-            this.btnBackHeroe.Size = new System.Drawing.Size(100, 23);
-            this.btnBackHeroe.TabIndex = 25;
-            this.btnBackHeroe.Text = "btnBackHeroe";
-            this.btnBackHeroe.UseVisualStyleBackColor = true;
-            this.btnBackHeroe.Visible = false;
-            this.btnBackHeroe.Click += new System.EventHandler(this.btnBackHeroe_Click);
+            this.btnBackHero.BackColor = System.Drawing.Color.Transparent;
+            this.btnBackHero.Location = new System.Drawing.Point(16, 677);
+            this.btnBackHero.Name = "btnBackHero";
+            this.btnBackHero.Size = new System.Drawing.Size(100, 23);
+            this.btnBackHero.TabIndex = 25;
+            this.btnBackHero.Text = "btnBackHeroe";
+            this.btnBackHero.UseVisualStyleBackColor = false;
+            this.btnBackHero.Visible = false;
+            this.btnBackHero.Click += new System.EventHandler(this.btnBackHeroe_Click);
+            // 
+            // lblCloseImage
+            // 
+            this.lblCloseImage.AutoSize = true;
+            this.lblCloseImage.BackColor = System.Drawing.Color.Black;
+            this.lblCloseImage.ForeColor = System.Drawing.SystemColors.Control;
+            this.lblCloseImage.Location = new System.Drawing.Point(438, 151);
+            this.lblCloseImage.Name = "lblCloseImage";
+            this.lblCloseImage.Size = new System.Drawing.Size(72, 13);
+            this.lblCloseImage.TabIndex = 26;
+            this.lblCloseImage.Text = "lblCloseImage";
+            this.lblCloseImage.Visible = false;
             // 
             // Form1
             // 
@@ -1219,9 +1193,9 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
             this.ClientSize = new System.Drawing.Size(1433, 808);
-            this.Controls.Add(this.btnMoira);
+            this.Controls.Add(this.lblCloseImage);
             this.Controls.Add(this.gBWelcome);
-            this.Controls.Add(this.btnBackHeroe);
+            this.Controls.Add(this.btnBackHero);
             this.Controls.Add(this.gBMoreCost);
             this.Controls.Add(this.btnSettings);
             this.Controls.Add(this.btnMoreCost);
@@ -1235,28 +1209,6 @@
             this.Controls.Add(this.btnWinter);
             this.Controls.Add(this.btnHalloween);
             this.Controls.Add(this.btnSummer);
-            this.Controls.Add(this.btnSombra);
-            this.Controls.Add(this.btnDoomfist);
-            this.Controls.Add(this.btnGeji);
-            this.Controls.Add(this.btnHanzo);
-            this.Controls.Add(this.btnJunkrat);
-            this.Controls.Add(this.btnLúcio);
-            this.Controls.Add(this.btnMcCree);
-            this.Controls.Add(this.btnMei);
-            this.Controls.Add(this.btnMercy);
-            this.Controls.Add(this.btnOrisa);
-            this.Controls.Add(this.btnPharah);
-            this.Controls.Add(this.btnReaper);
-            this.Controls.Add(this.btnReinhardt);
-            this.Controls.Add(this.btnRoadhog);
-            this.Controls.Add(this.btnSoldier_76);
-            this.Controls.Add(this.btnSymmetra);
-            this.Controls.Add(this.btnZenyatta);
-            this.Controls.Add(this.btnTorbjörn);
-            this.Controls.Add(this.btnZarya);
-            this.Controls.Add(this.btnTracer);
-            this.Controls.Add(this.btnWinston);
-            this.Controls.Add(this.btnWidowmaker);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedToolWindow;
             this.MaximizeBox = false;
             this.Name = "Form1";
@@ -1305,29 +1257,7 @@
         private System.Windows.Forms.Timer tmrWelcome;
         private System.Windows.Forms.Button btnWelcomeClose;
         private System.Windows.Forms.Label lblChanges;
-        private System.Windows.Forms.Button btnZenyatta;
-        private System.Windows.Forms.Button btnZarya;
-        private System.Windows.Forms.Button btnWinston;
-        private System.Windows.Forms.Button btnWidowmaker;
-        private System.Windows.Forms.Button btnTracer;
-        private System.Windows.Forms.Button btnTorbjörn;
-        private System.Windows.Forms.Button btnSymmetra;
-        private System.Windows.Forms.Button btnSombra;
-        private System.Windows.Forms.Button btnSoldier_76;
-        private System.Windows.Forms.Button btnRoadhog;
-        private System.Windows.Forms.Button btnReinhardt;
-        private System.Windows.Forms.Button btnReaper;
-        private System.Windows.Forms.Button btnPharah;
-        private System.Windows.Forms.Button btnOrisa;
-        private System.Windows.Forms.Button btnMercy;
-        private System.Windows.Forms.Button btnMei;
-        private System.Windows.Forms.Button btnMcCree;
-        private System.Windows.Forms.Button btnLúcio;
-        private System.Windows.Forms.Button btnJunkrat;
-        private System.Windows.Forms.Button btnHanzo;
-        private System.Windows.Forms.Button btnGeji;
-        private System.Windows.Forms.Button btnDoomfist;
-        private System.Windows.Forms.Button btnBackHeroe;
+        private System.Windows.Forms.Button btnBackHero;
         private System.Windows.Forms.CheckBox chB01;
         private System.Windows.Forms.CheckBox chB16;
         private System.Windows.Forms.CheckBox chB15;
@@ -1370,7 +1300,22 @@
         private System.Windows.Forms.CheckBox chB21;
         private System.Windows.Forms.Label lblCopyrightVersion;
         private System.Windows.Forms.Label lblContributor;
-        private System.Windows.Forms.Button btnMoira;
+        private System.Windows.Forms.Button btn01;
+        private System.Windows.Forms.Button btn14;
+        private System.Windows.Forms.Button btn13;
+        private System.Windows.Forms.Button btn12;
+        private System.Windows.Forms.Button btn11;
+        private System.Windows.Forms.Button btn10;
+        private System.Windows.Forms.Button btn09;
+        private System.Windows.Forms.Button btn08;
+        private System.Windows.Forms.Button btn07;
+        private System.Windows.Forms.Button btn06;
+        private System.Windows.Forms.Button btn05;
+        private System.Windows.Forms.Button btn04;
+        private System.Windows.Forms.Button btn03;
+        private System.Windows.Forms.Button btn02;
+        private System.Windows.Forms.Button btn00;
+        private System.Windows.Forms.Label lblCloseImage;
     }
 }
 

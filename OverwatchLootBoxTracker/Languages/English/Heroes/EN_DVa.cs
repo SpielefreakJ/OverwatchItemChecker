@@ -121,7 +121,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         {//Rooster 2017
             get
             {
-                return "Palaquin";
+                return "Palanquin";
             }
         }
 
