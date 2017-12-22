@@ -107,7 +107,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         {
             get
             {
-                return "Captaion Amari";
+                return "Captain Amari";
             }
         }
 

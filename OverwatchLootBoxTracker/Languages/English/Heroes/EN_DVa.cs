@@ -156,7 +156,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         {
             get
             {
-                return "Heartbeaker";
+                return "Heartbreaker";
             }
         }
 

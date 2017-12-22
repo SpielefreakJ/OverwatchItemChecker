@@ -288,6 +288,7 @@ namespace OverwatchLootBoxTracker
             int Zeile2 = this.Height / 2 - 50;
             int Zeile1 = Zeile2 - 100, Zeile3 = Zeile2 + 100;
 
+            #region HeroesImageCreate
             //Ana
             Controls.Add(Ana);
             Ana.Location = new Point(Breite1, Zeile1);
@@ -421,7 +422,7 @@ namespace OverwatchLootBoxTracker
             Controls.Add(Zenyatta);
             Zenyatta.Location = new Point(Breite8, Zeile3);
             Zenyatta.Click += Zenyatta_Click;
-
+            #endregion
             ////////---------------
 
             CHeroImage MenuImage = new CHeroImage();
@@ -490,6 +491,7 @@ namespace OverwatchLootBoxTracker
             // Set up the ToolTip text for the Button and Checkbox.
             tt.SetToolTip(this.btnLangGerman, "Currently disabled!");
 
+            #region HeroesToolTips
             tt.SetToolTip(this.Ana, Ana.GetName());
             tt.SetToolTip(this.Bastion, Bastion.GetName());
             tt.SetToolTip(this.DVa, DVa.GetName());
@@ -518,6 +520,7 @@ namespace OverwatchLootBoxTracker
             tt.SetToolTip(this.Winston, Winston.GetName());
             tt.SetToolTip(this.Zarya, Zarya.GetName());
             tt.SetToolTip(this.Zenyatta, Zenyatta.GetName());
+            #endregion
         }
 
         /*
@@ -606,6 +609,7 @@ namespace OverwatchLootBoxTracker
             btnEmotes.Visible = false;
             btnVictoryPoses.Visible = false;
 
+            #region unwichtig
             //
             if (Heroe == "Ana")
             {
@@ -713,6 +717,7 @@ namespace OverwatchLootBoxTracker
             {
                 btnZenyatta();
             }
+            #endregion
         }
 
         private void btnPlayerIcons_Click(object sender, EventArgs e)
@@ -846,7 +851,7 @@ namespace OverwatchLootBoxTracker
                 chB18.Checked = false; chB18.Visible = false; chB18.BackColor = Color.Transparent;
                 chB19.Checked = false; chB19.Visible = false; chB19.BackColor = Color.Transparent;
                 chB20.Checked = false; chB20.Visible = false; chB20.BackColor = Color.Transparent;
-            
+
                 chB21.Checked = false; chB21.Visible = false; chB21.BackColor = Color.Transparent;
                 chB22.Checked = false; chB22.Visible = false; chB22.BackColor = Color.Transparent;
                 chB23.Checked = false; chB23.Visible = false; chB23.BackColor = Color.Transparent;
@@ -882,7 +887,7 @@ namespace OverwatchLootBoxTracker
                 btn12.Visible = false;
                 btn13.Visible = false;
                 btn14.Visible = false;
-                
+
                 //Nun sagen, dass die Checkboxen speichern sollen
                 chBSave = 1;
             }
@@ -969,37 +974,53 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave2 == Lang.Skins)
             {
-                chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1);
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5);
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1);
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2);
-                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3);
-                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p2, p4);
-                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p1);
-                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p2);
-                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p3);
-                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p4);
-                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p5);
-                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p6);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1); chB00.Text = "(" + Cost.Classic + ")";
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2); chB01.Text = "(" + Cost.Rare + ")";
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3); chB02.Text = "(" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4); chB03.Text = "(" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5); chB04.Text = "(" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = "(" + Cost.Epic + ")";
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = "(" + Cost.Epic + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = "(" + Cost.Epic + ")";
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p2, p4); chB08.Text = "(" + Cost.EpicEvent + ")";
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p1); chB09.Text = "(" + Cost.Legendary + ")";
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p2); chB10.Text = "(" + Cost.Legendary + ")";
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p3); chB11.Text = "(" + Cost.Legendary + ")";
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p4); chB12.Text = "(" + Cost.Legendary + ")";
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p5); chB13.Text = "(" + Cost.LegendaryEvent + ")";
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p6); chB14.Text = "(" + Cost.LegendaryEvent + ")";
 
-                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Classic;//Default
-                chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Ana.Citrine_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Ana.Garnet_SK + " (" + Cost.Rare + ")";
-                chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Ana.Peridot_SK + " (" + Cost.Rare + ")";
-                chB04.BackColor = Color.DeepSkyBlue; chB04.Text = Ana.Turquoise_SK + " (" + Cost.Rare + ")";
-                chB05.BackColor = Color.DarkViolet; chB05.Text = Ana.Merciful_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.BackColor = Color.DarkViolet; chB06.Text = Ana.Shrike_SK + " (" + Cost.Epic + ")";
-                chB07.BackColor = Color.DarkViolet; chB07.Text = Ana.Ghoul_SK + " (" + Cost.Epic + ")";//Halloween 16
-                chB08.BackColor = Color.DarkViolet; chB08.Text = Ana.Tal_SK + " (" + Cost.EpicEvent + ")";//Rooster 17
-                chB09.BackColor = Color.Gold; chB09.Text = Ana.Wadjet_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB10.BackColor = Color.Gold; chB10.Text = Ana.Wasteland_SK + " (" + Cost.Legendary + ")";
-                chB11.BackColor = Color.Gold; chB11.Text = Ana.Captain_Amari_SK + " (" + Cost.Legendary + ")";
-                chB12.BackColor = Color.Gold; chB12.Text = Ana.Horus_SK + " (" + Cost.Legendary + ")";
-                chB13.BackColor = Color.Gold; chB13.Text = Ana.Corsair_SK + " (" + Cost.LegendaryEvent + ")";//Halloween 17
-                chB14.BackColor = Color.Gold; chB14.Text = Ana.Snow_Owl_SK + " (" + Cost.LegendaryEvent + ")";//Winter 17
+                btn00.Visible = true; btn00.Location = new Point(gBAllWeited4p1 + chB00.Width, p1 - 5);
+                btn01.Visible = true; btn01.Location = new Point(gBAllWeited4p1 + chB01.Width, p2 - 5);
+                btn02.Visible = true; btn02.Location = new Point(gBAllWeited4p1 + chB02.Width, p3 - 5);
+                btn03.Visible = true; btn03.Location = new Point(gBAllWeited4p1 + chB03.Width, p4 - 5);
+                btn04.Visible = true; btn04.Location = new Point(gBAllWeited4p1 + chB04.Width, p5 - 5);
+                btn05.Visible = true; btn05.Location = new Point(gBAllWeited4p2 + chB05.Width, p1 - 5);
+                btn06.Visible = true; btn06.Location = new Point(gBAllWeited4p2 + chB06.Width, p2 - 5);
+                btn07.Visible = true; btn07.Location = new Point(gBAllWeited4p2 + chB07.Width, p3 - 5);
+                btn08.Visible = true; btn08.Location = new Point(gBAllWeited4p2 + chB08.Width, p4 - 5);
+                btn09.Visible = true; btn09.Location = new Point(gBAllWeited4p3 + chB09.Width, p1 - 5);
+                btn10.Visible = true; btn10.Location = new Point(gBAllWeited4p3 + chB10.Width, p2 - 5);
+                btn11.Visible = true; btn11.Location = new Point(gBAllWeited4p3 + chB11.Width, p3 - 5);
+                btn12.Visible = true; btn12.Location = new Point(gBAllWeited4p3 + chB12.Width, p4 - 5);
+                btn13.Visible = true; btn13.Location = new Point(gBAllWeited4p3 + chB13.Width, p5 - 5);
+                btn14.Visible = true; btn14.Location = new Point(gBAllWeited4p3 + chB14.Width, p6 - 5);
+
+                btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Classic;//Default
+                btn01.BackColor = Color.DeepSkyBlue; btn01.Text = Ana.Citrine_SK;//Rare
+                btn02.BackColor = Color.DeepSkyBlue; btn02.Text = Ana.Garnet_SK;
+                btn03.BackColor = Color.DeepSkyBlue; btn03.Text = Ana.Peridot_SK;
+                btn04.BackColor = Color.DeepSkyBlue; btn04.Text = Ana.Turquoise_SK;
+                btn05.BackColor = Color.DarkViolet; btn05.Text = Ana.Merciful_SK;//Epic
+                btn06.BackColor = Color.DarkViolet; btn06.Text = Ana.Shrike_SK;
+                btn07.BackColor = Color.DarkViolet; btn07.Text = Ana.Ghoul_SK;//Halloween 16
+                btn08.BackColor = Color.DarkViolet; btn08.Text = Ana.Tal_SK;//Rooster 17
+                btn09.BackColor = Color.Gold; btn09.Text = Ana.Wadjet_SK;//Legendary
+                btn10.BackColor = Color.Gold; btn10.Text = Ana.Wasteland_SK;
+                btn11.BackColor = Color.Gold; btn11.Text = Ana.Captain_Amari_SK;
+                btn12.BackColor = Color.Gold; btn12.Text = Ana.Horus_SK;
+                btn13.BackColor = Color.Gold; btn13.Text = Ana.Corsair_SK;//Halloween 17
+                btn14.BackColor = Color.Gold; btn14.Text = Ana.Snow_Owl_SK;//Winter 17
 
                 chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
@@ -1019,25 +1040,35 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave2 == Lang.Emotes)
             {
-                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p5);
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1);
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2);
-                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3);
-                chB08.Visible = true; chB08.Location = new Point(gBAllWeited3p2, p4);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1); chB00.Text = "(" + Cost.Classic + ")";
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2); chB01.Text = "(" + Cost.Epic + ")";
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3); chB02.Text = "(" + Cost.Epic + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4); chB03.Text = "(" + Cost.Epic + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p5); chB04.Text = "(" + Cost.Epic + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1); chB05.Text = "(" + Cost.Epic + ")";
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2); chB06.Text = "(" + Cost.EpicEvent + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3); chB07.Text = "(" + Cost.Epic + ")";
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited3p2, p4); chB08.Text = "(" + Cost.EpicEvent + ")";
 
-                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Heroic;//DEfault
-                chB01.BackColor = Color.DarkViolet; chB01.Text = Ana.Not_Impressed_EM + " (" + Cost.Epic + ")";//Epic
-                chB02.BackColor = Color.DarkViolet; chB02.Text = Ana.Disapproving_EM + " (" + Cost.Epic + ")";
-                chB03.BackColor = Color.DarkViolet; chB03.Text = Ana.Protector_EM + " (" + Cost.Epic + ")";
-                chB04.BackColor = Color.DarkViolet; chB04.Text = Ana.Take_A_Knee_EM + " (" + Cost.Epic + ")";
-                chB05.BackColor = Color.DarkViolet; chB05.Text = Ana.Tea_Time_EM + " (" + Cost.Epic + ")";
-                chB06.BackColor = Color.DarkViolet; chB06.Text = Ana.Beach_Ball_EM + " (" + Cost.EpicEvent + ")";//Summer 17
-                chB07.BackColor = Color.DarkViolet; chB07.Text = Ana.Candy_EM + " (" + Cost.Epic + ")";//Halloween 16
-                chB08.BackColor = Color.DarkViolet; chB08.Text = Ana.Dance_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+                btn00.Visible = true; btn00.Location = new Point(gBAllWeited3p1 + chB00.Width, p1 - 5);
+                btn01.Visible = true; btn01.Location = new Point(gBAllWeited3p1 + chB01.Width, p2 - 5);
+                btn02.Visible = true; btn02.Location = new Point(gBAllWeited3p1 + chB02.Width, p3 - 5);
+                btn03.Visible = true; btn03.Location = new Point(gBAllWeited3p1 + chB03.Width, p4 - 5);
+                btn04.Visible = true; btn04.Location = new Point(gBAllWeited3p1 + chB04.Width, p5 - 5);
+                btn05.Visible = true; btn05.Location = new Point(gBAllWeited3p2 + chB05.Width, p1 - 5);
+                btn06.Visible = true; btn06.Location = new Point(gBAllWeited3p2 + chB06.Width, p2 - 5);
+                btn07.Visible = true; btn07.Location = new Point(gBAllWeited3p2 + chB07.Width, p3 - 5);
+                btn08.Visible = true; btn08.Location = new Point(gBAllWeited3p2 + chB08.Width, p4 - 5);
+
+                btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Heroic;//DEfault
+                btn01.BackColor = Color.DarkViolet; btn01.Text = Ana.Not_Impressed_EM;//Epic
+                btn02.BackColor = Color.DarkViolet; btn02.Text = Ana.Disapproving_EM;
+                btn03.BackColor = Color.DarkViolet; btn03.Text = Ana.Protector_EM;
+                btn04.BackColor = Color.DarkViolet; btn04.Text = Ana.Take_A_Knee_EM;
+                btn05.BackColor = Color.DarkViolet; btn05.Text = Ana.Tea_Time_EM;
+                btn06.BackColor = Color.DarkViolet; btn06.Text = Ana.Beach_Ball_EM;//Summer 17
+                btn07.BackColor = Color.DarkViolet; btn07.Text = Ana.Candy_EM;//Halloween 16
+                btn08.BackColor = Color.DarkViolet; btn08.Text = Ana.Dance_EM;//Annyver 17
 
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
                 chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
@@ -1050,21 +1081,29 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave2 == Lang.VictoryPoses)
             {
-                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1); chB00.Text = "(" + Cost.Classic + ")";
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2); chB01.Text = "(" + Cost.Rare + ")";
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3); chB02.Text = "(" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4); chB03.Text = "(" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1); chB04.Text = "(" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2); chB05.Text = "(" + Cost.Rare + ")";
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3); chB06.Text = "(" + Cost.RareEvent + ")";
 
-                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Heroic;//Default
-                chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Ana.Mission_Complete_VP + " (" + Cost.Rare + ")";//Rare
-                chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Ana.Protector_VP + " (" + Cost.Rare + ")";
-                chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Ana.Seated_VP + " (" + Cost.Rare + ")";
-                chB04.BackColor = Color.DeepSkyBlue; chB04.Text = Ana.RIP_VP + " (" + Cost.Rare + ")";//Halloween 16
-                chB05.BackColor = Color.DeepSkyBlue; chB05.Text = Ana.Toast_VP + " (" + Cost.Rare + ")";//Winter 16
-                chB06.BackColor = Color.DeepSkyBlue; chB06.Text = Ana.Folded_Hands_VP + " (" + Cost.RareEvent + ")";//Rooster 17
+                btn00.Visible = true; btn00.Location = new Point(gBAllWeited3p1 + chB00.Width, p1 - 5);
+                btn01.Visible = true; btn01.Location = new Point(gBAllWeited3p1 + chB01.Width, p2 - 5);
+                btn02.Visible = true; btn02.Location = new Point(gBAllWeited3p1 + chB02.Width, p3 - 5);
+                btn03.Visible = true; btn03.Location = new Point(gBAllWeited3p1 + chB03.Width, p4 - 5);
+                btn04.Visible = true; btn04.Location = new Point(gBAllWeited3p2 + chB04.Width, p1 - 5);
+                btn05.Visible = true; btn05.Location = new Point(gBAllWeited3p2 + chB05.Width, p2 - 5);
+                btn06.Visible = true; btn06.Location = new Point(gBAllWeited3p2 + chB06.Width, p3 - 5);
+
+                btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Heroic;//Default
+                btn01.BackColor = Color.DeepSkyBlue; btn01.Text = Ana.Mission_Complete_VP;//Rare
+                btn02.BackColor = Color.DeepSkyBlue; btn02.Text = Ana.Protector_VP;
+                btn03.BackColor = Color.DeepSkyBlue; btn03.Text = Ana.Seated_VP;
+                btn04.BackColor = Color.DeepSkyBlue; btn04.Text = Ana.RIP_VP;//Halloween 16
+                btn05.BackColor = Color.DeepSkyBlue; btn05.Text = Ana.Toast_VP;//Winter 16
+                btn06.BackColor = Color.DeepSkyBlue; btn06.Text = Ana.Folded_Hands_VP;//Rooster 17
 
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("VP01"));
                 chB02.Checked = Convert.ToBoolean(inisHeroes.Read("VP02"));
@@ -1659,23 +1698,32 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave2 == Lang.Emotes)
             {
-                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3);
-                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p4);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1); chB00.Text = "(" + Cost.Classic + ")";
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2); chB01.Text = "(" + Cost.Epic + ")";
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3); chB02.Text = "(" + Cost.Epic + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4); chB03.Text = "(" + Cost.Epic + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1); chB04.Text = "(" + Cost.Epic + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2); chB05.Text = "(" + Cost.Epic + ")";
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3); chB06.Text = "(" + Cost.EpicEvent + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p4); chB07.Text = "(" + Cost.Legendary + ")";
 
-                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Heroic;//Default
-                chB01.BackColor = Color.DarkViolet; chB01.Text = DVa._O__EM + " (" + Cost.Epic + ")";//Epic
-                chB02.BackColor = Color.DarkViolet; chB02.Text = DVa.Bunny_Hop_EM + " (" + Cost.Epic + ")";
-                chB03.BackColor = Color.DarkViolet; chB03.Text = DVa.Heartbreaker_EM + " (" + Cost.Epic + ")";
-                chB04.BackColor = Color.DarkViolet; chB04.Text = DVa.Party_Time_EM + " (" + Cost.Epic + ")";
-                chB05.BackColor = Color.DarkViolet; chB05.Text = DVa.Bow_EM + " (" + Cost.EpicEvent + ")";//Rooster 17
-                chB06.BackColor = Color.DarkViolet; chB06.Text = DVa.Dance_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
-                chB07.BackColor = Color.Gold; chB07.Text = DVa.Game_On_EM + " (" + Cost.Legendary + ")";//Legendary
+                btn00.Visible = true; btn00.Location = new Point(gBAllWeited3p1 + chB00.Width, p1 - 5);
+                btn01.Visible = true; btn01.Location = new Point(gBAllWeited3p1 + chB01.Width, p2 - 5);
+                btn02.Visible = true; btn02.Location = new Point(gBAllWeited3p1 + chB02.Width, p3 - 5);
+                btn03.Visible = true; btn03.Location = new Point(gBAllWeited3p1 + chB03.Width, p4 - 5);
+                btn04.Visible = true; btn04.Location = new Point(gBAllWeited3p2 + chB04.Width, p1 - 5);
+                btn05.Visible = true; btn05.Location = new Point(gBAllWeited3p2 + chB05.Width, p2 - 5);
+                btn06.Visible = true; btn06.Location = new Point(gBAllWeited3p2 + chB06.Width, p3 - 5);
+                btn07.Visible = true; btn07.Location = new Point(gBAllWeited3p2 + chB07.Width, p4 - 5);
+
+                btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Heroic;//Default
+                btn01.BackColor = Color.DarkViolet; btn01.Text = DVa._O__EM;//Epic
+                btn02.BackColor = Color.DarkViolet; btn02.Text = DVa.Bunny_Hop_EM;
+                btn03.BackColor = Color.DarkViolet; btn03.Text = DVa.Heartbreaker_EM;
+                btn04.BackColor = Color.DarkViolet; btn04.Text = DVa.Party_Time_EM;
+                btn05.BackColor = Color.DarkViolet; btn05.Text = DVa.Bow_EM;//Rooster 17
+                btn06.BackColor = Color.DarkViolet; btn06.Text = DVa.Dance_EM;//Annyver 17
+                btn07.BackColor = Color.Gold; btn07.Text = DVa.Game_On_EM;//Legendary
 
                 chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
@@ -1688,21 +1736,29 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave2 == Lang.VictoryPoses)
             {
-                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1); chB00.Text = "(" + Cost.Classic + ")";
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2); chB01.Text = "(" + Cost.Rare + ")";
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3); chB02.Text = "(" + Cost.Rare + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4); chB03.Text = "(" + Cost.Rare + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1); chB04.Text = "(" + Cost.Rare + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2); chB05.Text = "(" + Cost.Rare + ")";
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3); chB06.Text = "(" + Cost.RareEvent + ")";
 
-                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Heroic;//Default
-                chB01.BackColor = Color.DeepSkyBlue; chB01.Text = DVa.I_Heart_You_VP + " (" + Cost.Rare + ")";//Rare
-                chB02.BackColor = Color.DeepSkyBlue; chB02.Text = DVa.Peace_VP + " (" + Cost.Rare + ")";
-                chB03.BackColor = Color.DeepSkyBlue; chB03.Text = DVa.Sitting_VP + " (" + Cost.Rare + ")";
-                chB04.BackColor = Color.DeepSkyBlue; chB04.Text = DVa.RIP_VP + " (" + Cost.Rare + ")";//Halloween 16
-                chB05.BackColor = Color.DeepSkyBlue; chB05.Text = DVa.Festive_VP + " (" + Cost.Rare + ")";//Winter 16
-                chB06.BackColor = Color.DeepSkyBlue; chB06.Text = DVa.Lucky_Pouch_VP + " (" + Cost.RareEvent + ")";//Rooster 17
+                btn00.Visible = true; btn00.Location = new Point(gBAllWeited3p1 + chB00.Width, p1 - 5);
+                btn01.Visible = true; btn01.Location = new Point(gBAllWeited3p1 + chB01.Width, p2 - 5);
+                btn02.Visible = true; btn02.Location = new Point(gBAllWeited3p1 + chB02.Width, p3 - 5);
+                btn03.Visible = true; btn03.Location = new Point(gBAllWeited3p1 + chB03.Width, p4 - 5);
+                btn04.Visible = true; btn04.Location = new Point(gBAllWeited3p2 + chB04.Width, p1 - 5);
+                btn05.Visible = true; btn05.Location = new Point(gBAllWeited3p2 + chB05.Width, p2 - 5);
+                btn06.Visible = true; btn06.Location = new Point(gBAllWeited3p2 + chB06.Width, p3 - 5);
+
+                btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Heroic;//Default
+                btn01.BackColor = Color.DeepSkyBlue; btn01.Text = DVa.I_Heart_You_VP;//Rare
+                btn02.BackColor = Color.DeepSkyBlue; btn02.Text = DVa.Peace_VP;
+                btn03.BackColor = Color.DeepSkyBlue; btn03.Text = DVa.Sitting_VP;
+                btn04.BackColor = Color.DeepSkyBlue; btn04.Text = DVa.RIP_VP;//Halloween 16
+                btn05.BackColor = Color.DeepSkyBlue; btn05.Text = DVa.Festive_VP;//Winter 16
+                btn06.BackColor = Color.DeepSkyBlue; btn06.Text = DVa.Lucky_Pouch_VP;//Rooster 17
 
                 chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("VP01"));

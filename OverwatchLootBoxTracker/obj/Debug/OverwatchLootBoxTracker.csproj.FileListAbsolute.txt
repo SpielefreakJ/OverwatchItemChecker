@@ -104,3 +104,49 @@ F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\I
 F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\D.Va\Skins\Tangerine.png
 F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\D.Va\Skins\Watermelon.png
 F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\D.Va\Skins\White Rabbit.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Emotes\Beach Ball.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Emotes\Candy.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Emotes\Dance.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Emotes\Disapproving.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Emotes\Not impressed.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Emotes\Protector.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Emotes\Take a knee.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Emotes\Tea Time.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Skins\Captain Amari.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Skins\Citrine.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Skins\Classic.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Skins\Corsair.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Skins\Garnet.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Skins\Ghoul.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Skins\Horus.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Skins\Merciful.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Skins\Peridot.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Skins\Shrike.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Skins\Snow Owl.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Skins\Tal.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Skins\Turquoise.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Skins\Wadjet.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Skins\Wasteland.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Emotes\Heroic.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Victory Poses\Folded Hands.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Victory Poses\Heroic.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Victory Poses\Mission Complete.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Victory Poses\Protector.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Victory Poses\R.I.P..png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Victory Poses\Seated.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Victory Poses\Toast.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\D.Va\Emotes\Bow.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\D.Va\Emotes\Bunny Hop.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\D.Va\Emotes\Dance.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\D.Va\Emotes\Game On.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\D.Va\Emotes\Heartbreaker.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\D.Va\Emotes\Heroic.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\D.Va\Emotes\Party Time.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\D.Va\Emotes\^O^.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\D.Va\Victory Poses\Festive.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\D.Va\Victory Poses\Heroic.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\D.Va\Victory Poses\I Heart You.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\D.Va\Victory Poses\Lucky Pouch.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\D.Va\Victory Poses\Peace.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\D.Va\Victory Poses\R.I.P..png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\D.Va\Victory Poses\Sitting.png
