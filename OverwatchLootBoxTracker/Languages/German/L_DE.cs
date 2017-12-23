@@ -232,7 +232,14 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Nur mit Origin oder GotY";
+                return "Origin/GotY";
+            }
+        }
+        public string OriginGotY2
+        {
+            get
+            {
+                return "Nur mit Origin or GotY Game-Edition";
             }
         }
 
@@ -240,7 +247,19 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Nur mit BlizzCon Ticket";
+                return "BlizzCon";
+            }
+        }
+        string Year = "2016";
+        public string BlizzCon2
+        {
+            get
+            {
+                return "Nur mit BlizzCon " + Year + " Ticket";
+            }
+            set
+            {
+                Year = value;
             }
         }
 
@@ -248,7 +267,7 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Nur für Vorbesteller";
+                return "Vorbesteller";
             }
         }
 

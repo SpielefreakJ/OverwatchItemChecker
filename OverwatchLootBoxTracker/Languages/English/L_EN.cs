@@ -17,7 +17,7 @@ namespace OverwatchLootBoxTracker.Lang
 
         private void ChangesT()
         {
-            Changes = "\n\n\nAlpha Version!\n\nFeatures:\n - Save Skins\n - Save Emotes\n - Save Victory Poses\n\nNewest Addings:\nNew Menu!\nAna's and D.Va's items can now be displayed.\n\nLanguages:\n- German (Currently disabled)\n- English";
+            Changes = "\n\n\nAlpha Version!\n\nFeatures:\n - Save Skins\n - Save Emotes\n - Save Victory Poses\n\nNewest Addings:\nNew Menu!\nAna's, Bastion's, D.Va's, Doomfist's and Genji's items can now be displayed.\n\nLanguages:\n- German (Currently disabled)\n- English";
         }
 
 
@@ -48,7 +48,7 @@ namespace OverwatchLootBoxTracker.Lang
         }
 
 
-        
+
         //All Settings
 
         public string Settings
@@ -248,7 +248,14 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Only in Origin or GotY";
+                return "Origin/GotY";
+            }
+        }
+        public string OriginGotY2
+        {
+            get
+            {
+                return "Only /w Origin or GotY Game-Edition";
             }
         }
 
@@ -256,7 +263,19 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Only w/ BlizzCon Ticket";
+                return "BlizzCon";
+            }
+        }
+        string Year = "2016";
+        public string BlizzCon2
+        {
+            get
+            {
+                return "Only /w BlizzCon " + Year + " Ticket";
+            }
+            set
+            {
+                Year = value;
             }
         }
 
@@ -264,7 +283,7 @@ namespace OverwatchLootBoxTracker.Lang
         {
             get
             {
-                return "Prepurchase of Overwatch";
+                return "Prepurchase";
             }
         }
 

@@ -189,7 +189,7 @@ namespace OverwatchLootBoxTracker
 
         int[] myCosts = new int[27];
         int[] myCostsEvent = new int[27];
-        int myCostsWeapon = 0;
+        int[] myCostsWeapon = new int[27];
         string ii = "01";
         string SaveFolder = null;
 
@@ -229,8 +229,14 @@ namespace OverwatchLootBoxTracker
         {
             get
             {
-                myCostsWeapon = (3000 * 26);
-                return myCostsWeapon;
+                myCostsWeapon[0] = 0;
+
+                for (int i = 1; i <= 26; i++)
+                {
+                    myCostsWeapon[0] += myCostsWeapon[i];
+                }
+
+                return myCostsWeapon[0];
             }
         }
 
@@ -358,6 +364,7 @@ namespace OverwatchLootBoxTracker
                 McCree();
                 Mei();
                 Mercy();
+                Moira();
                 Orisa();
                 Pharah();
                 Reaper();
@@ -381,6 +388,7 @@ namespace OverwatchLootBoxTracker
 
             myCosts[1] = 0;
             myCostsEvent[1] = 0;
+            myCostsWeapon[1] = 0;
 
             for (int i = 1; i <= 40; i++)
             {
@@ -392,8 +400,16 @@ namespace OverwatchLootBoxTracker
                 {
                     ii = i.ToString();
                 }
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i==1)
+                    {
+                        myCostsWeapon[1] += 3000;
+                    }
+                }
                 //Skins
-                if (inisHeroes.Read("SK" + ii) == "False" | inisHeroes.Read("SK" + ii) == "false")
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
                 {
                     if (i >= 1 && i <= 4)
                     {//Rare
@@ -421,7 +437,7 @@ namespace OverwatchLootBoxTracker
                     }
                 }
                 //Emotes
-                if (inisHeroes.Read("EM" + ii) == "False" | inisHeroes.Read("EM" + ii) == "false")
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
                 {
                     if (i >= 1 && i <= 5)
                     {//Epic
@@ -437,7 +453,7 @@ namespace OverwatchLootBoxTracker
                     }
                 }
                 //Victory Poses
-                if (inisHeroes.Read("VP" + ii) == "False" | inisHeroes.Read("VP" + ii) == "false")
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
                 {
                     if (i >= 1 && i <= 3)
                     {//Rare
@@ -461,6 +477,7 @@ namespace OverwatchLootBoxTracker
 
             myCosts[2] = 0;
             myCostsEvent[2] = 0;
+            myCostsWeapon[2] = 0;
 
             for (int i = 1; i <= 40; i++)
             {
@@ -471,6 +488,14 @@ namespace OverwatchLootBoxTracker
                 else
                 {
                     ii = i.ToString();
+                }
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i == 1)
+                    {
+                        myCostsWeapon[2] += 3000;
+                    }
                 }
                 //Skins
                 if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
@@ -531,7 +556,7 @@ namespace OverwatchLootBoxTracker
                     {//Rare
                         myCosts[2] += myRare;
                     }
-                    if (i == 4 || i == 6)
+                    if (i == 4 || i == 6 || i == 7)
                     {//Rare Event
                         myCostsEvent[2] += myRareEvent;
                     }
@@ -549,6 +574,7 @@ namespace OverwatchLootBoxTracker
 
             myCosts[3] = 0;
             myCostsEvent[3] = 0;
+            myCostsWeapon[3] = 0;
 
             for (int i = 1; i <= 40; i++)
             {
@@ -559,6 +585,14 @@ namespace OverwatchLootBoxTracker
                 else
                 {
                     ii = i.ToString();
+                }
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i == 1)
+                    {
+                        myCostsWeapon[3] += 3000;
+                    }
                 }
                 //Skins
                 if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
@@ -625,6 +659,7 @@ namespace OverwatchLootBoxTracker
 
             myCosts[4] = 0;
             myCostsEvent[4] = 0;
+            myCostsWeapon[4] = 0;
 
             for (int i = 1; i <= 40; i++)
             {
@@ -635,6 +670,14 @@ namespace OverwatchLootBoxTracker
                 else
                 {
                     ii = i.ToString();
+                }
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i == 1)
+                    {
+                        myCostsWeapon[4] += 3000;
+                    }
                 }
                 //Skins
                 if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
@@ -677,6 +720,7 @@ namespace OverwatchLootBoxTracker
 
             myCosts[5] = 0;
             myCostsEvent[5] = 0;
+            myCostsWeapon[5] = 0;
 
             for (int i = 1; i <= 40; i++)
             {
@@ -687,6 +731,14 @@ namespace OverwatchLootBoxTracker
                 else
                 {
                     ii = i.ToString();
+                }
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i == 1)
+                    {
+                        myCostsWeapon[5] += 3000;
+                    }
                 }
                 //Skins
                 if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
@@ -749,6 +801,7 @@ namespace OverwatchLootBoxTracker
 
             myCosts[6] = 0;
             myCostsEvent[6] = 0;
+            myCostsWeapon[6] = 0;
 
             for (int i = 1; i <= 40; i++)
             {
@@ -759,6 +812,14 @@ namespace OverwatchLootBoxTracker
                 else
                 {
                     ii = i.ToString();
+                }
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i == 1)
+                    {
+                        myCostsWeapon[6] += 3000;
+                    }
                 }
                 //Skins
                 if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
@@ -821,6 +882,7 @@ namespace OverwatchLootBoxTracker
 
             myCosts[7] = 0;
             myCostsEvent[7] = 0;
+            myCostsWeapon[7] = 0;
 
             for (int i = 1; i <= 40; i++)
             {
@@ -831,6 +893,14 @@ namespace OverwatchLootBoxTracker
                 else
                 {
                     ii = i.ToString();
+                }
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i == 1)
+                    {
+                        myCostsWeapon[7] += 3000;
+                    }
                 }
                 //Skins
                 if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
@@ -897,6 +967,7 @@ namespace OverwatchLootBoxTracker
 
             myCosts[8] = 0;
             myCostsEvent[8] = 0;
+            myCostsWeapon[8] = 0;
 
             for (int i = 1; i <= 40; i++)
             {
@@ -907,6 +978,14 @@ namespace OverwatchLootBoxTracker
                 else
                 {
                     ii = i.ToString();
+                }
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i == 1)
+                    {
+                        myCostsWeapon[8] += 3000;
+                    }
                 }
                 //Skins
                 if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
@@ -977,6 +1056,7 @@ namespace OverwatchLootBoxTracker
 
             myCosts[9] = 0;
             myCostsEvent[9] = 0;
+            myCostsWeapon[9] = 0;
 
             for (int i = 1; i <= 40; i++)
             {
@@ -987,6 +1067,14 @@ namespace OverwatchLootBoxTracker
                 else
                 {
                     ii = i.ToString();
+                }
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i == 1)
+                    {
+                        myCostsWeapon[9] += 3000;
+                    }
                 }
                 //Skins
                 if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
@@ -1053,6 +1141,7 @@ namespace OverwatchLootBoxTracker
 
             myCosts[10] = 0;
             myCostsEvent[10] = 0;
+            myCostsWeapon[10] = 0;
 
             for (int i = 1; i <= 40; i++)
             {
@@ -1063,6 +1152,14 @@ namespace OverwatchLootBoxTracker
                 else
                 {
                     ii = i.ToString();
+                }
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i == 1)
+                    {
+                        myCostsWeapon[10] += 3000;
+                    }
                 }
                 //Skins
                 if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
@@ -1118,13 +1215,14 @@ namespace OverwatchLootBoxTracker
                 }
             }
         }
-
+        //
         private void Mercy()
         {
             inisHeroes = new IniStream(SaveFolder + "\\Mercy.ini");
 
             myCosts[11] = 0;
             myCostsEvent[11] = 0;
+            myCostsWeapon[11] = 0;
 
             for (int i = 1; i <= 40; i++)
             {
@@ -1135,6 +1233,14 @@ namespace OverwatchLootBoxTracker
                 else
                 {
                     ii = i.ToString();
+                }
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i == 1)
+                    {
+                        myCostsWeapon[11] += 3000;
+                    }
                 }
                 //Skins
                 if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
@@ -1205,6 +1311,7 @@ namespace OverwatchLootBoxTracker
 
             myCosts[12] = 0;
             myCostsEvent[12] = 0;
+            myCostsWeapon[12] = 0;
 
             for (int i = 1; i <= 40; i++)
             {
@@ -1215,6 +1322,14 @@ namespace OverwatchLootBoxTracker
                 else
                 {
                     ii = i.ToString();
+                }
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i == 1)
+                    {
+                        myCostsWeapon[12] += 3000;
+                    }
                 }
                 //Skins
                 if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
@@ -1257,6 +1372,7 @@ namespace OverwatchLootBoxTracker
 
             myCosts[13] = 0;
             myCostsEvent[13] = 0;
+            myCostsWeapon[13] = 0;
 
             for (int i = 1; i <= 40; i++)
             {
@@ -1267,6 +1383,14 @@ namespace OverwatchLootBoxTracker
                 else
                 {
                     ii = i.ToString();
+                }
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i == 1)
+                    {
+                        myCostsWeapon[13] += 3000;
+                    }
                 }
                 //Skins
                 if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
@@ -1325,6 +1449,7 @@ namespace OverwatchLootBoxTracker
 
             myCosts[14] = 0;
             myCostsEvent[14] = 0;
+            myCostsWeapon[14] = 0;
 
             for (int i = 1; i <= 40; i++)
             {
@@ -1335,6 +1460,14 @@ namespace OverwatchLootBoxTracker
                 else
                 {
                     ii = i.ToString();
+                }
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i == 1)
+                    {
+                        myCostsWeapon[14] += 3000;
+                    }
                 }
                 //Skins
                 if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
@@ -1397,6 +1530,7 @@ namespace OverwatchLootBoxTracker
 
             myCosts[15] = 0;
             myCostsEvent[15] = 0;
+            myCostsWeapon[15] = 0;
 
             for (int i = 1; i <= 40; i++)
             {
@@ -1407,6 +1541,14 @@ namespace OverwatchLootBoxTracker
                 else
                 {
                     ii = i.ToString();
+                }
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i == 1)
+                    {
+                        myCostsWeapon[15] += 3000;
+                    }
                 }
                 //Skins
                 if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
@@ -1473,6 +1615,7 @@ namespace OverwatchLootBoxTracker
 
             myCosts[16] = 0;
             myCostsEvent[16] = 0;
+            myCostsWeapon[16] = 0;
 
             for (int i = 1; i <= 40; i++)
             {
@@ -1483,6 +1626,14 @@ namespace OverwatchLootBoxTracker
                 else
                 {
                     ii = i.ToString();
+                }
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i == 1)
+                    {
+                        myCostsWeapon[16] += 3000;
+                    }
                 }
                 //Skins
                 if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
@@ -1549,6 +1700,7 @@ namespace OverwatchLootBoxTracker
 
             myCosts[17] = 0;
             myCostsEvent[17] = 0;
+            myCostsWeapon[17] = 0;
 
             for (int i = 1; i <= 40; i++)
             {
@@ -1559,6 +1711,14 @@ namespace OverwatchLootBoxTracker
                 else
                 {
                     ii = i.ToString();
+                }
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i == 1)
+                    {
+                        myCostsWeapon[17] += 3000;
+                    }
                 }
                 //Skins
                 if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
@@ -1625,6 +1785,7 @@ namespace OverwatchLootBoxTracker
 
             myCosts[18] = 0;
             myCostsEvent[18] = 0;
+            myCostsWeapon[18] = 0;
 
             for (int i = 1; i <= 40; i++)
             {
@@ -1635,6 +1796,14 @@ namespace OverwatchLootBoxTracker
                 else
                 {
                     ii = i.ToString();
+                }
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i == 1)
+                    {
+                        myCostsWeapon[18] += 3000;
+                    }
                 }
                 //Skins
                 if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
@@ -1697,6 +1866,7 @@ namespace OverwatchLootBoxTracker
 
             myCosts[19] = 0;
             myCostsEvent[19] = 0;
+            myCostsWeapon[19] = 0;
 
             for (int i = 1; i <= 40; i++)
             {
@@ -1707,6 +1877,14 @@ namespace OverwatchLootBoxTracker
                 else
                 {
                     ii = i.ToString();
+                }
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i == 1)
+                    {
+                        myCostsWeapon[19] += 3000;
+                    }
                 }
                 //Skins
                 if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
@@ -1765,6 +1943,7 @@ namespace OverwatchLootBoxTracker
 
             myCosts[20] = 0;
             myCostsEvent[20] = 0;
+            myCostsWeapon[20] = 0;
 
             for (int i = 1; i <= 40; i++)
             {
@@ -1775,6 +1954,14 @@ namespace OverwatchLootBoxTracker
                 else
                 {
                     ii = i.ToString();
+                }
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i == 1)
+                    {
+                        myCostsWeapon[20] += 3000;
+                    }
                 }
                 //Skins
                 if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
@@ -1838,13 +2025,14 @@ namespace OverwatchLootBoxTracker
                 }
             }
         }
-
+        //
         private void Torbjörn()
         {
             inisHeroes = new IniStream(SaveFolder + "\\Torbjörn.ini");
 
             myCosts[21] = 0;
             myCostsEvent[21] = 0;
+            myCostsWeapon[21] = 0;
 
             for (int i = 1; i <= 40; i++)
             {
@@ -1855,6 +2043,14 @@ namespace OverwatchLootBoxTracker
                 else
                 {
                     ii = i.ToString();
+                }
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i == 1)
+                    {
+                        myCostsWeapon[21] += 3000;
+                    }
                 }
                 //Skins
                 if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
@@ -1917,6 +2113,7 @@ namespace OverwatchLootBoxTracker
 
             myCosts[22] = 0;
             myCostsEvent[22] = 0;
+            myCostsWeapon[22] = 0;
 
             for (int i = 1; i <= 40; i++)
             {
@@ -1927,6 +2124,14 @@ namespace OverwatchLootBoxTracker
                 else
                 {
                     ii = i.ToString();
+                }
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i == 1)
+                    {
+                        myCostsWeapon[22] += 3000;
+                    }
                 }
                 //Skins
                 if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
@@ -1997,6 +2202,7 @@ namespace OverwatchLootBoxTracker
 
             myCosts[23] = 0;
             myCostsEvent[23] = 0;
+            myCostsWeapon[23] = 0;
 
             for (int i = 1; i <= 40; i++)
             {
@@ -2007,6 +2213,14 @@ namespace OverwatchLootBoxTracker
                 else
                 {
                     ii = i.ToString();
+                }
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i == 1)
+                    {
+                        myCostsWeapon[23] += 3000;
+                    }
                 }
                 //Skins
                 if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
@@ -2073,6 +2287,7 @@ namespace OverwatchLootBoxTracker
 
             myCosts[24] = 0;
             myCostsEvent[24] = 0;
+            myCostsWeapon[24] = 0;
 
             for (int i = 1; i <= 40; i++)
             {
@@ -2083,6 +2298,14 @@ namespace OverwatchLootBoxTracker
                 else
                 {
                     ii = i.ToString();
+                }
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i == 1)
+                    {
+                        myCostsWeapon[24] += 3000;
+                    }
                 }
                 //Skins
                 if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
@@ -2153,6 +2376,7 @@ namespace OverwatchLootBoxTracker
 
             myCosts[25] = 0;
             myCostsEvent[25] = 0;
+            myCostsWeapon[25] = 0;
 
             for (int i = 1; i <= 40; i++)
             {
@@ -2163,6 +2387,14 @@ namespace OverwatchLootBoxTracker
                 else
                 {
                     ii = i.ToString();
+                }
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i == 1)
+                    {
+                        myCostsWeapon[25] += 3000;
+                    }
                 }
                 //Skins
                 if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
@@ -2233,6 +2465,7 @@ namespace OverwatchLootBoxTracker
 
             myCosts[26] = 0;
             myCostsEvent[26] = 0;
+            myCostsWeapon[26] = 0;
 
             for (int i = 1; i <= 40; i++)
             {
@@ -2243,6 +2476,14 @@ namespace OverwatchLootBoxTracker
                 else
                 {
                     ii = i.ToString();
+                }
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i == 1)
+                    {
+                        myCostsWeapon[26] += 3000;
+                    }
                 }
                 //Skins
                 if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")

@@ -93,7 +93,7 @@ namespace OverwatchLootBoxTracker.Translate
                 //}
                 //else
                 {
-                    return "© 2017 SpielefreakJ | OWLootboxTracker Version: 0.2.0.2 Alpha | Overwatch Version: 1.18.1.2";
+                    return "© 2017 SpielefreakJ | OWLootboxTracker Version: 0.2.0.4 Alpha | Overwatch Version: 1.18.1.2";
                 }
             }
         }
@@ -476,6 +476,20 @@ namespace OverwatchLootBoxTracker.Translate
                 }
             }
         }
+        public string OriginGotY2
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.OriginGotY2;
+                }
+                else
+                {
+                    return EN.OriginGotY2;
+                }
+            }
+        }
 
         public string BlizzCon
         {
@@ -489,6 +503,26 @@ namespace OverwatchLootBoxTracker.Translate
                 {
                     return EN.BlizzCon;
                 }
+            }
+        }
+
+        public string BlizzCon2
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.BlizzCon2;
+                }
+                else
+                {
+                    return EN.BlizzCon2;
+                }
+            }
+            set
+            {
+                EN.BlizzCon2 = value;
+                DE.BlizzCon2 = value;
             }
         }
 

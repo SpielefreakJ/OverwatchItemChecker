@@ -116,6 +116,9 @@
             this.tmrWelcome = new System.Windows.Forms.Timer(this.components);
             this.btnBackHero = new System.Windows.Forms.Button();
             this.lblCloseImage = new System.Windows.Forms.Label();
+            this.btn15 = new System.Windows.Forms.Button();
+            this.btn16 = new System.Windows.Forms.Button();
+            this.btn17 = new System.Windows.Forms.Button();
             this.gBLang.SuspendLayout();
             this.gbAll.SuspendLayout();
             this.gBMoreCost.SuspendLayout();
@@ -265,6 +268,9 @@
             // 
             // gbAll
             // 
+            this.gbAll.Controls.Add(this.btn17);
+            this.gbAll.Controls.Add(this.btn16);
+            this.gbAll.Controls.Add(this.btn15);
             this.gbAll.Controls.Add(this.btn00);
             this.gbAll.Controls.Add(this.btn14);
             this.gbAll.Controls.Add(this.btn13);
@@ -1187,6 +1193,42 @@
             this.lblCloseImage.Text = "lblCloseImage";
             this.lblCloseImage.Visible = false;
             // 
+            // btn15
+            // 
+            this.btn15.AutoSize = true;
+            this.btn15.Location = new System.Drawing.Point(527, 48);
+            this.btn15.Name = "btn15";
+            this.btn15.Size = new System.Drawing.Size(75, 23);
+            this.btn15.TabIndex = 79;
+            this.btn15.Text = "btn15";
+            this.btn15.UseVisualStyleBackColor = true;
+            this.btn15.Visible = false;
+            this.btn15.Click += new System.EventHandler(this.btn15_Click);
+            // 
+            // btn16
+            // 
+            this.btn16.AutoSize = true;
+            this.btn16.Location = new System.Drawing.Point(608, 48);
+            this.btn16.Name = "btn16";
+            this.btn16.Size = new System.Drawing.Size(75, 23);
+            this.btn16.TabIndex = 80;
+            this.btn16.Text = "btn16";
+            this.btn16.UseVisualStyleBackColor = true;
+            this.btn16.Visible = false;
+            this.btn16.Click += new System.EventHandler(this.btn16_Click);
+            // 
+            // btn17
+            // 
+            this.btn17.AutoSize = true;
+            this.btn17.Location = new System.Drawing.Point(689, 48);
+            this.btn17.Name = "btn17";
+            this.btn17.Size = new System.Drawing.Size(75, 23);
+            this.btn17.TabIndex = 81;
+            this.btn17.Text = "btn17";
+            this.btn17.UseVisualStyleBackColor = true;
+            this.btn17.Visible = false;
+            this.btn17.Click += new System.EventHandler(this.btn17_Click);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -1316,6 +1358,9 @@
         private System.Windows.Forms.Button btn02;
         private System.Windows.Forms.Button btn00;
         private System.Windows.Forms.Label lblCloseImage;
+        private System.Windows.Forms.Button btn17;
+        private System.Windows.Forms.Button btn16;
+        private System.Windows.Forms.Button btn15;
     }
 }
 

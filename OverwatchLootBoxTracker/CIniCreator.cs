@@ -79,49 +79,90 @@ namespace OverwatchLootBoxTracker
             }
         }
 
-        public void create3()
+        public void create3(string Hero)
         {
-            inisHeroes = new IniStream(Path + "\\Ana.ini");
-            inisHeroes.Write("SK14", "false");
+            if (Hero == "Ana")
+            {
+                inisHeroes = new IniStream(Path + "\\Ana.ini");
+                inisHeroes.Write("SK14", "false");
+            }
+            if (Hero == "Bastion")
+            {
+                inisHeroes = new IniStream(Path + "\\Bastion.ini");
+                inisHeroes.Write("SK17", "false");
+            }
+            if (Hero == "Genji")
+            {
+                inisHeroes = new IniStream(Path + "\\Genji.ini");
+                inisHeroes.Write("VP06", "false");
+            }
+            if (Hero == "Hanzo")
+            {
+                inisHeroes = new IniStream(Path + "\\Hanzo.ini");
+                inisHeroes.Write("SK13", "false");
+            }
+            if (Hero == "Junkrat")
+            {
+                inisHeroes = new IniStream(Path + "\\Junkrat.ini");
+                inisHeroes.Write("SK14", "false");
+            }
+            if (Hero == "Mercy")
+            {
+                inisHeroes = new IniStream(Path + "\\Mercy.ini");
+                inisHeroes.Write("VP07", "false");
+            }
+            if (Hero == "Orisa")
+            {
+                inisHeroes = new IniStream(Path + "\\Orisa.ini");
+                inisHeroes.Write("EM07", "false");
+            }
+            if (Hero == "Roadhog")
+            {
+                inisHeroes = new IniStream(Path + "\\Roadhog.ini");
+                inisHeroes.Write("SK14", "false");
+                inisHeroes.Write("VP07", "false");
+            }
+            if (Hero == "Soldier_76")
+            {
+                inisHeroes = new IniStream(Path + "\\Soldier_76.ini");
+                inisHeroes.Write("SK15", "false");
+            }
+            if (Hero == "Sombra")
+            {
+                inisHeroes = new IniStream(Path + "\\Sombra.ini");
+                inisHeroes.Write("SK13", "false");
+                inisHeroes.Write("VP07", "false");
+            }
+            if (Hero == "Widowmaker")
+            {
+                inisHeroes = new IniStream(Path + "\\Widowmaker.ini");
+                inisHeroes.Write("VP06", "false");
+            }
+            if (Hero == "Zarya")
+            {
+                inisHeroes = new IniStream(Path + "\\Zarya.ini");
+                inisHeroes.Write("VP06", "false");
+            }
+            if (Hero == "Zenyatta")
+            {
+                inisHeroes = new IniStream(Path + "\\Zenyatta.ini");
+                inisHeroes.Write("EM07", "false");
+                inisHeroes.Write("VP06", "false");
+            }
+        }
+        public void create4(string Hero)
+        {
+            if (Hero == "Bastion")
+            {
+                inisHeroes = new IniStream(Path + "\\Bastion.ini");
+                inisHeroes.Write("VP07", "false");
+            }
+        }
 
-            inisHeroes = new IniStream(Path + "\\Bastion.ini");
-            inisHeroes.Write("SK17", "false");
-
-            inisHeroes = new IniStream(Path + "\\Genji.ini");
-            inisHeroes.Write("VP06", "false");
-
-            inisHeroes = new IniStream(Path + "\\Hanzo.ini");
-            inisHeroes.Write("SK13", "false");
-
-            inisHeroes = new IniStream(Path + "\\Junkrat.ini");
-            inisHeroes.Write("SK14", "false");
-
-            inisHeroes = new IniStream(Path + "\\Mercy.ini");
-            inisHeroes.Write("VP07", "false");
-
-            inisHeroes = new IniStream(Path + "\\Orisa.ini");
-            inisHeroes.Write("EM07", "false");
-
-            inisHeroes = new IniStream(Path + "\\Roadhog.ini");
-            inisHeroes.Write("SK14", "false");
-            inisHeroes.Write("VP07", "false");
-
-            inisHeroes = new IniStream(Path + "\\Soldier_76.ini");
-            inisHeroes.Write("SK15", "false");
-
-            inisHeroes = new IniStream(Path + "\\Sombra.ini");
-            inisHeroes.Write("SK13", "false");
-            inisHeroes.Write("VP07", "false");
-
-            inisHeroes = new IniStream(Path + "\\Widowmaker.ini");
-            inisHeroes.Write("VP06", "false");
-
-            inisHeroes = new IniStream(Path + "\\Zarya.ini");
-            inisHeroes.Write("VP06", "false");
-
-            inisHeroes = new IniStream(Path + "\\Zenyatta.ini");
-            inisHeroes.Write("EM07", "false");
-            inisHeroes.Write("VP06", "false");
+        public void create5(string Hero)
+        {
+            inisHeroes = new IniStream(Path + "\\" + Hero + ".ini");
+            inisHeroes.Write("GW01", "false");
         }
     }
 }

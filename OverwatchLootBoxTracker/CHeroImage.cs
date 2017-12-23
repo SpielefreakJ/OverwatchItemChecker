@@ -10,18 +10,19 @@ namespace OverwatchLootBoxTracker
 {
     class CHeroImage : PictureBox
     {
-        string myHero = "D.Va", myCategory = "Skins", myItemname = "Carbon Fiber";
+        string myHero = "D.Va", myCategory = "Skins"; int myItemname = 5;
 
         public CHeroImage()
         {
             SizeMode = PictureBoxSizeMode.AutoSize;
 
-            Image = Image.FromFile("Images\\Items\\" + myHero +"\\" + myCategory + "\\" + myItemname + ".png");
+            Image = Image.FromFile("Images\\Items\\" + myHero + "\\" + myCategory + "\\" + myItemname + ".png");
         }
 
-        public void ChangeImage(string Hero, string Category, string Itemname)
+        public void ChangeImage(string Hero, string Category, int Itemname)
         {
             myHero = Hero; myCategory = Category; myItemname = Itemname;
+
             Image = Image.FromFile("Images\\Items\\" + myHero + "\\" + myCategory + "\\" + myItemname + ".png");
         }
 

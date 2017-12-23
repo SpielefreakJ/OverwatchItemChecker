@@ -129,21 +129,51 @@
     <Compile Include="Languages\German\Heroes\DE_Zarya.cs" />
     <Compile Include="Languages\German\Heroes\DE_Zenyatta.cs" />
     <Compile Include="Languages\German\Heroes\DE_Moira.cs" />
-    <Compile Include="Translate\Heroes\L_Moira.cs" />
-    <Compile Include="Translate\Heroes\L_Lúcio.cs" />
-    <Compile Include="Translate\Heroes\L_McCree.cs" />
-    <Compile Include="Translate\Heroes\L_Mei.cs" />
-    <Compile Include="Translate\Heroes\L_Mercy.cs" />
-    <Compile Include="Translate\Heroes\L_Orisa.cs" />
-    <Compile Include="Translate\Heroes\L_Pharah.cs" />
-    <Compile Include="Translate\Heroes\L_Reaper.cs" />
-    <Compile Include="Translate\Heroes\L_Reinhardt.cs" />
-    <Compile Include="Translate\Heroes\L_Roadhog.cs" />
-    <Compile Include="Translate\Heroes\L_Soldier_76.cs" />
-    <Compile Include="Translate\Heroes\L_Sombra.cs" />
-    <Compile Include="Translate\Heroes\L_Symmetra.cs" />
-    <Compile Include="Translate\Heroes\L_Torbjörn.cs" />
-    <Compile Include="Translate\Heroes\L_Tracer.cs" />
+    <Compile Include="Translate\Heroes\L_Moira.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Translate\Heroes\L_Lúcio.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Translate\Heroes\L_McCree.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Translate\Heroes\L_Mei.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Translate\Heroes\L_Mercy.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Translate\Heroes\L_Orisa.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Translate\Heroes\L_Pharah.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Translate\Heroes\L_Reaper.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Translate\Heroes\L_Reinhardt.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Translate\Heroes\L_Roadhog.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Translate\Heroes\L_Soldier_76.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Translate\Heroes\L_Sombra.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Translate\Heroes\L_Symmetra.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Translate\Heroes\L_Torbjörn.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Translate\Heroes\L_Tracer.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Translate\L_Translate.cs" />
     <Compile Include="CCost.cs" />
     <Compile Include="Form1.cs">
@@ -152,8 +182,12 @@
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
-    <Compile Include="Translate\Heroes\L_DVa.cs" />
-    <Compile Include="Translate\Heroes\L_Bastion.cs" />
+    <Compile Include="Translate\Heroes\L_DVa.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Translate\Heroes\L_Bastion.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="IniStream.cs" />
     <Compile Include="Languages\English\Heroes\EN_Ana.cs" />
     <Compile Include="Languages\English\Heroes\EN_Bastion.cs" />
@@ -182,17 +216,35 @@
     <Compile Include="Languages\English\Heroes\EN_Zenyatta.cs" />
     <Compile Include="Languages\German\L_DE.cs" />
     <Compile Include="Languages\English\L_EN.cs" />
-    <Compile Include="Translate\Heroes\L_Ana.cs" />
-    <Compile Include="Translate\Heroes\L_Doomfist.cs" />
-    <Compile Include="Translate\Heroes\L_Genji.cs" />
-    <Compile Include="Translate\Heroes\L_Hanzo.cs" />
-    <Compile Include="Translate\Heroes\L_Junkrat.cs" />
+    <Compile Include="Translate\Heroes\L_Ana.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Translate\Heroes\L_Doomfist.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Translate\Heroes\L_Genji.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Translate\Heroes\L_Hanzo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Translate\Heroes\L_Junkrat.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="Translate\Heroes\L_Widowmaker.cs" />
-    <Compile Include="Translate\Heroes\L_Winston.cs" />
-    <Compile Include="Translate\Heroes\L_Zarya.cs" />
-    <Compile Include="Translate\Heroes\L_Zenyatta.cs" />
+    <Compile Include="Translate\Heroes\L_Widowmaker.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Translate\Heroes\L_Winston.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Translate\Heroes\L_Zarya.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Translate\Heroes\L_Zenyatta.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -241,187 +293,439 @@
     <Content Include="Images\Hanzo_link.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Emotes\Beach Ball.png">
+    <Content Include="Images\Items\Ana\Emotes\6.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Emotes\Candy.png">
+    <Content Include="Images\Items\Ana\Emotes\7.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Emotes\Dance.png">
+    <Content Include="Images\Items\Ana\Emotes\8.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Emotes\Disapproving.png">
+    <Content Include="Images\Items\Ana\Emotes\2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Emotes\Heroic.png">
+    <Content Include="Images\Items\Ana\Emotes\0.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Emotes\Not impressed.png">
+    <Content Include="Images\Items\Ana\Emotes\1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Emotes\Protector.png">
+    <Content Include="Images\Items\Ana\Emotes\3.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Emotes\Take a knee.png">
+    <Content Include="Images\Items\Ana\Emotes\4.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Emotes\Tea Time.png">
+    <Content Include="Images\Items\Ana\Emotes\5.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Skins\Captain Amari.png">
+    <Content Include="Images\Items\Ana\Skins\11.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Skins\Citrine.png">
+    <Content Include="Images\Items\Ana\Skins\1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Skins\Classic.png">
+    <Content Include="Images\Items\Ana\Skins\0.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Skins\Corsair.png">
+    <Content Include="Images\Items\Ana\Skins\13.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Skins\Garnet.png">
+    <Content Include="Images\Items\Ana\Skins\2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Skins\Ghoul.png">
+    <Content Include="Images\Items\Ana\Skins\7.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Skins\Horus.png">
+    <Content Include="Images\Items\Ana\Skins\12.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Skins\Merciful.png">
+    <Content Include="Images\Items\Ana\Skins\5.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Skins\Peridot.png">
+    <Content Include="Images\Items\Ana\Skins\3.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Skins\Shrike.png">
+    <Content Include="Images\Items\Ana\Skins\6.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Skins\Snow Owl.png">
+    <Content Include="Images\Items\Ana\Skins\14.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Skins\Tal.png">
+    <Content Include="Images\Items\Ana\Skins\8.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Skins\Turquoise.png">
+    <Content Include="Images\Items\Ana\Skins\4.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Skins\Wadjet.png">
+    <Content Include="Images\Items\Ana\Skins\9.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Skins\Wasteland.png">
+    <Content Include="Images\Items\Ana\Skins\10.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Victory Poses\Folded Hands.png">
+    <Content Include="Images\Items\Ana\Victory Poses\6.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Victory Poses\Heroic.png">
+    <Content Include="Images\Items\Ana\Victory Poses\0.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Victory Poses\Mission Complete.png">
+    <Content Include="Images\Items\Ana\Victory Poses\1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Victory Poses\Protector.png">
+    <Content Include="Images\Items\Ana\Victory Poses\2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Victory Poses\R.I.P..png">
+    <Content Include="Images\Items\Ana\Victory Poses\4.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Victory Poses\Seated.png">
+    <Content Include="Images\Items\Ana\Victory Poses\3.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\Ana\Victory Poses\Toast.png">
+    <Content Include="Images\Items\Ana\Victory Poses\5.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Emotes\Bow.png">
+    <Content Include="Images\Items\Bastion\Emotes\1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Emotes\Bunny Hop.png">
+    <Content Include="Images\Items\Bastion\Emotes\6.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Emotes\Dance.png">
+    <Content Include="Images\Items\Bastion\Emotes\2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Emotes\Game On.png">
+    <Content Include="Images\Items\Bastion\Emotes\3.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Emotes\Heartbreaker.png">
+    <Content Include="Images\Items\Bastion\Emotes\0.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Emotes\Heroic.png">
+    <Content Include="Images\Items\Bastion\Emotes\4.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Emotes\Party Time.png">
+    <Content Include="Images\Items\Bastion\Emotes\7.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Emotes\^O^.png">
+    <Content Include="Images\Items\Bastion\Emotes\5.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Skins\B.Va.png">
+    <Content Include="Images\Items\Bastion\Skins\11.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Skins\Blueberry.png">
+    <Content Include="Images\Items\Bastion\Skins\17.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Skins\Carbon Fiber.png">
+    <Content Include="Images\Items\Bastion\Skins\7.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Skins\Classic.png">
+    <Content Include="Images\Items\Bastion\Skins\0.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Skins\Cruiser.png">
+    <Content Include="Images\Items\Bastion\Skins\1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Skins\Junebug.png">
+    <Content Include="Images\Items\Bastion\Skins\5.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Skins\Junker.png">
+    <Content Include="Images\Items\Bastion\Skins\16.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Skins\Lemon-Lime.png">
+    <Content Include="Images\Items\Bastion\Skins\13.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Skins\Officer.png">
+    <Content Include="Images\Items\Bastion\Skins\2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Skins\Palanquin.png">
+    <Content Include="Images\Items\Bastion\Skins\10.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Skins\Scavenger.png">
+    <Content Include="Images\Items\Bastion\Skins\6.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Skins\Taegeukgi.png">
+    <Content Include="Images\Items\Bastion\Skins\15.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Skins\Tangerine.png">
+    <Content Include="Images\Items\Bastion\Skins\9.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Skins\Watermelon.png">
+    <Content Include="Images\Items\Bastion\Skins\3.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Skins\White Rabbit.png">
+    <Content Include="Images\Items\Bastion\Skins\4.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Victory Poses\Festive.png">
+    <Content Include="Images\Items\Bastion\Skins\14.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Victory Poses\Heroic.png">
+    <Content Include="Images\Items\Bastion\Skins\8.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Victory Poses\I Heart You.png">
+    <Content Include="Images\Items\Bastion\Skins\12.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Victory Poses\Lucky Pouch.png">
+    <Content Include="Images\Items\Bastion\Victory Poses\1.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Victory Poses\Peace.png">
+    <Content Include="Images\Items\Bastion\Victory Poses\6.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Victory Poses\R.I.P..png">
+    <Content Include="Images\Items\Bastion\Victory Poses\0.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
-    <Content Include="Images\Items\D.Va\Victory Poses\Sitting.png">
+    <Content Include="Images\Items\Bastion\Victory Poses\4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Bastion\Victory Poses\2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Bastion\Victory Poses\5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Bastion\Victory Poses\3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Bastion\Victory Poses\7.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Emotes\5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Emotes\2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Emotes\6.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Emotes\7.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Emotes\3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Emotes\0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Emotes\4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Emotes\1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Skins\10.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Skins\1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Skins\5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Skins\0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Skins\14.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Skins\11.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Skins\8.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Skins\2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Skins\12.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Skins\13.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Skins\9.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Skins\7.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Skins\3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Skins\4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Skins\6.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Victory Poses\5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Victory Poses\0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Victory Poses\1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Victory Poses\6.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Victory Poses\2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Victory Poses\4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\D.Va\Victory Poses\3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Doomfist\Emotes\1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Doomfist\Emotes\0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Doomfist\Emotes\2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Doomfist\Emotes\3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Doomfist\Emotes\4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Doomfist\Emotes\5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Doomfist\Skins\9.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Doomfist\Skins\7.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Doomfist\Skins\0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Doomfist\Skins\1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Doomfist\Skins\8.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Doomfist\Skins\2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Doomfist\Skins\5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Doomfist\Skins\6.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Doomfist\Skins\3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Doomfist\Skins\10.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Doomfist\Skins\4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Doomfist\Victory Poses\0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Doomfist\Victory Poses\1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Doomfist\Victory Poses\2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Doomfist\Victory Poses\3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Emotes\1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Emotes\2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Emotes\3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Emotes\6.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Emotes\0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Emotes\4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Emotes\5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Skins\1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Skins\10.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Skins\13.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Skins\5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Skins\6.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Skins\2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Skins\0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Skins\3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Skins\7.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Skins\11.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Skins\4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Skins\12.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Skins\14.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Skins\8.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Skins\9.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Victory Poses\0.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Victory Poses\1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Victory Poses\5.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Victory Poses\4.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Victory Poses\2.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Victory Poses\3.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Genji\Victory Poses\6.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\Junkrat_link.png">
@@ -502,9 +806,7 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="Images\Items\Bastion\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
