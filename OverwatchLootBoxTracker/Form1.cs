@@ -3119,39 +3119,56 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave2 == Lang.Skins)
             {
-                chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1);
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5);
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1);
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2);
-                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3);
-                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p2, p4);
-                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p1);
-                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p2);
-                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p3);
-                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p4);
-                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p5);
-                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p6);
-                chB15.Visible = true; chB15.Location = new Point(gBAllWeited4p3, p7);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1); chB00.Text = "(" + Cost.Classic + ")";
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2); chB01.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB01, "Rare");
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3); chB02.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB02, "Rare");
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4); chB03.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB03, "Rare");
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5); chB04.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB04, "Rare");
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB05, "Epic");
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB06, "Epic");
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB07, Lang.Summer + " 2016");
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p2, p4); chB08.Text = "(" + Cost.EpicEvent + ")"; HeroTT.SetToolTip(chB08, Lang.Rooster + " 2017");
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p1); chB09.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB09, "Legendary");
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p2); chB10.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB10, "Legendary");
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p3); chB11.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB11, "Legendary");
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p4); chB12.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB12, "Legendary");
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p5); chB13.Text = "(" + Cost.LegendaryEvent + ")"; HeroTT.SetToolTip(chB13, Lang.Summer + " 2017");
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p6); chB14.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB14, Lang.Halloween + " 2016");
+                chB15.Visible = true; chB15.Location = new Point(gBAllWeited4p3, p7); chB15.Text = "(" + Cost.LegendaryEvent + ")"; HeroTT.SetToolTip(chB15, Lang.Uprising + " 2017");
 
-                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Classic;//Default
-                chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Mercy.Celestial_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Mercy.Mist_SK + " (" + Cost.Rare + ")";
-                chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Mercy.Orchid_SK + " (" + Cost.Rare + ")";
-                chB04.BackColor = Color.DeepSkyBlue; chB04.Text = Mercy.Verdant_SK + " (" + Cost.Rare + ")";
-                chB05.BackColor = Color.DarkViolet; chB05.Text = Mercy.Amber_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.BackColor = Color.DarkViolet; chB06.Text = Mercy.Cobalt_SK + " (" + Cost.Epic + ")";
-                chB07.BackColor = Color.DarkViolet; chB07.Text = Mercy.Eidgenossin_SK + " (" + Cost.Epic + ")";//Summer 16
-                chB08.BackColor = Color.DarkViolet; chB08.Text = Mercy.Fortune_SK + " (" + Cost.EpicEvent + ")";//Rooster 17
-                chB09.BackColor = Color.Gold; chB09.Text = Mercy.Sigrun_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB10.BackColor = Color.Gold; chB10.Text = Mercy.Valkyrie_SK + " (" + Cost.Legendary + ")";
-                chB11.BackColor = Color.Gold; chB11.Text = Mercy.Devil_SK + " (" + Cost.Legendary + ")";
-                chB12.BackColor = Color.Gold; chB12.Text = Mercy.IMP_SK + " (" + Cost.Legendary + ")";
-                chB13.BackColor = Color.Gold; chB13.Text = Mercy.Winged_Victory_SK + " (" + Cost.LegendaryEvent + ")";//Summer 17
-                chB14.BackColor = Color.Gold; chB14.Text = Mercy.Witch_SK + " (" + Cost.Legendary + ")";//Halloween 16
-                chB15.BackColor = Color.Gold; chB15.Text = Mercy.Combat_Medic_Ziegler_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
+                btn00.Visible = true; btn00.Location = new Point(gBAllWeited4p1 + chB00.Width, p1 - 5);
+                btn01.Visible = true; btn01.Location = new Point(gBAllWeited4p1 + chB01.Width, p2 - 5);
+                btn02.Visible = true; btn02.Location = new Point(gBAllWeited4p1 + chB02.Width, p3 - 5);
+                btn03.Visible = true; btn03.Location = new Point(gBAllWeited4p1 + chB03.Width, p4 - 5);
+                btn04.Visible = true; btn04.Location = new Point(gBAllWeited4p1 + chB04.Width, p5 - 5);
+                btn05.Visible = true; btn05.Location = new Point(gBAllWeited4p2 + chB05.Width, p1 - 5);
+                btn06.Visible = true; btn06.Location = new Point(gBAllWeited4p2 + chB06.Width, p2 - 5);
+                btn07.Visible = true; btn07.Location = new Point(gBAllWeited4p2 + chB07.Width, p3 - 5);
+                btn08.Visible = true; btn08.Location = new Point(gBAllWeited4p2 + chB08.Width, p4 - 5);
+                btn09.Visible = true; btn09.Location = new Point(gBAllWeited4p3 + chB09.Width, p1 - 5);
+                btn10.Visible = true; btn10.Location = new Point(gBAllWeited4p3 + chB10.Width, p2 - 5);
+                btn11.Visible = true; btn11.Location = new Point(gBAllWeited4p3 + chB11.Width, p3 - 5);
+                btn12.Visible = true; btn12.Location = new Point(gBAllWeited4p3 + chB12.Width, p4 - 5);
+                btn13.Visible = true; btn13.Location = new Point(gBAllWeited4p3 + chB13.Width, p5 - 5);
+                btn14.Visible = true; btn14.Location = new Point(gBAllWeited4p3 + chB14.Width, p6 - 5);
+                btn15.Visible = true; btn15.Location = new Point(gBAllWeited4p3 + chB15.Width, p7 - 5);
+
+                btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Classic;//Default
+                btn01.BackColor = Color.DeepSkyBlue; btn01.Text = Mercy.Celestial_SK;//Rare
+                btn02.BackColor = Color.DeepSkyBlue; btn02.Text = Mercy.Mist_SK;
+                btn03.BackColor = Color.DeepSkyBlue; btn03.Text = Mercy.Orchid_SK;
+                btn04.BackColor = Color.DeepSkyBlue; btn04.Text = Mercy.Verdant_SK;
+                btn05.BackColor = Color.DarkViolet; btn05.Text = Mercy.Amber_SK;//Epic
+                btn06.BackColor = Color.DarkViolet; btn06.Text = Mercy.Cobalt_SK;
+                btn07.BackColor = Color.DarkViolet; btn07.Text = Mercy.Eidgenossin_SK;//Summer 16
+                btn08.BackColor = Color.DarkViolet; btn08.Text = Mercy.Fortune_SK;//Rooster 17
+                btn09.BackColor = Color.Gold; btn09.Text = Mercy.Sigrun_SK;//Legendary
+                btn10.BackColor = Color.Gold; btn10.Text = Mercy.Valkyrie_SK;
+                btn11.BackColor = Color.Gold; btn11.Text = Mercy.Devil_SK;
+                btn12.BackColor = Color.Gold; btn12.Text = Mercy.IMP_SK;
+                btn13.BackColor = Color.Gold; btn13.Text = Mercy.Winged_Victory_SK;//Summer 17
+                btn14.BackColor = Color.Gold; btn14.Text = Mercy.Witch_SK;//Halloween 16
+                btn15.BackColor = Color.Gold; btn15.Text = Mercy.Combat_Medic_Ziegler_SK;//Uprising 17
 
                 chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
@@ -3172,21 +3189,29 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave2 == Lang.Emotes)
             {
-                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1); chB00.Text = "(" + Cost.Classic + ")";
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2); chB01.Text = " (" + Cost.Epic + ")"; HeroTT.SetToolTip(chB01, "Epic");
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3); chB02.Text = " (" + Cost.Epic + ")"; HeroTT.SetToolTip(chB02, "Epic");
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4); chB03.Text = " (" + Cost.Epic + ")"; HeroTT.SetToolTip(chB03, "Epic");
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1); chB04.Text = " (" + Cost.Epic + ")"; HeroTT.SetToolTip(chB04, "Epic");
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2); chB05.Text = " (" + Cost.Epic + ")"; HeroTT.SetToolTip(chB05, "Epic");
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3); chB06.Text = " (" + Cost.EpicEvent + ")"; HeroTT.SetToolTip(chB06, Lang.Annyver + " 2017");
 
-                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Heroic;//Default
-                chB01.BackColor = Color.DarkViolet; chB01.Text = Mercy.Applause_EM + " (" + Cost.Epic + ")";//Epic
-                chB02.BackColor = Color.DarkViolet; chB02.Text = Mercy.Caduceus_EM + " (" + Cost.Epic + ")";
-                chB03.BackColor = Color.DarkViolet; chB03.Text = Mercy.No_Pulse_EM + " (" + Cost.Epic + ")";
-                chB04.BackColor = Color.DarkViolet; chB04.Text = Mercy.Relax_EM + " (" + Cost.Epic + ")";
-                chB05.BackColor = Color.DarkViolet; chB05.Text = Mercy.The_best_Medicine_EM + " (" + Cost.Epic + ")";
-                chB06.BackColor = Color.DarkViolet; chB06.Text = Mercy.Hustle_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+                btn00.Visible = true; btn00.Location = new Point(gBAllWeited3p1 + chB00.Width, p1 - 5);
+                btn01.Visible = true; btn01.Location = new Point(gBAllWeited3p1 + chB01.Width, p2 - 5);
+                btn02.Visible = true; btn02.Location = new Point(gBAllWeited3p1 + chB02.Width, p3 - 5);
+                btn03.Visible = true; btn03.Location = new Point(gBAllWeited3p1 + chB03.Width, p4 - 5);
+                btn04.Visible = true; btn04.Location = new Point(gBAllWeited3p2 + chB04.Width, p1 - 5);
+                btn05.Visible = true; btn05.Location = new Point(gBAllWeited3p2 + chB05.Width, p2 - 5);
+                btn06.Visible = true; btn06.Location = new Point(gBAllWeited3p2 + chB06.Width, p3 - 5);
+
+                btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Heroic;//Default
+                btn01.BackColor = Color.DarkViolet; btn01.Text = Mercy.Applause_EM;//Epic
+                btn02.BackColor = Color.DarkViolet; btn02.Text = Mercy.Caduceus_EM;
+                btn03.BackColor = Color.DarkViolet; btn03.Text = Mercy.No_Pulse_EM;
+                btn04.BackColor = Color.DarkViolet; btn04.Text = Mercy.Relax_EM;
+                btn05.BackColor = Color.DarkViolet; btn05.Text = Mercy.The_best_Medicine_EM;
+                btn06.BackColor = Color.DarkViolet; btn06.Text = Mercy.Hustle_EM;//Annyver 17
 
                 chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
@@ -3198,23 +3223,32 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave2 == Lang.VictoryPoses)
             {
-                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3);
-                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p4);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1); chB00.Text = "(" + Cost.Classic + ")";
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2); chB01.Text = " (" + Cost.Rare + ")"; HeroTT.SetToolTip(chB01, "Rare");
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3); chB02.Text = " (" + Cost.Rare + ")"; HeroTT.SetToolTip(chB02, "Rare");
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4); chB03.Text = " (" + Cost.Rare + ")"; HeroTT.SetToolTip(chB03, "Rare");
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1); chB04.Text = " (" + Cost.RareEvent + ")"; HeroTT.SetToolTip(chB04, Lang.Summer + " 2017");
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2); chB05.Text = " (" + Cost.Rare + ")"; HeroTT.SetToolTip(chB05, Lang.Halloween + " 2016");
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3); chB06.Text = " (" + Cost.Rare + ")"; HeroTT.SetToolTip(chB06, Lang.Winter + " 2016");
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p4); chB07.Text = " (" + Cost.RareEvent + ")"; HeroTT.SetToolTip(chB07, Lang.Winter + " 2017");
 
-                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Heroic;//Default
-                chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Mercy.Angelic_VP + " (" + Cost.Rare + ")";//Rare
-                chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Mercy.Carefree_VP + " (" + Cost.Rare + ")";
-                chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Mercy.Ready_for_Battle_VP + " (" + Cost.Rare + ")";
-                chB04.BackColor = Color.DeepSkyBlue; chB04.Text = Mercy.Medal_VP + " (" + Cost.RareEvent + ")";//Summer 17
-                chB05.BackColor = Color.DeepSkyBlue; chB05.Text = Mercy.RIP_VP + " (" + Cost.Rare + ")";//Halloween 16
-                chB06.BackColor = Color.DeepSkyBlue; chB06.Text = Mercy.Mistletoe_VP + " (" + Cost.Rare + ")";//Winter 16
-                chB07.BackColor = Color.DeepSkyBlue; chB07.Text = Mercy.Toast_VP + " (" + Cost.RareEvent + ")";//Winter 17
+                btn00.Visible = true; btn00.Location = new Point(gBAllWeited3p1 + chB00.Width, p1 - 5);
+                btn01.Visible = true; btn01.Location = new Point(gBAllWeited3p1 + chB01.Width, p2 - 5);
+                btn02.Visible = true; btn02.Location = new Point(gBAllWeited3p1 + chB02.Width, p3 - 5);
+                btn03.Visible = true; btn03.Location = new Point(gBAllWeited3p1 + chB03.Width, p4 - 5);
+                btn04.Visible = true; btn04.Location = new Point(gBAllWeited3p2 + chB04.Width, p1 - 5);
+                btn05.Visible = true; btn05.Location = new Point(gBAllWeited3p2 + chB05.Width, p2 - 5);
+                btn06.Visible = true; btn06.Location = new Point(gBAllWeited3p2 + chB06.Width, p3 - 5);
+                btn07.Visible = true; btn07.Location = new Point(gBAllWeited3p2 + chB07.Width, p4 - 5);
+
+                btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Heroic;//Default
+                btn01.BackColor = Color.DeepSkyBlue; btn01.Text = Mercy.Angelic_VP;//Rare
+                btn02.BackColor = Color.DeepSkyBlue; btn02.Text = Mercy.Carefree_VP;
+                btn03.BackColor = Color.DeepSkyBlue; btn03.Text = Mercy.Ready_for_Battle_VP;
+                btn04.BackColor = Color.DeepSkyBlue; btn04.Text = Mercy.Medal_VP;//Summer 17
+                btn05.BackColor = Color.DeepSkyBlue; btn05.Text = Mercy.RIP_VP;//Halloween 16
+                btn06.BackColor = Color.DeepSkyBlue; btn06.Text = Mercy.Mistletoe_VP;//Winter 16
+                btn07.BackColor = Color.DeepSkyBlue; btn07.Text = Mercy.Toast_VP;//Winter 17
 
                 chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("VP01"));
@@ -3251,29 +3285,41 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave2 == Lang.Skins)
             {
-                chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1);
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5);
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1);
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2);
-                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p3, p1);
-                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p2);
-                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p3);
-                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p4);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1); chB00.Text = "(" + Cost.Classic + ")";
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2); chB01.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB01, "Rare");
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3); chB02.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB01, "Rare");
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4); chB03.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB01, "Rare");
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5); chB04.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB01, "Rare");
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB01, "Epic");
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB01, "Epic");
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p3, p1); chB07.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB01, "Legendary");
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p2); chB08.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB01, "Legendary");
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p3); chB09.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB01, "Legendary");
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p4); chB10.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB01, "Legendary");
 
-                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Classic;//Default
-                chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Moira.Fiery_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Moira.Royal_SK + " (" + Cost.Rare + ")";
-                chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Moira.Selkie_SK + " (" + Cost.Rare + ")";
-                chB04.BackColor = Color.DeepSkyBlue; chB04.Text = Moira.Whiskey_SK + " (" + Cost.Rare + ")";
-                chB05.BackColor = Color.DarkViolet; chB05.Text = Moira.Ornate_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.BackColor = Color.DarkViolet; chB06.Text = Moira.Pale_SK + " (" + Cost.Epic + ")";
-                chB07.BackColor = Color.Gold; chB07.Text = Moira.Minister_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB08.BackColor = Color.Gold; chB08.Text = Moira.Oasis_SK + " (" + Cost.Legendary + ")";
-                chB09.BackColor = Color.Gold; chB09.Text = Moira.Glam_SK + " (" + Cost.Legendary + ")";
-                chB10.BackColor = Color.Gold; chB10.Text = Moira.Moon_SK + " (" + Cost.Legendary + ")";
+                btn00.Visible = true; btn00.Location = new Point(gBAllWeited4p1 + chB00.Width, p1 - 5);
+                btn01.Visible = true; btn01.Location = new Point(gBAllWeited4p1 + chB01.Width, p2 - 5);
+                btn02.Visible = true; btn02.Location = new Point(gBAllWeited4p1 + chB02.Width, p3 - 5);
+                btn03.Visible = true; btn03.Location = new Point(gBAllWeited4p1 + chB03.Width, p4 - 5);
+                btn04.Visible = true; btn04.Location = new Point(gBAllWeited4p1 + chB04.Width, p5 - 5);
+                btn05.Visible = true; btn05.Location = new Point(gBAllWeited4p2 + chB05.Width, p1 - 5);
+                btn06.Visible = true; btn06.Location = new Point(gBAllWeited4p2 + chB06.Width, p2 - 5);
+                btn07.Visible = true; btn07.Location = new Point(gBAllWeited4p3 + chB07.Width, p1 - 5);
+                btn08.Visible = true; btn08.Location = new Point(gBAllWeited4p3 + chB08.Width, p2 - 5);
+                btn09.Visible = true; btn09.Location = new Point(gBAllWeited4p3 + chB09.Width, p3 - 5);
+                btn10.Visible = true; btn10.Location = new Point(gBAllWeited4p3 + chB10.Width, p4 - 5);
+
+                btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Classic;//Default
+                btn01.BackColor = Color.DeepSkyBlue; btn01.Text = Moira.Fiery_SK;//Rare
+                btn02.BackColor = Color.DeepSkyBlue; btn02.Text = Moira.Royal_SK;
+                btn03.BackColor = Color.DeepSkyBlue; btn03.Text = Moira.Selkie_SK;
+                btn04.BackColor = Color.DeepSkyBlue; btn04.Text = Moira.Whiskey_SK;
+                btn05.BackColor = Color.DarkViolet; btn05.Text = Moira.Ornate_SK;//Epic
+                btn06.BackColor = Color.DarkViolet; btn06.Text = Moira.Pale_SK;
+                btn07.BackColor = Color.Gold; btn07.Text = Moira.Minister_SK;//Legendary
+                btn08.BackColor = Color.Gold; btn08.Text = Moira.Oasis_SK;
+                btn09.BackColor = Color.Gold; btn09.Text = Moira.Glam_SK;
+                btn10.BackColor = Color.Gold; btn10.Text = Moira.Moon_SK;
 
                 chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
@@ -3289,19 +3335,26 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave2 == Lang.Emotes)
             {
-                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p2, p1);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p2);
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p3);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1); chB00.Text = "(" + Cost.Classic + ")";
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2); chB01.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB01, "Epic");
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3); chB02.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB02, "Epic");
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p2, p1); chB03.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB03, "Epic");
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p2); chB04.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB04, "Epic");
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p3); chB05.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB05, "Epic");
 
-                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Heroic;//Default
-                chB01.BackColor = Color.DarkViolet; chB01.Text = Moira.A_your_service_EM + " (" + Cost.Epic + ")";//Epic
-                chB02.BackColor = Color.DarkViolet; chB02.Text = Moira.Come_here_EM + " (" + Cost.Epic + ")";
-                chB03.BackColor = Color.DarkViolet; chB03.Text = Moira.Give_and_take_EM + " (" + Cost.Epic + ")";
-                chB04.BackColor = Color.DarkViolet; chB04.Text = Moira.How_amusing_EM + " (" + Cost.Epic + ")";
-                chB05.BackColor = Color.DarkViolet; chB05.Text = Moira.Waiting_EM + " (" + Cost.Epic + ")";
+                btn00.Visible = true; btn00.Location = new Point(gBAllWeited3p1 + chB00.Width, p1 - 5);
+                btn01.Visible = true; btn01.Location = new Point(gBAllWeited3p1 + chB01.Width, p2 - 5);
+                btn02.Visible = true; btn02.Location = new Point(gBAllWeited3p1 + chB02.Width, p3 - 5);
+                btn03.Visible = true; btn03.Location = new Point(gBAllWeited3p2 + chB03.Width, p1 - 5);
+                btn04.Visible = true; btn04.Location = new Point(gBAllWeited3p2 + chB04.Width, p2 - 5);
+                btn05.Visible = true; btn05.Location = new Point(gBAllWeited3p2 + chB05.Width, p3 - 5);
+
+                btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Heroic;//Default
+                btn01.BackColor = Color.DarkViolet; btn01.Text = Moira.A_your_service_EM;//Epic
+                btn02.BackColor = Color.DarkViolet; btn02.Text = Moira.Come_here_EM;
+                btn03.BackColor = Color.DarkViolet; btn03.Text = Moira.Give_and_take_EM;
+                btn04.BackColor = Color.DarkViolet; btn04.Text = Moira.How_amusing_EM;
+                btn05.BackColor = Color.DarkViolet; btn05.Text = Moira.Waiting_EM;
 
                 chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
@@ -3312,15 +3365,20 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave2 == Lang.VictoryPoses)
             {
-                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p2, p1);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p2, p2);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1); chB00.Text = "(" + Cost.Classic + ")";
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2); chB01.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB01, "Rare");
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p2, p1); chB02.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB02, "Rare");
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p2, p2); chB03.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB03, "Rare");
 
-                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Heroic;//Default
-                chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Moira.Orbs_VP + " (" + Cost.Rare + ")";//Rare
-                chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Moira.Prim_VP + " (" + Cost.Rare + ")";
-                chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Moira.Steepling_VP + " (" + Cost.Rare + ")";
+                btn00.Visible = true; btn00.Location = new Point(gBAllWeited3p1 + chB00.Width, p1 - 5);
+                btn01.Visible = true; btn01.Location = new Point(gBAllWeited3p1 + chB01.Width, p2 - 5);
+                btn02.Visible = true; btn02.Location = new Point(gBAllWeited3p2 + chB02.Width, p1 - 5);
+                btn03.Visible = true; btn03.Location = new Point(gBAllWeited3p2 + chB03.Width, p2 - 5);
+
+                btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Heroic;//Default
+                btn01.BackColor = Color.DeepSkyBlue; btn01.Text = Moira.Orbs_VP;//Rare
+                btn02.BackColor = Color.DeepSkyBlue; btn02.Text = Moira.Prim_VP;
+                btn03.BackColor = Color.DeepSkyBlue; btn03.Text = Moira.Steepling_VP;
 
                 chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("VP01"));
@@ -3353,31 +3411,44 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave2 == Lang.Skins)
             {
-                chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1);
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5);
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1);
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2);
-                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p3, p1);
-                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p2);
-                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p3);
-                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p4);
-                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p5);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1); chB00.Text = "(" + Cost.Classic + ")";
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2); chB01.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB01, "Rare");
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3); chB02.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB02, "Rare");
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4); chB03.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB03, "Rare");
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5); chB04.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB04, "Rare");
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB05, "Epic");
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB06, "Epic");
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p3, p1); chB07.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB07, "Legendary");
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p2); chB08.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB08, "Legendary");
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p3); chB09.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB09, "Legendary");
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p4); chB10.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB10, "Legendary");
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p5); chB11.Text = "(" + Cost.LegendaryEvent + ")"; HeroTT.SetToolTip(chB11, Lang.Uprising + " 2017");
 
-                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Classic;//Default
-                chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Orisa.Dawn_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Orisa.Plains_SK + " (" + Cost.Rare + ")";
-                chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Orisa.Sunrise_SK + " (" + Cost.Rare + ")";
-                chB04.BackColor = Color.DeepSkyBlue; chB04.Text = Orisa.Twilight_SK + " (" + Cost.Rare + ")";
-                chB05.BackColor = Color.DarkViolet; chB05.Text = Orisa.Camouflage_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.BackColor = Color.DarkViolet; chB06.Text = Orisa.OR15_SK + " (" + Cost.Epic + ")";
-                chB07.BackColor = Color.Gold; chB07.Text = Orisa.Dynastinae_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB08.BackColor = Color.Gold; chB08.Text = Orisa.Megasoma_SK + " (" + Cost.Legendary + ")";
-                chB09.BackColor = Color.Gold; chB09.Text = Orisa.Carbon_Fiber_SK + " (" + Cost.Legendary + ")";
-                chB10.BackColor = Color.Gold; chB10.Text = Orisa.Protector_SK + " (" + Cost.Legendary + ")";
-                chB11.BackColor = Color.Gold; chB11.Text = Orisa.Null_Sector_SK + " (" + Cost.LegendaryEvent + ")";//Uprising 17
+                btn00.Visible = true; btn00.Location = new Point(gBAllWeited4p1 + chB00.Width, p1 - 5);
+                btn01.Visible = true; btn01.Location = new Point(gBAllWeited4p1 + chB01.Width, p2 - 5);
+                btn02.Visible = true; btn02.Location = new Point(gBAllWeited4p1 + chB02.Width, p3 - 5);
+                btn03.Visible = true; btn03.Location = new Point(gBAllWeited4p1 + chB03.Width, p4 - 5);
+                btn04.Visible = true; btn04.Location = new Point(gBAllWeited4p1 + chB04.Width, p5 - 5);
+                btn05.Visible = true; btn05.Location = new Point(gBAllWeited4p2 + chB05.Width, p1 - 5);
+                btn06.Visible = true; btn06.Location = new Point(gBAllWeited4p2 + chB06.Width, p2 - 5);
+                btn07.Visible = true; btn07.Location = new Point(gBAllWeited4p3 + chB07.Width, p1 - 5);
+                btn08.Visible = true; btn08.Location = new Point(gBAllWeited4p3 + chB08.Width, p2 - 5);
+                btn09.Visible = true; btn09.Location = new Point(gBAllWeited4p3 + chB09.Width, p3 - 5);
+                btn10.Visible = true; btn10.Location = new Point(gBAllWeited4p3 + chB10.Width, p4 - 5);
+                btn11.Visible = true; btn11.Location = new Point(gBAllWeited4p3 + chB11.Width, p5 - 5);
+
+                btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Classic;//Default
+                btn01.BackColor = Color.DeepSkyBlue; btn01.Text = Orisa.Dawn_SK;//Rare
+                btn02.BackColor = Color.DeepSkyBlue; btn02.Text = Orisa.Plains_SK;
+                btn03.BackColor = Color.DeepSkyBlue; btn03.Text = Orisa.Sunrise_SK;
+                btn04.BackColor = Color.DeepSkyBlue; btn04.Text = Orisa.Twilight_SK;
+                btn05.BackColor = Color.DarkViolet; btn05.Text = Orisa.Camouflage_SK;//Epic
+                btn06.BackColor = Color.DarkViolet; btn06.Text = Orisa.OR15_SK;
+                btn07.BackColor = Color.Gold; btn07.Text = Orisa.Dynastinae_SK;//Legendary
+                btn08.BackColor = Color.Gold; btn08.Text = Orisa.Megasoma_SK;
+                btn09.BackColor = Color.Gold; btn09.Text = Orisa.Carbon_Fiber_SK;
+                btn10.BackColor = Color.Gold; btn10.Text = Orisa.Protector_SK;
+                btn11.BackColor = Color.Gold; btn11.Text = Orisa.Null_Sector_SK;//Uprising 17
 
                 chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
@@ -3394,23 +3465,32 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave2 == Lang.Emotes)
             {
-                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3);
-                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p4);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1); chB00.Text = "(" + Cost.Classic + ")";
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2); chB01.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB01, "Epic");
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3); chB02.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB02, "Epic");
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4); chB03.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB03, "Epic");
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1); chB04.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB04, "Epic");
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2); chB05.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB05, "Epic");
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3); chB06.Text = "(" + Cost.EpicEvent + ")"; HeroTT.SetToolTip(chB06, Lang.Annyver + " 2017");
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p4); chB07.Text = "(" + Cost.LegendaryEvent + ")"; HeroTT.SetToolTip(chB07, Lang.Winter + " 2017");
 
-                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Heroic;//Default
-                chB01.BackColor = Color.DarkViolet; chB01.Text = Orisa.Cheer_EM + " (" + Cost.Epic + ")";//Epic
-                chB02.BackColor = Color.DarkViolet; chB02.Text = Orisa.Halt_EM + " (" + Cost.Epic + ")";
-                chB03.BackColor = Color.DarkViolet; chB03.Text = Orisa.Kicking_Dirt_EM + " (" + Cost.Epic + ")";
-                chB04.BackColor = Color.DarkViolet; chB04.Text = Orisa.Laugh_EM + " (" + Cost.Epic + ")";
-                chB05.BackColor = Color.DarkViolet; chB05.Text = Orisa.Sit_EM + " (" + Cost.Epic + ")";
-                chB06.BackColor = Color.DarkViolet; chB06.Text = Orisa.Dance_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
-                chB07.BackColor = Color.Gold; chB07.Text = Orisa.Puppy_EM + " (" + Cost.LegendaryEvent + ")";//Winter 17
+                btn00.Visible = true; btn00.Location = new Point(gBAllWeited3p1 + chB00.Width, p1 - 5);
+                btn01.Visible = true; btn01.Location = new Point(gBAllWeited3p1 + chB01.Width, p2 - 5);
+                btn02.Visible = true; btn02.Location = new Point(gBAllWeited3p1 + chB02.Width, p3 - 5);
+                btn03.Visible = true; btn03.Location = new Point(gBAllWeited3p1 + chB03.Width, p4 - 5);
+                btn04.Visible = true; btn04.Location = new Point(gBAllWeited3p2 + chB04.Width, p1 - 5);
+                btn05.Visible = true; btn05.Location = new Point(gBAllWeited3p2 + chB05.Width, p2 - 5);
+                btn06.Visible = true; btn06.Location = new Point(gBAllWeited3p2 + chB06.Width, p3 - 5);
+                btn07.Visible = true; btn07.Location = new Point(gBAllWeited3p2 + chB07.Width, p4 - 5);
+
+                btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Heroic;//Default
+                btn01.BackColor = Color.DarkViolet; btn01.Text = Orisa.Cheer_EM;//Epic
+                btn02.BackColor = Color.DarkViolet; btn02.Text = Orisa.Halt_EM;
+                btn03.BackColor = Color.DarkViolet; btn03.Text = Orisa.Kicking_Dirt_EM;
+                btn04.BackColor = Color.DarkViolet; btn04.Text = Orisa.Laugh_EM;
+                btn05.BackColor = Color.DarkViolet; btn05.Text = Orisa.Sit_EM;
+                btn06.BackColor = Color.DarkViolet; btn06.Text = Orisa.Dance_EM;//Annyver 17
+                btn07.BackColor = Color.Gold; btn07.Text = Orisa.Puppy_EM;//Winter 17
 
                 chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
@@ -3423,17 +3503,23 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave2 == Lang.VictoryPoses)
             {
-                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p2, p1);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p2);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1); chB00.Text = "(" + Cost.Classic + ")";
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2); chB01.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB01, "Rare");
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3); chB02.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB01, "Rare");
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p2, p1); chB03.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB01, "Rare");
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p2); chB04.Text = "(" + Cost.RareEvent + ")"; HeroTT.SetToolTip(chB01, Lang.Halloween + " 2017");
 
-                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Heroic;//Default
-                chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Orisa.Confident_VP + " (" + Cost.Rare + ")";//Rare
-                chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Orisa.Flex_VP + " (" + Cost.Rare + ")";
-                chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Orisa.Halt_VP + " (" + Cost.Rare + ")";
-                chB04.BackColor = Color.DeepSkyBlue; chB04.Text = Orisa.Pumpkin_Head_VP + " (" + Cost.RareEvent + ")";//Halloween 17
+                btn00.Visible = true; btn00.Location = new Point(gBAllWeited3p1 + chB00.Width, p1 - 5);
+                btn01.Visible = true; btn01.Location = new Point(gBAllWeited3p1 + chB01.Width, p2 - 5);
+                btn02.Visible = true; btn02.Location = new Point(gBAllWeited3p1 + chB02.Width, p3 - 5);
+                btn03.Visible = true; btn03.Location = new Point(gBAllWeited3p2 + chB03.Width, p1 - 5);
+                btn04.Visible = true; btn04.Location = new Point(gBAllWeited3p2 + chB04.Width, p2 - 5);
+
+                btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Heroic;//Default
+                btn01.BackColor = Color.DeepSkyBlue; btn01.Text = Orisa.Confident_VP;//Rare
+                btn02.BackColor = Color.DeepSkyBlue; btn02.Text = Orisa.Flex_VP;
+                btn03.BackColor = Color.DeepSkyBlue; btn03.Text = Orisa.Halt_VP;
+                btn04.BackColor = Color.DeepSkyBlue; btn04.Text = Orisa.Pumpkin_Head_VP;//Halloween 17
 
                 chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("VP01"));
@@ -3467,37 +3553,53 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave2 == Lang.Skins)
             {
-                chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1);
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5);
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1);
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2);
-                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3);
-                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p2, p4);
-                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p1);
-                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p2);
-                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p3);
-                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p4);
-                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p5);
-                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p6);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1); chB00.Text = "(" + Cost.Classic + ")";
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2); chB01.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB01, "Rare");
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3); chB02.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB02, "Rare");
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4); chB03.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB03, "Rare");
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5); chB04.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB04, "Rare");
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB05, "Epic");
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB06, "Epic");
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB07, Lang.Halloween + " 2016");
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p2, p4); chB08.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB08, Lang.Winter + " 2016");
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p1); chB09.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB09, "Legendary");
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p2); chB10.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB10, "Legendary");
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p3); chB11.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB11, "Legendary");
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p4); chB12.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB12, "Legendary");
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p5); chB13.Text = "(" + Lang.OriginGotY + ")"; HeroTT.SetToolTip(chB13, Lang.OriginGotY2);
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p6); chB14.Text = "(" + Cost.LegendaryEvent + ")"; HeroTT.SetToolTip(chB14, Lang.Annyver + " 2017");
 
-                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Classic;//Default
-                chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Pharah.Amethyst_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Pharah.Copper_SK + " (" + Cost.Rare + ")";
-                chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Pharah.Emerald_SK + " (" + Cost.Rare + ")";
-                chB04.BackColor = Color.DeepSkyBlue; chB04.Text = Pharah.Titanium_SK + " (" + Cost.Rare + ")";
-                chB05.BackColor = Color.DarkViolet; chB05.Text = Pharah.Anubis_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.BackColor = Color.DarkViolet; chB06.Text = Pharah.Jackal_SK + " (" + Cost.Epic + ")";
-                chB07.BackColor = Color.DarkViolet; chB07.Text = Pharah.Possessed_SK + " (" + Cost.Epic + ")";//Halloween 16
-                chB08.BackColor = Color.DarkViolet; chB08.Text = Pharah.Frostbite_SK + " (" + Cost.EpicEvent + ")";//Winter 16
-                chB09.BackColor = Color.Gold; chB09.Text = Pharah.Mechaqueen_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB10.BackColor = Color.Gold; chB10.Text = Pharah.Raptorion_SK + " (" + Cost.Legendary + ")";
-                chB11.BackColor = Color.Gold; chB11.Text = Pharah.Raindancer_SK + " (" + Cost.Legendary + ")";
-                chB12.BackColor = Color.Gold; chB12.Text = Pharah.Thunderbird_SK + " (" + Cost.Legendary + ")";
-                chB13.BackColor = Color.Gold; chB13.Text = Pharah.Security_Chief_SK + " (" + Lang.OriginGotY + ")";//Origin
-                chB14.BackColor = Color.Gold; chB14.Text = Pharah.Bedouin_SK + " (" + Cost.LegendaryEvent + ")";//Annyver 17
+                btn00.Visible = true; btn00.Location = new Point(gBAllWeited4p1 + chB00.Width, p1 - 5);
+                btn01.Visible = true; btn01.Location = new Point(gBAllWeited4p1 + chB01.Width, p2 - 5);
+                btn02.Visible = true; btn02.Location = new Point(gBAllWeited4p1 + chB02.Width, p3 - 5);
+                btn03.Visible = true; btn03.Location = new Point(gBAllWeited4p1 + chB03.Width, p4 - 5);
+                btn04.Visible = true; btn04.Location = new Point(gBAllWeited4p1 + chB04.Width, p5 - 5);
+                btn05.Visible = true; btn05.Location = new Point(gBAllWeited4p2 + chB05.Width, p1 - 5);
+                btn06.Visible = true; btn06.Location = new Point(gBAllWeited4p2 + chB06.Width, p2 - 5);
+                btn07.Visible = true; btn07.Location = new Point(gBAllWeited4p2 + chB07.Width, p3 - 5);
+                btn08.Visible = true; btn08.Location = new Point(gBAllWeited4p2 + chB08.Width, p4 - 5);
+                btn09.Visible = true; btn09.Location = new Point(gBAllWeited4p3 + chB09.Width, p1 - 5);
+                btn10.Visible = true; btn10.Location = new Point(gBAllWeited4p3 + chB10.Width, p2 - 5);
+                btn11.Visible = true; btn11.Location = new Point(gBAllWeited4p3 + chB11.Width, p3 - 5);
+                btn12.Visible = true; btn12.Location = new Point(gBAllWeited4p3 + chB12.Width, p4 - 5);
+                btn13.Visible = true; btn13.Location = new Point(gBAllWeited4p3 + chB13.Width, p5 - 5);
+                btn14.Visible = true; btn14.Location = new Point(gBAllWeited4p3 + chB14.Width, p6 - 5);
+
+                btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Classic;//Default
+                btn01.BackColor = Color.DeepSkyBlue; btn01.Text = Pharah.Amethyst_SK;//Rare
+                btn02.BackColor = Color.DeepSkyBlue; btn02.Text = Pharah.Copper_SK;
+                btn03.BackColor = Color.DeepSkyBlue; btn03.Text = Pharah.Emerald_SK;
+                btn04.BackColor = Color.DeepSkyBlue; btn04.Text = Pharah.Titanium_SK;
+                btn05.BackColor = Color.DarkViolet; btn05.Text = Pharah.Anubis_SK;//Epic
+                btn06.BackColor = Color.DarkViolet; btn06.Text = Pharah.Jackal_SK;
+                btn07.BackColor = Color.DarkViolet; btn07.Text = Pharah.Possessed_SK;//Halloween 16
+                btn08.BackColor = Color.DarkViolet; btn08.Text = Pharah.Frostbite_SK;//Winter 16
+                btn09.BackColor = Color.Gold; btn09.Text = Pharah.Mechaqueen_SK;//Legendary
+                btn10.BackColor = Color.Gold; btn10.Text = Pharah.Raptorion_SK;
+                btn11.BackColor = Color.Gold; btn11.Text = Pharah.Raindancer_SK;
+                btn12.BackColor = Color.Gold; btn12.Text = Pharah.Thunderbird_SK;
+                btn13.BackColor = Color.Gold; btn13.Text = Pharah.Security_Chief_SK;//Origin
+                btn14.BackColor = Color.Gold; btn14.Text = Pharah.Bedouin_SK;//Annyver 17
 
                 chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
@@ -3517,23 +3619,32 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave2 == Lang.Emotes)
             {
-                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3);
-                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p4);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1); chB00.Text = "(" + Cost.Classic + ")";
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2); chB01.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB01, "Epic");
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3); chB02.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB02, "Epic");
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4); chB03.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB03, "Epic");
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1); chB04.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB04, "Epic");
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2); chB05.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB05, "Epic");
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3); chB06.Text = "(" + Cost.EpicEvent + ")"; HeroTT.SetToolTip(chB06, Lang.Uprising + " 2017");
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p4); chB07.Text = "(" + Cost.EpicEvent + ")"; HeroTT.SetToolTip(chB07, Lang.Annyver + " 2017");
 
-                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Heroic;//Default
-                chB01.BackColor = Color.DarkViolet; chB01.Text = Pharah.Cheer_EM + " (" + Cost.Epic + ")";//Epic
-                chB02.BackColor = Color.DarkViolet; chB02.Text = Pharah.Chuckle_EM + " (" + Cost.Epic + ")";
-                chB03.BackColor = Color.DarkViolet; chB03.Text = Pharah.Flourish_EM + " (" + Cost.Epic + ")";
-                chB04.BackColor = Color.DarkViolet; chB04.Text = Pharah.Knuckles_EM + " (" + Cost.Epic + ")";
-                chB05.BackColor = Color.DarkViolet; chB05.Text = Pharah.Take_a_knee_EM + " (" + Cost.Epic + ")";
-                chB06.BackColor = Color.DarkViolet; chB06.Text = Pharah.Flair_EM + " (" + Cost.EpicEvent + ")";//Uprising 17
-                chB07.BackColor = Color.DarkViolet; chB07.Text = Pharah.Rocket_Guitar_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+                btn00.Visible = true; btn00.Location = new Point(gBAllWeited3p1 + chB00.Width, p1 - 5);
+                btn01.Visible = true; btn01.Location = new Point(gBAllWeited3p1 + chB01.Width, p2 - 5);
+                btn02.Visible = true; btn02.Location = new Point(gBAllWeited3p1 + chB02.Width, p3 - 5);
+                btn03.Visible = true; btn03.Location = new Point(gBAllWeited3p1 + chB03.Width, p4 - 5);
+                btn04.Visible = true; btn04.Location = new Point(gBAllWeited3p2 + chB04.Width, p1 - 5);
+                btn05.Visible = true; btn05.Location = new Point(gBAllWeited3p2 + chB05.Width, p2 - 5);
+                btn06.Visible = true; btn06.Location = new Point(gBAllWeited3p2 + chB06.Width, p3 - 5);
+                btn07.Visible = true; btn07.Location = new Point(gBAllWeited3p2 + chB07.Width, p4 - 5);
+
+                btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Heroic;//Default
+                btn01.BackColor = Color.DarkViolet; btn01.Text = Pharah.Cheer_EM;//Epic
+                btn02.BackColor = Color.DarkViolet; btn02.Text = Pharah.Chuckle_EM;
+                btn03.BackColor = Color.DarkViolet; btn03.Text = Pharah.Flourish_EM;
+                btn04.BackColor = Color.DarkViolet; btn04.Text = Pharah.Knuckles_EM;
+                btn05.BackColor = Color.DarkViolet; btn05.Text = Pharah.Take_a_knee_EM;
+                btn06.BackColor = Color.DarkViolet; btn06.Text = Pharah.Flair_EM;//Uprising 17
+                btn07.BackColor = Color.DarkViolet; btn07.Text = Pharah.Rocket_Guitar_EM;//Annyver 17
 
                 chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
@@ -3546,21 +3657,29 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave2 == Lang.VictoryPoses)
             {
-                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1); chB00.Text = "(" + Cost.Classic + ")";
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2); chB01.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB01, "Rare");
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3); chB02.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB02, "Rare");
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4); chB03.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB03, "Rare");
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1); chB04.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB04, Lang.Summer + " 2016");
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2); chB05.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB05, Lang.Halloween + " 2016");
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3); chB06.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB06, Lang.Winter + " 2016");
 
-                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Heroic;//Default
-                chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Pharah.Guardian_VP + " (" + Cost.Rare + ")";//Rare
-                chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Pharah.Kneeling_VP + " (" + Cost.Rare + ")";
-                chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Pharah.Jump_Jet_VP + " (" + Cost.Rare + ")";
-                chB04.BackColor = Color.DeepSkyBlue; chB04.Text = Pharah.Medal_VP + " (" + Cost.Rare + ")";//Summer 16
-                chB05.BackColor = Color.DeepSkyBlue; chB05.Text = Pharah.RIP_VP + " (" + Cost.Rare + ")";//Halloween 16
-                chB06.BackColor = Color.DeepSkyBlue; chB06.Text = Pharah.Toast_VP + " (" + Cost.RareEvent + ")";//Winter 16
+                btn00.Visible = true; btn00.Location = new Point(gBAllWeited3p1 + chB00.Width, p1 - 5);
+                btn01.Visible = true; btn01.Location = new Point(gBAllWeited3p1 + chB01.Width, p2 - 5);
+                btn02.Visible = true; btn02.Location = new Point(gBAllWeited3p1 + chB02.Width, p3 - 5);
+                btn03.Visible = true; btn03.Location = new Point(gBAllWeited3p1 + chB03.Width, p4 - 5);
+                btn04.Visible = true; btn04.Location = new Point(gBAllWeited3p2 + chB04.Width, p1 - 5);
+                btn05.Visible = true; btn05.Location = new Point(gBAllWeited3p2 + chB05.Width, p2 - 5);
+                btn06.Visible = true; btn06.Location = new Point(gBAllWeited3p2 + chB06.Width, p3 - 5);
+
+                btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Heroic;//Default
+                btn01.BackColor = Color.DeepSkyBlue; btn01.Text = Pharah.Guardian_VP;//Rare
+                btn02.BackColor = Color.DeepSkyBlue; btn02.Text = Pharah.Kneeling_VP;
+                btn03.BackColor = Color.DeepSkyBlue; btn03.Text = Pharah.Jump_Jet_VP;
+                btn04.BackColor = Color.DeepSkyBlue; btn04.Text = Pharah.Medal_VP;//Summer 16
+                btn05.BackColor = Color.DeepSkyBlue; btn05.Text = Pharah.RIP_VP;//Halloween 16
+                btn06.BackColor = Color.DeepSkyBlue; btn06.Text = Pharah.Toast_VP;//Winter 16
 
                 chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("VP01"));
@@ -3596,39 +3715,56 @@ namespace OverwatchLootBoxTracker
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave2 == Lang.Skins)
             {
-                chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1);
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5);
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1);
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2);
-                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3);
-                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p1);
-                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p2);
-                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p3);
-                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p4);
-                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p5);
-                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p6);
-                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p7);
-                chB15.Visible = true; chB15.Location = new Point(gBAllWeited4p3, p8);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1); chB00.Text = "(" + Cost.Classic + ")";
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2); chB01.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB01, "Rare");
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3); chB02.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB02, "Rare");
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4); chB03.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB03, "Rare");
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5); chB04.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB04, "Rare");
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB05, "Epic");
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB06, "Epic");
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB07, Lang.Winter + " 2016");
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p1); chB08.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB08, "Legendary");
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p2); chB09.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB09, "Legendary");
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p3); chB10.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB10, "Legendary");
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p4); chB11.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB11, "Legendary");
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p5); chB12.Text = "(" + Lang.OriginGotY + ")"; HeroTT.SetToolTip(chB12, Lang.OriginGotY2);
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p6); chB13.Text = "(" + Cost.LegendaryEvent + ")"; HeroTT.SetToolTip(chB13, Lang.Summer + " 2017");
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p7); chB14.Text = "(" + Cost.LegendaryEvent + ")"; HeroTT.SetToolTip(chB14, Lang.Halloween + " 2017");
+                chB15.Visible = true; chB15.Location = new Point(gBAllWeited4p3, p8); chB15.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB15, Lang.Halloween + " 2016");
 
-                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Classic;//Default
-                chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Reaper.Blood_SK + " (" + Cost.Rare + ")";//Rare
-                chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Reaper.Midnight_SK + " (" + Cost.Rare + ")";
-                chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Reaper.Moss_SK + " (" + Cost.Rare + ")";
-                chB04.BackColor = Color.DeepSkyBlue; chB04.Text = Reaper.Royal_SK + " (" + Cost.Rare + ")";
-                chB05.BackColor = Color.DarkViolet; chB05.Text = Reaper.Desert_SK + " (" + Cost.Epic + ")";//Epic
-                chB06.BackColor = Color.DarkViolet; chB06.Text = Reaper.Wight_SK + " (" + Cost.Epic + ")";
-                chB07.BackColor = Color.DarkViolet; chB07.Text = Reaper.Shiver_SK + " (" + Cost.EpicEvent + ")";//Winter 16
-                chB08.BackColor = Color.Gold; chB08.Text = Reaper.Nevermore_SK + " (" + Cost.Legendary + ")";//Legendary
-                chB09.BackColor = Color.Gold; chB09.Text = Reaper.Plague_Doctor_SK + " (" + Cost.Legendary + ")";
-                chB10.BackColor = Color.Gold; chB10.Text = Reaper.El_Blanco_SK + " (" + Cost.Legendary + ")";
-                chB11.BackColor = Color.Gold; chB11.Text = Reaper.Mariachi_SK + " (" + Cost.Legendary + ")";
-                chB12.BackColor = Color.Gold; chB12.Text = Reaper.Blackwatch_Reyes_SK + " (" + Lang.OriginGotY + ")";//Origin
-                chB13.BackColor = Color.Gold; chB13.Text = Reaper.Biker_SK + " (" + Cost.LegendaryEvent + ")";//Summer 17
-                chB14.BackColor = Color.Gold; chB14.Text = Reaper.Dracula_SK + " (" + Cost.LegendaryEvent + ")";//Halloween 17
-                chB15.BackColor = Color.Gold; chB15.Text = Reaper.Pumpkin_SK + " (" + Cost.Legendary + ")";//Halloween 16
+                btn00.Visible = true; btn00.Location = new Point(gBAllWeited4p1 + chB00.Width, p1 - 5);
+                btn01.Visible = true; btn01.Location = new Point(gBAllWeited4p1 + chB01.Width, p2 - 5);
+                btn02.Visible = true; btn02.Location = new Point(gBAllWeited4p1 + chB02.Width, p3 - 5);
+                btn03.Visible = true; btn03.Location = new Point(gBAllWeited4p1 + chB03.Width, p4 - 5);
+                btn04.Visible = true; btn04.Location = new Point(gBAllWeited4p1 + chB04.Width, p5 - 5);
+                btn05.Visible = true; btn05.Location = new Point(gBAllWeited4p2 + chB05.Width, p1 - 5);
+                btn06.Visible = true; btn06.Location = new Point(gBAllWeited4p2 + chB06.Width, p2 - 5);
+                btn07.Visible = true; btn07.Location = new Point(gBAllWeited4p2 + chB07.Width, p3 - 5);
+                btn08.Visible = true; btn08.Location = new Point(gBAllWeited4p3 + chB08.Width, p1 - 5);
+                btn09.Visible = true; btn09.Location = new Point(gBAllWeited4p3 + chB09.Width, p2 - 5);
+                btn10.Visible = true; btn10.Location = new Point(gBAllWeited4p3 + chB10.Width, p3 - 5);
+                btn11.Visible = true; btn11.Location = new Point(gBAllWeited4p3 + chB11.Width, p4 - 5);
+                btn12.Visible = true; btn12.Location = new Point(gBAllWeited4p3 + chB12.Width, p5 - 5);
+                btn13.Visible = true; btn13.Location = new Point(gBAllWeited4p3 + chB13.Width, p6 - 5);
+                btn14.Visible = true; btn14.Location = new Point(gBAllWeited4p3 + chB14.Width, p7 - 5);
+                btn15.Visible = true; btn15.Location = new Point(gBAllWeited4p3 + chB15.Width, p8 - 5);
+
+                btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Classic;//Default
+                btn01.BackColor = Color.DeepSkyBlue; btn01.Text = Reaper.Blood_SK;//Rare
+                btn02.BackColor = Color.DeepSkyBlue; btn02.Text = Reaper.Midnight_SK;
+                btn03.BackColor = Color.DeepSkyBlue; btn03.Text = Reaper.Moss_SK;
+                btn04.BackColor = Color.DeepSkyBlue; btn04.Text = Reaper.Royal_SK;
+                btn05.BackColor = Color.DarkViolet; btn05.Text = Reaper.Desert_SK;//Epic
+                btn06.BackColor = Color.DarkViolet; btn06.Text = Reaper.Wight_SK;
+                btn07.BackColor = Color.DarkViolet; btn07.Text = Reaper.Shiver_SK;//Winter 16
+                btn08.BackColor = Color.Gold; btn08.Text = Reaper.Nevermore_SK;//Legendary
+                btn09.BackColor = Color.Gold; btn09.Text = Reaper.Plague_Doctor_SK;
+                btn10.BackColor = Color.Gold; btn10.Text = Reaper.El_Blanco_SK;
+                btn11.BackColor = Color.Gold; btn11.Text = Reaper.Mariachi_SK;
+                btn12.BackColor = Color.Gold; btn12.Text = Reaper.Blackwatch_Reyes_SK;//Origin
+                btn13.BackColor = Color.Gold; btn13.Text = Reaper.Biker_SK;//Summer 17
+                btn14.BackColor = Color.Gold; btn14.Text = Reaper.Dracula_SK;//Halloween 17
+                btn15.BackColor = Color.Gold; btn15.Text = Reaper.Pumpkin_SK;//Halloween 16
 
                 chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
@@ -3649,23 +3785,32 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave2 == Lang.Emotes)
             {
-                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3);
-                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p4);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1); chB00.Text = "(" + Cost.Classic + ")";
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2); chB01.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB01, "Epic");
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3); chB02.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB02, "Epic");
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4); chB03.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB03, "Epic");
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1); chB04.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB04, "Epic");
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2); chB05.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB05, "Epic");
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3); chB06.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB06, "Epic");
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p4); chB07.Text = "(" + Cost.EpicEvent + ")"; HeroTT.SetToolTip(chB07, Lang.Annyver + " 2017");
 
-                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Heroic;//Default
-                chB01.BackColor = Color.DarkViolet; chB01.Text = Reaper.Cackle_EM + " (" + Cost.Epic + ")";//Epic
-                chB02.BackColor = Color.DarkViolet; chB02.Text = Reaper.Not_Impressed_EM + " (" + Cost.Epic + ")";
-                chB03.BackColor = Color.DarkViolet; chB03.Text = Reaper.Shrug_EM + " (" + Cost.Epic + ")";
-                chB04.BackColor = Color.DarkViolet; chB04.Text = Reaper.Slice_EM + " (" + Cost.Epic + ")";
-                chB05.BackColor = Color.DarkViolet; chB05.Text = Reaper.Slow_Clap_EM + " (" + Cost.Epic + ")";
-                chB06.BackColor = Color.DarkViolet; chB06.Text = Reaper.Take_a_knee_EM + " (" + Cost.Epic + ")";
-                chB07.BackColor = Color.DarkViolet; chB07.Text = Reaper.Dance_EM + " (" + Cost.EpicEvent + ")";//Annyver 17
+                btn00.Visible = true; btn00.Location = new Point(gBAllWeited3p1 + chB00.Width, p1 - 5);
+                btn01.Visible = true; btn01.Location = new Point(gBAllWeited3p1 + chB01.Width, p2 - 5);
+                btn02.Visible = true; btn02.Location = new Point(gBAllWeited3p1 + chB02.Width, p3 - 5);
+                btn03.Visible = true; btn03.Location = new Point(gBAllWeited3p1 + chB03.Width, p4 - 5);
+                btn04.Visible = true; btn04.Location = new Point(gBAllWeited3p2 + chB04.Width, p1 - 5);
+                btn05.Visible = true; btn05.Location = new Point(gBAllWeited3p2 + chB05.Width, p2 - 5);
+                btn06.Visible = true; btn06.Location = new Point(gBAllWeited3p2 + chB06.Width, p3 - 5);
+                btn07.Visible = true; btn07.Location = new Point(gBAllWeited3p2 + chB07.Width, p4 - 5);
+
+                btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Heroic;//Default
+                btn01.BackColor = Color.DarkViolet; btn01.Text = Reaper.Cackle_EM;//Epic
+                btn02.BackColor = Color.DarkViolet; btn02.Text = Reaper.Not_Impressed_EM;
+                btn03.BackColor = Color.DarkViolet; btn03.Text = Reaper.Shrug_EM;
+                btn04.BackColor = Color.DarkViolet; btn04.Text = Reaper.Slice_EM;
+                btn05.BackColor = Color.DarkViolet; btn05.Text = Reaper.Slow_Clap_EM;
+                btn06.BackColor = Color.DarkViolet; btn06.Text = Reaper.Take_a_knee_EM;
+                btn07.BackColor = Color.DarkViolet; btn07.Text = Reaper.Dance_EM;//Annyver 17
 
                 chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
@@ -3678,21 +3823,29 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave2 == Lang.VictoryPoses)
             {
-                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1);
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1);
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2);
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1); chB00.Text = "(" + Cost.Classic + ")";
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2); chB01.Text = " (" + Cost.Rare + ")"; HeroTT.SetToolTip(chB01, "Rare");
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3); chB02.Text = " (" + Cost.Rare + ")"; HeroTT.SetToolTip(chB01, "Rare");
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4); chB03.Text = " (" + Cost.Rare + ")"; HeroTT.SetToolTip(chB01, "Rare");
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1); chB04.Text = " (" + Cost.Rare + ")"; HeroTT.SetToolTip(chB01, "Rare");
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2); chB05.Text = " (" + Cost.Rare + ")"; HeroTT.SetToolTip(chB01, Lang.Summer + " 2016");
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3); chB06.Text = " (" + Cost.Rare + ")"; HeroTT.SetToolTip(chB01, Lang.Halloween + " 2016");
 
-                chB00.BackColor = Color.Gainsboro; chB00.Text = Lang.Heroic;//Default
-                chB01.BackColor = Color.DeepSkyBlue; chB01.Text = Reaper.Casual_VP + " (" + Cost.Rare + ")";//Rare
-                chB02.BackColor = Color.DeepSkyBlue; chB02.Text = Reaper.Enigmatic_VP + " (" + Cost.Rare + ")";
-                chB03.BackColor = Color.DeepSkyBlue; chB03.Text = Reaper.Menacing_VP + " (" + Cost.Rare + ")";
-                chB04.BackColor = Color.DeepSkyBlue; chB04.Text = Reaper.Shrug_EM + " (" + Cost.Rare + ")";
-                chB05.BackColor = Color.DeepSkyBlue; chB05.Text = Reaper.Medal_VP + " (" + Cost.Rare + ")";//Summer 16
-                chB06.BackColor = Color.DeepSkyBlue; chB06.Text = Reaper.RIP_VP + " (" + Cost.Rare + ")";//Halloween 16
+                btn00.Visible = true; btn00.Location = new Point(gBAllWeited4p1 + chB00.Width, p1 - 5);
+                btn01.Visible = true; btn01.Location = new Point(gBAllWeited4p1 + chB01.Width, p2 - 5);
+                btn02.Visible = true; btn02.Location = new Point(gBAllWeited4p1 + chB02.Width, p3 - 5);
+                btn03.Visible = true; btn03.Location = new Point(gBAllWeited4p1 + chB03.Width, p4 - 5);
+                btn04.Visible = true; btn04.Location = new Point(gBAllWeited4p2 + chB04.Width, p1 - 5);
+                btn05.Visible = true; btn05.Location = new Point(gBAllWeited4p2 + chB05.Width, p2 - 5);
+                btn06.Visible = true; btn06.Location = new Point(gBAllWeited4p2 + chB06.Width, p3 - 5);
+
+                btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Heroic;//Default
+                btn01.BackColor = Color.DeepSkyBlue; btn01.Text = Reaper.Casual_VP;//Rare
+                btn02.BackColor = Color.DeepSkyBlue; btn02.Text = Reaper.Enigmatic_VP;
+                btn03.BackColor = Color.DeepSkyBlue; btn03.Text = Reaper.Menacing_VP;
+                btn04.BackColor = Color.DeepSkyBlue; btn04.Text = Reaper.Shrug_EM;
+                btn05.BackColor = Color.DeepSkyBlue; btn05.Text = Reaper.Medal_VP;//Summer 16
+                btn06.BackColor = Color.DeepSkyBlue; btn06.Text = Reaper.RIP_VP;//Halloween 16
 
                 chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("VP01"));
@@ -5443,7 +5596,7 @@ namespace OverwatchLootBoxTracker
         private void ImageChange(int buttonnumber)
         {
             ItemImage.ChangeImage(BackSave, BackSave2, buttonnumber);
-            ItemImage.Location = new Point((this.Width / 2) - (ItemImage.Width / 2), (this.Height / 2) - (ItemImage.Height / 2) - 19);
+            ItemImage.Location = new Point((this.Width / 2) - (ItemImage.Width / 2) - 8, (this.Height / 2) - (ItemImage.Height / 2) - 19);
             ItemImage.Visible = true;
             lblCloseImage.Visible = true;
             lblCloseImage.Location = ItemImage.Location;
