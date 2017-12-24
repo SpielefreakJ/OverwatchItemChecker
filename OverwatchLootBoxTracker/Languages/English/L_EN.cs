@@ -17,7 +17,7 @@ namespace OverwatchLootBoxTracker.Lang
 
         private void ChangesT()
         {
-            Changes = "\n\n\nAlpha Version!\n\nFeatures:\n - Save Skins\n - Save Emotes\n - Save Victory Poses\n\nNewest Addings:\nNew Menu!\nAna's, Bastion's, D.Va's, Doomfist's and Genji's items can now be displayed.\n\nLanguages:\n- German (Currently disabled)\n- English";
+            Changes = "\n\n\nAlpha Version!\n\nFeatures:\n - Save Skins\n - Save Emotes\n - Save Victory Poses\n\nNewest Addings:\nNew Menu!\nFirst 10 Heroes items can now be displayed.\n\nLanguages:\n- German (Currently disabled)\n- English";
         }
 
 

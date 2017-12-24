@@ -403,7 +403,7 @@ namespace OverwatchLootBoxTracker
                 //Weapons
                 if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
                 {
-                    if (i==1)
+                    if (i == 1)
                     {
                         myCostsWeapon[1] += 3000;
                     }
@@ -921,13 +921,13 @@ namespace OverwatchLootBoxTracker
                     {//Legendary
                         myCosts[7] += myLegendary;
                     }
-                    if (i == 12)
-                    {//Legendary Halloween 16
-                        myCostsEvent[7] += myLegendary;
-                    }
-                    if (i >= 13 && i <= 14)
+                    if (i == 12 || i == 14)
                     {//Legendary Event
                         myCostsEvent[7] += myLegendaryEvent;
+                    }
+                    if (i == 13)
+                    {//Legendary Halloween 16
+                        myCostsEvent[7] += myLegendary;
                     }
                 }
                 //Emotes
@@ -1176,9 +1176,13 @@ namespace OverwatchLootBoxTracker
                     {//Legendary
                         myCosts[10] += myLegendary;
                     }
-                    if (i >= 11 && i <= 15)
+                    if (i == 11 || i == 13 || i == 14 || i == 15)
                     {//Legendary Event
                         myCostsEvent[10] += myLegendaryEvent;
+                    }
+                    if (i == 12)
+                    {//Legendary Winter 16
+                        myCostsEvent[10] += myLegendary;
                     }
                 }
                 //Emotes

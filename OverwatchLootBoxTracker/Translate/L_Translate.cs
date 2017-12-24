@@ -93,7 +93,7 @@ namespace OverwatchLootBoxTracker.Translate
                 //}
                 //else
                 {
-                    return "© 2017 SpielefreakJ | OWLootboxTracker Version: 0.2.0.4 Alpha | Overwatch Version: 1.18.1.2";
+                    return "© 2017 SpielefreakJ | OWLootboxTracker Version: 0.2.1.1 Alpha | Overwatch Version: 1.19.1.0";
                 }
             }
         }
