@@ -14,12 +14,13 @@ Features:
 
 <!---->
 * Calculation of remaining costs (Skin, Emote and Victory Pose only)
+* Showing an Image of all Items
 
 Languages:
-- German
+- German (Currently disabled)
 - English
 
-Version 0.1.6
+Version 0.2.1
 
 Setup -soon-
 
