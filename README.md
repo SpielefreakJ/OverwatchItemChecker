@@ -30,3 +30,7 @@ If you have problems or found an issue, please create an Issue above.
 Future Features:
 - Voice Lines, Sprays, ect.
 - ect.
+
+### Donations
+
+Donations with Paypal [-here-](https://paypal.me/SpielefreakJustin)
