@@ -525,3 +525,63 @@ F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\I
 F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reaper\Victory Poses\4.png
 F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reaper\Victory Poses\5.png
 F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reaper\Victory Poses\6.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Emotes\0.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Emotes\1.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Emotes\2.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Emotes\3.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Emotes\4.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Emotes\5.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Emotes\6.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Emotes\7.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Skins\0.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Skins\1.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Skins\10.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Skins\11.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Skins\12.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Skins\13.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Skins\14.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Skins\15.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Skins\2.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Skins\3.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Skins\4.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Skins\5.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Skins\6.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Skins\7.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Skins\8.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Skins\9.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Victory Poses\0.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Victory Poses\1.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Victory Poses\2.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Victory Poses\3.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Victory Poses\4.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Victory Poses\5.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Emotes\0.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Emotes\1.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Emotes\2.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Emotes\3.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Emotes\4.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Emotes\5.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Emotes\6.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Skins\0.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Skins\1.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Skins\10.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Skins\11.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Skins\12.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Skins\13.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Skins\14.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Skins\2.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Skins\3.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Skins\4.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Skins\5.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Skins\6.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Skins\7.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Skins\8.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Skins\9.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Victory Poses\0.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Victory Poses\1.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Victory Poses\2.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Victory Poses\3.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Victory Poses\4.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Victory Poses\5.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Victory Poses\6.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Victory Poses\7.png

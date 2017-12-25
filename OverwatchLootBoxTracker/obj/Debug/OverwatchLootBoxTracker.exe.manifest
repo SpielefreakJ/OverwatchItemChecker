@@ -44,14 +44,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OverwatchLootBoxTracker.exe" size="507360">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OverwatchLootBoxTracker.exe" size="511456">
       <assemblyIdentity name="OverwatchLootBoxTracker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>SQNxgynMliXr9t7wUDj3I3hcNDijd5uYhJaivoW/2+0=</dsig:DigestValue>
+        <dsig:DigestValue>hZxbnHkzkHK80PJpSk4/x5lzBoETHphgDZBfvnPg1G4=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -4031,6 +4031,546 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>7wvhXn4hp3FmjiJe4Mkuv1/KbMcbmr4zokR52oPPgC4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Emotes\0.png" size="963440">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mOgGoBOLABMnd6q4ZYFn2Gep/uCokjpYx+rmlE6tG4g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Emotes\1.png" size="2019198">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oI3B1ugYGAHi97mQpc8RldRYXUtUz1xJ6G4dVHGncNA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Emotes\2.png" size="1488250">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zeZGWIIsl9hVqRhQmPgSERzC3gqDDP0kB3PX/6bKjIA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Emotes\3.png" size="1931062">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5MQGDrnXrbN1P0qPpwbRy73aik2OBVoOafNQBSWN2l8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Emotes\4.png" size="1686613">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2VrZTNgjV0q50KISJYUerC19iwXF6YcUlqsF14EwqtM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Emotes\5.png" size="1519130">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MB+YgMFTmIhjNnADWnED7WVN2rVi69cerDR6nOTvAOk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Emotes\6.png" size="1857476">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BErlIw+JtgqnrGYzvem9JlGbndC/BMhOlsNf4kggtnw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Emotes\7.png" size="1254740">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9/37I/8FiFsyBWmuvo6yBYobYc79zey8apbHvrBorJU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Skins\0.png" size="1392986">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1oJ2nHQP0nZFZyNlN4TprfFE/pOj9XVNM7vTLsHbgSk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Skins\1.png" size="1392662">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OugJwujv3hAtWg80V/PXxJGYJM4u6oszFVZqd96Si7Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Skins\10.png" size="1327911">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hvfRP7hWA9gAx2sTcc3vLY6YKj3y5FlRvA0h5c0iNJ8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Skins\11.png" size="1448585">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OK1RaQWu+7imjqtgI8+lQG0MJ8KgIueFocyoi+Sp/AU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Skins\12.png" size="1431807">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>24j5OYf3cErpBc8SpwH9xjB6INGSLsC85siKvSp1sjI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Skins\13.png" size="1543187">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MRRSz0UcL5lanRpFWFQjYyjsf+wNbMoAEudWmgIg5As=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Skins\14.png" size="1603459">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cIF4J4+p/ewKrC0JGYScI9y2WnPm7gfd8dqnISbfbgA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Skins\15.png" size="1319540">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ngSDCwH4NUAW6aH0n21WgnTTbxZMI6WaULfk3zrDbA8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Skins\2.png" size="1408596">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KZw1tO8m7ZEhxu/Jj9cfO2pLOrM0rGprCBUXcsCcIHM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Skins\3.png" size="1378037">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>idw4nWdGvdz/etaWS9OjVC+X7cgl9U2uG2bLFUMnoC8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Skins\4.png" size="1396075">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>AvoKu4ff0lgwN0rMI0f8DsWaJpLwaIQxVaeQfmuHAK8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Skins\5.png" size="1318234">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rkJYTgB4MClDDE8YRaP9GmfDjFO2X3HujmEqkLR6qSc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Skins\6.png" size="1405952">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>l0HGc0bSSqVeN9PrgsW2lmzF8hRvd7Z3FBuuEr4yhHE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Skins\7.png" size="1393548">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Yi4bNKPb+dhWRPlm2sOfoI5CfJB+AHDuySWvplnsZeU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Skins\8.png" size="1336914">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WYg2phW/uvpowTEUMVPslTZEigXvzusj8EpW9TaeIpE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Skins\9.png" size="1286993">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vsoV5APWrk8IsEyV9dMDKHo2dUtJ9pQFXgsi1+PjTvg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Victory Poses\0.png" size="1349072">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>z5WoiRS6UuYg3kquejb4T+GWwJP7Chf6HE6A/Bra4pc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Victory Poses\1.png" size="1365634">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PhdDBx11EUGh5ab6AFlriglyKAbcPFcDRE42EiawflU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Victory Poses\2.png" size="1200728">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>AM6in1f3Hq6TTI/lakS+oKJlrPrs+T3fgN6ugbgmy9w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Victory Poses\3.png" size="1569494">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TTrEA2/9ZZR6U+mVK9FYEa7jmVtDLCIRPGlHeu5ZlxY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Victory Poses\4.png" size="942616">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BQzB29QYyheOVp6JCWodaytFBjRHugRZ1GGK5yDwFBA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Victory Poses\5.png" size="1188795">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BmKhwEcmO/ADSAurX91rWTjUQP4VIpC6Xj2nlRyvSCY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Emotes\0.png" size="1550421">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SzPja6bvljFJ3SSDTvnMSDL4Ybn3E3rZWtFQaQJugks=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Emotes\1.png" size="1106298">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SEJQeVc91tlnoz2LO+iWg6yiSsMuMhUu6IQvOcU2hME=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Emotes\2.png" size="1620147">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kaCSli3hYLMoUBZ/b6uUeGBDCZIUaeyz83kWqj77+BQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Emotes\3.png" size="1601376">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>g7A0YVcbG0M4ZD1J8AaElKZEPJgaMTd9g7AT3xWjbK4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Emotes\4.png" size="1425037">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6Rz0o0L6DAlLpYWpVzAzRSS7ns6VKfqYUySCeR3emgc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Emotes\5.png" size="1165826">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zMKt8GO8EryN1O3kibLRpRcTqbM5qVfzq5fAz1EtYF4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Emotes\6.png" size="1167436">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>86jVMPXPZiHm+940ILxSk78RG+grUgFE7v3yCcMdbt0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Skins\0.png" size="1472411">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WPtF7RE6zx5n0NdG2c0WJJ4EiXngi93GK2F2UxCNRlw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Skins\1.png" size="1461719">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MDr+qrvPJtpJtl/cDVHTCPotW+1ar8o61/d/wuYaGkQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Skins\10.png" size="1393240">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ARFVS4JtOegi9qWjz3W3o5IULgcSgZmCnKfjBelA/5s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Skins\11.png" size="1416037">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QHQh5e9F2DNYvq48jcbJihpKM9h1hcCAaMWZF+AWRUw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Skins\12.png" size="1336141">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PEpx5leOqLPnDKOyLNa7oYb5EKWoXGF1z7CPxXa83mM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Skins\13.png" size="1557708">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1VGxZU4KrnP/JuMrYFpoTSyZReP2Hz4OFNosQ9PTzGw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Skins\14.png" size="1454364">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NCayG3X81mpImenzkZB1qQsn0kZgsXTVK9BXwOVP32M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Skins\2.png" size="1432011">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lDQc9DJPvk28Mgb5MAwbAnepvtaJKmBE/4DHlRhcONA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Skins\3.png" size="1476099">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gpn9Ev3Hxi8TFRz2sPwCVzmY5SU+0I4GBVloip2zaAE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Skins\4.png" size="1471781">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OpR7AzFNbBDISNo4Gr9z4jZJXqXd1SNtby56djOr2Sg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Skins\5.png" size="1359313">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HJPWbt8Oxj5zaT257I0pj7m8/Fbjwf4OFXYZQ7KoB7M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Skins\6.png" size="1481013">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>exKQZ0mjndyLZ4STAj0AqmGGUZ1YcdIw+MqIgTueti4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Skins\7.png" size="1454313">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rHWbs6PGUqauAqjqBY70pmAl5CJQqsfK8qBXvuQfdo4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Skins\8.png" size="1566509">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+pGqjjCibtGrhSOd1XjJc2MZzPbPkByEi4OjnXeEt0s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Skins\9.png" size="1600324">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>EVhFY3zlHak2upGIq7TYEcehJGelUrSAr5nJsJWLWpg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Victory Poses\0.png" size="1452302">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>plzVtZ5aTWeBPGcSysBSuTsR/AbbDVu24cTvFAEoXEw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Victory Poses\1.png" size="1019039">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cOGslklfCTUc7iN8vIYEIR4gPpWb8Mq/Okmjz9IOTqE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Victory Poses\2.png" size="1393623">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>16jWmJpyN1Ksh16zABfryqug4ZdCo1QLD8CHnuWLNbs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Victory Poses\3.png" size="1664357">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pbdh8g8RQugxvhXLvRkzxqrtoLB4pRmYp5gC0mOeFAQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Victory Poses\4.png" size="1098664">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>EqGN2epDDFvPIbVcXlrHcWvU+Ip0GrhPFuovtYD4fjM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Victory Poses\5.png" size="1102748">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gqiEHHk1SJz28OeSNPnhdvOJDeJVNHusD7uYZIoVXeg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Victory Poses\6.png" size="1134282">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gA+kX9Sy6TRiC0NmCibBTU63OeUQzvQhpqjjHe7PPB4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Victory Poses\7.png" size="1365533">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>W2Awx4dPGm6HhyH7R+AhVJZWhh9wfEiBZmOssvmgNYU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Images\Junkrat_link.png" size="21938">
