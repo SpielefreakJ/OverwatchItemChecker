@@ -93,7 +93,7 @@ namespace OverwatchLootBoxTracker.Translate
                 //}
                 //else
                 {
-                    return "© 2017 SpielefreakJ | OWLootboxTracker Version: 0.2.1.2 Alpha | Overwatch Version: 1.19.1.0 | This Program is not affiliated with Blizzard Entertainment.\n©2017 Blizzard Entertainment, Inc. All rights reserved. | All trademarks referenced herein are the properties of their respective owners.";
+                    return "© 2017 SpielefreakJ | OWLootboxTracker Version: 0.2.1.3 Alpha | Overwatch Version: 1.19.1.0 | This Program is not affiliated with Blizzard Entertainment.\n© 2017 Blizzard Entertainment, Inc. All rights reserved. | All trademarks referenced herein are the properties of their respective owners.";
                 }
             }
         }
@@ -537,6 +537,20 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Prepurchase;
+                }
+            }
+        }
+        public string Prepurchase2
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Prepurchase2;
+                }
+                else
+                {
+                    return EN.Prepurchase2;
                 }
             }
         }

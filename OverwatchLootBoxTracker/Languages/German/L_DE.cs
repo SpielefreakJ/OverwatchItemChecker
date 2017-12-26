@@ -10,7 +10,7 @@ namespace OverwatchLootBoxTracker.Lang
     {
         public L_DE()
         {
-
+            //환영
         }
 
 
@@ -268,6 +268,13 @@ namespace OverwatchLootBoxTracker.Lang
             get
             {
                 return "Vorbesteller";
+            }
+        }
+        public string Prepurchase2
+        {
+            get
+            {
+                return "Nur durch Vorbestellung";
             }
         }
 

@@ -17,7 +17,7 @@ namespace OverwatchLootBoxTracker.Lang
 
         private void ChangesT()
         {
-            Changes = "\n\n\nAlpha Version!\n\nFeatures:\n - Save Skins\n - Save Emotes\n - Save Victory Poses\n\nNewest Addings:\nNew Menu!\nFirst 15 Heroes items can now be displayed.\n\nLanguages:\n- German (Currently disabled)\n- English";
+            Changes = "\n\n\nAlpha Version!\n\nFeatures:\n - Save Skins\n - Save Emotes\n - Save Victory Poses\n\nNewest Addings:\nNew Menu!\nHero items can now be displayed.\n\nLanguages:\n- German (Currently disabled)\n- English";
         }
 
 
@@ -284,6 +284,13 @@ namespace OverwatchLootBoxTracker.Lang
             get
             {
                 return "Prepurchase";
+            }
+        }
+        public string Prepurchase2
+        {
+            get
+            {
+                return "Only /w Prepurchase";
             }
         }
 

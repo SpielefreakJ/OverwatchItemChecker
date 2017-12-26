@@ -254,7 +254,7 @@ namespace OverwatchLootBoxTracker
             {
                 Bastion();
             }
-            if (Heroe == "DVa")
+            if (Heroe == "D.Va")
             {
                 DVa();
             }
