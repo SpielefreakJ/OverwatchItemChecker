@@ -443,6 +443,203 @@ namespace OverwatchLootBoxTracker.Translate
                 }
             }
         }
+        // Overwatch League
+        public string OWLeague
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.OWLeague;
+                }
+                else
+                {
+                    return EN.OWLeague;
+                }
+            }
+        }
+        #region OWLeague
+        public string OWL_Boston_Uprising
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.OWL_Boston_Uprising;
+                }
+                else
+                {
+                    return EN.OWL_Boston_Uprising;
+                }
+            }
+        }
+
+        public string OWL_Dallas_Fuel
+{
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.OWL_Dallas_Fuel;
+                }
+                else
+                {
+                    return EN.OWL_Dallas_Fuel;
+                }
+            }
+        }
+
+        public string OWL_Florida_Mayhem
+{
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.OWL_Florida_Mayhem;
+                }
+                else
+                {
+                    return EN.OWL_Florida_Mayhem;
+                }
+            }
+        }
+
+        public string OWL_Houston_Outlaws
+{
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.OWL_Houston_Outlaws;
+                }
+                else
+                {
+                    return EN.OWL_Houston_Outlaws;
+                }
+            }
+        }
+
+        public string OWL_London_Spitfire
+{
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.OWL_London_Spitfire;
+                }
+                else
+                {
+                    return EN.OWL_London_Spitfire;
+                }
+            }
+        }
+
+        public string OWL_Los_Angeles_Gladiators
+{
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.OWL_Los_Angeles_Gladiators;
+                }
+                else
+                {
+                    return EN.OWL_Los_Angeles_Gladiators;
+                }
+            }
+        }
+
+        public string OWL_Los_Angeles_Valiant
+{
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.OWL_Los_Angeles_Valiant;
+                }
+                else
+                {
+                    return EN.OWL_Los_Angeles_Valiant;
+                }
+            }
+        }
+
+        public string OWL_New_York_Excelsior
+{
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.OWL_New_York_Excelsior;
+                }
+                else
+                {
+                    return EN.OWL_New_York_Excelsior;
+                }
+            }
+        }
+
+        public string OWL_Philadelphia_Fusion
+{
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.OWL_Philadelphia_Fusion;
+                }
+                else
+                {
+                    return EN.OWL_Philadelphia_Fusion;
+                }
+            }
+        }
+
+        public string OWL_San_Francisco_Shock
+{
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.OWL_San_Francisco_Shock;
+                }
+                else
+                {
+                    return EN.OWL_San_Francisco_Shock;
+                }
+            }
+        }
+
+        public string OWL_Seoul_Dynasty
+{
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.OWL_Seoul_Dynasty;
+                }
+                else
+                {
+                    return EN.OWL_Seoul_Dynasty;
+                }
+            }
+        }
+
+        public string OWL_Shanghai_Dragons
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.OWL_Shanghai_Dragons;
+                }
+                else
+                {
+                    return EN.OWL_Shanghai_Dragons;
+                }
+            }
+        }
+
+        #endregion
 
 
         //Not Obtainable Skins

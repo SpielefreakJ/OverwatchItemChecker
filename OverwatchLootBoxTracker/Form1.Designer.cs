@@ -13,6 +13,11 @@
         /// <param name="disposing">True, wenn verwaltete Ressourcen gelöscht werden sollen; andernfalls False.</param>
         protected override void Dispose(bool disposing)
         {
+            if (disposing)
+            {
+                if (MediaPlayer != null) MediaPlayer.Dispose();
+            }
+
             if (disposing && (components != null))
             {
                 components.Dispose();
@@ -40,9 +45,17 @@
             this.btnVoiceLines = new System.Windows.Forms.Button();
             this.btnSprays = new System.Windows.Forms.Button();
             this.btnHighlightIntros = new System.Windows.Forms.Button();
-            this.btnWeapons = new System.Windows.Forms.Button();
+            this.btnOWLeague = new System.Windows.Forms.Button();
             this.btnPlayerIcons = new System.Windows.Forms.Button();
             this.gbAll = new System.Windows.Forms.GroupBox();
+            this.lbltmrDisposeTimer = new System.Windows.Forms.Label();
+            this.btn21 = new System.Windows.Forms.Button();
+            this.btn20 = new System.Windows.Forms.Button();
+            this.btn19 = new System.Windows.Forms.Button();
+            this.btn18 = new System.Windows.Forms.Button();
+            this.btn17 = new System.Windows.Forms.Button();
+            this.btn16 = new System.Windows.Forms.Button();
+            this.btn15 = new System.Windows.Forms.Button();
             this.btn00 = new System.Windows.Forms.Button();
             this.btn14 = new System.Windows.Forms.Button();
             this.btn13 = new System.Windows.Forms.Button();
@@ -116,9 +129,6 @@
             this.tmrWelcome = new System.Windows.Forms.Timer(this.components);
             this.btnBackHero = new System.Windows.Forms.Button();
             this.lblCloseImage = new System.Windows.Forms.Label();
-            this.btn15 = new System.Windows.Forms.Button();
-            this.btn16 = new System.Windows.Forms.Button();
-            this.btn17 = new System.Windows.Forms.Button();
             this.gBLang.SuspendLayout();
             this.gbAll.SuspendLayout();
             this.gBMoreCost.SuspendLayout();
@@ -242,17 +252,15 @@
             this.btnHighlightIntros.Visible = false;
             this.btnHighlightIntros.Click += new System.EventHandler(this.btnHighlightIntros_Click);
             // 
-            // btnWeapons
+            // btnOWLeague
             // 
-            this.btnWeapons.Enabled = false;
-            this.btnWeapons.Location = new System.Drawing.Point(6, 506);
-            this.btnWeapons.Name = "btnWeapons";
-            this.btnWeapons.Size = new System.Drawing.Size(100, 75);
-            this.btnWeapons.TabIndex = 10;
-            this.btnWeapons.Text = "btnWeapons";
-            this.btnWeapons.UseVisualStyleBackColor = true;
-            this.btnWeapons.Visible = false;
-            this.btnWeapons.Click += new System.EventHandler(this.btnWeapons_Click);
+            this.btnOWLeague.Location = new System.Drawing.Point(6, 506);
+            this.btnOWLeague.Name = "btnOWLeague";
+            this.btnOWLeague.Size = new System.Drawing.Size(100, 75);
+            this.btnOWLeague.TabIndex = 10;
+            this.btnOWLeague.Text = "btnOWLeague";
+            this.btnOWLeague.UseVisualStyleBackColor = true;
+            this.btnOWLeague.Click += new System.EventHandler(this.btnOWLeague_Click);
             // 
             // btnPlayerIcons
             // 
@@ -268,6 +276,11 @@
             // 
             // gbAll
             // 
+            this.gbAll.Controls.Add(this.lbltmrDisposeTimer);
+            this.gbAll.Controls.Add(this.btn21);
+            this.gbAll.Controls.Add(this.btn20);
+            this.gbAll.Controls.Add(this.btn19);
+            this.gbAll.Controls.Add(this.btn18);
             this.gbAll.Controls.Add(this.btn17);
             this.gbAll.Controls.Add(this.btn16);
             this.gbAll.Controls.Add(this.btn15);
@@ -295,7 +308,7 @@
             this.gbAll.Controls.Add(this.chB34);
             this.gbAll.Controls.Add(this.chB33);
             this.gbAll.Controls.Add(this.chB32);
-            this.gbAll.Controls.Add(this.btnWeapons);
+            this.gbAll.Controls.Add(this.btnOWLeague);
             this.gbAll.Controls.Add(this.chB31);
             this.gbAll.Controls.Add(this.btnHighlightIntros);
             this.gbAll.Controls.Add(this.chB30);
@@ -334,13 +347,108 @@
             this.gbAll.Controls.Add(this.chB02);
             this.gbAll.Controls.Add(this.chB01);
             this.gbAll.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.gbAll.Location = new System.Drawing.Point(181, 291);
+            this.gbAll.Location = new System.Drawing.Point(202, 191);
             this.gbAll.Name = "gbAll";
             this.gbAll.Size = new System.Drawing.Size(868, 642);
             this.gbAll.TabIndex = 12;
             this.gbAll.TabStop = false;
             this.gbAll.Text = "gbAll";
             this.gbAll.Visible = false;
+            // 
+            // lbltmrDisposeTimer
+            // 
+            this.lbltmrDisposeTimer.AutoSize = true;
+            this.lbltmrDisposeTimer.Location = new System.Drawing.Point(770, 612);
+            this.lbltmrDisposeTimer.Name = "lbltmrDisposeTimer";
+            this.lbltmrDisposeTimer.Size = new System.Drawing.Size(80, 13);
+            this.lbltmrDisposeTimer.TabIndex = 2;
+            this.lbltmrDisposeTimer.Text = "Timer until End:";
+            this.lbltmrDisposeTimer.TextAlign = System.Drawing.ContentAlignment.TopRight;
+            this.lbltmrDisposeTimer.Visible = false;
+            // 
+            // btn21
+            // 
+            this.btn21.AutoSize = true;
+            this.btn21.Location = new System.Drawing.Point(284, 77);
+            this.btn21.Name = "btn21";
+            this.btn21.Size = new System.Drawing.Size(75, 23);
+            this.btn21.TabIndex = 85;
+            this.btn21.Text = "btn21";
+            this.btn21.UseVisualStyleBackColor = true;
+            this.btn21.Visible = false;
+            this.btn21.Click += new System.EventHandler(this.btn21_Click);
+            // 
+            // btn20
+            // 
+            this.btn20.AutoSize = true;
+            this.btn20.Location = new System.Drawing.Point(203, 77);
+            this.btn20.Name = "btn20";
+            this.btn20.Size = new System.Drawing.Size(75, 23);
+            this.btn20.TabIndex = 84;
+            this.btn20.Text = "btn20";
+            this.btn20.UseVisualStyleBackColor = true;
+            this.btn20.Visible = false;
+            this.btn20.Click += new System.EventHandler(this.btn20_Click);
+            // 
+            // btn19
+            // 
+            this.btn19.AutoSize = true;
+            this.btn19.Location = new System.Drawing.Point(122, 77);
+            this.btn19.Name = "btn19";
+            this.btn19.Size = new System.Drawing.Size(75, 23);
+            this.btn19.TabIndex = 83;
+            this.btn19.Text = "btn19";
+            this.btn19.UseVisualStyleBackColor = true;
+            this.btn19.Visible = false;
+            this.btn19.Click += new System.EventHandler(this.btn19_Click);
+            // 
+            // btn18
+            // 
+            this.btn18.AutoSize = true;
+            this.btn18.Location = new System.Drawing.Point(770, 48);
+            this.btn18.Name = "btn18";
+            this.btn18.Size = new System.Drawing.Size(80, 23);
+            this.btn18.TabIndex = 82;
+            this.btn18.Text = "btn18";
+            this.btn18.UseVisualStyleBackColor = true;
+            this.btn18.Visible = false;
+            this.btn18.Click += new System.EventHandler(this.btn18_Click);
+            // 
+            // btn17
+            // 
+            this.btn17.AutoSize = true;
+            this.btn17.Location = new System.Drawing.Point(689, 48);
+            this.btn17.Name = "btn17";
+            this.btn17.Size = new System.Drawing.Size(75, 23);
+            this.btn17.TabIndex = 81;
+            this.btn17.Text = "btn17";
+            this.btn17.UseVisualStyleBackColor = true;
+            this.btn17.Visible = false;
+            this.btn17.Click += new System.EventHandler(this.btn17_Click);
+            // 
+            // btn16
+            // 
+            this.btn16.AutoSize = true;
+            this.btn16.Location = new System.Drawing.Point(608, 48);
+            this.btn16.Name = "btn16";
+            this.btn16.Size = new System.Drawing.Size(75, 23);
+            this.btn16.TabIndex = 80;
+            this.btn16.Text = "btn16";
+            this.btn16.UseVisualStyleBackColor = true;
+            this.btn16.Visible = false;
+            this.btn16.Click += new System.EventHandler(this.btn16_Click);
+            // 
+            // btn15
+            // 
+            this.btn15.AutoSize = true;
+            this.btn15.Location = new System.Drawing.Point(527, 48);
+            this.btn15.Name = "btn15";
+            this.btn15.Size = new System.Drawing.Size(75, 23);
+            this.btn15.TabIndex = 79;
+            this.btn15.Text = "btn15";
+            this.btn15.UseVisualStyleBackColor = true;
+            this.btn15.Visible = false;
+            this.btn15.Click += new System.EventHandler(this.btn15_Click);
             // 
             // btn00
             // 
@@ -1013,7 +1121,7 @@
             // 
             this.gBMoreCost.Controls.Add(this.lblMoreInfoCost2);
             this.gBMoreCost.Controls.Add(this.lblMoreInfoCost);
-            this.gBMoreCost.Location = new System.Drawing.Point(250, 698);
+            this.gBMoreCost.Location = new System.Drawing.Point(135, 755);
             this.gBMoreCost.Name = "gBMoreCost";
             this.gBMoreCost.Size = new System.Drawing.Size(236, 278);
             this.gBMoreCost.TabIndex = 0;
@@ -1193,48 +1301,12 @@
             this.lblCloseImage.Text = "lblCloseImage";
             this.lblCloseImage.Visible = false;
             // 
-            // btn15
-            // 
-            this.btn15.AutoSize = true;
-            this.btn15.Location = new System.Drawing.Point(527, 48);
-            this.btn15.Name = "btn15";
-            this.btn15.Size = new System.Drawing.Size(75, 23);
-            this.btn15.TabIndex = 79;
-            this.btn15.Text = "btn15";
-            this.btn15.UseVisualStyleBackColor = true;
-            this.btn15.Visible = false;
-            this.btn15.Click += new System.EventHandler(this.btn15_Click);
-            // 
-            // btn16
-            // 
-            this.btn16.AutoSize = true;
-            this.btn16.Location = new System.Drawing.Point(608, 48);
-            this.btn16.Name = "btn16";
-            this.btn16.Size = new System.Drawing.Size(75, 23);
-            this.btn16.TabIndex = 80;
-            this.btn16.Text = "btn16";
-            this.btn16.UseVisualStyleBackColor = true;
-            this.btn16.Visible = false;
-            this.btn16.Click += new System.EventHandler(this.btn16_Click);
-            // 
-            // btn17
-            // 
-            this.btn17.AutoSize = true;
-            this.btn17.Location = new System.Drawing.Point(689, 48);
-            this.btn17.Name = "btn17";
-            this.btn17.Size = new System.Drawing.Size(75, 23);
-            this.btn17.TabIndex = 81;
-            this.btn17.Text = "btn17";
-            this.btn17.UseVisualStyleBackColor = true;
-            this.btn17.Visible = false;
-            this.btn17.Click += new System.EventHandler(this.btn17_Click);
-            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
-            this.ClientSize = new System.Drawing.Size(1433, 808);
+            this.ClientSize = new System.Drawing.Size(1433, 975);
             this.Controls.Add(this.lblCloseImage);
             this.Controls.Add(this.gBWelcome);
             this.Controls.Add(this.btnBackHero);
@@ -1281,7 +1353,7 @@
         private System.Windows.Forms.Button btnVoiceLines;
         private System.Windows.Forms.Button btnSprays;
         private System.Windows.Forms.Button btnHighlightIntros;
-        private System.Windows.Forms.Button btnWeapons;
+        private System.Windows.Forms.Button btnOWLeague;
         private System.Windows.Forms.Button btnPlayerIcons;
         private System.Windows.Forms.Button btnSettings;
         private System.Windows.Forms.GroupBox gbAll;
@@ -1361,6 +1433,11 @@
         private System.Windows.Forms.Button btn17;
         private System.Windows.Forms.Button btn16;
         private System.Windows.Forms.Button btn15;
+        private System.Windows.Forms.Button btn21;
+        private System.Windows.Forms.Button btn20;
+        private System.Windows.Forms.Button btn19;
+        private System.Windows.Forms.Button btn18;
+        private System.Windows.Forms.Label lbltmrDisposeTimer;
     }
 }
 

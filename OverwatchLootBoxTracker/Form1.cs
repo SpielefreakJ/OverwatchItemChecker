@@ -56,6 +56,7 @@ namespace OverwatchLootBoxTracker
         Translate.L_Zenyatta Zenyatta;
         //Images
         CHeroImage ItemImage;
+        CMediaPlayer MediaPlayer;
         //
         //Others
         string Language = "EN";
@@ -195,6 +196,8 @@ namespace OverwatchLootBoxTracker
             Zenyatta = new Translate.L_Zenyatta(Language);
 
             ItemImage = new CHeroImage(Language);
+
+            tmrDisposeMedia = new Timer();
         }
 
         private void Texte()
@@ -218,7 +221,7 @@ namespace OverwatchLootBoxTracker
             btnVoiceLines.Text = Lang.VoiceLines;
             btnSprays.Text = Lang.Sprays;
             btnHighlightIntros.Text = Lang.HighlightIntros;
-            btnWeapons.Text = Lang.Weapons;
+            btnOWLeague.Text = Lang.OWLeague;
             btnPlayerIcons.Text = Lang.PlayerIcons;
             //Eventbuttons
             btnSummer.Text = Lang.Summer;
@@ -559,7 +562,7 @@ namespace OverwatchLootBoxTracker
             BackSave2 = Lang.Skins;
             BtnSichtbar();
 
-            gbAll.Text += " / " + Lang.Skins;
+            gbAll.Text += " / " + BackSave2;
         }
 
         private void btnEmotes_Click(object sender, EventArgs e)
@@ -567,7 +570,7 @@ namespace OverwatchLootBoxTracker
             BackSave2 = Lang.Emotes;
             BtnSichtbar();
 
-            gbAll.Text += " / " + Lang.Emotes;
+            gbAll.Text += " / " + BackSave2;
         }
 
         private void btnVictoryPoses_Click(object sender, EventArgs e)
@@ -575,7 +578,7 @@ namespace OverwatchLootBoxTracker
             BackSave2 = Lang.VictoryPoses;
             BtnSichtbar();
 
-            gbAll.Text += " / " + Lang.VictoryPoses;
+            gbAll.Text += " / " + BackSave2;
         }
 
         private void btnVoiceLines_Click(object sender, EventArgs e)
@@ -583,7 +586,7 @@ namespace OverwatchLootBoxTracker
             BackSave2 = Lang.VoiceLines;
             BtnSichtbar();
 
-            gbAll.Text += " / " + Lang.VoiceLines;
+            gbAll.Text += " / " + BackSave2;
         }
 
         private void btnSprays_Click(object sender, EventArgs e)
@@ -591,7 +594,7 @@ namespace OverwatchLootBoxTracker
             BackSave2 = Lang.Sprays;
             BtnSichtbar();
 
-            gbAll.Text += " / " + Lang.Sprays;
+            gbAll.Text += " / " + BackSave2;
         }
 
         private void btnHighlightIntros_Click(object sender, EventArgs e)
@@ -599,15 +602,15 @@ namespace OverwatchLootBoxTracker
             BackSave2 = Lang.HighlightIntros;
             BtnSichtbar();
 
-            gbAll.Text += " / " + Lang.HighlightIntros;
+            gbAll.Text += " / " + BackSave2;
         }
 
-        private void btnWeapons_Click(object sender, EventArgs e)
+        private void btnOWLeague_Click(object sender, EventArgs e)
         {
-            BackSave2 = Lang.Weapons;
+            BackSave2 = Lang.OWLeague;
             BtnSichtbar();
 
-            gbAll.Text += " / " + Lang.Weapons;
+            gbAll.Text += " / " + BackSave2;
         }
 
         private void BtnSichtbar()
@@ -615,6 +618,10 @@ namespace OverwatchLootBoxTracker
             btnSkins.Visible = false;
             btnEmotes.Visible = false;
             btnVictoryPoses.Visible = false;
+            btnVoiceLines.Visible = false;
+            btnSprays.Visible = false;
+            btnHighlightIntros.Visible = false;
+            btnOWLeague.Visible = false;
 
             #region unwichtig
             //
@@ -830,6 +837,9 @@ namespace OverwatchLootBoxTracker
                 btnSkins.Visible = true;
                 btnEmotes.Visible = true;
                 btnVictoryPoses.Visible = true;
+                //btnSprays.Visible = true;
+                //btnHighlightIntros.Visible = true;
+                btnOWLeague.Visible = true;
 
                 gbAll.Text = BackSave;
 
@@ -837,7 +847,8 @@ namespace OverwatchLootBoxTracker
                 //Erst sagen, dass die Checkboxen nicht speichern sollen
                 chBSave = 0;
                 //Resetten aller Checkboxen und Ausblenden
-                chB00.Visible = false; chB00.BackColor = Color.Transparent;
+                #region Button zurücksetzten 
+                chB00.Visible = false; chB00.BackColor = Color.Transparent; chB00.Enabled = false;
                 chB01.Checked = false; /*chB01.Visible = false;*/ chB01.BackColor = Color.Transparent;
                 chB02.Checked = false; chB02.Visible = false; chB02.BackColor = Color.Transparent;
                 chB03.Checked = false; chB03.Visible = false; chB03.BackColor = Color.Transparent;
@@ -897,6 +908,7 @@ namespace OverwatchLootBoxTracker
                 btn15.Visible = false; btn15.Width = 75;
                 btn16.Visible = false; btn16.Width = 75;
                 btn17.Visible = false; btn17.Width = 75;
+                #endregion
 
                 HeroTT.RemoveAll();
 
@@ -915,7 +927,7 @@ namespace OverwatchLootBoxTracker
             {
                 inisSettings.Write(H, "1");
             }
-            if (inisSettings.Read(H) != "1" && inisSettings.Read(H) != "2" && inisSettings.Read(H) != "3" && inisSettings.Read(H) != "4" && inisSettings.Read(H) != "5")
+            if (inisSettings.Read(H) != "1" && inisSettings.Read(H) != "2" && inisSettings.Read(H) != "3" && inisSettings.Read(H) != "4" && inisSettings.Read(H) != "5" && inisSettings.Read(H) != "6" && inisSettings.Read(H) != "7" && inisSettings.Read(H) != "8" && inisSettings.Read(H) != "9" && inisSettings.Read(H) != "10" && inisSettings.Read(H) != "11" && inisSettings.Read(H) != "12" && inisSettings.Read(H) != "13" && inisSettings.Read(H) != "14" && inisSettings.Read(H) != "15" && inisSettings.Read(H) != "16" && inisSettings.Read(H) != "17")
             {
                 inic.Heroe(H, SK, EM);
                 inisSettings.Write(H, "1");
@@ -939,6 +951,11 @@ namespace OverwatchLootBoxTracker
             {
                 inic.create5(H);
                 inisSettings.Write(H, "5");
+            }
+            if (inisSettings.Read(H) == "5")
+            {
+                inic.create6(H);
+                inisSettings.Write(H, "6");
             }
 
             gBLang.Visible = false;
@@ -1442,6 +1459,10 @@ namespace OverwatchLootBoxTracker
                     chB06.Checked = true;
                 }
             }
+            if (BackSave2 == Lang.OWLeague)
+            {
+                OWLButtons();
+            }
             chBSave = 1;
         }
 
@@ -1696,6 +1717,10 @@ namespace OverwatchLootBoxTracker
                 chB20.Checked = Convert.ToBoolean(inisHeroes.Read("VL20"));
                 chB21.Checked = Convert.ToBoolean(inisHeroes.Read("VL21"));
             }
+            if (BackSave2 == Lang.OWLeague)
+            {
+                OWLButtons();
+            }
             chBSave = 1;
         }
 
@@ -1862,53 +1887,76 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave2 == Lang.VoiceLines)
             {
-                chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1);
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2);
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3);
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4);
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5);
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p1, p6);
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p1, p7);
-                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p1, p8);
-                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p2, p1);
-                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p2, p2);
-                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p2, p3);
-                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p2, p4);
-                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p2, p5);
-                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p2, p6);
-                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p1, p7);
-                chB15.Visible = true; chB15.Location = new Point(gBAllWeited4p3, p1);
-                chB21.Visible = true; chB21.Location = new Point(gBAllWeited4p3, p2);
-                chB16.Visible = true; chB16.Location = new Point(gBAllWeited4p3, p3);
-                chB17.Visible = true; chB17.Location = new Point(gBAllWeited4p3, p4);
-                chB18.Visible = true; chB18.Location = new Point(gBAllWeited4p3, p5);
-                chB19.Visible = true; chB19.Location = new Point(gBAllWeited4p3, p6);
-                chB20.Visible = true; chB20.Location = new Point(gBAllWeited4p3, p7);
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1); chB00.Text = "(" + Cost.Classic + ")";
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2); chB01.Text = "(" + Cost.Common + ")";
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3); chB02.Text = "(" + Cost.Common + ")";
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4); chB03.Text = "(" + Cost.Common + ")";
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5); chB04.Text = "(" + Cost.Common + ")";
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p1, p6); chB05.Text = "(" + Cost.Common + ")";
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p1, p7); chB06.Text = "(" + Cost.Common + ")";
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p1, p8); chB07.Text = "(" + Cost.Common + ")";
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p2, p1); chB08.Text = "(" + Cost.Common + ")";
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p2, p2); chB09.Text = "(" + Cost.Common + ")";
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p2, p3); chB10.Text = "(" + Cost.Common + ")";
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p2, p4); chB11.Text = "(" + Cost.Common + ")";
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p2, p5); chB12.Text = "(" + Cost.CommonEvent + ")";
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p2, p6); chB13.Text = "(" + Cost.Common + ")";
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p2, p7); chB14.Text = "(" + Cost.CommonEvent + ")";
+                chB15.Visible = true; chB15.Location = new Point(gBAllWeited4p3, p1); chB15.Text = "(" + Cost.Common + ")";
+                chB16.Visible = true; chB16.Location = new Point(gBAllWeited4p3, p2); chB16.Text = "(" + Cost.CommonEvent + ")";
+                chB17.Visible = true; chB17.Location = new Point(gBAllWeited4p3, p3); chB17.Text = "(" + Cost.CommonEvent + ")";
+                chB18.Visible = true; chB18.Location = new Point(gBAllWeited4p3, p4); chB18.Text = "(" + Cost.CommonEvent + ")";
+                chB19.Visible = true; chB19.Location = new Point(gBAllWeited4p3, p5); chB19.Text = "(" + Cost.CommonEvent + ")";
+                chB20.Visible = true; chB20.Location = new Point(gBAllWeited4p3, p6); chB20.Text = "(" + Cost.CommonEvent + ")";
+                chB21.Visible = true; chB21.Location = new Point(gBAllWeited4p3, p7); chB21.Text = "(" + Cost.CommonEvent + ")";
 
-                chB00.BackColor = Color.Gainsboro; chB00.Text = DVa.Love_DVa_VL;//Default
-                chB01.BackColor = Color.Gainsboro; chB01.Text = DVa.Winkyface_VL + " (" + Cost.Common + ")";//Common
-                chB02.BackColor = Color.Gainsboro; chB02.Text = DVa.A_new_challenger_VL + " (" + Cost.Common + ")";
-                chB03.BackColor = Color.Gainsboro; chB03.Text = DVa.AFK_VL + " (" + Cost.Common + ")";
-                chB04.BackColor = Color.Gainsboro; chB04.Text = DVa.Aw_Yeah_VL + " (" + Cost.Common + ")";
-                chB05.BackColor = Color.Gainsboro; chB05.Text = DVa.DVa_1_Bad_Guys_0_VL + " (" + Cost.Common + ")";
-                chB06.BackColor = Color.Gainsboro; chB06.Text = DVa.GG_VL + " (" + Cost.Common + ")";
-                chB07.BackColor = Color.Gainsboro; chB07.Text = DVa.I_play_to_win_VL + " (" + Cost.Common + ")";
-                chB08.BackColor = Color.Gainsboro; chB08.Text = DVa.Is_this_Easy_Mode_VL + " (" + Cost.Common + ")";
-                chB09.BackColor = Color.Gainsboro; chB09.Text = DVa.LOL_VL + " (" + Cost.Common + ")";
-                chB10.BackColor = Color.Gainsboro; chB10.Text = DVa.No_hacks_required_VL + " (" + Cost.Common + ")";
-                chB11.BackColor = Color.Gainsboro; chB11.Text = DVa.Im_N_1_VL + " (" + Cost.Common + ")";//Summer 16
-                chB12.BackColor = Color.Gainsboro; chB12.Text = DVa.Scoreboard_VL + " (" + Cost.CommonEvent + ")";//Summer 17
-                chB13.BackColor = Color.Gainsboro; chB13.Text = DVa.Happy_Halloween_VL + " (" + Cost.Common + ")";//Halloween 16
-                chB14.BackColor = Color.Gainsboro; chB14.Text = DVa.Im_not_scared_VL + " (" + Cost.CommonEvent + ")";//Halloween 17
-                chB21.BackColor = Color.Gainsboro; chB21.Text = DVa.Happy_Holidays_VL + " (" + Cost.Common + ")";//Winter 16
-                chB15.BackColor = Color.Gainsboro; chB15.Text = DVa.Aw_you_shouldnt_have_VL + " (" + Cost.CommonEvent + ")";//Winter 17
-                chB16.BackColor = Color.Gainsboro; chB16.Text = DVa.The_best_things_in_life_VL + " (" + Cost.CommonEvent + ")";//Rooster 17
-                chB17.BackColor = Color.Gainsboro; chB17.Text = DVa.Not_taking_me_seriously_VL + " (" + Cost.CommonEvent + ")";//Uprising 17
-                chB18.BackColor = Color.Gainsboro; chB18.Text = DVa.Try_and_keep_up_VL + " (" + Cost.CommonEvent + ")";//Uprising 17
-                chB19.BackColor = Color.Gainsboro; chB19.Text = DVa.Level_Up_VL + " (" + Cost.CommonEvent + ")";//Annyver 17
-                chB20.BackColor = Color.Gainsboro; chB20.Text = DVa.No_Way_VL + " (" + Cost.CommonEvent + ")";//Annyver 17
+                btn00.Visible = true; btn00.Location = new Point(gBAllWeited4p1 + chB00.Width, p1 - 5);
+                btn01.Visible = true; btn01.Location = new Point(gBAllWeited4p1 + chB01.Width, p2 - 5);
+                btn02.Visible = true; btn02.Location = new Point(gBAllWeited4p1 + chB02.Width, p3 - 5);
+                btn03.Visible = true; btn03.Location = new Point(gBAllWeited4p1 + chB03.Width, p4 - 5);
+                btn04.Visible = true; btn04.Location = new Point(gBAllWeited4p1 + chB04.Width, p5 - 5);
+                btn05.Visible = true; btn05.Location = new Point(gBAllWeited4p1 + chB05.Width, p6 - 5);
+                btn06.Visible = true; btn06.Location = new Point(gBAllWeited4p1 + chB06.Width, p7 - 5);
+                btn07.Visible = true; btn07.Location = new Point(gBAllWeited4p1 + chB07.Width, p8 - 5);
+                btn08.Visible = true; btn08.Location = new Point(gBAllWeited4p2 + chB08.Width, p1 - 5);
+                btn09.Visible = true; btn09.Location = new Point(gBAllWeited4p2 + chB09.Width, p2 - 5);
+                btn10.Visible = true; btn10.Location = new Point(gBAllWeited4p2 + chB10.Width, p3 - 5);
+                btn11.Visible = true; btn11.Location = new Point(gBAllWeited4p2 + chB11.Width, p4 - 5);
+                btn12.Visible = true; btn12.Location = new Point(gBAllWeited4p2 + chB12.Width, p5 - 5);
+                btn13.Visible = true; btn13.Location = new Point(gBAllWeited4p2 + chB13.Width, p6 - 5);
+                btn14.Visible = true; btn14.Location = new Point(gBAllWeited4p2 + chB02.Width, p7 - 5);
+                btn15.Visible = true; btn15.Location = new Point(gBAllWeited4p3 + chB03.Width, p1 - 5);
+                btn16.Visible = true; btn16.Location = new Point(gBAllWeited4p3 + chB04.Width, p2 - 5);
+                btn17.Visible = true; btn17.Location = new Point(gBAllWeited4p3 + chB05.Width, p3 - 5);
+                btn18.Visible = true; btn18.Location = new Point(gBAllWeited4p3 + chB06.Width, p4 - 5);
+                btn19.Visible = true; btn19.Location = new Point(gBAllWeited4p3 + chB07.Width, p5 - 5);
+                btn20.Visible = true; btn20.Location = new Point(gBAllWeited4p3 + chB08.Width, p6 - 5);
+                btn21.Visible = true; btn21.Location = new Point(gBAllWeited4p3 + chB09.Width, p7 - 5);
 
-                chB00.Checked = true;
+                btn00.BackColor = Color.Gainsboro; btn00.Text = DVa.Love_DVa_VL;//Default
+                btn01.BackColor = Color.Gainsboro; btn01.Text = DVa.Winkyface_VL;//Common
+                btn02.BackColor = Color.Gainsboro; btn02.Text = DVa.A_new_challenger_VL;
+                btn03.BackColor = Color.Gainsboro; btn03.Text = DVa.AFK_VL;
+                btn04.BackColor = Color.Gainsboro; btn04.Text = DVa.Aw_Yeah_VL;
+                btn05.BackColor = Color.Gainsboro; btn05.Text = DVa.DVa_1_Bad_Guys_0_VL;
+                btn06.BackColor = Color.Gainsboro; btn06.Text = DVa.GG_VL;
+                btn07.BackColor = Color.Gainsboro; btn07.Text = DVa.I_play_to_win_VL;
+                btn08.BackColor = Color.Gainsboro; btn08.Text = DVa.Is_this_Easy_Mode_VL;
+                btn09.BackColor = Color.Gainsboro; btn09.Text = DVa.LOL_VL;
+                btn10.BackColor = Color.Gainsboro; btn10.Text = DVa.No_hacks_required_VL;
+                btn11.BackColor = Color.Gainsboro; btn11.Text = DVa.Im_N_1_VL;//Summer 16
+                btn12.BackColor = Color.Gainsboro; btn12.Text = DVa.Scoreboard_VL;//Summer 17
+                btn13.BackColor = Color.Gainsboro; btn13.Text = DVa.Happy_Halloween_VL;//Halloween 16
+                btn14.BackColor = Color.Gainsboro; btn14.Text = DVa.Im_not_scared_VL;//Halloween 17
+                btn15.BackColor = Color.Gainsboro; btn15.Text = DVa.Happy_Holidays_VL;//Winter 16
+                btn16.BackColor = Color.Gainsboro; btn16.Text = DVa.Aw_you_shouldnt_have_VL;//Winter 17
+                btn17.BackColor = Color.Gainsboro; btn17.Text = DVa.The_best_things_in_life_VL;//Rooster 17
+                btn18.BackColor = Color.Gainsboro; btn18.Text = DVa.Not_taking_me_seriously_VL;//Uprising 17
+                btn19.BackColor = Color.Gainsboro; btn19.Text = DVa.Try_and_keep_up_VL;//Uprising 17
+                btn20.BackColor = Color.Gainsboro; btn20.Text = DVa.Level_Up_VL;//Annyver 17
+                btn21.BackColor = Color.Gainsboro; btn21.Text = DVa.No_Way_VL;//Annyver 17
+
+                chB00.Checked = true;/*
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("VL01"));
                 chB02.Checked = Convert.ToBoolean(inisHeroes.Read("VL02"));
                 chB03.Checked = Convert.ToBoolean(inisHeroes.Read("VL03"));
@@ -1929,7 +1977,11 @@ namespace OverwatchLootBoxTracker
                 chB18.Checked = Convert.ToBoolean(inisHeroes.Read("VL18"));
                 chB19.Checked = Convert.ToBoolean(inisHeroes.Read("VL19"));
                 chB20.Checked = Convert.ToBoolean(inisHeroes.Read("VL20"));
-                chB21.Checked = Convert.ToBoolean(inisHeroes.Read("VL21"));
+                chB21.Checked = Convert.ToBoolean(inisHeroes.Read("VL21"));*/
+            }
+            if (BackSave2 == Lang.OWLeague)
+            {
+                OWLButtons();
             }
             chBSave = 1;
         }
@@ -2113,6 +2165,10 @@ namespace OverwatchLootBoxTracker
                 chB15.Checked = Convert.ToBoolean(inisHeroes.Read("VL15"));
                 chB16.Checked = Convert.ToBoolean(inisHeroes.Read("VL16"));
             }
+            if (BackSave2 == Lang.OWLeague)
+            {
+                OWLButtons();
+            }
             chBSave = 1;
         }
 
@@ -2271,6 +2327,10 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
             }
+            if (BackSave2 == Lang.OWLeague)
+            {
+                OWLButtons();
+            }
             chBSave = 1;
         }//////////////
 
@@ -2428,6 +2488,10 @@ namespace OverwatchLootBoxTracker
                 chB04.Checked = Convert.ToBoolean(inisHeroes.Read("VP04"));
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
+            }
+            if (BackSave2 == Lang.OWLeague)
+            {
+                OWLButtons();
             }
             chBSave = 1;
         }
@@ -2595,6 +2659,10 @@ namespace OverwatchLootBoxTracker
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
                 chB07.Checked = Convert.ToBoolean(inisHeroes.Read("VP07"));
             }
+            if (BackSave2 == Lang.OWLeague)
+            {
+                OWLButtons();
+            }
             chBSave = 1;
         }
 
@@ -2757,6 +2825,10 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
             }
+            if (BackSave2 == Lang.OWLeague)
+            {
+                OWLButtons();
+            }
             chBSave = 1;
         }
 
@@ -2918,6 +2990,10 @@ namespace OverwatchLootBoxTracker
                 chB03.Checked = Convert.ToBoolean(inisHeroes.Read("VP03"));
                 chB04.Checked = Convert.ToBoolean(inisHeroes.Read("VP04"));
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
+            }
+            if (BackSave2 == Lang.OWLeague)
+            {
+                OWLButtons();
             }
             chBSave = 1;
         }
@@ -3093,6 +3169,10 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
             }
+            if (BackSave2 == Lang.OWLeague)
+            {
+                OWLButtons();
+            }
             chBSave = 1;
         }
         //
@@ -3260,6 +3340,10 @@ namespace OverwatchLootBoxTracker
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
                 chB07.Checked = Convert.ToBoolean(inisHeroes.Read("VP07"));
             }
+            if (BackSave2 == Lang.OWLeague)
+            {
+                OWLButtons();
+            }
             chBSave = 1;
         }
 
@@ -3385,6 +3469,10 @@ namespace OverwatchLootBoxTracker
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("VP01"));
                 chB02.Checked = Convert.ToBoolean(inisHeroes.Read("VP02"));
                 chB03.Checked = Convert.ToBoolean(inisHeroes.Read("VP03"));
+            }
+            if (BackSave2 == Lang.OWLeague)
+            {
+                OWLButtons();
             }
             chBSave = 1;
         }
@@ -3527,6 +3615,10 @@ namespace OverwatchLootBoxTracker
                 chB02.Checked = Convert.ToBoolean(inisHeroes.Read("VP02"));
                 chB03.Checked = Convert.ToBoolean(inisHeroes.Read("VP03"));
                 chB04.Checked = Convert.ToBoolean(inisHeroes.Read("VP04"));
+            }
+            if (BackSave2 == Lang.OWLeague)
+            {
+                OWLButtons();
             }
             chBSave = 1;
         }
@@ -3689,6 +3781,10 @@ namespace OverwatchLootBoxTracker
                 chB04.Checked = Convert.ToBoolean(inisHeroes.Read("VP04"));
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
+            }
+            if (BackSave2 == Lang.OWLeague)
+            {
+                OWLButtons();
             }
             chBSave = 1;
         }
@@ -3856,6 +3952,10 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
             }
+            if (BackSave2 == Lang.OWLeague)
+            {
+                OWLButtons();
+            }
             chBSave = 1;
         }
 
@@ -4017,6 +4117,10 @@ namespace OverwatchLootBoxTracker
                 chB03.Checked = Convert.ToBoolean(inisHeroes.Read("VP03"));
                 chB04.Checked = Convert.ToBoolean(inisHeroes.Read("VP04"));
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
+            }
+            if (BackSave2 == Lang.OWLeague)
+            {
+                OWLButtons();
             }
             chBSave = 1;
         }
@@ -4180,6 +4284,10 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
                 chB07.Checked = Convert.ToBoolean(inisHeroes.Read("VP07"));
+            }
+            if (BackSave2 == Lang.OWLeague)
+            {
+                OWLButtons();
             }
             chBSave = 1;
         }
@@ -4347,6 +4455,10 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
             }
+            if (BackSave2 == Lang.OWLeague)
+            {
+                OWLButtons();
+            }
             chBSave = 1;
         }
 
@@ -4504,6 +4616,10 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
                 chB07.Checked = Convert.ToBoolean(inisHeroes.Read("VP07"));
+            }
+            if (BackSave2 == Lang.OWLeague)
+            {
+                OWLButtons();
             }
             chBSave = 1;
         }
@@ -4666,6 +4782,10 @@ namespace OverwatchLootBoxTracker
                 chB04.Checked = Convert.ToBoolean(inisHeroes.Read("VP04"));
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
+            }
+            if (BackSave2 == Lang.OWLeague)
+            {
+                OWLButtons();
             }
             chBSave = 1;
         }
@@ -4833,6 +4953,10 @@ namespace OverwatchLootBoxTracker
                 chB04.Checked = Convert.ToBoolean(inisHeroes.Read("VP04"));
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
+            }
+            if (BackSave2 == Lang.OWLeague)
+            {
+                OWLButtons();
             }
             chBSave = 1;
         }
@@ -5004,6 +5128,10 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
             }
+            if (BackSave2 == Lang.OWLeague)
+            {
+                OWLButtons();
+            }
             chBSave = 1;
         }
 
@@ -5161,6 +5289,10 @@ namespace OverwatchLootBoxTracker
                 chB04.Checked = Convert.ToBoolean(inisHeroes.Read("VP04"));
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
+            }
+            if (BackSave2 == Lang.OWLeague)
+            {
+                OWLButtons();
             }
             chBSave = 1;
         }
@@ -5320,6 +5452,10 @@ namespace OverwatchLootBoxTracker
                 chB04.Checked = Convert.ToBoolean(inisHeroes.Read("VP04"));
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
+            }
+            if (BackSave2 == Lang.OWLeague)
+            {
+                OWLButtons();
             }
             chBSave = 1;
         }
@@ -5487,6 +5623,10 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
             }
+            if (BackSave2 == Lang.OWLeague)
+            {
+                OWLButtons();
+            }
             chBSave = 1;
         }
 
@@ -5649,6 +5789,10 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
             }
+            if (BackSave2 == Lang.OWLeague)
+            {
+                OWLButtons();
+            }
             chBSave = 1;
         }
         //
@@ -5657,6 +5801,62 @@ namespace OverwatchLootBoxTracker
         private void HeroeRead()
         {
 
+        }
+
+        private void OWLButtons()
+        {
+            chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1); chB00.Text = "(" + Cost.Unknown + ")"; HeroTT.SetToolTip(chB00, "Real Money");
+            chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2); chB01.Text = "(" + Cost.Unknown + ")"; HeroTT.SetToolTip(chB01, "Real Money");
+            chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3); chB02.Text = "(" + Cost.Unknown + ")"; HeroTT.SetToolTip(chB02, "Real Money");
+            chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4); chB03.Text = "(" + Cost.Unknown + ")"; HeroTT.SetToolTip(chB03, "Real Money");
+            chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p2, p1); chB04.Text = "(" + Cost.Unknown + ")"; HeroTT.SetToolTip(chB04, "Real Money");
+            chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p2); chB05.Text = "(" + Cost.Unknown + ")"; HeroTT.SetToolTip(chB05, "Real Money");
+            chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p3); chB06.Text = "(" + Cost.Unknown + ")"; HeroTT.SetToolTip(chB06, "Real Money");
+            chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p4); chB07.Text = "(" + Cost.Unknown + ")"; HeroTT.SetToolTip(chB07, "Real Money");
+            chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p1); chB08.Text = "(" + Cost.Unknown + ")"; HeroTT.SetToolTip(chB08, "Real Money");
+            chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p2); chB09.Text = "(" + Cost.Unknown + ")"; HeroTT.SetToolTip(chB09, "Real Money");
+            chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p3); chB10.Text = "(" + Cost.Unknown + ")"; HeroTT.SetToolTip(chB10, "Real Money");
+            chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p4); chB11.Text = "(" + Cost.Unknown + ")"; HeroTT.SetToolTip(chB11, "Real Money");
+
+            btn00.Visible = true; btn00.Location = new Point(gBAllWeited4p1 + chB01.Width, p1 - 5);
+            btn01.Visible = true; btn01.Location = new Point(gBAllWeited4p1 + chB02.Width, p2 - 5);
+            btn02.Visible = true; btn02.Location = new Point(gBAllWeited4p1 + chB03.Width, p3 - 5);
+            btn03.Visible = true; btn03.Location = new Point(gBAllWeited4p1 + chB04.Width, p4 - 5);
+            btn04.Visible = true; btn04.Location = new Point(gBAllWeited4p2 + chB05.Width, p1 - 5);
+            btn05.Visible = true; btn05.Location = new Point(gBAllWeited4p2 + chB06.Width, p2 - 5);
+            btn06.Visible = true; btn06.Location = new Point(gBAllWeited4p2 + chB07.Width, p3 - 5);
+            btn07.Visible = true; btn07.Location = new Point(gBAllWeited4p2 + chB08.Width, p4 - 5);
+            btn08.Visible = true; btn08.Location = new Point(gBAllWeited4p3 + chB09.Width, p1 - 5);
+            btn09.Visible = true; btn09.Location = new Point(gBAllWeited4p3 + chB10.Width, p2 - 5);
+            btn10.Visible = true; btn10.Location = new Point(gBAllWeited4p3 + chB11.Width, p3 - 5);
+            btn11.Visible = true; btn11.Location = new Point(gBAllWeited4p3 + chB12.Width, p4 - 5);
+
+            btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.OWL_Boston_Uprising;
+            btn01.BackColor = Color.Gainsboro; btn01.Text = Lang.OWL_Dallas_Fuel;
+            btn02.BackColor = Color.Gainsboro; btn02.Text = Lang.OWL_Florida_Mayhem;
+            btn03.BackColor = Color.Gainsboro; btn03.Text = Lang.OWL_Houston_Outlaws;
+            btn04.BackColor = Color.Gainsboro; btn04.Text = Lang.OWL_London_Spitfire;
+            btn05.BackColor = Color.Gainsboro; btn05.Text = Lang.OWL_Los_Angeles_Gladiators;
+            btn06.BackColor = Color.Gainsboro; btn06.Text = Lang.OWL_Los_Angeles_Valiant;
+            btn07.BackColor = Color.Gainsboro; btn07.Text = Lang.OWL_New_York_Excelsior;
+            btn08.BackColor = Color.Gainsboro; btn08.Text = Lang.OWL_Philadelphia_Fusion;
+            btn09.BackColor = Color.Gainsboro; btn09.Text = Lang.OWL_San_Francisco_Shock;
+            btn10.BackColor = Color.Gainsboro; btn10.Text = Lang.OWL_Seoul_Dynasty;
+            btn11.BackColor = Color.Gainsboro; btn11.Text = Lang.OWL_Shanghai_Dragons;
+
+            chB00.Enabled = true;
+            chB00.Checked = Convert.ToBoolean(inisHeroes.Read("OWL01"));
+            chB01.Checked = Convert.ToBoolean(inisHeroes.Read("OWL02"));
+            chB02.Checked = Convert.ToBoolean(inisHeroes.Read("OWL03"));
+            chB03.Checked = Convert.ToBoolean(inisHeroes.Read("OWL04"));
+            chB04.Checked = Convert.ToBoolean(inisHeroes.Read("OWL05"));
+            chB05.Checked = Convert.ToBoolean(inisHeroes.Read("OWL06"));
+            chB06.Checked = Convert.ToBoolean(inisHeroes.Read("OWL07"));
+            chB07.Checked = Convert.ToBoolean(inisHeroes.Read("OWL08"));
+            chB08.Checked = Convert.ToBoolean(inisHeroes.Read("OWL09"));
+            chB09.Checked = Convert.ToBoolean(inisHeroes.Read("OWL10"));
+            chB10.Checked = Convert.ToBoolean(inisHeroes.Read("OWL11"));
+            chB11.Checked = Convert.ToBoolean(inisHeroes.Read("OWL12"));
         }
 
         #region Checkboxen
@@ -5958,19 +6158,66 @@ namespace OverwatchLootBoxTracker
             ImageChange(17);
         }
 
+        private void btn18_Click(object sender, EventArgs e)
+        {
+            ImageChange(18);
+        }
+
+        private void btn19_Click(object sender, EventArgs e)
+        {
+            ImageChange(19);
+        }
+
+        private void btn20_Click(object sender, EventArgs e)
+        {
+            ImageChange(20);
+        }
+
+        private void btn21_Click(object sender, EventArgs e)
+        {
+            ImageChange(21);
+        }
+
         #endregion
+
+        Timer tmrDisposeMedia;
 
         private void ImageChange(int buttonnumber)
         {
-            ItemImage.ChangeImage(Heroe, BackSave2, buttonnumber);
-            ItemImage.Location = new Point((this.Width / 2) - (ItemImage.Width / 2) - 8, (this.Height / 2) - (ItemImage.Height / 2) - 19);
-            ItemImage.Visible = true;
-            lblCloseImage.Visible = true;
-            lblCloseImage.Location = ItemImage.Location;
-            lblCloseImage.Text = "Close Image by clicking on it";
-            ItemImage.BringToFront();
-            lblCloseImage.BringToFront();
-            ImageChangeHintergrundButtons(false);
+            if (BackSave2 == Lang.Skins || BackSave2 == Lang.Emotes || BackSave2 == Lang.VictoryPoses || BackSave2 == Lang.Sprays || BackSave2 == Lang.HighlightIntros /*|| BackSave2 == Lang.OWLeague*/)
+            {
+                ItemImage.ChangeImage(Heroe, BackSave2, buttonnumber);
+                ItemImage.Location = new Point((this.Width / 2) - (ItemImage.Width / 2) - 8, (this.Height / 2) - (ItemImage.Height / 2) - 19);
+                ItemImage.Visible = true;
+                lblCloseImage.Visible = true;
+                lblCloseImage.Location = ItemImage.Location;
+                lblCloseImage.Text = "Close Image by clicking on it";
+                ItemImage.BringToFront();
+                lblCloseImage.BringToFront();
+                ImageChangeHintergrundButtons(false);
+            }
+            if (BackSave2 == Lang.VoiceLines)
+            {
+                if (tmrDisposeMedia.Enabled == false)
+                {
+                    MediaPlayer = new CMediaPlayer("Sounds\\Voice Lines\\" + BackSave + "\\" + Language + "\\" + buttonnumber + ".mp3");
+                    MediaPlayer.Play();
+                    //if (MediaPlayer != null)
+                    //MessageBox.Show("An Error has appeared!\nPlease Post this Issue on GitHub with the Error Code\nError Code: 3", "Error 3", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    tmrDisposeMedia.Interval = 3000;
+                    tmrDisposeMedia.Tick += TmrDisposeMedia_Tick;
+                    tmrDisposeMedia.Start();
+                    lbltmrDisposeTimer.Visible = true;
+                    lbltmrDisposeTimer.Text = "Sound is played...";
+                }
+            }
+        }
+
+        private void TmrDisposeMedia_Tick(object sender, EventArgs e)
+        {
+            tmrDisposeMedia.Stop();
+            lbltmrDisposeTimer.Visible = false;
+            MediaPlayer.Dispose();
         }
 
         private void chBChange(string Nummer, bool Checkbox)

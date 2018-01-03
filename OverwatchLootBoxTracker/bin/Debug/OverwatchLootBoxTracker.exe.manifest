@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <asmv1:assembly xsi:schemaLocation="urn:schemas-microsoft-com:asm.v1 assembly.adaptive.xsd" manifestVersion="1.0" xmlns:asmv1="urn:schemas-microsoft-com:asm.v1" xmlns="urn:schemas-microsoft-com:asm.v2" xmlns:asmv2="urn:schemas-microsoft-com:asm.v2" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:co.v1="urn:schemas-microsoft-com:clickonce.v1" xmlns:asmv3="urn:schemas-microsoft-com:asm.v3" xmlns:dsig="http://www.w3.org/2000/09/xmldsig#" xmlns:co.v2="urn:schemas-microsoft-com:clickonce.v2">
-  <asmv1:assemblyIdentity name="OverwatchLootBoxTracker.exe" version="0.1.5.1" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
+  <asmv1:assemblyIdentity name="OverwatchLootBoxTracker.exe" version="0.2.1.3" publicKeyToken="0000000000000000" language="neutral" processorArchitecture="msil" type="win32" />
   <description asmv2:iconFile="overwatch_small.ico" asmv2:publisher="OverwatchLootBoxTracker" asmv2:product="OverwatchLootBoxTracker" asmv2:supportUrl="https://github.com/SpielefreakJ/OverwatchLootTracker" co.v1:errorReportUrl="https://github.com/SpielefreakJ/OverwatchLootTracker/issues" xmlns="urn:schemas-microsoft-com:asm.v1" />
   <application />
   <entryPoint>
@@ -44,14 +44,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OverwatchLootBoxTracker.exe" size="532448">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OverwatchLootBoxTracker.exe" size="545760">
       <assemblyIdentity name="OverwatchLootBoxTracker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>MDLdCYNalj4v51T1HvlQVkDDTbpfTnERTPLlyR8VPWI=</dsig:DigestValue>
+        <dsig:DigestValue>4WKf0+4qvxFJCK3Lv888uOAulkcRRF/Gzulse5W1vKk=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -6931,6 +6931,15 @@
       <dsig:DigestValue>SqMLHzxZBczQuLG3JtJ6shmjp5puT9J1htk3J8rcFME=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Images\Items\Zenyatta\Skins\7.png" size="563396">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FL71NE1dzWBsqvVca31j5wRYk0TaaztJ9vIWqBnu/nM=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Images\Items\Zenyatta\Skins\8.png" size="726448">
     <hash>
       <dsig:Transforms>
@@ -7226,6 +7235,195 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>NwWJCpbY9VF1274B5W4nNCtkku9u1/Kai4o4+SKEoGk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\D.Va\EN\0.mp3" size="58585">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gvRIkkE9yIzCt5tL1uGzfv1rFaE4bd6M7yqn4jHTdo8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\D.Va\EN\1.mp3" size="35525">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0XHyCivGNSyJXhkCHwMsUzFJifRkLagwUC8z/HcdBq0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\D.Va\EN\10.mp3" size="56475">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>AEIgDXqweuzrtmfhEKvR50jmU8l3Yv5Z3cgo7rKuGw4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\D.Va\EN\11.mp3" size="48142">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>L3/PrQDXzNZkvdWG2HJC8za6C5pYf0BT60D1X3Zw89Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\D.Va\EN\12.mp3" size="34638">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ib4o9l+/2J0CqFY87mYEq72hnikuuJHgUCjPy3aMLIg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\D.Va\EN\13.mp3" size="49998">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>cldM3XSM9t/nV7djywWMRxNuYIgk+NaZj/m/HsfXHD0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\D.Va\EN\14.mp3" size="36558">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VnmKQR06/B3pAY9yNXQK6XjwCef5dMxzMnosAL4tTRs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\D.Va\EN\16.mp3" size="67278">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NK9B+yQRTbTMgbs4xRwP9o3sAv2OPgDUl42b+rD3oew=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\D.Va\EN\17.mp3" size="106638">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pq/39I194+uh3zGTJEFLiSqWX5ok+/Mu9+MDvoj7yrU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\D.Va\EN\18.mp3" size="93198">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tUuikXmguDtfsDxCVmausc/Kx0TqfcnMcTdV7N5qkYk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\D.Va\EN\19.mp3" size="42318">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>s/RCd23O2EdQDWvLy6wHxQfkUnsFHsq4D3soQ4ZF/YU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\D.Va\EN\2.mp3" size="65320">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GzWZWS9cGpAMYPdh41xB7T+ZMH2q8H9hYDB/Zad/Zuw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\D.Va\EN\20.mp3" size="37518">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>c5fq271xzxaZVllMyv68U81wz5y8CHYEHTuiD42I264=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\D.Va\EN\21.mp3" size="67278">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SyAuTWHqSZb93ZFzwvODRC4oIy5l9LJUR66U2/4hktI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\D.Va\EN\3.mp3" size="65322">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KccVIttnBPoEyK6/NR9Snm7ag1/F2I6oh5adh1GRIeU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\D.Va\EN\4.mp3" size="57640">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pvOYV9FXwHAExlcMIHeefG9wdhJduj7QcynfTyfnubM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\D.Va\EN\5.mp3" size="103720">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>htQZT4L4ae331/wylgHiwIDk3x97mSHsD3DB94UWDTE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\D.Va\EN\6.mp3" size="83558">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tLCCoDogGs3ieP8jqvhwHrgFl4vhZO7X/I8VJGaVltI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\D.Va\EN\7.mp3" size="70059">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0FlCYz/oMyzGtQjd2UpE7iZpM61u816VwuH6cpqOX+0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\D.Va\EN\8.mp3" size="74238">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>DzSvz6HgJEM0JdQkzodUdfKqgBJOQYxpHvedlmMTXkw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\D.Va\EN\9.mp3" size="51880">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vrIZbV3sA18ip2Yw/YVJDHz5iY8qrqfa8ZwgwtiwhG4=</dsig:DigestValue>
     </hash>
   </file>
   <compatibility xmlns="urn:schemas-microsoft-com:compatibility.v1">

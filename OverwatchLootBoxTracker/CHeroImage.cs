@@ -51,6 +51,10 @@ namespace OverwatchLootBoxTracker
                 {
                     myCategory = "Highlight Intros";
                 }
+                if (Category == Translate.OWLeague)
+                {
+                    myCategory = "Overwatch League";
+                }
 
                 #endregion
 
@@ -58,7 +62,7 @@ namespace OverwatchLootBoxTracker
             }
             catch
             {
-                MessageBox.Show("An Crittical Error has appeared!\nPlease Post this Issue on GitHub with the Error Code\nError Code: 2", "Error 2", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("An Error has appeared!\nPlease Post this Issue on GitHub with the Error Code\nError Code: 2", "Error 2", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

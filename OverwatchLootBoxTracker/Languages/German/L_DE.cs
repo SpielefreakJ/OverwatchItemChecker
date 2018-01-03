@@ -216,6 +216,112 @@ namespace OverwatchLootBoxTracker.Lang
                 return "Jubiläum";
             }
         }
+        // Overwatch League
+        public string OWLeague
+        {
+            get
+            {
+                return "Overwatch League";
+            }
+        }
+        #region OWLeague
+        public string OWL_Boston_Uprising
+        {
+            get
+            {
+                return "Boston Uprising";
+            }
+        }
+
+        public string OWL_Dallas_Fuel
+        {
+            get
+            {
+                return "Dallas Fuel";
+            }
+        }
+
+        public string OWL_Florida_Mayhem
+        {
+            get
+            {
+                return "Florida Mayhem";
+            }
+        }
+
+        public string OWL_Houston_Outlaws
+        {
+            get
+            {
+                return "Houston Outlaws";
+            }
+        }
+
+        public string OWL_London_Spitfire
+        {
+            get
+            {
+                return "London Spitfire";
+            }
+        }
+
+        public string OWL_Los_Angeles_Gladiators
+        {
+            get
+            {
+                return "Los Angeles Gladiators";
+            }
+        }
+
+        public string OWL_Los_Angeles_Valiant
+        {
+            get
+            {
+                return "Los Angeles Valiant";
+            }
+        }
+
+        public string OWL_New_York_Excelsior
+        {
+            get
+            {
+                return "New York Excelsior";
+            }
+        }
+
+        public string OWL_Philadelphia_Fusion
+        {
+            get
+            {
+                return "Philadelphia Fusion";
+            }
+        }
+
+        public string OWL_San_Francisco_Shock
+        {
+            get
+            {
+                return "San Francisco Shock";
+            }
+        }
+
+        public string OWL_Seoul_Dynasty
+        {
+            get
+            {
+                return "Seoul Dynasty";
+            }
+        }
+
+        public string OWL_Shanghai_Dragons
+        {
+            get
+            {
+                return "Shanghai Dragons";
+            }
+        }
+
+        #endregion
 
 
         //Not Obtainable Skins

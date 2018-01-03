@@ -164,5 +164,22 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(Path + "\\" + Hero + ".ini");
             inisHeroes.Write("GW01", "false");
         }
+
+        public void create6(string Hero)
+        {
+            inisHeroes = new IniStream(Path + "\\" + Hero + ".ini");
+            inisHeroes.Write("OWL01", "false");
+            inisHeroes.Write("OWL02", "false");
+            inisHeroes.Write("OWL03", "false");
+            inisHeroes.Write("OWL04", "false");
+            inisHeroes.Write("OWL05", "false");
+            inisHeroes.Write("OWL06", "false");
+            inisHeroes.Write("OWL07", "false");
+            inisHeroes.Write("OWL08", "false");
+            inisHeroes.Write("OWL09", "false");
+            inisHeroes.Write("OWL10", "false");
+            inisHeroes.Write("OWL11", "false");
+            inisHeroes.Write("OWL12", "false");
+        }
     }
 }
