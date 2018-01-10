@@ -182,6 +182,14 @@ namespace OverwatchLootBoxTracker
             }
         }
 
+        public int CostsOWLSkin
+        {
+            get
+            {
+                return (100);
+            }
+        }
+
 
         //Calculate all Costs
 

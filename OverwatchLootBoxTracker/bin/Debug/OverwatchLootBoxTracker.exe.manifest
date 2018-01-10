@@ -44,14 +44,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OverwatchLootBoxTracker.exe" size="545760">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OverwatchLootBoxTracker.exe" size="547296">
       <assemblyIdentity name="OverwatchLootBoxTracker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>4WKf0+4qvxFJCK3Lv888uOAulkcRRF/Gzulse5W1vKk=</dsig:DigestValue>
+        <dsig:DigestValue>xihIUD7WeHs66aZZxDAricsJEHjrYdkdsQLBpO0F7Gc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -188,6 +188,114 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>aus94Lzj5lyo3oF/nFmsF9hXM3SfUiLaIU+AehVuLNU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Ana\Overwatch League\1.png" size="386670">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IDFzlCOtfuNIt5si9exNn27l7R7W4xGAoNDjOLBWO/g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Ana\Overwatch League\10.png" size="393695">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vYxzj+0lcRAUOC0MHi3TECSfIvbRoav2rTIBTcXF8EQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Ana\Overwatch League\11.png" size="358993">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lkwASyUFFWZY17v9qamX9P9mKAyO79NYuoD03eLzZh0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Ana\Overwatch League\12.png" size="384883">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>DSpLDeBggjkBCj8qZh7rdRiAFQU3MsDJXZV8OAasinM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Ana\Overwatch League\2.png" size="392152">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qcKYxlhj0mwRIvDQvpd+EHrlgjmkKtsqeV/5BzquGr0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Ana\Overwatch League\3.png" size="389469">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hseT5HDaudajoiAbAjtketfSkiqnCjFks69GTawyn+I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Ana\Overwatch League\4.png" size="368935">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FDAD3O6sJSqpU19jZDNx63Sz93LgVUNCxy94itCdIDc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Ana\Overwatch League\5.png" size="392990">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lVH2fl1kXIdlnamfMl/hep6pXXu6FQh7QR/mGpgp/Bk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Ana\Overwatch League\6.png" size="368569">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WQJeKtVJrU2hyWs+mEMr6xqetdDk1bKJ4xFuVRVqDb0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Ana\Overwatch League\7.png" size="366540">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>iofOK33Ba1Yq9g4TUcpbv+CsliM3ZgR9jeSiHKYh07U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Ana\Overwatch League\8.png" size="362690">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>luw6MIFE7kj901moDHj1fuv447049S1V1EiYWHnDb1M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Ana\Overwatch League\9.png" size="393139">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0+B9I5dog4KahXMbC6zVA3ZVra6kB+Vz7/RYNXjNLgw=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Images\Items\Ana\Skins\0.png" size="653148">
@@ -458,6 +566,114 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>CvmlYf/7MV3MiRCi7HOLsJvzbDUw8ZXEhxf9ez8O9u4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Bastion\Overwatch League\1.png" size="722110">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dcV6/CiCvg8/lZSycH+XfbiahXQgDIwdKsru8lCcDwA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Bastion\Overwatch League\10.png" size="739009">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>U+mbJ5Xo4Bfw/EXEjBJNu8jRRmwwZ9lN2+qEoW+2Otw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Bastion\Overwatch League\11.png" size="677763">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KdxA9KqjES3kleUaLET9V/ZUGtnkhAR082HjIbn+pR4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Bastion\Overwatch League\12.png" size="714474">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FH8vdgcB5ExOArER3gG67W7xtm8ptY6iKxWhvQCUI5Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Bastion\Overwatch League\2.png" size="713122">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>N3BqJWZ1JYqYQW5hk/qqvMKQDMJ12WcZGZSZB1F4iDo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Bastion\Overwatch League\3.png" size="728165">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9wC8DgPmki7VlGrvrrxi+Jc7gYetUM6KBTiwBioXYVY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Bastion\Overwatch League\4.png" size="675763">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>k9WQ7aoKauBXZw+grPLpl5A1OVh8jXCWJtS8crPutUk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Bastion\Overwatch League\5.png" size="740524">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Wa50MEmujFztmOPauifgwEQ/MEAcbrSemYL+zFRGtWQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Bastion\Overwatch League\6.png" size="690841">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BDQhiw5UWf58V+ZNYGrKjWUyLZd385HdEbrNnTt97H0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Bastion\Overwatch League\7.png" size="705943">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>U/eiWb6Dylw2JBNcR/7X2g6B77Qk2b7U3GWlKhVQMmM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Bastion\Overwatch League\8.png" size="703109">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vcZG5IRc4WY8JuYffdNJ/erQOQBsrfkDW0PzLx91vYQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Bastion\Overwatch League\9.png" size="721441">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Ad4qI27LEPyeedXjuMCpwYy5jZI0VkbaQBiy7HSzO3k=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Images\Items\Bastion\Skins\0.png" size="1042473">
@@ -766,6 +982,114 @@
       <dsig:DigestValue>IDqiGL5BdzqiHUH0GtogPjN3HM5QCoH1sKA/8/+CeZ0=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Images\Items\D.Va\Overwatch League\1.png" size="891843">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TEGelJXpwQmu3P59PPDdRbj2BysdiYUY90STptImnyU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\D.Va\Overwatch League\10.png" size="924788">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>aGF2Wihxzym+9Rxa0eIzGgzvM6M4vPpnEYLnUn+m83Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\D.Va\Overwatch League\11.png" size="809461">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2odLo351QlZ4ekphpxleLs7Uw9DO09Ck5J3wFlXnmak=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\D.Va\Overwatch League\12.png" size="895821">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>G2UFwJMqX9GuC15eTRwf1K8zKDRH+aqZQs1Qb2e3278=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\D.Va\Overwatch League\2.png" size="870749">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nM2hdTQP2C/TFZUdy5LH0cOmAJaitqSaX5XSggGFOXQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\D.Va\Overwatch League\3.png" size="920767">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SU+pQmd4/t0gWALQMhviZDsL1PFD2NIvbJR10Aq/Qow=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\D.Va\Overwatch League\4.png" size="812926">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>B6CsBNka2JMctkk5M9VHNzgSSaZ8mEv6puCrGkCgssE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\D.Va\Overwatch League\5.png" size="922403">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>tlXWyijQYG02/nqjiejWQboWu4q0Fgo6POl0w9jba2E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\D.Va\Overwatch League\6.png" size="859561">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2Xwmcsfhgbi+V/PXN9AQBT4AdtJfGP0lN43P9+P7wDU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\D.Va\Overwatch League\7.png" size="874469">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>t3tNylALe3haqZdfsjrTJywNOx/y20XBvB/mYy+xcfk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\D.Va\Overwatch League\8.png" size="850647">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2gRz5Y/8ET2xlDSqEdPHpyLLbFLD2g9mdtaa7tB1uK8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\D.Va\Overwatch League\9.png" size="917986">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ruitCuJPgW0ZDY+N1c7JY0VWJiPGMM5NJIHM4Kqev6M=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Images\Items\D.Va\Skins\0.png" size="1678588">
     <hash>
       <dsig:Transforms>
@@ -1018,6 +1342,114 @@
       <dsig:DigestValue>u+ByK26KuO8wH1Hu2WSqjPIwzcOFy3KNQT+hzfVZKdg=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Images\Items\Doomfist\Overwatch League\1.png" size="497387">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>45o0OUKb36yDTjCt/xDqnW7XHTRd8xTnd6KogsQB/eU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Doomfist\Overwatch League\10.png" size="511890">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fhO9UEftua1tZbfX5ZEGg3cF4mIGZZiU9WKGBpM5xuE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Doomfist\Overwatch League\11.png" size="448712">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>P4nwAC/QxoJR6OaYDOWeH63M/Qq+pkZftX96pj7x5mE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Doomfist\Overwatch League\12.png" size="496787">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>EaiSIcGuJm1COYqOOm+lKSv8tO673O+/+t5cBESOfJA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Doomfist\Overwatch League\2.png" size="484443">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>A70gL+6UW+qU0PyBzRWxLLG8LjsJau2+BRaoKgBjQaY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Doomfist\Overwatch League\3.png" size="516706">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>aB2kq+GFPcDdoQxHqbmBTFOyr1CJD1LldFaVEdn0FKo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Doomfist\Overwatch League\4.png" size="462851">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5PAAIgXL8X4EnGQ9ncM4IzpDbBcTgzlHr8w792hy8lY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Doomfist\Overwatch League\5.png" size="524530">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lvpNTRc7X9L/3l2wiwjk8zF58iwcGY5pu0rgPcfsZWc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Doomfist\Overwatch League\6.png" size="479769">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yTt9woiExqlFWdeNRkNxB8/hvnFJe9EChOqXKgEYm3U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Doomfist\Overwatch League\7.png" size="488294">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>54vre6kwltxaK0celMligLC/OPPd8wIUSdwiym9zJAg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Doomfist\Overwatch League\8.png" size="478616">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>chWOUuh40ISE14j+Kz11RgM0+40mLDNMYRi6iQnXqMI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Doomfist\Overwatch League\9.png" size="513718">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GSP2/bGowCfQoNx2oVxOsQA6VqpthsNt3nro4FEGqiU=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Images\Items\Doomfist\Skins\0.png" size="864462">
     <hash>
       <dsig:Transforms>
@@ -1214,6 +1646,114 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>XvTj3MzBWMVkLA/a4G/rcDLPZUNd7rnhohmrndvB2mI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Genji\Overwatch League\1.png" size="321917">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>L/faapvSnLdiP6Gb1sFnuUMqZvhsrMFIgF+buzFH4H8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Genji\Overwatch League\10.png" size="337749">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MV3xzRKQOJRLulH4ltWy0C2rCkglAGPW4L4wW7nrbp0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Genji\Overwatch League\11.png" size="284574">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pUBdZT21jn7qqZw3Sl2lG3rg3iivH6slF5eVHwu8JFQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Genji\Overwatch League\12.png" size="316431">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/v2JrRZ8ax6dAXdN0hSa/oAK/wPtr4RlLLtQRBOH7Vo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Genji\Overwatch League\2.png" size="322643">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>eftFu71ykEP55dWmLzvajWa7oOi+t6hpd3CNr/glmZo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Genji\Overwatch League\3.png" size="330893">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>AdU3Twbbut2rcsVJ3FzICGJUE8KRLwrdnXltvfVGSfc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Genji\Overwatch League\4.png" size="284698">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fQo2YVbrcwsNSke2Q27YvqDa7ACy7VMZNBZQPEFQMPQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Genji\Overwatch League\5.png" size="327526">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7NYBZq2mTS8SGXoBKoxKYop+Y0xGK58sF5cETNTcxX0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Genji\Overwatch League\6.png" size="308551">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8lFVoYZ4fEiWqYisbZa96IF6Bl7jns/T9RHEnNLdCao=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Genji\Overwatch League\7.png" size="319196">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ujoIjYGAx2LEMUdb9L7cBXvovc4JJq3QkL5sCYeVfJI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Genji\Overwatch League\8.png" size="307564">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BiovP7FkSGjstcDM8gE7HnPT29c47I4nWmcxWT3Z/ME=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Genji\Overwatch League\9.png" size="321999">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KEt0gm/S5DulFLGZ2ytd+OxSCRvjQM0ZdE6oSpj0Kek=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Images\Items\Genji\Skins\0.png" size="555460">
@@ -1486,6 +2026,114 @@
       <dsig:DigestValue>617ePDs8MacZK6byDXQKFEL9rzL9EN1S2YyYfKVB7GA=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Images\Items\Hanzo\Overwatch League\1.png" size="349387">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>MMJfSN3ivoF9jjWbtQtyHtYjoy3H/bwiws2BEnlo5oE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Hanzo\Overwatch League\10.png" size="365672">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OUTytH4ZgRrNhjwXVGF4tgEWZrz8AT26oav+qkO9BtM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Hanzo\Overwatch League\11.png" size="316682">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vcTdo/hSQrZ1UOuVBJt7DcmQJoHK7AvMxAhAqeZbl0Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Hanzo\Overwatch League\12.png" size="344711">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FfAWGZpXidQQPd75zW+ViWhiKHlqM7I0nWRdR9J73Gk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Hanzo\Overwatch League\2.png" size="350556">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UvarJxDZtvj0rrQxRhI+WNK9+mgOpdfdsPRWfeOn8+A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Hanzo\Overwatch League\3.png" size="370305">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>szs4qjeNCiyLRAMiRcbpOTAjzZABKbHTcrHcmbvAV5k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Hanzo\Overwatch League\4.png" size="317216">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6ivNM1NeltgDWZM5teD+UhQTs52pieXmjSICCPzAHto=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Hanzo\Overwatch League\5.png" size="366938">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oE8RdieacFTU7xL4smPqtTXtjP4DNE4/CbuL4AJVThk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Hanzo\Overwatch League\6.png" size="333600">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>S6+tLeqITqPcN9QuyJuAAtBmjPsbzov9MtcH82aFlqo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Hanzo\Overwatch League\7.png" size="343125">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>O6bqqCXUemFNIOLcROajwMh2nm9hopk60ShIUm/J6ZM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Hanzo\Overwatch League\8.png" size="341625">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hDUAsDO3K9+yaEZrHY1210q3SnQEQSE4IgLIyXCD41I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Hanzo\Overwatch League\9.png" size="352080">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4P25qYkzyEmh75+4/1K9bg2bOndLw7+dv10m3LFULFo=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Images\Items\Hanzo\Skins\0.png" size="522017">
     <hash>
       <dsig:Transforms>
@@ -1745,6 +2393,114 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>7Ri3XkVwaYzRUG/o9HSnQwUXIUlchtNjyM5vG4S9zuA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Junkrat\Overwatch League\1.png" size="446850">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Ej8yW8/JaMGBNjGs+Gf8gITfUiMhxf2gnoCurxaaKo0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Junkrat\Overwatch League\10.png" size="446819">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gwU1ccyRk86ShrPtHFBbxXLHHCi0l6z3lcbVSIE4TeU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Junkrat\Overwatch League\11.png" size="417628">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9d1WgH3M4QpWygDkt/9fzyrF1G3c0KpIbAeyhEY6xV4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Junkrat\Overwatch League\12.png" size="451577">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>u9xgFhpekuNWfoT+8rLhIoH4p5NmE4LQZldMLZhDn6E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Junkrat\Overwatch League\2.png" size="439443">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jMBGbecwkWhi/2Cm8YnDB0R1CFzSifOPHqTL/jQW+zo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Junkrat\Overwatch League\3.png" size="457755">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UPk2pYVMbMSPnHbPIExOBp/QKIaTqr97e0hj4eHl7QM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Junkrat\Overwatch League\4.png" size="419292">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XCD0ot4E91n2OaC7/4yRGRMDOSVfi1wJZ5d4p9CLac4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Junkrat\Overwatch League\5.png" size="453306">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>85jqbXJcDL/AkT25aZ8dHRGgJdVGJtgWllVJuMbVo6w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Junkrat\Overwatch League\6.png" size="428982">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>O+rruthHieqtq4BFvBQYRACriwRRflrFZWs8cxN+iaw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Junkrat\Overwatch League\7.png" size="436878">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>a3aiD0gNbuMbe0B7Npadzm1wNGCkdUlrtsFaiTk0HAo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Junkrat\Overwatch League\8.png" size="432849">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>AIvnnCHs37L0J8qsTcJvQkc+jl1o8qmt50L5rfIQ5q8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Junkrat\Overwatch League\9.png" size="452909">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1Mqt2xU3ZpZWG6NDb1XkD9fXB2BLU+c2aIFDgCLC3Hs=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Images\Items\Junkrat\Skins\0.png" size="745272">
@@ -2026,6 +2782,114 @@
       <dsig:DigestValue>8JZyM7eum3jIvYmL0wNPt+SL5ORbiBrim2g0m3Z8r5E=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Images\Items\Lúcio\Overwatch League\1.png" size="391550">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>A8YJCq+6xaUbKu2DAE1YtuK4ye7JXY1xNNIeZdJvdfM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Lúcio\Overwatch League\10.png" size="402131">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+5f8hv4oGX7WkP1QjuHLTkcC87Zqb1MMplIiS7r8ARQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Lúcio\Overwatch League\11.png" size="351674">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>AFZ/p8LH/DEKf8rbioRiCgYioanVs+Yr1J8+Xa7Uh8o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Lúcio\Overwatch League\12.png" size="387759">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9SfUE0CMIq5Hgzk3W/dvO8SYZtZMoNP2uiLJDO4HNIM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Lúcio\Overwatch League\2.png" size="380075">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gD2jYz+IQKEaqJvmnLzqTPneoH8tiAebiT9Dgp6QG7Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Lúcio\Overwatch League\3.png" size="403610">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>DN1zbhq/lHduuuuB6+M8M5A6/WhA3TxGXhEhfrh4s2k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Lúcio\Overwatch League\4.png" size="355755">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>EWojMTp5RidDHDChmJbFsDcbGbIfQlsQWw9ew+7JBrU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Lúcio\Overwatch League\5.png" size="404240">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FeitAFHCeNDPiwofwPaWL831RixrL+fR9xWm+6iwNpY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Lúcio\Overwatch League\6.png" size="376107">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Ml4QNGTJQ/U+A/6siDE44XkZTTX/vQIKmXsQwnIg0HA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Lúcio\Overwatch League\7.png" size="383874">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0+qjLmMqClY+WCwK7l2wPuFhMnsVUUvidA2uLdcLbsc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Lúcio\Overwatch League\8.png" size="375334">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FDuEXWwBEBy+95U+kmqQ3dVRbROb32I615QBuX6NNNI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Lúcio\Overwatch League\9.png" size="399192">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>iX1P0V6YG67RVR1VAIaejeXMGkNrm71wlL5XNDVm7e4=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Images\Items\Lúcio\Skins\0.png" size="607998">
     <hash>
       <dsig:Transforms>
@@ -2294,6 +3158,114 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>3nULYsq8CIFn7dZWnPQiXWJdmZFZJCjlOAVFH0BMA54=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\McCree\Overwatch League\1.png" size="434521">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zmFtjTDq92RU1D1jgyD19U9IJaHiPWM/kC6pcN7ab1M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\McCree\Overwatch League\10.png" size="423448">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bFcuJhQ1u5eJuy6L2ploNQ0TZMxMxjr4Dol3NLlHmHQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\McCree\Overwatch League\11.png" size="374853">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>aaOqkGciWSMTgVL7P8D47X+HW+8ARehD7t6S5yDOGdM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\McCree\Overwatch League\12.png" size="402789">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LqBMpFUnwOpNNUD0b3QKcYGJ6xDYESfIsd8NMuiTNzY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\McCree\Overwatch League\2.png" size="407697">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>J0yh9e0gM0fks9jERE1SFudpxW6LlQVjZx+5Y/DEpNY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\McCree\Overwatch League\3.png" size="414927">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+NouOmTUntZ/grxI6C8ZXJg7mMjfqR9pzPudy8Msjso=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\McCree\Overwatch League\4.png" size="420267">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PDmmr72dM48T+0KRqr+3IR0dGy2ZKnlbCHho7OGsKFE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\McCree\Overwatch League\5.png" size="423905">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dBPnr5RAZDTv+yHAcDpHJ0zGKFCRqwM3kXTKoHv0sZU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\McCree\Overwatch League\6.png" size="406723">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qng782Bp4RUzLjDzboiOXpj5b6nJ1I+MjqsY4MFqBoU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\McCree\Overwatch League\7.png" size="415119">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XX5mp01TN6UjPPJNKyc2zEH7vIJXsc/iXBHUESAHRJI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\McCree\Overwatch League\8.png" size="400173">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oNKA6bSi65RVz15OYkI0Tac0ERFZYrMv2zMKJxTztOk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\McCree\Overwatch League\9.png" size="420976">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RW3PvTczvyJ4rK7Uw4sSEgXT6dzu3hDzeYv5C44/roI=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Images\Items\McCree\Skins\0.png" size="795594">
@@ -2584,6 +3556,114 @@
       <dsig:DigestValue>BYWGTD1mDeFPI/XoKScHSvX+EKoOimZkeyoyo1IBpnE=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Images\Items\Mei\Overwatch League\1.png" size="415960">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>jv6YN5aF8bMJgZV+96GLozuXdbcUhtM8zAXV4PRpmJY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Mei\Overwatch League\10.png" size="427412">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JquQSKqKrt8/p60DqT4vZ7MVnLK7cbTuYWjOQGdK278=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Mei\Overwatch League\11.png" size="380384">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pH9JTLgOb3jt3yqT1nnouOwv4QscwE/8cuJXKZzVfrg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Mei\Overwatch League\12.png" size="407591">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>b5/ZWkAjnxY2Be9sR4iyUr386aGn87jhk8mliqTbUdE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Mei\Overwatch League\2.png" size="413629">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ROQTe+8nwm4ChZ85/HK+vYkMY6LIyDRIrWn905tn6tQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Mei\Overwatch League\3.png" size="424452">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>W+hjgUFrRSm//FlA1yA7pPi4k0+NyNn7h5dHDwOGM8E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Mei\Overwatch League\4.png" size="377641">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xirJkv5PtyW/4kZwTu6GWEK2xQpUExbAjv1YHjJIL1Q=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Mei\Overwatch League\5.png" size="423564">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>w51Z6FEuGrRRWNP+U/I+qVhSoNUnhbn9UNzMOVySIO8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Mei\Overwatch League\6.png" size="398450">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KhKhgDDuqLUVMe1xEXHr7UY8mv4126u5le5LuGHh5ag=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Mei\Overwatch League\7.png" size="405937">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OsRWEQO4KK3VH88KXSSbZJnsi6wawq8W6vCrzXrUOgE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Mei\Overwatch League\8.png" size="398314">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lXNqv24gsezpzn/YdQmIn+MnvS7BTagnr/P3CEOs7Zs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Mei\Overwatch League\9.png" size="411572">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NFxI99sOgy06BXwfXRl2A54fyx8WCuKAXyQrCDv6/mI=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Images\Items\Mei\Skins\0.png" size="650643">
     <hash>
       <dsig:Transforms>
@@ -2852,6 +3932,114 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>W3HWgWeV3aIMa8dpbbINR1G06Wu/SrsBsJvulh/3OrM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Mercy\Overwatch League\1.png" size="284040">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZQmybqSFhUEk8MyihC7DrXK4YxzMXhVdCd5Uvj+fqaQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Mercy\Overwatch League\10.png" size="304333">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sdN71zEKVdeUrBHLxr2IWdpFoS4CpNzqmPXUcj4Ci/8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Mercy\Overwatch League\11.png" size="240199">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/9H7hsCuw7Rb87b1s0Im+zSz7pu6tpQoZKjTbAuUb2g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Mercy\Overwatch League\12.png" size="283200">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HKqWaF2JcrMzwvadIlSxzYhoAIn7pksZAlMIL5gfUwk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Mercy\Overwatch League\2.png" size="278056">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BaSi4rB81bBfhXqw8Q47idbntONpO7tAAOpw2+CwL/U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Mercy\Overwatch League\3.png" size="308347">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>awVHbFSXbDRBsmjvXCfYbFTruam1vhLzrEE/nsWtbds=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Mercy\Overwatch League\4.png" size="247858">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mirMuNx9Kkj4y+QEOaupEZzxSH1bb8HRNu05phn9FsM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Mercy\Overwatch League\5.png" size="303858">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>yV/uqWBq+xOnOFRQsiMB9057loNOf4wMmKjepeVBKwA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Mercy\Overwatch League\6.png" size="271956">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vI2V+1zCHGCWNCFAEKl1ba7MIT3xREbZUsYlqpaXozg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Mercy\Overwatch League\7.png" size="282672">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RJ2fdDbpGSlTBCQeM/4Lipd9/6nSrxR1K6zbYro0ZjM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Mercy\Overwatch League\8.png" size="267846">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>msp/8LnO2/sMHXAfXuLumRFYYBFhRsDiH+ufsySzjqk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Mercy\Overwatch League\9.png" size="300082">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rMf/6m7/m72sZQbvHS2KaOPB1n0+hq0af4WbYSIM6Ww=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Images\Items\Mercy\Skins\0.png" size="520744">
@@ -3124,6 +4312,114 @@
       <dsig:DigestValue>OVhoU9XN3aQXJOKCu6EkWl6PWcb9j42wVjmB3qKBSQk=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Images\Items\Moira\Overwatch League\1.png" size="372045">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GXgFVI6hG/BFzWjFwB7wMIMm3qExF5IUBjqqVvRV7go=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Moira\Overwatch League\10.png" size="386757">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>zHYJ1ZDD6UDPZNS48IQj5nG9s/DV8h3cfMzvv49AkSs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Moira\Overwatch League\11.png" size="324918">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>EiPke5wPiUUEtas0rX9HXOlZtzTHgkHw4/LpvcaPAjc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Moira\Overwatch League\12.png" size="362191">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mKUFHDl9kwA9wQ6q4HtO5eBBFlmjJauSjk/WvxQz8N0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Moira\Overwatch League\2.png" size="367969">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Jj0+issKj7XDiLoniBgC5S8+HQWHeMx/f+nKDb5TZ40=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Moira\Overwatch League\3.png" size="384966">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2ylgtwVsYvzBeMVlLkVDj8/WAVpWoAfHfTFytpYYsMc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Moira\Overwatch League\4.png" size="324176">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>n9FHva6zo3WTrPZcBwaOOGXoTI0JX3M9se//JD0rKZE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Moira\Overwatch League\5.png" size="389702">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>P9hrp64icqRdyZUl0QYCFyLem3vcGC0wdIibrkNTQVw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Moira\Overwatch League\6.png" size="349964">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/1ps+udkLe8GTEbMbMXxRBfOFyPU1cXP/hAsQiFFJTY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Moira\Overwatch League\7.png" size="363229">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Ccw1sU+jS03Idv/pHm5BDJSZMbqxLXRp4kEQ6gcncN8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Moira\Overwatch League\8.png" size="354783">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>vwMQwz8OmioViC5kAa12YY+qvCFZfaVnYxv/OWxxkgY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Moira\Overwatch League\9.png" size="375865">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hFr2Jja4xmztv1GsbXvO5RYAbiJ3sxBRbRt63YfmI5o=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Images\Items\Moira\Skins\0.png" size="651084">
     <hash>
       <dsig:Transforms>
@@ -3329,6 +4625,114 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>D0SAy9dpS6OMbxS5ouBohTrn73sIgpKLwv5PAsETStk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Orisa\Overwatch League\1.png" size="970035">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0vmoczIn3q5bFN5foqqJLMJ9HifFbTzABNaRPbVuIMo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Orisa\Overwatch League\10.png" size="1020004">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7PytWaFqTt/+K4Ram5HxKpuWZn0vYgend7EMTVNh84M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Orisa\Overwatch League\11.png" size="925336">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IpjQ9nGjFzprkcMsQ2FW8jQ3fWoImHNI2VNz6T2owP0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Orisa\Overwatch League\12.png" size="945565">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>suDc68WednKygWcW4x9GDj9f485rL/FuoZpoLsFkMek=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Orisa\Overwatch League\2.png" size="1005713">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bNHnBiJg39zyr0pIPlCQGQ/4DCn5e2g4zUcyk2NHlbY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Orisa\Overwatch League\3.png" size="981172">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JePCpHQzv8oxfMAafLNsf++yOWuSN33nkVACBl90A8w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Orisa\Overwatch League\4.png" size="895246">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ftI6ayuOSa+rAjEvI8t9qVEv7ZzKqNaf2uhalpshjUA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Orisa\Overwatch League\5.png" size="991992">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oTV7QNlkzEXbZLnDjNXdkQbNJUWWsO0J0UhzoWrRq40=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Orisa\Overwatch League\6.png" size="937106">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sWxvRMofBr/pakwjpvR8sXDTUsRpdWuzsy6XqnYSEo4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Orisa\Overwatch League\7.png" size="971923">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>99Du58H22GEpqbqHGYC78hVGswTktUFXraJte80AEgo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Orisa\Overwatch League\8.png" size="949913">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>viPrIdN9chtTOxjGbGoFFTtaMg1TrHpevXGsLSNZUkQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Orisa\Overwatch League\9.png" size="936945">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>t29JbvN6b7UVfXxmTuPsLHKRGt5LCYyVHkjRbzSjsO8=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Images\Items\Orisa\Skins\0.png" size="1538333">
@@ -3554,6 +4958,114 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>VuOOgHsRv5UqUbE8DiIVqaSsKEhoaX0KU7sjS82084E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Pharah\Overwatch League\1.png" size="404571">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>98EH428o6T+xtJTTe9QoaaRziSwnP59qm5UMm9AX4sg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Pharah\Overwatch League\10.png" size="419827">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>h7ufw7+9AFa3s8QQoIsWv4Mz2pgO4OJJOKi8s5lU3SY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Pharah\Overwatch League\11.png" size="340331">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Vve4KuBdB6FI4NyQMOXyAxjYoKTzBGkYCZ4tYKLIBns=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Pharah\Overwatch League\12.png" size="398695">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Pnxffos/rEf8Xxw4Bx8/okcOrjB0QO878BdAG4hFcXU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Pharah\Overwatch League\2.png" size="380633">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>07Cve3ql1fq8x1H6LD84Ha7smZE310JeYIIohsDH+eI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Pharah\Overwatch League\3.png" size="425676">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TkxuFpL6IYFrL0UgkzkX0e47hlhNC2LAul0IAAKn5Pg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Pharah\Overwatch League\4.png" size="347312">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kNlO2V8dfSlFCOPWlXsfVtV99nm5Loqp0n8MXIQwowU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Pharah\Overwatch League\5.png" size="429397">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GaF2IsgSsM2gBvhazqRlai6fBaLyE/YfLUNOppJwrGU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Pharah\Overwatch League\6.png" size="394144">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>z+dSAotOd/lRVFG4dV1tLO1jNmiVR7oMaA8f40IAx0c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Pharah\Overwatch League\7.png" size="401747">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GPZ2y91QOzOlLJC2/wp4FV16g3OEWoPHM1mXQwqPaek=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Pharah\Overwatch League\8.png" size="381587">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>u/e1qiDfHyDCUuosPsuT5nrbfhS8Q+hlsJW5/mpDidU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Pharah\Overwatch League\9.png" size="418863">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6rg5OFTVwtTAB1Ki3Bymy1rj1rPpxrs3Uc85WEghxIM=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Images\Items\Pharah\Skins\0.png" size="701868">
@@ -3824,6 +5336,114 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>2vtWeWWnumDd9qz4Lpwfx6opKkooFStBUmf9EoiBscc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reaper\Overwatch League\1.png" size="518520">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FpM10e8W0cboM6q6XGlxYH4ED7ovDw206YxwP+PYlsA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reaper\Overwatch League\10.png" size="550208">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/SG0u5jIwk82iUqT5glxI6NeerpMrdMi3XcptvZLUU0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reaper\Overwatch League\11.png" size="445932">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SI80oocduwUyViWmMmNhVox1aiDzlY86FLTWeJcMRDs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reaper\Overwatch League\12.png" size="512335">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3orQZO/OeuPv60QTbYbHJC4tujBApH0HH4eEHBDREvY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reaper\Overwatch League\2.png" size="503691">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>L411jbhXq72FoEXE1NEsUbGu4+ekp7lwc3YYvgvkGSc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reaper\Overwatch League\3.png" size="557329">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3s/dDh92RRMUTvu4vvckEasmJnFwUCjhZ0qM/BWrP+A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reaper\Overwatch League\4.png" size="446962">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3KXOMvUqpTYMEEvBOZVFJz2f3vSrbrKO9RbdyTD0qrE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reaper\Overwatch League\5.png" size="559994">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>524R3/ZImYE+Y3hzkJFxpoMBt3rPupyIUFoAVMey3jM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reaper\Overwatch League\6.png" size="483601">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0GBWYRefuEppz20vBqefgP8dl2s5UMHtpLNg32RoFHY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reaper\Overwatch League\7.png" size="494362">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>o9IYT9ZpR7VNWSkMoUr8w+oC8YP5EQFJL+jfOTozHDM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reaper\Overwatch League\8.png" size="478962">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nt6N4YB9hUCCy6uJVlLTWN47Sj2TbDSX607GgOLxzJs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reaper\Overwatch League\9.png" size="538620">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>y+uGC6fHSMMvRXm40g8flef7arDg4TjHFQu7iO95Lb4=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Images\Items\Reaper\Skins\0.png" size="814282">
@@ -4105,6 +5725,114 @@
       <dsig:DigestValue>9/37I/8FiFsyBWmuvo6yBYobYc79zey8apbHvrBorJU=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Images\Items\Reinhardt\Overwatch League\1.png" size="860233">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>iA0D3ih1bwGjMk1/l+fuSeRprRSeZD6y/fxjdMNEWnQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Overwatch League\10.png" size="888604">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Nq/Ykk6izJ1LfiRq0+UHE+aqXd6OYFFNFI3oFBOxyTc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Overwatch League\11.png" size="703488">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>z0Z/PXj2uM+yT+sz6gDuqqrCV2bnktGf36GRGlK9NmY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Overwatch League\12.png" size="844173">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LZKkgqQY0sTZfb0BzsH2SZrfZ+NCQOgdPLPkx34HXLE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Overwatch League\2.png" size="781381">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>U0wuN9UdjT+pkI+m9v4poUdUjGnolQ11nqbNbzr+s7I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Overwatch League\3.png" size="903886">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>K0a7U7gxEu/pmsW6e11NNn0kfIB+DdcEMDc62v7viQY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Overwatch League\4.png" size="718851">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8sGyUzDCILiodQif3XMKyKzA/YhWLgrBgUc4rPopPHI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Overwatch League\5.png" size="930688">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7qczRIEg13joCxcxrCyNwsv3SUxa0mCtIDHnIi3oifQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Overwatch League\6.png" size="851015">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5Xm1JGpi5+wKA7SVIWOVXdu3pNVHOwKubxPs1bosle0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Overwatch League\7.png" size="860632">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>BlT+F7RQj4e3f18NBavSdt4Mpu/KDUGEYUQ6hW/FH5s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Overwatch League\8.png" size="810948">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>W8F9CxADdtmvynY5ECcLysQuiYJgYGDkJNbtKI/YCPo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Reinhardt\Overwatch League\9.png" size="903823">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7JkDr8r/e8vpci/QOEUygImHjMPIZD3slSjtSc3MeX0=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Images\Items\Reinhardt\Skins\0.png" size="1392986">
     <hash>
       <dsig:Transforms>
@@ -4364,6 +6092,114 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>86jVMPXPZiHm+940ILxSk78RG+grUgFE7v3yCcMdbt0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Overwatch League\1.png" size="956504">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>usdqjF2DaxJBJsZQshbCNjlcAim1wmsSN1hmiJnL1E0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Overwatch League\10.png" size="969765">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3FLhuDeViwY4sC7xDL/AUs33NXgpoxRT8k+HYGZekP8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Overwatch League\11.png" size="894332">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TbvzAY3otYCn44fv/hPWEiBXzA0ji48J4tW13GqxqwU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Overwatch League\12.png" size="950882">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2+cuSV0IcotfGpevPIf8FD3xD+ff1bJTXSetdabmPz0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Overwatch League\2.png" size="921918">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>L/k9j6yoxnd/XmnIOSUpL6ySIT8QrOgNGXK8FpBXPTQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Overwatch League\3.png" size="979740">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2e1zMc0jRoxe4b5QxyDF89CpOL55a1Xrfyx/BxOcj28=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Overwatch League\4.png" size="898462">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Wh2Vx8q0Si4QYg1M1fF/DUTtaVYi2bBdB95N247tS1M=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Overwatch League\5.png" size="989203">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>G+ndBaCO0U/FmL44AXmuQWY1sXr1vmLCrz0S5uSBzr0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Overwatch League\6.png" size="940137">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>SpLcB1iGb4OfOLgUaYSnCEejpxbi+oSmMe06DEuBALk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Overwatch League\7.png" size="929944">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>z4B8kn0iU6FPVMxMuuiiCp2hEF/S/yn3L/fyDMnOdKQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Overwatch League\8.png" size="919544">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3BG+/4xdHkbHQdKmXIKA2YMO0r/+Mnx1ie7OJTj8R/U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Roadhog\Overwatch League\9.png" size="973192">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>K8Tmw6PNVwKbCOFqwiIofVwsyBH41MmcxmIXbXLIo6I=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Images\Items\Roadhog\Skins\0.png" size="1472411">
@@ -4645,6 +6481,114 @@
       <dsig:DigestValue>LvQGKZ+k0cfKfBfLlXUwN+FcApu258kNVOQCqr732kk=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Images\Items\Soldier 76\Overwatch League\1.png" size="363628">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Oex5kxzHtd7sTypE/HPlhYiZKB6omklc0k9v7TTmnLw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Soldier 76\Overwatch League\10.png" size="379925">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JUsE4HsrfsLvEhwpODheUZUuv3/Lc2pjdsq/ZU7rBUs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Soldier 76\Overwatch League\11.png" size="315920">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZmKXk14UEj3TYz4SQrferObrFJwF45a0nT29pFzBEAE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Soldier 76\Overwatch League\12.png" size="358408">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>n0pxFdm1TdI8o3BwKPke1cE6oxCdQPktJB5jL1lDvTg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Soldier 76\Overwatch League\2.png" size="352625">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>CTWl334LU5bgOIVcYewHG6h9g1xEgMpEYq82xX3uZfg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Soldier 76\Overwatch League\3.png" size="381988">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NYsjOq7PBEpzu4lltmSZLNu9xPrbM0ZM/tx17/yQeDs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Soldier 76\Overwatch League\4.png" size="325593">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mx/6QIkJ22v32kk8FIRja6aVInFdZiGcTscEAc2lwNU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Soldier 76\Overwatch League\5.png" size="386615">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>uSrRnf8lV2fpLdh7lCnqoWV4j0U4JaOJ2/TJEjYk4jQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Soldier 76\Overwatch League\6.png" size="351047">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XlPV4kpxbdTC3ZpmTbrjEjl/AY9XisefE367jgYjJ3w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Soldier 76\Overwatch League\7.png" size="359377">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TwVhP8Tvt4NYKrZ2tIT5QfxNIkgvNBXO79fESVHAFFA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Soldier 76\Overwatch League\8.png" size="348268">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>lqT9kkqRIU+Q7Kr7ZOqqDFHSJKziPnlR9aYkW39FQcY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Soldier 76\Overwatch League\9.png" size="377203">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OL2v+jR5sM7i31YOC0lxJPyMRozYsKVuaNiz9kKCVlU=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Images\Items\Soldier 76\Skins\0.png" size="572775">
     <hash>
       <dsig:Transforms>
@@ -4913,6 +6857,114 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>InUOQB192nsyCEO3gDYPP7YG97L1JjzwIBmsBmZrLdk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Sombra\Overwatch League\1.png" size="265902">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IhxksnibdLwXrRUgDXVWHKOdSSdNSt3SlvUJLYI5Mwo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Sombra\Overwatch League\10.png" size="278975">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>fbqtqJmbZbEptYS+fdX2tNovlw2KKkVprEXMeEbvPHk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Sombra\Overwatch League\11.png" size="253198">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>OW8d28WhfXhCTB++Q+yr6ZHB+hTl1EB9u+RDICG4yDE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Sombra\Overwatch League\12.png" size="265080">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>WWTOfJz9SeGAaaSRyDWiWUqZi86oPiQFJp9wwq77z/w=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Sombra\Overwatch League\2.png" size="277337">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>McRTLAI013Tv/9Fzgin9BW5y2T1EBtGQ2mODBIfTNLc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Sombra\Overwatch League\3.png" size="272305">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>PiNiqtzR9ca3n44Wwpye2+nUZE8u2rqpV3ykRYUdhUQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Sombra\Overwatch League\4.png" size="243212">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>i2AkbRn5iTclC5ftTpycbUf4IbznF+9mCGieo3ISOXI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Sombra\Overwatch League\5.png" size="275410">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>X6O9TXVtgW2BTMaNjmELyCK9ze+fXVBGtwtR2AR1duA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Sombra\Overwatch League\6.png" size="251492">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UD+G8PnCS8qX5mAZMVRoqulCZlb2ySzwnuLGT7OyT+I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Sombra\Overwatch League\7.png" size="261389">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>TCBFO4r8BEBq++Jd0J72aO7BNLiG7H5CsWj1fTXSniM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Sombra\Overwatch League\8.png" size="257052">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0JfKkEKolGYSUjuXiaYnZtcT2aiV5yE7OB64MdM+o4g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Sombra\Overwatch League\9.png" size="260514">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LJt6ME5QNWAOB+AhMeNiaXYJAqlCrVCuRtywdAYWNPo=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Images\Items\Sombra\Skins\0.png" size="452587">
@@ -5185,6 +7237,114 @@
       <dsig:DigestValue>rtBHkOKARIxP0Q9DCPEv1Ta59nsu2pQVmUEA6hNw17k=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Images\Items\Symmetra\Overwatch League\1.png" size="267341">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bKU1GF/Ojk/x4nXgM48VqlLDmTISsJZFn9VVAv5raqY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Symmetra\Overwatch League\10.png" size="284296">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>bsR/ycsPXXZ7SAUnwfQu16RfynjLeAUR2OCA/IFMcKc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Symmetra\Overwatch League\11.png" size="242864">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IYnplbruQs/ebjdQFr7+uJVjeOqvg9FdOumdW4E/zKQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Symmetra\Overwatch League\12.png" size="266514">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>HsVokggWksIlSPvcSQpfG0BFNAJxoMOZ7tyhhbz4qbs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Symmetra\Overwatch League\2.png" size="280375">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UAxAhAsyQ5Ovw7YV7hAWnrO7z81PwhWhbb1q3LMmO68=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Symmetra\Overwatch League\3.png" size="286565">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/IaoviyWQesQxG+u8CWmGHA7msfUweRvyffum782Zic=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Symmetra\Overwatch League\4.png" size="239252">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mmxbAoIiezs4xWwjlvjNEL3Jj35HosUf3ZU0GfX0GOQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Symmetra\Overwatch League\5.png" size="279422">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dy5mM4eC+IF8bwfxjnQoCNZhalKgJ6RyE6M6TA+QpoU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Symmetra\Overwatch League\6.png" size="254170">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>u+DlHnSCrHfADVEEtWgcZnY18zfnIDK1YZuIaKM4UaQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Symmetra\Overwatch League\7.png" size="262445">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/GBqXx2uS+gIL0YSHryMRsyallSKcIUPINlFL0uP9o4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Symmetra\Overwatch League\8.png" size="257855">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>j95TphlqTGVXSTSnAYNyLT4RPK1UF8lfU/3Fhl+cjhQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Symmetra\Overwatch League\9.png" size="271251">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>LiEqoyWSQyTu2ZpNCBWmYXfuZ8h1ANMoyE4q7gfvE7U=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Images\Items\Symmetra\Skins\0.png" size="497320">
     <hash>
       <dsig:Transforms>
@@ -5455,6 +7615,114 @@
       <dsig:DigestValue>YA+QdbhuLeMkS1rRrXV82bNB7YlT/QGorHfcEr7+WhQ=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Images\Items\Torbjörn\Overwatch League\1.png" size="687030">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>YAPplrNqyxY90Jgf6DAObwMjUXigOWEjzUNFcZVnGgg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Torbjörn\Overwatch League\10.png" size="703324">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>iCSSBVde3j2SJy9G7ueFjBs4RDbh1X+fURHz5eGcjoA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Torbjörn\Overwatch League\11.png" size="634635">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>FKXoEJj5+h4A5mdX5tkBv0Fmitk0h8ziu0hx5DdpFIo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Torbjörn\Overwatch League\12.png" size="676234">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>leOlV6HX13Y1Cw5AAmrUXIi9qJ4RcxnUSwjYRM9afDc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Torbjörn\Overwatch League\2.png" size="665591">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>3mv2jvXrUr44sZAuFiiUx2bYT/GoAvYAe8QYjjD20OA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Torbjörn\Overwatch League\3.png" size="697965">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6kE1VFuRvMOAawnsEbqUPmflhL/fzNnuZXHBtwN4O6U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Torbjörn\Overwatch League\4.png" size="645544">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>h0qvDwcvQdqithSxdiCHKPx8dSmZ1U6MSxKqAIPPcAM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Torbjörn\Overwatch League\5.png" size="706758">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>F6Sx2td/JhjxpJo/Ys4cVebJ4mHjOV4uYDSnFCDfWQs=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Torbjörn\Overwatch League\6.png" size="673333">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>R1uX5lIFvWfDsrCRbzS/a37nsZMI9F1gTrXr43tAODg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Torbjörn\Overwatch League\7.png" size="678493">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>J/KtrrSqgluhdy942Lr+dDyGSjz8+OKYm37/2YNX38Y=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Torbjörn\Overwatch League\8.png" size="660285">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Gwtj5XkOoKRi192kwzFe27Y30WZqd/UqPt2LVeXxG3g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Torbjörn\Overwatch League\9.png" size="703367">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>l23RkdYTYaLpvjAU2r+1UAwMeFqQS5p9Iu4Iu9KM2SA=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Images\Items\Torbjörn\Skins\0.png" size="1060929">
     <hash>
       <dsig:Transforms>
@@ -5723,6 +7991,114 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>RyDAxCY/oy9eYRrCmqU94B96OSg9X+HtioMC5RDf78k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Tracer\Overwatch League\1.png" size="285512">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>d4O/HAY2rV6988iTCLU+B+rYRmp5cpPmufZIFr4g9WI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Tracer\Overwatch League\10.png" size="295661">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4m3Jw/WJn/PdqN6dtXIkQxPWIXQcHGaR5GiB7+7hWNk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Tracer\Overwatch League\11.png" size="258665">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>VFmfMsnRtdvGjWd1KA2ZHhJzLyZ6P2npwmWMp+1h80U=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Tracer\Overwatch League\12.png" size="281250">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>+WpxjFBha3T8XdEu5JhXy0CVAHr9oM/taCbs/3+V5dM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Tracer\Overwatch League\2.png" size="278128">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XOxuDVa4ldglO5PZFMkzzdE1glmB4TNNxjgYh2nUshY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Tracer\Overwatch League\3.png" size="292224">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kbSsYDCnsJACXv1C4AjNYBlaWFdCUrABmCJ5SL+C5Xg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Tracer\Overwatch League\4.png" size="256853">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>POOtHZ5ULt3CNKBU7Kr6rypCSGDzjonkmYOdF8mWWwk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Tracer\Overwatch League\5.png" size="298309">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZHqg2MZl6hPp6kapA0q3Wda4/+lhxeUjAX7TnNw/kIM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Tracer\Overwatch League\6.png" size="278949">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>QO+/wUpCTssVyAXNwxvefybkgVogd4TQ0bvdp8AFMsM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Tracer\Overwatch League\7.png" size="286226">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rGVDtjzvPSK88SYJNKODd3SWAqEGFQ59cNHmj7Lt8WQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Tracer\Overwatch League\8.png" size="276845">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GkfrXhy9zd10vJm/9486dMiBpht8x+k5mSCJWH18hzw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Tracer\Overwatch League\9.png" size="291473">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>KUWb/5mWF3Oj8POjyUtl+zh9VZ7YnwFHRErJ1yuRHyo=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Images\Items\Tracer\Skins\0.png" size="563288">
@@ -6013,6 +8389,114 @@
       <dsig:DigestValue>LhR436PeW+3LtqyTJaqLPqCNMgecapBwfi/EYaInQDQ=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Images\Items\Widowmaker\Overwatch League\1.png" size="318016">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1zJRqJ2i7yM4fjQ/4gkJEMG90LC0HZhhoEFT8AcM82g=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Widowmaker\Overwatch League\10.png" size="324508">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7VkW08eITH948JCg7tThK1/uNsHi2Rfh5gs1rWu8yLo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Widowmaker\Overwatch League\11.png" size="291330">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6b58QaCuuorcgaX8e2yQ/Kpp73czAyIE4GihpykRMVM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Widowmaker\Overwatch League\12.png" size="309561">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>8xiYyKdE/FJGl3oV/l91y0XReD9qkPuG1BjHd6k6Fkg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Widowmaker\Overwatch League\2.png" size="313527">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>pEdzOxEt0DIBozqZVvR3jvy/dk/l0LlC29vDvM3ZtRo=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Widowmaker\Overwatch League\3.png" size="318813">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>EpijFCQlF466Ee4akBdT4Vk8nP3uC3Mkfe3SvhNBNkY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Widowmaker\Overwatch League\4.png" size="290874">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GVa2GwRl4IL2LOO4gMnLjAGgluwV2r9n78pvo6nOD90=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Widowmaker\Overwatch League\5.png" size="325086">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>NLjUR/AIYAqPCAj/kil1SxvR2G8MfmHKlLpett8Lo98=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Widowmaker\Overwatch League\6.png" size="303867">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>5XsgV4e7eUE3QBe8jOCJH68Y6SpiQILjIR2Sc3J/46o=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Widowmaker\Overwatch League\7.png" size="313186">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ZCERyCD0x5gKAJFXqCjCDSsPhlbOJ1GZqExtWLzfWwQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Widowmaker\Overwatch League\8.png" size="304035">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ag4cuUx0PFt4Q02hG0s4quiTJd7F9Y+P67EQfHWPLpE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Widowmaker\Overwatch League\9.png" size="315872">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4jgaQJt4zvxfwCfoz1oNUD/LnzLWUqENu2sF1f4ChDo=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Images\Items\Widowmaker\Skins\0.png" size="599689">
     <hash>
       <dsig:Transforms>
@@ -6283,6 +8767,114 @@
       <dsig:DigestValue>VpcFEk6iN+ispu8f/4sRAHaSLDaQdeM1YK6lbuAbMpo=</dsig:DigestValue>
     </hash>
   </file>
+  <file name="Images\Items\Winston\Overwatch League\1.png" size="688809">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>kF1A6bxrX+NYZOXtPfGno+v3nQZeC4MdkJe+h91sjQU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Winston\Overwatch League\10.png" size="715969">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>XuqEPDmGi7Go/4dFIn+1oWXJoU+7ujSaqHAoUcBOskc=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Winston\Overwatch League\11.png" size="612065">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>IK2xEdUPhnHHz8bu7eCc9AUrv87Sji6q1AOvZ1/Ap1c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Winston\Overwatch League\12.png" size="678343">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>sLqlvEAOQa0extKc04AygWpAqbMkrrC1xZCEqavlf/A=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Winston\Overwatch League\2.png" size="678382">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nxlXqqE6FuXnOOh/F2GF8uSxdmAnO6DpS4StyAmO4bQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Winston\Overwatch League\3.png" size="715774">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>c52pbCA8/JLcPQiPZy5OO//xYsGMp3yMzDKYcof93n4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Winston\Overwatch League\4.png" size="617764">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UBUqxPod7vJxtac+yxUr8Vicey3PY84/Xd9Vu0D6QU0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Winston\Overwatch League\5.png" size="704482">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Lg4iUV2ZK1sZmL3tvrOnZsTI7GsjyjzcMOvlBf/Rk3c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Winston\Overwatch League\6.png" size="655620">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>klbidK8Qusn/1mDDMlel9tImArdWRsRncmN/hhxvgKM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Winston\Overwatch League\7.png" size="677636">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6vlbTz7F+z0/inCpRBZt7XwFy4ocPsXd5pnQofTz3lI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Winston\Overwatch League\8.png" size="659894">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>l9xFPh6vR3DMp7yzqd+THdeD5LHOcwrAALQkjS1m0yE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Winston\Overwatch League\9.png" size="694552">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>X5oo4HFnOyjC4t/RrRai6RSzNucW60JbN/btARU4OUw=</dsig:DigestValue>
+    </hash>
+  </file>
   <file name="Images\Items\Winston\Skins\0.png" size="995592">
     <hash>
       <dsig:Transforms>
@@ -6542,6 +9134,114 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>RXDMwY3ZblXeZKRYQzJvhfKRLU30VNM1C697Ey7ig0E=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Zarya\Overwatch League\1.png" size="437691">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>onR9wumJM/rFBZzKpgPI5o1lelMAsr0vgpkzFdoot2s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Zarya\Overwatch League\10.png" size="454555">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mlfutsjThFhNKU3hGCUdCmS9ARsKTsINCAEq/leQP4I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Zarya\Overwatch League\11.png" size="385681">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>GDO2d0hQk7DtzIX89r03RHgZXEpXIjNF5J+Qr5VdB4I=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Zarya\Overwatch League\12.png" size="431562">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>mwbSxqVhC3VUMW0824ZaHSVE92xePlhLxyIc8VkdHLU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Zarya\Overwatch League\2.png" size="432390">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>UXG2HdTpod8sRDMBCP+5OW1Nmji5kpobIa1MjISPAuM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Zarya\Overwatch League\3.png" size="457114">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>oNau1qLcedOPg2KoCY7i8G5t+rMIx61Dto5s2+ZdaWM=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Zarya\Overwatch League\4.png" size="396635">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>rpkkemxhaxnZXLj0+K2lw9eb3TzatPHtivST+6yE0fQ=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Zarya\Overwatch League\5.png" size="451673">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7tQAc3eTTQRVc5v/FQ5XqZMM9wF5IheZVstTfKM2gXw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Zarya\Overwatch League\6.png" size="416522">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>k8T75bAR6n6e8P8/JalJacjwRTz0I3ZkqK+d0AvXSeI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Zarya\Overwatch League\7.png" size="429602">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>k9siSVcAppp7s/sdyhVXrYqXWELpwBRFN+d33nhktsE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Zarya\Overwatch League\8.png" size="418806">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>JgL0eKlbjBcoiQ0q87YZVAsBHGaXatPPxSK02EmQfCA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Zarya\Overwatch League\9.png" size="443703">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>dDl4nlJvUWzPfJwobhr3FSyy1tfCAfikKDZUYtbWvqs=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Images\Items\Zarya\Skins\0.png" size="721511">
@@ -6821,6 +9521,114 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>sQl4xqNo/VcNPiIlJuBfo7S5VVuNhVnJRbmbYvQmSOY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Zenyatta\Overwatch League\1.png" size="365817">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>1hCf8EaLEv5sN5sPH9AaMSDAzgLj4XJkfsWX15W+/gk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Zenyatta\Overwatch League\10.png" size="385110">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>S/TE5DkKasPB0jy2uRWAc7Boy6lFH2Q9eKdqqHd/UR4=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Zenyatta\Overwatch League\11.png" size="319000">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Pj5eLDgKtRbSRtX0QSq5UDTouZS+fNBcaVB2qvXW4fE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Zenyatta\Overwatch League\12.png" size="366122">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>S0HSmNHVGe9cu8pEXUNXxfJkaOFEdyEOPQMbZBb/Wcg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Zenyatta\Overwatch League\2.png" size="353672">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>eY4M835Xq6qrJuwet+zpFP41sHP9DDOSoX3GaNb+jt0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Zenyatta\Overwatch League\3.png" size="390931">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>2sLJNPHsOeesDAIUGIsG/BU3JroqjMTBfG0OKgYEJZw=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Zenyatta\Overwatch League\4.png" size="312490">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>4rmwXP1faATdAal1BhDqOau/TaqKCEGs+5uHuSMnJ3s=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Zenyatta\Overwatch League\5.png" size="404774">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Bapj4q09GY/nMCZo3h9QBgHsfKryDSikq31O/UALBc8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Zenyatta\Overwatch League\6.png" size="349082">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>nAi1/+Ls5uIiG4r2caGe2HrpYSa5xyXAhRqwZdQR0XE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Zenyatta\Overwatch League\7.png" size="359409">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>gPTLz4IWwhDw9QeXSXf9cRIf2Fz4gFyRPGoZN7C8tf0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Zenyatta\Overwatch League\8.png" size="342642">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Ub6agETsTctwtIL4pL5Z/ExT+956u2fj6fwJtlcU3ZE=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Items\Zenyatta\Overwatch League\9.png" size="385860">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>9FhBGrHcuueRMFzM2fah6bqGWoA1K7RsAC2aIiZI/4E=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Images\Items\Zenyatta\Skins\0.png" size="625887">
@@ -7235,6 +10043,123 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>NwWJCpbY9VF1274B5W4nNCtkku9u1/Kai4o4+SKEoGk=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\Ana\EN\0.mp3" size="63360">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>ubIewLJPsStIvkaWse+4ftvxkvyYBlYp2rg3klOfUZ0=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\Ana\EN\1.mp3" size="51840">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>/5lAskfDwLUGGwyc3CieQ7rzjZRFMKf/9GvETCHSviU=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\Ana\EN\10.mp3" size="74880">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>DoTxpT2Bs82QTJ1n1rvba2/NEC4bjKdaIX+V2Wkgzdg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\Ana\EN\12.mp3" size="67200">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>0yDrY5yHCv0ekTh+Ljh7ZWpLGfJnSpRXRTX4+NFf7qA=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\Ana\EN\13.mp3" size="41280">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>7vnPl0Cmd6qIwZYBnc+xhYv1QOVihDbd3Tp2i+XAqqg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\Ana\EN\2.mp3" size="51840">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>RQYe0YL7LccG4TqWNEIRciRN1N67usUxWh+cWt79/DY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\Ana\EN\3.mp3" size="71040">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>j93LJSplcRNKOM8N/nC2NxFhNT4aZ5YZrU2mUvNkcds=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\Ana\EN\4.mp3" size="76800">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>xuc/b6/jgC3txNqnFzXWLrI56/bNaMr2tj8/ugOyRw8=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\Ana\EN\5.mp3" size="50880">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>Cuu1xHO4WGLZVPDN5YTnRdh2F2bMzIY6pfY4v0A+ALI=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\Ana\EN\6.mp3" size="48960">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>qewRMUt2K2WcFavGgY58t2L4UK0IQeVhokDiWcTbOyY=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\Ana\EN\7.mp3" size="54720">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>6FNnR5dAPC4oEchG6wm36drclsS72x7g73AwlV8gF+k=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\Ana\EN\8.mp3" size="43200">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>hHSbB66lPHehYLtDdnfLfXOYXoE7Z8zbx3JIMmi1o7c=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Sounds\Voice Lines\Ana\EN\9.mp3" size="63360">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>z/udh5jaYgz4SmvCK6JHYoqSGNl4F3iHWOtKRgNkHNU=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Sounds\Voice Lines\D.Va\EN\0.mp3" size="58585">

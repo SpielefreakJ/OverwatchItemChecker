@@ -10,7 +10,7 @@ namespace OverwatchLootBoxTracker
 {
     class CHeroImage : PictureBox
     {
-        string myHero = "D.Va", myCategory = "Skins"; int myItemname = 5;
+        string myHero = "D.Va", myCategory = "Overwatch League"; int myItemname = 4;
         Translate.L_Translate Translate;
 
         public CHeroImage(string Lang)
