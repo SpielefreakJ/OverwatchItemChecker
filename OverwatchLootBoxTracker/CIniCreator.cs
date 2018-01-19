@@ -181,5 +181,26 @@ namespace OverwatchLootBoxTracker
             inisHeroes.Write("OWL11", "false");
             inisHeroes.Write("OWL12", "false");
         }
+
+        public void create7(string Hero)
+        {
+            inisHeroes = new IniStream(Path + "\\" + Hero + ".ini");
+            if (Hero=="Doomfist")
+            {
+                inisHeroes.Write("SK11", "false");
+            }
+            if (Hero == "Orisa")
+            {
+                inisHeroes.Write("SK12", "false");
+            }
+            if (Hero=="Roadhog" || Hero=="Widowmaker")
+            {
+                inisHeroes.Write("SK15", "false");
+            }
+            if (Hero == "Zarya" || Hero == "Torbjörn" || Hero == "Mei" || Hero == "Reinhardt")
+            {
+                inisHeroes.Write("SK16", "false");
+            }
+        }
     }
 }

@@ -8,781 +8,253 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 {
     class EN_Ana
     {
-        public EN_Ana() { }
 
-        public string Name
+        public EN_Ana()
         {
-            get
-            {
-                return "Ana";
-            }
-        }
-
-
-        //Skins
-        //Rare
-        public string Citrine_SK
-        {
-            get
-            {
-                return "Citrine";
-            }
-        }
-
-        public string Garnet_SK
-        {
-            get
-            {
-                return "Garnet";
-            }
-        }
-
-        public string Peridot_SK
-        {
-            get
-            {
-                return "Peridot";
-            }
-        }
-
-        public string Turquoise_SK
-        {
-            get
-            {
-                return "Turquoise";
-            }
-        }
-
-        //Epic
-        public string Merciful_SK
-        {
-            get
-            {
-                return "Merciful";
-            }
-        }
-
-        public string Shrike_SK
-        {
-            get
-            {
-                return "Shrike";
-            }
-        }
-
-        public string Ghoul_SK
-        {//Halloween 2016
-            get
-            {
-                return "Ghoul";
-            }
-        }
-
-        public string Tal_SK
-        {//Rooster 2017
-            get
-            {
-                return "Tal";
-            }
-        }
-
-        //Legendary
-        public string Wadjet_SK
-        {
-            get
-            {
-                return "Wadjet";
-            }
-        }
-
-        public string Wasteland_SK
-        {
-            get
-            {
-                return "Wasteland";
-            }
-        }
-
-        public string Captain_Amari_SK
-        {
-            get
-            {
-                return "Captain Amari";
-            }
-        }
-
-        public string Horus_SK
-        {
-            get
-            {
-                return "Horus";
-            }
-        }
-
-        public string Corsair_SK
-        {//Halloween 2017
-            get
-            {
-                return "Corsair";
-            }
-        }
-
-        public string Snow_Owl_SK
-        {//Summer 2017
-            get
-            {
-                return "Snow Owl";
-            }
-        }
-
-
-        //Emotes
-        //Epic
-        public string Disapproving_EM
-        {
-            get
-            {
-                return "Disapproving";
-            }
-        }
-
-        public string Not_Impressed_EM
-        {
-            get
-            {
-                return "Not Impressed";
-            }
-        }
-
-        public string Protector_EM
-        {
-            get
-            {
-                return "Protector";
-            }
-        }
-
-        public string Take_A_Knee_EM
-        {
-            get
-            {
-                return "Take a knee";
-            }
-        }
-
-        public string Tea_Time_EM
-        {
-            get
-            {
-                return "Tea Time";
-            }
-        }
-
-        public string Beach_Ball_EM
-        {//Summer 2017
-            get
-            {
-                return "Beach Ball";
-            }
-        }
-
-        public string Candy_EM
-        {//Halloween 2016
-            get
-            {
-                return "Candy";
-            }
-        }
-
-        public string Dance_EM
-        {//Annyver 2017
-            get
-            {
-                return "Dance";
-            }
-        }
-
-
-        //Victory Poses
-        //Rare
-        public string Mission_Complete_VP
-        {
-            get
-            {
-                return "Mission Complete";
-            }
-        }
-
-        public string Protector_VP
-        {
-            get
-            {
-                return "Protector";
-            }
-        }
-
-        public string Seated_VP
-        {
-            get
-            {
-                return "Seated";
-            }
-        }
-
-        public string RIP_VP
-        {//Halloween 2016
-            get
-            {
-                return "R.I.P.";
-            }
-        }
-
-        public string Toast_VP
-        {//Winter 2016
-            get
-            {
-                return "Toast";
-            }
-        }
-
-        public string Folded_Hands_VP
-        {//Rooster 2017
-            get
-            {
-                return "Folded Hands";
-            }
-        }
-
-
-        //Voice Lines
-        //Common
-        public string Justice_Delivered_VL
-        {
-            get
-            {
-                return "Justice Delivered";
-            }
-        }
-
-        public string Children_behave_VL
-        {
-            get
-            {
-                return "Children, behave";
-            }
-        }
-
-        public string Everyone_dies_VL
-        {
-            get
-            {
-                return "Everyone dies";
-            }
-        }
-
-        public string It_takes_a_woman_to_know_VL
-        {
-            get
-            {
-                return "It takes a woman to know";
-            }
-        }
-
-        public string Justice_rains_from_above_VL
-        {
-            get
-            {
-                return "Justice rains from above";
-            }
-        }
-
-        public string Mother_knows_best_VL
-        {
-            get
-            {
-                return "Mother knows best";
-            }
-        }
-
-        public string No_scope_needed_VL
-        {
-            get
-            {
-                return "No scope needed";
-            }
-        }
-
-        public string What_are_you_thinking_VL
-        {
-            get
-            {
-                return "What are you thinking?";
-            }
-        }
-
-        public string Witness_me_VL
-        {
-            get
-            {
-                return "Witness me";
-            }
-        }
-
-        public string You_know_nothing_VL
-        {
-            get
-            {
-                return "You know nothing";
-            }
-        }
-
-        public string Someone_to_tuck_you_in_VL
-        {
-            get
-            {
-                return "Someone to tuck you in?";
-            }
-        }
-
-        public string Better_than_retirement_VL
-        {//Summer 2016
-            get
-            {
-                return "Better than retirement";
-            }
-        }
-
-        public string Learn_from_the_pain_VL
-        {//Summer 2016
-            get
-            {
-                return "Learn from the pain";
-            }
-        }
-
-        public string Are_you_scared_VL
-        {//Halloween 2016
-            get
-            {
-                return "Are you scared?";
-            }
-        }
-
-        public string Dont_be_scared_VL
-        {//Halloween 2017
-            get
-            {
-                return "Don't be Scared";
-            }
-        }
-
-        public string Im_too_old_for_surprises_VL
-        {//Winter 2017
-            get
-            {
-                return "I'm too old for Surprises";
-            }
-        }
-
-        public string Im_watching_out_for_you_VL
-        {//Winter 2016
-            get
-            {
-                return "I'm watching out for you";
-            }
-        }
-
-        public string The_Moon_in_Winter_VL
-        {//Rooster 2017
-            get
-            {
-                return "The Moon in Winter";
-            }
-        }
-
-        public string Damn_VL
-        {//Uprising 2017
-            get
-            {
-                return "Damn";
-            }
-        }
-
-        public string The_Ghost_watches_VL
-        {//Uprising 2017
-            get
-            {
-                return "The Ghost watches";
-            }
-        }
-
-        public string Follow_me_VL
-        {//Annyver 2017
-            get
-            {
-                return "Follow me";
-            }
-        }
-
-        public string The_adults_are_talking_VL
-        {//Annyver 2017
-            get
-            {
-                return "The adults are talking";
-            }
-        }
-
-
-        //Sprays
-        //Common
-        public string Action_SP
-        {
-            get
-            {
-                return "Action";
-            }
-        }
-
-        public string Ana_SP
-        {
-            get
-            {
-                return "Ana";
-            }
-        }
-
-        public string Bearer_SP
-        {
-            get
-            {
-                return "Bearer";
-            }
-        }
-
-        public string Cheer_SP
-        {
-            get
-            {
-                return "Cheer";
-            }
-        }
-
-        public string Cracked_SP
-        {
-            get
-            {
-                return "Cracked";
-            }
-        }
-
-        public string Cute_SP
-        {
-            get
-            {
-                return "Cute";
-            }
-        }
-
-        public string Eyepatch_SP
-        {
-            get
-            {
-                return "Eyepatch";
-            }
-        }
-
-        public string Fareeha_SP
-        {
-            get
-            {
-                return "Fareeha";
-            }
-        }
-
-        public string Gaze_SP
-        {
-            get
-            {
-                return "Gaze";
-            }
-        }
-
-        public string Grenade_SP
-        {
-            get
-            {
-                return "Grenade";
-            }
-        }
-
-        public string Guardian_SP
-        {
-            get
-            {
-                return "Guardian";
-            }
-        }
-
-        public string Hesitation_SP
-        {
-            get
-            {
-                return "Hesitation";
-            }
-        }
-
-        public string Icon_SP
-        {
-            get
-            {
-                return "Icon";
-            }
-        }
-
-        public string Letter_SP
-        {
-            get
-            {
-                return "Letter";
-            }
-        }
-
-        public string Old_Soldier_SP
-        {
-            get
-            {
-                return "Old Soldier";
-            }
-        }
-
-        public string Overhead_SP
-        {
-            get
-            {
-                return "Overhead";
-            }
-        }
-
-        public string Pillow_SP
-        {
-            get
-            {
-                return "Pillow";
-            }
-        }
-
-        public string Photograph_SP
-        {
-            get
-            {
-                return "Photograph";
-            }
-        }
-
-        public string Pixel_SP
-        {
-            get
-            {
-                return "Pixel";
-            }
-        }
-
-        public string Rifle_SP
-        {
-            get
-            {
-                return "Rifle";
-            }
-        }
-
-        public string Shadow_SP
-        {
-            get
-            {
-                return "Shadow";
-            }
-        }
-
-        public string Shhh_SP
-        {
-            get
-            {
-                return "Shhh";
-            }
-        }
-
-        public string Sidearm_SP
-        {
-            get
-            {
-                return "Sidearm";
-            }
-        }
-
-        public string Wedjat_SP
-        {
-            get
-            {
-                return "Wedjat";
-            }
-        }
-
-        public string Wrist_Launcher_SP
-        {
-            get
-            {
-                return "Wrist Launcher";
-            }
-        }
-
-        public string Zzz_SP
-        {
-            get
-            {
-                return "Zzz";
-            }
-        }
-
-        public string Shooting_SP
-        {//Summer 2016
-            get
-            {
-                return "Shooting";
-            }
-        }
-
-        public string Trick_or_Treat_SP
-        {//Halloween 2016
-            get
-            {
-                return "Trick or Treat";
-            }
-        }
-
-        public string Ornament_SP
-        {//Winter 2016
-            get
-            {
-                return "Ornament";
-            }
-        }
-
-        public string Warm_SP
-        {//Winter 2016
-            get
-            {
-                return "Warm";
-            }
-        }
-
-        public string Dance_SP
-        {//Rooster 2017
-            get
-            {
-                return "Dance";
-            }
-        }
-
-        public string Dragon_Dance_SP
-        {//Rooster 2017
-            get
-            {
-                return "Dragon Dance";
-            }
-        }
-
-        public string Newborn_SP
-        {//Uprising 2017
-            get
-            {
-                return "Newborn";
-            }
-        }
-
-        public string Ace_of_Hearts_SP
-        {//Annyver 2017
-            get
-            {
-                return "Ace of Hearts";
-            }
-        }
-
-
-        //Highlight Intros
-        //Epic
-        public string Guardian_HI
-        {
-            get
-            {
-                return "Guardian";
-            }
-        }
-
-        public string Locked_on_HI
-        {
-            get
-            {
-                return "Locked on";
-            }
-        }
-
-        public string Shh_HI
-        {
-            get
-            {
-                return "Shh...";
-            }
-        }
-
-
-        //Player Icons
-        //Rare
-        public string Ana_PI
-        {
-            get
-            {
-                return "Ana";
-            }
-        }
-
-        public string Watcher_PI
-        {
-            get
-            {
-                return "Watcher";
-            }
-        }
-
-        public string Wedjat_PI
-        {
-            get
-            {
-                return "Wedjat";
-            }
-        }
-
-        public string Shooting_PI
-        {//Summer 2016
-            get
-            {
-                return "Shooting";
-            }
-        }
-
-        public string Corsair_PI
-        {//Halloween 2017
-            get
-            {
-                return "Corsair";
-            }
-        }
-
-        public string Anaversary_PI
-        {//Annyver 2017
-            get
-            {
-                return "Anaversary";
-            }
-        }
+            //You're able to edit here everything in between all " Symbols
+
+            Name = "Ana";
+
+            #region Skins
+            //Rare
+            Citrine_SK = "Citrine";
+            Garnet_SK = "Garnet";
+            Peridot_SK = "Peridot";
+            Turquoise_SK = "Turquoise";
+            //Epic
+            Merciful_SK = "Merciful";
+            Shrike_SK = "Shrike";
+            Ghoul_SK = "Ghoul";//Halloween 16
+            Tal_SK = "Tal";//Rooster 17
+            //Legendary
+            Wadjet_SK = "Wadjet";
+            Wasteland_SK = "Wasteland";
+            Captain_Amari_SK = "Captain Amari";
+            Horus_SK = "Horus";
+            Corsair_SK = "Corsair";//Halloween 17
+            Snow_Owl_SK = "Snow Owl";//Winter 17
+            #endregion
+            #region Emotes
+            //Epic
+            Disapproving_EM = "Disapproving";
+            Not_Impressed_EM = "Not Impressed";
+            Protector_EM = "Protector";
+            Take_A_Knee_EM = "Take a knee";
+            Tea_Time_EM = "Tea Time";
+            Beach_Ball_EM = "Beach Ball";//Summer 17
+            Candy_EM = "Candy";//Halloween 16
+            Dance_EM = "Dance"; ;//Annyver 17
+            #endregion
+            #region Victory Poses
+            //Rare
+            Mission_Complete_VP = "Mission Complete";
+            Protector_VP = "Protector";
+            Seated_VP = "Seated";
+            RIP_VP = "R.I.P.";//Halloween 16
+            Toast_VP = "Toast";//Winter 16
+            Folded_Hands_VP = "Folded Hands";//Rooster 17
+            #endregion
+            #region Voice Lines
+            //Default
+            Justice_Delivered_VL = "Justice Delivered";
+            //Common
+            Children_behave_VL = "Children, behave";
+            Everyone_dies_VL = "Everyone dies";
+            It_takes_a_woman_to_know_VL = "It takes a woman to know";
+            Justice_rains_from_above_VL = "Justice rains from above";
+            Mother_knows_best_VL = "Mother knows best";
+            No_scope_needed_VL = "No scope needed";
+            What_are_you_thinking_VL = "What are you thinking?";
+            Witness_me_VL = "Witness me";
+            You_know_nothing_VL = "You know nothing";
+            Someone_to_tuck_you_in_VL = "Someone to tuck you in?";
+            Better_than_retirement_VL = "Better than retirement";//Summer 17
+            Learn_from_the_pain_VL = "Learn from the pain";//Summer 16
+            Are_you_scared_VL = "Are you scared?";//Halloween 16
+            Dont_be_scared_VL = "Don't be Scared";//Halloween 17
+            Im_too_old_for_surprises_VL = "I'm too old for Surprises";//Winter 2017
+            Im_watching_out_for_you_VL = "I'm watching out for you";//Winter 2016
+            The_Moon_in_Winter_VL = "The Moon in Winter";//Rooster 2017
+            Damn_VL = "Damn";//Uprising 2017
+            The_Ghost_watches_VL = "The Ghost watches";//Uprising 2017
+            Follow_me_VL = "Follow me";//Annyver 2017
+            The_adults_are_talking_VL = "The adults are talking";//Annyver 2017
+            #endregion
+            #region Sprays
+            //Common
+            Action_SP = "Action";
+            Ana_SP = "Ana";
+            Bearer_SP = "Bearer";
+            Cheer_SP = "Cheer";
+            Cracked_SP = "Cracked";
+            Cute_SP = "Cute";
+            Eyepatch_SP = "Eyepatch";
+            Fareeha_SP = "Fareeha";
+            Gaze_SP = "Gaze";
+            Grenade_SP = "Grenade";
+            Guardian_SP = "Guardian";
+            Hesitation_SP = "Hesitation";
+            Icon_SP = "Icon";
+            Letter_SP = "Letter";
+            Old_Soldier_SP = "Old Soldier";
+            Overhead_SP = "Overhead";
+            Pillow_SP = "Pillow";
+            Photograph_SP = "Photograph";
+            Pixel_SP = "Pixel";
+            Rifle_SP = "Rifle";
+            Shadow_SP = "Shadow";
+            Shhh_SP = "Shhh";
+            Sidearm_SP = "Sidearm";
+            Wedjat_SP = "Wedjat";
+            Wrist_Launcher_SP = "Wrist Launcher";
+            Zzz_SP = "Zzz";
+            Shooting_SP = "Shooting";//Summer 16
+            Trick_or_Treat_SP = "Trick or Treat";//Halloween 16
+            Ornament_SP = "Ornament";//Winter 16
+            Warm_SP = "Warm";//Winter 16
+            Dance_SP = "Dance";//Rooster 17
+            Dragon_Dance_SP = "Dragon Dance";//Rooster 17
+            Newborn_SP = "Newborn";//Uprising 17
+            Ace_of_Hearts_SP = "Ace of Hearts";//Annyver 17
+            #endregion
+            #region Highlight Intros
+            //Epic
+            Guardian_HI = "Guardian";
+            Locked_on_HI = "Locked on";
+            Shh_HI = "Shh...";
+            #endregion
+            #region Player Icons
+            //Rare
+            Ana_PI = "Ana";
+            Watcher_PI = "Watcher";
+            Wedjat_PI = "Wedjat";
+            Shooting_PI = "Shooting";//Summer 16
+            Corsair_PI = "Corsair";//Halloween 17
+            Anaversary_PI = "Anaversary";//Annyver 17
+            #endregion
+        }
+
+        #region Variablen
+        public string Name { get; }
+
+        #region Skins
+
+        public string Citrine_SK { get; }//Rare
+        public string Garnet_SK { get; }
+        public string Peridot_SK { get; }
+        public string Turquoise_SK { get; }
+
+        public string Merciful_SK { get; }//Epic
+        public string Shrike_SK { get; }
+        public string Ghoul_SK { get; }//Halloween 16
+        public string Tal_SK { get; }//Rooster 17
+
+        public string Wadjet_SK { get; }//Legendary
+        public string Wasteland_SK { get; }
+        public string Captain_Amari_SK { get; }
+        public string Horus_SK { get; }
+        public string Corsair_SK { get; }//Halloween 17
+        public string Snow_Owl_SK { get; }//Winter 17
+        #endregion
+        #region Emotes
+
+        public string Disapproving_EM { get; }
+        public string Not_Impressed_EM { get; }
+        public string Protector_EM { get; }
+        public string Take_A_Knee_EM { get; }
+        public string Tea_Time_EM { get; }
+        public string Beach_Ball_EM { get; }//Summer 17
+        public string Candy_EM { get; }//Halloween 16
+        public string Dance_EM { get; }//Annyver 17
+        #endregion
+        #region Victory Poses
+
+        public string Mission_Complete_VP { get; }//Rare
+        public string Protector_VP { get; }
+        public string Seated_VP { get; }
+        public string RIP_VP { get; }//Halloween 16
+        public string Toast_VP { get; }//Winter 16
+        public string Folded_Hands_VP { get; }//Rooster 17
+        #endregion
+        #region Voice Lines
+
+        public string Justice_Delivered_VL { get; }//Default
+
+        public string Children_behave_VL { get; }//Common
+        public string Everyone_dies_VL { get; }
+        public string It_takes_a_woman_to_know_VL { get; }
+        public string Justice_rains_from_above_VL { get; }
+        public string Mother_knows_best_VL { get; }
+        public string No_scope_needed_VL { get; }
+        public string What_are_you_thinking_VL { get; }
+        public string Witness_me_VL { get; }
+        public string You_know_nothing_VL { get; }
+        public string Someone_to_tuck_you_in_VL { get; }
+        public string Better_than_retirement_VL { get; }//Summer 17
+        public string Learn_from_the_pain_VL { get; }//Summer 16
+        public string Are_you_scared_VL { get; }//Halloween 16
+        public string Dont_be_scared_VL { get; }//Halloween 17
+        public string Im_too_old_for_surprises_VL { get; }//Winter 17
+        public string Im_watching_out_for_you_VL { get; }//Winter 16
+        public string The_Moon_in_Winter_VL { get; }//Rooster 17
+        public string Damn_VL { get; }//Uprising 17
+        public string The_Ghost_watches_VL { get; }//Uprising 17
+        public string Follow_me_VL { get; }//Annyver 17
+        public string The_adults_are_talking_VL { get; }//Annyver 17
+        #endregion
+        #region Sprays
+        
+        public string Action_SP { get; }//Common
+        public string Ana_SP { get; }
+        public string Bearer_SP { get; }
+        public string Cheer_SP { get; }
+        public string Cracked_SP { get; }
+        public string Cute_SP { get; }
+        public string Eyepatch_SP { get; }
+        public string Fareeha_SP { get; }
+        public string Gaze_SP { get; }
+        public string Grenade_SP { get; }
+        public string Guardian_SP { get; }
+        public string Hesitation_SP { get; }
+        public string Icon_SP { get; }
+        public string Letter_SP { get; }
+        public string Old_Soldier_SP { get; }
+        public string Overhead_SP { get; }
+        public string Pillow_SP { get; }
+        public string Photograph_SP { get; }
+        public string Pixel_SP { get; }
+        public string Rifle_SP { get; }
+        public string Shadow_SP { get; }
+        public string Shhh_SP { get; }
+        public string Sidearm_SP { get; }
+        public string Wedjat_SP { get; }
+        public string Wrist_Launcher_SP { get; }
+        public string Zzz_SP { get; }
+        public string Shooting_SP { get; }//Summer 16
+        public string Trick_or_Treat_SP { get; }//Halloween 16
+        public string Ornament_SP { get; }//Winter 16
+        public string Warm_SP { get; }//Winter 16
+        public string Dance_SP { get; }//Rooster 17
+        public string Dragon_Dance_SP { get; }//Rooster 17
+        public string Newborn_SP { get; }//Uprising 17
+        public string Ace_of_Hearts_SP { get; }//Annyver 17
+        #endregion
+        #region Highlight Intros
+
+        public string Guardian_HI { get; }//Epic
+        public string Locked_on_HI { get; }
+        public string Shh_HI { get; }
+        #endregion
+        #region Player Icons
+
+        public string Ana_PI { get; }//Rare
+        public string Watcher_PI { get; }
+        public string Wedjat_PI { get; }
+        public string Shooting_PI { get; }//Summer 16
+        public string Corsair_PI { get; }//Halloween 17
+        public string Anaversary_PI { get; }//Annyver 17
+        #endregion
+
+        #endregion
     }
 }

@@ -294,6 +294,7 @@ namespace OverwatchLootBoxTracker
             {
                 Mei();
             }
+            //
             if (Heroe == "Mercy")
             {
                 Mercy();
@@ -334,6 +335,7 @@ namespace OverwatchLootBoxTracker
             {
                 Symmetra();
             }
+            //
             if (Heroe == "Torbjörn")
             {
                 Torbjörn();
@@ -359,7 +361,7 @@ namespace OverwatchLootBoxTracker
                 Zenyatta();
             }
 
-            else
+            if (Heroe == "All")
             {
                 Ana();
                 Bastion();
@@ -1180,7 +1182,7 @@ namespace OverwatchLootBoxTracker
                     {//Epic
                         myCosts[10] += myEpic;
                     }
-                    if (i >= 7 && i <= 10)
+                    if (i == 7 || i == 8 || i == 9 || i == 10 || i == 16)
                     {//Legendary
                         myCosts[10] += myLegendary;
                     }
@@ -1415,7 +1417,7 @@ namespace OverwatchLootBoxTracker
                     {//Epic
                         myCosts[13] += myEpic;
                     }
-                    if (i >= 7 && i <= 10)
+                    if (i == 7 || i == 8 || i == 9 || i == 10 || i == 12)
                     {//Legendary
                         myCosts[13] += myLegendary;
                     }
@@ -1666,7 +1668,7 @@ namespace OverwatchLootBoxTracker
                     {//Epic Event
                         myCostsEvent[16] += myEpicEvent;
                     }
-                    if (i >= 9 && i <= 14)
+                    if (i == 9 || i == 10 || i == 11 || i == 12 || i == 13 || i == 14 || i == 16)
                     {//Legendary
                         myCosts[16] += myLegendary;
                     }
@@ -1747,7 +1749,7 @@ namespace OverwatchLootBoxTracker
                     {//Epic Winter 16
                         myCostsEvent[17] += myEpic;
                     }
-                    if (i >= 8 && i <= 11)
+                    if (i == 8 || i == 9 || i == 10 || i == 11 || i == 15)
                     {//Legendary
                         myCosts[17] += myLegendary;
                     }
@@ -2079,7 +2081,7 @@ namespace OverwatchLootBoxTracker
                     {//Epic Summer 16
                         myCostsEvent[21] += myEpic;
                     }
-                    if (i >= 8 && i <= 11)
+                    if (i == 8 || i == 9 || i == 10 || i == 11 || i == 16)
                     {//Legendary
                         myCosts[21] += myLegendary;
                     }
@@ -2249,7 +2251,7 @@ namespace OverwatchLootBoxTracker
                     {//Epic Summer 16
                         myCostsEvent[23] += myEpic;
                     }
-                    if (i >= 8 && i <= 11)
+                    if (i == 8 || i == 9 || i == 10 || i == 11 || i == 15)
                     {//Legendary
                         myCosts[23] += myLegendary;
                     }
@@ -2423,7 +2425,7 @@ namespace OverwatchLootBoxTracker
                     {//Epic Winter 16
                         myCostsEvent[25] += myEpic;
                     }
-                    if (i >= 8 && i <= 11)
+                    if (i == 8 || i == 9 || i == 10 || i == 11 || i == 16)
                     {//Legendary
                         myCosts[25] += myLegendary;
                     }

@@ -203,6 +203,21 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
+        public string Immortal_SK//12
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Protector_SK;
+                }
+                else
+                {
+                    return EN.Immortal_SK;
+                }
+            }
+        }
+
         public string Null_Sector_SK//11
         {//Uprising 2017
             get

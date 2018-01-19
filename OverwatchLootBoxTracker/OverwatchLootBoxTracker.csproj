@@ -741,6 +741,9 @@
     <Content Include="Images\Items\Doomfist\Overwatch League\9.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\Items\Doomfist\Skins\11.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\Items\Doomfist\Skins\9.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -1503,6 +1506,9 @@
     <Content Include="Images\Items\Mei\Skins\15.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\Items\Mei\Skins\16.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\Items\Mei\Skins\2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -1846,6 +1852,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\Items\Orisa\Skins\11.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Orisa\Skins\12.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\Items\Orisa\Skins\2.png">
@@ -2226,6 +2235,9 @@
     <Content Include="Images\Items\Reinhardt\Skins\15.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\Items\Reinhardt\Skins\16.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\Items\Reinhardt\Skins\2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -2344,6 +2356,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\Items\Roadhog\Skins\14.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Roadhog\Skins\15.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\Items\Roadhog\Skins\2.png">
@@ -2856,6 +2871,9 @@
     <Content Include="Images\Items\Torbjörn\Skins\15.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\Items\Torbjörn\Skins\16.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\Items\Torbjörn\Skins\2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -3111,6 +3129,9 @@
     <Content Include="Images\Items\Widowmaker\Skins\14.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\Items\Widowmaker\Skins\15.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
     <Content Include="Images\Items\Widowmaker\Skins\2.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
@@ -3343,6 +3364,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\Items\Zarya\Skins\1.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Items\Zarya\Skins\16.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\Items\Zarya\Skins\9.png">
@@ -3599,108 +3623,40 @@
     </Content>
     <Content Include="overwatch_small.ico" />
     <Content Include="Properties\Junkrat_link.png" />
-    <Content Include="Sounds\Voice Lines\Ana\EN\0.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\Ana\EN\1.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\Ana\EN\10.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\Ana\EN\12.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\Ana\EN\13.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\Ana\EN\2.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\Ana\EN\3.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\Ana\EN\4.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\Ana\EN\5.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\Ana\EN\6.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\Ana\EN\7.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\Ana\EN\8.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\Ana\EN\9.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\D.Va\EN\0.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\D.Va\EN\1.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\D.Va\EN\10.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\D.Va\EN\11.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\D.Va\EN\12.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\D.Va\EN\13.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\D.Va\EN\14.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\D.Va\EN\16.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\D.Va\EN\17.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\D.Va\EN\18.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\D.Va\EN\19.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\D.Va\EN\2.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\D.Va\EN\20.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\D.Va\EN\21.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\D.Va\EN\3.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\D.Va\EN\4.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\D.Va\EN\5.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\D.Va\EN\6.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\D.Va\EN\7.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\D.Va\EN\8.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
-    <Content Include="Sounds\Voice Lines\D.Va\EN\9.mp3">
-      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
-    </Content>
+    <Content Include="Sounds\Voice Lines\Ana\EN\0.mp3" />
+    <Content Include="Sounds\Voice Lines\Ana\EN\1.mp3" />
+    <Content Include="Sounds\Voice Lines\Ana\EN\10.mp3" />
+    <Content Include="Sounds\Voice Lines\Ana\EN\12.mp3" />
+    <Content Include="Sounds\Voice Lines\Ana\EN\13.mp3" />
+    <Content Include="Sounds\Voice Lines\Ana\EN\2.mp3" />
+    <Content Include="Sounds\Voice Lines\Ana\EN\3.mp3" />
+    <Content Include="Sounds\Voice Lines\Ana\EN\4.mp3" />
+    <Content Include="Sounds\Voice Lines\Ana\EN\5.mp3" />
+    <Content Include="Sounds\Voice Lines\Ana\EN\6.mp3" />
+    <Content Include="Sounds\Voice Lines\Ana\EN\7.mp3" />
+    <Content Include="Sounds\Voice Lines\Ana\EN\8.mp3" />
+    <Content Include="Sounds\Voice Lines\Ana\EN\9.mp3" />
+    <Content Include="Sounds\Voice Lines\D.Va\EN\0.mp3" />
+    <Content Include="Sounds\Voice Lines\D.Va\EN\1.mp3" />
+    <Content Include="Sounds\Voice Lines\D.Va\EN\10.mp3" />
+    <Content Include="Sounds\Voice Lines\D.Va\EN\11.mp3" />
+    <Content Include="Sounds\Voice Lines\D.Va\EN\12.mp3" />
+    <Content Include="Sounds\Voice Lines\D.Va\EN\13.mp3" />
+    <Content Include="Sounds\Voice Lines\D.Va\EN\14.mp3" />
+    <Content Include="Sounds\Voice Lines\D.Va\EN\16.mp3" />
+    <Content Include="Sounds\Voice Lines\D.Va\EN\17.mp3" />
+    <Content Include="Sounds\Voice Lines\D.Va\EN\18.mp3" />
+    <Content Include="Sounds\Voice Lines\D.Va\EN\19.mp3" />
+    <Content Include="Sounds\Voice Lines\D.Va\EN\2.mp3" />
+    <Content Include="Sounds\Voice Lines\D.Va\EN\20.mp3" />
+    <Content Include="Sounds\Voice Lines\D.Va\EN\21.mp3" />
+    <Content Include="Sounds\Voice Lines\D.Va\EN\3.mp3" />
+    <Content Include="Sounds\Voice Lines\D.Va\EN\4.mp3" />
+    <Content Include="Sounds\Voice Lines\D.Va\EN\5.mp3" />
+    <Content Include="Sounds\Voice Lines\D.Va\EN\6.mp3" />
+    <Content Include="Sounds\Voice Lines\D.Va\EN\7.mp3" />
+    <Content Include="Sounds\Voice Lines\D.Va\EN\8.mp3" />
+    <Content Include="Sounds\Voice Lines\D.Va\EN\9.mp3" />
   </ItemGroup>
   <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5.2">

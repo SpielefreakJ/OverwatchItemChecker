@@ -857,40 +857,6 @@ F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\I
 F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Zenyatta\Victory Poses\6.png
 F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Zenyatta\Skins\14.png
 F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Zenyatta\Skins\7.png
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\D.Va\EN\0.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\D.Va\EN\1.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\D.Va\EN\10.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\D.Va\EN\11.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\D.Va\EN\12.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\D.Va\EN\13.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\D.Va\EN\14.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\D.Va\EN\16.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\D.Va\EN\17.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\D.Va\EN\18.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\D.Va\EN\19.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\D.Va\EN\2.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\D.Va\EN\20.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\D.Va\EN\21.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\D.Va\EN\3.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\D.Va\EN\4.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\D.Va\EN\5.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\D.Va\EN\6.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\D.Va\EN\7.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\D.Va\EN\8.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\D.Va\EN\9.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\Ana\EN\0.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\Ana\EN\1.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\Ana\EN\10.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\Ana\EN\12.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\Ana\EN\13.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\Ana\EN\2.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\Ana\EN\3.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\Ana\EN\4.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\Ana\EN\5.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\Ana\EN\6.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\Ana\EN\7.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\Ana\EN\8.mp3
-F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Sounds\Voice Lines\Ana\EN\9.mp3
 F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Overwatch League\1.png
 F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Overwatch League\10.png
 F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Ana\Overwatch League\11.png
@@ -1203,3 +1169,11 @@ F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\I
 F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Zenyatta\Overwatch League\7.png
 F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Zenyatta\Overwatch League\8.png
 F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Zenyatta\Overwatch League\9.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Doomfist\Skins\11.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Mei\Skins\16.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Orisa\Skins\12.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Reinhardt\Skins\16.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Roadhog\Skins\15.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Torbjörn\Skins\16.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Widowmaker\Skins\15.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Zarya\Skins\16.png

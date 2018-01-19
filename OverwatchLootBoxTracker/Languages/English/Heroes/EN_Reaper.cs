@@ -8,247 +8,97 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 {
     class EN_Reaper
     {
-        public EN_Reaper() { }
-
-        public string Name
+        public EN_Reaper()
         {
-            get
-            {
-                return "Reaper";
-            }
+            //You're able to edit here everything in between all " Symbols
+
+            Name = "Reaper";
+
+            #region Skin
+            //Rare
+            Blood_SK = "Blood";
+            Midnight_SK = "Midnight";
+            Moss_SK = "Moss";
+            Royal_SK = "Royal";
+            //Epic
+            Desert_SK = "Desert";
+            Wight_SK = "Wight";
+            Shiver_SK = "Shiver";//Winter 2016
+            //Legendary
+            Nevermore_SK = "Nevermore";
+            Plague_Doctor_SK = "Plague Doctor";
+            El_Blanco_SK = "El Blanco";
+            Mariachi_SK = "Mariachi";
+            Blackwatch_Reyes_SK = "Blackwatch Reyes";//Origin Special
+            Biker_SK = "Biker";//Summer 17
+            Dracula_SK = "Dracula";//Halloween 17
+            Pumpkin_SK = "Pumpkin";//Halloween 16
+            #endregion
+            #region Emotes
+            //Epic
+            Cackle_EM = "Cackle";
+            Not_Impressed_EM = "Not Impressed";
+            Shrug_EM = "Shrug";
+            Slice_EM = "Slice";
+            Slow_Clap_EM = "Slow Clap";
+            Take_a_knee_EM = "Take a knee";
+            Dance_EM = "Dance";//Annyver 17
+            #endregion
+            #region Victory Poses
+            //Rare
+            Casual_VP = "Casual";
+            Enigmatic_VP = "Enigmatic";
+            Menacing_VP = "Menacing";
+            Shrug_VP = "Shrug";
+            Medal_VP = "Medal";//Summer 16
+            RIP_VP = "R.I.P.";//Halloween 16
+            #endregion
         }
 
+        #region Variablen
 
-        //Skin
-        //Rare
-        public string Blood_SK
-        {
-            get
-            {
-                return "Blood";
-            }
-        }
+        public string Name { get; }
 
-        public string Midnight_SK
-        {
-            get
-            {
-                return "Midnight";
-            }
-        }
+        #region Skin
 
-        public string Moss_SK
-        {
-            get
-            {
-                return "Moss";
-            }
-        }
+        public string Blood_SK { get; }//Rare
+        public string Midnight_SK { get; }
+        public string Moss_SK { get; }
+        public string Royal_SK { get; }
 
-        public string Royal_SK
-        {
-            get
-            {
-                return "Royal";
-            }
-        }
-        //Epic
-        public string Desert_SK
-        {
-            get
-            {
-                return "Desert";
-            }
-        }
+        public string Desert_SK { get; }//Epic
+        public string Wight_SK { get; }
+        public string Shiver_SK { get; }//Winter 2016
 
-        public string Wight_SK
-        {
-            get
-            {
-                return "Wight";
-            }
-        }
+        public string Nevermore_SK { get; }//Legendary
+        public string Plague_Doctor_SK { get; }
+        public string El_Blanco_SK { get; }
+        public string Mariachi_SK { get; }
+        public string Blackwatch_Reyes_SK { get; }//Origin Special
+        public string Biker_SK { get; }//Summer 17
+        public string Dracula_SK { get; }//Halloween 17
+        public string Pumpkin_SK { get; }//Halloween 16
+        #endregion
+        #region Emotes
 
-        public string Shiver_SK
-        {//Winter 2016
-            get
-            {
-                return "Shiver";
-            }
-        }
-        //Legendary
-        public string Nevermore_SK
-        {
-            get
-            {
-                return "Nevermore";
-            }
-        }
+        public string Cackle_EM { get; }//Epic
+        public string Not_Impressed_EM { get; }
+        public string Shrug_EM { get; }
+        public string Slice_EM { get; }
+        public string Slow_Clap_EM { get; }
+        public string Take_a_knee_EM { get; }
+        public string Dance_EM { get; }//Annyver 17
+        #endregion
+        #region Victory Poses
 
-        public string Plague_Doctor_SK
-        {
-            get
-            {
-                return "Plague Doctor";
-            }
-        }
+        public string Casual_VP { get; }//Rare
+        public string Enigmatic_VP { get; }
+        public string Menacing_VP { get; }
+        public string Shrug_VP { get; }
+        public string Medal_VP { get; }//Summer 16
+        public string RIP_VP { get; }//Halloween 16
+        #endregion
 
-        public string El_Blanco_SK
-        {
-            get
-            {
-                return "El Blanco";
-            }
-        }
-
-        public string Mariachi_SK
-        {
-            get
-            {
-                return "Mariachi";
-            }
-        }
-
-        public string Blackwatch_Reyes_SK
-        {//Origin Special
-            get
-            {
-                return "Blackwatch Reyes";
-            }
-        }
-
-        public string Biker_SK
-        {//Summer 2017
-            get
-            {
-                return "Biker";
-            }
-        }
-
-        public string Dracula_SK
-        {//Halloween 2017
-            get
-            {
-                return "Dracula";
-            }
-        }
-
-        public string Pumpkin_SK
-        {//Halloween 2016
-            get
-            {
-                return "Pumpkin";
-            }
-        }
-
-
-        //Emotes
-        //Epic
-        public string Cackle_EM
-        {
-            get
-            {
-                return "Cackle";
-            }
-        }
-
-        public string Not_Impressed_EM
-        {
-            get
-            {
-                return "Not Impressed";
-            }
-        }
-
-        public string Shrug_EM
-        {
-            get
-            {
-                return "Shrug";
-            }
-        }
-
-        public string Slice_EM
-        {
-            get
-            {
-                return "Slice";
-            }
-        }
-
-        public string Slow_Clap_EM
-        {
-            get
-            {
-                return "Slow Clap";
-            }
-        }
-
-        public string Take_a_knee_EM
-        {
-            get
-            {
-                return "Take a knee";
-            }
-        }
-
-        public string Dance_EM
-        {//Annyver 17
-            get
-            {
-                return "Dance";
-            }
-        }
-
-
-        //Victory Poses
-        //Rare
-        public string Casual_VP
-        {
-            get
-            {
-                return "Casual";
-            }
-        }
-
-        public string Enigmatic_VP
-        {
-            get
-            {
-                return "Enigmatic";
-            }
-        }
-
-        public string Menacing_VP
-        {
-            get
-            {
-                return "Menacing";
-            }
-        }
-
-        public string Shrug_VP
-        {
-            get
-            {
-                return "Shrug";
-            }
-        }
-
-        public string Medal_VP
-        {//Summer 16
-            get
-            {
-                return "Medal";
-            }
-        }
-
-        public string RIP_VP
-        {//Halloween 16
-            get
-            {
-                return "R.I.P.";
-            }
-        }
+        #endregion
     }
 }

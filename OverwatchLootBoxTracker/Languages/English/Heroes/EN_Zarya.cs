@@ -8,247 +8,101 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 {
     class EN_Zarya
     {
-        public EN_Zarya() { }
-
-        public string Name
+        public EN_Zarya()
         {
-            get
-            {
-                return "Zarya";
-            }
+            //You're able to edit here everything in between all " Symbols
+
+            Name = "Zarya";
+
+            #region Skin
+            //Rare
+            Brick_SK = "Brick";
+            Goldenrod_SK = "Goldenrod";
+            Taiga_SK = "Taiga";
+            Violet_SK = "Violet";
+            //Epic
+            Dawn_SK = "Dawn";
+            Midnight_SK = "Midnight";
+            Frosted_SK = "Frosted";//Winter 16
+            //Legendary
+            Arctic_SK = "Arctic";
+            Siberian_Front_SK = "Siberian Front";
+            Cybergoth_SK = "Cybergoth";
+            Industrial_SK = "Industrial";
+            Barbarian_SK = "Barbarian";
+            Champion_SK = "Champion";//Summer 16
+            Weightlifter_SK = "Weightlifter";//Summer 16
+            Totally_80s_SK = "Totally 80's";//Halloween 17
+            Cyberian_SK = "Cyberian";//Annyver 17
+            #endregion
+            #region Emotes
+            //Epic
+            Bring_it_on_EM = "Bring it on";
+            Comedy_Gold_EM = "Comedy Gold";
+            Crush_you_EM = "Crush you";
+            Punping_Iron_EM = "Pumping Iron";
+            Take_a_knee_EM = "Take a knee";
+            Dance_EM = "Dance";//Annyver 17
+            //Legendary
+            Mystery_Gift_EM = "Mystery Gift";//Winter 16
+            #endregion
+            #region Victory Poses
+            //Rare
+            Casual_VP = "Casual";
+            Check_out_this_gun_VP = "Check out this gun";
+            Flexing_VP = "Flexing";
+            RIP_VP = "R.I.P.";//Halloween 16
+            Toast_VP = "Toast";//Winter 17
+            This_is_strength_VP = "This is strength";//Uprising 17
+            #endregion
         }
 
+        #region Variablen
 
-        //Skin
-        //Rare
-        public string Brick_SK
-        {
-            get
-            {
-                return "Brick";
-            }
-        }
+        public string Name { get; }
 
-        public string Goldenrod_SK
-        {
-            get
-            {
-                return "Goldenrod";
-            }
-        }
+        #region Skin
 
-        public string Taiga_SK
-        {
-            get
-            {
-                return "Taiga";
-            }
-        }
+        public string Brick_SK { get; }//Rare
+        public string Goldenrod_SK { get; }
+        public string Taiga_SK { get; }
+        public string Violet_SK { get; }
 
-        public string Violet_SK
-        {
-            get
-            {
-                return "Violet";
-            }
-        }
-        //Epic
-        public string Dawn_SK
-        {
-            get
-            {
-                return "Dawn";
-            }
-        }
+        public string Dawn_SK { get; }//Epic
+        public string Midnight_SK { get; }
+        public string Frosted_SK { get; }//Winter 16
 
-        public string Midnight_SK
-        {
-            get
-            {
-                return "Midnight";
-            }
-        }
+        public string Arctic_SK { get; }//Legendary
+        public string Siberian_Front_SK { get; }
+        public string Cybergoth_SK { get; }
+        public string Industrial_SK { get; }
+        public string Barbarian_SK { get; }
+        public string Champion_SK { get; }//Summer 16
+        public string Weightlifter_SK { get; }//Summer 16
+        public string Totally_80s_SK { get; }//Halloween 17
+        public string Cyberian_SK { get; }//Annyver 17
+        #endregion
+        #region Emotes
 
-        public string Frosted_SK
-        {//Winter 2016
-            get
-            {
-                return "Frosted";
-            }
-        }
-        //Legendary
-        public string Arctic_SK
-        {
-            get
-            {
-                return "Arctic";
-            }
-        }
+        public string Bring_it_on_EM { get; }//Epic
+        public string Comedy_Gold_EM { get; }
+        public string Crush_you_EM { get; }
+        public string Punping_Iron_EM { get; }
+        public string Take_a_knee_EM { get; }
+        public string Dance_EM { get; }//Annyver 17
 
-        public string Siberian_Front_SK
-        {
-            get
-            {
-                return "Siberian Front";
-            }
-        }
+        public string Mystery_Gift_EM { get; }//Legendary //Winter 16
+        #endregion
+        #region Victory Poses
 
-        public string Cybergoth_SK
-        {
-            get
-            {
-                return "Cybergoth";
-            }
-        }
+        public string Casual_VP { get; }//Rare
+        public string Check_out_this_gun_VP { get; }
+        public string Flexing_VP { get; }
+        public string RIP_VP { get; }//Halloween 16
+        public string Toast_VP { get; }//Winter 17
+        public string This_is_strength_VP { get; }//Uprising 17
+        #endregion
 
-        public string Industrial_SK
-        {
-            get
-            {
-                return "Industrial";
-            }
-        }
-
-        public string Champion_SK
-        {//Summer 2016
-            get
-            {
-                return "Champion";
-            }
-        }
-
-        public string Weightlifter_SK
-        {//Summer 2016
-            get
-            {
-                return "Weightlifter";
-            }
-        }
-
-        public string Totally_80s_SK
-        {//Halloween 2017
-            get
-            {
-                return "Totally 80's";
-            }
-        }
-
-        public string Cyberian_SK
-        {//Annyver 2017
-            get
-            {
-                return "Cyberian";
-            }
-        }
-
-
-        //Emotes
-        //Epic
-        public string Bring_it_on_EM
-        {
-            get
-            {
-                return "Bring it on";
-            }
-        }
-
-        public string Comedy_Gold_EM
-        {
-            get
-            {
-                return "Comedy Gold";
-            }
-        }
-
-        public string Crush_you_EM
-        {
-            get
-            {
-                return "Crush you";
-            }
-        }
-
-        public string Punping_Iron_EM
-        {
-            get
-            {
-                return "Pumping Iron";
-            }
-        }
-
-        public string Take_a_knee_EM
-        {
-            get
-            {
-                return "Take a knee";
-            }
-        }
-
-        public string Dance_EM
-        {//Annyver 17
-            get
-            {
-                return "Dance";
-            }
-        }
-        //Legendary
-        public string Mystery_Gift_EM
-        {//Winter 16
-            get
-            {
-                return "Mystery Gift";
-            }
-        }
-
-
-        //Victory Poses
-        //Rare
-        public string Casual_VP
-        {
-            get
-            {
-                return "Casual";
-            }
-        }
-
-        public string Check_out_this_gun_VP
-        {
-            get
-            {
-                return "Check out this gun";
-            }
-        }
-
-        public string Flexing_VP
-        {
-            get
-            {
-                return "Flexing";
-            }
-        }
-
-        public string RIP_VP
-        {//Halloween 16
-            get
-            {
-                return "R.I.P.";
-            }
-        }
-
-        public string Toast_VP
-        {//Winter 17
-            get
-            {
-                return "Toast";
-            }
-        }
-
-        public string This_is_strength_VP
-        {//Uprising 17
-            get
-            {
-                return "This is strength";
-            }
-        }
+        #endregion
     }
 }

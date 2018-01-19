@@ -218,6 +218,21 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
+        public string Barbarian_SK//16
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Industrial_SK;
+                }
+                else
+                {
+                    return EN.Barbarian_SK;
+                }
+            }
+        }
+
         public string Champion_SK//12
         {//Summer 2016
             get

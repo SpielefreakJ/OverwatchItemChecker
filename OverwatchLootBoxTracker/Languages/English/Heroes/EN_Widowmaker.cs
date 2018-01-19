@@ -8,231 +8,95 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 {
     class EN_Widowmaker
     {
-        public EN_Widowmaker() { }
-
-        public string Name
+        public EN_Widowmaker()
         {
-            get
-            {
-                return "Widowmaker";
-            }
+            //You're able to edit here everything in between all " Symbols
+
+            Name = "Widowmaker";
+
+            #region Skin
+            //Rare
+            Ciel_SK = "Ciel";
+            Nuit_SK = "Nuit";
+            Rose_SK = "Rose";
+            Vert_SK = "Vert";
+            //Epic
+            Patina_SK = "Patina";
+            Winter_SK = "Winter";
+            Tricolore_SK = "Tricolore";//Summer 16
+            //Legendary
+            Odette_SK = "Odette";
+            Odile_SK = "Odile";
+            Comtesse_SK = "Comtesse";
+            Huntress_SK = "Huntress";
+            Nova_SK = "Nova";
+            Noire_SK = "Noire";//Prepurchase Special
+            Côte_DAzur_SK = "Côte D'Azur";//Summer 17
+            Talon_SK = "Talon";//Uprising 17
+            #endregion
+            #region Emotes
+            //Epic
+            A_rest_EM = "A rest";
+            Curtain_Call_EM = "Curtain Call";
+            Delighted_EM = "Delighted";
+            Shot_Dead_EM = "Shot Dead";
+            Widows_Kiss_EM = "Widow's Kiss";
+            Ballet_EM = "Ballet";//Annyver 17
+            #endregion
+            #region Victory Poses
+            //Rare
+            Activating_Visor_VP = "Activating Visor";
+            Gaze_VP = "Gaze";
+            Over_the_shoulder_VP = "Over the shoulder";
+            Medal_VP = "Medal";//Summer 16
+            RIP_VP = "R.I.P.";//Halloween 16
+            Toast_VP = "Toast";//Winter 17
+            #endregion
         }
 
+        #region Variablen
 
-        //Skin
-        //Rare
-        public string Ciel_SK
-        {
-            get
-            {
-                return "Ciel";
-            }
-        }
+        public string Name { get; }
 
-        public string Nuit_SK
-        {
-            get
-            {
-                return "Nuit";
-            }
-        }
+        #region Skin
 
-        public string Rose_SK
-        {
-            get
-            {
-                return "Rose";
-            }
-        }
+        public string Ciel_SK { get; }//Rare
+        public string Nuit_SK { get; }
+        public string Rose_SK { get; }
+        public string Vert_SK { get; }
 
-        public string Vert_SK
-        {
-            get
-            {
-                return "Vert";
-            }
-        }
-        //Epic
-        public string Patina_SK
-        {
-            get
-            {
-                return "Patina";
-            }
-        }
+        public string Patina_SK { get; }//Epic
+        public string Winter_SK { get; }
+        public string Tricolore_SK { get; }//Summer 16
 
-        public string Winter_SK
-        {
-            get
-            {
-                return "Winter";
-            }
-        }
+        public string Odette_SK { get; }//Legendary
+        public string Odile_SK { get; }
+        public string Comtesse_SK { get; }
+        public string Huntress_SK { get; }
+        public string Nova_SK { get; }
+        public string Noire_SK { get; }//Prepurchase Special
+        public string Côte_DAzur_SK { get; }//Summer 17
+        public string Talon_SK { get; }//Uprising 17
+        #endregion
+        #region Emotes
 
-        public string Tricolore_SK
-        {//Summer 2016
-            get
-            {
-                return "Tricolore";
-            }
-        }
-        //Legendary
-        public string Odette_SK
-        {
-            get
-            {
-                return "Odette";
-            }
-        }
+        public string A_rest_EM { get; }//Epic
+        public string Curtain_Call_EM { get; }
+        public string Delighted_EM { get; }
+        public string Shot_Dead_EM { get; }
+        public string Widows_Kiss_EM { get; }
+        public string Ballet_EM { get; }//Annyver 17
+        #endregion
+        #region Victory Poses
 
-        public string Odile_SK
-        {
-            get
-            {
-                return "Odile";
-            }
-        }
+        public string Activating_Visor_VP { get; }//Rare
+        public string Gaze_VP { get; }
+        public string Over_the_shoulder_VP { get; }
+        public string Medal_VP { get; }//Summer 16
+        public string RIP_VP { get; }//Halloween 16
+        public string Toast_VP { get; }//Winter 17
+        #endregion
 
-        public string Comtesse_SK
-        {
-            get
-            {
-                return "Comtesse";
-            }
-        }
-
-        public string Huntress_SK
-        {
-            get
-            {
-                return "Huntress";
-            }
-        }
-
-        public string Noire_SK
-        {//Prepurchase Special
-            get
-            {
-                return "Noire";
-            }
-        }
-
-        public string Côte_DAzur_SK
-        {//Summer 2017
-            get
-            {
-                return "Côte D'Azur";
-            }
-        }
-
-        public string Talon_SK
-        {//Uprising 2017
-            get
-            {
-                return "Talon";
-            }
-        }
-
-
-        //Emotes
-        //Epic
-        public string A_rest_EM
-        {
-            get
-            {
-                return "A rest";
-            }
-        }
-
-        public string Curtain_Call_EM
-        {
-            get
-            {
-                return "Curtain Call";
-            }
-        }
-
-        public string Delighted_EM
-        {
-            get
-            {
-                return "Delighted";
-            }
-        }
-
-        public string Shot_Dead_EM
-        {
-            get
-            {
-                return "Shot Dead";
-            }
-        }
-
-        public string Widows_Kiss_EM
-        {
-            get
-            {
-                return "Widow's Kiss";
-            }
-        }
-
-        public string Ballet_EM
-        {//Annyver 17
-            get
-            {
-                return "Ballet";
-            }
-        }
-
-
-        //Victory Poses
-        //Rare
-        public string Activating_Visor_VP
-        {
-            get
-            {
-                return "Activating Visor";
-            }
-        }
-
-        public string Gaze_VP
-        {
-            get
-            {
-                return "Gaze";
-            }
-        }
-
-        public string Over_the_shoulder_VP
-        {
-            get
-            {
-                return "Over the shoulder";
-            }
-        }
-
-        public string Medal_VP
-        {//Summer 16
-            get
-            {
-                return "Medal";
-            }
-        }
-
-        public string RIP_VP
-        {//Halloween 16
-            get
-            {
-                return "R.I.P.";
-            }
-        }
-
-        public string Toast_VP
-        {//Winter 17
-            get
-            {
-                return "Toast";
-            }
-        }
+        #endregion
     }
 }

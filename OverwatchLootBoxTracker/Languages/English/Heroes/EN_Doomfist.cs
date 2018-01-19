@@ -8,306 +8,119 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 {
     class EN_Doomfist
     {
-        public EN_Doomfist() { }
-
-        public string Name
+        public EN_Doomfist()
         {
-            get
-            {
-                return "Doomfist";
-            }
+            //You're able to edit here everything in between all " Symbols
+
+            Name = "Doomfist";
+
+            #region Skin
+            //Rare
+            Daisy_SK = "Daisy";
+            Lake_SK = "Lake";
+            Plains_SK = "Plains";
+            Sunset_SK = "Sunset";
+            //Epic
+            Leopard_SK = "Leopard";
+            Painted_SK = "Painted";
+            //Legendary
+            Caution_SK = "Caution";
+            Irin_SK = "Irin";
+            Avatar_SK = "Avatar";
+            Spirit_SK = "Spirit";
+            Blackhand_SK = "Blackhand";
+            #endregion
+            #region Emotes
+            //Epic
+            Fake_Out_EM = "Fake out";
+            Intimidate_EM = "Intimidate";
+            Ready_for_Battle_EM = "Ready for Battle";
+            Take_a_knee_EM = "Take a knee";
+            Thumbs_Down_EM = "Thumbs Down";
+            #endregion
+            #region Victory Poses
+            //Rare
+            Intense_VP = "Intense";
+            Seismic_Slam_VP = "Seismic Slam";
+            Superior_VP = "Superior";
+            #endregion
+            #region Voice Lines
+            //Common
+            Try_me_VL = "Try me";
+            Combo_Breakere_VL = "Combo Breaker";
+            Dont_get_back_up_VL = "Don't get back up";
+            Go_and_sit_down_VL = "Go and sit down";
+            I_havent_even_started_VL = "I haven't even started";
+            K_O_VL = "K.O.";
+            One_punch_is_all_i_need_VL = "One punch is all i need";
+            Spare_me_the_commentary_VL = "Spare me the commentary";
+            Talk_to_the_fist_VL = "Talk to the fist";
+            Youre_not_bad_VL = "You're not bad";
+            You_must_be_joking_VL = "You must be joking";
+            I_make_medicine_sick_VL = "I make medicine sick";//Summer 17
+            Make_you_punch_drunk_VL = "Make you punch drunk";//Summer 17
+            I_have_something_for_you_VL = "I have something for you";//Halloween 17
+            You_should_be_scared_VL = "You should be scared";//Halloween 17
+            And_they_sais_chivalry_is_dead_VL = "And they said Chivalry is dead";//Winter 17
+            Did_you_bring_me_a_present_VL = "Did you bring me a present?";//Winter 17
+            #endregion
         }
 
+        #region Variablen
 
-        //Skin
-        //Rare
-        public string Daisy_SK
-        {
-            get
-            {
-                return "Daisy";
-            }
-        }
+        public string Name { get; }
 
-        public string Lake_SK
-        {
-            get
-            {
-                return "Lake";
-            }
-        }
+        #region Skin
 
-        public string Plains_SK
-        {
-            get
-            {
-                return "Plains";
-            }
-        }
+        public string Daisy_SK { get; }//Rare
+        public string Lake_SK { get; }
+        public string Plains_SK { get; }
+        public string Sunset_SK { get; }
 
-        public string Sunset_SK
-        {
-            get
-            {
-                return "Sunset";
-            }
-        }
-        //Epic
-        public string Leopard_SK
-        {
-            get
-            {
-                return "Leopard";
-            }
-        }
+        public string Leopard_SK { get; }//Epic
+        public string Painted_SK { get; }
 
-        public string Painted_SK
-        {
-            get
-            {
-                return "Painted";
-            }
-        }
-        //Legendary
-        public string Caution_SK
-        {
-            get
-            {
-                return "Caution";
-            }
-        }
+        public string Caution_SK { get; }//Legendary
+        public string Irin_SK { get; }
+        public string Avatar_SK { get; }
+        public string Spirit_SK { get; }
+        public string Blackhand_SK { get; }
+        #endregion
+        #region Emotes
 
-        public string Irin_SK
-        {
-            get
-            {
-                return "Irin";
-            }
-        }
+        public string Fake_Out_EM { get; }//Epic
+        public string Intimidate_EM { get; }
+        public string Ready_for_Battle_EM { get; }
+        public string Take_a_knee_EM { get; }
+        public string Thumbs_Down_EM { get; }
+        #endregion
+        #region Victory Poses
 
-        public string Avatar_SK
-        {
-            get
-            {
-                return "Avatar";
-            }
-        }
+        public string Intense_VP { get; }//Rare
+        public string Seismic_Slam_VP { get; }
+        public string Superior_VP { get; }
+        #endregion
+        #region Voice Lines
 
-        public string Spirit_SK
-        {
-            get
-            {
-                return "Spirit";
-            }
-        }
+        public string Try_me_VL { get; }//Common
+        public string Combo_Breakere_VL { get; }
+        public string Dont_get_back_up_VL { get; }
+        public string Go_and_sit_down_VL { get; }
+        public string I_havent_even_started_VL { get; }
+        public string K_O_VL { get; }
+        public string One_punch_is_all_i_need_VL { get; }
+        public string Spare_me_the_commentary_VL { get; }
+        public string Talk_to_the_fist_VL { get; }
+        public string Youre_not_bad_VL { get; }
+        public string You_must_be_joking_VL { get; }
+        public string I_make_medicine_sick_VL { get; }//Summer 17
+        public string Make_you_punch_drunk_VL { get; }//Summer 17
+        public string I_have_something_for_you_VL { get; }//Halloween 17
+        public string You_should_be_scared_VL { get; }//Halloween 17
+        public string And_they_sais_chivalry_is_dead_VL { get; }//Winter 17
+        public string Did_you_bring_me_a_present_VL { get; }//Winter 17
+        #endregion
 
-
-        //Emotes
-        //Epic
-        public string Fake_Out_EM
-        {
-            get
-            {
-                return "Fake out";
-            }
-        }
-
-        public string Intimidate_EM
-        {
-            get
-            {
-                return "Intimidate";
-            }
-        }
-
-        public string Ready_for_Battle_EM
-        {
-            get
-            {
-                return "Ready for Battle";
-            }
-        }
-
-        public string Take_a_knee_EM
-        {
-            get
-            {
-                return "Take a knee";
-            }
-        }
-
-        public string Thumbs_Down_EM
-        {
-            get
-            {
-                return "Thumbs Down";
-            }
-        }
-
-
-        //Victory Poses
-        //Rare
-        public string Intense_VP
-        {
-            get
-            {
-                return "Intense";
-            }
-        }
-
-        public string Seismic_Slam_VP
-        {
-            get
-            {
-                return "Seismic Slam";
-            }
-        }
-
-        public string Superior_VP
-        {
-            get
-            {
-                return "Superior";
-            }
-        }
-
-
-        //Voice Lines
-        //Common
-        public string Try_me_VL
-        {
-            get
-            {
-                return "Try me";
-            }
-        }
-
-        public string Combo_Breakere_VL
-        {
-            get
-            {
-                return "Combo Breaker";
-            }
-        }
-
-        public string Dont_get_back_up_VL
-        {
-            get
-            {
-                return "Don't get back up";
-            }
-        }
-
-        public string Go_and_sit_down_VL
-        {
-            get
-            {
-                return "Go and sit down";
-            }
-        }
-
-        public string I_havent_even_started_VL
-        {
-            get
-            {
-                return "I haven't even started";
-            }
-        }
-
-        public string K_O_VL
-        {
-            get
-            {
-                return "K.O.";
-            }
-        }
-
-        public string One_punch_is_all_i_need_VL
-        {
-            get
-            {
-                return "One punch is all i need";
-            }
-        }
-
-        public string Spare_me_the_commentary_VL
-        {
-            get
-            {
-                return "Spare me the commentary";
-            }
-        }
-
-        public string Talk_to_the_fist_VL
-        {
-            get
-            {
-                return "Talk to the fist";
-            }
-        }
-
-        public string Youre_not_bad_VL
-        {
-            get
-            {
-                return "You're not bad";
-            }
-        }
-
-        public string You_must_be_joking_VL
-        {
-            get
-            {
-                return "You must be joking";
-            }
-        }
-
-        public string I_make_medicine_sick_VL
-        {//Summer 17
-            get
-            {
-                return "I make medicine sick";
-            }
-        }
-
-        public string Make_you_punch_drunk_VL
-        {//Summer 17
-            get
-            {
-                return "Make you punch drunk";
-            }
-        }
-
-        public string I_have_something_for_you_VL
-        {//Halloween 17
-            get
-            {
-                return "I have something for you";
-            }
-        }
-
-        public string You_should_be_scared_VL
-        {//Halloween 17
-            get
-            {
-                return "You should be scared";
-            }
-        }
-
-        public string And_they_sais_chivalry_is_dead_VL
-        {//Winter 17
-            get
-            {
-                return "And they said Chivalry is dead";
-            }
-        }
-
-        public string Did_you_bring_me_a_present_VL
-        {//Winter 17
-            get
-            {
-                return "Did you bring me a present?";
-            }
-        }
+        #endregion
     }
 }

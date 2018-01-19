@@ -203,6 +203,21 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
+        public string Ecopoint_SK//16
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Yeti_Hunter_SK;
+                }
+                else
+                {
+                    return EN.Ecopoint_SK;
+                }
+            }
+        }
+
         public string Jiangshi_SK//11
         {//Halloween 2017
             get

@@ -218,6 +218,21 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
+        public string Butcher_SK//15
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Sharkbait_SK;
+                }
+                else
+                {
+                    return EN.Butcher_SK;
+                }
+            }
+        }
+
         public string Junkensteins_Monster_SK//12
         {//Halloween 2016
             get

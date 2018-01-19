@@ -203,6 +203,21 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
+        public string Blackhand_SK//11
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Spirit_SK;
+                }
+                else
+                {
+                    return EN.Blackhand_SK;
+                }
+            }
+        }
+
 
         //Emotes
         //Epic

@@ -8,231 +8,93 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 {
     class EN_Sombra
     {
-        public EN_Sombra() { }
-
-        public string Name
+        public EN_Sombra()
         {
-            get
-            {
-                return "Sombra";
-            }
+            //You're able to edit here everything in between all " Symbols
+
+            Name = "Sombra";
+
+            #region Skin
+            //Rare
+            Cidro_SK = "Cidro";
+            Incendio_SK = "Incendio";
+            Mar_SK = "Mar";
+            Noche_SK = "Noche";
+            //Epic
+            Glitch_SK = "Glitch";
+            Virus_SK = "Virus";
+            Peppermint_SK = "Peppermint";//Winter 16
+            //Legendary
+            Azúcar_SK = "Azúcar";
+            Los_Muertos_SK = "Los Muertos";
+            Augmented_SK = "Augmented";
+            Cyberspace_SK = "Cyberspace";
+            Tulum_SK = "Tulum";//Summer 17
+            Rime_SK = "Rime";//Winter 17
+            #endregion
+            #region Emotes
+            //Epic
+            Amused_EM = "Amused";
+            Boop_EM = "Boop";
+            Hold_on_EM = "Hold on";
+            Masterpiece_EM = "Masterpiece";
+            Sit_EM = "Sit";
+            Dance_EM = "Dance";//Annyver 17
+            #endregion
+            #region Victory Poses
+            //Rare
+            Hacked_VP = "Hacked";
+            Kneeling_VP = "Kneeling";
+            Rising_VP = "Rising";
+            Medal_VP = "Medal";//Summer 17
+            Pumpkinette_VP = "Pumpkinette";//Halloween 17
+            Toast_VP = "Toast";//Winter 17
+            Sparklers_VP = "Sparklers";//Rooster 17
+            #endregion
         }
 
+        #region Variablen
 
-        //Skin
-        //Rare
-        public string Cidro_SK
-        {
-            get
-            {
-                return "Cidro";
-            }
-        }
+        public string Name { get; }
 
-        public string Incendio_SK
-        {
-            get
-            {
-                return "Incendio";
-            }
-        }
+        #region Skin
 
-        public string Mar_SK
-        {
-            get
-            {
-                return "Mar";
-            }
-        }
+        public string Cidro_SK { get; }//Rare
+        public string Incendio_SK { get; }
+        public string Mar_SK { get; }
+        public string Noche_SK { get; }
 
-        public string Noche_SK
-        {
-            get
-            {
-                return "Noche";
-            }
-        }
-        //Epic
-        public string Glitch_SK
-        {
-            get
-            {
-                return "Glitch";
-            }
-        }
+        public string Glitch_SK { get; }//Epic
+        public string Virus_SK { get; }
+        public string Peppermint_SK { get; }//Winter 2016
 
-        public string Virus_SK
-        {
-            get
-            {
-                return "Virus";
-            }
-        }
+        public string Azúcar_SK { get; }//Legendary
+        public string Los_Muertos_SK { get; }
+        public string Augmented_SK { get; }
+        public string Cyberspace_SK { get; }
+        public string Tulum_SK { get; }//Summer 2017
+        public string Rime_SK { get; }//Winter 17
+        #endregion
+        #region Emotes
 
-        public string Peppermint_SK
-        {//Winter 2016
-            get
-            {
-                return "Peppermint";
-            }
-        }
-        //Legendary
-        public string Azúcar_SK
-        {
-            get
-            {
-                return "Azúcar";
-            }
-        }
+        public string Amused_EM { get; }//Epic
+        public string Boop_EM { get; }
+        public string Hold_on_EM { get; }
+        public string Masterpiece_EM { get; }
+        public string Sit_EM { get; }
+        public string Dance_EM { get; }//Annyver 17
+        #endregion
+        #region Victory Poses
 
-        public string Los_Muertos_SK
-        {
-            get
-            {
-                return "Los Muertos";
-            }
-        }
+        public string Hacked_VP { get; }//Rare
+        public string Kneeling_VP { get; }
+        public string Rising_VP { get; }
+        public string Medal_VP { get; }//Summer 17
+        public string Pumpkinette_VP { get; }//Halloween 17
+        public string Toast_VP { get; }//Winter 17
+        public string Sparklers_VP { get; }//Rooster 17ß
+        #endregion
 
-        public string Augmented_SK
-        {
-            get
-            {
-                return "Augmented";
-            }
-        }
-
-        public string Cyberspace_SK
-        {
-            get
-            {
-                return "Cyberspace";
-            }
-        }
-
-        public string Tulum_SK
-        {//Summer 2017
-            get
-            {
-                return "Tulum";
-            }
-        }
-
-        public string Rime_SK
-        {//Winter 17
-            get
-            {
-                return "Rime";
-            }
-        }
-
-
-        //Emotes
-        //Epic
-        public string Amused_EM
-        {
-            get
-            {
-                return "Amused";
-            }
-        }
-
-        public string Boop_EM
-        {
-            get
-            {
-                return "Boop";
-            }
-        }
-
-        public string Hold_on_EM
-        {
-            get
-            {
-                return "Hold on";
-            }
-        }
-
-        public string Masterpiece_EM
-        {
-            get
-            {
-                return "Masterpiece";
-            }
-        }
-
-        public string Sit_EM
-        {
-            get
-            {
-                return "Sit";
-            }
-        }
-
-        public string Dance_EM
-        {//Annyver 17
-            get
-            {
-                return "Dance";
-            }
-        }
-
-
-        //Victory Poses
-        //Rare
-        public string Hacked_VP
-        {
-            get
-            {
-                return "Hacked";
-            }
-        }
-
-        public string Kneeling_VP
-        {
-            get
-            {
-                return "Kneeling";
-            }
-        }
-
-        public string Rising_VP
-        {
-            get
-            {
-                return "Rising";
-            }
-        }
-
-        public string Medal_VP
-        {//Summer 17
-            get
-            {
-                return "Medal";
-            }
-        }
-
-        public string Pumpkinette_VP
-        {//Halloween 17
-            get
-            {
-                return "Pumpkinette";
-            }
-        }
-
-        public string Toast_VP
-        {//Winter 17
-            get
-            {
-                return "Toast";
-            }
-        }
-
-        public string Sparklers_VP
-        {//Rooster 17
-            get
-            {
-                return "Sparklers";
-            }
-        }
+        #endregion
     }
 }

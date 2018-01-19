@@ -218,6 +218,21 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
+        public string Bronzebeard_SK//16
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Blackbeard_SK;
+                }
+                else
+                {
+                    return EN.Bronzebeard_SK;
+                }
+            }
+        }
+
         public string Viking_SK//12
         {//Halloween 2017
             get

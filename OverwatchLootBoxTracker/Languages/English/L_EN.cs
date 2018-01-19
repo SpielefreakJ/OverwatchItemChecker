@@ -17,11 +17,11 @@ namespace OverwatchLootBoxTracker.Lang
 
         private void ChangesT()
         {
-            Changes = "\n\n\nBeta Version!\n\nFeatures:\n - Save Skins\n - Save Emotes\n - Save Victory Poses\n\nNewest Addings:\nNew Menu!\nHero items can now be displayed.\nAdded Overwatch League Skins\n\nLanguages:\n- German (Currently disabled)\n- English";
+            Changes = "\n\n\nBeta Version!\n\nFeatures:\n - Save Skins\n - Save Emotes\n - Save Victory Poses\n\nNewest Addings:\nNew Menu!\nHero items can now be displayed.\nAdded Overwatch League Skins and Blizzardworld Items\nLess lag when changing status of an item\n\nLanguages:\n- English";
         }
 
 
-        //Welcome Screen
+        #region Welcome Screen
 
         public string Welcome
         {
@@ -47,9 +47,9 @@ namespace OverwatchLootBoxTracker.Lang
             }
         }
 
+        #endregion
 
-
-        //All Settings
+        #region All Settings
 
         public string Settings
         {
@@ -99,6 +99,7 @@ namespace OverwatchLootBoxTracker.Lang
             }
         }
 
+        #endregion
 
         //On Close
 
@@ -119,7 +120,7 @@ namespace OverwatchLootBoxTracker.Lang
         }
 
 
-        //Overlay Text
+        #region Overlay Text
 
         public string Skin
         {
@@ -240,7 +241,11 @@ namespace OverwatchLootBoxTracker.Lang
                 return "Overwatch League";
             }
         }
-#region OWLeague
+
+        #endregion
+
+        #region OWLeague
+
         public string OWL_Boston_Uprising
         {
             get
@@ -339,7 +344,7 @@ namespace OverwatchLootBoxTracker.Lang
 
         #endregion
 
-        //Not Obtainable Skins
+        #region Non Obtainable Skins
 
         public string Unknown
         {
@@ -399,9 +404,9 @@ namespace OverwatchLootBoxTracker.Lang
             }
         }
 
+        #endregion
 
-
-        //Remainint Text
+        #region Remainint Text
 
         public string remaining1
         {
@@ -463,8 +468,10 @@ namespace OverwatchLootBoxTracker.Lang
             }
         }
 
+        #endregion
 
-        //Default Items
+        #region Default Items
+
         public string Classic
         {//Skin
             get
@@ -488,5 +495,7 @@ namespace OverwatchLootBoxTracker.Lang
                 return "Default";
             }
         }
+
+        #endregion
     }
 }

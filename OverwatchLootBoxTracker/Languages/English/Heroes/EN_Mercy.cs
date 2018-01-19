@@ -8,247 +8,97 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 {
     class EN_Mercy
     {
-        public EN_Mercy() { }
-
-        public string Name
+        public EN_Mercy()
         {
-            get
-            {
-                return "Mercy";
-            }
+            //You're able to edit here everything in between all " Symbols
+
+            Name = "Mercy";
+
+            #region Skin
+            //Rare
+            Celestial_SK = "Celestial";
+            Mist_SK = "Mist";
+            Orchid_SK = "Orchid";
+            Verdant_SK = "Verdant";
+            //Epic
+            Amber_SK = "Amber";
+            Cobalt_SK = "Cobalt";
+            Eidgenossin_SK = "Eidgenossin";//Summer 16
+            Fortune_SK = "Fortune";//Rooster 17
+                                   //Legendary
+            Sigrun_SK = "Sigrún";
+            Valkyrie_SK = "Valkyrie";
+            Devil_SK = "Devil";
+            IMP_SK = "IMP";
+            Winged_Victory_SK = "Winged Victory";//Summer 17
+            Witch_SK = "Witch";//Halloween 16
+            Combat_Medic_Ziegler_SK = "Combat Medic Ziegler";//Uprising 17
+            #endregion
+            #region Emotes
+            //Epic
+            Applause_EM = "Applause";
+            Caduceus_EM = "Caduceus";
+            No_Pulse_EM = "No Pulse";
+            Relax_EM = "Relax";
+            The_best_Medicine_EM = "The best Medicine";
+            Hustle_EM = "Hustle";//Annyver 17
+            #endregion
+            #region Victory Poses
+            //Rare
+            Angelic_VP = "Angelic";
+            Carefree_VP = "Carefree";
+            Ready_for_Battle_VP = "Ready for Battle";
+            Medal_VP = "Medal";//Summer 17
+            RIP_VP = "R.I.P.";//Halloween 16
+            Mistletoe_VP = "Mistletoe";//Winter 16
+            Toast_VP = "Toast";//Winter 17
+            #endregion
         }
 
+        #region Variablen
 
-        //Skin
-        //Rare
-        public string Celestial_SK
-        {
-            get
-            {
-                return "Celestial";
-            }
-        }
+        public string Name { get; }
 
-        public string Mist_SK
-        {
-            get
-            {
-                return "Mist";
-            }
-        }
+        #region Skin
 
-        public string Orchid_SK
-        {
-            get
-            {
-                return "Orchid";
-            }
-        }
+        public string Celestial_SK { get; }//Rare
+        public string Mist_SK { get; }
+        public string Orchid_SK { get; }
+        public string Verdant_SK { get; }
 
-        public string Verdant_SK
-        {
-            get
-            {
-                return "Verdant";
-            }
-        }
-        //Epic
-        public string Amber_SK
-        {
-            get
-            {
-                return "Amber";
-            }
-        }
+        public string Amber_SK { get; }//Epic
+        public string Cobalt_SK { get; }
+        public string Eidgenossin_SK { get; }//Summer 16
+        public string Fortune_SK { get; }//Rooster 17
 
-        public string Cobalt_SK
-        {
-            get
-            {
-                return "Cobalt";
-            }
-        }
+        public string Sigrun_SK { get; }//Legendary
+        public string Valkyrie_SK { get; }
+        public string Devil_SK { get; }
+        public string IMP_SK { get; }
+        public string Winged_Victory_SK { get; }//Summer 17
+        public string Witch_SK { get; }//Halloween 16
+        public string Combat_Medic_Ziegler_SK { get; }//Uprising 17
+        #endregion
+        #region Emotes
 
-        public string Eidgenossin_SK
-        {//Summer 2016
-            get
-            {
-                return "Eidgenossin";
-            }
-        }
+        public string Applause_EM { get; }//Epic
+        public string Caduceus_EM { get; }
+        public string No_Pulse_EM { get; }
+        public string Relax_EM { get; }
+        public string The_best_Medicine_EM { get; }
+        public string Hustle_EM { get; }//Annyver 17
+        #endregion
+        #region Victory Poses
 
-        public string Fortune_SK
-        {//Rooster 2017
-            get
-            {
-                return "Fortune";
-            }
-        }
-        //Legendary
-        public string Sigrun_SK
-        {
-            get
-            {
-                return "Sigrún";
-            }
-        }
+        public string Angelic_VP { get; }//Rare
+        public string Carefree_VP { get; }
+        public string Ready_for_Battle_VP { get; }
+        public string Medal_VP { get; }//Summer 17
+        public string RIP_VP { get; }//Halloween 16
+        public string Mistletoe_VP { get; }//Winter 16
+        public string Toast_VP { get; }//Winter 17
+        #endregion
 
-        public string Valkyrie_SK
-        {
-            get
-            {
-                return "Valkyrie";
-            }
-        }
-
-        public string Devil_SK
-        {
-            get
-            {
-                return "Devil";
-            }
-        }
-
-        public string IMP_SK
-        {
-            get
-            {
-                return "IMP";
-            }
-        }
-
-        public string Winged_Victory_SK
-        {//Halloween 2017
-            get
-            {
-                return "Winged Victory";
-            }
-        }
-
-        public string Witch_SK
-        {//Halloween 2016
-            get
-            {
-                return "Witch";
-            }
-        }
-
-        public string Combat_Medic_Ziegler_SK
-        {//Uprising 2017
-            get
-            {
-                return "Combat Medic Ziegler";
-            }
-        }
-
-
-        //Emotes
-        //Epic
-        public string Applause_EM
-        {
-            get
-            {
-                return "Applause";
-            }
-        }
-
-        public string Caduceus_EM
-        {
-            get
-            {
-                return "Caduceus";
-            }
-        }
-
-        public string No_Pulse_EM
-        {
-            get
-            {
-                return "No Pulse";
-            }
-        }
-
-        public string Relax_EM
-        {
-            get
-            {
-                return "Relax";
-            }
-        }
-
-        public string The_best_Medicine_EM
-        {
-            get
-            {
-                return "The best Medicine";
-            }
-        }
-
-        public string Hustle_EM
-        {//Annyver 17
-            get
-            {
-                return "Hustle";
-            }
-        }
-
-
-        //Victory Poses
-        //Rare
-        public string Angelic_VP
-        {
-            get
-            {
-                return "Angelic";
-            }
-        }
-
-        public string Carefree_VP
-        {
-            get
-            {
-                return "Carefree";
-            }
-        }
-
-        public string Ready_for_Battle_VP
-        {
-            get
-            {
-                return "Ready for Battle";
-            }
-        }
-
-        public string Medal_VP
-        {//Summer 17
-            get
-            {
-                return "Medal";
-            }
-        }
-
-        public string RIP_VP
-        {//Halloween 16
-            get
-            {
-                return "R.I.P.";
-            }
-        }
-
-        public string Mistletoe_VP
-        {//Winter 16
-            get
-            {
-                return "Mistletoe";
-            }
-        }
-
-        public string Toast_VP
-        {//Winter 17
-            get
-            {
-                return "Toast";
-            }
-        }
+        #endregion
     }
 }

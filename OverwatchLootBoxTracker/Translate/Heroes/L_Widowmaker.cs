@@ -218,6 +218,21 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
+        public string Nova_SK//15
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Huntress_SK;
+                }
+                else
+                {
+                    return EN.Nova_SK;
+                }
+            }
+        }
+
         public string Noire_SK//12
         {//Prepurchase Special
             get
