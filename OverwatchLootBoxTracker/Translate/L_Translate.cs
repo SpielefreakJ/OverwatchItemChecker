@@ -93,7 +93,7 @@ namespace OverwatchLootBoxTracker.Translate
                 //}
                 //else
                 {
-                    return "© 2017-2018 SpielefreakJ | OWLootboxTracker Version: 0.2.2.3 Beta | Overwatch Version: 1.19.1 | This Program is not affiliated with Blizzard Entertainment.\n© 2016-2018 Blizzard Entertainment, Inc. All rights reserved. | All trademarks referenced herein are the properties of their respective owners.";
+                    return "© 2017-2018 SpielefreakJ | OWLootboxTracker Version: 0.2.3.1 Beta | Overwatch Version: 1.19.3 | This Program is not affiliated with Blizzard Entertainment.\n© 2016-2018 Blizzard Entertainment, Inc. All rights reserved. | All trademarks referenced herein are the properties of their respective owners.";
                 }
             }
         }
