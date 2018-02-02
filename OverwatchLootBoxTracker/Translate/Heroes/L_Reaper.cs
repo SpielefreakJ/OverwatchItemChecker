@@ -10,16 +10,16 @@ namespace OverwatchLootBoxTracker.Translate
 {
     class L_Reaper : PictureBox
     {
-        Languages.English.Heroes.EN_Reaper EN;
-        Languages.German.Heroes.DE_Reaper DE;
+        Languages.English.Heroes.Reaper EN;
+        Languages.German.Heroes.Reaper DE;
         string myLang;
 
         public L_Reaper(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Reaper();
-            DE = new Languages.German.Heroes.DE_Reaper();
+            EN = new Languages.English.Heroes.Reaper();
+            DE = new Languages.German.Heroes.Reaper();
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\Reaper_link.png");
@@ -124,6 +124,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Desert_SK;
+                }
+            }
+        }
+
+        public string Hellfire_SK//6
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Hellfire_SK;
+                }
+                else
+                {
+                    return EN.Hellfire_SK;
                 }
             }
         }

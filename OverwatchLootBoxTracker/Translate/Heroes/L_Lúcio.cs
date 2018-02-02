@@ -10,16 +10,16 @@ namespace OverwatchLootBoxTracker.Translate
 {
     class L_Lúcio : PictureBox
     {
-        Languages.English.Heroes.EN_Lúcio EN;
-        Languages.German.Heroes.DE_Lúcio DE;
+        Languages.English.Heroes.Lúcio EN;
+        Languages.German.Heroes.Lúcio DE;
         string myLang;
 
         public L_Lúcio(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Lúcio();
-            DE = new Languages.German.Heroes.DE_Lúcio();
+            EN = new Languages.English.Heroes.Lúcio();
+            DE = new Languages.German.Heroes.Lúcio();
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\Lúcio_link.png");
@@ -158,6 +158,21 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Legendary
+        public string Capoeira_SK//15
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Capoeira_SK;
+                }
+                else
+                {
+                    return EN.Capoeira_SK;
+                }
+            }
+        }
+
         public string Hippityhop_SK//8
         {
             get

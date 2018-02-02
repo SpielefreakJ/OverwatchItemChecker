@@ -10,16 +10,16 @@ namespace OverwatchLootBoxTracker.Translate
 {
     class L_Tracer : PictureBox
     {
-        Languages.English.Heroes.EN_Tracer EN;
-        Languages.German.Heroes.DE_Tracer DE;
+        Languages.English.Heroes.Tracer EN;
+        Languages.German.Heroes.Tracer DE;
         string myLang;
 
         public L_Tracer(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Tracer();
-            DE = new Languages.German.Heroes.DE_Tracer();
+            EN = new Languages.English.Heroes.Tracer();
+            DE = new Languages.German.Heroes.Tracer();
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\Tracer_link.png");
@@ -397,6 +397,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Charleston_EM;
+                }
+            }
+        }
+
+        public string Bomb_Spin_EM//7
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Bomb_Spin_EM;
+                }
+                else
+                {
+                    return EN.Bomb_Spin_EM;
                 }
             }
         }

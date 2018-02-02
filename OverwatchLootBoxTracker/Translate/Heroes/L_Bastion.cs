@@ -10,16 +10,16 @@ namespace OverwatchLootBoxTracker.Translate
 {
     class L_Bastion : PictureBox
     {
-        Languages.English.Heroes.EN_Bastion EN;
-        Languages.German.Heroes.DE_Bastion DE;
+        Languages.English.Heroes.Bastion EN;
+        Languages.German.Heroes.Bastion DE;
         string myLang;
 
         public L_Bastion(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Bastion();
-            DE = new Languages.German.Heroes.DE_Bastion();
+            EN = new Languages.English.Heroes.Bastion();
+            DE = new Languages.German.Heroes.Bastion();
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\Bastion_link.png");
@@ -526,6 +526,21 @@ namespace OverwatchLootBoxTracker.Translate
 
         //Voice Lines
         //Common
+        public string Doo_Woo_VL//0
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Doo_Woo_VL;
+                }
+                else
+                {
+                    return EN.Doo_Woo_VL;
+                }
+            }
+        }
+
         public string Beeple_VL//1
         {
             get
@@ -541,22 +556,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Doo_Woo_VL//2
-        {
-            get
-            {
-                if (myLang == "DE")
-                {
-                    return DE.Doo_Woo_VL;
-                }
-                else
-                {
-                    return EN.Doo_Woo_VL;
-                }
-            }
-        }
-
-        public string Boo_Boo_Doo_De_Doo_VL//3
+        public string Boo_Boo_Doo_De_Doo_VL//2
         {
             get
             {
@@ -571,7 +571,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Bweeeeeeeeeee_VL//4
+        public string Bweeeeeeeeeee_VL//3
         {
             get
             {
@@ -586,7 +586,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Chirr_Chirr_Chirr_VL//5
+        public string Chirr_Chirr_Chirr_VL//4
         {
             get
             {
@@ -601,7 +601,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Dah_Dah_Weeeee_VL//6
+        public string Dah_Dah_Weeeee_VL//5
         {
             get
             {
@@ -616,7 +616,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Dun_Dun_Boop_Boop_VL//7
+        public string Dun_Dun_Boop_Boop_VL//6
         {
             get
             {
@@ -631,7 +631,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Dweet_Dweet_Dweet_VL//8
+        public string Dweet_Dweet_Dweet_VL//7
         {
             get
             {
@@ -646,7 +646,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Hee_Hoo_Hoo_VL//9
+        public string Hee_Hoo_Hoo_VL//8
         {
             get
             {
@@ -657,6 +657,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Hee_Hoo_Hoo_VL;
+                }
+            }
+        }
+
+        public string Ooh_ooo_hoo_hoo_VL//09
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Ooh_ooo_hoo_hoo_VL;
+                }
+                else
+                {
+                    return EN.Ooh_ooo_hoo_hoo_VL;
                 }
             }
         }

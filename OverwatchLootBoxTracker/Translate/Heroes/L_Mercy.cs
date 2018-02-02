@@ -10,16 +10,16 @@ namespace OverwatchLootBoxTracker.Translate
 {
     class L_Mercy : PictureBox
     {
-        Languages.English.Heroes.EN_Mercy EN;
-        Languages.German.Heroes.DE_Mercy DE;
+        Languages.English.Heroes.Mercy EN;
+        Languages.German.Heroes.Mercy DE;
         string myLang;
 
         public L_Mercy(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Mercy();
-            DE = new Languages.German.Heroes.DE_Mercy();
+            EN = new Languages.English.Heroes.Mercy();
+            DE = new Languages.German.Heroes.Mercy();
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\Mercy_link.png");
@@ -367,6 +367,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Hustle_EM;
+                }
+            }
+        }
+
+        public string Parasol_EM//7
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Parasol_EM;
+                }
+                else
+                {
+                    return EN.Parasol_EM;
                 }
             }
         }

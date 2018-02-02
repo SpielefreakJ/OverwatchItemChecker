@@ -10,16 +10,16 @@ namespace OverwatchLootBoxTracker.Translate
 {
     class L_Symmetra : PictureBox
     {
-        Languages.English.Heroes.EN_Symmetra EN;
-        Languages.German.Heroes.DE_Symmetra DE;
+        Languages.English.Heroes.Symmetra EN;
+        Languages.German.Heroes.Symmetra DE;
         string myLang;
 
         public L_Symmetra(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Symmetra();
-            DE = new Languages.German.Heroes.DE_Symmetra();
+            EN = new Languages.English.Heroes.Symmetra();
+            DE = new Languages.German.Heroes.Symmetra();
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\Symmetra_link.png");
@@ -113,6 +113,21 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Epic
+        public string Peacock_SK//15
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Peacock_SK;
+                }
+                else
+                {
+                    return EN.Peacock_SK;
+                }
+            }
+        }
+
         public string Regal_SK//5
         {
             get

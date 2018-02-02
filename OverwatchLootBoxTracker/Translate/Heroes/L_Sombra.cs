@@ -10,16 +10,16 @@ namespace OverwatchLootBoxTracker.Translate
 {
     class L_Sombra : PictureBox
     {
-        Languages.English.Heroes.EN_Sombra EN;
-        Languages.German.Heroes.DE_Sombra DE;
+        Languages.English.Heroes.Sombra EN;
+        Languages.German.Heroes.Sombra DE;
         string myLang;
 
         public L_Sombra(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Sombra();
-            DE = new Languages.German.Heroes.DE_Sombra();
+            EN = new Languages.English.Heroes.Sombra();
+            DE = new Languages.German.Heroes.Sombra();
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\Sombra_link.png");
@@ -336,6 +336,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Dance_EM;
+                }
+            }
+        }
+
+        public string Marioneta_EM//7
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Marioneta_EM;
+                }
+                else
+                {
+                    return EN.Marioneta_EM;
                 }
             }
         }

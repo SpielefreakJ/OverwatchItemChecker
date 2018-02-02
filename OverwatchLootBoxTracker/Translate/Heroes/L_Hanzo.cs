@@ -10,16 +10,16 @@ namespace OverwatchLootBoxTracker.Translate
 {
     class L_Hanzo : PictureBox
     {
-        Languages.English.Heroes.EN_Hanzo EN;
-        Languages.German.Heroes.DE_Hanzo DE;
+        Languages.English.Heroes.Hanzo EN;
+        Languages.German.Heroes.Hanzo DE;
         string myLang;
 
         public L_Hanzo(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Hanzo();
-            DE = new Languages.German.Heroes.DE_Hanzo();
+            EN = new Languages.English.Heroes.Hanzo();
+            DE = new Languages.German.Heroes.Hanzo();
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\Hanzo_link.png");
@@ -158,6 +158,21 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Legendary
+        public string Kabuki_SK//14
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Kabuki_SK;
+                }
+                else
+                {
+                    return EN.Kabuki_SK;
+                }
+            }
+        }
+
         public string Young_Hanzo_SK//8
         {
             get

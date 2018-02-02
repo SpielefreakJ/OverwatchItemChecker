@@ -10,16 +10,16 @@ namespace OverwatchLootBoxTracker.Translate
 {
     class L_Widowmaker : PictureBox
     {
-        Languages.English.Heroes.EN_Widowmaker EN;
-        Languages.German.Heroes.DE_Widowmaker DE;
+        Languages.English.Heroes.Widowmaker EN;
+        Languages.German.Heroes.Widowmaker DE;
         string myLang;
 
         public L_Widowmaker(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Widowmaker();
-            DE = new Languages.German.Heroes.DE_Widowmaker();
+            EN = new Languages.English.Heroes.Widowmaker();
+            DE = new Languages.German.Heroes.Widowmaker();
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\Widowmaker_link.png");

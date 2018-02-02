@@ -48,6 +48,7 @@
             this.btnOWLeague = new System.Windows.Forms.Button();
             this.btnPlayerIcons = new System.Windows.Forms.Button();
             this.gbAll = new System.Windows.Forms.GroupBox();
+            this.btn22 = new System.Windows.Forms.Button();
             this.lbltmrDisposeTimer = new System.Windows.Forms.Label();
             this.btn21 = new System.Windows.Forms.Button();
             this.btn20 = new System.Windows.Forms.Button();
@@ -276,6 +277,7 @@
             // 
             // gbAll
             // 
+            this.gbAll.Controls.Add(this.btn22);
             this.gbAll.Controls.Add(this.lbltmrDisposeTimer);
             this.gbAll.Controls.Add(this.btn21);
             this.gbAll.Controls.Add(this.btn20);
@@ -354,6 +356,18 @@
             this.gbAll.TabStop = false;
             this.gbAll.Text = "gbAll";
             this.gbAll.Visible = false;
+            // 
+            // btn22
+            // 
+            this.btn22.AutoSize = true;
+            this.btn22.Location = new System.Drawing.Point(365, 77);
+            this.btn22.Name = "btn22";
+            this.btn22.Size = new System.Drawing.Size(75, 23);
+            this.btn22.TabIndex = 86;
+            this.btn22.Text = "btn22";
+            this.btn22.UseVisualStyleBackColor = true;
+            this.btn22.Visible = false;
+            this.btn22.Click += new System.EventHandler(this.btn22_Click);
             // 
             // lbltmrDisposeTimer
             // 
@@ -1438,6 +1452,7 @@
         private System.Windows.Forms.Button btn19;
         private System.Windows.Forms.Button btn18;
         private System.Windows.Forms.Label lbltmrDisposeTimer;
+        private System.Windows.Forms.Button btn22;
     }
 }
 

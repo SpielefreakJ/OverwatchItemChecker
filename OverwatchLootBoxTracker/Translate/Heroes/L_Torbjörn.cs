@@ -10,16 +10,16 @@ namespace OverwatchLootBoxTracker.Translate
 {
     class L_Torbjörn : PictureBox
     {
-        Languages.English.Heroes.EN_Torbjörn EN;
-        Languages.German.Heroes.DE_Torbjörn DE;
+        Languages.English.Heroes.Torbjörn EN;
+        Languages.German.Heroes.Torbjörn DE;
         string myLang;
 
         public L_Torbjörn(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Torbjörn();
-            DE = new Languages.German.Heroes.DE_Torbjörn();
+            EN = new Languages.English.Heroes.Torbjörn();
+            DE = new Languages.German.Heroes.Torbjörn();
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\Torbjörn_link.png");
@@ -218,17 +218,17 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Bronzebeard_SK//16
+        public string Magni_SK//16
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Blackbeard_SK;
+                    return DE.Magni_SK;
                 }
                 else
                 {
-                    return EN.Bronzebeard_SK;
+                    return EN.Magni_SK;
                 }
             }
         }

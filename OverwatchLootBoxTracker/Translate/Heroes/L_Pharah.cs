@@ -10,16 +10,16 @@ namespace OverwatchLootBoxTracker.Translate
 {
     class L_Pharah : PictureBox
     {
-        Languages.English.Heroes.EN_Pharah EN;
-        Languages.German.Heroes.DE_Pharah DE;
+        Languages.English.Heroes.Pharah EN;
+        Languages.German.Heroes.Pharah DE;
         string myLang;
 
         public L_Pharah(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Pharah();
-            DE = new Languages.German.Heroes.DE_Pharah();
+            EN = new Languages.English.Heroes.Pharah();
+            DE = new Languages.German.Heroes.Pharah();
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\Pharah_link.png");
@@ -263,6 +263,21 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
+        public string Asp_SK//15
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Asp_SK;
+                }
+                else
+                {
+                    return EN.Asp_SK;
+                }
+            }
+        }
+        
 
         //Emotes
         //Epic

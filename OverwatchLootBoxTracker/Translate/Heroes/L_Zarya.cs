@@ -10,16 +10,16 @@ namespace OverwatchLootBoxTracker.Translate
 {
     class L_Zarya : PictureBox
     {
-        Languages.English.Heroes.EN_Zarya EN;
-        Languages.German.Heroes.DE_Zarya DE;
+        Languages.English.Heroes.Zarya EN;
+        Languages.German.Heroes.Zarya DE;
         string myLang;
 
         public L_Zarya(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Zarya();
-            DE = new Languages.German.Heroes.DE_Zarya();
+            EN = new Languages.English.Heroes.Zarya();
+            DE = new Languages.German.Heroes.Zarya();
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\Zarya_link.png");

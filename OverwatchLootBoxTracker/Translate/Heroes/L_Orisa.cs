@@ -10,16 +10,16 @@ namespace OverwatchLootBoxTracker.Translate
 {
     class L_Orisa : PictureBox
     {
-        Languages.English.Heroes.EN_Orisa EN;
-        Languages.German.Heroes.DE_Orisa DE;
+        Languages.English.Heroes.Orisa EN;
+        Languages.German.Heroes.Orisa DE;
         string myLang;
 
         public L_Orisa(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Orisa();
-            DE = new Languages.German.Heroes.DE_Orisa();
+            EN = new Languages.English.Heroes.Orisa();
+            DE = new Languages.German.Heroes.Orisa();
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\Orisa_link.png");

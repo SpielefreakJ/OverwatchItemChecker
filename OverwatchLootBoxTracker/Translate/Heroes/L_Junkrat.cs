@@ -10,16 +10,16 @@ namespace OverwatchLootBoxTracker.Translate
 {
     class L_Junkrat : PictureBox
     {
-        Languages.English.Heroes.EN_Junkrat EN;
-        Languages.German.Heroes.DE_Junkrat DE;
+        Languages.English.Heroes.Junkrat EN;
+        Languages.German.Heroes.Junkrat DE;
         string myLang;
 
         public L_Junkrat(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Junkrat();
-            DE = new Languages.German.Heroes.DE_Junkrat();
+            EN = new Languages.English.Heroes.Junkrat();
+            DE = new Languages.German.Heroes.Junkrat();
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\Junkrat_link.png");
@@ -113,6 +113,21 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Epic
+        public string Caution_SK//5
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Caution_SK;
+                }
+                else
+                {
+                    return EN.Caution_SK;
+                }
+            }
+        }
+
         public string Jailbird_SK//5
         {
             get

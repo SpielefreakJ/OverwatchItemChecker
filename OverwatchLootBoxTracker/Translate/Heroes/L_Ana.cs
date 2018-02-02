@@ -10,16 +10,16 @@ namespace OverwatchLootBoxTracker.Translate
 {
     class L_Ana : PictureBox
     {
-        Languages.English.Heroes.EN_Ana EN;
-        Languages.German.Heroes.DE_Ana DE;
+        Languages.English.Heroes.Ana EN;
+        Languages.German.Heroes.Ana DE;
         string myLang;
 
         public L_Ana(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Ana();
-            DE = new Languages.German.Heroes.DE_Ana();
+            EN = new Languages.English.Heroes.Ana();
+            DE = new Languages.German.Heroes.Ana();
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\Ana_link.png");
@@ -525,6 +525,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Everyone_dies_VL;
+                }
+            }
+        }
+
+        public string Go_on_i_can_wait_VL//3
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Go_on_i_can_wait_VL;
+                }
+                else
+                {
+                    return EN.Go_on_i_can_wait_VL;
                 }
             }
         }
@@ -1162,6 +1177,21 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
+        public string Wasteland_SP//23
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Wasteland_SP;
+                }
+                else
+                {
+                    return EN.Wasteland_SP;
+                }
+            }
+        }
+
         public string Wedjat_SP//24
         {
             get
@@ -1340,7 +1370,7 @@ namespace OverwatchLootBoxTracker.Translate
                 }
                 else
                 {
-                    return EN.Ana_PI;
+                    return EN.Guardian_HI;
                 }
             }
         }
@@ -1355,7 +1385,7 @@ namespace OverwatchLootBoxTracker.Translate
                 }
                 else
                 {
-                    return EN.Ana_PI;
+                    return EN.Locked_on_HI;
                 }
             }
         }
@@ -1370,7 +1400,22 @@ namespace OverwatchLootBoxTracker.Translate
                 }
                 else
                 {
-                    return EN.Ana_PI;
+                    return EN.Shh_HI;
+                }
+            }
+        }
+
+        public string Under_Fire_HI//3
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Under_Fire_HI;
+                }
+                else
+                {
+                    return EN.Under_Fire_HI;
                 }
             }
         }
@@ -1389,6 +1434,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Ana_PI;
+                }
+            }
+        }
+
+        public string Cute_Ana_PI//1
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Cute_Ana_PI;
+                }
+                else
+                {
+                    return EN.Cute_Ana_PI;
                 }
             }
         }

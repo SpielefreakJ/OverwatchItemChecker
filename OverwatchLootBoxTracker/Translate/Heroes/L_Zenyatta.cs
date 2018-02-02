@@ -10,16 +10,16 @@ namespace OverwatchLootBoxTracker.Translate
 {
     class L_Zenyatta : PictureBox
     {
-        Languages.English.Heroes.EN_Zenyatta EN;
-        Languages.German.Heroes.DE_Zenyatta DE;
+        Languages.English.Heroes.Zenyatta EN;
+        Languages.German.Heroes.Zenyatta DE;
         string myLang;
 
         public L_Zenyatta(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Zenyatta();
-            DE = new Languages.German.Heroes.DE_Zenyatta();
+            EN = new Languages.English.Heroes.Zenyatta();
+            DE = new Languages.German.Heroes.Zenyatta();
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\Zenyatta_link.png");
@@ -124,6 +124,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Ascendant_SK;
+                }
+            }
+        }
+
+        public string Carbon_Fiber_SK//15
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Carbon_Fiber_SK;
+                }
+                else
+                {
+                    return EN.Carbon_Fiber_SK;
                 }
             }
         }

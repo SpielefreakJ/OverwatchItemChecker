@@ -10,16 +10,16 @@ namespace OverwatchLootBoxTracker.Translate
 {
     class L_Moira : PictureBox
     {
-        Languages.English.Heroes.EN_Moira EN;
-        Languages.German.Heroes.DE_Moira DE;
+        Languages.English.Heroes.Moira EN;
+        Languages.German.Heroes.Moira DE;
         string myLang;
 
         public L_Moira(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Moira();
-            DE = new Languages.German.Heroes.DE_Moira();
+            EN = new Languages.English.Heroes.Moira();
+            DE = new Languages.German.Heroes.Moira();
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\Moira_link.png");
@@ -275,6 +275,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Waiting_EM;
+                }
+            }
+        }
+
+        public string Facepalm_EM//6
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Facepalm_EM;
+                }
+                else
+                {
+                    return EN.Facepalm_EM;
                 }
             }
         }

@@ -10,16 +10,16 @@ namespace OverwatchLootBoxTracker.Translate
 {
     class L_Genji : PictureBox
     {
-        Languages.English.Heroes.EN_Genji EN;
-        Languages.German.Heroes.DE_Genji DE;
+        Languages.English.Heroes.Genji EN;
+        Languages.German.Heroes.Genji DE;
         string myLang;
 
         public L_Genji(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Genji();
-            DE = new Languages.German.Heroes.DE_Genji();
+            EN = new Languages.English.Heroes.Genji();
+            DE = new Languages.German.Heroes.Genji();
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\Genji_link.png");
@@ -337,6 +337,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Salute_EM;
+                }
+            }
+        }
+
+        public string Whirlwind_EM//7
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Whirlwind_EM;
+                }
+                else
+                {
+                    return EN.Whirlwind_EM;
                 }
             }
         }

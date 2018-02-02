@@ -10,16 +10,16 @@ namespace OverwatchLootBoxTracker.Translate
 {
     class L_Mei : PictureBox
     {
-        Languages.English.Heroes.EN_Mei EN;
-        Languages.German.Heroes.DE_Mei DE;
+        Languages.English.Heroes.Mei EN;
+        Languages.German.Heroes.Mei DE;
         string myLang;
 
         public L_Mei(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Mei();
-            DE = new Languages.German.Heroes.DE_Mei();
+            EN = new Languages.English.Heroes.Mei();
+            DE = new Languages.German.Heroes.Mei();
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\Mei_link.png");
@@ -143,6 +143,21 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Legendary
+        public string Ecopoint_Antarctica_SK//16
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Ecopoint_Antarctica_SK;
+                }
+                else
+                {
+                    return EN.Ecopoint_Antarctica_SK;
+                }
+            }
+        }
+
         public string Firefighter_SK//7
         {
             get
@@ -199,21 +214,6 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Yeti_Hunter_SK;
-                }
-            }
-        }
-
-        public string Ecopoint_SK//16
-        {
-            get
-            {
-                if (myLang == "DE")
-                {
-                    return DE.Yeti_Hunter_SK;
-                }
-                else
-                {
-                    return EN.Ecopoint_SK;
                 }
             }
         }

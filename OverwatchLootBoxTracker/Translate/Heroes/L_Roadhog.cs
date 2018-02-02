@@ -10,16 +10,16 @@ namespace OverwatchLootBoxTracker.Translate
 {
     class L_Roadhog : PictureBox
     {
-        Languages.English.Heroes.EN_Roadhog EN;
-        Languages.German.Heroes.DE_Roadhog DE;
+        Languages.English.Heroes.Roadhog EN;
+        Languages.German.Heroes.Roadhog DE;
         string myLang;
 
         public L_Roadhog(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Roadhog();
-            DE = new Languages.German.Heroes.DE_Roadhog();
+            EN = new Languages.English.Heroes.Roadhog();
+            DE = new Languages.German.Heroes.Roadhog();
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\Roadhog_link.png");

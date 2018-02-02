@@ -10,16 +10,16 @@ namespace OverwatchLootBoxTracker.Translate
 {
     class L_McCree : PictureBox
     {
-        Languages.English.Heroes.EN_McCree EN;
-        Languages.German.Heroes.DE_McCree DE;
+        Languages.English.Heroes.McCree EN;
+        Languages.German.Heroes.McCree DE;
         string myLang;
 
         public L_McCree(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_McCree();
-            DE = new Languages.German.Heroes.DE_McCree();
+            EN = new Languages.English.Heroes.McCree();
+            DE = new Languages.German.Heroes.McCree();
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\McCree_link.png");
@@ -124,6 +124,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.On_The_Range_SK;
+                }
+            }
+        }
+
+        public string Royal_SK//16
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Royal_SK;
+                }
+                else
+                {
+                    return EN.Royal_SK;
                 }
             }
         }

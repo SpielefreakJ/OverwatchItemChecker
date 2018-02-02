@@ -8,357 +8,97 @@ namespace OverwatchLootBoxTracker.Lang
 {
     class L_DE
     {
+        string Year = "2016"; //Pls do NOT Change this!
+
         public L_DE()
         {
-            //환영
+            //You're able to edit here everything in between all " Symbols
+
+            ChangesText = "\n\n\nBeta Version!\n\nFeatures:\n - Save Skins\n - Save Emotes\n - Save Victory Poses\n\nNewest Addings:\nNew Menu!\nHero items can now be displayed.\nAdded Overwatch League Skins and Blizzardworld Items\nLess lag when changing status of an item\n\nLanguages:\n- English";
+
+            #region Welcome Screen
+            Welcome = "Willkommen";
+            ChangesTitle = "Änderrungen";
+            #endregion
+            #region All Settings
+            Settings = "Einstellungen";
+            LangSettings = "Sprache Ändern";
+            MoreCost = "Genauere Kostenangaben";
+            Back = "Zurück";
+            DeleteSaves = "Die Speicherfunktion wurde geändert.\n befor die App gestartet weden kann\nmüssel alle gespeicherten sachen gelöscht werden.\nOrdner: C:\\Benutzer\\BENUTZERNAME\\AppData\\Local\\OWItemTracker\n\nOK zum Löschen\nAbbrechen zum beenden (für kopieren und checken der alten Dateien)";
+            DeleteSavesS = "Alles erfolgreich Gelöscht!";
+            #endregion
+
+            //On Close
+            Close = "Schließen";
+            AppClose = "Test";
+
+            #region Overlay Text
+            Skin = "Skins";
+            Emotes = "Emotes";
+            VictoryPoses = "Siegerposen";
+            VoiceLines = "Sprüche";
+            Sprays = "Sprays";
+            HighlightIntros = "Highlight-Intros";
+            Weapons = "Waffen";
+            PlayerIcons = "Spieler-Icons";
+            // Overwatch League
+            OWLeague = "Overwatch League";
+            #endregion
+            #region Events
+            Summer = "Sommerspiele";
+            Halloween = "Halloween-Horror";
+            Winter = "Winterwunderland";
+            Rooster = "Das Jahr des Hahns";
+            Dog = "Das Jahr des Hundes";
+            Uprising = "Overwatch Aufstand";
+            Annyver = "Jubiläum";
+            #endregion
+            #region OWLeague
+            OWL_Boston_Uprising = "Boston Uprising";
+            OWL_Dallas_Fuel = "Dallas Fuel";
+            OWL_Florida_Mayhem = "Florida Mayhem";
+            OWL_Houston_Outlaws = "Houston Outlaws";
+            OWL_London_Spitfire = "London Spitfire";
+            OWL_Los_Angeles_Gladiators = "Los Angeles Gladiators";
+            OWL_Los_Angeles_Valiant = "Los Angeles Valiant";
+            OWL_New_York_Excelsior = "New York Excelsior";
+            OWL_Philadelphia_Fusion = "Philadelphia Fusion";
+            OWL_San_Francisco_Shock = "San Francisco Shock";
+            OWL_Seoul_Dynasty = "Seoul Dynasty";
+            OWL_Shanghai_Dragons = "Shanghai Dragons";
+            #endregion
+            #region Non Obtainable Skins
+            Unknown = "?";
+            OriginGotY = "Origin/GotY";
+            OriginGotY2 = "Nur mit Origin or GotY Game-Edition";
+            BlizzCon = "BlizzCon";
+            Prepurchase = "Vorbesteller";
+            Prepurchase2 = "Nur durch Vorbestellung";
+            #endregion
+            #region Remainint Text
+            remaining1 = "Kosten für alle übrigen Items:";
+            remaining2 = "Credits und";
+            Credits = "Credits";
+
+            //For "More Infos about remaining Costs"
+            remAll = "Kosten für alle übrigen Items:";
+            remNonEvent = "Kosten für alle übrigen nicht-Event-Items:";
+            remEvent = "Kosten für alle übrigen Event Items:";
+            remWeapons = "Kosten für alle übrigen Waffen:";
+            #endregion
+            #region Default Items
+            Classic = "KLASSISCH";//Skin
+            Heroic = "HEROISCH";//Emote, Victory Pose, Highlight Intro
+            Default = "STANDARD";//Weapon
+            #endregion
+
+
         }
 
-
-        //Welcome Screen
-
-        public string Welcome
-        {
-            get
-            {
-                return "Willkommen";
-            }
-        }
-
-        public string ChangesTitle
-        {
-            get
-            {
-                return "Änderrungen";
-            }
-        }
-
-
-        //Alle Einstellungen
-
-        public string Settings
-        {
-            get
-            {
-                return "Einstellungen";
-            }
-        }
-
-        public string LangSettings
-        {
-            get
-            {
-                return "Sprache Ändern";
-            }
-        }
-
-        public string MoreCost
-        {
-            get
-            {
-                return "Genauere Kostenangaben";
-            }
-        }
-
-        public string Back
-        {
-            get
-            {
-                return "Zurück";
-            }
-        }
-
-        public string DeleteSaves
-        {
-            get
-            {
-                return "Die Speicherfunktion wurde geändert.\n befor die App gestartet weden kann\nmüssel alle gespeicherten sachen gelöscht werden.\nOrdner: C:\\Benutzer\\BENUTZERNAME\\AppData\\Local\\OWItemTracker\n\nOK zum Löschen\nAbbrechen zum beenden (für kopieren und checken der alten Dateien)";
-            }
-        }
-
-        public string DeleteSavesS
-        {
-            get
-            {
-                return "Alles erfolgreich Gelöscht";
-            }
-        }
-
-
-        //Beim Beenden
-
-        public string Close
-        {
-            get
-            {
-                return "Schließen";
-            }
-        }
-
-        public string AppClose
-        {
-            get
-            {
-                return "Test";
-            }
-        }
-
-
-        //Overlay Text
-
-        public string Skin
-        {
-            get
-            {
-                return "Skins";
-            }
-        }
-
-        public string Emotes
-        {
-            get
-            {
-                return "Emotes";
-            }
-        }
-
-        public string VictoryPoses
-        {
-            get
-            {
-                return "Siegerposen";
-            }
-        }
-
-        public string VoiceLines
-        {
-            get
-            {
-                return "Sprüche";
-            }
-        }
-
-        public string Sprays
-        {
-            get
-            {
-                return "Sprays";
-            }
-        }
-
-        public string HighlightIntros
-        {
-            get
-            {
-                return "Highlight-Intros";
-            }
-        }
-
-        public string Weapons
-        {
-            get
-            {
-                return "Waffen";
-            }
-        }
-
-        public string PlayerIcons
-        {
-            get
-            {
-                return "Spieler-Icons";
-            }
-        }
-        //Events
-        public string Summer
-        {
-            get
-            {
-                return "Sommerspiele";
-            }
-        }
-
-        public string Halloween
-        {
-            get
-            {
-                return "Halloween-Horror";
-            }
-        }
-
-        public string Winter
-        {
-            get
-            {
-                return "Winterwunderland";
-            }
-        }
-
-        public string Rooster
-        {
-            get
-            {
-                return "Das Jahr des Hahns";
-            }
-        }
-
-        public string Uprising
-        {
-            get
-            {
-                return "Overwatch Aufstand";
-            }
-        }
-
-        public string Annyver
-        {
-            get
-            {
-                return "Jubiläum";
-            }
-        }
-        // Overwatch League
-        public string OWLeague
-        {
-            get
-            {
-                return "Overwatch League";
-            }
-        }
-        #region OWLeague
-        public string OWL_Boston_Uprising
-        {
-            get
-            {
-                return "Boston Uprising";
-            }
-        }
-
-        public string OWL_Dallas_Fuel
-        {
-            get
-            {
-                return "Dallas Fuel";
-            }
-        }
-
-        public string OWL_Florida_Mayhem
-        {
-            get
-            {
-                return "Florida Mayhem";
-            }
-        }
-
-        public string OWL_Houston_Outlaws
-        {
-            get
-            {
-                return "Houston Outlaws";
-            }
-        }
-
-        public string OWL_London_Spitfire
-        {
-            get
-            {
-                return "London Spitfire";
-            }
-        }
-
-        public string OWL_Los_Angeles_Gladiators
-        {
-            get
-            {
-                return "Los Angeles Gladiators";
-            }
-        }
-
-        public string OWL_Los_Angeles_Valiant
-        {
-            get
-            {
-                return "Los Angeles Valiant";
-            }
-        }
-
-        public string OWL_New_York_Excelsior
-        {
-            get
-            {
-                return "New York Excelsior";
-            }
-        }
-
-        public string OWL_Philadelphia_Fusion
-        {
-            get
-            {
-                return "Philadelphia Fusion";
-            }
-        }
-
-        public string OWL_San_Francisco_Shock
-        {
-            get
-            {
-                return "San Francisco Shock";
-            }
-        }
-
-        public string OWL_Seoul_Dynasty
-        {
-            get
-            {
-                return "Seoul Dynasty";
-            }
-        }
-
-        public string OWL_Shanghai_Dragons
-        {
-            get
-            {
-                return "Shanghai Dragons";
-            }
-        }
-
-        #endregion
-
-
-        //Not Obtainable Skins
-
-        public string Unknown
-        {
-            get
-            {
-                return "?";
-            }
-        }
-
-        public string OriginGotY
-        {
-            get
-            {
-                return "Origin/GotY";
-            }
-        }
-        public string OriginGotY2
-        {
-            get
-            {
-                return "Nur mit Origin or GotY Game-Edition";
-            }
-        }
-
-        public string BlizzCon
-        {
-            get
-            {
-                return "BlizzCon";
-            }
-        }
-        string Year = "2016";
         public string BlizzCon2
         {
+            //Because of the changeable Year, Blizzcon needs a special 
             get
             {
                 return "Nur mit BlizzCon " + Year + " Ticket";
@@ -369,109 +109,91 @@ namespace OverwatchLootBoxTracker.Lang
             }
         }
 
-        public string Prepurchase
-        {
-            get
-            {
-                return "Vorbesteller";
-            }
-        }
-        public string Prepurchase2
-        {
-            get
-            {
-                return "Nur durch Vorbestellung";
-            }
-        }
+        #region Variablen
 
+        #region Welcome Screen
 
+        public string Welcome { get; }
+        public string ChangesTitle { get; }
+        public string ChangesText { get; set; }
+        #endregion
+        #region All Settings
 
-        //Remainint Text
+        public string Settings { get; }
+        public string LangSettings { get; }
+        public string MoreCost { get; }
+        public string Back { get; }
+        public string DeleteSaves { get; }
+        public string DeleteSavesS { get; }
+        #endregion
 
-        public string remaining1
-        {
-            get
-            {
-                return "Kosten für alle übrigen Items:";
-                //return "Kosten für restliche Items:";
-            }
-        }
+        //On Close
+        public string Close { get; }
+        public string AppClose { get; }
 
-        public string remaining2
-        {
-            get
-            {
-                return "Credits und";
-            }
-        }
+        #region Overlay Text
 
-        public string Credits
-        {
-            get
-            {
-                return "Credits";
-            }
-        }
-        //For "More Infos about remaining Costs"
-        public string remAll
-        {
-            get
-            {
-                return "Kosten für alle übrigen Items:";
-                //return "Kosten für alle restliche Items:";
-            }
-        }
-        public string remNonEvent
-        {
-            get
-            {
-                return "Kosten für alle übrigen nicht-Event-Items:";
-                //return "Kosten für alle restliche nicht-Event-Items:";
-            }
-        }
+        public string Skin { get; }
+        public string Emotes { get; }
+        public string VictoryPoses { get; }
+        public string VoiceLines { get; }
+        public string Sprays { get; }
+        public string HighlightIntros { get; }
+        public string Weapons { get; }
+        public string PlayerIcons { get; }
 
-        public string remEvent
-        {
-            get
-            {
-                return "Kosten für alle übrigen Event Items:";
-                //return "Kosten für alle restliche Event Items:";
-            }
-        }
+        public string Summer { get; }//Events
+        public string Halloween { get; }
+        public string Winter { get; }
+        public string Rooster { get; }
+        public string Dog { get; }
+        public string Uprising { get; }
+        public string Annyver { get; }
 
-        public string remWeapons
-        {
-            get
-            {
-                return "Kosten für alle übrigen Waffen:";
-                //return "Kosten für alle restliche Waffen:";
-            }
-        }
+        public string OWLeague { get; }//Overwatch League
+        #endregion
+        #region OWLeague
 
+        public string OWL_Boston_Uprising { get; }
+        public string OWL_Dallas_Fuel { get; }
+        public string OWL_Florida_Mayhem { get; }
+        public string OWL_Houston_Outlaws { get; }
+        public string OWL_London_Spitfire { get; }
+        public string OWL_Los_Angeles_Gladiators { get; }
+        public string OWL_Los_Angeles_Valiant { get; }
+        public string OWL_New_York_Excelsior { get; }
+        public string OWL_Philadelphia_Fusion { get; }
+        public string OWL_San_Francisco_Shock { get; }
+        public string OWL_Seoul_Dynasty { get; }
+        public string OWL_Shanghai_Dragons { get; }
+        #endregion
+        #region Non Obtainable Skins
 
-        //Default Items
-        public string Classic
-        {//Skin
-            get
-            {
-                return "Classic";
-            }
-        }
+        public string Unknown { get; }
+        public string OriginGotY { get; }
+        public string OriginGotY2 { get; }
+        public string BlizzCon { get; }
+        public string Prepurchase { get; }
+        public string Prepurchase2 { get; }
+        #endregion
+        #region Remainint Text
 
-        public string Heroic
-        {//Emote, Victory Pose, Highlight Intro
-            get
-            {
-                return "Heroic";
-            }
-        }
+        public string remaining1 { get; }
+        public string remaining2 { get; }
+        public string Credits { get; }
 
-        public string Default
-        {//Weapon
-            get
-            {
-                return "Default";
-            }
-        }
+        public string remAll { get; }//For "More Infos about remaining Costs"
+        public string remNonEvent { get; }
+        public string remEvent { get; }
+        public string remWeapons { get; }
+        #endregion
+        #region Default Items
+
+        public string Classic { get; }//Skin
+        public string Heroic { get; }//Emote, Victory Pose, Highlight Intro
+        public string Default { get; }//Weapon
+        #endregion
+
+        #endregion
     }
 }

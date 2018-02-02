@@ -10,16 +10,16 @@ namespace OverwatchLootBoxTracker.Translate
 {
     class L_DVa : PictureBox
     {
-        Languages.English.Heroes.EN_DVa EN;
-        Languages.German.Heroes.DE_DVa DE;
+        Languages.English.Heroes.DVa EN;
+        Languages.German.Heroes.DVa DE;
         string myLang;
 
         public L_DVa(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_DVa();
-            DE = new Languages.German.Heroes.DE_DVa();
+            EN = new Languages.English.Heroes.DVa();
+            DE = new Languages.German.Heroes.DVa();
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\D.Va_link.png");
@@ -213,6 +213,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Junebug_SK;
+                }
+            }
+        }
+
+        public string Black_Cat_SK//15
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Black_Cat_SK;
+                }
+                else
+                {
+                    return EN.Black_Cat_SK;
                 }
             }
         }
@@ -612,6 +627,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.LOL_VL;
+                }
+            }
+        }
+
+        public string Nice_try_VL//22
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Nice_try_VL;
+                }
+                else
+                {
+                    return EN.Nice_try_VL;
                 }
             }
         }

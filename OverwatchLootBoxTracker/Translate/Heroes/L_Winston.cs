@@ -10,16 +10,16 @@ namespace OverwatchLootBoxTracker.Translate
 {
     class L_Winston : PictureBox
     {
-        Languages.English.Heroes.EN_Winston EN;
-        Languages.German.Heroes.DE_Winston DE;
+        Languages.English.Heroes.Winston EN;
+        Languages.German.Heroes.Winston DE;
         string myLang;
 
         public L_Winston(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Winston();
-            DE = new Languages.German.Heroes.DE_Winston();
+            EN = new Languages.English.Heroes.Winston();
+            DE = new Languages.German.Heroes.Winston();
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\Winston_link.png");

@@ -8,377 +8,98 @@ namespace OverwatchLootBoxTracker.Lang
 {
     class L_EN
     {
-        string Changes;
+        string Year = "2016"; //Pls do NOT Change this!
 
         public L_EN()
         {
-            ChangesT();
+            //You're able to edit here everything in between all " Symbols
+
+            ChangesText = "\n\n\nBeta Version!\n\nFeatures:\n - Save Skins\n - Save Emotes\n - Save Victory Poses\n\nNewest Addings:\nNew Menu!\nHero items can now be displayed.\nAdded Overwatch League Skins and Blizzardworld Items\nLess lag when changing status of an item\n\nLanguages:\n- English";
+
+            #region Welcome Screen
+            Welcome = "Welcome";
+            ChangesTitle = "Changes";
+            #endregion
+            #region All Settings
+            Settings = "Settings";
+            LangSettings = "Change Language";
+            MoreCost = "More info about costs";
+            Back = "Back";
+            DeleteSaves = "Because of changed Saves we have to delete all saves.\nDirectory: C:\\USER\\USERNAME\\AppData\\Local\\OWItemTracker\n\nOK for Delete\nCancel to Close the App (to backup and check all old files)";
+            DeleteSavesS = "Successfully deleted!";
+            #endregion
+
+            //On Close
+            Close = "Close";
+            AppClose = "Test_EN";
+
+            #region Categories
+            Skin = "Skins";
+            Emotes = "Emotes";
+            VictoryPoses = "Victory Poses";
+            VoiceLines = "Voice Lines";
+            Sprays = "Sprays";
+            HighlightIntros = "Highlight Intros";
+            Weapons = "Weapons";
+            PlayerIcons = "Player Icons";
+            // Overwatch League
+            OWLeague = "Overwatch League";
+            #endregion
+            #region Events
+            Summer = "Summer Games";
+            Halloween = "Halloween Terror";
+            Winter = "Winter Wonderland";
+            Rooster = "Year of the Rooster";
+            Dog = "Year of the Dog";
+            Uprising = "Overwatch Uprising";
+            Annyver = "Annyversary";
+            #endregion
+            #region OWLeague
+            OWL_Boston_Uprising = "Boston Uprising";
+            OWL_Dallas_Fuel = "Dallas Fuel";
+            OWL_Florida_Mayhem = "Florida Mayhem";
+            OWL_Houston_Outlaws = "Houston Outlaws";
+            OWL_London_Spitfire = "London Spitfire";
+            OWL_Los_Angeles_Gladiators = "Los Angeles Gladiators";
+            OWL_Los_Angeles_Valiant = "Los Angeles Valiant";
+            OWL_New_York_Excelsior = "New York Excelsior";
+            OWL_Philadelphia_Fusion = "Philadelphia Fusion";
+            OWL_San_Francisco_Shock = "San Francisco Shock";
+            OWL_Seoul_Dynasty = "Seoul Dynasty";
+            OWL_Shanghai_Dragons = "Shanghai Dragons";
+            #endregion
+            #region Non Obtainable Skins
+            Unknown = "?";
+            OriginGotY = "Origin/GotY";
+            OriginGotY2 = "Only /w Origin or GotY Edition";
+            BlizzCon = "BlizzCon";
+            Prepurchase = "Prepurchase";
+            Prepurchase2 = "Only /w Prepurchase";
+            #endregion
+            #region Remainint Text
+            remaining1 = "Remaining costs of all items:";
+            remaining2 = "Credits and";
+            Credits = "Credits";
+
+            //For "More Infos about remaining Costs"
+            remAll = "Remaining costs of all items:";
+            remNonEvent = "Remaining costs of all non-event items:";
+            remEvent = "Remaining costs of all event items:";
+            //return "Costs of remaining event Items:";
+            remWeapons = "Remaining costs of all weapon items:";
+            #endregion
+            #region Default Items
+            Classic = "Classic";//Skin
+            Heroic = "Heroic";//Emote, Victory Pose, Highlight Intro
+            Default = "Default";//Weapon
+            #endregion
+
+
         }
 
-        private void ChangesT()
-        {
-            Changes = "\n\n\nBeta Version!\n\nFeatures:\n - Save Skins\n - Save Emotes\n - Save Victory Poses\n\nNewest Addings:\nNew Menu!\nHero items can now be displayed.\nAdded Overwatch League Skins and Blizzardworld Items\nLess lag when changing status of an item\n\nLanguages:\n- English";
-        }
-
-
-        #region Welcome Screen
-
-        public string Welcome
-        {
-            get
-            {
-                return "Welcome";
-            }
-        }
-
-        public string ChangesTitle
-        {
-            get
-            {
-                return "Changes";
-            }
-        }
-
-        public string ChangesText
-        {
-            get
-            {
-                return Changes;
-            }
-        }
-
-        #endregion
-
-        #region All Settings
-
-        public string Settings
-        {
-            get
-            {
-                return "Settings";
-            }
-        }
-
-        public string LangSettings
-        {
-            get
-            {
-                return "Change Language";
-            }
-        }
-
-        public string MoreCost
-        {
-            get
-            {
-                return "More info about costs";
-            }
-        }
-
-        public string Back
-        {
-            get
-            {
-                return "Back";
-            }
-        }
-
-        public string DeleteSaves
-        {
-            get
-            {
-                return "Because of changed Saves we have to delete all saves.\nDirectory: C:\\USER\\USERNAME\\AppData\\Local\\OWItemTracker\n\nOK for Delete\nCancel to Close the App (to backup and check all old files)";
-            }
-        }
-
-        public string DeleteSavesS
-        {
-            get
-            {
-                return "Successfully deleted!";
-            }
-        }
-
-        #endregion
-
-        //On Close
-
-        public string Close
-        {
-            get
-            {
-                return "Close";
-            }
-        }
-
-        public string AppClose
-        {
-            get
-            {
-                return "Test_EN";
-            }
-        }
-
-
-        #region Overlay Text
-
-        public string Skin
-        {
-            get
-            {
-                return "Skins";
-            }
-        }
-
-        public string Emotes
-        {
-            get
-            {
-                return "Emotes";
-            }
-        }
-
-        public string VictoryPoses
-        {
-            get
-            {
-                return "Victory Poses";
-            }
-        }
-
-        public string VoiceLines
-        {
-            get
-            {
-                return "Voice Lines";
-            }
-        }
-
-        public string Sprays
-        {
-            get
-            {
-                return "Sprays";
-            }
-        }
-
-        public string HighlightIntros
-        {
-            get
-            {
-                return "Highlight Intros";
-            }
-        }
-
-        public string Weapons
-        {
-            get
-            {
-                return "Weapons";
-            }
-        }
-
-        public string PlayerIcons
-        {
-            get
-            {
-                return "Player Icons";
-            }
-        }
-        //Events
-        public string Summer
-        {
-            get
-            {
-                return "Summer Games";
-            }
-        }
-
-        public string Halloween
-        {
-            get
-            {
-                return "Halloween Terror";
-            }
-        }
-
-        public string Winter
-        {
-            get
-            {
-                return "Winter Wonderland";
-            }
-        }
-
-        public string Rooster
-        {
-            get
-            {
-                return "Year of the Rooster";
-            }
-        }
-
-        public string Uprising
-        {
-            get
-            {
-                return "Overwatch Uprising";
-            }
-        }
-
-        public string Annyver
-        {
-            get
-            {
-                return "Annyversary";
-            }
-        }
-        // Overwatch League
-        public string OWLeague
-        {
-            get
-            {
-                return "Overwatch League";
-            }
-        }
-
-        #endregion
-
-        #region OWLeague
-
-        public string OWL_Boston_Uprising
-        {
-            get
-            {
-                return "Boston Uprising";
-            }
-        }
-
-        public string OWL_Dallas_Fuel
-        {
-            get
-            {
-                return "Dallas Fuel";
-            }
-        }
-
-        public string OWL_Florida_Mayhem
-        {
-            get
-            {
-                return "Florida Mayhem";
-            }
-        }
-
-        public string OWL_Houston_Outlaws
-        {
-            get
-            {
-                return "Houston Outlaws";
-            }
-        }
-
-        public string OWL_London_Spitfire
-        {
-            get
-            {
-                return "London Spitfire";
-            }
-        }
-
-        public string OWL_Los_Angeles_Gladiators
-        {
-            get
-            {
-                return "Los Angeles Gladiators";
-            }
-        }
-
-        public string OWL_Los_Angeles_Valiant
-        {
-            get
-            {
-                return "Los Angeles Valiant";
-            }
-        }
-
-        public string OWL_New_York_Excelsior
-        {
-            get
-            {
-                return "New York Excelsior";
-            }
-        }
-
-        public string OWL_Philadelphia_Fusion
-        {
-            get
-            {
-                return "Philadelphia Fusion";
-            }
-        }
-
-        public string OWL_San_Francisco_Shock
-        {
-            get
-            {
-                return "San Francisco Shock";
-            }
-        }
-
-        public string OWL_Seoul_Dynasty
-        {
-            get
-            {
-                return "Seoul Dynasty";
-            }
-        }
-
-        public string OWL_Shanghai_Dragons
-        {
-            get
-            {
-                return "Shanghai Dragons";
-            }
-        }
-
-        #endregion
-
-        #region Non Obtainable Skins
-
-        public string Unknown
-        {
-            get
-            {
-                return "?";
-            }
-        }
-
-        public string OriginGotY
-        {
-            get
-            {
-                return "Origin/GotY";
-            }
-        }
-        public string OriginGotY2
-        {
-            get
-            {
-                return "Only /w Origin or GotY Edition";
-            }
-        }
-
-        public string BlizzCon
-        {
-            get
-            {
-                return "BlizzCon";
-            }
-        }
-        string Year = "2016";
         public string BlizzCon2
         {
+            //Because of the changeable Year, Blizzcon needs a special 
             get
             {
                 return "Only /w BlizzCon " + Year + " Ticket";
@@ -389,112 +110,90 @@ namespace OverwatchLootBoxTracker.Lang
             }
         }
 
-        public string Prepurchase
-        {
-            get
-            {
-                return "Prepurchase";
-            }
-        }
-        public string Prepurchase2
-        {
-            get
-            {
-                return "Only /w Prepurchase";
-            }
-        }
+        #region Variablen
 
+        #region Welcome Screen
+
+        public string Welcome { get; }
+        public string ChangesTitle { get; }
+        public string ChangesText { get; set; }
+        #endregion
+        #region All Settings
+
+        public string Settings { get; }
+        public string LangSettings { get; }
+        public string MoreCost { get; }
+        public string Back { get; }
+        public string DeleteSaves { get; }
+        public string DeleteSavesS { get; }
         #endregion
 
+        //On Close
+        public string Close { get; }
+        public string AppClose { get; }
+
+        #region Overlay Text
+
+        public string Skin { get; }
+        public string Emotes { get; }
+        public string VictoryPoses { get; }
+        public string VoiceLines { get; }
+        public string Sprays { get; }
+        public string HighlightIntros { get; }
+        public string Weapons { get; }
+        public string PlayerIcons { get; }
+
+        public string Summer { get; }//Events
+        public string Halloween { get; }
+        public string Winter { get; }
+        public string Rooster { get; }
+        public string Dog { get; }
+        public string Uprising { get; }
+        public string Annyver { get; }
+
+        public string OWLeague { get; }//Overwatch League
+        #endregion
+        #region OWLeague
+
+        public string OWL_Boston_Uprising { get; }
+        public string OWL_Dallas_Fuel { get; }
+        public string OWL_Florida_Mayhem { get; }
+        public string OWL_Houston_Outlaws { get; }
+        public string OWL_London_Spitfire { get; }
+        public string OWL_Los_Angeles_Gladiators { get; }
+        public string OWL_Los_Angeles_Valiant { get; }
+        public string OWL_New_York_Excelsior { get; }
+        public string OWL_Philadelphia_Fusion { get; }
+        public string OWL_San_Francisco_Shock { get; }
+        public string OWL_Seoul_Dynasty { get; }
+        public string OWL_Shanghai_Dragons { get; }
+        #endregion
+        #region Non Obtainable Skins
+
+        public string Unknown { get; }
+        public string OriginGotY { get; }
+        public string OriginGotY2 { get; }
+        public string BlizzCon { get; }
+        public string Prepurchase { get; }
+        public string Prepurchase2 { get; }
+        #endregion
         #region Remainint Text
 
-        public string remaining1
-        {
-            get
-            {
-                return "Remaining costs of all items:";
-                //return "Cost of remaining items:";
-            }
-        }
+        public string remaining1 { get; }
+        public string remaining2 { get; }
+        public string Credits { get; }
 
-        public string remaining2
-        {
-            get
-            {
-                return "Credits and";
-            }
-        }
-
-        public string Credits
-        {
-            get
-            {
-                return "Credits";
-            }
-        }
-        //For "More Infos about remaining Costs"
-        public string remAll
-        {
-            get
-            {
-                return "Remaining costs of all items:";
-                //return "Costs of all remaining Items:";
-            }
-        }
-        public string remNonEvent
-        {
-            get
-            {
-                return "Remaining costs of all non-event items:";
-                //return "Costs of remaining non-event Items:";
-            }
-        }
-
-        public string remEvent
-        {
-            get
-            {
-                return "Remaining costs of all event items:";
-                //return "Costs of remaining event Items:";
-            }
-        }
-
-        public string remWeapons
-        {
-            get
-            {
-                return "Remaining costs of all weapon items:";
-                //return "Costs of remaining Weapon Items:";
-            }
-        }
-
+        public string remAll { get; }//For "More Infos about remaining Costs"
+        public string remNonEvent { get; }
+        public string remEvent { get; }
+        public string remWeapons { get; }
         #endregion
-
         #region Default Items
 
-        public string Classic
-        {//Skin
-            get
-            {
-                return "Classic";
-            }
-        }
-
-        public string Heroic
-        {//Emote, Victory Pose, Highlight Intro
-            get
-            {
-                return "Heroic";
-            }
-        }
-
-        public string Default
-        {//Weapon
-            get
-            {
-                return "Default";
-            }
-        }
+        public string Classic { get; }//Skin
+        public string Heroic { get; }//Emote, Victory Pose, Highlight Intro
+        public string Default { get; }//Weapon
+        #endregion
 
         #endregion
     }

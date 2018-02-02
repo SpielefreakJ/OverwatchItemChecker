@@ -22,7 +22,7 @@ namespace OverwatchLootBoxTracker
             Translate = new Translate.L_Translate(Lang);
         }
 
-        public void ChangeImage(string Hero, string Category, int Itemname)
+        public bool ChangeImage(string Hero, string Category, int Itemname)
         {
             try
             {
@@ -59,10 +59,14 @@ namespace OverwatchLootBoxTracker
                 #endregion
 
                 Image = Image.FromFile("Images\\Items\\" + myHero + "\\" + myCategory + "\\" + myItemname + ".png");
+
+                return true;
             }
             catch
             {
-                MessageBox.Show("An Error has appeared!\nPlease Post this Issue on GitHub with the Error Code\nError Code: 2", "Error 2", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                //MessageBox.Show("An Error has appeared!\nPlease Post this Issue on GitHub with the Error Code\nError Code: 2", "Error 2", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("An Error has appeared!\nThere's probably no Image right now. Sorry for that.\nError Code: 2", "Error 2", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
             }
         }
 

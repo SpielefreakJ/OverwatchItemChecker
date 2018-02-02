@@ -10,16 +10,16 @@ namespace OverwatchLootBoxTracker.Translate
 {
     class L_Reinhardt : PictureBox
     {
-        Languages.English.Heroes.EN_Reinhardt EN;
-        Languages.German.Heroes.DE_Reinhardt DE;
+        Languages.English.Heroes.Reinhardt EN;
+        Languages.German.Heroes.Reinhardt DE;
         string myLang;
 
         public L_Reinhardt(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Reinhardt();
-            DE = new Languages.German.Heroes.DE_Reinhardt();
+            EN = new Languages.English.Heroes.Reinhardt();
+            DE = new Languages.German.Heroes.Reinhardt();
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\Reinhardt_link.png");

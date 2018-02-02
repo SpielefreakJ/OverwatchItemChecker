@@ -10,16 +10,16 @@ namespace OverwatchLootBoxTracker.Translate
 {
     class L_Doomfist : PictureBox
     {
-        Languages.English.Heroes.EN_Doomfist EN;
-        Languages.German.Heroes.DE_Doomfist DE;
+        Languages.English.Heroes.Doomfist EN;
+        Languages.German.Heroes.Doomfist DE;
         string myLang;
 
         public L_Doomfist(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Doomfist();
-            DE = new Languages.German.Heroes.DE_Doomfist();
+            EN = new Languages.English.Heroes.Doomfist();
+            DE = new Languages.German.Heroes.Doomfist();
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\Doomfist_link.png");
@@ -209,7 +209,7 @@ namespace OverwatchLootBoxTracker.Translate
             {
                 if (myLang == "DE")
                 {
-                    return DE.Spirit_SK;
+                    return DE.Blackhand_SK;
                 }
                 else
                 {
@@ -508,6 +508,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.You_must_be_joking_VL;
+                }
+            }
+        }
+
+        public string You_test_my_patience_VL
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.You_test_my_patience_VL;
+                }
+                else
+                {
+                    return EN.You_test_my_patience_VL;
                 }
             }
         }

@@ -10,16 +10,16 @@ namespace OverwatchLootBoxTracker.Translate
 {
     class L_Soldier_76 : PictureBox
     {
-        Languages.English.Heroes.EN_Soldier_76 EN;
-        Languages.German.Heroes.DE_Soldier_76 DE;
+        Languages.English.Heroes.Soldier_76 EN;
+        Languages.German.Heroes.Soldier_76 DE;
         string myLang;
 
         public L_Soldier_76(string Lang)
         {
             myLang = Lang;
 
-            EN = new Languages.English.Heroes.EN_Soldier_76();
-            DE = new Languages.German.Heroes.DE_Soldier_76();
+            EN = new Languages.English.Heroes.Soldier_76();
+            DE = new Languages.German.Heroes.Soldier_76();
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\Soldier_76_link.png");
