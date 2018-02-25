@@ -234,7 +234,7 @@ namespace OverwatchLootBoxTracker.Translate
         }
 
         public string Blackwatch_SK//13
-        {//Uprising 2017
+        {//Uprising 17
             get
             {
                 if (myLang == "DE")
@@ -249,7 +249,7 @@ namespace OverwatchLootBoxTracker.Translate
         }
 
         public string Sentai_SK//14
-        {//Annyver 2017
+        {//Annyver 17
             get
             {
                 if (myLang == "DE")
@@ -259,6 +259,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Sentai_SK;
+                }
+            }
+        }
+
+        public string Baihu_SK//15
+        {//Lunar 18
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Baihu_SK;
+                }
+                else
+                {
+                    return EN.Baihu_SK;
                 }
             }
         }

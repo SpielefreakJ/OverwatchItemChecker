@@ -143,21 +143,6 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Legendary
-        public string Ecopoint_Antarctica_SK//16
-        {
-            get
-            {
-                if (myLang == "DE")
-                {
-                    return DE.Ecopoint_Antarctica_SK;
-                }
-                else
-                {
-                    return EN.Ecopoint_Antarctica_SK;
-                }
-            }
-        }
-
         public string Firefighter_SK//7
         {
             get
@@ -289,6 +274,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Beekeeper_SK;
+                }
+            }
+        }
+
+        public string Ecopoint_Antarctica_SK//16
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Ecopoint_Antarctica_SK;
+                }
+                else
+                {
+                    return EN.Ecopoint_Antarctica_SK;
                 }
             }
         }

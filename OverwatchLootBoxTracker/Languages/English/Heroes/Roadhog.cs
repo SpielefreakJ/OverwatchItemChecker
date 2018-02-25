@@ -41,6 +41,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             Can_Crusher_EM = "Can Crusher";
             Headbanging_EM = "Headbanging";
             Tuckered_Out_EM = "Tuckered out";
+            Secret_friend_EM = "SECRET FRIEND";//Lunar 18
             Dance_EM = "Dance";//Annyver 17
             #endregion
             #region Victory Poses
@@ -86,6 +87,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         public string Can_Crusher_EM { get; }
         public string Headbanging_EM { get; }
         public string Tuckered_Out_EM { get; }
+        public string Secret_friend_EM { get; }//Lunar 18
         public string Dance_EM { get; }//Annyver 17
         #endregion
         #region Victory Poses

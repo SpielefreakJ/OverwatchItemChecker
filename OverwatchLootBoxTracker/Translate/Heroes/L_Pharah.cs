@@ -277,6 +277,21 @@ namespace OverwatchLootBoxTracker.Translate
                 }
             }
         }
+
+        public string Qinglong_SK//16
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Qinglong_SK;
+                }
+                else
+                {
+                    return EN.Qinglong_SK;
+                }
+            }
+        }
         
 
         //Emotes

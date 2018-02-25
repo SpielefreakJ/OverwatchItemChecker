@@ -218,21 +218,6 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Nova_SK//15
-        {
-            get
-            {
-                if (myLang == "DE")
-                {
-                    return DE.Huntress_SK;
-                }
-                else
-                {
-                    return EN.Nova_SK;
-                }
-            }
-        }
-
         public string Noire_SK//12
         {//Prepurchase Special
             get
@@ -274,6 +259,36 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Talon_SK;
+                }
+            }
+        }
+
+        public string Nova_SK//15
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Huntress_SK;
+                }
+                else
+                {
+                    return EN.Nova_SK;
+                }
+            }
+        }
+
+        public string Black_Lily_SK//16
+        {//Lunar 18
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Black_Lily_SK;
+                }
+                else
+                {
+                    return EN.Black_Lily_SK;
                 }
             }
         }
@@ -460,6 +475,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Toast_VP;
+                }
+            }
+        }
+
+        public string Fans_VP//7
+        {//Lunar 18
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Fans_VP;
+                }
+                else
+                {
+                    return EN.Fans_VP;
                 }
             }
         }

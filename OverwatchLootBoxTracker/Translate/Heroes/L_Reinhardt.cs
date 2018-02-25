@@ -263,21 +263,6 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Crusader_SK//16
-        {
-            get
-            {
-                if (myLang == "DE")
-                {
-                    return DE.Greifhardt_SK;
-                }
-                else
-                {
-                    return EN.Crusader_SK;
-                }
-            }
-        }
-
         public string Wujing_SK//15
         {//Rooster 2017
             get
@@ -289,6 +274,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Wujing_SK;
+                }
+            }
+        }
+
+        public string Crusader_SK//16
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Greifhardt_SK;
+                }
+                else
+                {
+                    return EN.Crusader_SK;
                 }
             }
         }

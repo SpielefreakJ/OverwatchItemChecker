@@ -32,6 +32,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             Huntress_SK = "Huntress";
             Noire_SK = "Noire";//Prepurchase Special
             Côte_DAzur_SK = "Côte D'Azur";//Summer 17
+            Black_Lily_SK = "BLACK LILY";//Lunar 18
             Talon_SK = "Talon";//Uprising 17
             #endregion
             #region Emotes
@@ -51,6 +52,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             Medal_VP = "Medal";//Summer 16
             RIP_VP = "R.I.P.";//Halloween 16
             Toast_VP = "Toast";//Winter 17
+            Fans_VP = "FANS";//Lunar 18
             #endregion
         }
 
@@ -76,6 +78,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         public string Huntress_SK { get; }
         public string Noire_SK { get; }//Prepurchase Special
         public string Côte_DAzur_SK { get; }//Summer 17
+        public string Black_Lily_SK { get; }//Lunar 18
         public string Talon_SK { get; }//Uprising 17
         #endregion
         #region Emotes
@@ -95,6 +98,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         public string Medal_VP { get; }//Summer 16
         public string RIP_VP { get; }//Halloween 16
         public string Toast_VP { get; }//Winter 17
+        public string Fans_VP { get; }//Lunar 18
         #endregion
 
         #endregion

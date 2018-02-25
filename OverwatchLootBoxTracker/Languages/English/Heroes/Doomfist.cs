@@ -37,6 +37,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             Ready_for_Battle_EM = "Ready for Battle";
             Take_a_knee_EM = "Take a knee";
             Thumbs_Down_EM = "Thumbs Down";
+            Crushing_EM = "CRUSHING";//Lunar 18
             #endregion
             #region Victory Poses
             //Rare
@@ -94,6 +95,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         public string Ready_for_Battle_EM { get; }
         public string Take_a_knee_EM { get; }
         public string Thumbs_Down_EM { get; }
+        public string Crushing_EM { get; }//Lunar 18
         #endregion
         #region Victory Poses
 

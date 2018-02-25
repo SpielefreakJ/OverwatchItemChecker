@@ -54,6 +54,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             Medal_VP = "MEDAILLE";//Summer 17
             Pumpkin_VP = "KÜRBIS";//Halloween 17
             RIP_VP = "R.I.P.";//Halloween 16
+            Fireworks_VP = "RAKETEN";//Lunar 18
             #endregion
         }
 
@@ -101,6 +102,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         public string Medal_VP { get; }//Summer 17
         public string Pumpkin_VP { get; }//Halloween 17
         public string RIP_VP { get; }//Halloween 16
+        public string Fireworks_VP { get; }//Lunar 18
         #endregion
 
         #endregion

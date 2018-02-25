@@ -14,7 +14,7 @@ namespace OverwatchLootBoxTracker.Lang
         {
             //You're able to edit here everything in between all " Symbols
 
-            ChangesText = "\n\n\nBeta Version!\n\nFeatures:\n - Save Skins\n - Save Emotes\n - Save Victory Poses\n\nNewest Addings:\nNew Menu!\nHero items can now be displayed.\nAdded Overwatch League Skins and Blizzardworld Items\nLess lag when changing status of an item\n\nLanguages:\n- English";
+            ChangesText = "\n\n\nBeta Version!\n\nFeatures:\n - Save Skins\n - Save Emotes\n - Save Victory Poses\n\nNewest Addings:\nNew Menu!\nHero items can now be displayed.\nAdded Overwatch League Skins as well as Winter, Lunar and Blizzardworld Items\nLess lag when changing status of an item\n\nLanguages:\n- English\n- German";
 
             #region Welcome Screen
             Welcome = "Welcome";

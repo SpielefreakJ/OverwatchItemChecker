@@ -49,6 +49,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             The_Thinker_VP = "DENKERPOSE";
             Medal_VP = "MEDAILLE";//Summer 16
             RIP_VP = "R.I.P.";//Halloween 16
+            Sparklers_VP = "WUNDERKERZEN";//Lunar 18
             Peanut_Butter_VP = "ERDNUSSBUTTER";//Uprising 17
             #endregion
         }
@@ -92,6 +93,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         public string The_Thinker_VP { get; }
         public string Medal_VP { get; }//Summer 16
         public string RIP_VP { get; }//Halloween 16
+        public string Sparklers_VP { get; }//Lunar 18
         public string Peanut_Butter_VP { get; }//Uprising 17
         #endregion
 

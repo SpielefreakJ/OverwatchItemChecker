@@ -238,7 +238,7 @@ namespace OverwatchLootBoxTracker.Translate
             {
                 if (myLang == "DE")
                 {
-                    return DE.Tulum_SK;
+                    return DE.Rime_SK;
                 }
                 else
                 {
@@ -433,21 +433,6 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Toast_VP//5
-        {//Winter 17
-            get
-            {
-                if (myLang == "DE")
-                {
-                    return DE.Pumpkinette_VP;
-                }
-                else
-                {
-                    return EN.Toast_VP;
-                }
-            }
-        }
-
         public string Sparklers_VP//6
         {//Rooster 17
             get
@@ -459,6 +444,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Sparklers_VP;
+                }
+            }
+        }
+
+        public string Toast_VP//7
+        {//Winter 17
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Pumpkinette_VP;
+                }
+                else
+                {
+                    return EN.Toast_VP;
                 }
             }
         }

@@ -278,6 +278,21 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
+        public string Zhuque_SK//16
+        {//Lunar817
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Zhuque_SK;
+                }
+                else
+                {
+                    return EN.Zhuque_SK;
+                }
+            }
+        }
+
 
         //Emotes
         //Epic

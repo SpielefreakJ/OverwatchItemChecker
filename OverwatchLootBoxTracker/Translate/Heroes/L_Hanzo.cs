@@ -158,21 +158,6 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Legendary
-        public string Kabuki_SK//14
-        {
-            get
-            {
-                if (myLang == "DE")
-                {
-                    return DE.Kabuki_SK;
-                }
-                else
-                {
-                    return EN.Kabuki_SK;
-                }
-            }
-        }
-
         public string Young_Hanzo_SK//8
         {
             get
@@ -259,6 +244,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Casual_SK;
+                }
+            }
+        }
+
+        public string Kabuki_SK//14
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Kabuki_SK;
+                }
+                else
+                {
+                    return EN.Kabuki_SK;
                 }
             }
         }

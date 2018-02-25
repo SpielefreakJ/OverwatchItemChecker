@@ -218,21 +218,6 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Butcher_SK//15
-        {
-            get
-            {
-                if (myLang == "DE")
-                {
-                    return DE.Sharkbait_SK;
-                }
-                else
-                {
-                    return EN.Butcher_SK;
-                }
-            }
-        }
-
         public string Junkensteins_Monster_SK//12
         {//Halloween 2016
             get
@@ -274,6 +259,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Ice_Fisherman_SK;
+                }
+            }
+        }
+
+        public string Butcher_SK//15
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Sharkbait_SK;
+                }
+                else
+                {
+                    return EN.Butcher_SK;
                 }
             }
         }
@@ -367,6 +367,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Dance_EM;
+                }
+            }
+        }
+
+        public string Secret_friend_EM//7
+        {//Lunar 18
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Secret_friend_EM;
+                }
+                else
+                {
+                    return EN.Secret_friend_EM;
                 }
             }
         }

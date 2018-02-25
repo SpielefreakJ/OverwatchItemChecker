@@ -34,6 +34,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             Vigilante_SK = "Vigilante";
             Lifeguard_SK = "Lifeguard";//Summer 17
             Van_Helsing_SK = "Van Helsing";//Halloween 17
+            Magistrate_SK = "MAGISTRATE";//Lunar 18
             Blackwatch_SK = "Blackwatch";//Uprising 17
             #endregion
             #region Emotes
@@ -52,6 +53,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             Over_the_shoulder_VP = "Over the shoulder";
             Take_it_easy_VP = "Take it easy";
             RIP_VP = "R.I.P.";//Halloween 16
+            Fire_in_the_hole_VP = "FIRE IN THE HOLE";//Lunar 18
             Showdown_VP = "Showdown";//Uprising 17
             #endregion
         }
@@ -79,6 +81,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         public string Vigilante_SK { get; }
         public string Lifeguard_SK { get; }//Summer 17
         public string Van_Helsing_SK { get; }//Halloween 17
+        public string Magistrate_SK { get; }//Lunar 18
         public string Blackwatch_SK { get; }//Uprising 17
         #endregion
         #region Emotes
@@ -97,6 +100,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         public string Over_the_shoulder_VP { get; }
         public string Take_it_easy_VP { get; }
         public string RIP_VP { get; }//Halloween 16
+        public string Fire_in_the_hole_VP { get; }//Lunar 18
         public string Showdown_VP { get; }//Uprising 17
         #endregion
 

@@ -113,21 +113,6 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Epic
-        public string Peacock_SK//15
-        {
-            get
-            {
-                if (myLang == "DE")
-                {
-                    return DE.Peacock_SK;
-                }
-                else
-                {
-                    return EN.Peacock_SK;
-                }
-            }
-        }
-
         public string Regal_SK//5
         {
             get
@@ -274,6 +259,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Oasis_SK;
+                }
+            }
+        }
+        //Epic
+        public string Peacock_SK//15
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Peacock_SK;
+                }
+                else
+                {
+                    return EN.Peacock_SK;
                 }
             }
         }
@@ -475,6 +475,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Light_Reading_VP;
+                }
+            }
+        }
+
+        public string Fan_VP//7
+        {//Lunar 18
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Fan_VP;
+                }
+                else
+                {
+                    return EN.Fan_VP;
                 }
             }
         }

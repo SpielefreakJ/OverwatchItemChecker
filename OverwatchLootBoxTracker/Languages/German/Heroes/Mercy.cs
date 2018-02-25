@@ -32,6 +32,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             IMP_SK = "DÄMON";
             Winged_Victory_SK = "SIEGESGÖTTIN";//Summer 17
             Witch_SK = "HEXE";//Halloween 16
+            Zhuque_SK = "ZHUQUE";//Lunar 18
             Combat_Medic_Ziegler_SK = "FELDSANITÄTERIN ZIEGLER";//Uprising 17
             #endregion
             #region Emotes
@@ -39,7 +40,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             Applause_EM = "APPLAUS";
             Caduceus_EM = "CADCEUS";
             No_Pulse_EM = "KEIN PULS";
-            Parasol_EM = "*";               //TB Translated
+            Parasol_EM = "SONNENSCHIRM";
             Relax_EM = "ENTSPANNT";
             The_best_Medicine_EM = "DIE BESTE MEDIZIN";
             Hustle_EM = "HUSTLE";//Annyver 17
@@ -79,6 +80,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         public string IMP_SK { get; }
         public string Winged_Victory_SK { get; }//Summer 17
         public string Witch_SK { get; }//Halloween 16
+        public string Zhuque_SK { get; }//Lunar 18
         public string Combat_Medic_Ziegler_SK { get; }//Uprising 17
         #endregion
         #region Emotes

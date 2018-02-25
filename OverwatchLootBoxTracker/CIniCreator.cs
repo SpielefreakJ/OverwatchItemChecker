@@ -204,7 +204,7 @@ namespace OverwatchLootBoxTracker
         }
 
         public void create8(string Hero)
-        {
+        {//BlizzardWorld Update
             inisHeroes = new IniStream(Path + "\\" + Hero + ".ini");
 
             if (Hero == "Hanzo")
@@ -226,6 +226,40 @@ namespace OverwatchLootBoxTracker
             if (Hero == "Genji" || Hero == "Mercy" || Hero == "Sombra" || Hero == "Tracer")
             {
                 inisHeroes.Write("EM07", "false");
+            }
+        }
+
+        public void create9(string Hero)
+        {//Lunar 18
+            inisHeroes = new IniStream(Path + "\\" + Hero + ".ini");
+
+            if (Hero == "Genji")
+            {
+                inisHeroes.Write("SK15", "false");
+            }
+            if (Hero == "Mercy" || Hero == "Pharah" || Hero == "Widowmaker")
+            {
+                inisHeroes.Write("SK16", "false");
+            }
+            if (Hero == "McCree" || Hero == "Zarya")
+            {
+                inisHeroes.Write("SK17", "false");
+            }
+            if (Hero == "Doomfist")
+            {
+                inisHeroes.Write("EM06", "false");
+            }
+            if (Hero == "Roadhog")
+            {
+                inisHeroes.Write("EM07", "false");
+            }
+            if (Hero == "McCree")
+            {
+                inisHeroes.Write("VP06", "false");
+            }
+            if (Hero == "Symmetra" || Hero == "Tracer" || Hero == "Widowmaker" || Hero == "Winston" || Hero == "Zarya")
+            {
+                inisHeroes.Write("VP07", "false");
             }
         }
     }

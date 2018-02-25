@@ -296,6 +296,21 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
+        public string Crushing_EM//6
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Crushing_EM;
+                }
+                else
+                {
+                    return EN.Crushing_EM;
+                }
+            }
+        }
+
 
         //Victory Poses
         //Rare

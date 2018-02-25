@@ -32,6 +32,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             IMP_SK = "IMP";
             Winged_Victory_SK = "Winged Victory";//Summer 17
             Witch_SK = "Witch";//Halloween 16
+            Zhuque_SK = "ZHUQUE";//Lunar 18
             Combat_Medic_Ziegler_SK = "Combat Medic Ziegler";//Uprising 17
             #endregion
             #region Emotes
@@ -78,6 +79,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         public string IMP_SK { get; }
         public string Winged_Victory_SK { get; }//Summer 17
         public string Witch_SK { get; }//Halloween 16
+        public string Zhuque_SK { get; }//Lunar 18
         public string Combat_Medic_Ziegler_SK { get; }//Uprising 17
         #endregion
         #region Emotes

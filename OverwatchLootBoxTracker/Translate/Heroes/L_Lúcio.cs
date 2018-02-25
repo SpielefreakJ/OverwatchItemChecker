@@ -158,21 +158,6 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Legendary
-        public string Capoeira_SK//15
-        {
-            get
-            {
-                if (myLang == "DE")
-                {
-                    return DE.Capoeira_SK;
-                }
-                else
-                {
-                    return EN.Capoeira_SK;
-                }
-            }
-        }
-
         public string Hippityhop_SK//8
         {
             get
@@ -274,6 +259,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Jazzy_SK;
+                }
+            }
+        }
+
+        public string Capoeira_SK//15
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Capoeira_SK;
+                }
+                else
+                {
+                    return EN.Capoeira_SK;
                 }
             }
         }

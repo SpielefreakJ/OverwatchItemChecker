@@ -51,6 +51,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             Dance_VP = "TANZEN";
             Medal_VP = "MEDAILLE";//Summer 17
             RIP_VP = "R.I.P.";//Halloween 16
+            Fan_VP = "FÄCHER";//Lunar 18
             Light_Reading_VP = "LEICHTE LEKTÜRE";//Uprising 17
             #endregion
         }
@@ -96,6 +97,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         public string Dance_VP { get; }
         public string Medal_VP { get; }//Summer 17
         public string RIP_VP { get; }//Halloween 16
+        public string Fan_VP { get; }//Lunar 18
         public string Light_Reading_VP { get; }//Uprising 17
         #endregion
 

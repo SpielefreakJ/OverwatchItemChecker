@@ -32,6 +32,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             Raindancer_SK = "REGENTÄNZERIN";
             Thunderbird_SK = "DONNERVOGEL";
             Security_Chief_SK = "SICHERHEITSCHEFIN";//Origin Special
+            Qinglong_SK = "QINGLING";//Lunar 18
             Bedouin_SK = "BEDUININ";//Annyver 2017
             #endregion
             #region Emotes
@@ -77,6 +78,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         public string Raindancer_SK { get; }
         public string Thunderbird_SK { get; }
         public string Security_Chief_SK { get; }//Origin Special
+        public string Qinglong_SK { get; }//Lunar 18
         public string Bedouin_SK { get; }//Annyver 2017
         #endregion
         #region Emotes

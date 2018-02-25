@@ -218,21 +218,6 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Magni_SK//16
-        {
-            get
-            {
-                if (myLang == "DE")
-                {
-                    return DE.Magni_SK;
-                }
-                else
-                {
-                    return EN.Magni_SK;
-                }
-            }
-        }
-
         public string Viking_SK//12
         {//Halloween 2017
             get
@@ -289,6 +274,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Ironclad_SK;
+                }
+            }
+        }
+
+        public string Magni_SK//16
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Magni_SK;
+                }
+                else
+                {
+                    return EN.Magni_SK;
                 }
             }
         }

@@ -30,6 +30,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             Bedouin_SK = "BEDUINE";
             Nomad_SK = "NOMADE";
             Oni_SK = "ONI";
+            Baihu_SK = "BAIHU";//Lunar 18
             Blackwatch_SK = "BLACKWATCH";//Uprising 17
             Sentai_SK = "SENTAI";//Annyver 17
             #endregion
@@ -102,6 +103,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         public string Bedouin_SK { get; }
         public string Nomad_SK { get; }
         public string Oni_SK { get; }
+        public string Baihu_SK { get; }//Lunar 18
         public string Blackwatch_SK { get; }//Uprising 17
         public string Sentai_SK { get; }//Annyver 17
         #endregion

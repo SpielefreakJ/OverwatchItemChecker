@@ -448,5 +448,20 @@ namespace OverwatchLootBoxTracker.Translate
                 }
             }
         }
+
+        public string Sparklers_VP//7
+        {//Lunar 18
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Sparklers_VP;
+                }
+                else
+                {
+                    return EN.Sparklers_VP;
+                }
+            }
+        }
     }
 }

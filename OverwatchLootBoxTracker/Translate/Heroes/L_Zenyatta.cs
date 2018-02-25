@@ -128,21 +128,6 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Carbon_Fiber_SK//15
-        {
-            get
-            {
-                if (myLang == "DE")
-                {
-                    return DE.Carbon_Fiber_SK;
-                }
-                else
-                {
-                    return EN.Carbon_Fiber_SK;
-                }
-            }
-        }
-
         public string Harmonious_SK//6
         {
             get
@@ -274,6 +259,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Sanzang_SK;
+                }
+            }
+        }
+        //Epic
+        public string Carbon_Fiber_SK//15
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Carbon_Fiber_SK;
+                }
+                else
+                {
+                    return EN.Carbon_Fiber_SK;
                 }
             }
         }

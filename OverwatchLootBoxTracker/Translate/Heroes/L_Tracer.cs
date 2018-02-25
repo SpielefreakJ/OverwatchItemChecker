@@ -113,7 +113,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Epic
-        public string Posh_SK//
+        public string Posh_SK//5
         {
             get
             {
@@ -505,6 +505,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.RIP_VP;
+                }
+            }
+        }
+
+        public string Fireworks_VP//7
+        {//Lunar 18
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Fireworks_VP;
+                }
+                else
+                {
+                    return EN.Fireworks_VP;
                 }
             }
         }

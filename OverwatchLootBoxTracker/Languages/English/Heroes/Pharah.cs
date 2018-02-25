@@ -32,6 +32,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             Raindancer_SK = "Raindancer";
             Thunderbird_SK = "Thunderbird";
             Security_Chief_SK = "Security Chief";//Origin Special
+            Qinglong_SK = "QINGLONG";//Lunar 18
             Bedouin_SK = "Bedouin";//Annyver 2017
             #endregion
             #region Emotes
@@ -77,6 +78,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         public string Raindancer_SK { get; }
         public string Thunderbird_SK { get; }
         public string Security_Chief_SK { get; }//Origin Special
+        public string Qinglong_SK { get; }//Lunar 18
         public string Bedouin_SK { get; }//Annyver 2017
         #endregion
         #region Emotes

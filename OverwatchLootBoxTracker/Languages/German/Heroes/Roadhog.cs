@@ -41,6 +41,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             Can_Crusher_EM = "DOSENQUETSCHER";
             Headbanging_EM = "HEADBANGING";
             Tuckered_Out_EM = "VÖLLIG ERSCHÖPFT";
+            Secret_friend_EM = "GEHEIMER FREUND";//Lunar 18
             Dance_EM = "TANZEN";//Annyver 17
             #endregion
             #region Victory Poses
@@ -86,6 +87,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         public string Can_Crusher_EM { get; }
         public string Headbanging_EM { get; }
         public string Tuckered_Out_EM { get; }
+        public string Secret_friend_EM { get; }//Lunar 18
         public string Dance_EM { get; }//Annyver 17
         #endregion
         #region Victory Poses

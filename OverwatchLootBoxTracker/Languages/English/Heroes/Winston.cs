@@ -30,7 +30,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             Explorer_SK = "Explorer";
             Safari_SK = "Safari";
             Yeti_SK = "Yeti";//Winter 16
-            Wukong_SK = "Wukong";//Rooster 17
+            Wukong_SK = "Wukong";//Lunar 17
             #endregion
             #region Emotes
             //Epic
@@ -49,6 +49,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             The_Thinker_VP = "The Thinker";
             Medal_VP = "Medal";//Summer 16
             RIP_VP = "R.I.P.";//Halloween 16
+            Sparklers_VP = "SPARKLERS";//Lunar 18
             Peanut_Butter_VP = "Peanut Butter";//Uprising 17
             #endregion
         }
@@ -92,6 +93,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         public string The_Thinker_VP { get; }
         public string Medal_VP { get; }//Summer 16
         public string RIP_VP { get; }//Halloween 16
+        public string Sparklers_VP { get; }//Lunar 18
         public string Peanut_Butter_VP { get; }//Uprising 17
         #endregion
 

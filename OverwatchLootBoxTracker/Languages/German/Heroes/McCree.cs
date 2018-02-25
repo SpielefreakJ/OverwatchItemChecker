@@ -22,7 +22,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             Sage_SK = "SALBEI";
             Wheat_SK = "WEIZEN";
             //Epic
-            On_The_Range_SK = "WITES LAND";
+            On_The_Range_SK = "WEITES LAND";
             Royal_SK = "MUSKELTIER";
             White_Hat_SK = "GET GUTE";
             American_SK = "AMERICAN";//Summer 16
@@ -34,6 +34,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             Vigilante_SK = "MASKIERTER RÄCHER";
             Lifeguard_SK = "RETTUNGSSCHWIMMER";//Summer 17
             Van_Helsing_SK = "VAN HELSING";//Halloween 17
+            Magistrate_SK = "MAGISTRATE";//Lunar 18
             Blackwatch_SK = "BLACKWATCH";//Uprising 17
             #endregion
             #region Emotes
@@ -52,6 +53,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             Over_the_shoulder_VP = "SCHULTERBLICK";
             Take_it_easy_VP = "SORGLOS";
             RIP_VP = "R.I.P.";//Halloween 16
+            Fire_in_the_hole_VP = "RAKETE";//Lunar 18
             Showdown_VP = "SHOWDOWN";//Uprising 17
             #endregion
         }
@@ -79,6 +81,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         public string Vigilante_SK { get; }
         public string Lifeguard_SK { get; }//Summer 17
         public string Van_Helsing_SK { get; }//Halloween 17
+        public string Magistrate_SK { get; }//Lunar 18
         public string Blackwatch_SK { get; }//Uprising 17
         #endregion
         #region Emotes
@@ -97,6 +100,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         public string Over_the_shoulder_VP { get; }
         public string Take_it_easy_VP { get; }
         public string RIP_VP { get; }//Halloween 16
+        public string Fire_in_the_hole_VP { get; }//Lunar 18
         public string Showdown_VP { get; }//Uprising 17
         #endregion
 

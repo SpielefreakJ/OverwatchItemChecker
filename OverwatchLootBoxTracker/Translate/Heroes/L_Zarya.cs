@@ -218,21 +218,6 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Barbarian_SK//16
-        {
-            get
-            {
-                if (myLang == "DE")
-                {
-                    return DE.Industrial_SK;
-                }
-                else
-                {
-                    return EN.Barbarian_SK;
-                }
-            }
-        }
-
         public string Champion_SK//12
         {//Summer 2016
             get
@@ -289,6 +274,36 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Cyberian_SK;
+                }
+            }
+        }
+
+        public string Barbarian_SK//16
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Industrial_SK;
+                }
+                else
+                {
+                    return EN.Barbarian_SK;
+                }
+            }
+        }
+
+        public string Xuanwu_SK//17
+        {//Lunar 18
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Xuanwu_SK;
+                }
+                else
+                {
+                    return EN.Xuanwu_SK;
                 }
             }
         }
@@ -485,11 +500,26 @@ namespace OverwatchLootBoxTracker.Translate
             {
                 if (myLang == "DE")
                 {
-                    return DE.This_is_strength_VP;
+                    return DE.Toast_VP;
                 }
                 else
                 {
                     return EN.Toast_VP;
+                }
+            }
+        }
+
+        public string Big_one_VP//7
+        {//Lunar 18
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Big_one_VP;
+                }
+                else
+                {
+                    return EN.Big_one_VP;
                 }
             }
         }

@@ -50,7 +50,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             Medal_VP = "Medal";//Summer 17
             Pumpkinette_VP = "Pumpkinette";//Halloween 17
             Toast_VP = "Toast";//Winter 17
-            Sparklers_VP = "Sparklers";//Rooster 17
+            Sparklers_VP = "Sparklers";//Lunar 17
             #endregion
         }
 
@@ -94,7 +94,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         public string Medal_VP { get; }//Summer 17
         public string Pumpkinette_VP { get; }//Halloween 17
         public string Toast_VP { get; }//Winter 17
-        public string Sparklers_VP { get; }//Rooster 17ß
+        public string Sparklers_VP { get; }//Lunar 18
         #endregion
 
         #endregion

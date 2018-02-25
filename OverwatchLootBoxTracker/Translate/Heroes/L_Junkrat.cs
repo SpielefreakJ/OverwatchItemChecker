@@ -113,21 +113,6 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
         //Epic
-        public string Caution_SK//5
-        {
-            get
-            {
-                if (myLang == "DE")
-                {
-                    return DE.Caution_SK;
-                }
-                else
-                {
-                    return EN.Caution_SK;
-                }
-            }
-        }
-
         public string Jailbird_SK//5
         {
             get
@@ -233,7 +218,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Cricket_SK//13
+        public string Cricket_SK//12
         {//Summer 2017
             get
             {
@@ -248,7 +233,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Dr_Junkenstein_SK//12
+        public string Dr_Junkenstein_SK//13
         {//Halloween 2016
             get
             {
@@ -263,7 +248,7 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Beachrat_SK//13
+        public string Beachrat_SK//14
         {//Winter 2017
             get
             {
@@ -274,6 +259,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Beachrat_SK;
+                }
+            }
+        }
+        //Epic
+        public string Caution_SK//15
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Caution_SK;
+                }
+                else
+                {
+                    return EN.Caution_SK;
                 }
             }
         }

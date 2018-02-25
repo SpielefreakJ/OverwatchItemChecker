@@ -33,6 +33,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             Champion_SK = "CHAMPION";//Summer 16
             Weightlifter_SK = "GEWICHTHEBERIN";//Summer 16
             Totally_80s_SK = "ACHZIGER";//Halloween 17
+            Xuanwu_SK = "XUANWU";//Lunar 18
             Cyberian_SK = "CYBIRISCH";//Annyver 17
             #endregion
             #region Emotes
@@ -53,6 +54,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             Flexing_VP = "MUSKELSPIEL";
             RIP_VP = "R.I.P.";//Halloween 16
             Toast_VP = "PROST";//Winter 17
+            Big_one_VP = "Rakete";//Lunar 18
             This_is_strength_VP = "DAS IST STÄRKE";//Uprising 17
             #endregion
         }
@@ -80,6 +82,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         public string Champion_SK { get; }//Summer 16
         public string Weightlifter_SK { get; }//Summer 16
         public string Totally_80s_SK { get; }//Halloween 17
+        public string Xuanwu_SK { get; }//Lunar 18
         public string Cyberian_SK { get; }//Annyver 17
         #endregion
         #region Emotes
@@ -100,6 +103,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         public string Flexing_VP { get; }
         public string RIP_VP { get; }//Halloween 16
         public string Toast_VP { get; }//Winter 17
+        public string Big_one_VP { get; }//Lunar 18
         public string This_is_strength_VP { get; }//Uprising 17
         #endregion
 

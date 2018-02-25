@@ -128,21 +128,6 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Royal_SK//16
-        {
-            get
-            {
-                if (myLang == "DE")
-                {
-                    return DE.Royal_SK;
-                }
-                else
-                {
-                    return EN.Royal_SK;
-                }
-            }
-        }
-
         public string White_Hat_SK//6
         {
             get
@@ -292,6 +277,36 @@ namespace OverwatchLootBoxTracker.Translate
                 }
             }
         }
+        //Epic
+        public string Royal_SK//16
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Royal_SK;
+                }
+                else
+                {
+                    return EN.Royal_SK;
+                }
+            }
+        }
+        //Legendary
+        public string Magistrate_SK//17
+        {//Lunar 18
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Magistrate_SK;
+                }
+                else
+                {
+                    return EN.Magistrate_SK;
+                }
+            }
+        }
 
 
         //Emotes
@@ -387,7 +402,7 @@ namespace OverwatchLootBoxTracker.Translate
         }
 
         public string Line_Dance_EM//7
-        {
+        {//Annyver 17
             get
             {
                 if (myLang == "DE")
@@ -475,6 +490,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Showdown_VP;
+                }
+            }
+        }
+
+        public string Fire_in_the_hole_VP//6
+        {//Lunar 18
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Fire_in_the_hole_VP;
+                }
+                else
+                {
+                    return EN.Fire_in_the_hole_VP;
                 }
             }
         }

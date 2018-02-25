@@ -128,21 +128,6 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
-        public string Hellfire_SK//6
-        {
-            get
-            {
-                if (myLang == "DE")
-                {
-                    return DE.Hellfire_SK;
-                }
-                else
-                {
-                    return EN.Hellfire_SK;
-                }
-            }
-        }
-
         public string Wight_SK//6
         {
             get
@@ -289,6 +274,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Pumpkin_SK;
+                }
+            }
+        }
+
+        public string Hellfire_SK//16
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Hellfire_SK;
+                }
+                else
+                {
+                    return EN.Hellfire_SK;
                 }
             }
         }
