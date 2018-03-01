@@ -14,12 +14,10 @@ Beta out!
 
 ### Languages:
 - English
+- German
 
 ### Version:
-0.2.2
-
-### Setup:
-soon™
+0.2.4
 
 ### Problems and issues
 If you have problems or found an issue, please create an Issue above.
@@ -28,6 +26,9 @@ If you have problems or found an issue, please create an Issue above.
 ### Future Features:
 - Voice Lines, Sprays, ect.
 - ect.
+
+### Setup:
+soon™
 
 ## Donations
 
