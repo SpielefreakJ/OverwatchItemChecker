@@ -37,7 +37,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             Dune_Buggy_SK = "Dune Buggy";//Annyver 17
             #endregion
             #region Emotes
-            //Rare
+            //Epic
             Alert_Alert_EM = "Alert! Alert!";
             Chortle_EM = "Chortle";
             Dizzy_EM = "Dizzy";

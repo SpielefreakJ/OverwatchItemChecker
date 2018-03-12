@@ -1177,3 +1177,4 @@ F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\I
 F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Torbjörn\Skins\16.png
 F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Widowmaker\Skins\15.png
 F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Items\Zarya\Skins\16.png
+F:\Dokumente2\GitHub\OverwatchLootBoxTracker\OverwatchLootBoxTracker\bin\Debug\Images\Brigitte_link.png

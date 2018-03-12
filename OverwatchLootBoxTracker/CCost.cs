@@ -148,7 +148,7 @@ namespace OverwatchLootBoxTracker
         }
 
 
-
+        #region OldCalc
         public int CostsNonEvent
         {
             get
@@ -191,15 +191,16 @@ namespace OverwatchLootBoxTracker
                 return (100);
             }
         }
+        #endregion
 
 
         //Calculate all Costs
 
         IniStream inisHeroes = null;
 
-        int[] myCosts = new int[27];
-        int[] myCostsEvent = new int[27];
-        int[] myCostsWeapon = new int[27];
+        int[] myCosts = new int[28];
+        int[] myCostsEvent = new int[28];
+        int[] myCostsWeapon = new int[28];
         string ii = "01";
         string SaveFolder = null;
 
@@ -211,7 +212,7 @@ namespace OverwatchLootBoxTracker
             {
                 myCosts[0] = 0;
 
-                for (int i = 1; i <= 26; i++)
+                for (int i = 1; i <= myCosts.Length-1; i++)
                 {
                     myCosts[0] += myCosts[i];
                 }
@@ -226,7 +227,7 @@ namespace OverwatchLootBoxTracker
             {
                 myCostsEvent[0] = 0;
 
-                for (int i = 1; i <= 26; i++)
+                for (int i = 1; i <= myCostsEvent.Length - 1; i++)
                 {
                     myCostsEvent[0] += myCostsEvent[i];
                 }
@@ -241,7 +242,7 @@ namespace OverwatchLootBoxTracker
             {
                 myCostsWeapon[0] = 0;
 
-                for (int i = 1; i <= 26; i++)
+                for (int i = 1; i <= myCostsWeapon.Length - 1; i++)
                 {
                     myCostsWeapon[0] += myCostsWeapon[i];
                 }
@@ -261,6 +262,8 @@ namespace OverwatchLootBoxTracker
                 Ana();
             if (Heroe == "Bastion")
                 Bastion();
+            if (Heroe == "Brigitte")
+                Brigitte();
             if (Heroe == "D.Va")
                 DVa();
             if (Heroe == "Doomfist")
@@ -463,6 +466,51 @@ namespace OverwatchLootBoxTracker
                         myCostsEvent[2] += myRareEvent;
                     if (i == 5)//Ra2re Old Event
                         myCostsEvent[2] += myRare;
+                }
+            }
+        }
+
+        private void Brigitte()
+        {
+            inisHeroes = new IniStream(SaveFolder + "\\Brigitte.ini");
+
+            myCosts[27] = 0;
+            myCostsEvent[27] = 0;
+            myCostsWeapon[27] = 0;
+
+            for (int i = 1; i <= myMaxItems; i++)
+            {
+                if (i < 10)
+                    ii = "0" + i.ToString();
+                else
+                    ii = i.ToString();
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i == 1)//Goldweapon
+                        myCostsWeapon[27] += 3000;
+                }
+                //Skins
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
+                {
+                    if (i >= 1 && i <= 4)//Rare
+                        myCosts[27] += myRare;
+                    if (i >= 5 && i <= 6)//Epic
+                        myCosts[27] += myEpic;
+                    if (i >= 7 && i <= 10)//Legendary
+                        myCosts[27] += myLegendary;
+                }
+                //Emotes
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
+                {
+                    if (i >= 1 && i <= 4)//Epic
+                        myCosts[27] += myEpic;
+                }
+                //Victory Poses
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
+                {
+                    if (i >= 1 && i <= 3)//Rare
+                        myCosts[27] += myRare;
                 }
             }
         }
@@ -855,7 +903,7 @@ namespace OverwatchLootBoxTracker
                 }
             }
         }
-
+        //
         private void Mei()
         {
             inisHeroes = new IniStream(SaveFolder + "\\Mei.ini");
@@ -910,7 +958,7 @@ namespace OverwatchLootBoxTracker
                 }
             }
         }
-        //
+
         private void Mercy()
         {
             inisHeroes = new IniStream(SaveFolder + "\\Mercy.ini");
@@ -1401,7 +1449,7 @@ namespace OverwatchLootBoxTracker
                 }
             }
         }
-
+        //
         private void Symmetra()
         {
             inisHeroes = new IniStream(SaveFolder + "\\Symmetra.ini");
@@ -1458,7 +1506,7 @@ namespace OverwatchLootBoxTracker
                 }
             }
         }
-        //
+
         private void Torbjörn()
         {
             inisHeroes = new IniStream(SaveFolder + "\\Torbjörn.ini");
@@ -1605,6 +1653,8 @@ namespace OverwatchLootBoxTracker
                     if (i >= 8 && i <= 11 || i == 15)//Legendary
                         myCosts[23] += myLegendary;
                     if (i == 12)//Legendary Prepurchase
+                        myCosts[23] += myUnknown;
+                    if (i == 17)//Legendary Starcraft 20th Annyver
                         myCosts[23] += myUnknown;
                     if (i >= 13 && i <= 14 || i == 16)//Legendary Event
                         myCostsEvent[23] += myLegendaryEvent;

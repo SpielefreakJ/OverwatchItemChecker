@@ -44,14 +44,14 @@
     </dependentAssembly>
   </dependency>
   <dependency>
-    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OverwatchLootBoxTracker.exe" size="656352">
+    <dependentAssembly dependencyType="install" allowDelayedBinding="true" codebase="OverwatchLootBoxTracker.exe" size="668128">
       <assemblyIdentity name="OverwatchLootBoxTracker" version="1.0.0.0" language="neutral" processorArchitecture="msil" />
       <hash>
         <dsig:Transforms>
           <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
         </dsig:Transforms>
         <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
-        <dsig:DigestValue>ed3ROkBLtJZNVzv7migO/amOAbKHscEvjMcyiLsYXbE=</dsig:DigestValue>
+        <dsig:DigestValue>PRW9beQKoUcdYqMkXaY0kuEL6F6zIEof7PgCCHaDfIc=</dsig:DigestValue>
       </hash>
     </dependentAssembly>
   </dependency>
@@ -71,6 +71,15 @@
       </dsig:Transforms>
       <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
       <dsig:DigestValue>PnhpmNZfO4/PwrZ+4yYfJh6tSsXhLYTWEgsTXTvq1mg=</dsig:DigestValue>
+    </hash>
+  </file>
+  <file name="Images\Brigitte_link.png" size="39717">
+    <hash>
+      <dsig:Transforms>
+        <dsig:Transform Algorithm="urn:schemas-microsoft-com:HashTransforms.Identity" />
+      </dsig:Transforms>
+      <dsig:DigestMethod Algorithm="http://www.w3.org/2000/09/xmldsig#sha256" />
+      <dsig:DigestValue>w/+A/f9q8Kb6NAUmpUwl0Imvd6NUbchma2tPDhnnn8I=</dsig:DigestValue>
     </hash>
   </file>
   <file name="Images\D.Va_link.png" size="20545">

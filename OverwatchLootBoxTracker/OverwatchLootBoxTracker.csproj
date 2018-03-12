@@ -103,9 +103,11 @@
     </Compile>
     <Compile Include="CIniCreator.cs" />
     <Compile Include="CMediaPlayer.cs" />
+    <Compile Include="Languages\English\Heroes\Brigitte.cs" />
     <Compile Include="Languages\English\Heroes\Moira.cs" />
     <Compile Include="Languages\German\Heroes\Ana.cs" />
     <Compile Include="Languages\German\Heroes\Bastion.cs" />
+    <Compile Include="Languages\German\Heroes\Brigitte.cs" />
     <Compile Include="Languages\German\Heroes\Doomfist.cs" />
     <Compile Include="Languages\German\Heroes\DVa.cs" />
     <Compile Include="Languages\German\Heroes\Genji.cs" />
@@ -130,6 +132,9 @@
     <Compile Include="Languages\German\Heroes\Winston.cs" />
     <Compile Include="Languages\German\Heroes\Zarya.cs" />
     <Compile Include="Languages\German\Heroes\Zenyatta.cs" />
+    <Compile Include="Translate\Heroes\L_Brigitte.cs">
+      <SubType>Component</SubType>
+    </Compile>
     <Compile Include="Translate\Heroes\L_Moira.cs">
       <SubType>Component</SubType>
     </Compile>
@@ -280,6 +285,9 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\Bastion_link.png">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Images\Brigitte_link.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
     <Content Include="Images\D.Va_link.png">
@@ -3670,7 +3678,12 @@
       <Install>false</Install>
     </BootstrapperPackage>
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="Images\Items\Brigitte\Emotes\" />
+    <Folder Include="Images\Items\Brigitte\Overwatch League\" />
+    <Folder Include="Images\Items\Brigitte\Skins\" />
+    <Folder Include="Images\Items\Brigitte\Victory Poses\" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

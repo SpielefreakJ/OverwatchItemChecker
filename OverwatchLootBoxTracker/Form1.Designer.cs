@@ -1241,9 +1241,9 @@
             this.gBWelcome.Controls.Add(this.lblCopyrightVersion);
             this.gBWelcome.Controls.Add(this.lblChanges);
             this.gBWelcome.Controls.Add(this.btnWelcomeClose);
-            this.gBWelcome.Location = new System.Drawing.Point(664, 755);
+            this.gBWelcome.Location = new System.Drawing.Point(627, 899);
             this.gBWelcome.Name = "gBWelcome";
-            this.gBWelcome.Size = new System.Drawing.Size(283, 184);
+            this.gBWelcome.Size = new System.Drawing.Size(293, 189);
             this.gBWelcome.TabIndex = 20;
             this.gBWelcome.TabStop = false;
             this.gBWelcome.Text = "gBWelcome";
@@ -1251,7 +1251,7 @@
             // lblContributor
             // 
             this.lblContributor.AutoSize = true;
-            this.lblContributor.Location = new System.Drawing.Point(6, 290);
+            this.lblContributor.Location = new System.Drawing.Point(6, 338);
             this.lblContributor.Name = "lblContributor";
             this.lblContributor.Size = new System.Drawing.Size(68, 13);
             this.lblContributor.TabIndex = 3;

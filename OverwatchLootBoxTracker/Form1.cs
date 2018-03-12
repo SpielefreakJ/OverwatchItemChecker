@@ -30,6 +30,7 @@ namespace OverwatchLootBoxTracker
         Translate.L_Translate Lang;
         Translate.L_Ana Ana;
         Translate.L_Bastion Bastion;
+        Translate.L_Brigitte Brigitte;
         Translate.L_DVa DVa;
         Translate.L_Doomfist Doomfist;
         Translate.L_Genji Genji;
@@ -170,6 +171,7 @@ namespace OverwatchLootBoxTracker
             Cost = new CCost();
             Ana = new Translate.L_Ana(Language);
             Bastion = new Translate.L_Bastion(Language);
+            Brigitte = new Translate.L_Brigitte(Language);
             DVa = new Translate.L_DVa(Language);
             Doomfist = new Translate.L_Doomfist(Language);
             Genji = new Translate.L_Genji(Language);
@@ -306,128 +308,133 @@ namespace OverwatchLootBoxTracker
             Bastion.Location = new Point(Breite2, Zeile1);
             Bastion.Click += Bastion_Click;
 
+            //Brigitte
+            Controls.Add(Brigitte);
+            Brigitte.Location = new Point(Breite3, Zeile1);
+            Brigitte.Click += Brigitte_Click;
+
             //D.Va
             Controls.Add(DVa);
-            DVa.Location = new Point(Breite3, Zeile1);
+            DVa.Location = new Point(Breite4, Zeile1);
             DVa.Click += DVa_Click;
 
             //Doomfist
             Controls.Add(Doomfist);
-            Doomfist.Location = new Point(Breite4, Zeile1);
+            Doomfist.Location = new Point(Breite5, Zeile1);
             Doomfist.Click += Doomfist_Click;
 
             //Genji
             Controls.Add(Genji);
-            Genji.Location = new Point(Breite5, Zeile1);
+            Genji.Location = new Point(Breite6, Zeile1);
             Genji.Click += Genji_Click;
 
             //Hanzo
             Controls.Add(Hanzo);
-            Hanzo.Location = new Point(Breite6, Zeile1);
+            Hanzo.Location = new Point(Breite7, Zeile1);
             Hanzo.Click += Hanzo_Click;
 
             //Junkrat
             Controls.Add(Junkrat);
-            Junkrat.Location = new Point(Breite7, Zeile1);
+            Junkrat.Location = new Point(Breite8, Zeile1);
             Junkrat.Click += Junkrat_Click;
 
             //Lúcio
             Controls.Add(Lúcio);
-            Lúcio.Location = new Point(Breite8, Zeile1);
+            Lúcio.Location = new Point(Breite9, Zeile1);
             Lúcio.Click += Lúcio_Click;
 
             //McCree
             Controls.Add(McCree);
-            McCree.Location = new Point(Breite9, Zeile1);
+            McCree.Location = new Point(Breite10, Zeile1);
             McCree.Click += McCree_Click;
-
-            //Mei
-            Controls.Add(Mei);
-            Mei.Location = new Point(Breite10, Zeile1);
-            Mei.Click += Mei_Click;
 
             ////////---------------
 
+            //Mei
+            Controls.Add(Mei);
+            Mei.Location = new Point(Breite1, Zeile2);
+            Mei.Click += Mei_Click;
+
             //Mercy
             Controls.Add(Mercy);
-            Mercy.Location = new Point(Breite1, Zeile2);
+            Mercy.Location = new Point(Breite2, Zeile2);
             Mercy.Click += Mercy_Click;
 
             //Moira
             Controls.Add(Moira);
-            Moira.Location = new Point(Breite2, Zeile2);
+            Moira.Location = new Point(Breite3, Zeile2);
             Moira.Click += Moira_Click;
 
             //Orisa
             Controls.Add(Orisa);
-            Orisa.Location = new Point(Breite3, Zeile2);
+            Orisa.Location = new Point(Breite4, Zeile2);
             Orisa.Click += Orisa_Click;
 
             //Pharah
             Controls.Add(Pharah);
-            Pharah.Location = new Point(Breite4, Zeile2);
+            Pharah.Location = new Point(Breite5, Zeile2);
             Pharah.Click += Pharah_Click;
 
             //Reaper
             Controls.Add(Reaper);
-            Reaper.Location = new Point(Breite5, Zeile2);
+            Reaper.Location = new Point(Breite6, Zeile2);
             Reaper.Click += Reaper_Click;
 
             //Reinhardt
             Controls.Add(Reinhardt);
-            Reinhardt.Location = new Point(Breite6, Zeile2);
+            Reinhardt.Location = new Point(Breite7, Zeile2);
             Reinhardt.Click += Reinhardt_Click;
 
             //Roadhog
             Controls.Add(Roadhog);
-            Roadhog.Location = new Point(Breite7, Zeile2);
+            Roadhog.Location = new Point(Breite8, Zeile2);
             Roadhog.Click += Roadhog_Click;
 
             //Soldier_76
             Controls.Add(Soldier_76);
-            Soldier_76.Location = new Point(Breite8, Zeile2);
+            Soldier_76.Location = new Point(Breite9, Zeile2);
             Soldier_76.Click += Soldier_76_Click;
 
             //Sombra
             Controls.Add(Sombra);
-            Sombra.Location = new Point(Breite9, Zeile2);
+            Sombra.Location = new Point(Breite10, Zeile2);
             Sombra.Click += Sombra_Click;
-
-            //Symmetra
-            Controls.Add(Symmetra);
-            Symmetra.Location = new Point(Breite10, Zeile2);
-            Symmetra.Click += Symmetra_Click;
 
             ////////---------------
 
+            //Symmetra
+            Controls.Add(Symmetra);
+            Symmetra.Location = new Point(Breite2 + 30, Zeile3);
+            Symmetra.Click += Symmetra_Click;
+
             //Torbjörn
             Controls.Add(Torbjörn);
-            Torbjörn.Location = new Point(Breite3, Zeile3);
+            Torbjörn.Location = new Point(Breite3 + 30, Zeile3);
             Torbjörn.Click += Torbjörn_Click;
 
             //Tracer
             Controls.Add(Tracer);
-            Tracer.Location = new Point(Breite4, Zeile3);
+            Tracer.Location = new Point(Breite4 + 30, Zeile3);
             Tracer.Click += Tracer_Click;
 
             //Widowmaker
             Controls.Add(Widowmaker);
-            Widowmaker.Location = new Point(Breite5, Zeile3);
+            Widowmaker.Location = new Point(Breite5 + 30, Zeile3);
             Widowmaker.Click += Widowmaker_Click;
 
             //Winston
             Controls.Add(Winston);
-            Winston.Location = new Point(Breite6, Zeile3);
+            Winston.Location = new Point(Breite6 + 30, Zeile3);
             Winston.Click += Winston_Click;
 
             //Zarya
             Controls.Add(Zarya);
-            Zarya.Location = new Point(Breite7, Zeile3);
+            Zarya.Location = new Point(Breite7 + 30, Zeile3);
             Zarya.Click += Zarya_Click;
 
             //Zenyatta
             Controls.Add(Zenyatta);
-            Zenyatta.Location = new Point(Breite8, Zeile3);
+            Zenyatta.Location = new Point(Breite8 + 30, Zeile3);
             Zenyatta.Click += Zenyatta_Click;
             #endregion
             ////////---------------
@@ -502,6 +509,7 @@ namespace OverwatchLootBoxTracker
             #region HeroesToolTips
             tt.SetToolTip(this.Ana, Ana.GetName());
             tt.SetToolTip(this.Bastion, Bastion.GetName());
+            tt.SetToolTip(this.Brigitte, Brigitte.GetName());
             tt.SetToolTip(this.DVa, DVa.GetName());
             tt.SetToolTip(this.Doomfist, Doomfist.GetName());
             tt.SetToolTip(this.Genji, Genji.GetName());
@@ -631,6 +639,10 @@ namespace OverwatchLootBoxTracker
             {
                 btnBastion();
             }
+            if (Heroe == "Brigitte")
+            {
+                btnBrigitte();
+            }
             if (Heroe == "D.Va")
             {
                 btnDVa();
@@ -659,11 +671,11 @@ namespace OverwatchLootBoxTracker
             {
                 btnMcCree();
             }
+            //
             if (Heroe == "Mei")
             {
                 btnMei();
             }
-            //
             if (Heroe == "Mercy")
             {
                 btnMercy();
@@ -700,11 +712,11 @@ namespace OverwatchLootBoxTracker
             {
                 btnSombra();
             }
+            //
             if (Heroe == "Symmetra")
             {
                 btnSymmetra();
             }
-            //
             if (Heroe == "Torbjörn")
             {
                 btnTorbjörn();
@@ -801,6 +813,7 @@ namespace OverwatchLootBoxTracker
             {
                 Ana.Visible = true;
                 Bastion.Visible = true;
+                Brigitte.Visible = true;
                 DVa.Visible = true;
                 Doomfist.Visible = true;
                 Genji.Visible = true;
@@ -975,13 +988,20 @@ namespace OverwatchLootBoxTracker
                 inic.create9(H);
                 inisSettings.Write(H, "9");
             }
+            if (inisSettings.Read(H) == "9")
+            {
+                inic.create10(H);
+                inisSettings.Write(H, "10");
+            }
 
             gBLang.Visible = false;
             btnMoreCost.Visible = false;
             btnBackHero.Visible = true;
 
+            #region Heroes
             Ana.Visible = false;
             Bastion.Visible = false;
+            Brigitte.Visible = false;
             DVa.Visible = false;
             Doomfist.Visible = false;
             Genji.Visible = false;
@@ -1006,6 +1026,7 @@ namespace OverwatchLootBoxTracker
             Winston.Visible = false;
             Zarya.Visible = false;
             Zenyatta.Visible = false;
+            #endregion
 
             gbAll.Visible = true;
             BackSave = gbAll.Text;
@@ -1780,6 +1801,136 @@ namespace OverwatchLootBoxTracker
             }
             chBSave = 1;
         }
+
+
+        private void Brigitte_Click(object sender, EventArgs e)
+        {
+            Heroe = "Brigitte";
+            btnHeroeinvisible("Brigitte", 10, 4, 3);
+            gbAll.Text = Brigitte.GetName();
+            BackSave = gbAll.Text;
+            inisHeroes = new IniStream(appdata + "\\Brigitte.ini");
+
+            chBSave = 0;
+            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Location = new Point(gBAllWeited4p1, p2);
+            chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
+            chBSave = 1;
+        }
+
+        private void btnBrigitte()
+        {
+            inisHeroes = new IniStream(appdata + "\\Brigitte.ini");
+            chBSave = 0;
+            chBSave = 1;
+
+            //Anzeigen, Auslesen und anwenden der chB
+            if (BackSave2 == Lang.Skins)
+            {
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1); chB00.Text = "(" + Cost.Classic + ")";
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2); chB01.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB01, "Rare");
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3); chB02.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB02, "Rare");
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4); chB03.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB03, "Rare");
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5); chB04.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB04, "Rare");
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB05, "Epic");
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB06, "Epic");
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p3, p1); chB07.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB07, "Legendary");
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p2); chB08.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB08, "Legendary");
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p3); chB09.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB09, "Legendary");
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p4); chB10.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB10, "Legendary");
+
+                btn00.Visible = true; btn00.Location = new Point(gBAllWeited4p1 + chB00.Width, p1 - 5);
+                btn01.Visible = true; btn01.Location = new Point(gBAllWeited4p1 + chB01.Width, p2 - 5);
+                btn02.Visible = true; btn02.Location = new Point(gBAllWeited4p1 + chB02.Width, p3 - 5);
+                btn03.Visible = true; btn03.Location = new Point(gBAllWeited4p1 + chB03.Width, p4 - 5);
+                btn04.Visible = true; btn04.Location = new Point(gBAllWeited4p1 + chB04.Width, p5 - 5);
+                btn05.Visible = true; btn05.Location = new Point(gBAllWeited4p2 + chB05.Width, p1 - 5);
+                btn06.Visible = true; btn06.Location = new Point(gBAllWeited4p2 + chB06.Width, p2 - 5);
+                btn07.Visible = true; btn07.Location = new Point(gBAllWeited4p3 + chB07.Width, p1 - 5);
+                btn08.Visible = true; btn08.Location = new Point(gBAllWeited4p3 + chB08.Width, p2 - 5);
+                btn09.Visible = true; btn09.Location = new Point(gBAllWeited4p3 + chB09.Width, p3 - 5);
+                btn10.Visible = true; btn10.Location = new Point(gBAllWeited4p3 + chB10.Width, p4 - 5);
+
+                btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Classic;//Default
+                btn01.BackColor = Color.DeepSkyBlue; btn01.Text = Brigitte.Blå_SK;//Rare
+                btn02.BackColor = Color.DeepSkyBlue; btn02.Text = Brigitte.Grön_SK;
+                btn03.BackColor = Color.DeepSkyBlue; btn03.Text = Brigitte.Plommon_SK;
+                btn04.BackColor = Color.DeepSkyBlue; btn04.Text = Brigitte.Röd_SK;
+                btn05.BackColor = Color.DarkViolet; btn05.Text = Brigitte.Carbon_Fiber_SK;//Epic
+                btn06.BackColor = Color.DarkViolet; btn06.Text = Brigitte.Ironclad_SK;
+                btn07.BackColor = Color.Gold; btn07.Text = Brigitte.Máni_SK;//Legendary
+                btn08.BackColor = Color.Gold; btn08.Text = Brigitte.Sól_SK;
+                btn09.BackColor = Color.Gold; btn09.Text = Brigitte.Engineer_SK;
+                btn10.BackColor = Color.Gold; btn10.Text = Brigitte.Mechanic_SK;
+
+                chB00.Checked = true;
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
+
+            }
+            if (BackSave2 == Lang.Emotes)
+            {
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1); chB00.Text = "(" + Cost.Classic + ")";
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2); chB01.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB01, "Epic");
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3); chB02.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB02, "Epic");
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p2, p1); chB03.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB03, "Epic");
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p2); chB04.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB04, "Epic");
+
+                btn00.Visible = true; btn00.Location = new Point(gBAllWeited3p1 + chB00.Width, p1 - 5);
+                btn01.Visible = true; btn01.Location = new Point(gBAllWeited3p1 + chB01.Width, p2 - 5);
+                btn02.Visible = true; btn02.Location = new Point(gBAllWeited3p1 + chB02.Width, p3 - 5);
+                btn03.Visible = true; btn03.Location = new Point(gBAllWeited3p2 + chB03.Width, p1 - 5);
+                btn04.Visible = true; btn04.Location = new Point(gBAllWeited3p2 + chB04.Width, p2 - 5);
+
+                btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Heroic;//Default
+                btn01.BackColor = Color.DarkViolet; btn01.Text = Brigitte.Cheer_EM;//Epic
+                btn02.BackColor = Color.DarkViolet; btn02.Text = Brigitte.Hilarious_EM;
+                btn03.BackColor = Color.DarkViolet; btn03.Text = Brigitte.Recalibrate_EM;
+                btn04.BackColor = Color.DarkViolet; btn04.Text = Brigitte.Taunt_EM;
+
+                chB00.Checked = true;
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
+            }
+            if (BackSave2 == Lang.VictoryPoses)
+            {
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1); chB00.Text = "(" + Cost.Classic + ")";
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2); chB01.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB01, "Rare");
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p2, p1); chB02.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB02, "Rare");
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p2, p2); chB03.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB03, "Rare");
+
+                btn00.Visible = true; btn00.Location = new Point(gBAllWeited3p1 + chB00.Width, p1 - 5);
+                btn01.Visible = true; btn01.Location = new Point(gBAllWeited3p1 + chB01.Width, p2 - 5);
+                btn02.Visible = true; btn02.Location = new Point(gBAllWeited3p2 + chB02.Width, p1 - 5);
+                btn03.Visible = true; btn03.Location = new Point(gBAllWeited3p2 + chB03.Width, p2 - 5);
+
+                btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Heroic;//Default
+                btn01.BackColor = Color.DeepSkyBlue; btn01.Text = Brigitte.Confident_VL;//Rare
+                btn02.BackColor = Color.DeepSkyBlue; btn02.Text = Brigitte.Rally_VL;
+                btn03.BackColor = Color.DeepSkyBlue; btn03.Text = Brigitte.Relaxed_VL;
+
+                chB00.Checked = true;
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("VP01"));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("VP02"));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("VP03"));
+            }
+            if (BackSave2 == Lang.OWLeague)
+            {
+                OWLButtons();
+            }
+            chBSave = 1;
+        }
+
 
 
         private void DVa_Click(object sender, EventArgs e)
@@ -3104,6 +3255,7 @@ namespace OverwatchLootBoxTracker
             }
             chBSave = 1;
         }
+        //
 
         private void Mei_Click(object sender, EventArgs e)
         {
@@ -3286,7 +3438,6 @@ namespace OverwatchLootBoxTracker
             }
             chBSave = 1;
         }
-        //
 
         private void Mercy_Click(object sender, EventArgs e)
         {
@@ -4777,6 +4928,7 @@ namespace OverwatchLootBoxTracker
             }
             chBSave = 1;
         }
+        //
 
         private void Symmetra_Click(object sender, EventArgs e)
         {
@@ -4951,7 +5103,6 @@ namespace OverwatchLootBoxTracker
             }
             chBSave = 1;
         }
-        //
 
         private void Torbjörn_Click(object sender, EventArgs e)
         {
@@ -5346,9 +5497,10 @@ namespace OverwatchLootBoxTracker
                 chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p4); chB10.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB10, "Legendary");
                 chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p5); chB11.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB11, "Legendary");
                 chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p6); chB12.Text = "(" + Lang.Prepurchase + ")"; HeroTT.SetToolTip(chB12, Lang.Prepurchase2);
-                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p7); chB13.Text = "(" + Cost.LegendaryEvent + ")"; HeroTT.SetToolTip(chB13, Lang.Summer + " 2017");
-                chB16.Visible = true; chB16.Location = new Point(gBAllWeited4p3, p8); chB16.Text = "(" + Cost.LegendaryEvent + ")"; HeroTT.SetToolTip(chB16, Lang.Dog + " 2018");
-                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p9); chB14.Text = "(" + Cost.LegendaryEvent + ")"; HeroTT.SetToolTip(chB14, Lang.Uprising + " 2017");
+                chB17.Visible = true; chB17.Location = new Point(gBAllWeited4p3, p7); chB17.Text = "(" + Lang.Prepurchase + ")"; HeroTT.SetToolTip(chB17, Lang.Prepurchase2);
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p8); chB13.Text = "(" + Cost.LegendaryEvent + ")"; HeroTT.SetToolTip(chB13, Lang.Summer + " 2017");
+                chB16.Visible = true; chB16.Location = new Point(gBAllWeited4p3, p9); chB16.Text = "(" + Cost.LegendaryEvent + ")"; HeroTT.SetToolTip(chB16, Lang.Dog + " 2018");
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p10); chB14.Text = "(" + Cost.LegendaryEvent + ")"; HeroTT.SetToolTip(chB14, Lang.Uprising + " 2017");
 
                 btn00.Visible = true; btn00.Location = new Point(gBAllWeited4p1 + chB00.Width, p1 - 5);
                 btn01.Visible = true; btn01.Location = new Point(gBAllWeited4p1 + chB01.Width, p2 - 5);
@@ -5364,9 +5516,10 @@ namespace OverwatchLootBoxTracker
                 btn10.Visible = true; btn10.Location = new Point(gBAllWeited4p3 + chB10.Width, p4 - 5);
                 btn11.Visible = true; btn11.Location = new Point(gBAllWeited4p3 + chB11.Width, p5 - 5);
                 btn12.Visible = true; btn12.Location = new Point(gBAllWeited4p3 + chB12.Width, p6 - 5);
-                btn13.Visible = true; btn13.Location = new Point(gBAllWeited4p3 + chB13.Width, p7 - 5);
-                btn16.Visible = true; btn16.Location = new Point(gBAllWeited4p3 + chB16.Width, p8 - 5);
-                btn14.Visible = true; btn14.Location = new Point(gBAllWeited4p3 + chB14.Width, p9 - 5);
+                btn17.Visible = true; btn17.Location = new Point(gBAllWeited4p3 + chB17.Width, p7 - 5);
+                btn13.Visible = true; btn13.Location = new Point(gBAllWeited4p3 + chB13.Width, p8 - 5);
+                btn16.Visible = true; btn16.Location = new Point(gBAllWeited4p3 + chB16.Width, p9 - 5);
+                btn14.Visible = true; btn14.Location = new Point(gBAllWeited4p3 + chB14.Width, p10 - 5);
 
                 btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Classic;//Default
                 btn01.BackColor = Color.DeepSkyBlue; btn01.Text = Widowmaker.Ciel_SK;//Rare
@@ -5382,6 +5535,7 @@ namespace OverwatchLootBoxTracker
                 btn10.BackColor = Color.Gold; btn10.Text = Widowmaker.Comtesse_SK;
                 btn11.BackColor = Color.Gold; btn11.Text = Widowmaker.Huntress_SK;
                 btn12.BackColor = Color.Gold; btn12.Text = Widowmaker.Noire_SK;//Prepurchase
+                btn17.BackColor = Color.Gold; btn17.Text = Widowmaker.Kerrigan_SK;//Sarcraft 20th Annyver
                 btn13.BackColor = Color.Gold; btn13.Text = Widowmaker.Côte_DAzur_SK;//Summer 17
                 btn16.BackColor = Color.Gold; btn16.Text = Widowmaker.Black_Lily_SK;//Lunar 18
                 btn14.BackColor = Color.Gold; btn14.Text = Widowmaker.Talon_SK;//Uprising 17
@@ -5403,6 +5557,7 @@ namespace OverwatchLootBoxTracker
                 chB14.Checked = Convert.ToBoolean(inisHeroes.Read("SK14"));
                 chB15.Checked = Convert.ToBoolean(inisHeroes.Read("SK15"));
                 chB16.Checked = Convert.ToBoolean(inisHeroes.Read("SK16"));
+                chB17.Checked = Convert.ToBoolean(inisHeroes.Read("SK17"));
             }
             if (BackSave2 == Lang.Emotes)
             {

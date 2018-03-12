@@ -31,6 +31,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             Comtesse_SK = "COMTESSE";
             Huntress_SK = "JÄGERIN";
             Noire_SK = "NOIRE";//Prepurchase Special
+            Kerrigan_SK = "KERRYGAN";//Starcraft 20th Annyver
             Côte_DAzur_SK = "CÔTE D'AZUR";//Summer 17
             Black_Lily_SK = "SCHWARZE LILIE";//Lunar 18
             Talon_SK = "TALON";//Uprising 17
@@ -77,6 +78,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         public string Comtesse_SK { get; }
         public string Huntress_SK { get; }
         public string Noire_SK { get; }//Prepurchase Special
+        public string Kerrigan_SK { get; }//Starcraft 20th Annyver
         public string Côte_DAzur_SK { get; }//Summer 17
         public string Black_Lily_SK { get; }//Lunar 18
         public string Talon_SK { get; }//Uprising 17

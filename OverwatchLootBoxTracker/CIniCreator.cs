@@ -69,94 +69,70 @@ namespace OverwatchLootBoxTracker
             for (int i = 1; i <= Voice_Line; i++)
             {
                 if (i < 10)
-                {
                     inisHeroes.Write("VL0" + i, "false");
-                }
                 else
-                {
                     inisHeroes.Write("VL" + i, "false");
-                }
             }
         }
 
         public void create3(string Hero)
         {
+            inisHeroes = new IniStream(Path + "\\" + Hero + ".ini");
+
             if (Hero == "Ana")
-            {
-                inisHeroes = new IniStream(Path + "\\Ana.ini");
                 inisHeroes.Write("SK14", "false");
-            }
+
             if (Hero == "Bastion")
-            {
-                inisHeroes = new IniStream(Path + "\\Bastion.ini");
                 inisHeroes.Write("SK17", "false");
-            }
+
             if (Hero == "Genji")
-            {
-                inisHeroes = new IniStream(Path + "\\Genji.ini");
                 inisHeroes.Write("VP06", "false");
-            }
+
             if (Hero == "Hanzo")
-            {
-                inisHeroes = new IniStream(Path + "\\Hanzo.ini");
                 inisHeroes.Write("SK13", "false");
-            }
+
             if (Hero == "Junkrat")
-            {
-                inisHeroes = new IniStream(Path + "\\Junkrat.ini");
                 inisHeroes.Write("SK14", "false");
-            }
+
             if (Hero == "Mercy")
-            {
-                inisHeroes = new IniStream(Path + "\\Mercy.ini");
                 inisHeroes.Write("VP07", "false");
-            }
+
             if (Hero == "Orisa")
-            {
-                inisHeroes = new IniStream(Path + "\\Orisa.ini");
                 inisHeroes.Write("EM07", "false");
-            }
+
             if (Hero == "Roadhog")
             {
-                inisHeroes = new IniStream(Path + "\\Roadhog.ini");
                 inisHeroes.Write("SK14", "false");
                 inisHeroes.Write("VP07", "false");
             }
+
             if (Hero == "Soldier_76")
-            {
-                inisHeroes = new IniStream(Path + "\\Soldier_76.ini");
                 inisHeroes.Write("SK15", "false");
-            }
+
             if (Hero == "Sombra")
             {
-                inisHeroes = new IniStream(Path + "\\Sombra.ini");
                 inisHeroes.Write("SK13", "false");
                 inisHeroes.Write("VP07", "false");
             }
+
             if (Hero == "Widowmaker")
-            {
-                inisHeroes = new IniStream(Path + "\\Widowmaker.ini");
                 inisHeroes.Write("VP06", "false");
-            }
+
             if (Hero == "Zarya")
-            {
-                inisHeroes = new IniStream(Path + "\\Zarya.ini");
                 inisHeroes.Write("VP06", "false");
-            }
+
             if (Hero == "Zenyatta")
             {
-                inisHeroes = new IniStream(Path + "\\Zenyatta.ini");
                 inisHeroes.Write("EM07", "false");
                 inisHeroes.Write("VP06", "false");
             }
         }
         public void create4(string Hero)
         {
+            inisHeroes = new IniStream(Path + "\\" + Hero + ".ini");
+
             if (Hero == "Bastion")
-            {
-                inisHeroes = new IniStream(Path + "\\Bastion.ini");
                 inisHeroes.Write("VP07", "false");
-            }
         }
 
         public void create5(string Hero)
@@ -186,21 +162,16 @@ namespace OverwatchLootBoxTracker
         {
             inisHeroes = new IniStream(Path + "\\" + Hero + ".ini");
             if (Hero == "Doomfist")
-            {
                 inisHeroes.Write("SK11", "false");
-            }
+
             if (Hero == "Orisa")
-            {
                 inisHeroes.Write("SK12", "false");
-            }
+
             if (Hero == "Roadhog" || Hero == "Widowmaker")
-            {
                 inisHeroes.Write("SK15", "false");
-            }
+
             if (Hero == "Zarya" || Hero == "Torbjörn" || Hero == "Mei" || Hero == "Reinhardt")
-            {
                 inisHeroes.Write("SK16", "false");
-            }
         }
 
         public void create8(string Hero)
@@ -208,25 +179,19 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(Path + "\\" + Hero + ".ini");
 
             if (Hero == "Hanzo")
-            {
                 inisHeroes.Write("SK14", "false");
-            }
+
             if (Hero == "D.Va" || Hero == "Junkrat" || Hero == "Lúcio" || Hero == "Pharah" || Hero == "Symmetra" || Hero == "Zenyatta")
-            {
                 inisHeroes.Write("SK15", "false");
-            }
+
             if (Hero == "McCree" || Hero == "Reaper")
-            {
                 inisHeroes.Write("SK16", "false");
-            }
+
             if (Hero == "Moira")
-            {
                 inisHeroes.Write("EM06", "false");
-            }
+
             if (Hero == "Genji" || Hero == "Mercy" || Hero == "Sombra" || Hero == "Tracer")
-            {
                 inisHeroes.Write("EM07", "false");
-            }
         }
 
         public void create9(string Hero)
@@ -234,33 +199,33 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(Path + "\\" + Hero + ".ini");
 
             if (Hero == "Genji")
-            {
                 inisHeroes.Write("SK15", "false");
-            }
+
             if (Hero == "Mercy" || Hero == "Pharah" || Hero == "Widowmaker")
-            {
                 inisHeroes.Write("SK16", "false");
-            }
+
             if (Hero == "McCree" || Hero == "Zarya")
-            {
                 inisHeroes.Write("SK17", "false");
-            }
+
             if (Hero == "Doomfist")
-            {
                 inisHeroes.Write("EM06", "false");
-            }
+
             if (Hero == "Roadhog")
-            {
                 inisHeroes.Write("EM07", "false");
-            }
+
             if (Hero == "McCree")
-            {
                 inisHeroes.Write("VP06", "false");
-            }
+
             if (Hero == "Symmetra" || Hero == "Tracer" || Hero == "Widowmaker" || Hero == "Winston" || Hero == "Zarya")
-            {
                 inisHeroes.Write("VP07", "false");
-            }
+        }
+
+        public void create10(string Hero)
+        {//Only new Widow Skin -.-
+            inisHeroes = new IniStream(Path + "\\" + Hero + ".ini");
+
+            if (Hero == "Widowmaker")
+                inisHeroes.Write("SK17", "false");
         }
     }
 }

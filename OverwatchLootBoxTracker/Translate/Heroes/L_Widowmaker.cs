@@ -293,6 +293,21 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
+        public string Kerrigan_SK//17
+        {//Legendary
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Kerrigan_SK;
+                }
+                else
+                {
+                    return EN.Kerrigan_SK;
+                }
+            }
+        }
+
 
         //Emotes
         //Epic
