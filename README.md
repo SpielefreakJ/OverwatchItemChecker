@@ -1,4 +1,4 @@
-# OverwatchLootTracker
+# OverwatchItemTracker
 
 Hi. This is an Simple Programm, for tracking every Item in Overwatch.
 
