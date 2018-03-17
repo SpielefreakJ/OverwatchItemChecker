@@ -17,7 +17,7 @@ Beta out!
 - German
 
 ### Version:
-0.2.6
+0.2.7
 
 ### Problems and issues
 If you have problems or found an issue, please create an Issue above.

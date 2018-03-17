@@ -443,6 +443,7 @@ namespace OverwatchLootBoxTracker
             //Controls.Add(MenuImage);
             //MenuImage.SetImage = Image.FromFile("Images\\MenuBackground\\Winter 16.png");
 
+            //Image for Items (Skin, etc.)
             Controls.Add(ItemImage);
             ItemImage.Location = new Point((this.Width / 2) - (ItemImage.Width / 2), (this.Height / 2) - (ItemImage.Height / 2) - 19);
             ItemImage.Visible = false;
@@ -539,10 +540,7 @@ namespace OverwatchLootBoxTracker
             #endregion
         }
 
-        /*
-        // Ab hier beginnt der richtige Code
-        */
-
+        #region ChangeLangButtons
         private void btnLangGerman_Click(object sender, EventArgs e)
         {
             Language = "DE";
@@ -556,6 +554,11 @@ namespace OverwatchLootBoxTracker
             ChangeLang();
             IniSave();
         }
+        #endregion
+
+        /*
+        // Ab hier beginnt der richtige Code
+        */
 
         private void btnSettings_Click(object sender, EventArgs e)
         {
@@ -629,132 +632,77 @@ namespace OverwatchLootBoxTracker
             btnHighlightIntros.Visible = false;
             btnOWLeague.Visible = false;
 
-            #region unwichtig
+            #region btnsichtbarhelden
             //
             if (Heroe == "Ana")
-            {
                 btnAna();
-            }
             if (Heroe == "Bastion")
-            {
                 btnBastion();
-            }
             if (Heroe == "Brigitte")
-            {
                 btnBrigitte();
-            }
             if (Heroe == "D.Va")
-            {
                 btnDVa();
-            }
             if (Heroe == "Doomfist")
-            {
                 btnDoomfist();
-            }
             if (Heroe == "Genji")
-            {
                 btnGenji();
-            }
             if (Heroe == "Hanzo")
-            {
                 btnHanzo();
-            }
             if (Heroe == "Junkrat")
-            {
                 btnJunkrat();
-            }
             if (Heroe == "Lúcio")
-            {
                 btnLúcio();
-            }
             if (Heroe == "McCree")
-            {
                 btnMcCree();
-            }
             //
             if (Heroe == "Mei")
-            {
                 btnMei();
-            }
             if (Heroe == "Mercy")
-            {
                 btnMercy();
-            }
             if (Heroe == "Moira")
-            {
                 btnMoira();
-            }
             if (Heroe == "Orisa")
-            {
                 btnOrisa();
-            }
             if (Heroe == "Pharah")
-            {
                 btnPharah();
-            }
             if (Heroe == "Reaper")
-            {
                 btnReaper();
-            }
             if (Heroe == "Reinhardt")
-            {
                 btnReinhardt();
-            }
             if (Heroe == "Roadhog")
-            {
                 btnRoadhog();
-            }
             if (Heroe == "Soldier 76")
-            {
                 btnSoldier_76();
-            }
             if (Heroe == "Sombra")
-            {
                 btnSombra();
-            }
             //
             if (Heroe == "Symmetra")
-            {
                 btnSymmetra();
-            }
             if (Heroe == "Torbjörn")
-            {
                 btnTorbjörn();
-            }
             if (Heroe == "Tracer")
-            {
                 btnTracer();
-            }
             if (Heroe == "Widowmaker")
-            {
                 btnWidowmaker();
-            }
             if (Heroe == "Winston")
-            {
                 btnWinston();
-            }
             if (Heroe == "Zarya")
-            {
                 btnZarya();
-            }
             if (Heroe == "Zenyatta")
-            {
                 btnZenyatta();
-            }
             #endregion
         }
 
         private void btnPlayerIcons_Click(object sender, EventArgs e)
         {/*
-            gbAll.Visible = true;
-            gbAll.BringToFront();
-            btnBackHeroe.Visible = true;
-            btnBackHeroe.BringToFront();
-
+            BackSave2 = Lang.OWLeague;
             gBLang.Visible = false;
             btnMoreCost.Visible = false;
 
-            gbAll.Text = Lang.PlayerIcons;
+            BtnSichtbar();
+            //Command for non PI
+
+            gbAll.Text += " / " + BackSave2;
         */
         }
 
@@ -928,7 +876,7 @@ namespace OverwatchLootBoxTracker
 
                 HeroTT.RemoveAll();
 
-                chB01.Text = "Gold Weapon";
+                chB01.Text = Lang.GoldWeapon;
                 chB01.Location = new Point(gBAllWeited4p1, p2);
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
 
@@ -1051,7 +999,7 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(appdata + "\\Ana.ini");
 
             chBSave = 0;
-            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
             chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
             chBSave = 1;
@@ -1551,7 +1499,7 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(appdata + "\\Bastion.ini");
 
             chBSave = 0;
-            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
             chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
             chBSave = 1;
@@ -1812,7 +1760,7 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(appdata + "\\Brigitte.ini");
 
             chBSave = 0;
-            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
             chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
             chBSave = 1;
@@ -1942,7 +1890,7 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(appdata + "\\D.Va.ini");
 
             chBSave = 0;
-            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
             chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
             chBSave = 1;
@@ -2210,7 +2158,7 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(appdata + "\\Doomfist.ini");
 
             chBSave = 0;
-            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
             chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
             chBSave = 1;
@@ -2407,7 +2355,7 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(appdata + "\\Genji.ini");
 
             chBSave = 0;
-            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
             chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
             chBSave = 1;
@@ -2577,7 +2525,7 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(appdata + "\\Hanzo.ini");
 
             chBSave = 0;
-            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
             chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
             chBSave = 1;
@@ -2743,7 +2691,7 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(appdata + "\\Junkrat.ini");
 
             chBSave = 0;
-            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
             chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
             chBSave = 1;
@@ -2917,7 +2865,7 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(appdata + "\\Lúcio.ini");
 
             chBSave = 0;
-            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
             chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
             chBSave = 1;
@@ -3087,7 +3035,7 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(appdata + "\\McCree.ini");
 
             chBSave = 0;
-            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
             chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
             chBSave = 1;
@@ -3266,7 +3214,7 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(appdata + "\\Mei.ini");
 
             chBSave = 0;
-            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
             chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
             chBSave = 1;
@@ -3448,7 +3396,7 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(appdata + "\\Mercy.ini");
 
             chBSave = 0;
-            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
             chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
             chBSave = 1;
@@ -3626,7 +3574,7 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(appdata + "\\Moira.ini");
 
             chBSave = 0;
-            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
             chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
             chBSave = 1;
@@ -3760,7 +3708,7 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(appdata + "\\Orisa.ini");
 
             chBSave = 0;
-            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
             chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
             chBSave = 1;
@@ -3910,7 +3858,7 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(appdata + "\\Pharah.ini");
 
             chBSave = 0;
-            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
             chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
             chBSave = 1;
@@ -4084,7 +4032,7 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(appdata + "\\Reaper.ini");
 
             chBSave = 0;
-            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
             chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
             chBSave = 1;
@@ -4258,7 +4206,7 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(appdata + "\\Reinhardt.ini");
 
             chBSave = 0;
-            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
             chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
             chBSave = 1;
@@ -4428,7 +4376,7 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(appdata + "\\Roadhog.ini");
 
             chBSave = 0;
-            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
             chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
             chBSave = 1;
@@ -4602,7 +4550,7 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(appdata + "\\Soldier_76.ini");
 
             chBSave = 0;
-            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
             chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
             chBSave = 1;
@@ -4772,7 +4720,7 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(appdata + "\\Sombra.ini");
 
             chBSave = 0;
-            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
             chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
             chBSave = 1;
@@ -4939,7 +4887,7 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(appdata + "\\Symmetra.ini");
 
             chBSave = 0;
-            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
             chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
             chBSave = 1;
@@ -5113,7 +5061,7 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(appdata + "\\Torbjörn.ini");
 
             chBSave = 0;
-            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
             chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
             chBSave = 1;
@@ -5287,7 +5235,7 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(appdata + "\\Tracer.ini");
 
             chBSave = 0;
-            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
             chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
             chBSave = 1;
@@ -5469,7 +5417,7 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(appdata + "\\Widowmaker.ini");
 
             chBSave = 0;
-            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
             chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
             chBSave = 1;
@@ -5647,7 +5595,7 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(appdata + "\\Winston.ini");
 
             chBSave = 0;
-            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
             chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
             chBSave = 1;
@@ -5814,7 +5762,7 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(appdata + "\\Zarya.ini");
 
             chBSave = 0;
-            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
             chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
             chBSave = 1;
@@ -5996,7 +5944,7 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(appdata + "\\Zenyatta.ini");
 
             chBSave = 0;
-            chB01.Text = "Gold Weapon"; chB01.Visible = true;
+            chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
             chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
             chBSave = 1;
@@ -6220,17 +6168,13 @@ namespace OverwatchLootBoxTracker
         }
 
         #region Checkboxen
-
         private void chB00_CheckedChanged(object sender, EventArgs e)
         {
             if (chBSave == 1 && BackSave2 != Lang.OWLeague)
-            {
                 MessageBox.Show("Something went wrong.\nPlease create an Issue on Github with the Title 'Error 0' and\n describe, what you have done.", "Error 0", MessageBoxButtons.OK, MessageBoxIcon.Error);
-            }
+
             if (chBSave == 1 && BackSave2 == Lang.OWLeague)
-            {
                 chBChange("01", chB00.Checked);
-            }
         }
 
         private void chB01_CheckedChanged(object sender, EventArgs e)
@@ -6431,7 +6375,6 @@ namespace OverwatchLootBoxTracker
         #endregion
 
         #region Buttons
-
         private void btn00_Click(object sender, EventArgs e)
         {
             ImageChange(0);
@@ -6586,43 +6529,43 @@ namespace OverwatchLootBoxTracker
             //Speichern
             if (chBSave == 1)
             {
-                if (BackSave2 == Lang.Skins && chB01.Text != "Gold Weapon")
+                if (BackSave2 == Lang.Skins && chB01.Text != Lang.GoldWeapon)
                 {
                     inisHeroes.Write("SK" + Nummer, Checkbox.ToString());
                 }
-                if (BackSave2 == Lang.Emotes && chB01.Text != "Gold Weapon")
+                if (BackSave2 == Lang.Emotes && chB01.Text != Lang.GoldWeapon)
                 {
                     inisHeroes.Write("EM" + Nummer, Checkbox.ToString());
                 }
-                if (BackSave2 == Lang.VictoryPoses && chB01.Text != "Gold Weapon")
+                if (BackSave2 == Lang.VictoryPoses && chB01.Text != Lang.GoldWeapon)
                 {
                     inisHeroes.Write("VP" + Nummer, Checkbox.ToString());
                 }/*
-                if (BackSave2 == Lang.VoiceLines && chB01.Text != "Gold Weapon")
+                if (BackSave2 == Lang.VoiceLines && chB01.Text != Lang.GoldWeapon)
                 {
                     inisHeroes.Write("VL" + Nummer, Checkbox.ToString());
                 }
-                if (BackSave2 == Lang.Sprays && chB01.Text != "Gold Weapon")
+                if (BackSave2 == Lang.Sprays && chB01.Text != Lang.GoldWeapon)
                 {
                     inisHeroes.Write("SP" + Nummer, Checkbox.ToString());
                 }
-                if (BackSave2 == Lang.HighlightIntros && chB01.Text != "Gold Weapon")
+                if (BackSave2 == Lang.HighlightIntros && chB01.Text != Lang.GoldWeapon)
                 {
-                    inisHeroes.Write("HI" + Nummer, Checkbox.ToString() && chB01.Text != "Gold Weapon");
+                    inisHeroes.Write("HI" + Nummer, Checkbox.ToString() && chB01.Text != Lang.GoldWeapon);
                 }
-                if (BackSave2 == Lang.PlayerIcons && Heroe != "PI" && chB01.Text != "Gold Weapon")
+                if (BackSave2 == Lang.PlayerIcons && Heroe != "PI" && chB01.Text != Lang.GoldWeapon)
                 {
                     inisHeroes.Write("PI" + Nummer, Checkbox.ToString());
                 }
-                if (BackSave2 == Lang.PlayerIcons && Heroe == "PI" && chB01.Text != "Gold Weapon")
+                if (BackSave2 == Lang.PlayerIcons && Heroe == "PI" && chB01.Text != Lang.GoldWeapon)
                 {
                     inisPI.Write(Nummer, Checkbox.ToString());
                 }*/
-                if (BackSave2 == Lang.OWLeague && chB01.Text != "Gold Weapon")
+                if (BackSave2 == Lang.OWLeague && chB01.Text != Lang.GoldWeapon)
                 {
                     inisHeroes.Write("OWL" + Nummer, Checkbox.ToString());
                 }
-                if (chB01.Text == "Gold Weapon")
+                if (chB01.Text == Lang.GoldWeapon)
                 {
                     inisHeroes.Write("GW" + Nummer, Checkbox.ToString());
                 }

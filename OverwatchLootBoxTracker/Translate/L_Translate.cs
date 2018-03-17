@@ -93,7 +93,7 @@ namespace OverwatchLootBoxTracker.Translate
                 //}
                 //else
                 {
-                    return "© 2017-2018 SpielefreakJ | OWLootboxTracker Version: 0.2.6.0 Beta | Overwatch Version: 1.21.0 | This Program is not affiliated with Blizzard Entertainment.\n© 2016-2018 Blizzard Entertainment, Inc. All rights reserved. | All trademarks referenced herein are the properties of their respective owners.";
+                    return "© 2017-2018 SpielefreakJ | OWItemTracker Version: 0.2.7.0 Beta | Overwatch Version: 1.21.0 | This Program is not affiliated with Blizzard Entertainment.\n© 2016-2018 Blizzard Entertainment, Inc. All rights reserved. | All trademarks referenced herein are the properties of their respective owners.";
                 }
             }
         }
@@ -834,7 +834,7 @@ namespace OverwatchLootBoxTracker.Translate
         }
 
 
-        //Default Items
+#region Default Items
         public string Classic
         {//Skin
             get
@@ -879,5 +879,21 @@ namespace OverwatchLootBoxTracker.Translate
                 }
             }
         }
+
+        public string GoldWeapon
+        {//GoldWeapon
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.GoldWeapon;
+                }
+                else
+                {
+                    return EN.GoldWeapon;
+                }
+            }
+        }
+#endregion
     }
 }

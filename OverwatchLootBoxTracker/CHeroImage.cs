@@ -65,7 +65,7 @@ namespace OverwatchLootBoxTracker
             catch
             {
                 //MessageBox.Show("An Error has appeared!\nPlease Post this Issue on GitHub with the Error Code\nError Code: 2", "Error 2", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                MessageBox.Show("An Error has appeared!\nThere's probably no Image right now. Sorry for that.\nError Code: 2", "Error 2", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("An Error has appeared!\nThere's probably no Image right now. Sorry for that.\nError Code: 2b", "Error 2b", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
             }
         }

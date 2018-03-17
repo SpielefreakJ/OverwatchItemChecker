@@ -1321,8 +1321,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.DodgerBlue;
             this.ClientSize = new System.Drawing.Size(1433, 975);
-            this.Controls.Add(this.lblCloseImage);
             this.Controls.Add(this.gBWelcome);
+            this.Controls.Add(this.lblCloseImage);
             this.Controls.Add(this.btnBackHero);
             this.Controls.Add(this.gBMoreCost);
             this.Controls.Add(this.btnSettings);
@@ -1342,7 +1342,7 @@
             this.Name = "Form1";
             this.ShowIcon = false;
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Overwatch Lootbox Tracker";
+            this.Text = "Overwatch Item Tracker";
             this.gBLang.ResumeLayout(false);
             this.gbAll.ResumeLayout(false);
             this.gbAll.PerformLayout();

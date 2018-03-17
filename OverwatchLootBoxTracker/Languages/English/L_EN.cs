@@ -92,6 +92,7 @@ namespace OverwatchLootBoxTracker.Lang
             Classic = "Classic";//Skin
             Heroic = "Heroic";//Emote, Victory Pose, Highlight Intro
             Default = "Default";//Weapon
+            GoldWeapon = "GoldWeapon";//GoldWeapon
             #endregion
 
 
@@ -193,6 +194,7 @@ namespace OverwatchLootBoxTracker.Lang
         public string Classic { get; }//Skin
         public string Heroic { get; }//Emote, Victory Pose, Highlight Intro
         public string Default { get; }//Weapon
+        public string GoldWeapon { get; }//GoldWeapon
         #endregion
 
         #endregion
