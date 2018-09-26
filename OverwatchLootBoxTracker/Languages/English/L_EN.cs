@@ -31,7 +31,7 @@ namespace OverwatchLootBoxTracker.Lang
 
             //On Close
             Close = "Close";
-            AppClose = "Test_EN";
+            AppClose = "Saved.";
 
             #region Categories
             Skin = "Skins";

@@ -31,7 +31,7 @@ namespace OverwatchLootBoxTracker.Lang
 
             //On Close
             Close = "Schließen";
-            AppClose = "Test";
+            AppClose = "Alles Gespiechert.";
 
             #region Overlay Text
             Skin = "Skins";

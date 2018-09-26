@@ -36,6 +36,11 @@
             this.components = new System.ComponentModel.Container();
             this.lblKosten = new System.Windows.Forms.Label();
             this.gBLang = new System.Windows.Forms.GroupBox();
+            this.lblGbLangLanguage = new System.Windows.Forms.Label();
+            this.lblGbLangBackColor = new System.Windows.Forms.Label();
+            this.btnGbLangGray = new System.Windows.Forms.Button();
+            this.btnGbLangWhite = new System.Windows.Forms.Button();
+            this.btnGbLangBlue = new System.Windows.Forms.Button();
             this.btnLangEnglish = new System.Windows.Forms.Button();
             this.btnLangGerman = new System.Windows.Forms.Button();
             this.btnSettings = new System.Windows.Forms.Button();
@@ -148,19 +153,72 @@
             // 
             // gBLang
             // 
+            this.gBLang.Controls.Add(this.lblGbLangLanguage);
+            this.gBLang.Controls.Add(this.lblGbLangBackColor);
+            this.gBLang.Controls.Add(this.btnGbLangGray);
+            this.gBLang.Controls.Add(this.btnGbLangWhite);
+            this.gBLang.Controls.Add(this.btnGbLangBlue);
             this.gBLang.Controls.Add(this.btnLangEnglish);
             this.gBLang.Controls.Add(this.btnLangGerman);
-            this.gBLang.Location = new System.Drawing.Point(1162, 592);
+            this.gBLang.Location = new System.Drawing.Point(1167, 515);
             this.gBLang.Name = "gBLang";
-            this.gBLang.Size = new System.Drawing.Size(200, 100);
+            this.gBLang.Size = new System.Drawing.Size(200, 207);
             this.gBLang.TabIndex = 1;
             this.gBLang.TabStop = false;
             this.gBLang.Text = "gBLang";
             this.gBLang.Visible = false;
             // 
+            // lblGbLangLanguage
+            // 
+            this.lblGbLangLanguage.AutoSize = true;
+            this.lblGbLangLanguage.Location = new System.Drawing.Point(7, 21);
+            this.lblGbLangLanguage.Name = "lblGbLangLanguage";
+            this.lblGbLangLanguage.Size = new System.Drawing.Size(55, 13);
+            this.lblGbLangLanguage.TabIndex = 6;
+            this.lblGbLangLanguage.Text = "Language";
+            // 
+            // lblGbLangBackColor
+            // 
+            this.lblGbLangBackColor.AutoSize = true;
+            this.lblGbLangBackColor.Location = new System.Drawing.Point(7, 95);
+            this.lblGbLangBackColor.Name = "lblGbLangBackColor";
+            this.lblGbLangBackColor.Size = new System.Drawing.Size(92, 13);
+            this.lblGbLangBackColor.TabIndex = 5;
+            this.lblGbLangBackColor.Text = "Background Color";
+            // 
+            // btnGbLangGray
+            // 
+            this.btnGbLangGray.Location = new System.Drawing.Point(7, 176);
+            this.btnGbLangGray.Name = "btnGbLangGray";
+            this.btnGbLangGray.Size = new System.Drawing.Size(187, 23);
+            this.btnGbLangGray.TabIndex = 4;
+            this.btnGbLangGray.Text = "Gray";
+            this.btnGbLangGray.UseVisualStyleBackColor = true;
+            this.btnGbLangGray.Click += new System.EventHandler(this.btnGbLangGray_Click);
+            // 
+            // btnGbLangWhite
+            // 
+            this.btnGbLangWhite.Location = new System.Drawing.Point(7, 147);
+            this.btnGbLangWhite.Name = "btnGbLangWhite";
+            this.btnGbLangWhite.Size = new System.Drawing.Size(187, 23);
+            this.btnGbLangWhite.TabIndex = 3;
+            this.btnGbLangWhite.Text = "White";
+            this.btnGbLangWhite.UseVisualStyleBackColor = true;
+            this.btnGbLangWhite.Click += new System.EventHandler(this.btnGbLangWhite_Click);
+            // 
+            // btnGbLangBlue
+            // 
+            this.btnGbLangBlue.Location = new System.Drawing.Point(7, 118);
+            this.btnGbLangBlue.Name = "btnGbLangBlue";
+            this.btnGbLangBlue.Size = new System.Drawing.Size(187, 23);
+            this.btnGbLangBlue.TabIndex = 2;
+            this.btnGbLangBlue.Text = "Blue";
+            this.btnGbLangBlue.UseVisualStyleBackColor = true;
+            this.btnGbLangBlue.Click += new System.EventHandler(this.btnGbLangBlue_Click);
+            // 
             // btnLangEnglish
             // 
-            this.btnLangEnglish.Location = new System.Drawing.Point(7, 49);
+            this.btnLangEnglish.Location = new System.Drawing.Point(7, 66);
             this.btnLangEnglish.Name = "btnLangEnglish";
             this.btnLangEnglish.Size = new System.Drawing.Size(187, 23);
             this.btnLangEnglish.TabIndex = 1;
@@ -170,7 +228,7 @@
             // 
             // btnLangGerman
             // 
-            this.btnLangGerman.Location = new System.Drawing.Point(7, 20);
+            this.btnLangGerman.Location = new System.Drawing.Point(7, 37);
             this.btnLangGerman.Name = "btnLangGerman";
             this.btnLangGerman.Size = new System.Drawing.Size(187, 23);
             this.btnLangGerman.TabIndex = 0;
@@ -1294,7 +1352,7 @@
             // btnBackHero
             // 
             this.btnBackHero.BackColor = System.Drawing.Color.Transparent;
-            this.btnBackHero.Location = new System.Drawing.Point(16, 677);
+            this.btnBackHero.Location = new System.Drawing.Point(16, 699);
             this.btnBackHero.Name = "btnBackHero";
             this.btnBackHero.Size = new System.Drawing.Size(100, 23);
             this.btnBackHero.TabIndex = 25;
@@ -1344,6 +1402,7 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Overwatch Item Tracker";
             this.gBLang.ResumeLayout(false);
+            this.gBLang.PerformLayout();
             this.gbAll.ResumeLayout(false);
             this.gbAll.PerformLayout();
             this.gBMoreCost.ResumeLayout(false);
@@ -1453,6 +1512,11 @@
         private System.Windows.Forms.Button btn18;
         private System.Windows.Forms.Label lbltmrDisposeTimer;
         private System.Windows.Forms.Button btn22;
+        private System.Windows.Forms.Label lblGbLangLanguage;
+        private System.Windows.Forms.Label lblGbLangBackColor;
+        private System.Windows.Forms.Button btnGbLangGray;
+        private System.Windows.Forms.Button btnGbLangWhite;
+        private System.Windows.Forms.Button btnGbLangBlue;
     }
 }
 

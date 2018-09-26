@@ -198,9 +198,9 @@ namespace OverwatchLootBoxTracker
 
         IniStream inisHeroes = null;
 
-        int[] myCosts = new int[28];
-        int[] myCostsEvent = new int[28];
-        int[] myCostsWeapon = new int[28];
+        int[] myCosts = new int[29];
+        int[] myCostsEvent = new int[29];
+        int[] myCostsWeapon = new int[29];
         string ii = "01";
         string SaveFolder = null;
 
@@ -310,6 +310,8 @@ namespace OverwatchLootBoxTracker
                 Widowmaker();
             if (Heroe == "Winston")
                 Winston();
+            if (Heroe == "WreckingBall")
+                WreckingBall();
             if (Heroe == "Zarya")
                 Zarya();
             if (Heroe == "Zenyatta")
@@ -341,6 +343,7 @@ namespace OverwatchLootBoxTracker
                 Tracer();
                 Widowmaker();
                 Winston();
+                WreckingBall();
                 Zarya();
                 Zenyatta();
             }
@@ -1342,7 +1345,7 @@ namespace OverwatchLootBoxTracker
 
         private void Soldier_76()
         {
-            inisHeroes = new IniStream(SaveFolder + "\\Soldier_76.ini");
+            inisHeroes = new IniStream(SaveFolder + "\\Soldier 76.ini");
 
             myCosts[18] = 0;
             myCostsEvent[18] = 0;
@@ -1737,6 +1740,51 @@ namespace OverwatchLootBoxTracker
             }
         }
 
+        private void WreckingBall()
+        {
+            inisHeroes = new IniStream(SaveFolder + "\\WreckingBall.ini");
+
+            myCosts[28] = 0;
+            myCostsEvent[28] = 0;
+            myCostsWeapon[28] = 0;
+
+            for (int i = 1; i <= myMaxItems; i++)
+            {
+                if (i < 10)
+                    ii = "0" + i.ToString();
+                else
+                    ii = i.ToString();
+                //Weapons
+                if (inisHeroes.Read("GW" + ii) != "True" && inisHeroes.Read("GW" + ii) != "true")
+                {
+                    if (i == 1)//Goldweapon
+                        myCostsWeapon[28] += 3000;
+                }
+                //Skins
+                if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
+                {
+                    if (i >= 1 && i <= 4)//Rare
+                        myCosts[28] += myRare;
+                    if (i >= 5 && i <= 6)//Epic
+                        myCosts[28] += myEpic;
+                    if (i >= 7 && i <= 10)//Legendary
+                        myCosts[28] += myLegendary;
+                }
+                //Emotes
+                if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")
+                {
+                    if (i >= 1 && i <= 5)//Epic
+                        myCosts[28] += myEpic;
+                }
+                //Victory Poses
+                if (inisHeroes.Read("VP" + ii) != "True" && inisHeroes.Read("VP" + ii) != "true")
+                {
+                    if (i >= 1 && i <= 4)//Rare
+                        myCosts[28] += myRare;
+                }
+            }
+        }
+        
         private void Zarya()
         {
             inisHeroes = new IniStream(SaveFolder + "\\Zarya.ini");
