@@ -33,6 +33,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             Cricket_SK = "CRICKET";//Summer 17
             Dr_Junkenstein_SK = "DR. JUNKENSTEIN";//Halloween 16
             Beachrat_SK = "WASSERRATTE";//Winter 17
+            BILGERAT_SK = "BILGERAT";//Annyver 18
             #endregion
             #region Emotes
             //Epic
@@ -107,7 +108,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         public string Cricket_SK { get; }//Summer 2017
         public string Dr_Junkenstein_SK { get; }//Halloween 2016
         public string Beachrat_SK { get; }//Winter 17
-
+        public string BILGERAT_SK { get; }//Annyver 18
         #endregion
         #region Emotes
 

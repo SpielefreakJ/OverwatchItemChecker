@@ -30,6 +30,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             Carbon_Fiber_SK = "KOHLEFASER";
             Protector_SK = "WÄCHTERIN";
             Null_Sector_SK = "Null Sector";//Uprising 17
+            FOREST_SPIRIT_SK = "FOREST SPIRIT";//Annyver 18
             #endregion
             #region Emotes
             //Epic
@@ -70,7 +71,8 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         public string Megasoma_SK { get; }
         public string Carbon_Fiber_SK { get; }
         public string Protector_SK { get; }
-        public string Null_Sector_SK { get; }//Uprising 2017
+        public string Null_Sector_SK { get; }//Uprising 17
+        public string FOREST_SPIRIT_SK { get; }//Annyver 18
         #endregion
         #region Emotes
 

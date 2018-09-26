@@ -35,6 +35,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             Overgrown_SK = "ÜBERWUCHERT";//Origin Special
             Avalanche_SK = "LAWINE";//Winter 17
             Dune_Buggy_SK = "STRANDBUGGY";//Annyver 17
+            STEALTH_SK = "STEALTH";//Annyver 18
             #endregion
             #region Emotes
             //Rare
@@ -111,6 +112,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         public string Overgrown_SK { get; }//Origin Special
         public string Avalanche_SK { get; }//Winter 17
         public string Dune_Buggy_SK { get; }//Annyver 17
+        public string STEALTH_SK { get; }//Annyver 18
         #endregion
         #region Emotes
         

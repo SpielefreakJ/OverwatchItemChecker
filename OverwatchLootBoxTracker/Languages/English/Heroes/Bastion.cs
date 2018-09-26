@@ -32,9 +32,10 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             Woodbot_SK = "Woodbot";
             Gearbot_SK = "Gearbot";
             Steambot_SK = "Steambot";
-            Overgrown_SK = "Overgrown";//Origin Special
             Avalanche_SK = "Avalanche";//Winter 17
             Dune_Buggy_SK = "Dune Buggy";//Annyver 17
+            STEALTH_SK = "STEALTH";//Annyver 18
+            Overgrown_SK = "Overgrown";//Origin Special
             #endregion
             #region Emotes
             //Epic
@@ -106,9 +107,10 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         public string Woodbot_SK { get; }
         public string Gearbot_SK { get; }
         public string Steambot_SK { get; }
-        public string Overgrown_SK { get; }//Origin Special
         public string Avalanche_SK { get; }//Winter 17
         public string Dune_Buggy_SK { get; }//Annyver 17
+        public string STEALTH_SK { get; }//Annyver 18
+        public string Overgrown_SK { get; }//Origin Special
         #endregion
         #region Emotes
         

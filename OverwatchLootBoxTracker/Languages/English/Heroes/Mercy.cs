@@ -54,6 +54,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             RIP_VP = "R.I.P.";//Halloween 16
             Mistletoe_VP = "Mistletoe";//Winter 16
             Toast_VP = "Toast";//Winter 17
+            PARASOL_VP = "PARASOL";//Annyver 18
             #endregion
         }
 
@@ -101,6 +102,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         public string RIP_VP { get; }//Halloween 16
         public string Mistletoe_VP { get; }//Winter 16
         public string Toast_VP { get; }//Winter 17
+        public string PARASOL_VP { get; }//Annyver 18
         #endregion
 
         #endregion

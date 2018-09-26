@@ -29,6 +29,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             Irin_SK = "ITIN";
             Avatar_SK = "REINKARNATION";
             Spirit_SK = "SEELENWANDERNG";
+            FORMAL_SK = "FORMAL";//Annyver 18
             #endregion
             #region Emotes
             //Epic
@@ -38,12 +39,14 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             Take_a_knee_EM = "IN DIE KNIE";
             Thumbs_Down_EM = "DAUMEN RUNTER";
             Crushing_EM = "FELSBROCKEN";//Lunar 18
+            DANCE_EM = "DANCE";//Annyver 18
             #endregion
             #region Victory Poses
             //Rare
             Intense_VP = "VERSUCH ES NUR!";
             Seismic_Slam_VP = "SEISMISCHER SCHLAG";
             Superior_VP = "ÜBERLEGEN";
+            CHARGING_VP = "CHARGING";//Annyver 18
             #endregion
 
             //TB Translated
@@ -89,6 +92,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         public string Irin_SK { get; }
         public string Avatar_SK { get; }
         public string Spirit_SK { get; }
+        public string FORMAL_SK { get; }//Annyver 18
         #endregion
         #region Emotes
 
@@ -98,12 +102,14 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         public string Take_a_knee_EM { get; }
         public string Thumbs_Down_EM { get; }
         public string Crushing_EM { get; }//Lunar 18
+        public string DANCE_EM { get; }//Annyver 18
         #endregion
         #region Victory Poses
 
         public string Intense_VP { get; }//Rare
         public string Seismic_Slam_VP { get; }
         public string Superior_VP { get; }
+        public string CHARGING_VP { get; }//Annyver 18
         #endregion
         #region Voice Lines
 

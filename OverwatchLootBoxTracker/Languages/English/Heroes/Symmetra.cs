@@ -32,6 +32,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             Devi_SK = "Devi";
             Goddess_SK = "Goddess";
             Dragon_SK = "Dragon";//Halloween 17
+            MAGICIAN_SK = "MAGICIAN";//Annyver 18
             Oasis_SK = "Oasis";//Annyver 17
             #endregion
             #region Emotes
@@ -78,6 +79,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         public string Devi_SK { get; }
         public string Goddess_SK { get; }
         public string Dragon_SK { get; }//Halloween 17
+        public string MAGICIAN_SK { get; }//Annyver 18
         public string Oasis_SK { get; }//Annyver 17
         #endregion
         #region Emotes

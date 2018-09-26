@@ -23,7 +23,8 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             //Epic
             Posh_SK = "Posh";
             Sporty_SK = "Sporty";
-            Rose_SK = "Rose";//Rooster 2017
+            Rose_SK = "Rose";//Rooster 17
+            LIGHTNING_SK = "LIGHTNING";//Annyver 18
             //Legendary
             Punk_SK = "Punk";
             Ultraviolet_SK = "Ultraviolet";
@@ -72,6 +73,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         public string Posh_SK { get; }//Epic
         public string Sporty_SK { get; }
         public string Rose_SK { get; }//Rooster 17
+        public string LIGHTNING_SK { get; }//Annyver 18
 
         public string Punk_SK { get; }//Legendary
         public string Ultraviolet_SK { get; }

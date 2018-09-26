@@ -23,7 +23,8 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             //Epic
             Bone_SK = "Bone";
             Golden_SK = "Golden";
-            Immortal_SK = "Immortal";//Halloween 2016
+            Immortal_SK = "Immortal";//Halloween 16
+            VENOM_SK = "VENOM";//Annyver 18
             //Legendary
             Commando_76_SK = "Commando: 76";
             Night_Ops_76_SK = "Night Ops: 76";
@@ -68,7 +69,8 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 
         public string Bone_SK { get; }//Epic
         public string Golden_SK { get; }
-        public string Immortal_SK { get; }//Halloween 2016
+        public string Immortal_SK { get; }//Halloween 216
+        public string VENOM_SK { get; }//Annyver 18
 
         public string Commando_76_SK { get; }//Legendary
         public string Night_Ops_76_SK { get; }

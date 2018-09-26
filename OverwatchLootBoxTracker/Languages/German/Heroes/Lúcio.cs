@@ -24,6 +24,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             Auditiva_SK = "AUDITIVA";
             Synaesthesia_SK = "SYNAESTHESIA";
             Andes_SK = "ANDEN";//Winter 16
+            BITRATE_SK = "BITRATE";//Annyver 18
             //Legendary
             Capoeira_SK = "CAPOEIRA";
             Hippityhop_SK = "HIPPITYHOP";
@@ -96,7 +97,8 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
 
         public string Auditiva_SK { get; }//Epic
         public string Synaesthesia_SK { get; }
-        public string Andes_SK { get; }//Winter 2016
+        public string Andes_SK { get; }//Winter 216
+        public string BITRATE_SK { get; }//Annyver 18
 
         public string Hippityhop_SK { get; }//Legendary
         public string Ribbit_SK { get; }

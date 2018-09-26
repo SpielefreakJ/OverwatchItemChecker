@@ -23,7 +23,8 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             //Epic
             Posh_SK = "POSH";
             Sporty_SK = "SPORTY";
-            Rose_SK = "ROSE";//Rooster 2017
+            Rose_SK = "ROSE";//Rooster 17
+            LIGHTNING_SK = "LIGHTNING";//Annyver 18
             //Legendary
             Punk_SK = "PUNK";
             Ultraviolet_SK = "ULTRAVIOLETT";
@@ -55,6 +56,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             Pumpkin_VP = "KÜRBIS";//Halloween 17
             RIP_VP = "R.I.P.";//Halloween 16
             Fireworks_VP = "RAKETEN";//Lunar 18
+            WINK_VP = "WINK";//Annyver 18
             #endregion
         }
 
@@ -72,6 +74,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         public string Posh_SK { get; }//Epic
         public string Sporty_SK { get; }
         public string Rose_SK { get; }//Rooster 17
+        public string LIGHTNING_SK { get; }//Annyver 18
 
         public string Punk_SK { get; }//Legendary
         public string Ultraviolet_SK { get; }
@@ -103,6 +106,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         public string Pumpkin_VP { get; }//Halloween 17
         public string RIP_VP { get; }//Halloween 16
         public string Fireworks_VP { get; }//Lunar 18
+        public string WINK_VP { get; }//Annyver 18
         #endregion
 
         #endregion

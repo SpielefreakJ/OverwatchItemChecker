@@ -28,6 +28,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             Sól_SK = "SÓL";
             Engineer_SK = "ENGINEER";
             Mechanic_SK = "MECHANIC";
+            SHIELDMAIDEN_SK = "SHIELDMAIDEN";//Annyver 18
             #endregion
             #region Emotes
             //Epic
@@ -62,6 +63,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         public string Sól_SK { get; }
         public string Engineer_SK { get; }
         public string Mechanic_SK { get; }
+        public string SHIELDMAIDEN_SK { get; }//Annyver 18
         #endregion
         #region Emotes
 

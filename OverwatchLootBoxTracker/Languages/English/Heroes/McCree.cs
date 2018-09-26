@@ -36,6 +36,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             Van_Helsing_SK = "Van Helsing";//Halloween 17
             Magistrate_SK = "MAGISTRATE";//Lunar 18
             Blackwatch_SK = "Blackwatch";//Uprising 17
+            SHERLOK_SK = "SHERLOK";//Annyver 18
             #endregion
             #region Emotes
             //Epic
@@ -83,6 +84,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         public string Van_Helsing_SK { get; }//Halloween 17
         public string Magistrate_SK { get; }//Lunar 18
         public string Blackwatch_SK { get; }//Uprising 17
+        public string SHERLOK_SK { get; }//Annyver 18
         #endregion
         #region Emotes
 

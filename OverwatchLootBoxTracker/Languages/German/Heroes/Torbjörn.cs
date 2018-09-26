@@ -34,6 +34,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             Santaclad_SK = "GESCHENKESCHMIED";//Winter 16
             Chief_Engineer_Lindholm_SK = "CHEFINGENIEUR LINDHOLM";//Uprising 17
             Ironclad_SK = "IRONCLAD";//Uprising 17
+            CYBJÖRN_SK = "CYBJÖRN";//Annyver 18
             #endregion
             #region Emotes
             //Epic
@@ -80,6 +81,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         public string Santaclad_SK { get; }//Winter 16
         public string Chief_Engineer_Lindholm_SK { get; }//Uprising 17
         public string Ironclad_SK { get; }//Uprising 17
+        public string CYBJÖRN_SK { get; }//Annyver 18
         #endregion
         #region Emotes
 
