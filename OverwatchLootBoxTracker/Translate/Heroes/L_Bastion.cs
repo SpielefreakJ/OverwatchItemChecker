@@ -16,7 +16,10 @@ namespace OverwatchLootBoxTracker.Translate
 
         public L_Bastion(string Lang)
         {
-            myLang = Lang;
+            if (Lang != "")
+            {
+                myLang = Lang;
+            }
 
             EN = new Languages.English.Heroes.Bastion();
             DE = new Languages.German.Heroes.Bastion();
@@ -303,6 +306,21 @@ namespace OverwatchLootBoxTracker.Translate
                 else
                 {
                     return EN.Avalanche_SK;
+                }
+            }
+        }
+
+        public string STEALTH_SK//18
+        {//Annyver 18
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.STEALTH_SK;
+                }
+                else
+                {
+                    return EN.STEALTH_SK;
                 }
             }
         }

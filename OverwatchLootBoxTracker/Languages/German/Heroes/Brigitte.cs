@@ -36,6 +36,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             Hilarious_EM = "HILARIOUS";
             Recalibrate_EM = "RECALIBRATE";
             Taunt_EM = "TAUNT";
+            DANCE_EM = "DANCE";//Annyver 18
             #endregion
             #region Victory Poses
             //Rare
@@ -71,6 +72,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         public string Hilarious_EM { get; }
         public string Recalibrate_EM { get; }
         public string Taunt_EM { get; }
+        public string DANCE_EM { get; }//Annyver 18
         #endregion
         #region Victory Poses
 

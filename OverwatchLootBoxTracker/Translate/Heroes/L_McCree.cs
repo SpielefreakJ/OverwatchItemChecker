@@ -16,7 +16,10 @@ namespace OverwatchLootBoxTracker.Translate
 
         public L_McCree(string Lang)
         {
-            myLang = Lang;
+            if (Lang != "")
+            {
+                myLang = Lang;
+            }
 
             EN = new Languages.English.Heroes.McCree();
             DE = new Languages.German.Heroes.McCree();

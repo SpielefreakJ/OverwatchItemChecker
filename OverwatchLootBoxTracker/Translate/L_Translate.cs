@@ -18,7 +18,11 @@ namespace OverwatchLootBoxTracker.Translate
 
         public L_Translate(string Lang)
         {
-            myLang = Lang;
+            if (Lang != "")
+            {
+                myLang = Lang;
+            }
+
             Cost = new CCost();
 
             //Langs

@@ -16,7 +16,10 @@ namespace OverwatchLootBoxTracker.Translate
 
         public L_Mei(string Lang)
         {
-            myLang = Lang;
+            if (Lang != "")
+            {
+                myLang = Lang;
+            }
 
             EN = new Languages.English.Heroes.Mei();
             DE = new Languages.German.Heroes.Mei();

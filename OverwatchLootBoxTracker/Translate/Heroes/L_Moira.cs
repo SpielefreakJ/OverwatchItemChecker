@@ -16,7 +16,10 @@ namespace OverwatchLootBoxTracker.Translate
 
         public L_Moira(string Lang)
         {
-            myLang = Lang;
+            if (Lang != "")
+            {
+                myLang = Lang;
+            }
 
             EN = new Languages.English.Heroes.Moira();
             DE = new Languages.German.Heroes.Moira();

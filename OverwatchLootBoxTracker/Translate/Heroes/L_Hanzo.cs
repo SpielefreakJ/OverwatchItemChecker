@@ -16,7 +16,10 @@ namespace OverwatchLootBoxTracker.Translate
 
         public L_Hanzo(string Lang)
         {
-            myLang = Lang;
+            if (Lang != "")
+            {
+                myLang = Lang;
+            }
 
             EN = new Languages.English.Heroes.Hanzo();
             DE = new Languages.German.Heroes.Hanzo();

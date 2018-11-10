@@ -13,7 +13,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         {
             //You're able to edit here everything in between all " Symbols
 
-            Name = "WreckingBall";
+            Name = "Wrecking Ball";
 
             #region Skins
             //Rare

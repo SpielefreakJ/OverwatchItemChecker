@@ -16,7 +16,10 @@ namespace OverwatchLootBoxTracker.Translate
 
         public L_Reinhardt(string Lang)
         {
-            myLang = Lang;
+            if (Lang != "")
+            {
+                myLang = Lang;
+            }
 
             EN = new Languages.English.Heroes.Reinhardt();
             DE = new Languages.German.Heroes.Reinhardt();

@@ -11,12 +11,81 @@ namespace OverwatchLootBoxTracker
         IniStream inisHeroes = null;
         //IniStream inisPI = null;
         string Path = null;
+        String f = "False", t = "True";
+
+        #region HeroImport
+        Translate.L_Ana Ana;
+        Translate.L_Bastion Bastion;
+        Translate.L_Brigitte Brigitte;
+        Translate.L_DVa DVa;
+        Translate.L_Doomfist Doomfist;
+        Translate.L_Genji Genji;
+        Translate.L_Hanzo Hanzo;
+        Translate.L_Junkrat Junkrat;
+        Translate.L_Lúcio Lúcio;
+        Translate.L_McCree McCree;
+        Translate.L_Mei Mei;
+        Translate.L_Mercy Mercy;
+        Translate.L_Moira Moira;
+        Translate.L_Orisa Orisa;
+        Translate.L_Pharah Pharah;
+        Translate.L_Reaper Reaper;
+        Translate.L_Reinhardt Reinhardt;
+        Translate.L_Roadhog Roadhog;
+        Translate.L_Soldier_76 Soldier_76;
+        Translate.L_Sombra Sombra;
+        Translate.L_Symmetra Symmetra;
+        Translate.L_Torbjörn Torbjörn;
+        Translate.L_Tracer Tracer;
+        Translate.L_Widowmaker Widowmaker;
+        Translate.L_Winston Winston;
+        Translate.L_WreckingBall WreckingBall;
+        Translate.L_Zarya Zarya;
+        Translate.L_Zenyatta Zenyatta;
+
+        Translate.L_Translate Lang;
+        #endregion
+
+        Int64 Cost = 0;
 
         public CIniCreator(string Folder)
         {
             Path = Folder;
+
+            Ana = new Translate.L_Ana("");
+            Bastion = new Translate.L_Bastion("");
+            Brigitte = new Translate.L_Brigitte("");
+            DVa = new Translate.L_DVa("");
+            Doomfist = new Translate.L_Doomfist("");
+            Genji = new Translate.L_Genji("");
+            Hanzo = new Translate.L_Hanzo("");
+            Junkrat = new Translate.L_Junkrat("");
+            Lúcio = new Translate.L_Lúcio("");
+            McCree = new Translate.L_McCree("");
+            Mei = new Translate.L_Mei("");
+            Mercy = new Translate.L_Mercy("");
+            Moira = new Translate.L_Moira("");
+            Orisa = new Translate.L_Orisa("");
+            Pharah = new Translate.L_Pharah("");
+            Reaper = new Translate.L_Reaper("");
+            Reinhardt = new Translate.L_Reinhardt("");
+            Roadhog = new Translate.L_Roadhog("");
+            Soldier_76 = new Translate.L_Soldier_76("");
+            Sombra = new Translate.L_Sombra("");
+            Symmetra = new Translate.L_Symmetra("");
+            Torbjörn = new Translate.L_Torbjörn("");
+            Tracer = new Translate.L_Tracer("");
+            Widowmaker = new Translate.L_Widowmaker("");
+            Winston = new Translate.L_Winston("");
+            WreckingBall = new Translate.L_WreckingBall("");
+            Zarya = new Translate.L_Zarya("");
+            Zenyatta = new Translate.L_Zenyatta("");
+
+            Lang = new Translate.L_Translate("");
+
         }
 
+        #region Old
         public void Heroe(string name, int Skin, int Emote)
         {
             inisHeroes = new IniStream(Path + "\\" + name + ".ini");
@@ -226,6 +295,71 @@ namespace OverwatchLootBoxTracker
 
             if (Hero == "Widowmaker")
                 inisHeroes.Write("SK17", "false");
+        }
+
+        #endregion
+
+        // New Hero Roster
+
+        public void Create(string HeroName)
+        {
+            #region Ana
+            if (HeroName == "Ana")
+            {
+                inisHeroes = new IniStream(Path + "\\Ana.ini");
+                #region Skins
+                //Rare
+                inisHeroes.Write(Ana.Citrine_SK[0], f); Cost = Convert.ToInt64(Ana.Citrine_SK[1]);
+                inisHeroes.Write(Ana.Garnet_SK[0], f); Cost = Convert.ToInt64(Ana.Garnet_SK[1]);
+                inisHeroes.Write(Ana.Peridot_SK[0], f); Cost = Convert.ToInt64(Ana.Peridot_SK[1]);
+                inisHeroes.Write(Ana.Turquoise_SK[0], f); Cost = Convert.ToInt64(Ana.Turquoise_SK[1]);
+                //Epic
+                inisHeroes.Write(Ana.Merciful_SK[0], f); Cost = Convert.ToInt64(Ana.Merciful_SK[1]);
+                inisHeroes.Write(Ana.Shrike_SK[0], f); Cost = Convert.ToInt64(Ana.Shrike_SK[1]);
+                //Epic Event
+                inisHeroes.Write(Ana.Ghoul_SK[0], f); Cost = Convert.ToInt64(Ana.Ghoul_SK[1]);
+                inisHeroes.Write(Ana.Tal_SK[0], f); Cost = Convert.ToInt64(Ana.Tal_SK[1]);
+                //Legendary
+                inisHeroes.Write(Ana.Wadjet_SK[0], f); Cost = Convert.ToInt64(Ana.Wadjet_SK[1]);
+                inisHeroes.Write(Ana.Wasteland_SK[0], f); Cost = Convert.ToInt64(Ana.Wasteland_SK[1]);
+                inisHeroes.Write(Ana.Captain_Amari_SK[0], f); Cost = Convert.ToInt64(Ana.Captain_Amari_SK[1]);
+                inisHeroes.Write(Ana.Horus_SK[0], f); Cost = Convert.ToInt64(Ana.Horus_SK[1]);
+                //Legendary Event
+                inisHeroes.Write(Ana.Corsair_SK[0], f); Cost = Convert.ToInt64(Ana.Corsair_SK[1]);
+                inisHeroes.Write(Ana.Snow_Owl_SK[0], f); Cost = Convert.ToInt64(Ana.Snow_Owl_SK[1]);
+                #endregion
+                #region Emotes
+                #endregion
+                #region Victory Poses
+                #endregion
+            }
+            #endregion
+
+            //------------------------------------------------------------//
+            #region Weapon
+            inisHeroes.Write(Lang.GoldWeapon, f);
+
+            #endregion
+
+            #region OWL
+            inisHeroes.Write(Lang.OWL_Boston_Uprising, f);
+            inisHeroes.Write(Lang.OWL_Dallas_Fuel, f);
+            inisHeroes.Write(Lang.OWL_Florida_Mayhem, f);
+            inisHeroes.Write(Lang.OWL_Houston_Outlaws, f);
+            inisHeroes.Write(Lang.OWL_London_Spitfire, f);
+            inisHeroes.Write(Lang.OWL_Los_Angeles_Gladiators, f);
+            inisHeroes.Write(Lang.OWL_Los_Angeles_Valiant, f);
+            inisHeroes.Write(Lang.OWL_New_York_Excelsior, f);
+            inisHeroes.Write(Lang.OWL_Philadelphia_Fusion, f);
+            inisHeroes.Write(Lang.OWL_San_Francisco_Shock, f);
+            inisHeroes.Write(Lang.OWL_Seoul_Dynasty, f);
+            inisHeroes.Write(Lang.OWL_Shanghai_Dragons, f);
+
+            #endregion
+        }
+
+        private void CreateOWL()
+        {
         }
     }
 }

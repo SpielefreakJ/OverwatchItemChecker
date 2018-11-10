@@ -16,7 +16,10 @@ namespace OverwatchLootBoxTracker.Translate
 
         public L_WreckingBall(string Lang)
         {
-            myLang = Lang;
+            if (Lang != "")
+            {
+                myLang = Lang;
+            }
 
             EN = new Languages.English.Heroes.WreckingBall();
             DE = new Languages.German.Heroes.WreckingBall();

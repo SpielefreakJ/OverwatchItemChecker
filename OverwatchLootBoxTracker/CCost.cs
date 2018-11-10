@@ -29,6 +29,38 @@ namespace OverwatchLootBoxTracker
 
         private int myMaxItems = 24;
 
+        #region HeroImport
+        Translate.L_Ana Ana2;
+        Translate.L_Bastion Bastion2;
+        Translate.L_Brigitte Brigitte2;
+        Translate.L_DVa DVa2;
+        Translate.L_Doomfist Doomfist2;
+        Translate.L_Genji Genji2;
+        Translate.L_Hanzo Hanzo2;
+        Translate.L_Junkrat Junkrat2;
+        Translate.L_Lúcio Lúcio2;
+        Translate.L_McCree McCree2;
+        Translate.L_Mei Mei2;
+        Translate.L_Mercy Mercy2;
+        Translate.L_Moira Moira2;
+        Translate.L_Orisa Orisa2;
+        Translate.L_Pharah Pharah2;
+        Translate.L_Reaper Reaper2;
+        Translate.L_Reinhardt Reinhardt2;
+        Translate.L_Roadhog Roadhog2;
+        Translate.L_Soldier_76 Soldier_762;
+        Translate.L_Sombra Sombra2;
+        Translate.L_Symmetra Symmetra2;
+        Translate.L_Torbjörn Torbjörn2;
+        Translate.L_Tracer Tracer2;
+        Translate.L_Widowmaker Widowmaker2;
+        Translate.L_Winston Winston2;
+        Translate.L_WreckingBall WreckingBall2;
+        Translate.L_Zarya Zarya2;
+        Translate.L_Zenyatta Zenyatta2;
+
+        #endregion
+
 
         public CCost()
         {
@@ -257,6 +289,8 @@ namespace OverwatchLootBoxTracker
         {
             SaveFolder = Folder;
 
+
+
             #region Heroes
             if (Heroe == "Ana")
                 Ana();
@@ -374,18 +408,7 @@ namespace OverwatchLootBoxTracker
                 //Skins
                 if (inisHeroes.Read("SK" + ii) != "True" && inisHeroes.Read("SK" + ii) != "true")
                 {
-                    if (i >= 1 && i <= 4)//Rare
-                        myCosts[1] += myRare;
-                    if (i >= 5 && i <= 6)//Epic
-                        myCosts[1] += myEpic;
-                    if (i == 7)//Epic Old Event
-                        myCostsEvent[1] += myEpic;
-                    if (i == 8)//Epic Event
-                        myCostsEvent[1] += myEpicEvent;
-                    if (i >= 9 && i <= 12)//Legendary
-                        myCosts[1] += myLegendary;
-                    if (i >= 13 && i <= 14)//Legendary Event
-                        myCostsEvent[1] += myLegendaryEvent;
+                    
                 }
                 //Emotes
                 if (inisHeroes.Read("EM" + ii) != "True" && inisHeroes.Read("EM" + ii) != "true")

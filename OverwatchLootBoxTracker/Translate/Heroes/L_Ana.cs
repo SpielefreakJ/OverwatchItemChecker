@@ -12,14 +12,22 @@ namespace OverwatchLootBoxTracker.Translate
     {
         Languages.English.Heroes.Ana EN;
         Languages.German.Heroes.Ana DE;
+        CCost Costs;
         string myLang;
+        string[] LangAndCost;
 
         public L_Ana(string Lang)
         {
-            myLang = Lang;
+            if (Lang != "")
+            {
+                myLang = Lang;
+            }
 
+            Costs = new CCost();
             EN = new Languages.English.Heroes.Ana();
             DE = new Languages.German.Heroes.Ana();
+
+            LangAndCost = new string[2];
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\Ana_link.png");
@@ -52,215 +60,243 @@ namespace OverwatchLootBoxTracker.Translate
 
         //Skins
         //Rare
-        public string Citrine_SK//1
+        public string[] Citrine_SK//1
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Citrine_SK;
+                    LangAndCost[0] = DE.Citrine_SK;
                 }
                 else
                 {
-                    return EN.Citrine_SK;
+                    LangAndCost[0] = EN.Citrine_SK;
                 }
+                LangAndCost[1] = Costs.Rare.ToString();
+                return LangAndCost;
             }
         }
 
-        public string Garnet_SK//2
+        public string[] Garnet_SK//2
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Garnet_SK;
+                    LangAndCost[0] = DE.Garnet_SK;
                 }
                 else
                 {
-                    return EN.Garnet_SK;
+                    LangAndCost[0] = EN.Garnet_SK;
                 }
+                LangAndCost[1] = Costs.Rare.ToString();
+                return LangAndCost;
             }
         }
 
-        public string Peridot_SK//3
+        public string[] Peridot_SK//3
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Peridot_SK;
+                    LangAndCost[0] = DE.Peridot_SK;
                 }
                 else
                 {
-                    return EN.Peridot_SK;
+                    LangAndCost[0] = EN.Peridot_SK;
                 }
+                LangAndCost[1] = Costs.Rare.ToString();
+                return LangAndCost;
             }
         }
 
-        public string Turquoise_SK//4
+        public string[] Turquoise_SK//4
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Turquoise_SK;
+                    LangAndCost[0] = DE.Turquoise_SK;
                 }
                 else
                 {
-                    return EN.Turquoise_SK;
+                    LangAndCost[0] = EN.Turquoise_SK;
                 }
+                LangAndCost[1] = Costs.Rare.ToString();
+                return LangAndCost;
             }
         }
 
         //Epic
-        public string Merciful_SK//5
+        public string[] Merciful_SK//5
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Merciful_SK;
+                    LangAndCost[0] = DE.Merciful_SK;
                 }
                 else
                 {
-                    return EN.Merciful_SK;
+                    LangAndCost[0] = EN.Merciful_SK;
                 }
+                LangAndCost[1] = Costs.Epic.ToString();
+                return LangAndCost;
             }
         }
 
-        public string Shrike_SK//6
+        public string[] Shrike_SK//6
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Shrike_SK;
+                    LangAndCost[0] = DE.Shrike_SK;
                 }
                 else
                 {
-                    return EN.Shrike_SK;
+                    LangAndCost[0] = EN.Shrike_SK;
                 }
+                LangAndCost[1] = Costs.Epic.ToString();
+                return LangAndCost;
             }
         }
 
-        public string Ghoul_SK//7
+        public string[] Ghoul_SK//7
         {//Halloween 2016
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Ghoul_SK;
+                    LangAndCost[0] = DE.Ghoul_SK;
                 }
                 else
                 {
-                    return EN.Ghoul_SK;
+                    LangAndCost[0] = EN.Ghoul_SK;
                 }
+                LangAndCost[1] = Costs.Epic.ToString();
+                return LangAndCost;
             }
         }
 
-        public string Tal_SK//8
+        public string[] Tal_SK//8
         {//Rooster 2017
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Tal_SK;
+                    LangAndCost[0] = DE.Tal_SK;
                 }
                 else
                 {
-                    return EN.Tal_SK;
+                    LangAndCost[0] = EN.Tal_SK;
                 }
+                LangAndCost[1] = Costs.Epic.ToString();
+                return LangAndCost;
             }
         }
 
         //Legendary
-        public string Wadjet_SK//9
+        public string[] Wadjet_SK//9
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Wadjet_SK;
+                    LangAndCost[0] = DE.Wadjet_SK;
                 }
                 else
                 {
-                    return EN.Wadjet_SK;
+                    LangAndCost[0] = EN.Wadjet_SK;
                 }
+                LangAndCost[1] = Costs.Legendary.ToString();
+                return LangAndCost;
             }
         }
 
-        public string Wasteland_SK//10
+        public string[] Wasteland_SK//10
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Wasteland_SK;
+                    LangAndCost[0] = DE.Wasteland_SK;
                 }
                 else
                 {
-                    return EN.Wasteland_SK;
+                    LangAndCost[0] = EN.Wasteland_SK;
                 }
+                LangAndCost[1] = Costs.Legendary.ToString();
+                return LangAndCost;
             }
         }
 
-        public string Captain_Amari_SK//11
+        public string[] Captain_Amari_SK//11
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Captain_Amari_SK;
+                    LangAndCost[0] = DE.Captain_Amari_SK;
                 }
                 else
                 {
-                    return EN.Captain_Amari_SK;
+                    LangAndCost[0] = EN.Captain_Amari_SK;
                 }
+                LangAndCost[1] = Costs.Legendary.ToString();
+                return LangAndCost;
             }
         }
 
-        public string Horus_SK//12
+        public string[] Horus_SK//12
         {
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Horus_SK;
+                    LangAndCost[0] = DE.Horus_SK;
                 }
                 else
                 {
-                    return EN.Horus_SK;
+                    LangAndCost[0] = EN.Horus_SK;
                 }
+                LangAndCost[1] = Costs.Legendary.ToString();
+                return LangAndCost;
             }
         }
 
-        public string Corsair_SK//13
+        public string[] Corsair_SK//13
         {//Halloween 2017
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Corsair_SK;
+                    LangAndCost[0] = DE.Corsair_SK;
                 }
                 else
                 {
-                    return EN.Corsair_SK;
+                    LangAndCost[0] = EN.Corsair_SK;
                 }
+                LangAndCost[1] = Costs.Legendary.ToString();
+                return LangAndCost;
             }
         }
 
-        public string Snow_Owl_SK//14
+        public string[] Snow_Owl_SK//14
         {//Winter 2017
             get
             {
                 if (myLang == "DE")
                 {
-                    return DE.Corsair_SK;
+                    LangAndCost[0] = DE.Snow_Owl_SK;
                 }
                 else
                 {
-                    return EN.Snow_Owl_SK;
+                    LangAndCost[0] = EN.Snow_Owl_SK;
                 }
+                LangAndCost[1] = Costs.LegendaryEvent.ToString();
+                return LangAndCost;
             }
         }
 

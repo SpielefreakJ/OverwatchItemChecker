@@ -37,6 +37,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
             Give_and_take_EM = "GEBEN UND NEMEN";
             How_amusing_EM = "WIE AMÜSANT";
             Waiting_EM = "WARTEND";
+            DANCE_EM = "DANCE";//Annyver 18
             #endregion
             #region Victory Poses
             //Rare
@@ -73,6 +74,7 @@ namespace OverwatchLootBoxTracker.Languages.German.Heroes
         public string Give_and_take_EM { get; }
         public string How_amusing_EM { get; }
         public string Waiting_EM { get; }
+        public string DANCE_EM { get; }//Annyver 18
         #endregion
         #region Victory Poses
         //Rare
