@@ -1190,15 +1190,15 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave2 == Lang.Emotes)
             {
-                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1); chB00.Text = "(" + Cost.Classic + ")";
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2); chB01.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB01, "Epic");
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3); chB02.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB02, "Epic");
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4); chB03.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB03, "Epic");
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p5); chB04.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB04, "Epic");
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1); chB05.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB05, "Epic");
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2); chB06.Text = "(" + Cost.EpicEvent + ")"; HeroTT.SetToolTip(chB06, Lang.Summer + " 2017");
-                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3); chB07.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB07, Lang.Halloween + " 2016");
-                chB08.Visible = true; chB08.Location = new Point(gBAllWeited3p2, p4); chB08.Text = "(" + Cost.EpicEvent + ")"; HeroTT.SetToolTip(chB08, Lang.Annyver + " 2017");
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1); chB00.Text = Cost.Classic.ToString();
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2); chB01.Text = Ana.Not_Impressed_EM[1]; HeroTT.SetToolTip(chB01, "Epic");
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3); chB02.Text = Ana.Disapproving_EM[1]; HeroTT.SetToolTip(chB02, "Epic");
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4); chB03.Text = Ana.Protector_EM[1]; HeroTT.SetToolTip(chB03, "Epic");
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p5); chB04.Text = Ana.Take_A_Knee_EM[1]; HeroTT.SetToolTip(chB04, "Epic");
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1); chB05.Text = Ana.Tea_Time_EM[1]; HeroTT.SetToolTip(chB05, "Epic");
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2); chB06.Text = Ana.Beach_Ball_EM[1]; HeroTT.SetToolTip(chB06, Lang.Summer + " 2017");
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3); chB07.Text = Ana.Candy_EM[1]; HeroTT.SetToolTip(chB07, Lang.Halloween + " 2016");
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited3p2, p4); chB08.Text = Ana.Dance_EM[1]; HeroTT.SetToolTip(chB08, Lang.Annyver + " 2017");
 
                 btn00.Visible = true; btn00.Location = new Point(gBAllWeited3p1 + chB00.Width, p1 - 5);
                 btn01.Visible = true; btn01.Location = new Point(gBAllWeited3p1 + chB01.Width, p2 - 5);
@@ -1211,33 +1211,33 @@ namespace OverwatchLootBoxTracker
                 btn08.Visible = true; btn08.Location = new Point(gBAllWeited3p2 + chB08.Width, p4 - 5);
 
                 btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Heroic;//DEfault
-                btn01.BackColor = Color.DarkViolet; btn01.Text = Ana.Not_Impressed_EM;//Epic
-                btn02.BackColor = Color.DarkViolet; btn02.Text = Ana.Disapproving_EM;
-                btn03.BackColor = Color.DarkViolet; btn03.Text = Ana.Protector_EM;
-                btn04.BackColor = Color.DarkViolet; btn04.Text = Ana.Take_A_Knee_EM;
-                btn05.BackColor = Color.DarkViolet; btn05.Text = Ana.Tea_Time_EM;
-                btn06.BackColor = Color.DarkViolet; btn06.Text = Ana.Beach_Ball_EM;//Summer 17
-                btn07.BackColor = Color.DarkViolet; btn07.Text = Ana.Candy_EM;//Halloween 16
-                btn08.BackColor = Color.DarkViolet; btn08.Text = Ana.Dance_EM;//Annyver 17
+                btn01.BackColor = Color.DarkViolet; btn01.Text = Ana.Not_Impressed_EM[0];//Epic
+                btn02.BackColor = Color.DarkViolet; btn02.Text = Ana.Disapproving_EM[0];
+                btn03.BackColor = Color.DarkViolet; btn03.Text = Ana.Protector_EM[0];
+                btn04.BackColor = Color.DarkViolet; btn04.Text = Ana.Take_A_Knee_EM[0];
+                btn05.BackColor = Color.DarkViolet; btn05.Text = Ana.Tea_Time_EM[0];
+                btn06.BackColor = Color.DarkViolet; btn06.Text = Ana.Beach_Ball_EM[0];//Summer 17
+                btn07.BackColor = Color.DarkViolet; btn07.Text = Ana.Candy_EM[0];//Halloween 16
+                btn08.BackColor = Color.DarkViolet; btn08.Text = Ana.Dance_EM[0];//Annyver 17
 
-                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("EM01"));
-                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("EM02"));
-                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("EM03"));
-                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("EM04"));
-                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("EM05"));
-                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("EM06"));
-                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("EM07"));
-                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("EM08"));
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Not_Impressed_EM[0]));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Disapproving_EM[0]));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Protector_EM[0]));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Take_A_Knee_EM[0]));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Tea_Time_EM[0]));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Beach_Ball_EM[0]));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Candy_EM[0]));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Dance_EM[0]));
             }
             if (BackSave2 == Lang.VictoryPoses)
             {
-                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1); chB00.Text = "(" + Cost.Classic + ")";
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2); chB01.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB01, "Rare");
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3); chB02.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB02, "Rare");
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4); chB03.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB03, "Rare");
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1); chB04.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB04, Lang.Halloween + " 2016");
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2); chB05.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB05, Lang.Winter + " 2016");
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3); chB06.Text = "(" + Cost.RareEvent + ")"; HeroTT.SetToolTip(chB06, Lang.Rooster + " 2017");
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1); chB00.Text = Cost.Classic.ToString();
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2); chB01.Text = Ana.Mission_Complete_VP[1]; HeroTT.SetToolTip(chB01, "Rare");
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3); chB02.Text = Ana.Protector_VP[1]; HeroTT.SetToolTip(chB02, "Rare");
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4); chB03.Text = Ana.Seated_VP[1]; HeroTT.SetToolTip(chB03, "Rare");
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1); chB04.Text = Ana.RIP_VP[1]; HeroTT.SetToolTip(chB04, Lang.Halloween + " 2016");
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2); chB05.Text = Ana.Toast_VP[1]; HeroTT.SetToolTip(chB05, Lang.Winter + " 2016");
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3); chB06.Text = Ana.Folded_Hands_VP[1]; HeroTT.SetToolTip(chB06, Lang.Rooster + " 2017");
 
                 btn00.Visible = true; btn00.Location = new Point(gBAllWeited3p1 + chB00.Width, p1 - 5);
                 btn01.Visible = true; btn01.Location = new Point(gBAllWeited3p1 + chB01.Width, p2 - 5);
@@ -1248,46 +1248,46 @@ namespace OverwatchLootBoxTracker
                 btn06.Visible = true; btn06.Location = new Point(gBAllWeited3p2 + chB06.Width, p3 - 5);
 
                 btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Heroic;//Default
-                btn01.BackColor = Color.DeepSkyBlue; btn01.Text = Ana.Mission_Complete_VP;//Rare
-                btn02.BackColor = Color.DeepSkyBlue; btn02.Text = Ana.Protector_VP;
-                btn03.BackColor = Color.DeepSkyBlue; btn03.Text = Ana.Seated_VP;
-                btn04.BackColor = Color.DeepSkyBlue; btn04.Text = Ana.RIP_VP;//Halloween 16
-                btn05.BackColor = Color.DeepSkyBlue; btn05.Text = Ana.Toast_VP;//Winter 16
-                btn06.BackColor = Color.DeepSkyBlue; btn06.Text = Ana.Folded_Hands_VP;//Rooster 17
+                btn01.BackColor = Color.DeepSkyBlue; btn01.Text = Ana.Mission_Complete_VP[0];//Rare
+                btn02.BackColor = Color.DeepSkyBlue; btn02.Text = Ana.Protector_VP[0];
+                btn03.BackColor = Color.DeepSkyBlue; btn03.Text = Ana.Seated_VP[0];
+                btn04.BackColor = Color.DeepSkyBlue; btn04.Text = Ana.RIP_VP[0];//Halloween 16
+                btn05.BackColor = Color.DeepSkyBlue; btn05.Text = Ana.Toast_VP[0];//Winter 16
+                btn06.BackColor = Color.DeepSkyBlue; btn06.Text = Ana.Folded_Hands_VP[0];//Rooster 17
 
-                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("VP01"));
-                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("VP02"));
-                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("VP03"));
-                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("VP04"));
-                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VP05"));
-                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VP06"));
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Mission_Complete_VP[0]));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Protector_VP[0]));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Seated_VP[0]));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.RIP_VP[0]));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Toast_VP[0]));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Folded_Hands_VP[0]));
             }
             if (BackSave2 == Lang.VoiceLines)
             {
-                chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1); chB00.Text = "(" + Cost.Classic + ")";
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2); chB01.Text = "(" + Cost.Common + ")"; HeroTT.SetToolTip(chB01, "Common");
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3); chB02.Text = "(" + Cost.Common + ")"; HeroTT.SetToolTip(chB02, "Common");
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4); chB03.Text = "(" + Cost.Common + ")"; HeroTT.SetToolTip(chB03, "Common");
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5); chB04.Text = "(" + Cost.Common + ")"; HeroTT.SetToolTip(chB04, "Common");
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p1, p6); chB05.Text = "(" + Cost.Common + ")"; HeroTT.SetToolTip(chB05, "Common");
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p1, p7); chB06.Text = "(" + Cost.Common + ")"; HeroTT.SetToolTip(chB06, "Common");
-                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p1, p8); chB07.Text = "(" + Cost.Common + ")"; HeroTT.SetToolTip(chB07, "Common");
-                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p1, p1); chB08.Text = "(" + Cost.Common + ")"; HeroTT.SetToolTip(chB08, "Common");
-                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p2, p2); chB09.Text = "(" + Cost.Common + ")"; HeroTT.SetToolTip(chB09, "Common");
-                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p2, p3); chB10.Text = "(" + Cost.Common + ")"; HeroTT.SetToolTip(chB10, "Common");
-                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p2, p4); chB11.Text = "(" + Cost.Common + ")"; HeroTT.SetToolTip(chB11, "Common");
-                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p2, p5); chB12.Text = "(" + Cost.CommonEvent + ")"; HeroTT.SetToolTip(chB12, Lang.Summer + "2017");
-                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p2, p6); chB13.Text = "(" + Cost.Common + ")"; HeroTT.SetToolTip(chB13, Lang.Summer + "2016");
-                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p2, p7); chB14.Text = "(" + Cost.Common + ")"; HeroTT.SetToolTip(chB14, Lang.Halloween + "2016");
-                chB15.Visible = true; chB15.Location = new Point(gBAllWeited4p2, p8); chB15.Text = "(" + Cost.CommonEvent + ")"; HeroTT.SetToolTip(chB15, Lang.Halloween + "2017");
-                chB16.Visible = true; chB16.Location = new Point(gBAllWeited4p3, p1); chB16.Text = "(" + Cost.CommonEvent + ")"; HeroTT.SetToolTip(chB16, Lang.Winter + "2017");
-                chB17.Visible = true; chB17.Location = new Point(gBAllWeited4p3, p2); chB17.Text = "(" + Cost.CommonEvent + ")"; HeroTT.SetToolTip(chB17, Lang.Winter + "2016");
-                chB18.Visible = true; chB18.Location = new Point(gBAllWeited4p3, p3); chB18.Text = "(" + Cost.CommonEvent + ")"; HeroTT.SetToolTip(chB18, Lang.Rooster + "2017");
-                chB19.Visible = true; chB19.Location = new Point(gBAllWeited4p3, p4); chB19.Text = "(" + Cost.CommonEvent + ")"; HeroTT.SetToolTip(chB19, Lang.Uprising + "2017");
-                chB20.Visible = true; chB20.Location = new Point(gBAllWeited4p3, p5); chB20.Text = "(" + Cost.CommonEvent + ")"; HeroTT.SetToolTip(chB20, Lang.Uprising + "2017");
-                chB21.Visible = true; chB21.Location = new Point(gBAllWeited4p3, p6); chB21.Text = "(" + Cost.CommonEvent + ")"; HeroTT.SetToolTip(chB21, Lang.Annyver + "2017");
-                chB22.Visible = true; chB22.Location = new Point(gBAllWeited4p3, p7); chB22.Text = "(" + Cost.CommonEvent + ")"; HeroTT.SetToolTip(chB22, Lang.Annyver + "2017");
-
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1); chB00.Text = Ana.Justice_Delivered_VL[1];
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2); chB01.Text = Ana.Children_behave_VL[1]; HeroTT.SetToolTip(chB01, "Common");
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3); chB02.Text = Ana.Everyone_dies_VL[1]; HeroTT.SetToolTip(chB02, "Common");
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4); chB03.Text = Ana.Go_on_i_can_wait_VL[1]; HeroTT.SetToolTip(chB03, "Common");
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5); chB04.Text = Ana.It_takes_a_woman_to_know_VL[1]; HeroTT.SetToolTip(chB04, "Common");
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p1, p6); chB05.Text = Ana.Justice_rains_from_above_VL[1]; HeroTT.SetToolTip(chB05, "Common");
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p1, p7); chB06.Text = Ana.Mother_knows_best_VL[1]; HeroTT.SetToolTip(chB06, "Common");
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p1, p8); chB07.Text = Ana.No_scope_needed_VL[1]; HeroTT.SetToolTip(chB07, "Common");
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p1, p1); chB08.Text = Ana.What_are_you_thinking_VL[1]; HeroTT.SetToolTip(chB08, "Common");
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p2, p2); chB09.Text = Ana.Witness_me_VL[1]; HeroTT.SetToolTip(chB09, "Common");
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p2, p3); chB10.Text = Ana.You_know_nothing_VL[1]; HeroTT.SetToolTip(chB10, "Common");
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p2, p4); chB11.Text = Ana.Someone_to_tuck_you_in_VL[1]; HeroTT.SetToolTip(chB11, "Common");
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p2, p5); chB12.Text = Ana.Better_than_retirement_VL[1]; HeroTT.SetToolTip(chB12, Lang.Summer + "2017");
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p2, p6); chB13.Text = Ana.Learn_from_the_pain_VL[1]; HeroTT.SetToolTip(chB13, Lang.Summer + "2016");
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p2, p7); chB14.Text = Ana.Are_you_scared_VL[1]; HeroTT.SetToolTip(chB14, Lang.Halloween + "2016");
+                chB15.Visible = true; chB15.Location = new Point(gBAllWeited4p2, p8); chB15.Text = Ana.Dont_be_scared_VL[1]; HeroTT.SetToolTip(chB15, Lang.Halloween + "2017");
+                chB16.Visible = true; chB16.Location = new Point(gBAllWeited4p3, p1); chB16.Text = Ana.Im_too_old_for_surprises_VL[1]; HeroTT.SetToolTip(chB16, Lang.Winter + "2017");
+                chB17.Visible = true; chB17.Location = new Point(gBAllWeited4p3, p2); chB17.Text = Ana.Im_watching_out_for_you_VL[1]; HeroTT.SetToolTip(chB17, Lang.Winter + "2016");
+                chB18.Visible = true; chB18.Location = new Point(gBAllWeited4p3, p3); chB18.Text = Ana.The_Moon_in_Winter_VL[1]; HeroTT.SetToolTip(chB18, Lang.Rooster + "2017");
+                chB19.Visible = true; chB19.Location = new Point(gBAllWeited4p3, p4); chB19.Text = Ana.Damn_VL[1]; HeroTT.SetToolTip(chB19, Lang.Uprising + "2017");
+                chB20.Visible = true; chB20.Location = new Point(gBAllWeited4p3, p5); chB20.Text = Ana.The_Ghost_watches_VL[1]; HeroTT.SetToolTip(chB20, Lang.Uprising + "2017");
+                chB21.Visible = true; chB21.Location = new Point(gBAllWeited4p3, p6); chB21.Text = Ana.Follow_me_VL[1]; HeroTT.SetToolTip(chB21, Lang.Annyver + "2017");
+                chB22.Visible = true; chB22.Location = new Point(gBAllWeited4p3, p7); chB22.Text = Ana.The_adults_are_talking_VL[1]; HeroTT.SetToolTip(chB22, Lang.Annyver + "2017");
+                #region t
                 btn00.Visible = true; btn00.Location = new Point(gBAllWeited4p1 + chB00.Width, p1 - 5);
                 btn01.Visible = true; btn01.Location = new Point(gBAllWeited4p1 + chB01.Width, p2 - 5);
                 btn02.Visible = true; btn02.Location = new Point(gBAllWeited4p1 + chB02.Width, p3 - 5);
@@ -1311,92 +1311,93 @@ namespace OverwatchLootBoxTracker
                 btn20.Visible = true; btn20.Location = new Point(gBAllWeited4p3 + chB14.Width, p5 - 5);
                 btn21.Visible = true; btn21.Location = new Point(gBAllWeited4p3 + chB14.Width, p6 - 5);
                 btn22.Visible = true; btn22.Location = new Point(gBAllWeited4p3 + chB14.Width, p7 - 5);
-
-                btn00.BackColor = Color.Gainsboro; btn00.Text = Ana.Justice_Delivered_VL;//Default
-                btn01.BackColor = Color.Gainsboro; btn01.Text = Ana.Children_behave_VL;//Common
-                btn02.BackColor = Color.Gainsboro; btn02.Text = Ana.Everyone_dies_VL;
-                btn03.BackColor = Color.Gainsboro; btn03.Text = Ana.Go_on_i_can_wait_VL;
-                btn04.BackColor = Color.Gainsboro; btn04.Text = Ana.It_takes_a_woman_to_know_VL;
-                btn05.BackColor = Color.Gainsboro; btn05.Text = Ana.Justice_rains_from_above_VL;
-                btn06.BackColor = Color.Gainsboro; btn06.Text = Ana.Mother_knows_best_VL;
-                btn07.BackColor = Color.Gainsboro; btn07.Text = Ana.No_scope_needed_VL;
-                btn08.BackColor = Color.Gainsboro; btn08.Text = Ana.What_are_you_thinking_VL;
-                btn09.BackColor = Color.Gainsboro; btn09.Text = Ana.Witness_me_VL;
-                btn10.BackColor = Color.Gainsboro; btn10.Text = Ana.You_know_nothing_VL;
-                btn11.BackColor = Color.Gainsboro; btn11.Text = Ana.Someone_to_tuck_you_in_VL;
-                btn12.BackColor = Color.Gainsboro; btn12.Text = Ana.Better_than_retirement_VL;//Summer 17
-                btn13.BackColor = Color.Gainsboro; btn13.Text = Ana.Learn_from_the_pain_VL;//Summer 16
-                btn14.BackColor = Color.Gainsboro; btn14.Text = Ana.Are_you_scared_VL;//Halloween 16
-                btn15.BackColor = Color.Gainsboro; btn15.Text = Ana.Dont_be_scared_VL;//Halloween 17
-                btn16.BackColor = Color.Gainsboro; btn16.Text = Ana.Im_too_old_for_surprises_VL;//Winter 17
-                btn17.BackColor = Color.Gainsboro; btn17.Text = Ana.Im_watching_out_for_you_VL;//Winter 16
-                btn18.BackColor = Color.Gainsboro; btn18.Text = Ana.The_Moon_in_Winter_VL;//Rooster 17
-                btn19.BackColor = Color.Gainsboro; btn19.Text = Ana.Damn_VL;//Uprising 17
-                btn20.BackColor = Color.Gainsboro; btn20.Text = Ana.The_Ghost_watches_VL;//Uprising 17
-                btn21.BackColor = Color.Gainsboro; btn21.Text = Ana.Follow_me_VL;//Annyver 17
-                btn22.BackColor = Color.Gainsboro; btn22.Text = Ana.The_adults_are_talking_VL;//Annyver 17
+                #endregion
+                btn00.BackColor = Color.Gainsboro; btn00.Text = Ana.Justice_Delivered_VL[0];//Default
+                btn01.BackColor = Color.Gainsboro; btn01.Text = Ana.Children_behave_VL[0];//Common
+                btn02.BackColor = Color.Gainsboro; btn02.Text = Ana.Everyone_dies_VL[0];
+                btn03.BackColor = Color.Gainsboro; btn03.Text = Ana.Go_on_i_can_wait_VL[0];
+                btn04.BackColor = Color.Gainsboro; btn04.Text = Ana.It_takes_a_woman_to_know_VL[0];
+                btn05.BackColor = Color.Gainsboro; btn05.Text = Ana.Justice_rains_from_above_VL[0];
+                btn06.BackColor = Color.Gainsboro; btn06.Text = Ana.Mother_knows_best_VL[0];
+                btn07.BackColor = Color.Gainsboro; btn07.Text = Ana.No_scope_needed_VL[0];
+                btn08.BackColor = Color.Gainsboro; btn08.Text = Ana.What_are_you_thinking_VL[0];
+                btn09.BackColor = Color.Gainsboro; btn09.Text = Ana.Witness_me_VL[0];
+                btn10.BackColor = Color.Gainsboro; btn10.Text = Ana.You_know_nothing_VL[0];
+                btn11.BackColor = Color.Gainsboro; btn11.Text = Ana.Someone_to_tuck_you_in_VL[0];
+                btn12.BackColor = Color.Gainsboro; btn12.Text = Ana.Better_than_retirement_VL[0];//Summer 17
+                btn13.BackColor = Color.Gainsboro; btn13.Text = Ana.Learn_from_the_pain_VL[0];//Summer 16
+                btn14.BackColor = Color.Gainsboro; btn14.Text = Ana.Are_you_scared_VL[0];//Halloween 16
+                btn15.BackColor = Color.Gainsboro; btn15.Text = Ana.Dont_be_scared_VL[0];//Halloween 17
+                btn16.BackColor = Color.Gainsboro; btn16.Text = Ana.Im_too_old_for_surprises_VL[0];//Winter 17
+                btn17.BackColor = Color.Gainsboro; btn17.Text = Ana.Im_watching_out_for_you_VL[0];//Winter 16
+                btn18.BackColor = Color.Gainsboro; btn18.Text = Ana.The_Moon_in_Winter_VL[0];//Rooster 17
+                btn19.BackColor = Color.Gainsboro; btn19.Text = Ana.Damn_VL[0];//Uprising 17
+                btn20.BackColor = Color.Gainsboro; btn20.Text = Ana.The_Ghost_watches_VL[0];//Uprising 17
+                btn21.BackColor = Color.Gainsboro; btn21.Text = Ana.Follow_me_VL[0];//Annyver 17
+                btn22.BackColor = Color.Gainsboro; btn22.Text = Ana.The_adults_are_talking_VL[0];//Annyver 17
 
                 chB00.Checked = true;/*
-                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("VL01"));
-                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("VL02"));
-                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("VL03"));
-                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("VL04"));
-                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("VL05"));
-                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("VL06"));
-                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("VL07"));
-                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("VL08"));
-                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("VL09"));
-                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("VL10"));
-                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("VL11"));
-                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("VL12"));
-                chB13.Checked = Convert.ToBoolean(inisHeroes.Read("VL13"));
-                chB14.Checked = Convert.ToBoolean(inisHeroes.Read("VL14"));
-                chB15.Checked = Convert.ToBoolean(inisHeroes.Read("VL15"));
-                chB16.Checked = Convert.ToBoolean(inisHeroes.Read("VL16"));
-                chB17.Checked = Convert.ToBoolean(inisHeroes.Read("VL17"));
-                chB18.Checked = Convert.ToBoolean(inisHeroes.Read("VL18"));
-                chB19.Checked = Convert.ToBoolean(inisHeroes.Read("VL19"));
-                chB20.Checked = Convert.ToBoolean(inisHeroes.Read("VL20"));
-                chB21.Checked = Convert.ToBoolean(inisHeroes.Read("VL21"));*/
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Children_behave_VL[0]));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Everyone_dies_VL[0]));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Go_on_i_can_wait_VL[0]));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.It_takes_a_woman_to_know_VL[0]));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Justice_rains_from_above_VL[0]));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Mother_knows_best_VL[0]));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.No_scope_needed_VL[0]));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.What_are_you_thinking_VL[0]));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Witness_me_VL[0]));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.You_know_nothing_VL[0]));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Someone_to_tuck_you_in_VL[0]));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Better_than_retirement_VL[0]));
+                chB13.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Learn_from_the_pain_VL[0]));
+                chB14.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Are_you_scared_VL[0]));
+                chB15.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Dont_be_scared_VL[0]));
+                chB16.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Im_too_old_for_surprises_VL[0]));
+                chB17.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Im_watching_out_for_you_VL[0]));
+                chB18.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.The_Moon_in_Winter_VL[0]));
+                chB19.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Damn_VL[0]));
+                chB20.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.The_Ghost_watches_VL[0]));
+                chB21.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Follow_me_VL[0]));
+                chB22.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.The_adults_are_talking_VL[0]));*/
             }
             #region Unimplemented
             if (BackSave2 == Lang.Sprays)
             {
-                chB01.Visible = true; chB01.Text = Ana.Action_SP + " (" + Cost.Common + ")";//Common
-                chB02.Visible = true; chB02.Text = Ana.Ana_SP + " (" + Cost.Common + ")";
-                chB03.Visible = true; chB03.Text = Ana.Bearer_SP + " (" + Cost.Common + ")";
-                chB04.Visible = true; chB04.Text = Ana.Cheer_SP + " (" + Cost.Common + ")";
-                chB05.Visible = true; chB05.Text = Ana.Cracked_SP + " (" + Cost.Common + ")";
-                chB06.Visible = true; chB06.Text = Ana.Cute_SP + " (" + Cost.Common + ")";
-                chB07.Visible = true; chB07.Text = Ana.Eyepatch_SP + " (" + Cost.Common + ")";
-                chB08.Visible = true; chB08.Text = Ana.Fareeha_SP + " (" + Cost.Common + ")";
-                chB09.Visible = true; chB09.Text = Ana.Gaze_SP + " (" + Cost.Common + ")";
-                chB10.Visible = true; chB10.Text = Ana.Grenade_SP + " (" + Cost.Common + ")";
-                chB11.Visible = true; chB11.Text = Ana.Guardian_SP + " (" + Cost.Common + ")";
-                chB12.Visible = true; chB12.Text = Ana.Hesitation_SP + " (" + Cost.Common + ")";
-                chB13.Visible = true; chB13.Text = Ana.Icon_SP + " (" + Cost.Common + ")";
-                chB14.Visible = true; chB14.Text = Ana.Letter_SP + " (" + Cost.Common + ")";
-                chB15.Visible = true; chB15.Text = Ana.Old_Soldier_SP + " (" + Cost.Common + ")";
-                chB16.Visible = true; chB16.Text = Ana.Overhead_SP + " (" + Cost.Common + ")";
-                chB17.Visible = true; chB17.Text = Ana.Pillow_SP + " (" + Cost.Common + ")";
-                chB18.Visible = true; chB18.Text = Ana.Photograph_SP + " (" + Cost.Common + ")";
-                chB19.Visible = true; chB19.Text = Ana.Pixel_SP + " (" + Cost.Common + ")";
-                chB20.Visible = true; chB20.Text = Ana.Rifle_SP + " (" + Cost.Common + ")";
-                chB21.Visible = true; chB21.Text = Ana.Shadow_SP + " (" + Cost.Common + ")";
-                chB22.Visible = true; chB22.Text = Ana.Shhh_SP + " (" + Cost.Common + ")";
-                chB23.Visible = true; chB23.Text = Ana.Sidearm_SP + " (" + Cost.Common + ")";
-                chB24.Visible = true; chB24.Text = Ana.Wasteland_SP + " (" + Cost.Common + ")";
-                chB25.Visible = true; chB25.Text = Ana.Wedjat_SP + " (" + Cost.Common + ")";
-                chB26.Visible = true; chB26.Text = Ana.Wrist_Launcher_SP + " (" + Cost.Common + ")";
-                chB27.Visible = true; chB27.Text = Ana.Zzz_SP + " (" + Cost.Common + ")";
-                chB28.Visible = true; chB28.Text = Ana.Shooting_SP + " (" + Cost.Common + ")";//Summer 16
-                chB29.Visible = true; chB29.Text = Ana.Trick_or_Treat_SP + " (" + Cost.Common + ")";//Halloween 16
-                chB30.Visible = true; chB30.Text = Ana.Ornament_SP + " (" + Cost.RareEvent + ")";//Winter 16
-                chB31.Visible = true; chB31.Text = Ana.Warm_SP + " (" + Cost.RareEvent + ")";//Winter 16
-                chB32.Visible = true; chB32.Text = Ana.Dance_SP + " (" + Cost.RareEvent + ")";//Rooster 17
-                chB33.Visible = true; chB33.Text = Ana.Dragon_Dance_SP + " (" + Cost.RareEvent + ")";//Rooster 17
-                chB34.Visible = true; chB34.Text = Ana.Newborn_SP + " (" + Cost.RareEvent + ")";//Uprising 17
-                chB35.Visible = true; chB35.Text = Ana.Ace_of_Hearts_SP + " (" + Cost.RareEvent + ")";//Annyver 17
+                chB01.Visible = true; chB01.Text = Ana.Action_SP[0] + " (" + Cost.Common + ")";//Common
+                chB02.Visible = true; chB02.Text = Ana.Ana_SP[0] + " (" + Cost.Common + ")";
+                chB03.Visible = true; chB03.Text = Ana.Bearer_SP[0] + " (" + Cost.Common + ")";
+                chB04.Visible = true; chB04.Text = Ana.Cheer_SP[0] + " (" + Cost.Common + ")";
+                chB05.Visible = true; chB05.Text = Ana.Cracked_SP[0] + " (" + Cost.Common + ")";
+                chB06.Visible = true; chB06.Text = Ana.Cute_SP[0] + " (" + Cost.Common + ")";
+                chB07.Visible = true; chB07.Text = Ana.Eyepatch_SP[0] + " (" + Cost.Common + ")";
+                chB08.Visible = true; chB08.Text = Ana.Fareeha_SP[0] + " (" + Cost.Common + ")";
+                chB09.Visible = true; chB09.Text = Ana.Gaze_SP[0] + " (" + Cost.Common + ")";
+                chB10.Visible = true; chB10.Text = Ana.Grenade_SP[0] + " (" + Cost.Common + ")";
+                chB11.Visible = true; chB11.Text = Ana.Guardian_SP[0] + " (" + Cost.Common + ")";
+                chB12.Visible = true; chB12.Text = Ana.Hesitation_SP[0] + " (" + Cost.Common + ")";
+                chB13.Visible = true; chB13.Text = Ana.Icon_SP[0] + " (" + Cost.Common + ")";
+                chB14.Visible = true; chB14.Text = Ana.Letter_SP[0] + " (" + Cost.Common + ")";
+                chB15.Visible = true; chB15.Text = Ana.Old_Soldier_SP[0] + " (" + Cost.Common + ")";
+                chB16.Visible = true; chB16.Text = Ana.Overhead_SP[0] + " (" + Cost.Common + ")";
+                chB17.Visible = true; chB17.Text = Ana.Pillow_SP[0] + " (" + Cost.Common + ")";
+                chB18.Visible = true; chB18.Text = Ana.Photograph_SP[0] + " (" + Cost.Common + ")";
+                chB19.Visible = true; chB19.Text = Ana.Pixel_SP[0] + " (" + Cost.Common + ")";
+                chB20.Visible = true; chB20.Text = Ana.Rifle_SP[0] + " (" + Cost.Common + ")";
+                chB21.Visible = true; chB21.Text = Ana.Shadow_SP[0] + " (" + Cost.Common + ")";
+                chB22.Visible = true; chB22.Text = Ana.Shhh_SP[0] + " (" + Cost.Common + ")";
+                chB23.Visible = true; chB23.Text = Ana.Sidearm_SP[0] + " (" + Cost.Common + ")";
+                chB24.Visible = true; chB24.Text = Ana.Wasteland_SP[0] + " (" + Cost.Common + ")";
+                chB25.Visible = true; chB25.Text = Ana.Wedjat_SP[0] + " (" + Cost.Common + ")";
+                chB26.Visible = true; chB26.Text = Ana.Wrist_Launcher_SP[0] + " (" + Cost.Common + ")";
+                chB27.Visible = true; chB27.Text = Ana.Zzz_SP[0] + " (" + Cost.Common + ")";
+                chB28.Visible = true; chB28.Text = Ana.Shooting_SP[0] + " (" + Cost.Common + ")";//Summer 16
+                chB29.Visible = true; chB29.Text = Ana.Trick_or_Treat_SP[0] + " (" + Cost.Common + ")";//Halloween 16
+                chB30.Visible = true; chB30.Text = Ana.Ornament_SP[0] + " (" + Cost.RareEvent + ")";//Winter 16
+                chB31.Visible = true; chB31.Text = Ana.Warm_SP[0] + " (" + Cost.RareEvent + ")";//Winter 16
+                chB32.Visible = true; chB32.Text = Ana.Dance_SP[0] + " (" + Cost.RareEvent + ")";//Rooster 17
+                chB33.Visible = true; chB33.Text = Ana.Dragon_Dance_SP[0] + " (" + Cost.RareEvent + ")";//Rooster 17
+                chB34.Visible = true; chB34.Text = Ana.Newborn_SP[0] + " (" + Cost.RareEvent + ")";//Uprising 17
+                chB35.Visible = true; chB35.Text = Ana.Ace_of_Hearts_SP[0] + " (" + Cost.RareEvent + ")";//Annyver 17
                 if (inisHeroes.Read("SP01") == "1")
                 {
                     chB01.Checked = true;
@@ -1540,10 +1541,10 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave2 == Lang.HighlightIntros)
             {
-                chB01.Visible = true; chB01.Text = Ana.Guardian_HI + " (" + Cost.Epic + ")";//Epic
-                chB02.Visible = true; chB02.Text = Ana.Locked_on_HI + " (" + Cost.Epic + ")";
-                chB03.Visible = true; chB03.Text = Ana.Shh_HI + " (" + Cost.Epic + ")";
-                chB04.Visible = true; chB04.Text = Ana.Under_Fire_HI + " (" + Cost.Epic + ")";
+                chB01.Visible = true; chB01.Text = Ana.Guardian_HI[0] + " (" + Cost.Epic + ")";//Epic
+                chB02.Visible = true; chB02.Text = Ana.Locked_on_HI[0] + " (" + Cost.Epic + ")";
+                chB03.Visible = true; chB03.Text = Ana.Shh_HI[0] + " (" + Cost.Epic + ")";
+                chB04.Visible = true; chB04.Text = Ana.Under_Fire_HI[0] + " (" + Cost.Epic + ")";
                 if (inisHeroes.Read("HI01") == "1")
                 {
                     chB01.Checked = true;
@@ -1563,12 +1564,12 @@ namespace OverwatchLootBoxTracker
             }
             if (BackSave2 == Lang.PlayerIcons)
             {
-                chB01.Visible = true; chB01.Text = Ana.Ana_PI;//Rare
-                chB02.Visible = true; chB02.Text = Ana.Watcher_PI;
-                chB03.Visible = true; chB03.Text = Ana.Wedjat_PI;
-                chB04.Visible = true; chB04.Text = Ana.Shooting_PI;//Summer 16
-                chB04.Visible = true; chB04.Text = Ana.Corsair_PI;//Halloween 17
-                chB04.Visible = true; chB04.Text = Ana.Anaversary_PI;//Annyver 17
+                chB01.Visible = true; chB01.Text = Ana.Ana_PI[0];//Rare
+                chB02.Visible = true; chB02.Text = Ana.Watcher_PI[0];
+                chB03.Visible = true; chB03.Text = Ana.Wedjat_PI[0];
+                chB04.Visible = true; chB04.Text = Ana.Shooting_PI[0];//Summer 16
+                chB04.Visible = true; chB04.Text = Ana.Corsair_PI[0];//Halloween 17
+                chB04.Visible = true; chB04.Text = Ana.Anaversary_PI[0];//Annyver 17
                 if (inisHeroes.Read("PI01") == "1")
                 {
                     chB01.Checked = true;
