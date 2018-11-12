@@ -12,6 +12,7 @@ namespace OverwatchLootBoxTracker.Translate
     {
         Languages.English.Heroes.Ana EN;
         Languages.German.Heroes.Ana DE;
+        Translate.L_Translate Translate;
         CCost Costs;
         string myLang;
         string[] LangAndCost;
@@ -26,8 +27,9 @@ namespace OverwatchLootBoxTracker.Translate
             Costs = new CCost();
             EN = new Languages.English.Heroes.Ana();
             DE = new Languages.German.Heroes.Ana();
+            Translate = new Translate.L_Translate(Lang);
 
-            LangAndCost = new string[2];
+            LangAndCost = new string[3];
 
             SizeMode = PictureBoxSizeMode.AutoSize;
             Image = Image.FromFile("Images\\Ana_link.png");
@@ -73,6 +75,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Citrine_SK;
                 }
                 LangAndCost[1] = Costs.Rare.ToString();
+                LangAndCost[2] = Translate.Rare;
                 return LangAndCost;
             }
         }
@@ -90,6 +93,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Garnet_SK;
                 }
                 LangAndCost[1] = Costs.Rare.ToString();
+                LangAndCost[2] = Translate.Rare;
                 return LangAndCost;
             }
         }
@@ -107,6 +111,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Peridot_SK;
                 }
                 LangAndCost[1] = Costs.Rare.ToString();
+                LangAndCost[2] = Translate.Rare;
                 return LangAndCost;
             }
         }
@@ -124,6 +129,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Turquoise_SK;
                 }
                 LangAndCost[1] = Costs.Rare.ToString();
+                LangAndCost[2] = Translate.Rare;
                 return LangAndCost;
             }
         }
@@ -142,6 +148,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Merciful_SK;
                 }
                 LangAndCost[1] = Costs.Epic.ToString();
+                LangAndCost[2] = Translate.Epic;
                 return LangAndCost;
             }
         }
@@ -159,6 +166,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Shrike_SK;
                 }
                 LangAndCost[1] = Costs.Epic.ToString();
+                LangAndCost[2] = Translate.Epic;
                 return LangAndCost;
             }
         }
@@ -176,6 +184,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Ghoul_SK;
                 }
                 LangAndCost[1] = Costs.Epic.ToString();
+                LangAndCost[2] = Translate.Halloween + " 2016";
                 return LangAndCost;
             }
         }
@@ -193,6 +202,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Tal_SK;
                 }
                 LangAndCost[1] = Costs.Epic.ToString();
+                LangAndCost[2] = Translate.Rooster + " 2017";
                 return LangAndCost;
             }
         }
@@ -211,6 +221,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Wadjet_SK;
                 }
                 LangAndCost[1] = Costs.Legendary.ToString();
+                LangAndCost[2] = Translate.Legendary;
                 return LangAndCost;
             }
         }
@@ -228,6 +239,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Wasteland_SK;
                 }
                 LangAndCost[1] = Costs.Legendary.ToString();
+                LangAndCost[2] = Translate.Legendary;
                 return LangAndCost;
             }
         }
@@ -245,6 +257,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Captain_Amari_SK;
                 }
                 LangAndCost[1] = Costs.Legendary.ToString();
+                LangAndCost[2] = Translate.Legendary;
                 return LangAndCost;
             }
         }
@@ -262,6 +275,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Horus_SK;
                 }
                 LangAndCost[1] = Costs.Legendary.ToString();
+                LangAndCost[2] = Translate.Legendary;
                 return LangAndCost;
             }
         }
@@ -279,6 +293,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Corsair_SK;
                 }
                 LangAndCost[1] = Costs.Legendary.ToString();
+                LangAndCost[2] = Translate.Halloween + " 2017";
                 return LangAndCost;
             }
         }
@@ -296,6 +311,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Snow_Owl_SK;
                 }
                 LangAndCost[1] = Costs.LegendaryEvent.ToString();
+                LangAndCost[2] = Translate.Winter + " 2017";
                 return LangAndCost;
             }
         }
@@ -316,6 +332,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Not_Impressed_EM;
                 }
                 LangAndCost[1] = Costs.Epic.ToString();
+                LangAndCost[2] = Translate.Epic;
                 return LangAndCost;
             }
         }
@@ -333,6 +350,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Disapproving_EM;
                 }
                 LangAndCost[1] = Costs.Epic.ToString();
+                LangAndCost[2] = Translate.Epic;
                 return LangAndCost;
             }
         }
@@ -350,6 +368,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Protector_EM;
                 }
                 LangAndCost[1] = Costs.Epic.ToString();
+                LangAndCost[2] = Translate.Epic;
                 return LangAndCost;
             }
         }
@@ -367,6 +386,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Take_A_Knee_EM;
                 }
                 LangAndCost[1] = Costs.Epic.ToString();
+                LangAndCost[2] = Translate.Epic;
                 return LangAndCost;
             }
         }
@@ -384,6 +404,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Tea_Time_EM;
                 }
                 LangAndCost[1] = Costs.Epic.ToString();
+                LangAndCost[2] = Translate.Epic;
                 return LangAndCost;
             }
         }
@@ -401,6 +422,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Beach_Ball_EM;
                 }
                 LangAndCost[1] = Costs.Epic.ToString();
+                LangAndCost[2] = Translate.Summer + " 2017";
                 return LangAndCost;
             }
         }
@@ -418,6 +440,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Candy_EM;
                 }
                 LangAndCost[1] = Costs.Epic.ToString();
+                LangAndCost[2] = Translate.Halloween + " 2016";
                 return LangAndCost;
             }
         }
@@ -435,6 +458,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Dance_EM;
                 }
                 LangAndCost[1] = Costs.Epic.ToString();
+                LangAndCost[2] = Translate.Annyver + " 2017";
                 return LangAndCost;
             }
         }
@@ -455,6 +479,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Mission_Complete_VP;
                 }
                 LangAndCost[1] = Costs.Rare.ToString();
+                LangAndCost[2] = Translate.Rare;
                 return LangAndCost;
             }
         }
@@ -472,6 +497,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Protector_VP;
                 }
                 LangAndCost[1] = Costs.Rare.ToString();
+                LangAndCost[2] = Translate.Rare;
                 return LangAndCost;
             }
         }
@@ -489,6 +515,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Seated_VP;
                 }
                 LangAndCost[1] = Costs.Rare.ToString();
+                LangAndCost[2] = Translate.Rare;
                 return LangAndCost;
             }
         }
@@ -506,6 +533,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.RIP_VP;
                 }
                 LangAndCost[1] = Costs.Rare.ToString();
+                LangAndCost[2] = Translate.Halloween + " 2016";
                 return LangAndCost;
             }
         }
@@ -523,6 +551,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Toast_VP;
                 }
                 LangAndCost[1] = Costs.Rare.ToString();
+                LangAndCost[2] = Translate.Winter+ " 2016";
                 return LangAndCost;
             }
         }
@@ -540,6 +569,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Folded_Hands_VP;
                 }
                 LangAndCost[1] = Costs.Rare.ToString();
+                LangAndCost[2] = Translate.Rooster+ " 2017";
                 return LangAndCost;
             }
         }
@@ -560,6 +590,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Justice_Delivered_VL;
                 }
                 LangAndCost[1] = Costs.Classic.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -577,6 +608,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Children_behave_VL;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -594,6 +626,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Everyone_dies_VL;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -611,6 +644,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Go_on_i_can_wait_VL;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -628,6 +662,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.It_takes_a_woman_to_know_VL;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -645,6 +680,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Justice_rains_from_above_VL;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -662,6 +698,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Mother_knows_best_VL;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -679,6 +716,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.No_scope_needed_VL;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -696,6 +734,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.What_are_you_thinking_VL;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -713,6 +752,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Witness_me_VL;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -730,6 +770,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.You_know_nothing_VL;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -747,6 +788,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Someone_to_tuck_you_in_VL;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -764,6 +806,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Better_than_retirement_VL;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -781,6 +824,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Learn_from_the_pain_VL;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -798,6 +842,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Are_you_scared_VL;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Halloween+ " 2016";
                 return LangAndCost;
             }
         }
@@ -815,6 +860,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Dont_be_scared_VL;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Halloween+ " 2017";
                 return LangAndCost;
             }
         }
@@ -832,6 +878,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Im_watching_out_for_you_VL;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Winter+ " 2016";
                 return LangAndCost;
             }
         }
@@ -849,6 +896,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.The_Moon_in_Winter_VL;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Rooster+ " 2017";
                 return LangAndCost;
             }
         }
@@ -866,6 +914,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Damn_VL;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Uprising + " 2017";
                 return LangAndCost;
             }
         }
@@ -883,6 +932,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.The_Ghost_watches_VL;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Uprising+ " 2017";
                 return LangAndCost;
             }
         }
@@ -900,6 +950,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Follow_me_VL;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Annyver+ " 2017";
                 return LangAndCost;
             }
         }
@@ -917,6 +968,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.The_adults_are_talking_VL;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Annyver+ " 2017";
                 return LangAndCost;
             }
         }
@@ -934,6 +986,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Im_too_old_for_surprises_VL;
                 }
                 LangAndCost[1] = Costs.CommonEvent.ToString();
+                LangAndCost[2] = Translate.Winter+ " 2017";
                 return LangAndCost;
             }
         }
@@ -954,6 +1007,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Action_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -971,6 +1025,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Ana_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -988,6 +1043,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Bearer_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -1005,6 +1061,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Cheer_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -1022,6 +1079,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Cracked_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -1039,6 +1097,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Cute_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -1056,6 +1115,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Eyepatch_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -1073,6 +1133,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Fareeha_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -1090,6 +1151,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Gaze_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -1107,6 +1169,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Grenade_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -1124,6 +1187,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Guardian_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -1141,6 +1205,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Hesitation_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -1158,6 +1223,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Icon_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -1175,6 +1241,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Letter_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -1192,6 +1259,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Old_Soldier_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -1209,6 +1277,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Overhead_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -1226,6 +1295,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Pillow_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -1243,6 +1313,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Photograph_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -1260,6 +1331,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Pixel_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -1277,6 +1349,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Rifle_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -1294,6 +1367,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Shadow_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -1311,6 +1385,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Shhh_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -1328,6 +1403,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Sidearm_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -1345,6 +1421,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Wasteland_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -1362,6 +1439,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Wedjat_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -1379,6 +1457,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Wrist_Launcher_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -1396,6 +1475,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Zzz_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Common;
                 return LangAndCost;
             }
         }
@@ -1413,6 +1493,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Shooting_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Summer+ " 2016";
                 return LangAndCost;
             }
         }
@@ -1430,6 +1511,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Trick_or_Treat_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Halloween+ " 2016";
                 return LangAndCost;
             }
         }
@@ -1447,6 +1529,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Ornament_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Winter+ " 2016";
                 return LangAndCost;
             }
         }
@@ -1464,6 +1547,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Warm_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Winter+ " 2016";
                 return LangAndCost;
             }
         }
@@ -1481,6 +1565,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Dance_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Rooster+ " 2017";
                 return LangAndCost;
             }
         }
@@ -1498,6 +1583,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Dragon_Dance_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Rooster+ " 2017";
                 return LangAndCost;
             }
         }
@@ -1515,6 +1601,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Newborn_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Uprising+ " 2017";
                 return LangAndCost;
             }
         }
@@ -1532,6 +1619,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Ace_of_Hearts_SP;
                 }
                 LangAndCost[1] = Costs.Common.ToString();
+                LangAndCost[2] = Translate.Annyver+ " 2017";
                 return LangAndCost;
             }
         }
@@ -1552,6 +1640,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Guardian_HI;
                 }
                 LangAndCost[1] = Costs.Epic.ToString();
+                LangAndCost[2] = Translate.Epic;
                 return LangAndCost;
             }
         }
@@ -1569,6 +1658,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Locked_on_HI;
                 }
                 LangAndCost[1] = Costs.Epic.ToString();
+                LangAndCost[2] = Translate.Epic;
                 return LangAndCost;
             }
         }
@@ -1586,6 +1676,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Shh_HI;
                 }
                 LangAndCost[1] = Costs.Epic.ToString();
+                LangAndCost[2] = Translate.Epic;
                 return LangAndCost;
             }
         }
@@ -1603,6 +1694,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Under_Fire_HI;
                 }
                 LangAndCost[1] = Costs.Epic.ToString();
+                LangAndCost[2] = Translate.Epic;
                 return LangAndCost;
             }
         }
@@ -1623,6 +1715,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Ana_PI;
                 }
                 LangAndCost[1] = Costs.Unknown.ToString();
+                LangAndCost[2] = Translate.Rare;
                 return LangAndCost;
             }
         }
@@ -1640,6 +1733,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Cute_Ana_PI;
                 }
                 LangAndCost[1] = Costs.Unknown.ToString();
+                LangAndCost[2] = Translate.Rare;
                 return LangAndCost;
             }
         }
@@ -1657,6 +1751,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Watcher_PI;
                 }
                 LangAndCost[1] = Costs.Unknown.ToString();
+                LangAndCost[2] = Translate.Rare;
                 return LangAndCost;
             }
         }
@@ -1674,6 +1769,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Wedjat_PI;
                 }
                 LangAndCost[1] = Costs.Unknown.ToString();
+                LangAndCost[2] = Translate.Rare;
                 return LangAndCost;
             }
         }
@@ -1691,6 +1787,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Shooting_PI;
                 }
                 LangAndCost[1] = Costs.Unknown.ToString();
+                LangAndCost[2] = Translate.Summer+ " 2016";
                 return LangAndCost;
             }
         }
@@ -1708,6 +1805,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Corsair_PI;
                 }
                 LangAndCost[1] = Costs.Unknown.ToString();
+                LangAndCost[2] = Translate.Halloween+ " 2017";
                 return LangAndCost;
             }
         }
@@ -1725,6 +1823,7 @@ namespace OverwatchLootBoxTracker.Translate
                     LangAndCost[0] = EN.Anaversary_PI;
                 }
                 LangAndCost[1] = Costs.Unknown.ToString();
+                LangAndCost[2] = Translate.Annyver+ " 2017";
                 return LangAndCost;
             }
         }

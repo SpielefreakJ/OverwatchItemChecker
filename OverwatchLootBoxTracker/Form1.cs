@@ -1125,20 +1125,20 @@ namespace OverwatchLootBoxTracker
             if (BackSave2 == Lang.Skins)
             {
                 chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1); chB00.Text = Cost.Classic.ToString();
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2); chB01.Text = Ana.Citrine_SK[1]; HeroTT.SetToolTip(chB01, "Rare");
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3); chB02.Text = Ana.Garnet_SK[1]; HeroTT.SetToolTip(chB02, "Rare");
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4); chB03.Text = Ana.Peridot_SK[1]; HeroTT.SetToolTip(chB03, "Rare");
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5); chB04.Text = Ana.Turquoise_SK[1]; HeroTT.SetToolTip(chB04, "Rare");
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = Ana.Merciful_SK[1]; HeroTT.SetToolTip(chB05, "Epic");
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = Ana.Shrike_SK[1]; HeroTT.SetToolTip(chB06, "Epic");
-                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = Ana.Ghoul_SK[1]; HeroTT.SetToolTip(chB07, Lang.Halloween + " 2016");
-                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p2, p4); chB08.Text = Ana.Tal_SK[1]; HeroTT.SetToolTip(chB08, Lang.Rooster + " 2017");
-                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p1); chB09.Text = Ana.Wadjet_SK[1]; HeroTT.SetToolTip(chB09, "Legendary");
-                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p2); chB10.Text = Ana.Wasteland_SK[1]; HeroTT.SetToolTip(chB10, "Legendary");
-                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p3); chB11.Text = Ana.Captain_Amari_SK[1]; HeroTT.SetToolTip(chB11, "Legendary");
-                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p4); chB12.Text = Ana.Horus_SK[1]; HeroTT.SetToolTip(chB12, "Legendary");
-                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p5); chB13.Text = Ana.Corsair_SK[1]; HeroTT.SetToolTip(chB13, Lang.Halloween + " 2017");
-                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p6); chB14.Text = Ana.Snow_Owl_SK[1]; HeroTT.SetToolTip(chB14, Lang.Winter + " 2017");
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2); chB01.Text = Ana.Citrine_SK[1]; HeroTT.SetToolTip(chB01, Ana.Citrine_SK[2]);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3); chB02.Text = Ana.Garnet_SK[1]; HeroTT.SetToolTip(chB02, Ana.Garnet_SK[2]);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4); chB03.Text = Ana.Peridot_SK[1]; HeroTT.SetToolTip(chB03, Ana.Peridot_SK[2]);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5); chB04.Text = Ana.Turquoise_SK[1]; HeroTT.SetToolTip(chB04, Ana.Turquoise_SK[2]);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = Ana.Merciful_SK[1]; HeroTT.SetToolTip(chB05, Ana.Merciful_SK[2]);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = Ana.Shrike_SK[1]; HeroTT.SetToolTip(chB06, Ana.Shrike_SK[2]);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = Ana.Ghoul_SK[1]; HeroTT.SetToolTip(chB07, Ana.Ghoul_SK[2]);
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p2, p4); chB08.Text = Ana.Tal_SK[1]; HeroTT.SetToolTip(chB08, Ana.Tal_SK[2]);
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p1); chB09.Text = Ana.Wadjet_SK[1]; HeroTT.SetToolTip(chB09, Ana.Wadjet_SK[2]);
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p2); chB10.Text = Ana.Wasteland_SK[1]; HeroTT.SetToolTip(chB10, Ana.Wasteland_SK[2]);
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p3); chB11.Text = Ana.Captain_Amari_SK[1]; HeroTT.SetToolTip(chB11, Ana.Captain_Amari_SK[2]);
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p4); chB12.Text = Ana.Horus_SK[1]; HeroTT.SetToolTip(chB12, Ana.Horus_SK[2]);
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p5); chB13.Text = Ana.Corsair_SK[1]; HeroTT.SetToolTip(chB13, Ana.Corsair_SK[2]);
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p6); chB14.Text = Ana.Snow_Owl_SK[1]; HeroTT.SetToolTip(chB14, Ana.Snow_Owl_SK[2]);
 
                 btn00.Visible = true; btn00.Location = new Point(gBAllWeited4p1 + chB00.Width, p1 - 5);
                 btn01.Visible = true; btn01.Location = new Point(gBAllWeited4p1 + chB01.Width, p2 - 5);
@@ -1191,14 +1191,14 @@ namespace OverwatchLootBoxTracker
             if (BackSave2 == Lang.Emotes)
             {
                 chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1); chB00.Text = Cost.Classic.ToString();
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2); chB01.Text = Ana.Not_Impressed_EM[1]; HeroTT.SetToolTip(chB01, "Epic");
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3); chB02.Text = Ana.Disapproving_EM[1]; HeroTT.SetToolTip(chB02, "Epic");
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4); chB03.Text = Ana.Protector_EM[1]; HeroTT.SetToolTip(chB03, "Epic");
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p5); chB04.Text = Ana.Take_A_Knee_EM[1]; HeroTT.SetToolTip(chB04, "Epic");
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1); chB05.Text = Ana.Tea_Time_EM[1]; HeroTT.SetToolTip(chB05, "Epic");
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2); chB06.Text = Ana.Beach_Ball_EM[1]; HeroTT.SetToolTip(chB06, Lang.Summer + " 2017");
-                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3); chB07.Text = Ana.Candy_EM[1]; HeroTT.SetToolTip(chB07, Lang.Halloween + " 2016");
-                chB08.Visible = true; chB08.Location = new Point(gBAllWeited3p2, p4); chB08.Text = Ana.Dance_EM[1]; HeroTT.SetToolTip(chB08, Lang.Annyver + " 2017");
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2); chB01.Text = Ana.Not_Impressed_EM[1]; HeroTT.SetToolTip(chB01, Ana.Not_Impressed_EM[2]);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3); chB02.Text = Ana.Disapproving_EM[1]; HeroTT.SetToolTip(chB02, Ana.Disapproving_EM[2]);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4); chB03.Text = Ana.Protector_EM[1]; HeroTT.SetToolTip(chB03, Ana.Protector_EM[2]);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p1, p5); chB04.Text = Ana.Take_A_Knee_EM[1]; HeroTT.SetToolTip(chB04, Ana.Take_A_Knee_EM[2]);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p1); chB05.Text = Ana.Tea_Time_EM[1]; HeroTT.SetToolTip(chB05, Ana.Tea_Time_EM[2]);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p2); chB06.Text = Ana.Beach_Ball_EM[1]; HeroTT.SetToolTip(chB06, Ana.Beach_Ball_EM[2]);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited3p2, p3); chB07.Text = Ana.Candy_EM[1]; HeroTT.SetToolTip(chB07, Ana.Candy_EM[2]);
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited3p2, p4); chB08.Text = Ana.Dance_EM[1]; HeroTT.SetToolTip(chB08, Ana.Dance_EM[2]);
 
                 btn00.Visible = true; btn00.Location = new Point(gBAllWeited3p1 + chB00.Width, p1 - 5);
                 btn01.Visible = true; btn01.Location = new Point(gBAllWeited3p1 + chB01.Width, p2 - 5);
@@ -1232,12 +1232,12 @@ namespace OverwatchLootBoxTracker
             if (BackSave2 == Lang.VictoryPoses)
             {
                 chB00.Visible = true; chB00.Location = new Point(gBAllWeited3p1, p1); chB00.Text = Cost.Classic.ToString();
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2); chB01.Text = Ana.Mission_Complete_VP[1]; HeroTT.SetToolTip(chB01, "Rare");
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3); chB02.Text = Ana.Protector_VP[1]; HeroTT.SetToolTip(chB02, "Rare");
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4); chB03.Text = Ana.Seated_VP[1]; HeroTT.SetToolTip(chB03, "Rare");
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1); chB04.Text = Ana.RIP_VP[1]; HeroTT.SetToolTip(chB04, Lang.Halloween + " 2016");
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2); chB05.Text = Ana.Toast_VP[1]; HeroTT.SetToolTip(chB05, Lang.Winter + " 2016");
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3); chB06.Text = Ana.Folded_Hands_VP[1]; HeroTT.SetToolTip(chB06, Lang.Rooster + " 2017");
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited3p1, p2); chB01.Text = Ana.Mission_Complete_VP[1]; HeroTT.SetToolTip(chB01, Ana.Mission_Complete_VP[2]);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited3p1, p3); chB02.Text = Ana.Protector_VP[1]; HeroTT.SetToolTip(chB02, Ana.Protector_VP[2]);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited3p1, p4); chB03.Text = Ana.Seated_VP[1]; HeroTT.SetToolTip(chB03, Ana.Seated_VP[2]);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited3p2, p1); chB04.Text = Ana.RIP_VP[1]; HeroTT.SetToolTip(chB04, Ana.RIP_VP[2]);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited3p2, p2); chB05.Text = Ana.Toast_VP[1]; HeroTT.SetToolTip(chB05, Ana.Toast_VP[2]);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited3p2, p3); chB06.Text = Ana.Folded_Hands_VP[1]; HeroTT.SetToolTip(chB06, Ana.Folded_Hands_VP[2]);
 
                 btn00.Visible = true; btn00.Location = new Point(gBAllWeited3p1 + chB00.Width, p1 - 5);
                 btn01.Visible = true; btn01.Location = new Point(gBAllWeited3p1 + chB01.Width, p2 - 5);
@@ -1262,31 +1262,32 @@ namespace OverwatchLootBoxTracker
                 chB05.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Toast_VP[0]));
                 chB06.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Folded_Hands_VP[0]));
             }
+            #region Unimplemented
             if (BackSave2 == Lang.VoiceLines)
             {
                 chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1); chB00.Text = Ana.Justice_Delivered_VL[1];
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2); chB01.Text = Ana.Children_behave_VL[1]; HeroTT.SetToolTip(chB01, "Common");
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3); chB02.Text = Ana.Everyone_dies_VL[1]; HeroTT.SetToolTip(chB02, "Common");
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4); chB03.Text = Ana.Go_on_i_can_wait_VL[1]; HeroTT.SetToolTip(chB03, "Common");
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5); chB04.Text = Ana.It_takes_a_woman_to_know_VL[1]; HeroTT.SetToolTip(chB04, "Common");
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p1, p6); chB05.Text = Ana.Justice_rains_from_above_VL[1]; HeroTT.SetToolTip(chB05, "Common");
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p1, p7); chB06.Text = Ana.Mother_knows_best_VL[1]; HeroTT.SetToolTip(chB06, "Common");
-                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p1, p8); chB07.Text = Ana.No_scope_needed_VL[1]; HeroTT.SetToolTip(chB07, "Common");
-                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p1, p1); chB08.Text = Ana.What_are_you_thinking_VL[1]; HeroTT.SetToolTip(chB08, "Common");
-                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p2, p2); chB09.Text = Ana.Witness_me_VL[1]; HeroTT.SetToolTip(chB09, "Common");
-                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p2, p3); chB10.Text = Ana.You_know_nothing_VL[1]; HeroTT.SetToolTip(chB10, "Common");
-                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p2, p4); chB11.Text = Ana.Someone_to_tuck_you_in_VL[1]; HeroTT.SetToolTip(chB11, "Common");
-                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p2, p5); chB12.Text = Ana.Better_than_retirement_VL[1]; HeroTT.SetToolTip(chB12, Lang.Summer + "2017");
-                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p2, p6); chB13.Text = Ana.Learn_from_the_pain_VL[1]; HeroTT.SetToolTip(chB13, Lang.Summer + "2016");
-                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p2, p7); chB14.Text = Ana.Are_you_scared_VL[1]; HeroTT.SetToolTip(chB14, Lang.Halloween + "2016");
-                chB15.Visible = true; chB15.Location = new Point(gBAllWeited4p2, p8); chB15.Text = Ana.Dont_be_scared_VL[1]; HeroTT.SetToolTip(chB15, Lang.Halloween + "2017");
-                chB16.Visible = true; chB16.Location = new Point(gBAllWeited4p3, p1); chB16.Text = Ana.Im_too_old_for_surprises_VL[1]; HeroTT.SetToolTip(chB16, Lang.Winter + "2017");
-                chB17.Visible = true; chB17.Location = new Point(gBAllWeited4p3, p2); chB17.Text = Ana.Im_watching_out_for_you_VL[1]; HeroTT.SetToolTip(chB17, Lang.Winter + "2016");
-                chB18.Visible = true; chB18.Location = new Point(gBAllWeited4p3, p3); chB18.Text = Ana.The_Moon_in_Winter_VL[1]; HeroTT.SetToolTip(chB18, Lang.Rooster + "2017");
-                chB19.Visible = true; chB19.Location = new Point(gBAllWeited4p3, p4); chB19.Text = Ana.Damn_VL[1]; HeroTT.SetToolTip(chB19, Lang.Uprising + "2017");
-                chB20.Visible = true; chB20.Location = new Point(gBAllWeited4p3, p5); chB20.Text = Ana.The_Ghost_watches_VL[1]; HeroTT.SetToolTip(chB20, Lang.Uprising + "2017");
-                chB21.Visible = true; chB21.Location = new Point(gBAllWeited4p3, p6); chB21.Text = Ana.Follow_me_VL[1]; HeroTT.SetToolTip(chB21, Lang.Annyver + "2017");
-                chB22.Visible = true; chB22.Location = new Point(gBAllWeited4p3, p7); chB22.Text = Ana.The_adults_are_talking_VL[1]; HeroTT.SetToolTip(chB22, Lang.Annyver + "2017");
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2); chB01.Text = Ana.Children_behave_VL[1]; HeroTT.SetToolTip(chB01, Ana.Children_behave_VL[2]);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3); chB02.Text = Ana.Everyone_dies_VL[1]; HeroTT.SetToolTip(chB02, Ana.Everyone_dies_VL[2]);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4); chB03.Text = Ana.Go_on_i_can_wait_VL[1]; HeroTT.SetToolTip(chB03, Ana.Go_on_i_can_wait_VL[2]);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5); chB04.Text = Ana.It_takes_a_woman_to_know_VL[1]; HeroTT.SetToolTip(chB04, Ana.It_takes_a_woman_to_know_VL[2]);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p1, p6); chB05.Text = Ana.Justice_rains_from_above_VL[1]; HeroTT.SetToolTip(chB05, Ana.Justice_rains_from_above_VL[2]);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p1, p7); chB06.Text = Ana.Mother_knows_best_VL[1]; HeroTT.SetToolTip(chB06, Ana.Mother_knows_best_VL[2]);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p1, p8); chB07.Text = Ana.No_scope_needed_VL[1]; HeroTT.SetToolTip(chB07, Ana.No_scope_needed_VL[2]);
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p1, p1); chB08.Text = Ana.What_are_you_thinking_VL[1]; HeroTT.SetToolTip(chB08, Ana.What_are_you_thinking_VL[2]);
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p2, p2); chB09.Text = Ana.Witness_me_VL[1]; HeroTT.SetToolTip(chB09, Ana.Witness_me_VL[2]);
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p2, p3); chB10.Text = Ana.You_know_nothing_VL[1]; HeroTT.SetToolTip(chB10, Ana.You_know_nothing_VL[2]);
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p2, p4); chB11.Text = Ana.Someone_to_tuck_you_in_VL[1]; HeroTT.SetToolTip(chB11, Ana.Someone_to_tuck_you_in_VL[2]);
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p2, p5); chB12.Text = Ana.Better_than_retirement_VL[1]; HeroTT.SetToolTip(chB12, Ana.Better_than_retirement_VL[2]);
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p2, p6); chB13.Text = Ana.Learn_from_the_pain_VL[1]; HeroTT.SetToolTip(chB13, Ana.Learn_from_the_pain_VL[2]);
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p2, p7); chB14.Text = Ana.Are_you_scared_VL[1]; HeroTT.SetToolTip(chB14, Ana.Are_you_scared_VL[2]);
+                chB15.Visible = true; chB15.Location = new Point(gBAllWeited4p2, p8); chB15.Text = Ana.Dont_be_scared_VL[1]; HeroTT.SetToolTip(chB15, Ana.Dont_be_scared_VL[2]);
+                chB16.Visible = true; chB16.Location = new Point(gBAllWeited4p3, p1); chB16.Text = Ana.Im_too_old_for_surprises_VL[1]; HeroTT.SetToolTip(chB16, Ana.Im_too_old_for_surprises_VL[2]);
+                chB17.Visible = true; chB17.Location = new Point(gBAllWeited4p3, p2); chB17.Text = Ana.Im_watching_out_for_you_VL[1]; HeroTT.SetToolTip(chB17, Ana.Im_watching_out_for_you_VL[2]);
+                chB18.Visible = true; chB18.Location = new Point(gBAllWeited4p3, p3); chB18.Text = Ana.The_Moon_in_Winter_VL[1]; HeroTT.SetToolTip(chB18, Ana.The_Moon_in_Winter_VL[2]);
+                chB19.Visible = true; chB19.Location = new Point(gBAllWeited4p3, p4); chB19.Text = Ana.Damn_VL[1]; HeroTT.SetToolTip(chB19, Ana.Damn_VL[2]);
+                chB20.Visible = true; chB20.Location = new Point(gBAllWeited4p3, p5); chB20.Text = Ana.The_Ghost_watches_VL[1]; HeroTT.SetToolTip(chB20, Ana.The_Ghost_watches_VL[2]);
+                chB21.Visible = true; chB21.Location = new Point(gBAllWeited4p3, p6); chB21.Text = Ana.Follow_me_VL[1]; HeroTT.SetToolTip(chB21, Ana.Follow_me_VL[2]);
+                chB22.Visible = true; chB22.Location = new Point(gBAllWeited4p3, p7); chB22.Text = Ana.The_adults_are_talking_VL[1]; HeroTT.SetToolTip(chB22, Ana.The_adults_are_talking_VL[2]);
                 #region t
                 btn00.Visible = true; btn00.Location = new Point(gBAllWeited4p1 + chB00.Width, p1 - 5);
                 btn01.Visible = true; btn01.Location = new Point(gBAllWeited4p1 + chB01.Width, p2 - 5);
@@ -1360,7 +1361,6 @@ namespace OverwatchLootBoxTracker
                 chB21.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Follow_me_VL[0]));
                 chB22.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.The_adults_are_talking_VL[0]));*/
             }
-            #region Unimplemented
             if (BackSave2 == Lang.Sprays)
             {
                 chB01.Visible = true; chB01.Text = Ana.Action_SP[0] + " (" + Cost.Common + ")";//Common
@@ -1398,146 +1398,6 @@ namespace OverwatchLootBoxTracker
                 chB33.Visible = true; chB33.Text = Ana.Dragon_Dance_SP[0] + " (" + Cost.RareEvent + ")";//Rooster 17
                 chB34.Visible = true; chB34.Text = Ana.Newborn_SP[0] + " (" + Cost.RareEvent + ")";//Uprising 17
                 chB35.Visible = true; chB35.Text = Ana.Ace_of_Hearts_SP[0] + " (" + Cost.RareEvent + ")";//Annyver 17
-                if (inisHeroes.Read("SP01") == "1")
-                {
-                    chB01.Checked = true;
-                }
-                if (inisHeroes.Read("SP02") == "1")
-                {
-                    chB02.Checked = true;
-                }
-                if (inisHeroes.Read("SP03") == "1")
-                {
-                    chB03.Checked = true;
-                }
-                if (inisHeroes.Read("SP04") == "1")
-                {
-                    chB04.Checked = true;
-                }
-                if (inisHeroes.Read("SP05") == "1")
-                {
-                    chB05.Checked = true;
-                }
-                if (inisHeroes.Read("SP06") == "1")
-                {
-                    chB06.Checked = true;
-                }
-                if (inisHeroes.Read("SP07") == "1")
-                {
-                    chB07.Checked = true;
-                }
-                if (inisHeroes.Read("SP08") == "1")
-                {
-                    chB08.Checked = true;
-                }
-                if (inisHeroes.Read("SP09") == "1")
-                {
-                    chB09.Checked = true;
-                }
-                if (inisHeroes.Read("SP10") == "1")
-                {
-                    chB10.Checked = true;
-                }
-                if (inisHeroes.Read("SP11") == "1")
-                {
-                    chB11.Checked = true;
-                }
-                if (inisHeroes.Read("SP12") == "1")
-                {
-                    chB12.Checked = true;
-                }
-                if (inisHeroes.Read("SP13") == "1")
-                {
-                    chB13.Checked = true;
-                }
-                if (inisHeroes.Read("SP14") == "1")
-                {
-                    chB14.Checked = true;
-                }
-                if (inisHeroes.Read("SP15") == "1")
-                {
-                    chB15.Checked = true;
-                }
-                if (inisHeroes.Read("SP16") == "1")
-                {
-                    chB16.Checked = true;
-                }
-                if (inisHeroes.Read("SP17") == "1")
-                {
-                    chB17.Checked = true;
-                }
-                if (inisHeroes.Read("SP18") == "1")
-                {
-                    chB18.Checked = true;
-                }
-                if (inisHeroes.Read("SP19") == "1")
-                {
-                    chB19.Checked = true;
-                }
-                if (inisHeroes.Read("SP20") == "1")
-                {
-                    chB20.Checked = true;
-                }
-                if (inisHeroes.Read("SP21") == "1")
-                {
-                    chB21.Checked = true;
-                }
-                if (inisHeroes.Read("SP22") == "1")
-                {
-                    chB22.Checked = true;
-                }
-                if (inisHeroes.Read("SP23") == "1")
-                {
-                    chB23.Checked = true;
-                }
-                if (inisHeroes.Read("SP24") == "1")
-                {
-                    chB24.Checked = true;
-                }
-                if (inisHeroes.Read("SP25") == "1")
-                {
-                    chB25.Checked = true;
-                }
-                if (inisHeroes.Read("SP26") == "1")
-                {
-                    chB26.Checked = true;
-                }
-                if (inisHeroes.Read("SP27") == "1")
-                {
-                    chB27.Checked = true;
-                }
-                if (inisHeroes.Read("SP28") == "1")
-                {
-                    chB28.Checked = true;
-                }
-                if (inisHeroes.Read("SP29") == "1")
-                {
-                    chB29.Checked = true;
-                }
-                if (inisHeroes.Read("SP30") == "1")
-                {
-                    chB30.Checked = true;
-                }
-                if (inisHeroes.Read("SP31") == "1")
-                {
-                    chB31.Checked = true;
-                }
-                if (inisHeroes.Read("SP32") == "1")
-                {
-                    chB32.Checked = true;
-                }
-                if (inisHeroes.Read("SP33") == "1")
-                {
-                    chB33.Checked = true;
-                }
-                if (inisHeroes.Read("SP34") == "1")
-                {
-                    chB34.Checked = true;
-                }
-                if (inisHeroes.Read("SP35") == "1")
-                {
-                    chB35.Checked = true;
-                }
             }
             if (BackSave2 == Lang.HighlightIntros)
             {
@@ -2048,7 +1908,7 @@ namespace OverwatchLootBoxTracker
                 btn12.Visible = true; btn12.Location = new Point(gBAllWeited4p3 + chB12.Width, p6 - 5);
                 btn13.Visible = true; btn13.Location = new Point(gBAllWeited4p3 + chB13.Width, p7 - 5);
                 btn14.Visible = true; btn14.Location = new Point(gBAllWeited4p3 + chB14.Width, p8 - 5);
-
+                
                 btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Classic;//Default
                 btn01.BackColor = Color.DeepSkyBlue; btn01.Text = DVa.Blueberry_SK;//Rare
                 btn02.BackColor = Color.DeepSkyBlue; btn02.Text = DVa.Lemon_Lime_SK;
@@ -6766,8 +6626,8 @@ namespace OverwatchLootBoxTracker
                 catch { }
                 MediaPlayer = new CMediaPlayer("Sounds\\Voice Lines\\" + BackSave + "\\" + /*Language*/"EN" + "\\" + buttonnumber + ".mp3");
                 MediaPlayer.Play();
-                //if (MediaPlayer != null)
-                //MessageBox.Show("An Error has appeared!\nPlease Post this Issue on GitHub with the Error Code\nError Code: 3", "Error 3", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                if (MediaPlayer == null)
+                MessageBox.Show("An Error has appeared!\nPlease Post this Issue on GitHub with the Error Code\nError Code: 3", "Error 3", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 

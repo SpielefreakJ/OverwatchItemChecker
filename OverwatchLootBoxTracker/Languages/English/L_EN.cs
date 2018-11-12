@@ -44,6 +44,12 @@ namespace OverwatchLootBoxTracker.Lang
             PlayerIcons = "Player Icons";
             // Overwatch League
             OWLeague = "Overwatch League";
+
+            Common = "Common";
+            Rare = "Rare";
+            Epic = "Epic";
+            Legendary = "Legendary";
+
             #endregion
             #region Events
             Summer = "Summer Games";
@@ -143,6 +149,13 @@ namespace OverwatchLootBoxTracker.Lang
         public string HighlightIntros { get; }
         public string Weapons { get; }
         public string PlayerIcons { get; }
+
+        public string Common { get; }
+        public string Rare { get; }
+        public string Epic { get; }
+        public string Legendary { get; }
+        #endregion
+        #region Events
 
         public string Summer { get; }//Events
         public string Halloween { get; }

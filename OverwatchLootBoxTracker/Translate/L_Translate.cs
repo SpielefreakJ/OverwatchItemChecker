@@ -357,6 +357,66 @@ namespace OverwatchLootBoxTracker.Translate
                 }
             }
         }
+
+        public string Common
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Common;
+                }
+                else
+                {
+                    return EN.Common;
+                }
+            }
+        }
+
+        public string Rare
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Rare;
+                }
+                else
+                {
+                    return EN.Rare;
+                }
+            }
+        }
+
+        public string Epic
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Epic;
+                }
+                else
+                {
+                    return EN.Epic;
+                }
+            }
+        }
+
+        public string Legendary
+        {
+            get
+            {
+                if (myLang == "DE")
+                {
+                    return DE.Legendary;
+                }
+                else
+                {
+                    return EN.Legendary;
+                }
+            }
+        }
         //Events
         public string Summer
         {
