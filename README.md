@@ -4,10 +4,8 @@ Hi. This is an Simple Programm, for tracking every Item in Overwatch.
 
 <!---->
 
-Beta out!
-
 ### Features:
-* Save Skins, Emotes and Victory Poses of every Heroe
+* Save Skins, Emotes and Victory Poses of every Hero
 
 * Calculation of remaining costs (Skin, Emote and Victory Pose only)
 * Showing an Image of all Items
@@ -17,7 +15,7 @@ Beta out!
 - German
 
 ### Version:
-0.2.7
+0.3.0
 
 ### Problems and issues
 If you have problems or found an issue, please create an Issue above.
