@@ -52,36 +52,36 @@ namespace OverwatchLootBoxTracker
         {
             Path = Folder;
 
-            Ana = new Translate.L_Ana("");
-            Bastion = new Translate.L_Bastion("");
-            Brigitte = new Translate.L_Brigitte("");
-            DVa = new Translate.L_DVa("");
-            Doomfist = new Translate.L_Doomfist("");
-            Genji = new Translate.L_Genji("");
-            Hanzo = new Translate.L_Hanzo("");
-            Junkrat = new Translate.L_Junkrat("");
-            Lúcio = new Translate.L_Lúcio("");
-            McCree = new Translate.L_McCree("");
-            Mei = new Translate.L_Mei("");
-            Mercy = new Translate.L_Mercy("");
-            Moira = new Translate.L_Moira("");
-            Orisa = new Translate.L_Orisa("");
-            Pharah = new Translate.L_Pharah("");
-            Reaper = new Translate.L_Reaper("");
-            Reinhardt = new Translate.L_Reinhardt("");
-            Roadhog = new Translate.L_Roadhog("");
-            Soldier_76 = new Translate.L_Soldier_76("");
-            Sombra = new Translate.L_Sombra("");
-            Symmetra = new Translate.L_Symmetra("");
-            Torbjörn = new Translate.L_Torbjörn("");
-            Tracer = new Translate.L_Tracer("");
-            Widowmaker = new Translate.L_Widowmaker("");
-            Winston = new Translate.L_Winston("");
-            WreckingBall = new Translate.L_WreckingBall("");
-            Zarya = new Translate.L_Zarya("");
-            Zenyatta = new Translate.L_Zenyatta("");
+            Ana = new Translate.L_Ana("EN");
+            Bastion = new Translate.L_Bastion("EN");
+            Brigitte = new Translate.L_Brigitte("EN");
+            DVa = new Translate.L_DVa("EN");
+            Doomfist = new Translate.L_Doomfist("EN");
+            Genji = new Translate.L_Genji("EN");
+            Hanzo = new Translate.L_Hanzo("EN");
+            Junkrat = new Translate.L_Junkrat("EN");
+            Lúcio = new Translate.L_Lúcio("EN");
+            McCree = new Translate.L_McCree("EN");
+            Mei = new Translate.L_Mei("EN");
+            Mercy = new Translate.L_Mercy("EN");
+            Moira = new Translate.L_Moira("EN");
+            Orisa = new Translate.L_Orisa("EN");
+            Pharah = new Translate.L_Pharah("EN");
+            Reaper = new Translate.L_Reaper("EN");
+            Reinhardt = new Translate.L_Reinhardt("EN");
+            Roadhog = new Translate.L_Roadhog("EN");
+            Soldier_76 = new Translate.L_Soldier_76("EN");
+            Sombra = new Translate.L_Sombra("EN");
+            Symmetra = new Translate.L_Symmetra("EN");
+            Torbjörn = new Translate.L_Torbjörn("EN");
+            Tracer = new Translate.L_Tracer("EN");
+            Widowmaker = new Translate.L_Widowmaker("EN");
+            Winston = new Translate.L_Winston("EN");
+            WreckingBall = new Translate.L_WreckingBall("EN");
+            Zarya = new Translate.L_Zarya("EN");
+            Zenyatta = new Translate.L_Zenyatta("EN");
 
-            Lang = new Translate.L_Translate("");
+            Lang = new Translate.L_Translate("EN");
 
         }
 
@@ -327,6 +327,40 @@ namespace OverwatchLootBoxTracker
                 //Legendary Event
                 inisHeroes.Write(Ana.Corsair_SK[0], f); Cost = Convert.ToInt64(Ana.Corsair_SK[1]);
                 inisHeroes.Write(Ana.Snow_Owl_SK[0], f); Cost = Convert.ToInt64(Ana.Snow_Owl_SK[1]);
+                #endregion
+                #region Emotes
+                #endregion
+                #region Victory Poses
+                #endregion
+            }
+            #endregion
+
+            #region D.Va
+            if (HeroName == "D.Va")
+            {
+                inisHeroes = new IniStream(Path + "\\D.Va.ini");
+                #region Skins
+                //Rare
+                inisHeroes.Write(DVa.Blueberry_SK[0], f); Cost = Convert.ToInt64(DVa.Blueberry_SK[1]);
+                inisHeroes.Write(DVa.Lemon_Lime_SK[0], f); Cost = Convert.ToInt64(DVa.Lemon_Lime_SK[1]);
+                inisHeroes.Write(DVa.Tangerine_SK[0], f); Cost = Convert.ToInt64(DVa.Tangerine_SK[1]);
+                inisHeroes.Write(DVa.Watermelon_SK[0], f); Cost = Convert.ToInt64(DVa.Watermelon_SK[1]);
+                //Epic
+                inisHeroes.Write(DVa.Carbon_Fiber_SK[0], f); Cost = Convert.ToInt64(DVa.Carbon_Fiber_SK[1]);
+                inisHeroes.Write(DVa.White_Rabbit_SK[0], f); Cost = Convert.ToInt64(DVa.White_Rabbit_SK[1]);
+                //Epic Event
+                inisHeroes.Write(DVa.Taegeukgi_SK[0], f); Cost = Convert.ToInt64(DVa.Taegeukgi_SK[1]);
+                //Legendary
+                inisHeroes.Write(DVa.Junker_SK[0], f); Cost = Convert.ToInt64(DVa.Junker_SK[1]);
+                inisHeroes.Write(DVa.Scavenger_SK[0], f); Cost = Convert.ToInt64(DVa.Scavenger_SK[1]);
+                inisHeroes.Write(DVa.BVa_SK[0], f); Cost = Convert.ToInt64(DVa.BVa_SK[1]);
+                inisHeroes.Write(DVa.Junebug_SK[0], f); Cost = Convert.ToInt64(DVa.Junebug_SK[1]);
+                inisHeroes.Write(DVa.Black_Cat_SK[0], f); Cost = Convert.ToInt64(DVa.Black_Cat_SK[1]);
+                inisHeroes.Write(DVa.Officer_SK[0], f); Cost = Convert.ToInt64(DVa.Officer_SK[1]);
+                //Legendary Event
+                inisHeroes.Write(DVa.Waveracer_SK[0], f); Cost = Convert.ToInt64(DVa.Waveracer_SK[1]);
+                inisHeroes.Write(DVa.Palanquin_SK[0], f); Cost = Convert.ToInt64(DVa.Palanquin_SK[1]);
+                inisHeroes.Write(DVa.Cruiser_SK[0], f); Cost = Convert.ToInt64(DVa.Cruiser_SK[1]);
                 #endregion
                 #region Emotes
                 #endregion

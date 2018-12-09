@@ -30,7 +30,8 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             BVa_SK = "B.Va";
             Junebug_SK = "Junebug";
             Black_Cat_SK = "BLACK CAT";
-             Officer_SK = "Officer";
+            Officer_SK = "Officer";
+            Waveracer_SK = "WAVERACER";//Summer 18
             Palanquin_SK = "Palanquin";//Rooster 17
             Cruiser_SK = "Cruiser";//Annyver 17
             #endregion
@@ -103,6 +104,7 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         public string Junebug_SK { get; }
         public string Black_Cat_SK { get; }
         public string Officer_SK { get; }
+        public string Waveracer_SK { get; }//Summer 18
         public string Palanquin_SK { get; }//Rooster 17
         public string Cruiser_SK { get; }//Annyver 17
         #endregion

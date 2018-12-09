@@ -61,7 +61,8 @@ namespace OverwatchLootBoxTracker
         CMediaPlayer MediaPlayer;
         //
         //Others
-        string Language = "EN", sBackColor = "Blue";
+        bool NoChangeText = false;
+        string Language = "EN", LangBrücke = "", sBackColor = "Blue";
         int newSave = 0;
         int gBAllWeited3, gBAllWeited3p1, gBAllWeited3p2;
         int gBAllWeited4, gBAllWeited4p1, gBAllWeited4p2, gBAllWeited4p3;
@@ -547,7 +548,10 @@ namespace OverwatchLootBoxTracker
 
             ItemImage.ChangeLang = Language;
 
-            Texte();
+            if (NoChangeText==false)
+            {
+                Texte();
+            }
         }
 
         private void Tooltips()
@@ -1112,7 +1116,7 @@ namespace OverwatchLootBoxTracker
             chBSave = 0;
             chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
-            chB01.Checked = Convert.ToBoolean(inisHeroes.Read(Lang.GoldWeapon));
+            chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GoldWeapon"));
             chBSave = 1;
         }
 
@@ -1172,6 +1176,13 @@ namespace OverwatchLootBoxTracker
                 btn13.BackColor = Color.Gold; btn13.Text = Ana.Corsair_SK[0];//Halloween 17
                 btn14.BackColor = Color.Gold; btn14.Text = Ana.Snow_Owl_SK[0];//Winter 17
 
+                if (Language != "EN")
+                {
+                    NoChangeText = true;
+                    LangBrücke = Language;
+                    Language = "EN";
+                    ChangeLang();
+                }
                 chB00.Checked = true;
                 chB01.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Citrine_SK[0]));
                 chB02.Checked = Convert.ToBoolean(inisHeroes.Read(Ana.Garnet_SK[0]));
@@ -1460,6 +1471,12 @@ namespace OverwatchLootBoxTracker
             if (BackSave2 == Lang.OWLeague)
             {
                 OWLButtons();
+            }
+            if (NoChangeText == true)
+            {
+                Language = LangBrücke;
+                ChangeLang();
+                NoChangeText = false;
             }
             chBSave = 1;
         }
@@ -1855,7 +1872,7 @@ namespace OverwatchLootBoxTracker
         private void DVa_Click(object sender, EventArgs e)
         {
             Heroe = "D.Va";
-            btnHeroeinvisible("D.Va", 14, 7, 6);
+            btnHeroeinvisible(Heroe, 14, 7, 6);
             gbAll.Text = DVa.GetName();
             BackSave = gbAll.Text;
             inisHeroes = new IniStream(MyDocuments + "\\" + Heroe + ".ini");
@@ -1863,7 +1880,7 @@ namespace OverwatchLootBoxTracker
             chBSave = 0;
             chB01.Text = Lang.GoldWeapon; chB01.Visible = true;
             chB01.Location = new Point(gBAllWeited4p1, p2);
-            chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GW01"));
+            chB01.Checked = Convert.ToBoolean(inisHeroes.Read("GoldWeapon"));
             chBSave = 1;
         }
 
@@ -1872,25 +1889,27 @@ namespace OverwatchLootBoxTracker
             inisHeroes = new IniStream(MyDocuments + "\\" + Heroe + ".ini");
             chBSave = 0;
 
+
             //Anzeigen, Auslesen und anwenden der chB
             if (BackSave2 == Lang.Skins)
             {
-                chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1); chB00.Text = "(" + Cost.Classic + ")";
-                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2); chB01.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB01, "Rare");
-                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3); chB02.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB02, "Rare");
-                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4); chB03.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB03, "Rare");
-                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5); chB04.Text = "(" + Cost.Rare + ")"; HeroTT.SetToolTip(chB04, "Rare");
-                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB05, "Epic");
-                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB06, "Epic");
-                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = "(" + Cost.Epic + ")"; HeroTT.SetToolTip(chB07, Lang.Summer + " 2016");
-                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p1); chB08.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB08, "Legendary");
-                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p2); chB09.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB09, "Legendary");
-                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p3); chB10.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB10, "Legendary");
-                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p4); chB11.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB11, "Legendary");
-                chB15.Visible = true; chB15.Location = new Point(gBAllWeited4p3, p5); chB15.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB15, "Legendary");
-                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p6); chB12.Text = "(" + Cost.Legendary + ")"; HeroTT.SetToolTip(chB12, "Legendary");
-                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p7); chB13.Text = "(" + Cost.LegendaryEvent + ")"; HeroTT.SetToolTip(chB13, Lang.Rooster + " 2017");
-                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p8); chB14.Text = "(" + Cost.LegendaryEvent + ")"; HeroTT.SetToolTip(chB14, Lang.Annyver + " 2017");
+                chB00.Visible = true; chB00.Location = new Point(gBAllWeited4p1, p1); chB00.Text = Cost.Classic + ")";
+                chB01.Visible = true; chB01.Location = new Point(gBAllWeited4p1, p2); chB01.Text = DVa.Blueberry_SK[1]; HeroTT.SetToolTip(chB01, DVa.Blueberry_SK[2]);
+                chB02.Visible = true; chB02.Location = new Point(gBAllWeited4p1, p3); chB02.Text = DVa.Lemon_Lime_SK[1]; HeroTT.SetToolTip(chB02, DVa.Lemon_Lime_SK[2]);
+                chB03.Visible = true; chB03.Location = new Point(gBAllWeited4p1, p4); chB03.Text = DVa.Tangerine_SK[1]; HeroTT.SetToolTip(chB03, DVa.Tangerine_SK[2]);
+                chB04.Visible = true; chB04.Location = new Point(gBAllWeited4p1, p5); chB04.Text = DVa.Watermelon_SK[1]; HeroTT.SetToolTip(chB04, DVa.Watermelon_SK[2]);
+                chB05.Visible = true; chB05.Location = new Point(gBAllWeited4p2, p1); chB05.Text = DVa.Carbon_Fiber_SK[1]; HeroTT.SetToolTip(chB05, DVa.Carbon_Fiber_SK[2]);
+                chB06.Visible = true; chB06.Location = new Point(gBAllWeited4p2, p2); chB06.Text = DVa.White_Rabbit_SK[1]; HeroTT.SetToolTip(chB06, DVa.White_Rabbit_SK[2]);
+                chB07.Visible = true; chB07.Location = new Point(gBAllWeited4p2, p3); chB07.Text = DVa.Taegeukgi_SK[1]; HeroTT.SetToolTip(chB07, DVa.Taegeukgi_SK[2]);
+                chB08.Visible = true; chB08.Location = new Point(gBAllWeited4p3, p1); chB08.Text = DVa.Junker_SK[1]; HeroTT.SetToolTip(chB08, DVa.Junker_SK[2]);
+                chB09.Visible = true; chB09.Location = new Point(gBAllWeited4p3, p2); chB09.Text = DVa.Scavenger_SK[1]; HeroTT.SetToolTip(chB09, DVa.Scavenger_SK[2]);
+                chB10.Visible = true; chB10.Location = new Point(gBAllWeited4p3, p3); chB10.Text = DVa.BVa_SK[1]; HeroTT.SetToolTip(chB10, DVa.BVa_SK[2]);
+                chB11.Visible = true; chB11.Location = new Point(gBAllWeited4p3, p4); chB11.Text = DVa.Junebug_SK[1]; HeroTT.SetToolTip(chB11, DVa.Junebug_SK[2]);
+                chB15.Visible = true; chB15.Location = new Point(gBAllWeited4p3, p5); chB15.Text = DVa.Black_Cat_SK[1]; HeroTT.SetToolTip(chB15, DVa.Black_Cat_SK[2]);
+                chB12.Visible = true; chB12.Location = new Point(gBAllWeited4p3, p6); chB12.Text = DVa.Officer_SK[1]; HeroTT.SetToolTip(chB12, DVa.Officer_SK[2]);
+                chB16.Visible = true; chB16.Location = new Point(gBAllWeited4p3, p7); chB16.Text = DVa.Waveracer_SK[1]; HeroTT.SetToolTip(chB16, DVa.Waveracer_SK[2]);
+                chB13.Visible = true; chB13.Location = new Point(gBAllWeited4p3, p8); chB13.Text = DVa.Palanquin_SK[1]; HeroTT.SetToolTip(chB13, DVa.Palanquin_SK[2]);
+                chB14.Visible = true; chB14.Location = new Point(gBAllWeited4p3, p9); chB14.Text = DVa.Cruiser_SK[1]; HeroTT.SetToolTip(chB14, DVa.Cruiser_SK[2]);
 
                 btn00.Visible = true; btn00.Location = new Point(gBAllWeited4p1 + chB00.Width, p1 - 5);
                 btn01.Visible = true; btn01.Location = new Point(gBAllWeited4p1 + chB01.Width, p2 - 5);
@@ -1906,42 +1925,52 @@ namespace OverwatchLootBoxTracker
                 btn11.Visible = true; btn11.Location = new Point(gBAllWeited4p3 + chB11.Width, p4 - 5);
                 btn15.Visible = true; btn15.Location = new Point(gBAllWeited4p3 + chB15.Width, p5 - 5);
                 btn12.Visible = true; btn12.Location = new Point(gBAllWeited4p3 + chB12.Width, p6 - 5);
-                btn13.Visible = true; btn13.Location = new Point(gBAllWeited4p3 + chB13.Width, p7 - 5);
-                btn14.Visible = true; btn14.Location = new Point(gBAllWeited4p3 + chB14.Width, p8 - 5);
-                
-                btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Classic;//Default
-                btn01.BackColor = Color.DeepSkyBlue; btn01.Text = DVa.Blueberry_SK;//Rare
-                btn02.BackColor = Color.DeepSkyBlue; btn02.Text = DVa.Lemon_Lime_SK;
-                btn03.BackColor = Color.DeepSkyBlue; btn03.Text = DVa.Tangerine_SK;
-                btn04.BackColor = Color.DeepSkyBlue; btn04.Text = DVa.Watermelon_SK;
-                btn05.BackColor = Color.DarkViolet; btn05.Text = DVa.Carbon_Fiber_SK;//Epic
-                btn06.BackColor = Color.DarkViolet; btn06.Text = DVa.White_Rabbit_SK;
-                btn07.BackColor = Color.DarkViolet; btn07.Text = DVa.Taegeukgi_SK;//Summer 16
-                btn08.BackColor = Color.Gold; btn08.Text = DVa.Junker_SK;//Legendary
-                btn09.BackColor = Color.Gold; btn09.Text = DVa.Scavenger_SK;
-                btn10.BackColor = Color.Gold; btn10.Text = DVa.BVa_SK;
-                btn11.BackColor = Color.Gold; btn11.Text = DVa.Junebug_SK;
-                btn15.BackColor = Color.Gold; btn15.Text = DVa.Black_Cat_SK;
-                btn12.BackColor = Color.Gold; btn12.Text = DVa.Officer_SK;
-                btn13.BackColor = Color.Gold; btn13.Text = DVa.Palanquin_SK;//Rooster 17
-                btn14.BackColor = Color.Gold; btn14.Text = DVa.Cruiser_SK;//Annyver 17
+                btn16.Visible = true; btn16.Location = new Point(gBAllWeited4p3 + chB16.Width, p7 - 5);
+                btn13.Visible = true; btn13.Location = new Point(gBAllWeited4p3 + chB13.Width, p8 - 5);
+                btn14.Visible = true; btn14.Location = new Point(gBAllWeited4p3 + chB14.Width, p9 - 5);
 
+                btn00.BackColor = Color.Gainsboro; btn00.Text = Lang.Classic;//Default
+                btn01.BackColor = Color.DeepSkyBlue; btn01.Text = DVa.Blueberry_SK[0];//Rare
+                btn02.BackColor = Color.DeepSkyBlue; btn02.Text = DVa.Lemon_Lime_SK[0];
+                btn03.BackColor = Color.DeepSkyBlue; btn03.Text = DVa.Tangerine_SK[0];
+                btn04.BackColor = Color.DeepSkyBlue; btn04.Text = DVa.Watermelon_SK[0];
+                btn05.BackColor = Color.DarkViolet; btn05.Text = DVa.Carbon_Fiber_SK[0];//Epic
+                btn06.BackColor = Color.DarkViolet; btn06.Text = DVa.White_Rabbit_SK[0];
+                btn07.BackColor = Color.DarkViolet; btn07.Text = DVa.Taegeukgi_SK[0];//Summer 16
+                btn08.BackColor = Color.Gold; btn08.Text = DVa.Junker_SK[0];//Legendary
+                btn09.BackColor = Color.Gold; btn09.Text = DVa.Scavenger_SK[0];
+                btn10.BackColor = Color.Gold; btn10.Text = DVa.BVa_SK[0];
+                btn11.BackColor = Color.Gold; btn11.Text = DVa.Junebug_SK[0];
+                btn15.BackColor = Color.Gold; btn15.Text = DVa.Black_Cat_SK[0];
+                btn12.BackColor = Color.Gold; btn12.Text = DVa.Officer_SK[0];
+                btn16.BackColor = Color.Gold; btn16.Text = DVa.Waveracer_SK[0];//Summer 18
+                btn13.BackColor = Color.Gold; btn13.Text = DVa.Palanquin_SK[0];//Rooster 17
+                btn14.BackColor = Color.Gold; btn14.Text = DVa.Cruiser_SK[0];//Annyver 17
+
+                if (Language != "EN")
+                {
+                    NoChangeText = true;
+                    LangBrücke = Language;
+                    Language = "EN";
+                    ChangeLang();
+                }
                 chB00.Checked = true;
-                chB01.Checked = Convert.ToBoolean(inisHeroes.Read("SK01"));
-                chB02.Checked = Convert.ToBoolean(inisHeroes.Read("SK02"));
-                chB03.Checked = Convert.ToBoolean(inisHeroes.Read("SK03"));
-                chB04.Checked = Convert.ToBoolean(inisHeroes.Read("SK04"));
-                chB05.Checked = Convert.ToBoolean(inisHeroes.Read("SK05"));
-                chB06.Checked = Convert.ToBoolean(inisHeroes.Read("SK06"));
-                chB07.Checked = Convert.ToBoolean(inisHeroes.Read("SK07"));
-                chB08.Checked = Convert.ToBoolean(inisHeroes.Read("SK08"));
-                chB09.Checked = Convert.ToBoolean(inisHeroes.Read("SK09"));
-                chB10.Checked = Convert.ToBoolean(inisHeroes.Read("SK10"));
-                chB11.Checked = Convert.ToBoolean(inisHeroes.Read("SK11"));
-                chB12.Checked = Convert.ToBoolean(inisHeroes.Read("SK12"));
-                chB13.Checked = Convert.ToBoolean(inisHeroes.Read("SK13"));
-                chB14.Checked = Convert.ToBoolean(inisHeroes.Read("SK14"));
-                chB15.Checked = Convert.ToBoolean(inisHeroes.Read("SK15"));
+                chB01.Checked = Convert.ToBoolean(inisHeroes.Read(DVa.Blueberry_SK[0]));
+                chB02.Checked = Convert.ToBoolean(inisHeroes.Read(DVa.Lemon_Lime_SK[0]));
+                chB03.Checked = Convert.ToBoolean(inisHeroes.Read(DVa.Tangerine_SK[0]));
+                chB04.Checked = Convert.ToBoolean(inisHeroes.Read(DVa.Watermelon_SK[0]));
+                chB05.Checked = Convert.ToBoolean(inisHeroes.Read(DVa.Carbon_Fiber_SK[0]));
+                chB06.Checked = Convert.ToBoolean(inisHeroes.Read(DVa.White_Rabbit_SK[0]));
+                chB07.Checked = Convert.ToBoolean(inisHeroes.Read(DVa.Taegeukgi_SK[0]));
+                chB08.Checked = Convert.ToBoolean(inisHeroes.Read(DVa.Junker_SK[0]));
+                chB09.Checked = Convert.ToBoolean(inisHeroes.Read(DVa.Scavenger_SK[0]));
+                chB10.Checked = Convert.ToBoolean(inisHeroes.Read(DVa.BVa_SK[0]));
+                chB11.Checked = Convert.ToBoolean(inisHeroes.Read(DVa.Junebug_SK[0]));
+                chB12.Checked = Convert.ToBoolean(inisHeroes.Read(DVa.Officer_SK[0]));
+                chB13.Checked = Convert.ToBoolean(inisHeroes.Read(DVa.Palanquin_SK[0]));
+                chB14.Checked = Convert.ToBoolean(inisHeroes.Read(DVa.Cruiser_SK[0]));
+                chB15.Checked = Convert.ToBoolean(inisHeroes.Read(DVa.Black_Cat_SK[0]));
+                chB16.Checked = Convert.ToBoolean(inisHeroes.Read(DVa.Waveracer_SK[0]));
 
             }
             if (BackSave2 == Lang.Emotes)
@@ -2117,7 +2146,14 @@ namespace OverwatchLootBoxTracker
             {
                 OWLButtons();
             }
+            if (NoChangeText==true)
+            {
+                Language = LangBrücke;
+                ChangeLang();
+                NoChangeText = false;
+            }
             chBSave = 1;
+
         }
 
         private void Doomfist_Click(object sender, EventArgs e)
@@ -6627,7 +6663,7 @@ namespace OverwatchLootBoxTracker
                 MediaPlayer = new CMediaPlayer("Sounds\\Voice Lines\\" + BackSave + "\\" + /*Language*/"EN" + "\\" + buttonnumber + ".mp3");
                 MediaPlayer.Play();
                 if (MediaPlayer == null)
-                MessageBox.Show("An Error has appeared!\nPlease Post this Issue on GitHub with the Error Code\nError Code: 3", "Error 3", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                    MessageBox.Show("An Error has appeared!\nPlease Post this Issue on GitHub with the Error Code\nError Code: 3", "Error 3", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }
 
