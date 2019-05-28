@@ -207,6 +207,24 @@ namespace OverwatchLootBoxTracker.Translate
             }
         }
 
+        public string[] Bastet_SK//15
+        {//Rooster 2017
+            get
+            {
+                if (myLang == "DE")
+                {
+                    LangAndCost[0] = DE.Tal_SK;//
+                }
+                else
+                {
+                    LangAndCost[0] = EN.Bastet_SK;
+                }
+                LangAndCost[1] = Costs.Epic.ToString();
+                LangAndCost[2] = Translate.Rooster + " 2017";
+                return LangAndCost;
+            }
+        }
+
         //Legendary
         public string[] Wadjet_SK//9
         {
@@ -279,6 +297,25 @@ namespace OverwatchLootBoxTracker.Translate
                 return LangAndCost;
             }
         }
+
+        public string[] Cabana_SK//16
+        {//Halloween 2017
+            get
+            {
+                if (myLang == "DE")
+                {
+                    LangAndCost[0] = DE.Corsair_SK;//
+                }
+                else
+                {
+                    LangAndCost[0] = EN.Cabana_SK;
+                }
+                LangAndCost[1] = Costs.LegendaryEvent.ToString();
+                LangAndCost[2] = Translate.Summer + " 2018";
+                return LangAndCost;
+            }
+        }
+
 
         public string[] Corsair_SK//13
         {//Halloween 2017

@@ -25,12 +25,14 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             Merciful_SK = "Merciful";
             Shrike_SK = "Shrike";
             Ghoul_SK = "Ghoul";//Halloween 16
-            Tal_SK = "Tal";//Rooster 17
+            Tal_SK = "Tal";//Rooster 17#
+            Bastet_SK = "BASTET";//Special
             //Legendary
             Wadjet_SK = "Wadjet";
             Wasteland_SK = "Wasteland";
             Captain_Amari_SK = "Captain Amari";
             Horus_SK = "Horus";
+            Cabana_SK = "CABANA";//Summer 18
             Corsair_SK = "Corsair";//Halloween 17
             Snow_Owl_SK = "Snow Owl";//Winter 17
             #endregion
@@ -152,11 +154,13 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
         public string Shrike_SK { get; }
         public string Ghoul_SK { get; }//Halloween 16
         public string Tal_SK { get; }//Rooster 17
+        public string Bastet_SK { get; }//Special
 
         public string Wadjet_SK { get; }//Legendary
         public string Wasteland_SK { get; }
         public string Captain_Amari_SK { get; }
         public string Horus_SK { get; }
+        public string Cabana_SK { get; }//Summer 18
         public string Corsair_SK { get; }//Halloween 17
         public string Snow_Owl_SK { get; }//Winter 17
         #endregion

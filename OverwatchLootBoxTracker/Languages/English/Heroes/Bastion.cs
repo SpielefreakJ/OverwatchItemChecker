@@ -23,16 +23,18 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
             //Epic
             Defense_Matrix_SK = "Defense Matrix";
             Omnic_Crisis_SK = "Omnic Crisis";
-            BlizzCon_2016_SK = "BlizzCon 2016";//BlizzCon 16
             Tombstone_SK = "Tombstone";//Halloween 16
+            Gift_Wrap_SK = "GIFT WRAP";//Winter 19
             Rooster_SK = "Rooster";//Rooster 17
             Null_Sector_SK = "Null Sector";//Uprising 17
+            BlizzCon_2016_SK = "BlizzCon 2016";//BlizzCon 16
             //Legendary
             Antique_SK = "Antique";
             Woodbot_SK = "Woodbot";
             Gearbot_SK = "Gearbot";
             Steambot_SK = "Steambot";
             Avalanche_SK = "Avalanche";//Winter 17
+            Gwishin_SK = "GWISHIN";//Archiv 18
             Dune_Buggy_SK = "Dune Buggy";//Annyver 17
             STEALTH_SK = "STEALTH";//Annyver 18
             Overgrown_SK = "Overgrown";//Origin Special
@@ -98,16 +100,18 @@ namespace OverwatchLootBoxTracker.Languages.English.Heroes
 
         public string Defense_Matrix_SK { get; }//Epic
         public string Omnic_Crisis_SK { get; }
-        public string BlizzCon_2016_SK { get; }//BlizzCon 16
         public string Tombstone_SK { get; }//Halloween 16
+        public string Gift_Wrap_SK { get; }//Winter 18
         public string Rooster_SK { get; }//Rooster 17
         public string Null_Sector_SK { get; }//Uprising 17
+        public string BlizzCon_2016_SK { get; }//BlizzCon 16
 
         public string Antique_SK { get; }//Legendary
         public string Woodbot_SK { get; }
         public string Gearbot_SK { get; }
         public string Steambot_SK { get; }
         public string Avalanche_SK { get; }//Winter 17
+        public string Gwishin_SK { get; }//Archiv 18
         public string Dune_Buggy_SK { get; }//Annyver 17
         public string STEALTH_SK { get; }//Annyver 18
         public string Overgrown_SK { get; }//Origin Special
