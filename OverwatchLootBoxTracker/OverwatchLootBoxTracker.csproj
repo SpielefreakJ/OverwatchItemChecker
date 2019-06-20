@@ -133,6 +133,9 @@
     <Compile Include="Languages\German\Heroes\WreckingBall.cs" />
     <Compile Include="Languages\German\Heroes\Zarya.cs" />
     <Compile Include="Languages\German\Heroes\Zenyatta.cs" />
+    <Compile Include="MenuButtons.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Translate\Heroes\L_WreckingBall.cs">
       <SubType>Component</SubType>
     </Compile>
